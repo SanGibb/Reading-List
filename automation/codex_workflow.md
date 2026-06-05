@@ -2,7 +2,7 @@
 
 This workflow uses Codex as a file-driven research-maintenance system, not as an unconstrained browser.
 
-Current scope: maintain a high-quality frontier paper registry. Codex should help search, verify, summarize, and conservatively update collection artifacts; it should not act as an autonomous scientist or produce research roadmaps as the main output.
+Current scope: maintain a high-quality frontier paper registry. Codex should help search, verify, summarize, and update collection artifacts with every candidate that passes the harness; it should not act as an autonomous scientist or produce research roadmaps as the main output.
 
 ## Recommended Operating Modes
 
@@ -40,7 +40,7 @@ Expected output:
 - `reports/YYYY-MM-DD-expansion.md` as a run summary, not the main deliverable
 - `01_discovery.json` with `followed_sources_checked`
 - maintained deep dives under `paper_reads/<branch>/<slug>.md`
-- conservative registry updates
+- full-coverage registry updates after threshold filtering
 - watchlist for unverified but potentially important work
 - local-only undecided dossiers under `undecided/YYYY-MM-DD/`
 - a validated commit pushed to GitHub when publishable changes exist
@@ -103,7 +103,8 @@ The publisher leaves `undecided/**` local-only by default. Those dossiers should
 - Do not download large videos unless needed.
 - Do not rewrite the taxonomy in routine expansion runs.
 - Do not generate autonomous research hypotheses or experiment roadmaps as a primary output.
-- Do not add every new arXiv paper; keep impact and project relevance thresholds.
+- Do not add every new arXiv paper blindly; keep impact and project relevance thresholds.
+- Once a candidate passes those thresholds, include it with a deep dive instead of sampling only a top-k subset.
 - Do not claim SOTA unless the source reports a clear benchmark and comparison.
 - Do not let one agent write another agent's artifact.
 - Do not skip fixed follow sources silently; record `checked`, `spot_checked`, `unreachable`, or `skipped`.

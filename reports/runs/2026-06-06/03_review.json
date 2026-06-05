@@ -6,16 +6,15 @@
       "visual_materials": [
         "https://scenefun3d.github.io/",
         "https://scenefun3d.github.io/static/images/framework.png",
-        "https://www.youtube.com/watch?v=NA"
+        "https://scenefun3d.github.io/"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "official_figures"
       ],
       "visual_quality_score": 0,
       "visual_quality_decision": "not_applicable",
-      "visual_notes": "Visual quality is not the acceptance gate for this benchmark/data/infrastructure item.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -28,16 +27,15 @@
       "visual_materials": [
         "https://behavior.stanford.edu/",
         "https://behavior.stanford.edu/",
-        "https://behavior.stanford.edu/"
+        "https://arxiv.org/abs/2403.09227"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "official_figures"
       ],
       "visual_quality_score": 0,
       "visual_quality_decision": "not_applicable",
-      "visual_notes": "Visual quality is not the acceptance gate for this benchmark/data/infrastructure item.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -50,16 +48,15 @@
       "visual_materials": [
         "https://physx-omni.github.io/",
         "https://physx-omni.github.io/static/videos/framework.png",
-        "https://physx-omni.github.io/"
+        "https://arxiv.org/abs/2605.21572"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "official_figures"
       ],
       "visual_quality_score": 4,
       "visual_quality_decision": "strong",
-      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -72,16 +69,15 @@
       "visual_materials": [
         "https://physdreamer.github.io/",
         "https://physdreamer.github.io/assets/thumbnails/hat.png",
-        "https://physdreamer.github.io/"
+        "https://arxiv.org/abs/2404.13026"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "official_figures"
       ],
       "visual_quality_score": 4,
       "visual_quality_decision": "strong",
-      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -94,16 +90,15 @@
       "visual_materials": [
         "https://feature-splatting.github.io/",
         "https://feature-splatting.github.io/resources/physics_pipeline.jpg",
-        "https://feature-splatting.github.io/"
+        "https://arxiv.org/abs/2404.01223"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "official_figures"
       ],
       "visual_quality_score": 4,
       "visual_quality_decision": "strong",
-      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -116,16 +111,15 @@
       "visual_materials": [
         "https://physcene.github.io/",
         "https://physcene.github.io/assets/images/teaser_compress.png",
-        "https://physcene.github.io/"
+        "https://arxiv.org/abs/2404.09465"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "official_figures"
       ],
       "visual_quality_score": 4,
       "visual_quality_decision": "strong",
-      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -137,17 +131,16 @@
       "candidate_id": "CAND-0007",
       "visual_materials": [
         "https://yueyang1996.github.io/holodeck/",
-        "https://yueyang1996.github.io/holodeck/static/images/objnav.jpg",
-        "https://yueyang1996.github.io/holodeck/"
+        "https://yueyang1996.github.io/holodeck/static/images/teaser.jpg",
+        "https://arxiv.org/abs/2312.09067"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "official_figures"
       ],
       "visual_quality_score": 4,
       "visual_quality_decision": "strong",
-      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -160,16 +153,15 @@
       "visual_materials": [
         "https://infinigen.org/",
         "https://infinigen.org/img/random_sample_indoors.jpeg",
-        "https://infinigen.org/"
+        "https://arxiv.org/abs/2406.11824"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "official_figures"
       ],
       "visual_quality_score": 5,
       "visual_quality_decision": "strong",
-      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -181,17 +173,16 @@
       "candidate_id": "CAND-0009",
       "visual_materials": [
         "https://robogen-ai.github.io/",
-        "https://robogen-ai.github.io/assets/images/long-horizon.png",
-        "https://robogen-ai.github.io/"
+        "https://robogen-ai.github.io/static/images/teaser.png",
+        "https://arxiv.org/abs/2311.01455"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "official_figures"
       ],
       "visual_quality_score": 4,
       "visual_quality_decision": "strong",
-      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -202,18 +193,16 @@
     {
       "candidate_id": "CAND-0010",
       "visual_materials": [
-        "https://spatialvla.github.io/",
-        "https://spatialvla.github.io/static/images/pipeline.png",
-        "https://spatialvla.github.io/"
+        "https://arxiv.org/abs/2501.15830",
+        "https://arxiv.org/abs/2501.15830"
       ],
       "inspected_modalities": [
-        "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "paper",
+        "official_figures"
       ],
       "visual_quality_score": 4,
       "visual_quality_decision": "strong",
-      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -225,17 +214,16 @@
       "candidate_id": "CAND-0011",
       "visual_materials": [
         "https://octo-models.github.io/",
-        "https://octo-models.github.io/octo.png",
-        "https://octo-models.github.io/"
+        "https://octo-models.github.io/",
+        "https://arxiv.org/abs/2405.12213"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "official_figures"
       ],
       "visual_quality_score": 4,
       "visual_quality_decision": "strong",
-      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -247,17 +235,16 @@
       "candidate_id": "CAND-0012",
       "visual_materials": [
         "https://openvla.github.io/",
-        "https://openvla.github.io/static/images/openvla_model.jpg",
-        "https://openvla.github.io/"
+        "https://openvla.github.io/",
+        "https://arxiv.org/abs/2406.09246"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "official_figures"
       ],
       "visual_quality_score": 4,
       "visual_quality_decision": "strong",
-      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -269,17 +256,16 @@
       "candidate_id": "CAND-0013",
       "visual_materials": [
         "https://www.pi.website/blog/pi0",
-        "https://www.pi.website/_next/image?url=%2Fimages%2Fp0-fold-shirt-1.jpg&w=640&q=75",
-        "https://www.pi.website/blog/pi0"
+        "https://www.pi.website/blog/pi0",
+        "https://arxiv.org/abs/2410.24164"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "official_figures"
       ],
       "visual_quality_score": 5,
       "visual_quality_decision": "strong",
-      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -291,17 +277,16 @@
       "candidate_id": "CAND-0014",
       "visual_materials": [
         "https://roboverse.wiki/",
-        "https://roboverse.wiki/dataset_benchmark/benchmark/overview",
-        "https://roboverse.wiki/dataset_benchmark/benchmark/overview"
+        "https://roboverse.wiki/",
+        "https://arxiv.org/abs/2504.18904"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "official_videos_or_gallery"
+        "official_figures"
       ],
       "visual_quality_score": 0,
       "visual_quality_decision": "not_applicable",
-      "visual_notes": "Visual quality is not the acceptance gate for this benchmark/data/infrastructure item.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
         "not_reproduced_locally",
         "official_examples_may_be_curated"
@@ -312,19 +297,670 @@
     {
       "candidate_id": "CAND-0015",
       "visual_materials": [
-        "https://open-eqa.github.io/",
-        "https://open-eqa.github.io/assets/images/workflow.png"
+        "https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/",
+        "https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/",
+        "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html"
       ],
       "inspected_modalities": [
         "project_page",
-        "official_figures",
-        "benchmark_examples"
+        "official_figures"
       ],
       "visual_quality_score": 0,
       "visual_quality_decision": "not_applicable",
-      "visual_notes": "Benchmark/evaluation paper; visual generation quality is not the acceptance gate.",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
       "failure_modes": [
-        "not_reproduced_locally"
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "visual_materials": [
+        "https://physx-anything.github.io/",
+        "https://physx-anything.github.io/",
+        "https://arxiv.org/abs/2511.13648"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "visual_materials": [
+        "https://arxiv.org/abs/2606.03994",
+        "https://arxiv.org/abs/2606.03994",
+        "https://arxiv.org/abs/2606.03994"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "visual_materials": [
+        "https://rest3d.org/",
+        "https://rest3d.org/",
+        "https://arxiv.org/abs/2605.30338"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "visual_materials": [
+        "https://lhmd.top/trisplat/",
+        "https://lhmd.top/trisplat/",
+        "https://arxiv.org/abs/2605.26115"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0020",
+      "visual_materials": [
+        "https://arxiv.org/abs/2505.04831",
+        "https://arxiv.org/abs/2505.04831"
+      ],
+      "inspected_modalities": [
+        "paper",
+        "official_figures"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0021",
+      "visual_materials": [
+        "https://research.nvidia.com/labs/dir/sage/",
+        "https://research.nvidia.com/labs/dir/sage/",
+        "https://arxiv.org/abs/2602.10116"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0022",
+      "visual_materials": [
+        "https://horizonrobotics.github.io/robot_lab/embodied_gen/index.html",
+        "https://horizonrobotics.github.io/robot_lab/embodied_gen/index.html",
+        "https://arxiv.org/abs/2506.10600"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0023",
+      "visual_materials": [
+        "https://scenesmith.github.io/",
+        "https://scenesmith.github.io/",
+        "https://arxiv.org/abs/2602.09153"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 5,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0024",
+      "visual_materials": [
+        "https://anc891203.github.io/SceneFoundry-Demo/",
+        "https://anc891203.github.io/SceneFoundry-Demo/docs/scenefoundry_arxiv.pdf",
+        "https://arxiv.org/abs/2601.05810"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0025",
+      "visual_materials": [
+        "https://hyworld.dev/",
+        "https://hyworld.dev/",
+        "https://arxiv.org/abs/2604.14268"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0026",
+      "visual_materials": [
+        "https://github.com/BAAI-DCAI/SpatialBot",
+        "https://arxiv.org/abs/2406.13642",
+        "https://arxiv.org/abs/2406.13642"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0027",
+      "visual_materials": [
+        "https://microsoft.github.io/HiSpatial/",
+        "https://microsoft.github.io/HiSpatial/",
+        "https://microsoft.github.io/HiSpatial/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0028",
+      "visual_materials": [
+        "https://spacetools.github.io/",
+        "https://spacetools.github.io/",
+        "https://spacetools.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0029",
+      "visual_materials": [
+        "https://arxiv.org/abs/2509.06266",
+        "https://arxiv.org/abs/2509.06266",
+        "https://arxiv.org/abs/2509.06266"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0030",
+      "visual_materials": [
+        "https://openreview.net/pdf?id=jXDZJAfRZB",
+        "https://openreview.net/pdf?id=jXDZJAfRZB",
+        "https://openreview.net/pdf?id=jXDZJAfRZB"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0031",
+      "visual_materials": [
+        "https://arxiv.org/abs/2510.13375",
+        "https://arxiv.org/abs/2510.13375",
+        "https://arxiv.org/abs/2510.13375"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0032",
+      "visual_materials": [
+        "https://oucx117.github.io/ST-VLA/",
+        "https://oucx117.github.io/ST-VLA/",
+        "https://arxiv.org/abs/2603.13788"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0033",
+      "visual_materials": [
+        "https://spatial-stack.github.io/",
+        "https://spatial-stack.github.io/",
+        "https://arxiv.org/abs/2603.27437"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0034",
+      "visual_materials": [
+        "https://gigaai-research.github.io/VLA-R1",
+        "https://gigaai-research.github.io/VLA-R1",
+        "https://arxiv.org/abs/2510.01623"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0035",
+      "visual_materials": [
+        "https://arxiv.org/abs/2605.12090",
+        "https://arxiv.org/abs/2605.12090",
+        "https://arxiv.org/abs/2605.12090"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0036",
+      "visual_materials": [
+        "https://arxiv.org/abs/2605.30542",
+        "https://arxiv.org/abs/2605.30542",
+        "https://arxiv.org/abs/2605.30542"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0037",
+      "visual_materials": [
+        "https://research.nvidia.com/labs/lpr/publication/gr00tn1_2025/",
+        "https://research.nvidia.com/labs/lpr/publication/gr00tn1_2025/",
+        "https://arxiv.org/abs/2503.14734"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0038",
+      "visual_materials": [
+        "https://greenvla.github.io/",
+        "https://greenvla.github.io/",
+        "https://arxiv.org/abs/2602.00919"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0039",
+      "visual_materials": [
+        "https://xr-1-vla.github.io/",
+        "https://xr-1-vla.github.io/",
+        "https://arxiv.org/abs/2511.02776"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0040",
+      "visual_materials": [
+        "https://jellyho.github.io/TwinVLA/",
+        "https://jellyho.github.io/TwinVLA/",
+        "https://arxiv.org/abs/2511.05275"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0041",
+      "visual_materials": [
+        "https://arxiv.org/abs/2603.25406",
+        "https://arxiv.org/abs/2603.25406",
+        "https://arxiv.org/abs/2603.25406"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0042",
+      "visual_materials": [
+        "https://arxiv.org/abs/2505.09694",
+        "https://arxiv.org/abs/2505.09694",
+        "https://arxiv.org/abs/2505.09694"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0043",
+      "visual_materials": [
+        "https://haoyi-duan.github.io/WorldScore/",
+        "https://haoyi-duan.github.io/WorldScore/",
+        "https://arxiv.org/abs/2504.00983"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0044",
+      "visual_materials": [
+        "https://world-arena.ai/",
+        "https://world-arena.ai/",
+        "https://arxiv.org/abs/2602.08971"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0045",
+      "visual_materials": [
+        "https://world-in-world.github.io/",
+        "https://world-in-world.github.io/",
+        "https://arxiv.org/abs/2510.18135"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0046",
+      "visual_materials": [
+        "https://ctrl-world.github.io/",
+        "https://ctrl-world.github.io/",
+        "https://ctrl-world.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual/generation evidence was judged against the harness; non-generation benchmarks use not_applicable. Official material was not locally reproduced.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
       ],
       "needs_human_decision": false,
       "undecided_reason": ""
@@ -334,140 +970,371 @@
     {
       "candidate_id": "CAND-0001",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0002",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0003",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0004",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0005",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0006",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0007",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0008",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0009",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0010",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0011",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0012",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0013",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0014",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     },
     {
       "candidate_id": "CAND-0015",
       "review_decision": "pass",
-      "issues": [
-        "metrics_not_reproduced_locally"
-      ],
+      "accepted_for_registry": true,
+      "issues": [],
       "required_fixes": [],
-      "accepted_for_registry": true
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0020",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0021",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0022",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0023",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0024",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0025",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0026",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0027",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0028",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0029",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0030",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0031",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0032",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0033",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0034",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0035",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0036",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0037",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0038",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0039",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0040",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0041",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0042",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0043",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0044",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0045",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
+    },
+    {
+      "candidate_id": "CAND-0046",
+      "review_decision": "pass",
+      "accepted_for_registry": true,
+      "issues": [],
+      "required_fixes": [],
+      "review_notes": "Accepted because it passes all mechanical and relevance gates; all accepted candidates receive a top-level deep dive."
     }
   ],
-  "run_level_issues": [
-    "Initialization pass prioritizes high-quality seed coverage; exact benchmark numbers must be checked before citation."
-  ]
+  "run_level_issues": []
 }

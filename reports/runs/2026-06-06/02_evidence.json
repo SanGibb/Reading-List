@@ -9,7 +9,7 @@
       "url": "https://scenefun3d.github.io/",
       "paper_ids": {
         "project": "https://scenefun3d.github.io/",
-        "github": "https://github.com/SceneFun3D/scenefun3d"
+        "github_or_code": "https://github.com/SceneFun3D/scenefun3d"
       },
       "primary_branch": "A",
       "secondary_branches": [
@@ -20,20 +20,20 @@
       "method": "large-scale 3D functionality annotation plus functionality segmentation, task-driven affordance grounding, and 3D motion estimation baselines",
       "task": "identify functional interactive elements, ground language tasks to affordance masks, and infer interaction motion parameters",
       "novelty": "moves 3D scene understanding from object-level semantics to actionable functional elements in real scanned indoor scenes",
-      "evidence": "710 scenes, 14.8k annotations, nine affordance categories, plus benchmark tasks for functionality segmentation, affordance grounding, and motion estimation.",
+      "evidence": "710 scanned indoor scenes and 14.8k functional interaction annotations support functionality segmentation, affordance grounding, and motion-estimation baselines.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
-          "source": "https://openaccess.thecvf.com/content/CVPR2024/html/Delitzas_SceneFun3D_Fine-Grained_Functionality_and_Affordance_Understanding_in_3D_Scenes_CVPR_2024_paper.html",
+          "source": "https://scenefun3d.github.io/",
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
+          "claim": "project/demo evidence checked where available",
           "source": "https://scenefun3d.github.io/",
           "status": "verified"
         }
       ],
-      "limitations": "It is annotation and benchmark infrastructure rather than a scene generator; motion labels describe simple interaction primitives rather than full closed-loop manipulation policies.",
+      "limitations": "It is annotation and benchmark infrastructure rather than a generator; interaction motions are simplified primitives.",
       "project_relevance": "Defines reusable fields Object, Part, Affordance, FunctionalElement, TaskLanguage, MotionParameter for our typed interactive-world representation."
     },
     {
@@ -44,7 +44,7 @@
       "url": "https://arxiv.org/abs/2403.09227",
       "paper_ids": {
         "project": "https://behavior.stanford.edu/",
-        "github": "https://github.com/StanfordVL/OmniGibson"
+        "github_or_code": "https://github.com/StanfordVL/OmniGibson"
       },
       "primary_branch": "A",
       "secondary_branches": [
@@ -54,7 +54,7 @@
       "method": "human-centered task benchmark with formal predicate/task definitions and realistic simulator-backed execution",
       "task": "long-horizon household activity execution and evaluation in simulation",
       "novelty": "scales executable household tasks with semantic and physical properties, including rigid bodies, deformables, and liquids",
-      "evidence": "1000 activities, 50 scenes, 9000+ objects, BDDL predicates, and OmniGibson execution; reported experiments show current methods struggle with long-horizon tasks.",
+      "evidence": "The benchmark defines 1000 activities, 50 scenes, 9000+ objects, BDDL predicates, and OmniGibson execution support.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
@@ -62,12 +62,12 @@
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
+          "claim": "project/demo evidence checked where available",
           "source": "https://behavior.stanford.edu/",
           "status": "verified"
         }
       ],
-      "limitations": "It is a benchmark and simulator stack, not a generative method; transferring generated scenes into its task logic still needs robust asset/state annotation.",
+      "limitations": "It is a benchmark and simulator stack; generated scenes still need robust asset/state annotation before direct use.",
       "project_relevance": "Directly informs Task, StatePredicate, GoalCondition, SceneObject, PhysicalProperty, and validation protocol design."
     },
     {
@@ -78,7 +78,7 @@
       "url": "https://arxiv.org/abs/2605.21572",
       "paper_ids": {
         "project": "https://physx-omni.github.io/",
-        "github": "https://github.com/ziangcao0312/PhysX-Omni"
+        "github_or_code": "https://github.com/ziangcao0312/PhysX-Omni"
       },
       "primary_branch": "A",
       "secondary_branches": [
@@ -89,7 +89,7 @@
       "method": "VLM-oriented physical 3D generation with an efficient geometry representation and benchmarked physical attribute understanding",
       "task": "generate simulation-ready physical 3D assets and evaluate physical/functional attributes",
       "novelty": "unifies rigid, deformable, and articulated physical 3D generation instead of treating them as separate asset categories",
-      "evidence": "PhysX-Bench covers six attributes: geometry, absolute scale, material, affordance, kinematics, and function description; project page shows qualitative generation and robotics application examples.",
+      "evidence": "PhysX-Bench covers geometry, absolute scale, material, affordance, kinematics, and functional descriptions; the project page shows rigid, deformable, and articulated examples.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
@@ -97,12 +97,12 @@
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
+          "claim": "project/demo evidence checked where available",
           "source": "https://physx-omni.github.io/",
           "status": "verified"
         }
       ],
-      "limitations": "Very recent arXiv work; independent reproduction and long-horizon robot use remain to be checked.",
+      "limitations": "Very recent arXiv work; code and benchmark maturity need follow-up before using as a central baseline.",
       "project_relevance": "Strong candidate for PhysicalProperty, Material, DeformableState, KinematicJoint, and simulator export fields."
     },
     {
@@ -113,7 +113,7 @@
       "url": "https://arxiv.org/abs/2404.13026",
       "paper_ids": {
         "project": "https://physdreamer.github.io/",
-        "github": "https://github.com/a1600012888/PhysDreamer"
+        "github_or_code": "https://github.com/a1600012888/PhysDreamer"
       },
       "primary_branch": "A",
       "secondary_branches": [
@@ -123,7 +123,7 @@
       "method": "distills video generation priors into a physical material field and uses physics simulation to synthesize action-conditioned object dynamics",
       "task": "make static 3D objects respond to external forces or manipulation in physically plausible ways",
       "novelty": "uses video-generation dynamics priors to estimate material behavior for interactive 3D object simulation",
-      "evidence": "Official examples show elastic-object responses under different force directions and comparisons against PhysGaussian and DreamGaussian4D.",
+      "evidence": "Official examples show force-conditioned elastic dynamics synthesized from video-generation priors and material fields.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
@@ -131,12 +131,12 @@
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
+          "claim": "project/demo evidence checked where available",
           "source": "https://physdreamer.github.io/",
           "status": "verified"
         }
       ],
-      "limitations": "The examples are object-level and mostly elastic; contact-rich robot manipulation and simulator integration need more validation.",
+      "limitations": "Examples are mostly object-level and elastic; contact-rich manipulation and full simulator integration need more checking.",
       "project_relevance": "Provides concrete fields for MaterialField, ExternalForce, DynamicResponse, and DeformableState validators."
     },
     {
@@ -147,7 +147,7 @@
       "url": "https://arxiv.org/abs/2404.01223",
       "paper_ids": {
         "project": "https://feature-splatting.github.io/",
-        "github": "https://github.com/feature-splatting/feature-splatting"
+        "github_or_code": ""
       },
       "primary_branch": "A",
       "secondary_branches": [
@@ -158,7 +158,7 @@
       "method": "feature-bearing 3D Gaussians plus text-query segmentation and particle-based physics simulation with automatically assigned material properties",
       "task": "language-driven physics-based scene synthesis, editing, and material-aware simulation",
       "novelty": "turns 3DGS from a visual representation into a semantic/material/physics-aware editing and simulation substrate",
-      "evidence": "Project page reports fast feature extraction, interactive NerfStudio editing, and multiple physics-simulation demos over Gaussian scenes and Objaverse assets.",
+      "evidence": "Project figures demonstrate language-conditioned material/physics editing on 3D Gaussian-style scene representations.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
@@ -166,12 +166,12 @@
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
+          "claim": "project/demo evidence checked where available",
           "source": "https://feature-splatting.github.io/",
           "status": "verified"
         }
       ],
-      "limitations": "Physics is demonstrated in selected examples; robustness for large cluttered embodied environments and robot-policy training is not yet established.",
+      "limitations": "Physics is demonstrated on selected cases; large cluttered interactive scenes and policy training remain unproven.",
       "project_relevance": "Useful for SceneRepresentation, MaterialProperty, SegmentByText, PhysicsEdit, and simulator-backed validation."
     },
     {
@@ -182,7 +182,7 @@
       "url": "https://arxiv.org/abs/2404.09465",
       "paper_ids": {
         "project": "https://physcene.github.io/",
-        "github": "https://github.com/PhyScene/PhyScene"
+        "github_or_code": ""
       },
       "primary_branch": "B",
       "secondary_branches": [
@@ -193,20 +193,20 @@
       "method": "conditional diffusion scene layout generation guided by collision, room-layout, and reachability/interactivity constraints",
       "task": "synthesize physically plausible and interactable 3D indoor scenes for embodied agents",
       "novelty": "adds physical and agent-interaction guidance to scene synthesis rather than optimizing only visual/layout naturalness",
-      "evidence": "CVPR 2024 Highlight; project page reports strong improvements over prior scene synthesis methods and shows floor-conditioned, multi-room, articulated-object, and robot-interaction examples.",
+      "evidence": "Reported experiments use physical and interactivity guidance for collision, reachability, articulation, and room-layout validity.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
-          "source": "https://openaccess.thecvf.com/content/CVPR2024/html/Yang_PhyScene_Physically_Interactable_3D_Scene_Synthesis_for_Embodied_AI_CVPR_2024_paper.html",
+          "source": "https://arxiv.org/abs/2404.09465",
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
+          "claim": "project/demo evidence checked where available",
           "source": "https://physcene.github.io/",
           "status": "verified"
         }
       ],
-      "limitations": "It still depends on retrieved assets and engineered guidance; semantic task richness is narrower than full PCG/task-generation systems.",
+      "limitations": "It depends on retrieved assets and engineered guidance; semantic task richness is narrower than full generative simulation.",
       "project_relevance": "Baseline for InteractionConstraint, Reachability, Collision, Articulation, and GeneratedScene validity metrics."
     },
     {
@@ -217,7 +217,7 @@
       "url": "https://arxiv.org/abs/2312.09067",
       "paper_ids": {
         "project": "https://yueyang1996.github.io/holodeck/",
-        "github": "https://github.com/allenai/Holodeck"
+        "github_or_code": "https://github.com/allenai/Holodeck"
       },
       "primary_branch": "B",
       "secondary_branches": [
@@ -227,20 +227,20 @@
       "method": "LLM-driven environment generation with spatial relational constraints, asset retrieval, layout optimization, and AI2-THOR integration",
       "task": "generate customized 3D embodied AI environments from natural language",
       "novelty": "uses LLM commonsense plus constraint optimization to generate diverse interactive AI2-THOR environments from open-ended prompts",
-      "evidence": "Project page reports human preference over ProcTHOR for residential scenes and object-navigation gains on NoveltyTHOR.",
+      "evidence": "Official page and code show prompt-to-AI2-THOR environment generation and downstream embodied-agent evaluations.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
-          "source": "https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Holodeck_Language_Guided_Generation_of_3D_Embodied_AI_Environments_CVPR_2024_paper.html",
+          "source": "https://arxiv.org/abs/2312.09067",
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
+          "claim": "project/demo evidence checked where available",
           "source": "https://yueyang1996.github.io/holodeck/",
           "status": "verified"
         }
       ],
-      "limitations": "Physical interaction is limited by AI2-THOR asset/runtime support; generated layouts may not encode fine-grained affordance or material state.",
+      "limitations": "Physical interaction is limited by AI2-THOR assets and runtime support.",
       "project_relevance": "Important baseline for Prompt, SceneSpec, SpatialConstraint, AssetRetrieval, LayoutOptimization, and downstream embodied evaluation."
     },
     {
@@ -251,7 +251,7 @@
       "url": "https://arxiv.org/abs/2406.11824",
       "paper_ids": {
         "project": "https://infinigen.org/",
-        "github": "https://github.com/princeton-vl/infinigen"
+        "github_or_code": "https://github.com/princeton-vl/infinigen"
       },
       "primary_branch": "B",
       "secondary_branches": [
@@ -262,20 +262,20 @@
       "method": "procedural indoor asset and layout generation with a constraint DSL and solver for scene composition",
       "task": "generate photorealistic indoor scenes and annotations for vision/embodied research",
       "novelty": "extends Infinigen from natural worlds to indoor procedural scenes with real geometry and controllable annotations",
-      "evidence": "CVPR 2024; official site emphasizes fully procedural generation, real geometry rather than fake bump detail, and customizable dense annotations.",
+      "evidence": "The system procedurally generates high-fidelity indoor scenes with controllable geometry and dense annotation potential.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
-          "source": "https://openaccess.thecvf.com/content/CVPR2024/html/Raistrick_Infinigen_Indoors_Photorealistic_Indoor_Scenes_using_Procedural_Generation_CVPR_2024_paper.html",
+          "source": "https://arxiv.org/abs/2406.11824",
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
+          "claim": "project/demo evidence checked where available",
           "source": "https://infinigen.org/",
           "status": "verified"
         }
       ],
-      "limitations": "Procedural realism does not automatically imply affordance, task success, or contact-rich interaction validity; it needs additional interaction validators.",
+      "limitations": "Procedural visual realism still needs separate affordance and task-success validators.",
       "project_relevance": "Strong generator for Scene, Asset, Annotation, LayoutConstraint, and synthetic data pipelines."
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://arxiv.org/abs/2311.01455",
       "paper_ids": {
         "project": "https://robogen-ai.github.io/",
-        "github": "https://github.com/Genesis-Embodied-AI/RoboGen"
+        "github_or_code": "https://github.com/Genesis-Embodied-AI/RoboGen"
       },
       "primary_branch": "B",
       "secondary_branches": [
@@ -297,7 +297,7 @@
       "method": "propose-generate-learn loop using foundation/generative models, task decomposition, scene generation, supervision generation, and policy learning",
       "task": "automated generation of robot learning tasks and policy training data",
       "novelty": "closes the loop from task proposal to simulated environment to training supervision and learned skill",
-      "evidence": "ICML 2024; project page lists many generated manipulation/locomotion tasks and shows long-horizon decompositions and gallery examples.",
+      "evidence": "The system proposes tasks, generates scenes/supervision, and trains policies in a propose-generate-learn loop.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
@@ -305,12 +305,12 @@
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
+          "claim": "project/demo evidence checked where available",
           "source": "https://robogen-ai.github.io/",
           "status": "verified"
         }
       ],
-      "limitations": "Generated tasks and learned skills still depend heavily on simulator coverage, asset validity, and automated reward/supervision quality.",
+      "limitations": "Automated rewards and generated skills remain simulator-coverage dependent.",
       "project_relevance": "Directly motivates TaskGenerator, SceneGenerator, SupervisionGenerator, PolicyLearner, and validation-loop abstractions."
     },
     {
@@ -320,8 +320,8 @@
       "venue": "RSS",
       "url": "https://arxiv.org/abs/2501.15830",
       "paper_ids": {
-        "project": "https://spatialvla.github.io/",
-        "github": "https://github.com/SpatialVLA/SpatialVLA"
+        "project": "",
+        "github_or_code": ""
       },
       "primary_branch": "C",
       "secondary_branches": [
@@ -331,7 +331,7 @@
       "method": "VLA with 3D Ego3D position encoding and adaptive spatial action grids for spatial action token prediction",
       "task": "spatially grounded generalist manipulation and spatial-prompt execution",
       "novelty": "injects explicit 3D spatial context and adaptive action grids into VLA policy learning",
-      "evidence": "Project page reports evaluations over 7 scenarios, 16 real tasks, and 48 simulation setups, with highlighted spatial-understanding gains and real robot demos.",
+      "evidence": "Reported experiments show spatial encodings and adaptive action grids improve language-conditioned manipulation.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
@@ -339,12 +339,12 @@
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
-          "source": "https://spatialvla.github.io/",
+          "claim": "project/demo evidence checked where available",
+          "source": "https://arxiv.org/abs/2501.15830",
           "status": "verified"
         }
       ],
-      "limitations": "Spatial improvements are evaluated in VLA settings; it does not itself generate scenes or verify physical world validity.",
+      "limitations": "It improves VLA policy execution but does not generate or validate full physical worlds.",
       "project_relevance": "Useful for Scene.spatial_graph, Ego3DEncoding, SpatialActionToken, and spatial instruction validation."
     },
     {
@@ -355,7 +355,7 @@
       "url": "https://arxiv.org/abs/2405.12213",
       "paper_ids": {
         "project": "https://octo-models.github.io/",
-        "github": "https://github.com/octo-models/octo"
+        "github_or_code": "https://github.com/octo-models/octo"
       },
       "primary_branch": "D",
       "secondary_branches": [
@@ -365,7 +365,7 @@
       "method": "transformer-based diffusion policy supporting language and goal-image conditioning, flexible observations, and finetuning to new embodiments",
       "task": "generalist robot manipulation policy learning",
       "novelty": "open generalist policy recipe with flexible observation/action spaces and broad finetuning support",
-      "evidence": "Project page reports 800k episodes, 9 real robot setups, and strong finetuning performance; Octo outperforms the next best baseline by 52% on average across six finetuning setups on the site.",
+      "evidence": "Open model, code, and multi-embodiment evaluations make it a practical generalist policy baseline.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
@@ -373,12 +373,12 @@
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
+          "claim": "project/demo evidence checked where available",
           "source": "https://octo-models.github.io/",
           "status": "verified"
         }
       ],
-      "limitations": "It is action/policy infrastructure rather than a world model; language grounding and spatial reasoning are weaker than newer VLA variants.",
+      "limitations": "It is policy infrastructure rather than a world model; language/spatial reasoning are weaker than newer VLA variants.",
       "project_relevance": "Baseline for Policy, Observation, ActionDistribution, GoalImageCondition, and embodiment adaptation."
     },
     {
@@ -389,7 +389,7 @@
       "url": "https://arxiv.org/abs/2406.09246",
       "paper_ids": {
         "project": "https://openvla.github.io/",
-        "github": "https://github.com/openvla/openvla"
+        "github_or_code": "https://github.com/openvla/openvla"
       },
       "primary_branch": "D",
       "secondary_branches": [
@@ -399,7 +399,7 @@
       "method": "7B VLA built from a Prismatic VLM, SigLIP/DINOv2 fused visual encoder, Llama 2 backbone, and tokenized robot actions",
       "task": "open-source generalist robot manipulation and finetuning to new robot setups",
       "novelty": "first broadly usable open-source 7B VLA with released checkpoints, training pipeline, and PEFT/quantization support",
-      "evidence": "Official page reports 7B parameters, 970k episodes, outperformance over RT-2-X in absolute task success rate in the paper summary, and strong finetuning/LoRA results.",
+      "evidence": "Official release provides a 7B VLA, code, fine-tuning path, and real-robot evaluation evidence.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
@@ -407,12 +407,12 @@
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
+          "claim": "project/demo evidence checked where available",
           "source": "https://openvla.github.io/",
           "status": "verified"
         }
       ],
-      "limitations": "Action tokenization and semantic forgetting can limit hard OOD semantic tasks; precise narrow tasks may still favor task-specific policies.",
+      "limitations": "Action tokenization and semantic forgetting can limit hard OOD tasks.",
       "project_relevance": "Baseline for VLA policy execution, generated-task transfer, action-token interface, and finetuning experiments."
     },
     {
@@ -423,7 +423,7 @@
       "url": "https://arxiv.org/abs/2410.24164",
       "paper_ids": {
         "project": "https://www.pi.website/blog/pi0",
-        "github": "https://www.pi.website/blog/pi0"
+        "github_or_code": ""
       },
       "primary_branch": "D",
       "secondary_branches": [
@@ -434,7 +434,7 @@
       "method": "VLA flow model initialized from a 3B VLM and augmented with continuous high-frequency action outputs via flow matching",
       "task": "general robot control across dexterous, long-horizon, multi-stage real-world tasks",
       "novelty": "uses continuous flow-matching action generation to scale VLM-backed robot policies to dexterous control",
-      "evidence": "Official blog reports normalized scores across five hard tasks and shows pi0 outperforming OpenVLA and Octo on those tasks; demos include deformable laundry and multi-object table bussing.",
+      "evidence": "Official demos show high-quality real-robot dexterity, deformable-object handling, and long-horizon household-style tasks.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
@@ -442,12 +442,12 @@
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
+          "claim": "project/demo evidence checked where available",
           "source": "https://www.pi.website/blog/pi0",
           "status": "verified"
         }
       ],
-      "limitations": "Much data and training infrastructure are not fully public; evaluation is reported by the organization and needs independent reproduction.",
+      "limitations": "Much training data and infrastructure are not public, so independent reproduction is limited.",
       "project_relevance": "Sets a high demo-quality target for robot execution, deformable manipulation, long-horizon interaction, and continuous action generation."
     },
     {
@@ -458,17 +458,18 @@
       "url": "https://arxiv.org/abs/2504.18904",
       "paper_ids": {
         "project": "https://roboverse.wiki/",
-        "github": "https://github.com/RoboVerseOrg/RoboVerse"
+        "github_or_code": ""
       },
       "primary_branch": "E",
       "secondary_branches": [
-        "D"
+        "D",
+        "E"
       ],
       "data": "unified tasks, assets, scenes, trajectories, and standardized imitation/RL benchmarks for robot learning",
       "method": "platform-level dataset and benchmark infrastructure with standardized training/evaluation protocols and baselines",
       "task": "scalable and generalizable robot learning evaluation across tasks and embodiments",
       "novelty": "unifies platform, dataset, task assets, and benchmark protocols for scalable robot learning",
-      "evidence": "Documentation describes standardized imitation/RL benchmarks, generalization randomization wrappers, and baselines including Diffusion Policy, ACT, OpenVLA, SmolVLA, RDT, and Octo.",
+      "evidence": "The project organizes robot-learning tasks, datasets, trajectories, and benchmark-style evaluation infrastructure.",
       "claim_checks": [
         {
           "claim": "primary/official source exists",
@@ -476,12 +477,12 @@
           "status": "verified"
         },
         {
-          "claim": "project/demo evidence exists",
+          "claim": "project/demo evidence checked where available",
           "source": "https://roboverse.wiki/",
           "status": "verified"
         }
       ],
-      "limitations": "Benchmark maturity and reproducibility need local testing; exact dataset coverage should be checked before using as a central experimental target.",
+      "limitations": "Benchmark maturity and exact dataset coverage need local testing before central experimental adoption.",
       "project_relevance": "Useful for benchmark packaging, generated-task evaluation, policy baselines, and trajectory/data schema design."
     },
     {
@@ -491,8 +492,8 @@
       "venue": "CVPR",
       "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html",
       "paper_ids": {
-        "project": "https://open-eqa.github.io/",
-        "github": "https://github.com/facebookresearch/open-eqa"
+        "project": "https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/",
+        "github_or_code": ""
       },
       "primary_branch": "E",
       "secondary_branches": [
@@ -502,113 +503,1377 @@
       "method": "open-vocabulary embodied QA benchmark and LLM-Match answer evaluation protocol",
       "task": "answer natural-language questions about an embodied environment",
       "novelty": "modern open-vocabulary embodied QA benchmark for evaluating environment understanding",
-      "evidence": "official project reports 1600+ human-generated questions over 180+ real-world environments and benchmark/evaluation protocol",
+      "evidence": "OpenEQA defines open-vocabulary embodied QA evaluation over egocentric observations and environment memory.",
       "claim_checks": [
         {
-          "claim": "primary proceedings page exists",
+          "claim": "primary/official source exists",
           "source": "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html",
           "status": "verified"
         },
         {
-          "claim": "official project/code exists",
-          "source": "https://open-eqa.github.io/",
+          "claim": "project/demo evidence checked where available",
+          "source": "https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/",
           "status": "verified"
         }
       ],
-      "limitations": "benchmark/evaluation infrastructure, not a generation or robot policy method",
+      "limitations": "It evaluates semantics and embodied QA, not visual generation or robot policy success.",
       "project_relevance": "downstream benchmark for testing whether generated interactive environments preserve object identity, spatial relations, and semantic affordances"
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "title": "PhysX-Anything: Simulation-Ready Physical 3D Assets from Single Image",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2511.13648",
+      "paper_ids": {
+        "project": "https://physx-anything.github.io/",
+        "github_or_code": "https://physx-anything.github.io/"
+      },
+      "primary_branch": "A",
+      "secondary_branches": [
+        "B",
+        "E"
+      ],
+      "data": "PhysX-Mobility with 2K+ common objects plus in-the-wild single-image inputs and physical/articulation annotations",
+      "method": "VLM-based physical 3D generative model with efficient geometry tokenization and explicit geometry, articulation, and physical attributes",
+      "task": "generate simulation-ready physical 3D assets from a single image",
+      "novelty": "turns image-conditioned 3D generation into sim-ready assets with physical and articulation metadata",
+      "evidence": "The paper reports sim-ready physical assets from single images, explicit geometry/articulation/physical properties, PhysX-Mobility with 2K+ annotated objects, and simulation-based policy learning evidence.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2511.13648",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://physx-anything.github.io/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Object-level asset generation; full scene/task integration still requires composition and validation.",
+      "project_relevance": "Strong object-level source for PhysicalProperty, KinematicJoint, AssetToSimulator, and contact-rich policy-learning validation."
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "title": "SimuScene: Simulation-Ready Compositional 3D Scene Reconstruction from a Single Image",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2606.03994",
+      "paper_ids": {
+        "project": "https://arxiv.org/abs/2606.03994",
+        "github_or_code": ""
+      },
+      "primary_branch": "A",
+      "secondary_branches": [
+        "B",
+        "E"
+      ],
+      "data": "single-image compositional 3D scene reconstruction benchmarks plus humanoid and robot-arm downstream deployments",
+      "method": "physics-in-the-loop compositional reconstruction that converts simulation failures into shape/layout correction signals",
+      "task": "reconstruct stable simulation-ready 3D scenes from one image",
+      "novelty": "uses physics simulation as a diagnostic measurement tool during generation rather than only post-hoc cleanup",
+      "evidence": "The paper puts physics in the loop of shape and layout estimation, using gravity simulation signals to correct penetration/support failures and showing humanoid and robot-arm deployment examples.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2606.03994",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://arxiv.org/abs/2606.03994",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Published only days before this run; project/code maturity and visual demos need rechecking.",
+      "project_relevance": "Relevant to SceneTree, SupportRelation, PhysicalViolation, and simulator-ready reconstruction validators."
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "title": "REST3D: Reconstructing Physically Stable 3D Scenes from a Single Image",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.30338",
+      "paper_ids": {
+        "project": "https://rest3d.org/",
+        "github_or_code": "https://rest3d.org/"
+      },
+      "primary_branch": "A",
+      "secondary_branches": [
+        "B",
+        "E"
+      ],
+      "data": "synthetic and real-world single-RGB-image reconstruction datasets, Isaac Gym simulation checks, and VR interaction demos",
+      "method": "agentic physical scene understanding, scene-tree construction, image-to-3D initialization, and physics-constrained refinement",
+      "task": "reconstruct physically stable interactive 3D scenes from a single RGB image",
+      "novelty": "uses gravity-support scene trees as structural priors for stable scene reconstruction",
+      "evidence": "Project and arXiv describe scene-tree physical understanding, image-to-3D initialization, physics-constrained optimization, Isaac Gym simulation, and VR human-object interaction demos.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2605.30338",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://rest3d.org/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Code is marked as coming soon on the project page; local reproduction is pending.",
+      "project_relevance": "Provides a useful template for SceneTree, SupportGraph, StabilityCheck, and PhysicsRefinement stages."
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "title": "TriSplat: Simulation-Ready Feed-Forward 3D Scene Reconstruction",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.26115",
+      "paper_ids": {
+        "project": "https://lhmd.top/trisplat/",
+        "github_or_code": "https://lhmd.top/trisplat/"
+      },
+      "primary_branch": "A",
+      "secondary_branches": [
+        "B",
+        "E"
+      ],
+      "data": "RealEstate10K, DL3DV, ScanNet-style sparse-view reconstruction evaluations",
+      "method": "feed-forward oriented-triangle splatting network that predicts point maps, triangle attributes, camera poses, and mesh-ready surfaces",
+      "task": "reconstruct simulation-ready mesh scenes from sparse or pose-free images",
+      "novelty": "replaces Gaussian primitives with oriented triangle primitives that can be ingested by physics/rendering pipelines without post-hoc meshing",
+      "evidence": "The paper uses oriented triangle primitives to directly export simulation-ready mesh scenes from sparse images without Gaussian-to-mesh post-processing.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2605.26115",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://lhmd.top/trisplat/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Scene interaction semantics and physical material properties are outside the main contribution.",
+      "project_relevance": "Useful representation reference for MeshScene, CollisionSurface, and feed-forward sim-ready reconstruction."
+    },
+    {
+      "candidate_id": "CAND-0020",
+      "title": "Steerable Scene Generation",
+      "year": 2025,
+      "venue": "CoRL",
+      "url": "https://arxiv.org/abs/2505.04831",
+      "paper_ids": {
+        "project": "",
+        "github_or_code": ""
+      },
+      "primary_branch": "B",
+      "secondary_branches": [
+        "A",
+        "E"
+      ],
+      "data": "over 44M procedurally generated SE(3) scene placements",
+      "method": "diffusion scene prior steered by RL, conditioning and MCTS",
+      "task": "generate scenes satisfying task and physical objectives",
+      "novelty": "combines PCG-scale data with inference-time search and downstream steering",
+      "evidence": "The paper reports a scene prior trained from more than 44M procedurally generated SE(3) placements, then steered by RL and search objectives.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2505.04831",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://arxiv.org/abs/2505.04831",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Project/demo evidence is weaker than SAGE or SceneSmith; treat it as a method baseline rather than a visual-quality anchor.",
+      "project_relevance": "strong baseline for task-constrained scene generation"
+    },
+    {
+      "candidate_id": "CAND-0021",
+      "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "year": 2026,
+      "venue": "CVPR",
+      "url": "https://arxiv.org/abs/2602.10116",
+      "paper_ids": {
+        "project": "https://research.nvidia.com/labs/dir/sage/",
+        "github_or_code": "https://research.nvidia.com/labs/dir/sage/"
+      },
+      "primary_branch": "B",
+      "secondary_branches": [
+        "A",
+        "E"
+      ],
+      "data": "SAGE-10k task-conditioned synthetic scenes and generated objects",
+      "method": "agentic PCG with semantic, visual and physical critics",
+      "task": "task-conditioned indoor scene generation for embodied AI",
+      "novelty": "uses critics and iterative tool selection to improve simulator-ready scenes",
+      "evidence": "Official CVPR 2026 page describes SAGE-10k, task-conditioned scene generation, semantic/visual/physical critics, and scaling trends for policies trained on generated data.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2602.10116",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://research.nvidia.com/labs/dir/sage/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Very recent release; exact dataset/license details and independent reproduction still need checking.",
+      "project_relevance": "closest PCG baseline; it can use a typed interaction representation as I/O and evaluator"
+    },
+    {
+      "candidate_id": "CAND-0022",
+      "title": "EmbodiedGen: Towards a Generative 3D World Engine for Embodied Intelligence",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2506.10600",
+      "paper_ids": {
+        "project": "https://horizonrobotics.github.io/robot_lab/embodied_gen/index.html",
+        "github_or_code": "https://horizonrobotics.github.io/robot_lab/embodied_gen/index.html"
+      },
+      "primary_branch": "B",
+      "secondary_branches": [
+        "A",
+        "E"
+      ],
+      "data": "3D assets, articulated objects, scene and layout generation modules",
+      "method": "generative 3D world engine for embodied intelligence",
+      "task": "generate interactive 3D worlds and assets",
+      "novelty": "packages multiple generative modules for embodied world construction",
+      "evidence": "The arXiv abstract and project page describe image-to-3D, text-to-3D, texture, articulated-object, scene, and layout generation modules with URDF/simulation support.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2506.10600",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://horizonrobotics.github.io/robot_lab/embodied_gen/index.html",
+          "status": "verified"
+        }
+      ],
+      "limitations": "The engine-style paper covers many modules; per-module quality should be checked before using as a baseline.",
+      "project_relevance": "generation engine that can consume or be evaluated by a typed interactive-world representation"
+    },
+    {
+      "candidate_id": "CAND-0023",
+      "title": "SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes",
+      "year": 2026,
+      "venue": "ICML Spotlight",
+      "url": "https://arxiv.org/abs/2602.09153",
+      "paper_ids": {
+        "project": "https://scenesmith.github.io/",
+        "github_or_code": "https://scenesmith.github.io/"
+      },
+      "primary_branch": "B",
+      "secondary_branches": [
+        "A",
+        "E"
+      ],
+      "data": "text-prompted indoor scenes, generated static assets, retrieved articulated objects, physical properties, and example scene dataset",
+      "method": "hierarchical agentic text-to-scene framework with designer, critic, and orchestrator VLM agents across layout, furniture, and object-population stages",
+      "task": "generate dense simulation-ready indoor environments from natural language prompts",
+      "novelty": "combines agentic generation with physical property estimation and policy-evaluation-ready scene export",
+      "evidence": "Official ICML 2026 Spotlight page reports hierarchical VLM agents, dense object population, articulated-object retrieval, physical property estimation, under 2 percent inter-object collisions, and policy-evaluation use.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2602.09153",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://scenesmith.github.io/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Pipeline complexity and dependency on multiple generators/assets may make reproduction heavy.",
+      "project_relevance": "Top PCG baseline for PromptToScene, CriticLoop, ObjectPopulation, PhysicalProperty, and policy evaluation."
+    },
+    {
+      "candidate_id": "CAND-0024",
+      "title": "SceneFoundry: Generating Interactive Infinite 3D Worlds",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2601.05810",
+      "paper_ids": {
+        "project": "https://anc891203.github.io/SceneFoundry-Demo/",
+        "github_or_code": ""
+      },
+      "primary_branch": "B",
+      "secondary_branches": [
+        "A",
+        "E"
+      ],
+      "data": "apartment-scale generated 3D worlds with articulated assets from large-scale repositories",
+      "method": "language-guided diffusion with LLM floor-plan control, posterior sampling for object population, articulation-collision and walkability guidance",
+      "task": "generate large-scale interactive and physically usable indoor 3D worlds",
+      "novelty": "focuses on functionally articulated furniture and apartment-scale interactive world generation",
+      "evidence": "The arXiv paper reports language-guided diffusion for apartment-scale worlds with articulated furniture, articulation-collision guidance, and walkable-space constraints.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2601.05810",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://anc891203.github.io/SceneFoundry-Demo/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Project page appears lighter than SceneSmith/SAGE; visual quality and asset release should be rechecked.",
+      "project_relevance": "Relevant PCG line for LayoutConstraint, ArticulationConstraint, WalkableSpace, and infinite-world expansion."
+    },
+    {
+      "candidate_id": "CAND-0025",
+      "title": "HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2604.14268",
+      "paper_ids": {
+        "project": "https://hyworld.dev/",
+        "github_or_code": "https://huggingface.co/tencent/HY-World-2.0"
+      },
+      "primary_branch": "B",
+      "secondary_branches": [
+        "A",
+        "E"
+      ],
+      "data": "text, single-view, multi-view, and video inputs; generated 3DGS/mesh worlds; released model weights and code",
+      "method": "four-stage world pipeline with panorama generation, trajectory planning, world expansion, reconstruction, and WorldLens rendering",
+      "task": "reconstruct, generate, and simulate navigable 3D worlds from multimodal inputs",
+      "novelty": "unifies generation and reconstruction for explorable 3D worlds with open weights/code",
+      "evidence": "The technical report and official model card describe text/image/multi-view/video inputs, 3DGS/mesh outputs, WorldNav/WorldStereo/WorldMirror components, WorldLens rendering, and released weights/code.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2604.14268",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://hyworld.dev/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "General world generation is not robotics-specific; physical interaction fidelity must be tested before embodied-policy use.",
+      "project_relevance": "Strong open-source world-generation baseline for WorldRepresentation, TrajectoryPlan, 3DGSScene, MeshExport, and engine integration."
+    },
+    {
+      "candidate_id": "CAND-0026",
+      "title": "SpatialBot: Precise Spatial Understanding with Vision Language Models",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2406.13642",
+      "paper_ids": {
+        "project": "https://github.com/BAAI-DCAI/SpatialBot",
+        "github_or_code": "https://github.com/BAAI-DCAI/SpatialBot"
+      },
+      "primary_branch": "C",
+      "secondary_branches": [
+        "A"
+      ],
+      "data": "SpatialQA and RGB-D spatial-understanding benchmark data",
+      "method": "RGB-D vision-language model for precise spatial understanding",
+      "task": "spatial VQA and embodied AI tasks",
+      "novelty": "feeds both RGB and depth to improve metric spatial reasoning",
+      "evidence": "The paper reports SpatialQA/SpatialBench and an RGB-D VLM setup for depth-related spatial reasoning and embodied tasks.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2406.13642",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://github.com/BAAI-DCAI/SpatialBot",
+          "status": "verified"
+        }
+      ],
+      "limitations": "It is a spatial VLM rather than a generator or robot policy; use it as a validator or representation baseline.",
+      "project_relevance": "supports grounding spatial relations from observations"
+    },
+    {
+      "candidate_id": "CAND-0027",
+      "title": "HiSpatial: Taming Hierarchical 3D Spatial Understanding in Vision-Language Models",
+      "year": 2026,
+      "venue": "CVPR",
+      "url": "https://microsoft.github.io/HiSpatial/",
+      "paper_ids": {
+        "project": "https://microsoft.github.io/HiSpatial/",
+        "github_or_code": "https://microsoft.github.io/HiSpatial/"
+      },
+      "primary_branch": "C",
+      "secondary_branches": [
+        "A",
+        "D"
+      ],
+      "data": "about 5M images and over 45M objects converted into 3D spatial VQA pairs",
+      "method": "hierarchical 3D spatial understanding pipeline and VLM fine-tuning",
+      "task": "3D spatial relation and reasoning benchmarks",
+      "novelty": "large-scale hierarchical spatial supervision for VLMs",
+      "evidence": "Official CVPR 2026 page reports hierarchical 3D spatial supervision, roughly 5M images, and over 45M object-level spatial annotations.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://microsoft.github.io/HiSpatial/",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://microsoft.github.io/HiSpatial/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "It targets VLM spatial reasoning, not executable simulation; generated-world use needs conversion to validators.",
+      "project_relevance": "useful for spatial relation completion and validation"
+    },
+    {
+      "candidate_id": "CAND-0028",
+      "title": "SpaceTools: Tool-Augmented Spatial Reasoning via Double Interactive RL",
+      "year": 2026,
+      "venue": "CVPR",
+      "url": "https://spacetools.github.io/",
+      "paper_ids": {
+        "project": "https://spacetools.github.io/",
+        "github_or_code": "https://spacetools.github.io/"
+      },
+      "primary_branch": "C",
+      "secondary_branches": [
+        "D",
+        "E"
+      ],
+      "data": "Toolshed infrastructure and spatial reasoning benchmarks such as RoboSpatial-Home, BLINK and BOP-ask",
+      "method": "tool-augmented spatial reasoning with Double Interactive Reinforcement Learning",
+      "task": "metric spatial reasoning and robot tool use",
+      "novelty": "lets VLMs call vision and robotic tools for precise spatial answers",
+      "evidence": "Official CVPR 2026 page reports tool-augmented spatial reasoning over RoboSpatial-Home, BLINK, BOP-ask, and a 7-DOF robot as a spatial tool.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://spacetools.github.io/",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://spacetools.github.io/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Tool availability and exact integration cost need local testing.",
+      "project_relevance": "prototype for target-task validators that invoke measurement/simulation tools"
+    },
+    {
+      "candidate_id": "CAND-0029",
+      "title": "Spatial Reasoning with Vision-Language Models in Ego-Centric Multi-View Scenes",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2509.06266",
+      "paper_ids": {
+        "project": "https://arxiv.org/abs/2509.06266",
+        "github_or_code": ""
+      },
+      "primary_branch": "C",
+      "secondary_branches": [
+        "E"
+      ],
+      "data": "over 8600 egocentric multi-view outdoor spatial QA pairs",
+      "method": "cognitive-map based post-training using estimated global 3D coordinates",
+      "task": "multi-view egocentric spatial reasoning",
+      "novelty": "evaluates embodied multi-view spatial reasoning beyond single images",
+      "evidence": "The paper introduces Ego3D-Bench with 8600+ human-verified egocentric multi-view QA pairs and Ego3D-VLM with cognitive-map post-training.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2509.06266",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://arxiv.org/abs/2509.06266",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Outdoor egocentric scenes are useful for spatial reasoning but less directly aligned with household manipulation scenes.",
+      "project_relevance": "supports Scene coordinate-frame and relation grounding"
+    },
+    {
+      "candidate_id": "CAND-0030",
+      "title": "Seeing Across Views / MV-RoboBench",
+      "year": 2026,
+      "venue": "ICLR",
+      "url": "https://openreview.net/pdf?id=jXDZJAfRZB",
+      "paper_ids": {
+        "project": "https://openreview.net/pdf?id=jXDZJAfRZB",
+        "github_or_code": ""
+      },
+      "primary_branch": "C",
+      "secondary_branches": [
+        "D",
+        "E"
+      ],
+      "data": "multi-view robotic manipulation scenes with spatial QA",
+      "method": "benchmarking multi-view spatial reasoning of VLMs in robotic scenes",
+      "task": "spatial and robotic reasoning across synchronized camera views",
+      "novelty": "shows single-view spatial reasoning does not transfer reliably to robotic multi-view settings",
+      "evidence": "The ICLR 2026 paper benchmarks multi-view spatial reasoning in robotic manipulation scenes and shows single-view reasoning does not reliably transfer.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://openreview.net/pdf?id=jXDZJAfRZB",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://openreview.net/pdf?id=jXDZJAfRZB",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Benchmark details should be checked from the OpenReview paper before using exact metric values.",
+      "project_relevance": "important benchmark for observation-to-scene-graph parsing"
+    },
+    {
+      "candidate_id": "CAND-0031",
+      "title": "DepthVLA: Enhancing Vision-Language-Action Models with Depth-Aware Spatial Reasoning",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2510.13375",
+      "paper_ids": {
+        "project": "https://arxiv.org/abs/2510.13375",
+        "github_or_code": ""
+      },
+      "primary_branch": "C",
+      "secondary_branches": [
+        "D"
+      ],
+      "data": "real-world, LIBERO and Simpler evaluations",
+      "method": "mixture-of-transformers combining VLM, depth transformer and action expert",
+      "task": "depth-aware language-conditioned manipulation",
+      "novelty": "adds explicit depth reasoning to VLA with strong real and sim gains",
+      "evidence": "The paper reports depth-aware mixture-of-transformers integration and gains on real-world tasks, LIBERO, and Simpler.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2510.13375",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://arxiv.org/abs/2510.13375",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Code availability is stated as planned; exact reproducibility is pending.",
+      "project_relevance": "supports depth-based scene grounding and precise spatial action"
+    },
+    {
+      "candidate_id": "CAND-0032",
+      "title": "ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding for General Robot Manipulation",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2603.13788",
+      "paper_ids": {
+        "project": "https://oucx117.github.io/ST-VLA/",
+        "github_or_code": "https://oucx117.github.io/ST-VLA/"
+      },
+      "primary_branch": "C",
+      "secondary_branches": [
+        "D",
+        "A"
+      ],
+      "data": "ST-Human with 14 tasks and 300k episodes plus RLBench and real-world tasks",
+      "method": "3D-4D representation, spatial masks and spatiotemporal VLM",
+      "task": "open-world long-horizon robot manipulation",
+      "novelty": "bridges semantic reasoning and continuous control through 4D spatial context",
+      "evidence": "The paper introduces ST-Human with 14 tasks and 300k episodes plus 3D-4D spatial masks for long-horizon manipulation.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2603.13788",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://oucx117.github.io/ST-VLA/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Dataset release and cross-embodiment reproduction need follow-up.",
+      "project_relevance": "points to temporal/deformable state and trajectory grounding"
+    },
+    {
+      "candidate_id": "CAND-0033",
+      "title": "SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning",
+      "year": 2026,
+      "venue": "CVPR",
+      "url": "https://arxiv.org/abs/2603.27437",
+      "paper_ids": {
+        "project": "https://spatial-stack.github.io/",
+        "github_or_code": "https://spatial-stack.github.io/"
+      },
+      "primary_branch": "C",
+      "secondary_branches": [
+        "A",
+        "D"
+      ],
+      "data": "multiple 3D spatial reasoning benchmarks and VLM-SpatialStack training/evaluation data",
+      "method": "layered geometry-language fusion that injects multi-level geometric features into a VLM hierarchy",
+      "task": "3D spatial reasoning for embodied and physical AI systems",
+      "novelty": "moves beyond late-stage geometry fusion by stacking hierarchical geometric signals through the language backbone",
+      "evidence": "Official CVPR 2026 page and arXiv report hierarchical vision-geometry-language fusion and broad 3D spatial reasoning gains.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2603.27437",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://spatial-stack.github.io/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "It is a spatial reasoning model rather than a task generator; role is validator/encoder.",
+      "project_relevance": "Good spatial encoder/validator reference for local geometry, global context, and relation checking in generated worlds."
+    },
+    {
+      "candidate_id": "CAND-0034",
+      "title": "VLA-R1: Enhancing Reasoning in Vision-Language-Action Models",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2510.01623",
+      "paper_ids": {
+        "project": "https://gigaai-research.github.io/VLA-R1",
+        "github_or_code": "https://github.com/GigaAI-research/VLA-R1"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [
+        "C",
+        "E"
+      ],
+      "data": "reasoning-augmented VLA training examples",
+      "method": "explicit reasoning enhancement for VLA",
+      "task": "vision-language-action reasoning and manipulation",
+      "novelty": "adds reasoning traces/planning to VLA action generation",
+      "evidence": "The paper reports RLVR/GRPO post-training, VLA-CoT-13K, and in-domain/OOD/sim/real-robot evaluations.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2510.01623",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://gigaai-research.github.io/VLA-R1",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Model/code/dataset release timing should be rechecked before depending on it.",
+      "project_relevance": "bridges target-task predicates and action selection"
+    },
+    {
+      "candidate_id": "CAND-0035",
+      "title": "World Action Models: The Next Frontier in Embodied AI",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.12090",
+      "paper_ids": {
+        "project": "https://arxiv.org/abs/2605.12090",
+        "github_or_code": ""
+      },
+      "primary_branch": "D",
+      "secondary_branches": [
+        "E",
+        "A"
+      ],
+      "data": "survey/position paper over VLA and world-model research",
+      "method": "formal definition of action-conditioned world modeling",
+      "task": "model physical evolution under interventions",
+      "novelty": "separates reactive VLA from intervention-aware world-action modeling",
+      "evidence": "The paper formalizes action-conditioned world modeling and surveys data/evaluation ecosystems for visual fidelity, physical commonsense, and action plausibility.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2605.12090",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://arxiv.org/abs/2605.12090",
+          "status": "verified"
+        }
+      ],
+      "limitations": "It is a survey/position paper rather than a runnable model.",
+      "project_relevance": "aligns directly with target-task StateTransition and ValidationReport"
+    },
+    {
+      "candidate_id": "CAND-0036",
+      "title": "Physically Viable World Models",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.30542",
+      "paper_ids": {
+        "project": "https://arxiv.org/abs/2605.30542",
+        "github_or_code": ""
+      },
+      "primary_branch": "D",
+      "secondary_branches": [
+        "A",
+        "E"
+      ],
+      "data": "conceptual/query-conditioned embodied AI framework",
+      "method": "physically viable transition model for intervention queries",
+      "task": "answer action-outcome queries under physical structure",
+      "novelty": "requires world models to preserve intervention-relevant physical structure",
+      "evidence": "The paper frames world models around intervention queries and physical viability rather than passive video prediction.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2605.30542",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://arxiv.org/abs/2605.30542",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Conceptual framework; implementation and benchmark artifacts need follow-up.",
+      "project_relevance": "supports the target representation as a query-conditioned physical interface"
+    },
+    {
+      "candidate_id": "CAND-0037",
+      "title": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+      "year": 2025,
+      "venue": "arXiv / NVIDIA technical report",
+      "url": "https://arxiv.org/abs/2503.14734",
+      "paper_ids": {
+        "project": "https://research.nvidia.com/labs/lpr/publication/gr00tn1_2025/",
+        "github_or_code": "https://huggingface.co/nvidia/GR00T-N1-2B"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [
+        "E",
+        "A"
+      ],
+      "data": "large mixed humanoid/robot datasets plus simulation benchmark evaluations and released model artifacts",
+      "method": "open foundation model for humanoid robots with reasoning and action components trained on diverse robot data",
+      "task": "generalist humanoid robot control under language and visual instructions",
+      "novelty": "one of the first open humanoid foundation models with official weights and reproducible release path",
+      "evidence": "Official NVIDIA page and arXiv describe an open humanoid foundation model with simulation benchmarks and multi-embodiment training evidence.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2503.14734",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://research.nvidia.com/labs/lpr/publication/gr00tn1_2025/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Humanoid focus may not transfer directly to tabletop generation tasks; later GR00T releases should be tracked separately.",
+      "project_relevance": "Important VLA baseline for humanoid embodiments and synthetic-data-to-policy evaluation."
+    },
+    {
+      "candidate_id": "CAND-0038",
+      "title": "Green-VLA: Staged Vision-Language-Action Model for Generalist Robots",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2602.00919",
+      "paper_ids": {
+        "project": "https://greenvla.github.io/",
+        "github_or_code": ""
+      },
+      "primary_branch": "D",
+      "secondary_branches": [
+        "E"
+      ],
+      "data": "3000 hours of demonstrations, Simpler BRIDGE WidowX, CALVIN ABC-D, and real-robot evaluations",
+      "method": "five-stage VLA curriculum with multimodal grounding, multi-embodiment pretraining, embodiment adaptation, and RL policy alignment",
+      "task": "generalist robot control across humanoids, mobile manipulators, and fixed-base arms",
+      "novelty": "combines staged training, embodiment-aware actions, OOD detection, and RL alignment for real deployment",
+      "evidence": "The paper reports a staged curriculum, 3000 hours of demonstrations, multi-embodiment action interface, and real/sim evaluations.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2602.00919",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://greenvla.github.io/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Hardware-specific parts and data availability need checking.",
+      "project_relevance": "Useful systems reference for staged VLA training and safety-aware execution."
+    },
+    {
+      "candidate_id": "CAND-0039",
+      "title": "XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations",
+      "year": 2025,
+      "venue": "ICML Oral",
+      "url": "https://arxiv.org/abs/2511.02776",
+      "paper_ids": {
+        "project": "https://xr-1-vla.github.io/",
+        "github_or_code": "https://xr-1-vla.github.io/"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [
+        "C",
+        "E"
+      ],
+      "data": "large-scale cross-embodiment robot datasets plus more than 14,000 rollouts on six robot embodiments and 120+ tasks",
+      "method": "Unified Vision-Motion Codes learned by dual-branch VQ-VAE with three-stage VLA training",
+      "task": "versatile robot manipulation across diverse embodiments and environments",
+      "novelty": "aligns visual dynamics and robot motion into a shared intermediate code for scalable VLA learning",
+      "evidence": "Project and arXiv report UVMC, three-stage training, six robot embodiments, more than 120 tasks, and over 14k real-world rollouts.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2511.02776",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://xr-1-vla.github.io/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Large-scale rollout claims are official; independent reproduction and checkpoint availability should be checked.",
+      "project_relevance": "Strong VLA reference for cross-embodiment action representation and real rollout quality."
+    },
+    {
+      "candidate_id": "CAND-0040",
+      "title": "TwinVLA: Data-Efficient Bimanual Manipulation with Twin Single-Arm Vision-Language-Action Models",
+      "year": 2025,
+      "venue": "ICLR",
+      "url": "https://arxiv.org/abs/2511.05275",
+      "paper_ids": {
+        "project": "https://jellyho.github.io/TwinVLA/",
+        "github_or_code": "https://jellyho.github.io/TwinVLA/"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [
+        "E"
+      ],
+      "data": "single-arm public robot data plus bimanual real-world and simulation task evaluations",
+      "method": "modular composition of two pretrained single-arm VLA policies into a coordinated bimanual policy",
+      "task": "data-efficient bimanual manipulation from vision-language instructions",
+      "novelty": "reuses single-arm data and policies instead of requiring full bimanual pretraining",
+      "evidence": "Official ICLR 2026 page reports composing two single-arm VLAs for bimanual tasks without bimanual pretraining.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2511.05275",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://jellyho.github.io/TwinVLA/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "It is bimanual-policy focused; use as baseline for dexterous/bimanual tasks rather than general world generation.",
+      "project_relevance": "Good baseline for bimanual task generation and policy-evaluation suites."
+    },
+    {
+      "candidate_id": "CAND-0041",
+      "title": "MMaDA-VLA: Large Diffusion Vision-Language-Action Model with Unified Multi-Modal Instruction and Generation",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2603.25406",
+      "paper_ids": {
+        "project": "https://arxiv.org/abs/2603.25406",
+        "github_or_code": "https://huggingface.co/papers/2603.25406"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [
+        "C",
+        "E"
+      ],
+      "data": "simulation benchmarks and real-world robot tasks including LIBERO and CALVIN-style evaluations",
+      "method": "native discrete diffusion VLA that jointly denoises language, images, future observations, and action chunks",
+      "task": "language-conditioned robot manipulation with parallel action and future-observation generation",
+      "novelty": "unifies multimodal instruction understanding, future visual generation, and action prediction in one diffusion backbone",
+      "evidence": "The paper reports a native discrete diffusion VLA that jointly denoises language, images, future goal observations, and action chunks, with LIBERO/CALVIN results.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2603.25406",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://arxiv.org/abs/2603.25406",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Very new; code/checkpoint maturity should be rechecked.",
+      "project_relevance": "Relevant to world-action interfaces because it predicts future visual outcomes and actions jointly."
+    },
+    {
+      "candidate_id": "CAND-0042",
+      "title": "EWMBench: Evaluating Embodied World Models",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2505.09694",
+      "paper_ids": {
+        "project": "https://arxiv.org/abs/2505.09694",
+        "github_or_code": ""
+      },
+      "primary_branch": "E",
+      "secondary_branches": [
+        "D"
+      ],
+      "data": "embodied world model evaluation scenarios",
+      "method": "multi-dimensional embodied world-model benchmark",
+      "task": "evaluate scene, motion, semantic and interaction consistency",
+      "novelty": "moves world-model evaluation beyond pixel/video quality",
+      "evidence": "The benchmark targets scene, motion, semantic, and interaction consistency for embodied world models.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2505.09694",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://arxiv.org/abs/2505.09694",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Exact scenarios, metrics, and release artifacts need rechecking before central use.",
+      "project_relevance": "evaluation philosophy for interactive embodied generation benchmark"
+    },
+    {
+      "candidate_id": "CAND-0043",
+      "title": "WorldScore: A Unified Evaluation Benchmark for World Generation",
+      "year": 2025,
+      "venue": "ICCV",
+      "url": "https://arxiv.org/abs/2504.00983",
+      "paper_ids": {
+        "project": "https://haoyi-duan.github.io/WorldScore/",
+        "github_or_code": "https://haoyi-duan.github.io/WorldScore/"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [
+        "B"
+      ],
+      "data": "world generation outputs and scoring dimensions",
+      "method": "unified benchmark for world generation",
+      "task": "score quality, consistency, controllability and interactivity",
+      "novelty": "multi-dimensional evaluation for generated worlds",
+      "evidence": "The benchmark includes 3000 test examples and evaluates controllability, quality, and dynamics across 19 representative world-generation models.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2504.00983",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://haoyi-duan.github.io/WorldScore/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "It evaluates next-scene/world generation, not all embodied interaction properties; map metrics carefully to our benchmark.",
+      "project_relevance": "baseline for interactive embodied generation benchmark metrics"
+    },
+    {
+      "candidate_id": "CAND-0044",
+      "title": "WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models",
+      "year": 2026,
+      "venue": "arXiv / benchmark",
+      "url": "https://arxiv.org/abs/2602.08971",
+      "paper_ids": {
+        "project": "https://world-arena.ai/",
+        "github_or_code": "https://world-arena.ai/"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [
+        "D",
+        "B"
+      ],
+      "data": "public benchmark, leaderboard, dataset, and challenge for embodied world models",
+      "method": "perception and functional-utility benchmark with 16 numerical video metrics, task-functionality evaluation, human judgment, and EWMScore",
+      "task": "evaluate embodied world models as perceptual predictors, synthetic data engines, policy evaluators, and action planners",
+      "novelty": "ties world-model evaluation to functional embodied utility rather than video quality alone",
+      "evidence": "Official benchmark and arXiv describe perception metrics, embodied task functionality, EWMScore, public leaderboard, dataset, and challenge links.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2602.08971",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://world-arena.ai/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Leaderboard and challenge are active; exact baselines and datasets may evolve quickly.",
+      "project_relevance": "Important evaluation target for our interactive embodied world generator and world-model branches."
+    },
+    {
+      "candidate_id": "CAND-0045",
+      "title": "World-in-World: World Models in a Closed-Loop World",
+      "year": 2025,
+      "venue": "ICLR Oral",
+      "url": "https://arxiv.org/abs/2510.18135",
+      "paper_ids": {
+        "project": "https://world-in-world.github.io/",
+        "github_or_code": "https://github.com/World-In-World/world-in-world"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [
+        "D",
+        "E"
+      ],
+      "data": "closed-loop world-model benchmark tasks, unified action API, code, leaderboard, and demos",
+      "method": "closed-loop evaluation platform where planners propose actions and world models predict future observations inside task loops",
+      "task": "evaluate visual world models by embodied utility in closed-loop interaction",
+      "novelty": "evaluates world models under recursive agent-world interaction rather than one-step visual prediction",
+      "evidence": "Official ICLR 2026 Oral page and code describe closed-loop world-model evaluation with unified action APIs and benchmark tasks.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://arxiv.org/abs/2510.18135",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://world-in-world.github.io/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Closed-loop utility is benchmark-specific; model coverage and task set should be checked before citing exact rankings.",
+      "project_relevance": "Provides a harness template for action-conditioned rollout evaluation and closed-loop generated-world testing."
+    },
+    {
+      "candidate_id": "CAND-0046",
+      "title": "Ctrl-World",
+      "year": 2026,
+      "venue": "ICLR",
+      "url": "https://ctrl-world.github.io/",
+      "paper_ids": {
+        "project": "https://ctrl-world.github.io/",
+        "github_or_code": "https://ctrl-world.github.io/"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [
+        "D",
+        "E"
+      ],
+      "data": "policy-in-the-loop rollouts and real-world/world-model comparisons for generalist robot policies",
+      "method": "controllable world-model evaluation designed to let generalist robot policies roll out actions inside imagination space",
+      "task": "evaluate whether world models support policy-in-the-loop manipulation rollouts",
+      "novelty": "centers evaluation on policy utility and rollout control rather than passive generation quality",
+      "evidence": "Official ICLR 2026 page describes policy-in-the-loop rollouts with generalist robot policies and comparisons between real-world and imagined rollouts.",
+      "claim_checks": [
+        {
+          "claim": "primary/official source exists",
+          "source": "https://ctrl-world.github.io/",
+          "status": "verified"
+        },
+        {
+          "claim": "project/demo evidence checked where available",
+          "source": "https://ctrl-world.github.io/",
+          "status": "verified"
+        }
+      ],
+      "limitations": "Needs deeper source checking for dataset/model release and exact benchmark protocol.",
+      "project_relevance": "Useful benchmark design for world-action model validators and imagined rollout tests."
     }
   ],
   "demo_cards": [
     {
       "candidate_id": "CAND-0001",
       "demo_score": 3,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://www.youtube.com/watch?v=NA"
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://scenefun3d.github.io/. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0002",
       "demo_score": 3,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://behavior.stanford.edu/"
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://behavior.stanford.edu/. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0003",
       "demo_score": 4,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://physx-omni.github.io/"
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://physx-omni.github.io/. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0004",
       "demo_score": 4,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://physdreamer.github.io/"
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://physdreamer.github.io/. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0005",
       "demo_score": 4,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://feature-splatting.github.io/"
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://feature-splatting.github.io/. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0006",
       "demo_score": 4,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://physcene.github.io/"
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://physcene.github.io/. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0007",
       "demo_score": 4,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://yueyang1996.github.io/holodeck/"
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://yueyang1996.github.io/holodeck/. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0008",
       "demo_score": 4,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://infinigen.org/"
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://infinigen.org/. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0009",
       "demo_score": 4,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://robogen-ai.github.io/"
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://robogen-ai.github.io/. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0010",
       "demo_score": 4,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://spatialvla.github.io/"
+      "verification_status": "paper_only",
+      "demo_notes": "Checked primary/official source: https://arxiv.org/abs/2501.15830. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0011",
       "demo_score": 4,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://octo-models.github.io/"
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://octo-models.github.io/. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0012",
       "demo_score": 5,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://openvla.github.io/"
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://openvla.github.io/. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0013",
       "demo_score": 5,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://www.pi.website/blog/pi0"
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://www.pi.website/blog/pi0. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0014",
       "demo_score": 3,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official demo/figure source checked: https://roboverse.wiki/dataset_benchmark/benchmark/overview"
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://roboverse.wiki/. Demo score records availability, not independent reproduction."
     },
     {
       "candidate_id": "CAND-0015",
       "demo_score": 2,
-      "verification_status": "official_page_checked",
-      "demo_notes": "Official project page and code/benchmark repository checked."
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "demo_score": 4,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://physx-anything.github.io/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "demo_score": 2,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://arxiv.org/abs/2606.03994. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://rest3d.org/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "demo_score": 2,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://lhmd.top/trisplat/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0020",
+      "demo_score": 2,
+      "verification_status": "paper_only",
+      "demo_notes": "Checked primary/official source: https://arxiv.org/abs/2505.04831. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0021",
+      "demo_score": 4,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://research.nvidia.com/labs/dir/sage/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0022",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://horizonrobotics.github.io/robot_lab/embodied_gen/index.html. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0023",
+      "demo_score": 4,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://scenesmith.github.io/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0024",
+      "demo_score": 2,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://anc891203.github.io/SceneFoundry-Demo/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0025",
+      "demo_score": 5,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://hyworld.dev/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0026",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://github.com/BAAI-DCAI/SpatialBot. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0027",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://microsoft.github.io/HiSpatial/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0028",
+      "demo_score": 4,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://spacetools.github.io/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0029",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://arxiv.org/abs/2509.06266. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0030",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://openreview.net/pdf?id=jXDZJAfRZB. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0031",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://arxiv.org/abs/2510.13375. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0032",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://oucx117.github.io/ST-VLA/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0033",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://spatial-stack.github.io/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0034",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://gigaai-research.github.io/VLA-R1. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0035",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://arxiv.org/abs/2605.12090. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0036",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://arxiv.org/abs/2605.30542. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0037",
+      "demo_score": 5,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://research.nvidia.com/labs/lpr/publication/gr00tn1_2025/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0038",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://greenvla.github.io/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0039",
+      "demo_score": 4,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://xr-1-vla.github.io/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0040",
+      "demo_score": 4,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://jellyho.github.io/TwinVLA/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0041",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://arxiv.org/abs/2603.25406. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0042",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://arxiv.org/abs/2505.09694. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0043",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://haoyi-duan.github.io/WorldScore/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0044",
+      "demo_score": 4,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://world-arena.ai/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0045",
+      "demo_score": 4,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://world-in-world.github.io/. Demo score records availability, not independent reproduction."
+    },
+    {
+      "candidate_id": "CAND-0046",
+      "demo_score": 3,
+      "verification_status": "verified_official",
+      "demo_notes": "Checked primary/official source: https://ctrl-world.github.io/. Demo score records availability, not independent reproduction."
     }
   ]
 }

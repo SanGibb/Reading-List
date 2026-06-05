@@ -9,7 +9,7 @@
         "https://scenefun3d.github.io/",
         "https://physdreamer.github.io/"
       ],
-      "notes": "Used for BEHAVIOR-1K, SceneFun3D, PhysDreamer lines."
+      "notes": "Used for BEHAVIOR-1K, SceneFun3D, PhysDreamer, WorldScore-adjacent Stanford lines."
     },
     {
       "source_id": "princeton-pvl-infinigen",
@@ -27,6 +27,15 @@
         "https://github.com/allenai/Holodeck"
       ],
       "notes": "Used for Holodeck embodied environment generation."
+    },
+    {
+      "source_id": "nvidia-cosmos-isaac",
+      "status": "checked",
+      "urls_checked": [
+        "https://research.nvidia.com/labs/dir/sage/",
+        "https://research.nvidia.com/labs/lpr/publication/gr00tn1_2025/"
+      ],
+      "notes": "Used for SAGE, GR00T N1, SpaceTools, and physical AI follow-up search."
     },
     {
       "source_id": "cmu-genesis-robogen",
@@ -68,6 +77,34 @@
         "https://roboverse.wiki/"
       ],
       "notes": "Used for RoboVerse infrastructure evidence."
+    },
+    {
+      "source_id": "mit-csail-drake-scene-generation",
+      "status": "checked",
+      "urls_checked": [
+        "https://scenesmith.github.io/"
+      ],
+      "notes": "Used for SceneSmith simulation-ready indoor scene generation."
+    },
+    {
+      "source_id": "tencent-hunyuan-world",
+      "status": "checked",
+      "urls_checked": [
+        "https://hyworld.dev/",
+        "https://huggingface.co/tencent/HY-World-2.0"
+      ],
+      "notes": "Used for HY-World 2.0 open world generation line."
+    },
+    {
+      "source_id": "world-model-benchmarks",
+      "status": "checked",
+      "urls_checked": [
+        "https://world-arena.ai/",
+        "https://world-in-world.github.io/",
+        "https://ctrl-world.github.io/",
+        "https://haoyi-duan.github.io/WorldScore/"
+      ],
+      "notes": "Used for embodied/world-model evaluation infrastructure."
     }
   ],
   "candidates": [
@@ -77,7 +114,7 @@
       "branch_hint": "A",
       "source_url": "https://scenefun3d.github.io/",
       "source_type": "primary_or_official",
-      "discovered_from": "local_seed_plus_primary_source_search",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
       "why_candidate": "Defines reusable fields Object, Part, Affordance, FunctionalElement, TaskLanguage, MotionParameter for our typed interactive-world representation."
     },
     {
@@ -86,7 +123,7 @@
       "branch_hint": "A",
       "source_url": "https://arxiv.org/abs/2403.09227",
       "source_type": "primary_or_official",
-      "discovered_from": "local_seed_plus_primary_source_search",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
       "why_candidate": "Directly informs Task, StatePredicate, GoalCondition, SceneObject, PhysicalProperty, and validation protocol design."
     },
     {
@@ -95,7 +132,7 @@
       "branch_hint": "A",
       "source_url": "https://arxiv.org/abs/2605.21572",
       "source_type": "primary_or_official",
-      "discovered_from": "local_seed_plus_primary_source_search",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
       "why_candidate": "Strong candidate for PhysicalProperty, Material, DeformableState, KinematicJoint, and simulator export fields."
     },
     {
@@ -104,7 +141,7 @@
       "branch_hint": "A",
       "source_url": "https://arxiv.org/abs/2404.13026",
       "source_type": "primary_or_official",
-      "discovered_from": "primary_source_search",
+      "discovered_from": "primary_source_full_coverage_search",
       "why_candidate": "Provides concrete fields for MaterialField, ExternalForce, DynamicResponse, and DeformableState validators."
     },
     {
@@ -113,7 +150,7 @@
       "branch_hint": "A",
       "source_url": "https://arxiv.org/abs/2404.01223",
       "source_type": "primary_or_official",
-      "discovered_from": "primary_source_search",
+      "discovered_from": "primary_source_full_coverage_search",
       "why_candidate": "Useful for SceneRepresentation, MaterialProperty, SegmentByText, PhysicsEdit, and simulator-backed validation."
     },
     {
@@ -122,7 +159,7 @@
       "branch_hint": "B",
       "source_url": "https://arxiv.org/abs/2404.09465",
       "source_type": "primary_or_official",
-      "discovered_from": "local_seed_plus_primary_source_search",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
       "why_candidate": "Baseline for InteractionConstraint, Reachability, Collision, Articulation, and GeneratedScene validity metrics."
     },
     {
@@ -131,7 +168,7 @@
       "branch_hint": "B",
       "source_url": "https://arxiv.org/abs/2312.09067",
       "source_type": "primary_or_official",
-      "discovered_from": "primary_source_search",
+      "discovered_from": "primary_source_full_coverage_search",
       "why_candidate": "Important baseline for Prompt, SceneSpec, SpatialConstraint, AssetRetrieval, LayoutOptimization, and downstream embodied evaluation."
     },
     {
@@ -140,7 +177,7 @@
       "branch_hint": "B",
       "source_url": "https://arxiv.org/abs/2406.11824",
       "source_type": "primary_or_official",
-      "discovered_from": "primary_source_search",
+      "discovered_from": "primary_source_full_coverage_search",
       "why_candidate": "Strong generator for Scene, Asset, Annotation, LayoutConstraint, and synthetic data pipelines."
     },
     {
@@ -149,7 +186,7 @@
       "branch_hint": "B",
       "source_url": "https://arxiv.org/abs/2311.01455",
       "source_type": "primary_or_official",
-      "discovered_from": "local_seed_plus_primary_source_search",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
       "why_candidate": "Directly motivates TaskGenerator, SceneGenerator, SupervisionGenerator, PolicyLearner, and validation-loop abstractions."
     },
     {
@@ -158,7 +195,7 @@
       "branch_hint": "C",
       "source_url": "https://arxiv.org/abs/2501.15830",
       "source_type": "primary_or_official",
-      "discovered_from": "local_seed_plus_primary_source_search",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
       "why_candidate": "Useful for Scene.spatial_graph, Ego3DEncoding, SpatialActionToken, and spatial instruction validation."
     },
     {
@@ -167,7 +204,7 @@
       "branch_hint": "D",
       "source_url": "https://arxiv.org/abs/2405.12213",
       "source_type": "primary_or_official",
-      "discovered_from": "local_seed_plus_primary_source_search",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
       "why_candidate": "Baseline for Policy, Observation, ActionDistribution, GoalImageCondition, and embodiment adaptation."
     },
     {
@@ -176,7 +213,7 @@
       "branch_hint": "D",
       "source_url": "https://arxiv.org/abs/2406.09246",
       "source_type": "primary_or_official",
-      "discovered_from": "local_seed_plus_primary_source_search",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
       "why_candidate": "Baseline for VLA policy execution, generated-task transfer, action-token interface, and finetuning experiments."
     },
     {
@@ -185,7 +222,7 @@
       "branch_hint": "D",
       "source_url": "https://arxiv.org/abs/2410.24164",
       "source_type": "primary_or_official",
-      "discovered_from": "local_seed_plus_primary_source_search",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
       "why_candidate": "Sets a high demo-quality target for robot execution, deformable manipulation, long-horizon interaction, and continuous action generation."
     },
     {
@@ -194,7 +231,7 @@
       "branch_hint": "E",
       "source_url": "https://arxiv.org/abs/2504.18904",
       "source_type": "primary_or_official",
-      "discovered_from": "local_seed_plus_primary_source_search",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
       "why_candidate": "Useful for benchmark packaging, generated-task evaluation, policy baselines, and trajectory/data schema design."
     },
     {
@@ -203,160 +240,657 @@
       "branch_hint": "E",
       "source_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html",
       "source_type": "primary_or_official",
-      "discovered_from": "previous_deep_dive_plus_primary_source_search",
+      "discovered_from": "primary_source_full_coverage_search",
       "why_candidate": "downstream benchmark for testing whether generated interactive environments preserve object identity, spatial relations, and semantic affordances"
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "title": "PhysX-Anything: Simulation-Ready Physical 3D Assets from Single Image",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2511.13648",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Strong object-level source for PhysicalProperty, KinematicJoint, AssetToSimulator, and contact-rich policy-learning validation."
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "title": "SimuScene: Simulation-Ready Compositional 3D Scene Reconstruction from a Single Image",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2606.03994",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Relevant to SceneTree, SupportRelation, PhysicalViolation, and simulator-ready reconstruction validators."
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "title": "REST3D: Reconstructing Physically Stable 3D Scenes from a Single Image",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2605.30338",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Provides a useful template for SceneTree, SupportGraph, StabilityCheck, and PhysicsRefinement stages."
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "title": "TriSplat: Simulation-Ready Feed-Forward 3D Scene Reconstruction",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2605.26115",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Useful representation reference for MeshScene, CollisionSurface, and feed-forward sim-ready reconstruction."
+    },
+    {
+      "candidate_id": "CAND-0020",
+      "title": "Steerable Scene Generation",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2505.04831",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "strong baseline for task-constrained scene generation"
+    },
+    {
+      "candidate_id": "CAND-0021",
+      "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2602.10116",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "closest PCG baseline; it can use a typed interaction representation as I/O and evaluator"
+    },
+    {
+      "candidate_id": "CAND-0022",
+      "title": "EmbodiedGen: Towards a Generative 3D World Engine for Embodied Intelligence",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2506.10600",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "generation engine that can consume or be evaluated by a typed interactive-world representation"
+    },
+    {
+      "candidate_id": "CAND-0023",
+      "title": "SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2602.09153",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Top PCG baseline for PromptToScene, CriticLoop, ObjectPopulation, PhysicalProperty, and policy evaluation."
+    },
+    {
+      "candidate_id": "CAND-0024",
+      "title": "SceneFoundry: Generating Interactive Infinite 3D Worlds",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2601.05810",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Relevant PCG line for LayoutConstraint, ArticulationConstraint, WalkableSpace, and infinite-world expansion."
+    },
+    {
+      "candidate_id": "CAND-0025",
+      "title": "HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2604.14268",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Strong open-source world-generation baseline for WorldRepresentation, TrajectoryPlan, 3DGSScene, MeshExport, and engine integration."
+    },
+    {
+      "candidate_id": "CAND-0026",
+      "title": "SpatialBot: Precise Spatial Understanding with Vision Language Models",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2406.13642",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "supports grounding spatial relations from observations"
+    },
+    {
+      "candidate_id": "CAND-0027",
+      "title": "HiSpatial: Taming Hierarchical 3D Spatial Understanding in Vision-Language Models",
+      "branch_hint": "C",
+      "source_url": "https://microsoft.github.io/HiSpatial/",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "useful for spatial relation completion and validation"
+    },
+    {
+      "candidate_id": "CAND-0028",
+      "title": "SpaceTools: Tool-Augmented Spatial Reasoning via Double Interactive RL",
+      "branch_hint": "C",
+      "source_url": "https://spacetools.github.io/",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "prototype for target-task validators that invoke measurement/simulation tools"
+    },
+    {
+      "candidate_id": "CAND-0029",
+      "title": "Spatial Reasoning with Vision-Language Models in Ego-Centric Multi-View Scenes",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2509.06266",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "supports Scene coordinate-frame and relation grounding"
+    },
+    {
+      "candidate_id": "CAND-0030",
+      "title": "Seeing Across Views / MV-RoboBench",
+      "branch_hint": "C",
+      "source_url": "https://openreview.net/pdf?id=jXDZJAfRZB",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "important benchmark for observation-to-scene-graph parsing"
+    },
+    {
+      "candidate_id": "CAND-0031",
+      "title": "DepthVLA: Enhancing Vision-Language-Action Models with Depth-Aware Spatial Reasoning",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2510.13375",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "supports depth-based scene grounding and precise spatial action"
+    },
+    {
+      "candidate_id": "CAND-0032",
+      "title": "ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding for General Robot Manipulation",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2603.13788",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "points to temporal/deformable state and trajectory grounding"
+    },
+    {
+      "candidate_id": "CAND-0033",
+      "title": "SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2603.27437",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Good spatial encoder/validator reference for local geometry, global context, and relation checking in generated worlds."
+    },
+    {
+      "candidate_id": "CAND-0034",
+      "title": "VLA-R1: Enhancing Reasoning in Vision-Language-Action Models",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2510.01623",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "bridges target-task predicates and action selection"
+    },
+    {
+      "candidate_id": "CAND-0035",
+      "title": "World Action Models: The Next Frontier in Embodied AI",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2605.12090",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "aligns directly with target-task StateTransition and ValidationReport"
+    },
+    {
+      "candidate_id": "CAND-0036",
+      "title": "Physically Viable World Models",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2605.30542",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "supports the target representation as a query-conditioned physical interface"
+    },
+    {
+      "candidate_id": "CAND-0037",
+      "title": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2503.14734",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Important VLA baseline for humanoid embodiments and synthetic-data-to-policy evaluation."
+    },
+    {
+      "candidate_id": "CAND-0038",
+      "title": "Green-VLA: Staged Vision-Language-Action Model for Generalist Robots",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2602.00919",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Useful systems reference for staged VLA training and safety-aware execution."
+    },
+    {
+      "candidate_id": "CAND-0039",
+      "title": "XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2511.02776",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Strong VLA reference for cross-embodiment action representation and real rollout quality."
+    },
+    {
+      "candidate_id": "CAND-0040",
+      "title": "TwinVLA: Data-Efficient Bimanual Manipulation with Twin Single-Arm Vision-Language-Action Models",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2511.05275",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Good baseline for bimanual task generation and policy-evaluation suites."
+    },
+    {
+      "candidate_id": "CAND-0041",
+      "title": "MMaDA-VLA: Large Diffusion Vision-Language-Action Model with Unified Multi-Modal Instruction and Generation",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2603.25406",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Relevant to world-action interfaces because it predicts future visual outcomes and actions jointly."
+    },
+    {
+      "candidate_id": "CAND-0042",
+      "title": "EWMBench: Evaluating Embodied World Models",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2505.09694",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "evaluation philosophy for interactive embodied generation benchmark"
+    },
+    {
+      "candidate_id": "CAND-0043",
+      "title": "WorldScore: A Unified Evaluation Benchmark for World Generation",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2504.00983",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_full_coverage_primary_source_search",
+      "why_candidate": "baseline for interactive embodied generation benchmark metrics"
+    },
+    {
+      "candidate_id": "CAND-0044",
+      "title": "WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2602.08971",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Important evaluation target for our interactive embodied world generator and world-model branches."
+    },
+    {
+      "candidate_id": "CAND-0045",
+      "title": "World-in-World: World Models in a Closed-Loop World",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2510.18135",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Provides a harness template for action-conditioned rollout evaluation and closed-loop generated-world testing."
+    },
+    {
+      "candidate_id": "CAND-0046",
+      "title": "Ctrl-World",
+      "branch_hint": "E",
+      "source_url": "https://ctrl-world.github.io/",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_full_coverage_search",
+      "why_candidate": "Useful benchmark design for world-action model validators and imagined rollout tests."
     }
   ],
   "triage": [
     {
       "candidate_id": "CAND-0001",
       "decision": "analyze",
-      "primary_branch": "A",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "existing_registry_update",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 5,
-      "project_relevance_prior": 4
+      "project_relevance_prior": 4,
+      "primary_branch": "A"
     },
     {
       "candidate_id": "CAND-0002",
       "decision": "analyze",
-      "primary_branch": "A",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "existing_registry_update",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 5,
-      "project_relevance_prior": 4
+      "project_relevance_prior": 4,
+      "primary_branch": "A"
     },
     {
       "candidate_id": "CAND-0003",
       "decision": "analyze",
-      "primary_branch": "A",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "existing_registry_update",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 4,
-      "project_relevance_prior": 4
+      "project_relevance_prior": 5,
+      "primary_branch": "A"
     },
     {
       "candidate_id": "CAND-0004",
       "decision": "analyze",
-      "primary_branch": "A",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "new_registry_candidate",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 4,
-      "project_relevance_prior": 4
+      "project_relevance_prior": 4,
+      "primary_branch": "A"
     },
     {
       "candidate_id": "CAND-0005",
       "decision": "analyze",
-      "primary_branch": "A",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "new_registry_candidate",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 4,
-      "project_relevance_prior": 4
+      "project_relevance_prior": 4,
+      "primary_branch": "A"
     },
     {
       "candidate_id": "CAND-0006",
       "decision": "analyze",
-      "primary_branch": "B",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "existing_registry_update",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 5,
-      "project_relevance_prior": 5
+      "project_relevance_prior": 4,
+      "primary_branch": "B"
     },
     {
       "candidate_id": "CAND-0007",
       "decision": "analyze",
-      "primary_branch": "B",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "new_registry_candidate",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 5,
-      "project_relevance_prior": 5
+      "project_relevance_prior": 4,
+      "primary_branch": "B"
     },
     {
       "candidate_id": "CAND-0008",
       "decision": "analyze",
-      "primary_branch": "B",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "new_registry_candidate",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 5,
-      "project_relevance_prior": 5
+      "project_relevance_prior": 5,
+      "primary_branch": "B"
     },
     {
       "candidate_id": "CAND-0009",
       "decision": "analyze",
-      "primary_branch": "B",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "existing_registry_update",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 4,
-      "project_relevance_prior": 5
+      "project_relevance_prior": 4,
+      "primary_branch": "B"
     },
     {
       "candidate_id": "CAND-0010",
       "decision": "analyze",
-      "primary_branch": "C",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "existing_registry_update",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 4,
-      "project_relevance_prior": 4
+      "project_relevance_prior": 4,
+      "primary_branch": "C"
     },
     {
       "candidate_id": "CAND-0011",
       "decision": "analyze",
-      "primary_branch": "D",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "existing_registry_update",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 5,
-      "project_relevance_prior": 4
+      "project_relevance_prior": 4,
+      "primary_branch": "D"
     },
     {
       "candidate_id": "CAND-0012",
       "decision": "analyze",
-      "primary_branch": "D",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "existing_registry_update",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 5,
-      "project_relevance_prior": 4
+      "project_relevance_prior": 4,
+      "primary_branch": "D"
     },
     {
       "candidate_id": "CAND-0013",
       "decision": "analyze",
-      "primary_branch": "D",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "existing_registry_update",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 4,
-      "project_relevance_prior": 4
+      "project_relevance_prior": 4,
+      "primary_branch": "D"
     },
     {
       "candidate_id": "CAND-0014",
       "decision": "analyze",
-      "primary_branch": "E",
-      "reason": "High relevance and primary/official source; selected for initialization batch.",
-      "dedupe_status": "existing_registry_update",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 4,
-      "project_relevance_prior": 4
+      "project_relevance_prior": 4,
+      "primary_branch": "E"
     },
     {
       "candidate_id": "CAND-0015",
       "decision": "analyze",
-      "primary_branch": "E",
-      "reason": "Existing deep dive from prior dry-run; primary source verified and needed in registry initialization.",
-      "dedupe_status": "new_registry_candidate",
-      "source_quality": "primary_or_official",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
       "impact_prior": 4,
-      "project_relevance_prior": 4
+      "project_relevance_prior": 4,
+      "primary_branch": "E"
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 4,
+      "project_relevance_prior": 5,
+      "primary_branch": "A"
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "A"
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "A"
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "A"
+    },
+    {
+      "candidate_id": "CAND-0020",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "B"
+    },
+    {
+      "candidate_id": "CAND-0021",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 5,
+      "project_relevance_prior": 4,
+      "primary_branch": "B"
+    },
+    {
+      "candidate_id": "CAND-0022",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "B"
+    },
+    {
+      "candidate_id": "CAND-0023",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 5,
+      "project_relevance_prior": 5,
+      "primary_branch": "B"
+    },
+    {
+      "candidate_id": "CAND-0024",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "B"
+    },
+    {
+      "candidate_id": "CAND-0025",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 5,
+      "project_relevance_prior": 5,
+      "primary_branch": "B"
+    },
+    {
+      "candidate_id": "CAND-0026",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "C"
+    },
+    {
+      "candidate_id": "CAND-0027",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "C"
+    },
+    {
+      "candidate_id": "CAND-0028",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "C"
+    },
+    {
+      "candidate_id": "CAND-0029",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "C"
+    },
+    {
+      "candidate_id": "CAND-0030",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "C"
+    },
+    {
+      "candidate_id": "CAND-0031",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "C"
+    },
+    {
+      "candidate_id": "CAND-0032",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "C"
+    },
+    {
+      "candidate_id": "CAND-0033",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "C"
+    },
+    {
+      "candidate_id": "CAND-0034",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "D"
+    },
+    {
+      "candidate_id": "CAND-0035",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "D"
+    },
+    {
+      "candidate_id": "CAND-0036",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "D"
+    },
+    {
+      "candidate_id": "CAND-0037",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 5,
+      "project_relevance_prior": 4,
+      "primary_branch": "D"
+    },
+    {
+      "candidate_id": "CAND-0038",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "D"
+    },
+    {
+      "candidate_id": "CAND-0039",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 5,
+      "project_relevance_prior": 5,
+      "primary_branch": "D"
+    },
+    {
+      "candidate_id": "CAND-0040",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 5,
+      "project_relevance_prior": 4,
+      "primary_branch": "D"
+    },
+    {
+      "candidate_id": "CAND-0041",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "D"
+    },
+    {
+      "candidate_id": "CAND-0042",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "E"
+    },
+    {
+      "candidate_id": "CAND-0043",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "E"
+    },
+    {
+      "candidate_id": "CAND-0044",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 5,
+      "project_relevance_prior": 4,
+      "primary_branch": "E"
+    },
+    {
+      "candidate_id": "CAND-0045",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 5,
+      "project_relevance_prior": 4,
+      "primary_branch": "E"
+    },
+    {
+      "candidate_id": "CAND-0046",
+      "decision": "analyze",
+      "reason": "Passes 2024+ recency, primary/official source, branch relevance, and evidence gates; full-coverage policy requires inclusion rather than top-k sampling.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "E"
     }
   ]
 }

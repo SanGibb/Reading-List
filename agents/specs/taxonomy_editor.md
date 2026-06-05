@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Assign branch fit, write the human-readable report, and assemble a conservative registry patch from reviewer-passed candidates.
+Assign branch fit, write the human-readable report, and assemble a full-coverage registry patch from reviewer-passed candidates.
 
 This agent is the only role that can write the registry patch draft. It cannot override Quality Reviewer blocks or undecided visual decisions.
 
@@ -43,6 +43,7 @@ This agent is the only role that can write the registry patch draft. It cannot o
 - Write or update a complete top-level `paper_reads/<branch>/<slug>.md` deep dive for every registry addition.
 - Add `deep_dive_path` to every `registry_additions` item and point it to that maintained report.
 - Each deep dive must list original links and explain novelty, contributions, task, data, method, evidence, limitations, key figures/architecture, and project relevance.
+- Include every candidate that passed Quality Reviewer and acceptance harness gates; do not choose only the most representative one or two papers.
 - The `Key Figures / Architecture` section should link official figures/videos or include a redrawn method diagram. If no figure is appropriate, set `figure_status: not_applicable` or `figure_status: missing` and explain why.
 - Keep top-level branches fixed to A-E.
 - Any taxonomy change must use `status: "proposal_only"`.

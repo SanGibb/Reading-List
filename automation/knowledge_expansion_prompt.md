@@ -72,7 +72,10 @@ Task:
 13. Write a concise run summary under `reports/YYYY-MM-DD-expansion.md` only after the system run validates.
     - This summary is an audit record of what was accepted, rejected, or left undecided.
     - The primary output is the expanded knowledge base: `data/papers.seed.json` plus `paper_reads/`.
-14. If there are strong accepted papers, update `data/papers.seed.json` conservatively.
+14. If there are accepted papers, update `data/papers.seed.json` with every candidate that passes the harness.
+    - Do not use a fixed top-k cap such as "best 1-2 papers per branch".
+    - The selection boundary is the acceptance threshold, not a quota.
+    - Reject, watchlist, or send to `undecided/` only when a candidate fails a documented gate.
 15. Run local validation:
 
 ```bash

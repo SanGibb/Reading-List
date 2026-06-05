@@ -147,6 +147,13 @@ Accept if:
 - generation-heavy visual quality is `strong` or `adequate`, or visual quality is `not_applicable`,
 - no unverified major claim is required for the summary or acceptance decision.
 
+Full-coverage rule:
+
+- A run must add every discovered candidate that satisfies the acceptance rule.
+- The workflow may not keep only a representative subset or a fixed top-k number per branch.
+- Breadth is controlled by the gates above: year, primary source, branch fit, project relevance, evidence strength, and visual/demo quality.
+- If the model cannot judge visual/demo quality, the candidate goes to `undecided/` with a detailed dossier instead of being silently dropped.
+
 Fast-track if:
 
 - impact score >= 4 and project relevance score >= 4.

@@ -105,7 +105,7 @@ Expansion run:
 - run when you want to check for new papers that may expand the knowledge base,
 - inspect accepted / watchlist / undecided items,
 - approve or reject undecided visual-quality dossiers,
-- keep registry updates conservative.
+- keep registry updates thresholded but full-coverage: every candidate that passes the harness gets a registry entry and deep dive.
 - run `python scripts/publish_validated_update.py --message "Expand frontier knowledge base YYYY-MM-DD"` to validate, commit, and push publishable changes.
 
 Monthly:

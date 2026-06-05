@@ -21,7 +21,7 @@
           "project_relevance": "Defines reusable fields Object, Part, Affordance, FunctionalElement, TaskLanguage, MotionParameter for our typed interactive-world representation.",
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/A_executable_world_representation/scenefun3d-2024.md",
           "local_pdf": "papers/06_SceneFun3D_CVPR2024.pdf"
         },
@@ -40,7 +40,7 @@
           "project_relevance": "Directly informs Task, StatePredicate, GoalCondition, SceneObject, PhysicalProperty, and validation protocol design.",
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/A_executable_world_representation/behavior-1k-2024.md",
           "local_pdf": "papers/08_BEHAVIOR1K_2024.pdf"
         },
@@ -59,7 +59,7 @@
           "project_relevance": "Strong candidate for PhysicalProperty, Material, DeformableState, KinematicJoint, and simulator export fields.",
           "visual_quality_score": 4,
           "visual_quality_decision": "strong",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/A_executable_world_representation/physx-omni-2026.md",
           "local_pdf": "papers/39_PhysXOmni_2026.pdf"
         },
@@ -78,7 +78,7 @@
           "project_relevance": "Provides concrete fields for MaterialField, ExternalForce, DynamicResponse, and DeformableState validators.",
           "visual_quality_score": 4,
           "visual_quality_decision": "strong",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/A_executable_world_representation/physdreamer-2024.md"
         },
         {
@@ -96,8 +96,80 @@
           "project_relevance": "Useful for SceneRepresentation, MaterialProperty, SegmentByText, PhysicsEdit, and simulator-backed validation.",
           "visual_quality_score": 4,
           "visual_quality_decision": "strong",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/A_executable_world_representation/feature-splatting-2024.md"
+        },
+        {
+          "title": "PhysX-Anything",
+          "year": 2025,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2511.13648",
+          "data": "PhysX-Mobility with 2K+ common objects plus in-the-wild single-image inputs and physical/articulation annotations",
+          "method": "VLM-based physical 3D generative model with efficient geometry tokenization and explicit geometry, articulation, and physical attributes",
+          "task": "generate simulation-ready physical 3D assets from a single image",
+          "novelty": "turns image-conditioned 3D generation into sim-ready assets with physical and articulation metadata",
+          "source_quality": "primary_or_official",
+          "demo_score": 4,
+          "evidence_strength": 4,
+          "project_relevance": "Strong object-level source for PhysicalProperty, KinematicJoint, AssetToSimulator, and contact-rich policy-learning validation.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/A_executable_world_representation/physx-anything-2025.md"
+        },
+        {
+          "title": "SimuScene",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2606.03994",
+          "data": "single-image compositional 3D scene reconstruction benchmarks plus humanoid and robot-arm downstream deployments",
+          "method": "physics-in-the-loop compositional reconstruction that converts simulation failures into shape/layout correction signals",
+          "task": "reconstruct stable simulation-ready 3D scenes from one image",
+          "novelty": "uses physics simulation as a diagnostic measurement tool during generation rather than only post-hoc cleanup",
+          "source_quality": "primary_or_official",
+          "demo_score": 2,
+          "evidence_strength": 4,
+          "project_relevance": "Relevant to SceneTree, SupportRelation, PhysicalViolation, and simulator-ready reconstruction validators.",
+          "visual_quality_score": 3,
+          "visual_quality_decision": "adequate",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/A_executable_world_representation/simuscene-2026.md"
+        },
+        {
+          "title": "REST3D",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2605.30338",
+          "data": "synthetic and real-world single-RGB-image reconstruction datasets, Isaac Gym simulation checks, and VR interaction demos",
+          "method": "agentic physical scene understanding, scene-tree construction, image-to-3D initialization, and physics-constrained refinement",
+          "task": "reconstruct physically stable interactive 3D scenes from a single RGB image",
+          "novelty": "uses gravity-support scene trees as structural priors for stable scene reconstruction",
+          "source_quality": "primary_or_official",
+          "demo_score": 3,
+          "evidence_strength": 4,
+          "project_relevance": "Provides a useful template for SceneTree, SupportGraph, StabilityCheck, and PhysicsRefinement stages.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/A_executable_world_representation/rest3d-2026.md"
+        },
+        {
+          "title": "TriSplat",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2605.26115",
+          "data": "RealEstate10K, DL3DV, ScanNet-style sparse-view reconstruction evaluations",
+          "method": "feed-forward oriented-triangle splatting network that predicts point maps, triangle attributes, camera poses, and mesh-ready surfaces",
+          "task": "reconstruct simulation-ready mesh scenes from sparse or pose-free images",
+          "novelty": "replaces Gaussian primitives with oriented triangle primitives that can be ingested by physics/rendering pipelines without post-hoc meshing",
+          "source_quality": "primary_or_official",
+          "demo_score": 2,
+          "evidence_strength": 4,
+          "project_relevance": "Useful representation reference for MeshScene, CollisionSurface, and feed-forward sim-ready reconstruction.",
+          "visual_quality_score": 3,
+          "visual_quality_decision": "adequate",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/A_executable_world_representation/trisplat-2026.md"
         }
       ]
     },
@@ -120,7 +192,7 @@
           "project_relevance": "Baseline for InteractionConstraint, Reachability, Collision, Articulation, and GeneratedScene validity metrics.",
           "visual_quality_score": 4,
           "visual_quality_decision": "strong",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/B_interactive_generation_pcg/physcene-2024.md",
           "local_pdf": "papers/14_PhyScene_CVPR2024.pdf"
         },
@@ -139,7 +211,7 @@
           "project_relevance": "Directly motivates TaskGenerator, SceneGenerator, SupervisionGenerator, PolicyLearner, and validation-loop abstractions.",
           "visual_quality_score": 4,
           "visual_quality_decision": "strong",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/B_interactive_generation_pcg/robogen-2024.md",
           "local_pdf": "papers/24_RoboGen_ICML2024.pdf"
         },
@@ -154,12 +226,13 @@
           "task": "generate scenes satisfying task and physical objectives",
           "novelty": "combines PCG-scale data with inference-time search and downstream steering",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
+          "demo_score": 2,
           "evidence_strength": 3,
           "project_relevance": "strong baseline for task-constrained scene generation",
           "visual_quality_score": 3,
           "visual_quality_decision": "adequate",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/B_interactive_generation_pcg/steerable-scene-generation-2025.md"
         },
         {
           "title": "SAGE",
@@ -172,12 +245,13 @@
           "task": "task-conditioned indoor scene generation for embodied AI",
           "novelty": "uses critics and iterative tool selection to improve simulator-ready scenes",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
-          "evidence_strength": 3,
+          "demo_score": 4,
+          "evidence_strength": 5,
           "project_relevance": "closest PCG baseline; it can use a typed interaction representation as I/O and evaluator",
-          "visual_quality_score": 3,
-          "visual_quality_decision": "adequate",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/B_interactive_generation_pcg/sage-2026.md"
         },
         {
           "title": "EmbodiedGen",
@@ -190,12 +264,13 @@
           "task": "generate interactive 3D worlds and assets",
           "novelty": "packages multiple generative modules for embodied world construction",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
+          "demo_score": 3,
           "evidence_strength": 3,
           "project_relevance": "generation engine that can consume or be evaluated by a typed interactive-world representation",
           "visual_quality_score": 3,
           "visual_quality_decision": "adequate",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/B_interactive_generation_pcg/embodiedgen-2025.md"
         },
         {
           "title": "Holodeck",
@@ -212,7 +287,7 @@
           "project_relevance": "Important baseline for Prompt, SceneSpec, SpatialConstraint, AssetRetrieval, LayoutOptimization, and downstream embodied evaluation.",
           "visual_quality_score": 4,
           "visual_quality_decision": "strong",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/B_interactive_generation_pcg/holodeck-2024.md"
         },
         {
@@ -230,8 +305,62 @@
           "project_relevance": "Strong generator for Scene, Asset, Annotation, LayoutConstraint, and synthetic data pipelines.",
           "visual_quality_score": 5,
           "visual_quality_decision": "strong",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/B_interactive_generation_pcg/infinigen-indoors-2024.md"
+        },
+        {
+          "title": "SceneSmith",
+          "year": 2026,
+          "venue": "ICML Spotlight",
+          "url": "https://arxiv.org/abs/2602.09153",
+          "data": "text-prompted indoor scenes, generated static assets, retrieved articulated objects, physical properties, and example scene dataset",
+          "method": "hierarchical agentic text-to-scene framework with designer, critic, and orchestrator VLM agents across layout, furniture, and object-population stages",
+          "task": "generate dense simulation-ready indoor environments from natural language prompts",
+          "novelty": "combines agentic generation with physical property estimation and policy-evaluation-ready scene export",
+          "source_quality": "primary_or_official",
+          "demo_score": 4,
+          "evidence_strength": 5,
+          "project_relevance": "Top PCG baseline for PromptToScene, CriticLoop, ObjectPopulation, PhysicalProperty, and policy evaluation.",
+          "visual_quality_score": 5,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/B_interactive_generation_pcg/scenesmith-2026.md"
+        },
+        {
+          "title": "SceneFoundry",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2601.05810",
+          "data": "apartment-scale generated 3D worlds with articulated assets from large-scale repositories",
+          "method": "language-guided diffusion with LLM floor-plan control, posterior sampling for object population, articulation-collision and walkability guidance",
+          "task": "generate large-scale interactive and physically usable indoor 3D worlds",
+          "novelty": "focuses on functionally articulated furniture and apartment-scale interactive world generation",
+          "source_quality": "primary_or_official",
+          "demo_score": 2,
+          "evidence_strength": 4,
+          "project_relevance": "Relevant PCG line for LayoutConstraint, ArticulationConstraint, WalkableSpace, and infinite-world expansion.",
+          "visual_quality_score": 3,
+          "visual_quality_decision": "adequate",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/B_interactive_generation_pcg/scenefoundry-2026.md"
+        },
+        {
+          "title": "HY-World 2.0",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2604.14268",
+          "data": "text, single-view, multi-view, and video inputs; generated 3DGS/mesh worlds; released model weights and code",
+          "method": "four-stage world pipeline with panorama generation, trajectory planning, world expansion, reconstruction, and WorldLens rendering",
+          "task": "reconstruct, generate, and simulate navigable 3D worlds from multimodal inputs",
+          "novelty": "unifies generation and reconstruction for explorable 3D worlds with open weights/code",
+          "source_quality": "primary_or_official",
+          "demo_score": 5,
+          "evidence_strength": 5,
+          "project_relevance": "Strong open-source world-generation baseline for WorldRepresentation, TrajectoryPlan, 3DGSScene, MeshExport, and engine integration.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/B_interactive_generation_pcg/hy-world-2-2026.md"
         }
       ]
     },
@@ -249,12 +378,13 @@
           "task": "spatial VQA and embodied AI tasks",
           "novelty": "feeds both RGB and depth to improve metric spatial reasoning",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
+          "demo_score": 3,
           "evidence_strength": 3,
           "project_relevance": "supports grounding spatial relations from observations",
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/C_spatial_intelligence/spatialbot-2024.md"
         },
         {
           "title": "HiSpatial",
@@ -266,12 +396,13 @@
           "task": "3D spatial relation and reasoning benchmarks",
           "novelty": "large-scale hierarchical spatial supervision for VLMs",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
+          "demo_score": 3,
           "evidence_strength": 3,
           "project_relevance": "useful for spatial relation completion and validation",
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/C_spatial_intelligence/hispatial-2026.md"
         },
         {
           "title": "SpaceTools",
@@ -283,12 +414,13 @@
           "task": "metric spatial reasoning and robot tool use",
           "novelty": "lets VLMs call vision and robotic tools for precise spatial answers",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
-          "evidence_strength": 3,
+          "demo_score": 4,
+          "evidence_strength": 4,
           "project_relevance": "prototype for target-task validators that invoke measurement/simulation tools",
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/C_spatial_intelligence/spacetools-2026.md"
         },
         {
           "title": "Ego3D-Bench / Ego3D-VLM",
@@ -300,12 +432,13 @@
           "task": "multi-view egocentric spatial reasoning",
           "novelty": "evaluates embodied multi-view spatial reasoning beyond single images",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
+          "demo_score": 3,
           "evidence_strength": 3,
           "project_relevance": "supports Scene coordinate-frame and relation grounding",
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/C_spatial_intelligence/ego3d-bench-2025.md"
         },
         {
           "title": "Seeing Across Views / MV-RoboBench",
@@ -317,12 +450,13 @@
           "task": "spatial and robotic reasoning across synchronized camera views",
           "novelty": "shows single-view spatial reasoning does not transfer reliably to robotic multi-view settings",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
+          "demo_score": 3,
           "evidence_strength": 3,
           "project_relevance": "important benchmark for observation-to-scene-graph parsing",
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/C_spatial_intelligence/mv-robobench-2026.md"
         },
         {
           "title": "SpatialVLA",
@@ -339,7 +473,7 @@
           "project_relevance": "Useful for Scene.spatial_graph, Ego3DEncoding, SpatialActionToken, and spatial instruction validation.",
           "visual_quality_score": 4,
           "visual_quality_decision": "strong",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/C_spatial_intelligence/spatialvla-2025.md"
         },
         {
@@ -352,12 +486,13 @@
           "task": "depth-aware language-conditioned manipulation",
           "novelty": "adds explicit depth reasoning to VLA with strong real and sim gains",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
+          "demo_score": 3,
           "evidence_strength": 3,
           "project_relevance": "supports depth-based scene grounding and precise spatial action",
-          "visual_quality_score": 0,
-          "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_quality_score": 3,
+          "visual_quality_decision": "adequate",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/C_spatial_intelligence/depthvla-2025.md"
         },
         {
           "title": "ST-VLA",
@@ -369,12 +504,31 @@
           "task": "open-world long-horizon robot manipulation",
           "novelty": "bridges semantic reasoning and continuous control through 4D spatial context",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
+          "demo_score": 3,
           "evidence_strength": 3,
           "project_relevance": "points to temporal/deformable state and trajectory grounding",
+          "visual_quality_score": 3,
+          "visual_quality_decision": "adequate",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/C_spatial_intelligence/st-vla-2026.md"
+        },
+        {
+          "title": "SpatialStack",
+          "year": 2026,
+          "venue": "CVPR",
+          "url": "https://arxiv.org/abs/2603.27437",
+          "data": "multiple 3D spatial reasoning benchmarks and VLM-SpatialStack training/evaluation data",
+          "method": "layered geometry-language fusion that injects multi-level geometric features into a VLM hierarchy",
+          "task": "3D spatial reasoning for embodied and physical AI systems",
+          "novelty": "moves beyond late-stage geometry fusion by stacking hierarchical geometric signals through the language backbone",
+          "source_quality": "primary_or_official",
+          "demo_score": 3,
+          "evidence_strength": 4,
+          "project_relevance": "Good spatial encoder/validator reference for local geometry, global context, and relation checking in generated worlds.",
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/C_spatial_intelligence/spatialstack-2026.md"
         }
       ]
     },
@@ -397,7 +551,7 @@
           "project_relevance": "Baseline for Policy, Observation, ActionDistribution, GoalImageCondition, and embodiment adaptation.",
           "visual_quality_score": 4,
           "visual_quality_decision": "strong",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/D_vla_world_action_models/octo-2024.md"
         },
         {
@@ -415,7 +569,7 @@
           "project_relevance": "Baseline for VLA policy execution, generated-task transfer, action-token interface, and finetuning experiments.",
           "visual_quality_score": 4,
           "visual_quality_decision": "strong",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/D_vla_world_action_models/openvla-2024.md"
         },
         {
@@ -433,7 +587,7 @@
           "project_relevance": "Sets a high demo-quality target for robot execution, deformable manipulation, long-horizon interaction, and continuous action generation.",
           "visual_quality_score": 5,
           "visual_quality_decision": "strong",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/D_vla_world_action_models/pi0-2024.md"
         },
         {
@@ -446,12 +600,13 @@
           "task": "vision-language-action reasoning and manipulation",
           "novelty": "adds reasoning traces/planning to VLA action generation",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
+          "demo_score": 3,
           "evidence_strength": 3,
           "project_relevance": "bridges target-task predicates and action selection",
-          "visual_quality_score": 0,
-          "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_quality_score": 3,
+          "visual_quality_decision": "adequate",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/vla-r1-2025.md"
         },
         {
           "title": "World Action Models",
@@ -463,12 +618,13 @@
           "task": "model physical evolution under interventions",
           "novelty": "separates reactive VLA from intervention-aware world-action modeling",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
+          "demo_score": 3,
           "evidence_strength": 3,
           "project_relevance": "aligns directly with target-task StateTransition and ValidationReport",
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/world-action-models-2026.md"
         },
         {
           "title": "Physically Viable World Models",
@@ -480,12 +636,103 @@
           "task": "answer action-outcome queries under physical structure",
           "novelty": "requires world models to preserve intervention-relevant physical structure",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
+          "demo_score": 3,
           "evidence_strength": 3,
           "project_relevance": "supports the target representation as a query-conditioned physical interface",
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/physically-viable-world-models-2026.md"
+        },
+        {
+          "title": "GR00T N1",
+          "year": 2025,
+          "venue": "arXiv / NVIDIA technical report",
+          "url": "https://arxiv.org/abs/2503.14734",
+          "data": "large mixed humanoid/robot datasets plus simulation benchmark evaluations and released model artifacts",
+          "method": "open foundation model for humanoid robots with reasoning and action components trained on diverse robot data",
+          "task": "generalist humanoid robot control under language and visual instructions",
+          "novelty": "one of the first open humanoid foundation models with official weights and reproducible release path",
+          "source_quality": "primary_or_official",
+          "demo_score": 5,
+          "evidence_strength": 5,
+          "project_relevance": "Important VLA baseline for humanoid embodiments and synthetic-data-to-policy evaluation.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/gr00t-n1-2025.md"
+        },
+        {
+          "title": "Green-VLA",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2602.00919",
+          "data": "3000 hours of demonstrations, Simpler BRIDGE WidowX, CALVIN ABC-D, and real-robot evaluations",
+          "method": "five-stage VLA curriculum with multimodal grounding, multi-embodiment pretraining, embodiment adaptation, and RL policy alignment",
+          "task": "generalist robot control across humanoids, mobile manipulators, and fixed-base arms",
+          "novelty": "combines staged training, embodiment-aware actions, OOD detection, and RL alignment for real deployment",
+          "source_quality": "primary_or_official",
+          "demo_score": 3,
+          "evidence_strength": 4,
+          "project_relevance": "Useful systems reference for staged VLA training and safety-aware execution.",
+          "visual_quality_score": 3,
+          "visual_quality_decision": "adequate",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/green-vla-2026.md"
+        },
+        {
+          "title": "XR-1",
+          "year": 2025,
+          "venue": "ICML Oral",
+          "url": "https://arxiv.org/abs/2511.02776",
+          "data": "large-scale cross-embodiment robot datasets plus more than 14,000 rollouts on six robot embodiments and 120+ tasks",
+          "method": "Unified Vision-Motion Codes learned by dual-branch VQ-VAE with three-stage VLA training",
+          "task": "versatile robot manipulation across diverse embodiments and environments",
+          "novelty": "aligns visual dynamics and robot motion into a shared intermediate code for scalable VLA learning",
+          "source_quality": "primary_or_official",
+          "demo_score": 4,
+          "evidence_strength": 5,
+          "project_relevance": "Strong VLA reference for cross-embodiment action representation and real rollout quality.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/xr-1-2025.md"
+        },
+        {
+          "title": "TwinVLA",
+          "year": 2025,
+          "venue": "ICLR",
+          "url": "https://arxiv.org/abs/2511.05275",
+          "data": "single-arm public robot data plus bimanual real-world and simulation task evaluations",
+          "method": "modular composition of two pretrained single-arm VLA policies into a coordinated bimanual policy",
+          "task": "data-efficient bimanual manipulation from vision-language instructions",
+          "novelty": "reuses single-arm data and policies instead of requiring full bimanual pretraining",
+          "source_quality": "primary_or_official",
+          "demo_score": 4,
+          "evidence_strength": 5,
+          "project_relevance": "Good baseline for bimanual task generation and policy-evaluation suites.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/twinvla-2025.md"
+        },
+        {
+          "title": "MMaDA-VLA",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2603.25406",
+          "data": "simulation benchmarks and real-world robot tasks including LIBERO and CALVIN-style evaluations",
+          "method": "native discrete diffusion VLA that jointly denoises language, images, future observations, and action chunks",
+          "task": "language-conditioned robot manipulation with parallel action and future-observation generation",
+          "novelty": "unifies multimodal instruction understanding, future visual generation, and action prediction in one diffusion backbone",
+          "source_quality": "primary_or_official",
+          "demo_score": 3,
+          "evidence_strength": 4,
+          "project_relevance": "Relevant to world-action interfaces because it predicts future visual outcomes and actions jointly.",
+          "visual_quality_score": 3,
+          "visual_quality_decision": "adequate",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/mmada-vla-2026.md"
         }
       ]
     },
@@ -504,12 +751,13 @@
           "task": "evaluate scene, motion, semantic and interaction consistency",
           "novelty": "moves world-model evaluation beyond pixel/video quality",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
+          "demo_score": 3,
           "evidence_strength": 3,
           "project_relevance": "evaluation philosophy for interactive embodied generation benchmark",
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/ewmbench-2025.md"
         },
         {
           "title": "WorldScore",
@@ -522,12 +770,13 @@
           "task": "score quality, consistency, controllability and interactivity",
           "novelty": "multi-dimensional evaluation for generated worlds",
           "source_quality": "primary_or_official",
-          "demo_score": 0,
+          "demo_score": 3,
           "evidence_strength": 3,
           "project_relevance": "baseline for interactive embodied generation benchmark metrics",
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "legacy_seed_needs_recheck"
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/worldscore-2025.md"
         },
         {
           "title": "RoboVerse",
@@ -544,7 +793,7 @@
           "project_relevance": "Useful for benchmark packaging, generated-task evaluation, policy baselines, and trajectory/data schema design.",
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/roboverse-2025.md",
           "local_pdf": "papers/35_RoboVerse_2025.pdf"
         },
@@ -563,8 +812,62 @@
           "visual_quality_score": 0,
           "visual_quality_decision": "not_applicable",
           "evidence_strength": 4,
-          "visual_inspection_status": "verified_initial_expansion",
+          "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/openeqa-2024.md"
+        },
+        {
+          "title": "WorldArena",
+          "year": 2026,
+          "venue": "arXiv / benchmark",
+          "url": "https://arxiv.org/abs/2602.08971",
+          "data": "public benchmark, leaderboard, dataset, and challenge for embodied world models",
+          "method": "perception and functional-utility benchmark with 16 numerical video metrics, task-functionality evaluation, human judgment, and EWMScore",
+          "task": "evaluate embodied world models as perceptual predictors, synthetic data engines, policy evaluators, and action planners",
+          "novelty": "ties world-model evaluation to functional embodied utility rather than video quality alone",
+          "source_quality": "primary_or_official",
+          "demo_score": 4,
+          "evidence_strength": 5,
+          "project_relevance": "Important evaluation target for our interactive embodied world generator and world-model branches.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/worldarena-2026.md"
+        },
+        {
+          "title": "World-in-World",
+          "year": 2025,
+          "venue": "ICLR Oral",
+          "url": "https://arxiv.org/abs/2510.18135",
+          "data": "closed-loop world-model benchmark tasks, unified action API, code, leaderboard, and demos",
+          "method": "closed-loop evaluation platform where planners propose actions and world models predict future observations inside task loops",
+          "task": "evaluate visual world models by embodied utility in closed-loop interaction",
+          "novelty": "evaluates world models under recursive agent-world interaction rather than one-step visual prediction",
+          "source_quality": "primary_or_official",
+          "demo_score": 4,
+          "evidence_strength": 5,
+          "project_relevance": "Provides a harness template for action-conditioned rollout evaluation and closed-loop generated-world testing.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/world-in-world-2025.md"
+        },
+        {
+          "title": "Ctrl-World",
+          "year": 2026,
+          "venue": "ICLR",
+          "url": "https://ctrl-world.github.io/",
+          "data": "policy-in-the-loop rollouts and real-world/world-model comparisons for generalist robot policies",
+          "method": "controllable world-model evaluation designed to let generalist robot policies roll out actions inside imagination space",
+          "task": "evaluate whether world models support policy-in-the-loop manipulation rollouts",
+          "novelty": "centers evaluation on policy utility and rollout control rather than passive generation quality",
+          "source_quality": "primary_or_official",
+          "demo_score": 3,
+          "evidence_strength": 4,
+          "project_relevance": "Useful benchmark design for world-action model validators and imagined rollout tests.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "visual_inspection_status": "verified_full_coverage_init",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/ctrl-world-2026.md"
         }
       ]
     }
