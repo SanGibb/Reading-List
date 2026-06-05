@@ -1,4 +1,4 @@
-# Weekly Interactive Embodied Generation Frontier Scan
+# Frontier Knowledge Expansion Summary
 
 Date: YYYY-MM-DD
 

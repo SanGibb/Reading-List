@@ -9,11 +9,11 @@
 | 内容 | 入口 |
 |---|---|
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
-| 最新周报 | [reports/2026-06-06-weekly.md](reports/2026-06-06-weekly.md) |
+| 最新扩库摘要 | [reports/2026-06-06-expansion.md](reports/2026-06-06-expansion.md) |
 | 当前已收录精读 | [OpenEQA 2024](paper_reads/E_evaluation_data_infrastructure/openeqa-2024.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
-每次自动检索 run 只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。`05_registry_patch.json` 中的每个 `registry_additions` 条目必须包含 `deep_dive_path` 指向这个长期目录。
+每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。`05_registry_patch.json` 中的每个 `registry_additions` 条目必须包含 `deep_dive_path` 指向这个长期目录。
 
 ## 研究树
 
@@ -69,7 +69,7 @@ flowchart LR
 
 - `reports/runs/YYYY-MM-DD/`：run plan、discovery、evidence、review、editor report、registry patch、manifest。
 - `paper_reads/<branch>/<slug>.md`：最终收录论文的长期精读报告。
-- `reports/YYYY-MM-DD-weekly.md`：本轮人类可读周报。
+- `reports/YYYY-MM-DD-expansion.md`：本轮扩库摘要，用于记录新增、拒绝和待定项；不是主要产物。
 - `undecided/YYYY-MM-DD/CAND-xxxx.md`：无法判断视觉/demo 质量时的本地待定精读，默认不上传。
 
 常用命令：
@@ -77,7 +77,7 @@ flowchart LR
 ```bash
 python scripts/scaffold_run.py YYYY-MM-DD
 REQUIRE_UNDECIDED_DOSSIERS=1 python scripts/validate_all.py
-python scripts/publish_validated_update.py --message "Weekly frontier scan YYYY-MM-DD"
+python scripts/publish_validated_update.py --message "Expand frontier knowledge base YYYY-MM-DD"
 ```
 
 发布脚本会校验、暂存、提交并 push 非 `undecided/` 变更；待定论文需要人工确认后再单独收录。

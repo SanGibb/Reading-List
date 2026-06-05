@@ -52,7 +52,7 @@ def main() -> int:
         {"run_id": run_id, "visual_cards": [], "quality_review": [], "run_level_issues": []},
     )
     (run_dir / "04_editor_report.md").write_text(
-        f"# Weekly Interactive Embodied Generation Frontier Scan\n\nDate: {run_id}\n\nNo accepted updates yet.\n"
+        f"# Frontier Knowledge Expansion Run\n\nDate: {run_id}\n\nNo accepted updates yet.\n"
     )
     write_json(
         run_dir / "05_registry_patch.json",

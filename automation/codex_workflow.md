@@ -15,7 +15,7 @@ Prompt:
 ```text
 请阅读 frontier_research 的 taxonomy、paper registry 和 harness。
 联网搜索最近 2-4 周关于 interactive generation、spatial intelligence、VLA、world-action models、physical/deformable worlds 的最新论文和项目，只收录 2024 年及以后的工作。
-按 harness 过滤，输出周报，并保守更新 data/papers.seed.json。
+按 harness 过滤，扩充 data/papers.seed.json 和 paper_reads；报告只作为本次检索的审计摘要。
 ```
 
 Use cases:
@@ -25,19 +25,19 @@ Use cases:
 - before checking which baselines are worth reading or citing
 - after major conferences or arXiv waves
 
-### 2. Scheduled scan mode
+### 2. Knowledge expansion mode
 
-Use Codex automation to run the prompt in `automation/weekly_scan_prompt.md`.
+Use Codex automation to run the prompt in `automation/knowledge_expansion_prompt.md`.
 
-Recommended cadence:
+Recommended trigger:
 
-- weekly, Monday morning, Asia/Shanghai
-- additionally run manually around CVPR/ICCV/ECCV/NeurIPS/CoRL/ICRA/RSS deadlines
+- run when you want to expand the knowledge base with newly surfaced papers
+- additionally run around CVPR/ICCV/ECCV/NeurIPS/CoRL/ICRA/RSS deadlines or major arXiv/project-release waves
 
 Expected output:
 
 - `reports/runs/YYYY-MM-DD/` with consolidated stage artifacts
-- `reports/YYYY-MM-DD-weekly.md`
+- `reports/YYYY-MM-DD-expansion.md` as a run summary, not the main deliverable
 - `01_discovery.json` with `followed_sources_checked`
 - maintained deep dives under `paper_reads/<branch>/<slug>.md`
 - conservative registry updates
@@ -73,7 +73,7 @@ Use one focused Codex task per role when quality matters. Each phase reads previ
 4. **Quality Reviewer** writes `03_review.json` and optional undecided dossiers.
 5. **Taxonomy & Editor** writes `04_editor_report.md`, `05_registry_patch.json`, accepted-paper `paper_reads/<branch>/<slug>.md` reports, and `run_manifest.json`.
 6. **System Harness** validates the run.
-7. **Publisher** runs `python scripts/publish_validated_update.py --message "Weekly frontier scan YYYY-MM-DD"`.
+7. **Publisher** runs `python scripts/publish_validated_update.py --message "Expand frontier knowledge base YYYY-MM-DD"`.
 
 This is less fragmented than the original nine-agent setup while still separating search, evidence extraction, judgment, and registry editing.
 
@@ -92,7 +92,7 @@ python frontier_research/scripts/validate_run.py YYYY-MM-DD
 To validate, commit, and push publishable changes:
 
 ```bash
-python scripts/publish_validated_update.py --message "Weekly frontier scan YYYY-MM-DD"
+python scripts/publish_validated_update.py --message "Expand frontier knowledge base YYYY-MM-DD"
 ```
 
 The publisher leaves `undecided/**` local-only by default. Those dossiers should still be generated and detailed, but they are uploaded only after explicit human approval.
@@ -101,15 +101,15 @@ The publisher leaves `undecided/**` local-only by default. Those dossiers should
 
 - Do not accept papers from social posts unless there is a primary paper/project URL.
 - Do not download large videos unless needed.
-- Do not rewrite the taxonomy every week.
-- Do not generate autonomous research hypotheses or experiment roadmaps as a weekly output.
+- Do not rewrite the taxonomy in routine expansion runs.
+- Do not generate autonomous research hypotheses or experiment roadmaps as a primary output.
 - Do not add every new arXiv paper; keep impact and project relevance thresholds.
 - Do not claim SOTA unless the source reports a clear benchmark and comparison.
 - Do not let one agent write another agent's artifact.
 - Do not skip fixed follow sources silently; record `checked`, `spot_checked`, `unreachable`, or `skipped`.
 - Do not update the registry if `validate_run.py` fails.
 - Do not add a paper to `registry_additions` unless it has `deep_dive_path` pointing to a top-level `paper_reads/<branch>/<slug>.md` report with source links, novelty, contributions, task, data, method, key figures/architecture, evidence, limitations, and project relevance.
-- Do not commit or push `undecided/YYYY-MM-DD/CAND-xxxx.md` during the automatic weekly publish step.
+- Do not commit or push `undecided/YYYY-MM-DD/CAND-xxxx.md` during the automatic publish step.
 
 ## Suggested Prompt Contract
 

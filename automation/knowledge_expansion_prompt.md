@@ -1,4 +1,4 @@
-# Weekly Frontier Scan Prompt
+# Frontier Knowledge Expansion Prompt
 
 You are maintaining the interactive embodied generation frontier research repository in `frontier_research`.
 
@@ -20,7 +20,7 @@ Task:
    - `04_editor_report.md`
    - `05_registry_patch.json`
    - `run_manifest.json`
-4. Search the web for new or newly influential **2024+** papers, project pages, code releases, datasets, demos, and benchmarks in these branches:
+4. Search the web for new or newly influential **2024+** papers, project pages, code releases, datasets, demos, and benchmarks that may expand the knowledge base in these branches:
    - Executable World Representation
    - Interactive Generation and PCG
    - Spatial Intelligence
@@ -31,7 +31,7 @@ Task:
    - Prefer papers/releases from the current and previous two years.
    - If a result is a classic pre-2024 foundation paper, mention it only as background if needed; do not add it to the registry or registry patch.
 6. Before broad keyword search, check fixed follow sources in `data/follow_sources.seed.json`.
-   - Check all `priority: core` source groups every scheduled scan when feasible.
+   - Check all `priority: core` source groups every expansion run when feasible.
    - Check `priority: watch` source groups when relevant to the current branch scope or when recent signals appear.
    - Record checked, skipped, and unreachable sources in `01_discovery.json` under `followed_sources_checked`.
    - Follow-source hits are discovery signals only; they still need the normal 2024+, source, relevance, visual, and evidence gates.
@@ -69,7 +69,9 @@ Task:
     - Prefer official project figures/videos. If useful, redraw the method architecture in our own style rather than copying a copyrighted paper figure.
     - If no figure is available or appropriate, explicitly set `figure_status: missing` or `figure_status: not_applicable` and explain why.
 12. Apply `harness/acceptance_harness.md` for paper relevance and `harness/system_harness.md` for workflow validity.
-13. Write a weekly markdown report under `reports/YYYY-MM-DD-weekly.md` only after the system run validates.
+13. Write a concise run summary under `reports/YYYY-MM-DD-expansion.md` only after the system run validates.
+    - This summary is an audit record of what was accepted, rejected, or left undecided.
+    - The primary output is the expanded knowledge base: `data/papers.seed.json` plus `paper_reads/`.
 14. If there are strong accepted papers, update `data/papers.seed.json` conservatively.
 15. Run local validation:
 
@@ -80,7 +82,7 @@ REQUIRE_UNDECIDED_DOSSIERS=1 python scripts/validate_all.py
 16. If validation passes, publish all non-undecided changes in one step:
 
 ```bash
-python scripts/publish_validated_update.py --message "Weekly frontier scan YYYY-MM-DD"
+python scripts/publish_validated_update.py --message "Expand frontier knowledge base YYYY-MM-DD"
 ```
 
 This script validates, stages publishable files, commits, and pushes to GitHub. It leaves `undecided/**` unstaged except for `undecided/README.md`.

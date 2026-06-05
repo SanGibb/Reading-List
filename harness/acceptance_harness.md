@@ -168,7 +168,7 @@ Move to undecided if:
 - demos are inaccessible but the paper otherwise looks relevant,
 - the acceptance decision depends on subjective visual quality.
 
-## Weekly Report Must Include
+## Run Summary Must Include
 
 - New accepted papers by branch.
 - Links to deep dives for every accepted paper.

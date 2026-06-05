@@ -21,14 +21,14 @@ Out of scope for this repository:
 
 - autonomous hypothesis generation or research-roadmap ranking;
 - experiment design beyond short collection notes for baseline usefulness;
-- weekly taxonomy rewrites;
+- routine taxonomy rewrites during expansion runs;
 - accepting claims that are not traceable to primary or official sources.
 
 ## Design Principle
 
 One agent, one coherent job.
 
-The earlier version split search, triage, paper extraction, demo verification, visual review, taxonomy, review, and editing into many small agents. That is auditable, but too operationally heavy for weekly use. The current design merges adjacent responsibilities while preserving the hard gates that matter.
+The earlier version split search, triage, paper extraction, demo verification, visual review, taxonomy, review, and editing into many small agents. That is auditable, but too operationally heavy for repeated knowledge-base expansion. The current design merges adjacent responsibilities while preserving the hard gates that matter.
 
 | Agent | Main job | Decision authority | Writes |
 |---|---|---|---|
@@ -44,7 +44,7 @@ Only the Taxonomy & Editor may create a registry update draft, and that draft mu
 
 | Question | Owner | Notes |
 |---|---|---|
-| What should we search this week? | Research Lead | Uses taxonomy, recent reports, and conference windows. |
+| What should this run search? | Research Lead | Uses taxonomy, recent expansion summaries, and conference/release windows. |
 | Is this candidate worth analysis time? | Discovery Agent | Checks fixed PI/lab/company sources, searches, deduplicates, and triages in one artifact. |
 | What does the paper actually do? | Evidence Analyst | Extracts data/method/task/novelty and verifies demo/code links. |
 | Are the demos and visual results good enough? | Quality Reviewer | Uses project pages, videos, GIFs, figures, robot demos, and generated samples. |
@@ -54,7 +54,7 @@ Only the Taxonomy & Editor may create a registry update draft, and that draft mu
 
 ## Directory Contract
 
-A weekly run lives under:
+A knowledge-expansion run lives under:
 
 ```text
 reports/runs/YYYY-MM-DD/

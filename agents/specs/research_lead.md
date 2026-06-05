@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Define the scope of a weekly run. This agent decides what to search, not what to accept.
+Define the scope of a knowledge-expansion run. This agent decides what to search, not what to accept.
 
 ## Reads
 
@@ -11,7 +11,7 @@ Define the scope of a weekly run. This agent decides what to search, not what to
 - `data/follow_sources.seed.json`
 - `harness/system_harness.md`
 - `harness/acceptance_harness.md`
-- recent weekly reports
+- recent expansion summaries and run artifacts
 
 ## Writes
 
@@ -40,5 +40,5 @@ Define the scope of a weekly run. This agent decides what to search, not what to
 - Prefer current and previous two-year queries.
 - Include physical/deformable worlds, PCG, spatial intelligence, VLA, and evaluation.
 - Include `follow_sources_path` so Discovery Agent checks fixed PI/lab/company sources every run.
-- Use follow-source priorities to bias search: check `core` sources every scheduled scan and `watch` sources when branch-relevant.
+- Use follow-source priorities to bias search: check `core` sources every expansion run when feasible and `watch` sources when branch-relevant.
 - Do not add candidates or registry entries.

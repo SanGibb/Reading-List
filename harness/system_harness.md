@@ -66,7 +66,7 @@ The harness checks these boundaries through artifact shape and cross-file refere
 - Top-level branches are fixed to `A`, `B`, `C`, `D`, `E`.
 - Taxonomy changes must appear only in `taxonomy_change_proposals`.
 - Every proposal must have `status: "proposal_only"`.
-- A new top-level branch proposal cannot be applied by the weekly run.
+- A new top-level branch proposal cannot be applied by a routine expansion run.
 
 ### 5. Registry safety
 

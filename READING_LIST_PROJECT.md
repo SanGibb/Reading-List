@@ -100,13 +100,13 @@ Hooks should not decide whether a paper is impressive, novel, or worth following
 
 ## Maintenance Rhythm
 
-Weekly:
+Expansion run:
 
-- run the scheduled scan,
+- run when you want to check for new papers that may expand the knowledge base,
 - inspect accepted / watchlist / undecided items,
 - approve or reject undecided visual-quality dossiers,
 - keep registry updates conservative.
-- run `python scripts/publish_validated_update.py --message "Weekly frontier scan YYYY-MM-DD"` to validate, commit, and push publishable changes.
+- run `python scripts/publish_validated_update.py --message "Expand frontier knowledge base YYYY-MM-DD"` to validate, commit, and push publishable changes.
 
 Monthly:
 
@@ -117,7 +117,7 @@ Monthly:
 
 Before writing related work:
 
-- run a manual deep-update scan,
+- run a manual expansion scan,
 - review top demos,
 - read paper deep dives under `paper_reads/`,
 - export the relevant branch subset from `data/papers.seed.json`.

@@ -7,7 +7,7 @@ For this literature workflow, hooks are useful as guardrails, but the core quali
 1. a narrow taxonomy,
 2. a strict acceptance harness,
 3. registry validation,
-4. weekly human-readable reports,
+4. concise run summaries for accepted/rejected/undecided items,
 5. source-linked claims.
 
 ## What Hooks Can Do
@@ -22,7 +22,7 @@ Useful hook checks:
 - Local PDF paths exist when specified.
 - URLs look valid.
 - No duplicate paper titles.
-- Weekly report exists for automated registry updates.
+- Run summary exists for automated registry updates.
 
 ## What Hooks Cannot Do Reliably
 

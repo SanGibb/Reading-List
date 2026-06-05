@@ -1,10 +1,10 @@
-# Weekly Interactive Embodied Generation Frontier Scan
+# Frontier Knowledge Expansion Summary
 
 Date: 2026-06-06
 
 ## Summary
 
-This is a local dry-run used to validate the consolidated file-driven multi-agent workflow. It exercises accepted, blocked, and undecided visual-quality paths without applying the registry patch.
+This is a local dry-run used to validate the consolidated file-driven multi-agent workflow. It exercises accepted, blocked, and undecided visual-quality paths without applying the registry patch. The summary is an audit record; the durable knowledge-base output is the registry plus `paper_reads/`.
 
 ## Followed Sources Checked
 
