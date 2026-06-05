@@ -15,6 +15,35 @@
 
 每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。`05_registry_patch.json` 中的每个 `registry_additions` 条目必须包含 `deep_dive_path` 指向这个长期目录。
 
+## 本周更新内容
+
+本轮初始化扩库日期：2026-06-06。完整审计摘要见 [reports/2026-06-06-expansion.md](reports/2026-06-06-expansion.md)。
+
+### 新增收录
+
+| Paper | Branch | 简要说明 | 精读 |
+|---|---|---|---|
+| PhysDreamer | A | 从视频生成先验估计物体材料/动态响应，适合作为软体、弹性物体交互生成参考。 | [physdreamer-2024.md](paper_reads/A_executable_world_representation/physdreamer-2024.md) |
+| Feature Splatting | A | 把 3D Gaussian 表示扩展到语言、材质和物理编辑，适合做物理属性和可编辑场景表示参考。 | [feature-splatting-2024.md](paper_reads/A_executable_world_representation/feature-splatting-2024.md) |
+| Holodeck | B | 语言驱动生成 AI2-THOR embodied environments，是 prompt-to-scene 和下游导航评测的重要基线。 | [holodeck-2024.md](paper_reads/B_interactive_generation_pcg/holodeck-2024.md) |
+| Infinigen Indoors | B | 高质量程序化室内场景生成，提供真实几何和密集标注，是 PCG/合成数据强基线。 | [infinigen-indoors-2024.md](paper_reads/B_interactive_generation_pcg/infinigen-indoors-2024.md) |
+| OpenEQA | E | 开放词表 embodied QA benchmark，可用于评测生成世界是否保留环境语义和空间关系。 | [openeqa-2024.md](paper_reads/E_evaluation_data_infrastructure/openeqa-2024.md) |
+
+### 补齐精读
+
+| Paper | Branch | 简要说明 | 精读 |
+|---|---|---|---|
+| SceneFun3D | A | 真实 3D 场景中的功能部件、affordance、任务语言和运动参数标注。 | [scenefun3d-2024.md](paper_reads/A_executable_world_representation/scenefun3d-2024.md) |
+| BEHAVIOR-1K | A | 1000 个日常活动、BDDL 状态谓词和 OmniGibson 执行环境。 | [behavior-1k-2024.md](paper_reads/A_executable_world_representation/behavior-1k-2024.md) |
+| PhysX-Omni | A | 面向刚体、软体/形变体和关节物体的 simulation-ready 物理 3D 生成。 | [physx-omni-2026.md](paper_reads/A_executable_world_representation/physx-omni-2026.md) |
+| PhyScene | B | 带碰撞、可达性、房间约束和机器人交互验证的物理可交互场景生成。 | [physcene-2024.md](paper_reads/B_interactive_generation_pcg/physcene-2024.md) |
+| RoboGen | B | propose-generate-learn 闭环，自动生成机器人任务、场景、监督和技能。 | [robogen-2024.md](paper_reads/B_interactive_generation_pcg/robogen-2024.md) |
+| SpatialVLA | C | 将 3D spatial encoding 和 adaptive action grids 接入 VLA，用于空间指令执行。 | [spatialvla-2025.md](paper_reads/C_spatial_intelligence/spatialvla-2025.md) |
+| Octo | D | 开源 generalist robot policy，适合作为生成任务/场景的策略执行 baseline。 | [octo-2024.md](paper_reads/D_vla_world_action_models/octo-2024.md) |
+| OpenVLA | D | 开源 7B VLA，提供模型、代码和 finetuning 路径，是默认 VLA baseline。 | [openvla-2024.md](paper_reads/D_vla_world_action_models/openvla-2024.md) |
+| pi0 | D | VLA flow model，真实机器人高质量 dexterous demos，适合作为效果上限参考。 | [pi0-2024.md](paper_reads/D_vla_world_action_models/pi0-2024.md) |
+| RoboVerse | E | 统一 robot learning platform/dataset/benchmark，用于任务、轨迹和 baseline 评测组织。 | [roboverse-2025.md](paper_reads/E_evaluation_data_infrastructure/roboverse-2025.md) |
+
 ## 研究树
 
 ```mermaid
