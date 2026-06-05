@@ -1,0 +1,342 @@
+{
+  "updated_at": "2026-06-06",
+  "minimum_year": 2024,
+  "purpose": "Fixed people/lab/company sources that Discovery Agent should follow for interactive generation, embodied AI, spatial intelligence, VLA, physical/deformable worlds, and evaluation infrastructure.",
+  "source_groups": [
+    {
+      "id": "stanford-svl-behavior",
+      "type": "lab",
+      "priority": "core",
+      "name": "Stanford Vision and Learning Lab / BEHAVIOR-OmniGibson line",
+      "people": ["Jiajun Wu", "Li Fei-Fei", "Karen Liu"],
+      "branches": ["A", "B", "C", "E"],
+      "why_follow": "Executable embodied benchmarks, physical simulation, spatial intelligence, task/state abstractions, and generated/evaluated household worlds.",
+      "anchor_work": ["BEHAVIOR-1K", "OmniGibson", "Holodeck", "ESI-Bench"],
+      "urls": {
+        "lab": "https://svl.stanford.edu/publications/",
+        "jiajun_wu": "https://jiajunwu.com/",
+        "behavior": "https://behavior.stanford.edu/omnigibson/overview.html"
+      },
+      "queries": [
+        "Jiajun Wu embodied spatial intelligence 2026",
+        "Stanford BEHAVIOR OmniGibson embodied AI 2026",
+        "Holodeck 3D embodied AI environment generation 2026"
+      ]
+    },
+    {
+      "id": "princeton-pvl-infinigen",
+      "type": "lab",
+      "priority": "core",
+      "name": "Princeton Vision & Learning Lab",
+      "people": ["Jia Deng"],
+      "branches": ["A", "B", "E"],
+      "why_follow": "Procedural 3D generation, simulation-ready assets, synthetic data, and articulated object generation.",
+      "anchor_work": ["Infinigen Indoors", "Infinigen Articulated"],
+      "urls": {
+        "lab": "https://pvl.cs.princeton.edu/",
+        "infinigen": "https://infinigen.org/"
+      },
+      "queries": [
+        "site:pvl.cs.princeton.edu Infinigen robotics simulation 2026",
+        "Infinigen articulated simulation ready assets 2026",
+        "Jia Deng procedural generation embodied AI 2026"
+      ]
+    },
+    {
+      "id": "ai2-embodied-prior",
+      "type": "research_org",
+      "priority": "core",
+      "name": "Ai2 Embodied AI / PRIOR",
+      "people": ["Roozbeh Mottaghi", "Luca Weihs", "Kiana Ehsani"],
+      "branches": ["B", "C", "E", "D"],
+      "why_follow": "Open embodied AI infrastructure, procedural environments, AI2-THOR/ProcTHOR, Holodeck-like generation, and open robot models.",
+      "anchor_work": ["AI2-THOR", "ProcTHOR", "Objaverse", "Holodeck", "MolmoSpaces", "MolmoAct"],
+      "urls": {
+        "embodied_ai": "https://allenai.org/embodied-ai",
+        "ai2thor": "https://prior.allenai.org/projects/ai2thor",
+        "procthor": "https://procthor.allenai.org/"
+      },
+      "queries": [
+        "site:allenai.org embodied AI MolmoSpaces MolmoAct 2026",
+        "AI2 embodied AI robot manipulation 2026",
+        "ProcTHOR Holodeck embodied AI 2026"
+      ]
+    },
+    {
+      "id": "nvidia-cosmos-isaac",
+      "type": "company_research",
+      "priority": "core",
+      "name": "NVIDIA Cosmos / Isaac / GR00T research",
+      "people": ["Shuran Song", "Ming-Yu Liu", "Dieter Fox", "Jim Fan"],
+      "branches": ["B", "C", "D", "E", "A"],
+      "why_follow": "Physical AI world models, agentic scene generation, synthetic data, humanoid foundation models, and simulator-backed validation.",
+      "anchor_work": ["SAGE", "Cosmos-Reason1", "Cosmos 3", "Isaac GR00T"],
+      "urls": {
+        "cosmos_lab": "https://research.nvidia.com/labs/cosmos-lab/",
+        "sage": "https://research.nvidia.com/labs/cosmos-lab/sage/",
+        "cosmos3": "https://research.nvidia.com/labs/cosmos-lab/cosmos3",
+        "groot": "https://research.nvidia.com/publication/2025-03_nvidia-isaac-gr00t-n1-open-foundation-model-humanoid-robots"
+      },
+      "queries": [
+        "site:research.nvidia.com/labs/cosmos-lab embodied AI scene generation 2026",
+        "NVIDIA Cosmos physical AI world model robotics 2026",
+        "NVIDIA GR00T VLA humanoid robot 2026"
+      ]
+    },
+    {
+      "id": "stanford-realab-shuran",
+      "type": "lab",
+      "priority": "core",
+      "name": "Stanford Robotics and Embodied AI Lab",
+      "people": ["Shuran Song"],
+      "branches": ["A", "B", "D"],
+      "why_follow": "Manipulation, self-adaptive robots, cross-embodiment learning, deformable/contact-rich tasks, and embodied data generation.",
+      "anchor_work": ["REAL@Stanford manipulation line", "cross-embodiment learning", "SAGE collaboration"],
+      "urls": {
+        "lab": "https://real.stanford.edu/lab.html",
+        "pi": "https://shurans.github.io/"
+      },
+      "queries": [
+        "Shuran Song robot manipulation embodied AI 2026",
+        "REAL Stanford cross embodiment manipulation 2026",
+        "Stanford REALab deformable manipulation 2026"
+      ]
+    },
+    {
+      "id": "stanford-iris-openvla",
+      "type": "lab",
+      "priority": "core",
+      "name": "Stanford IRIS Lab",
+      "people": ["Chelsea Finn"],
+      "branches": ["D", "E"],
+      "why_follow": "Robot learning at scale, generalist policies, OpenVLA line, and open robot datasets/evaluation.",
+      "anchor_work": ["OpenVLA", "robot learning at scale", "imitation and meta-learning"],
+      "urls": {
+        "lab": "https://irislab.stanford.edu/",
+        "openvla": "https://openvla.github.io/"
+      },
+      "queries": [
+        "Chelsea Finn OpenVLA robot learning 2026",
+        "Stanford IRIS vision language action model 2026",
+        "site:irislab.stanford.edu robotics VLA 2026"
+      ]
+    },
+    {
+      "id": "berkeley-rail-levine",
+      "type": "lab",
+      "priority": "core",
+      "name": "UC Berkeley RAIL / BAIR Robotics",
+      "people": ["Sergey Levine"],
+      "branches": ["D", "E"],
+      "why_follow": "Robot learning, offline/RL-backed policies, generalist robot policies, OpenVLA/Octo ecosystem, and action-centric world understanding.",
+      "anchor_work": ["OpenVLA collaboration", "Octo ecosystem", "robot learning and offline RL"],
+      "urls": {
+        "lab": "https://rail.eecs.berkeley.edu/"
+      },
+      "queries": [
+        "Sergey Levine robot foundation model 2026",
+        "Berkeley RAIL vision language action robotics 2026",
+        "BAIR robot learning generalist policy 2026"
+      ]
+    },
+    {
+      "id": "physical-intelligence",
+      "type": "company_research",
+      "priority": "core",
+      "name": "Physical Intelligence",
+      "people": ["Sergey Levine", "Chelsea Finn", "Karol Hausman", "Brian Ichter", "Karl Pertsch", "Suraj Nair"],
+      "branches": ["D", "A", "E"],
+      "why_follow": "Frontier generalist VLA policies, cross-embodiment manipulation, deformable-object demos, online RL, memory, and real-world robot execution quality.",
+      "anchor_work": ["π0", "π0.5", "π0.6", "π0.7", "FAST"],
+      "urls": {
+        "home": "https://www.pi.website/",
+        "pi0": "https://www.pi.website/blog/pi0"
+      },
+      "queries": [
+        "site:pi.website VLA robot foundation model 2026",
+        "Physical Intelligence pi0 VLA robotics 2026",
+        "Physical Intelligence robot manipulation memory online RL 2026"
+      ]
+    },
+    {
+      "id": "google-deepmind-robotics",
+      "type": "company_research",
+      "priority": "core",
+      "name": "Google DeepMind Robotics",
+      "people": ["Karol Hausman", "Andy Zeng", "Brian Ichter", "Fei Xia"],
+      "branches": ["D", "C", "E"],
+      "why_follow": "Gemini Robotics, embodied reasoning, VLA model cards, Open X-Embodiment lineage, and multi-embodiment robot learning.",
+      "anchor_work": ["Gemini Robotics", "Gemini Robotics On-Device", "Gemini Robotics 1.5", "Open X-Embodiment"],
+      "urls": {
+        "gemini_robotics": "https://deepmind.google/models/gemini-robotics/gemini-robotics/",
+        "gemini_robotics_blog": "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+        "open_x_embodiment": "https://github.com/google-deepmind/open_x_embodiment"
+      },
+      "queries": [
+        "site:deepmind.google Gemini Robotics VLA 2026",
+        "Google DeepMind embodied reasoning robotics 2026",
+        "Open X-Embodiment robot dataset 2026"
+      ]
+    },
+    {
+      "id": "ut-austin-rpl-yuke",
+      "type": "lab",
+      "priority": "core",
+      "name": "UT Austin Robot Perception and Learning Lab",
+      "people": ["Yuke Zhu"],
+      "branches": ["A", "B", "D", "E"],
+      "why_follow": "Simulation-to-real robot learning, RoboCasa/RoboVerse/ManiSkill ecosystem, large-scale manipulation benchmarks, and VLA evaluation.",
+      "anchor_work": ["RoboCasa", "RoboVerse", "ManiSkill-related benchmarks", "GR00T collaboration"],
+      "urls": {
+        "lab_people": "https://rpl.cs.utexas.edu/people/",
+        "ut_robotics": "https://www.cs.utexas.edu/research/intelligent-robotics",
+        "robocasa": "https://robocasa.ai/"
+      },
+      "queries": [
+        "Yuke Zhu RoboCasa RoboVerse 2026",
+        "UT Austin RPL robot learning benchmark 2026",
+        "RoboVerse embodied AI benchmark 2026"
+      ]
+    },
+    {
+      "id": "meta-fair-embodied",
+      "type": "company_research",
+      "priority": "core",
+      "name": "Meta FAIR Embodied AI",
+      "people": ["Dhruv Batra", "Aravind Rajeswaran", "Franziska Meier"],
+      "branches": ["C", "D", "E"],
+      "why_follow": "Habitat/OpenEQA/PARTNR line, embodied QA, smart-glasses memory, tactile/robotics releases, and collaborative embodied evaluation.",
+      "anchor_work": ["OpenEQA", "Habitat", "PARTNR", "Meta Sparsh"],
+      "urls": {
+        "open_eqa_blog": "https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/",
+        "fair_robotics": "https://ai.meta.com/blog/fair-robotics-open-source/",
+        "dhruv_batra": "https://dhruvbatra.com/"
+      },
+      "queries": [
+        "Meta FAIR embodied AI OpenEQA Habitat 2026",
+        "Dhruv Batra embodied AI benchmark 2026",
+        "Meta FAIR robotics tactile Habitat 2026"
+      ]
+    },
+    {
+      "id": "huggingface-lerobot",
+      "type": "open_source_team",
+      "priority": "core",
+      "name": "Hugging Face LeRobot",
+      "people": ["Remi Cadene", "LeRobot contributors"],
+      "branches": ["D", "E"],
+      "why_follow": "Open-source robot datasets, affordable VLA models, community hardware/software recipes, and rapidly updated model/data releases.",
+      "anchor_work": ["LeRobot", "SmolVLA", "X-VLA integrations", "SO-100/SO-101 recipes"],
+      "urls": {
+        "smolvla_blog": "https://huggingface.co/blog/smolvla",
+        "lerobot_github": "https://github.com/huggingface/lerobot",
+        "lerobot_docs": "https://huggingface.co/docs/lerobot"
+      },
+      "queries": [
+        "site:huggingface.co/blog LeRobot VLA robotics 2026",
+        "Hugging Face LeRobot robot policy 2026",
+        "SmolVLA X-VLA LeRobot 2026"
+      ]
+    },
+    {
+      "id": "toyota-research-institute-lbm",
+      "type": "company_research",
+      "priority": "core",
+      "name": "Toyota Research Institute Large Behavior Models",
+      "people": ["Russ Tedrake", "Scott Kuindersma"],
+      "branches": ["D", "E"],
+      "why_follow": "Robotics foundation models, large behavior models, real-world dexterous manipulation, simulation and Drake-based evaluation infrastructure.",
+      "anchor_work": ["Robotics Foundation Models", "Large Behavior Models", "Drake"],
+      "urls": {
+        "frontier_research": "https://global.toyota/en/mobility/frontier-research/42394425.html",
+        "russ_tedrake": "https://www.tri.global/about-us/dr-russ-tedrake"
+      },
+      "queries": [
+        "Toyota Research Institute robotics foundation models 2026",
+        "Russ Tedrake large behavior models robot 2026",
+        "TRI robot learning foundation model 2026"
+      ]
+    },
+    {
+      "id": "cmu-genesis-robogen",
+      "type": "lab_cluster",
+      "priority": "watch",
+      "name": "CMU / Genesis-Embodied-AI RoboGen line",
+      "people": ["David Held", "Katerina Fragkiadaki", "Chuang Gan"],
+      "branches": ["B", "D", "E"],
+      "why_follow": "Generative simulation, self-guided robotic task creation, and automated robot learning data generation.",
+      "anchor_work": ["RoboGen", "Genesis-style generative simulation"],
+      "urls": {
+        "robogen_github": "https://github.com/Genesis-Embodied-AI/RoboGen"
+      },
+      "queries": [
+        "RoboGen generative simulation robot learning 2026",
+        "Genesis Embodied AI generative robotics 2026",
+        "David Held Katerina Fragkiadaki Chuang Gan robot generation 2026"
+      ]
+    },
+    {
+      "id": "tsinghua-air-vla",
+      "type": "lab",
+      "priority": "watch",
+      "name": "Tsinghua AIR / VLA line",
+      "people": ["Tsinghua AIR robotics contributors"],
+      "branches": ["D", "E"],
+      "why_follow": "Open VLA releases and benchmark-driven robot foundation model work, especially X-VLA style cross-robot adaptation.",
+      "anchor_work": ["X-VLA"],
+      "urls": {
+        "xvla_news": "https://air.tsinghua.edu.cn/info/1007/2467.htm"
+      },
+      "queries": [
+        "Tsinghua AIR X-VLA robotics 2026",
+        "X-VLA vision language action 2026",
+        "Tsinghua robot foundation model VLA 2026"
+      ]
+    },
+    {
+      "id": "embodiedgen-consortium",
+      "type": "lab_cluster",
+      "priority": "watch",
+      "name": "EmbodiedGen / 3D generation for robotics consortium",
+      "people": ["Horizon Robotics contributors", "CUHK contributors", "Tsinghua contributors"],
+      "branches": ["A", "B", "E"],
+      "why_follow": "Generative simulation-ready 3D worlds, physically grounded assets, URDF/SDF-style outputs, and world engines for embodied intelligence.",
+      "anchor_work": ["EmbodiedGen", "3D Generation for Embodied AI and Robotic Simulation survey"],
+      "urls": {
+        "embodiedgen_arxiv": "https://arxiv.org/abs/2506.10600",
+        "survey_project": "https://3dgen4robot.github.io/"
+      },
+      "queries": [
+        "EmbodiedGen 3D world engine embodied intelligence 2026",
+        "3D generation robotic simulation survey 2026",
+        "simulation-ready 3D assets physical properties embodied AI 2026"
+      ]
+    }
+  ],
+  "meta_sources": [
+    {
+      "id": "vla-leaderboard",
+      "type": "leaderboard",
+      "priority": "core",
+      "name": "VLA Leaderboard",
+      "branches": ["D", "E"],
+      "why_follow": "Fast signal for newly influential VLA models and benchmarks; every candidate still needs primary-source verification.",
+      "urls": {
+        "leaderboard": "https://vlaleaderboard.com/"
+      },
+      "queries": ["VLA leaderboard new model 2026"]
+    },
+    {
+      "id": "vla-survey",
+      "type": "survey_index",
+      "priority": "watch",
+      "name": "Vision-Language-Action Models for Robotics survey page",
+      "branches": ["D", "E"],
+      "why_follow": "Broad index for VLA taxonomy and paper discovery; use only as discovery signal, not acceptance evidence.",
+      "urls": {
+        "survey": "https://vla-survey.github.io/"
+      },
+      "queries": ["VLA survey robotics new papers 2026"]
+    }
+  ]
+}

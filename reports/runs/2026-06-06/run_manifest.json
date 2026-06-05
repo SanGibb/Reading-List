@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-06",
+  "status": "dry_run_complete_not_applied",
+  "created_artifacts": [
+    "00_run_plan.json",
+    "01_discovery.json",
+    "02_evidence.json",
+    "03_review.json",
+    "04_editor_report.md",
+    "05_registry_patch.json",
+    "paper_reads/CAND-0002.md"
+  ],
+  "validation": "passed",
+  "note": "Local workflow validation run; registry patch is intentionally not applied.",
+  "validation_command": "python frontier_research/scripts/validate_run.py 2026-06-06"
+}

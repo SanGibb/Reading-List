@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+
+if [ -f "scripts/validate_all.py" ]; then
+  project_root="."
+elif [ -f "frontier_research/scripts/validate_all.py" ]; then
+  project_root="frontier_research"
+else
+  echo "Could not locate frontier_research validation scripts." >&2
+  exit 1
+fi
+
+python "$project_root/scripts/validate_all.py"

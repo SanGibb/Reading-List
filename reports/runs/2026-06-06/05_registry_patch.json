@@ -1,0 +1,57 @@
+{
+  "run_id": "2026-06-06",
+  "branch_assignments": [
+    {
+      "candidate_id": "CAND-0001",
+      "primary_branch": "D",
+      "secondary_branches": [
+        "E"
+      ],
+      "taxonomy_confidence": 5,
+      "reason": "VLA model; efficiency and deployment affect data infrastructure secondarily."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "primary_branch": "E",
+      "secondary_branches": [
+        "C"
+      ],
+      "taxonomy_confidence": 5,
+      "reason": "Evaluation benchmark with spatial/environment-understanding relevance."
+    }
+  ],
+  "taxonomy_change_proposals": [],
+  "registry_additions": [
+    {
+      "candidate_id": "CAND-0002",
+      "branch": "E",
+      "paper": {
+        "title": "OpenEQA: Embodied Question Answering in the Era of Foundation Models",
+        "year": 2024,
+        "venue": "CVPR",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html",
+        "data": "embodied question-answering benchmark over physical/scanned environments",
+        "method": "open-vocabulary embodied QA benchmark formulation",
+        "task": "answer natural-language questions about an environment",
+        "novelty": "modern open-vocabulary benchmark for embodied environment understanding",
+        "project_relevance": "useful downstream benchmark for evaluating generated interactive environments",
+        "source_quality": "primary_or_official",
+        "demo_score": 2,
+        "evidence_strength": 4,
+        "visual_quality_score": 0,
+        "visual_quality_decision": "not_applicable"
+      }
+    }
+  ],
+  "registry_updates": [],
+  "registry_noops": [
+    {
+      "candidate_id": "CAND-0001",
+      "reason": "undecided visual-quality candidate; dossier written to undecided/2026-06-06/CAND-0001.md"
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "reason": "blocked social-only candidate"
+    }
+  ]
+}

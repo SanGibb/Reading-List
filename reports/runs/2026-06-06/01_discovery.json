@@ -1,0 +1,110 @@
+{
+  "run_id": "2026-06-06",
+  "followed_sources_checked": [
+    {
+      "source_id": "huggingface-lerobot",
+      "status": "checked",
+      "notes": "SmolVLA candidate was found through the Hugging Face / LeRobot ecosystem and arXiv primary source.",
+      "urls_checked": [
+        "https://huggingface.co/papers/2506.01844",
+        "https://github.com/huggingface/lerobot"
+      ]
+    },
+    {
+      "source_id": "meta-fair-embodied",
+      "status": "checked",
+      "notes": "OpenEQA candidate was found through the Meta FAIR embodied evaluation line and CVF/project sources.",
+      "urls_checked": [
+        "https://open-eqa.github.io/",
+        "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html"
+      ]
+    },
+    {
+      "source_id": "vla-leaderboard",
+      "status": "spot_checked",
+      "notes": "Used as a discovery signal for VLA-style candidates; no registry acceptance is based on leaderboard alone.",
+      "urls_checked": [
+        "https://vlaleaderboard.com/"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "CAND-0001",
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2506.01844",
+      "source_type": "arxiv",
+      "discovered_from": "web search: SmolVLA efficient vision-language-action model arxiv 2025",
+      "date_hint": "2025",
+      "authors_hint": "Hugging Face / collaborators",
+      "venue_hint": "arXiv",
+      "project_url": "https://huggingface.co/papers/2506.01844",
+      "code_url": "https://github.com/huggingface/lerobot",
+      "demo_url": "https://huggingface.co/papers/2506.01844",
+      "why_candidate": "Efficient open VLA system relevant to generalist robot policies and deployable embodied control."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "title": "OpenEQA: Embodied Question Answering in the Era of Foundation Models",
+      "branch_hint": "E",
+      "source_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html",
+      "source_type": "cvf",
+      "discovered_from": "web search: OpenEQA Embodied Question Answering CVPR 2024",
+      "date_hint": "2024",
+      "authors_hint": "Majumdar et al.",
+      "venue_hint": "CVPR 2024",
+      "project_url": "https://open-eqa.github.io/",
+      "code_url": "",
+      "demo_url": "https://open-eqa.github.io/",
+      "why_candidate": "Embodied QA benchmark relevant to evaluating scene understanding and embodied world knowledge."
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "title": "RynnVLA-002 social-only announcement",
+      "branch_hint": "D",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1p5kk9y/rynnvla002_a_unified_visionlanguageaction_and/",
+      "source_type": "other",
+      "discovered_from": "web search surfaced a Reddit post without primary source verification in this dry-run",
+      "date_hint": "unknown",
+      "authors_hint": "unknown",
+      "venue_hint": "unknown",
+      "project_url": "",
+      "code_url": "",
+      "demo_url": "",
+      "why_candidate": "Used to test social-only rejection path in the system harness."
+    }
+  ],
+  "triage": [
+    {
+      "candidate_id": "CAND-0001",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary arXiv source, directly about efficient VLA for robotics.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary CVF source and benchmark relevance to embodied evaluation.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "decision": "reject",
+      "primary_branch": null,
+      "reason": "Social-only source in this run; no verified primary source accepted by harness.",
+      "dedupe_status": "new",
+      "source_quality": "social_only",
+      "impact_prior": 0,
+      "project_relevance_prior": 0
+    }
+  ]
+}

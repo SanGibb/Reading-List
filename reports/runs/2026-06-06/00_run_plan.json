@@ -1,0 +1,39 @@
+{
+  "run_id": "2026-06-06",
+  "created_at": "2026-06-06",
+  "branches": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "search_windows": {
+    "default_days": 14,
+    "high_priority_days": 45
+  },
+  "branch_queries": {
+    "A": [
+      "simulation-ready physical asset generation embodied AI"
+    ],
+    "B": [
+      "interactive world generation agentic PCG embodied AI"
+    ],
+    "C": [
+      "spatial intelligence VLM embodied AI benchmark"
+    ],
+    "D": [
+      "vision language action model robotics VLA 2025 2026"
+    ],
+    "E": [
+      "embodied world model evaluation benchmark embodied question answering"
+    ]
+  },
+  "known_registry_path": "data/papers.seed.json",
+  "follow_sources_path": "data/follow_sources.seed.json",
+  "harness_paths": [
+    "harness/system_harness.md",
+    "harness/acceptance_harness.md"
+  ],
+  "minimum_year": 2024
+}

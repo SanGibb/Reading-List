@@ -1,0 +1,75 @@
+{
+  "run_id": "2026-06-06",
+  "visual_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "visual_materials": [
+        "https://huggingface.co/papers/2506.01844",
+        "https://github.com/huggingface/lerobot"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "code_page"
+      ],
+      "visual_quality_score": 1,
+      "visual_quality_decision": "undecided",
+      "visual_notes": "Dry-run could verify project/code links but did not inspect enough robot execution videos or generated/action demos to judge effect quality confidently.",
+      "failure_modes": [
+        "insufficient visual evidence in dry-run",
+        "needs human demo review"
+      ],
+      "needs_human_decision": true,
+      "undecided_reason": "Efficient VLA relevance is clear, but visual/robot execution quality was not confidently judged in this local dry-run."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "visual_materials": [
+        "https://open-eqa.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "benchmark_examples"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "OpenEQA is an evaluation benchmark; visual generation quality is not the acceptance criterion.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    }
+  ],
+  "quality_review": [
+    {
+      "candidate_id": "CAND-0001",
+      "review_decision": "needs_revision",
+      "issues": [
+        "Visual quality could not be judged confidently in the dry-run."
+      ],
+      "required_fixes": [
+        "Human should inspect robot execution/demo evidence and decide accept/reject/watchlist."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "review_decision": "block",
+      "issues": [
+        "Social-only source in this run."
+      ],
+      "required_fixes": [
+        "Find primary paper/project page before reconsidering."
+      ],
+      "accepted_for_registry": false
+    }
+  ],
+  "run_level_issues": [
+    "This was a local dry-run to validate workflow mechanics; CAND-0001 demonstrates the undecided visual-quality path."
+  ]
+}
