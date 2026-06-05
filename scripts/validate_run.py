@@ -403,6 +403,7 @@ def main() -> int:
             continue
         cid = require(item, "candidate_id", "registry addition", errors)
         branch = require(item, "branch", f"registry addition {cid}", errors)
+        deep_dive_path = require(item, "deep_dive_path", f"registry addition {cid}", errors)
         paper = require(item, "paper", f"registry addition {cid}", errors)
         if cid not in accepted_ids:
             errors.append(f"registry addition {cid} is not accepted by quality review")
@@ -423,8 +424,14 @@ def main() -> int:
             year = paper.get("year")
             if not isinstance(year, int) or year < MIN_YEAR:
                 errors.append(f"registry addition {cid} paper year must be >= {MIN_YEAR}")
-            if isinstance(cid, str):
-                validate_deep_dive(run_dir / "paper_reads" / f"{cid}.md", cid, paper, errors)
+            if isinstance(cid, str) and isinstance(deep_dive_path, str):
+                deep_dive_rel = Path(deep_dive_path)
+                if deep_dive_rel.is_absolute() or ".." in deep_dive_rel.parts:
+                    errors.append(f"registry addition {cid} deep_dive_path must be a safe relative path")
+                elif not deep_dive_path.startswith("paper_reads/"):
+                    errors.append(f"registry addition {cid} deep_dive_path must live under paper_reads/")
+                else:
+                    validate_deep_dive(root / deep_dive_rel, cid, paper, errors)
 
     if errors:
         print("Run validation failed:")

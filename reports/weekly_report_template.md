@@ -6,7 +6,7 @@ Date: YYYY-MM-DD
 
 - New accepted papers:
 - Followed sources checked:
-- Deep dives:
+- Deep dives in `paper_reads/`:
 - Watchlist items:
 - Strong demos:
 - Undecided visual cases:

@@ -12,7 +12,7 @@ The system now uses **five agents**. Each agent owns a larger but still coherent
 | 01 | Discovery Agent | run plan, registry, web sources | `01_discovery.json` | candidate triage |
 | 02 | Evidence Analyst | discovery artifact, primary sources | `02_evidence.json` | evidence extraction |
 | 03 | Quality Reviewer | discovery/evidence artifacts, demos, visual evidence | `03_review.json` | pass / revise / block |
-| 04/05 | Taxonomy & Editor | all reviewed artifacts | `04_editor_report.md`, `05_registry_patch.json`, `paper_reads/CAND-xxxx.md` | deep dives, report, and patch assembly |
+| 04/05 | Taxonomy & Editor | all reviewed artifacts | `04_editor_report.md`, `05_registry_patch.json`, `paper_reads/<branch>/<slug>.md` | maintained deep dives, report, and patch assembly |
 
 ## Non-Negotiable Rules
 
@@ -23,7 +23,7 @@ The system now uses **five agents**. Each agent owns a larger but still coherent
 - Evidence Analyst extracts paper/demo evidence, but it cannot accept papers.
 - Quality Reviewer inspects source quality, demos, and visual/generation results. Weak or undecidable visual cases cannot enter the registry.
 - Taxonomy & Editor can assemble taxonomy assignments and registry patch drafts, but only from reviewer-passed candidates.
-- Every registry addition must have a complete `paper_reads/CAND-xxxx.md` deep dive.
+- Every registry addition must set `deep_dive_path` and point to a complete top-level `paper_reads/<branch>/<slug>.md` report.
 - Undecided visual cases go to `undecided/YYYY-MM-DD/` for human decision.
 - `validate_run.py` must pass before any registry update.
 

@@ -36,6 +36,7 @@ Include:
 - `agents/`
 - `automation/`
 - `harness/`
+- `paper_reads/`
 - `reports/`
 - `scripts/`
 - `undecided/`
@@ -60,7 +61,7 @@ Do not include:
 | `data/papers.seed.json` | Curated 2024+ paper registry. |
 | `data/follow_sources.seed.json` | Fixed PI/lab/company sources for Discovery Agent. |
 | `reports/runs/YYYY-MM-DD/` | Auditable multi-agent run artifacts. |
-| `reports/runs/YYYY-MM-DD/paper_reads/` | Mandatory deep dives for accepted registry additions. |
+| `paper_reads/<branch>/<slug>.md` | Maintained deep dives for accepted registry additions. |
 | `undecided/YYYY-MM-DD/` | Human-decision dossiers for papers whose visual/demo quality is uncertain. |
 | `harness/acceptance_harness.md` | Paper quality and relevance criteria. |
 | `harness/system_harness.md` | Workflow execution rules. |
@@ -91,7 +92,7 @@ Hooks are for mechanical checks only:
 - registry schema is valid,
 - no pre-2024 registry papers,
 - completed runs validate,
-- accepted registry additions have deep-dive Markdown files,
+- accepted registry additions have `deep_dive_path` Markdown files,
 - follow-source checks reference known source ids.
 - undecided dossiers exist locally before publishing, but are not pushed automatically.
 
@@ -118,5 +119,5 @@ Before writing related work:
 
 - run a manual deep-update scan,
 - review top demos,
-- read paper deep dives under `reports/runs/*/paper_reads/`,
+- read paper deep dives under `paper_reads/`,
 - export the relevant branch subset from `data/papers.seed.json`.

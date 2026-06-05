@@ -64,7 +64,7 @@ That entry point validates:
 - `data/follow_sources.seed.json`
 - the current registry schema
 - every completed run under `reports/runs/*`
-- accepted-paper deep dives required by registry patches
+- accepted-paper `deep_dive_path` reports required by registry patches
 
 For publish-time local validation, the publisher sets:
 

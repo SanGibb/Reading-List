@@ -21,7 +21,6 @@ def main() -> int:
     root = Path(__file__).resolve().parents[1]
     run_dir = root / "reports" / "runs" / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
-    (run_dir / "paper_reads").mkdir(exist_ok=True)
 
     write_json(
         run_dir / "00_run_plan.json",
@@ -79,7 +78,7 @@ def main() -> int:
                 "04_editor_report.md",
                 "05_registry_patch.json",
             ],
-            "created_directories": ["paper_reads"],
+            "created_directories": [],
             "validation": "not_run",
         },
     )

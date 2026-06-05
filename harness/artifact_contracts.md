@@ -139,7 +139,14 @@ Required:
 - `registry_updates`
 - `registry_noops`
 
-### `paper_reads/CAND-xxxx.md`
+Each `registry_additions` item must include:
+
+- `candidate_id`
+- `branch`
+- `deep_dive_path`: `paper_reads/<branch>/<slug>.md`
+- `paper`
+
+### `paper_reads/<branch>/<slug>.md`
 
 Required for every candidate in `registry_additions`.
 

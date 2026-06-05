@@ -39,6 +39,7 @@ Expected output:
 - `reports/runs/YYYY-MM-DD/` with consolidated stage artifacts
 - `reports/YYYY-MM-DD-weekly.md`
 - `01_discovery.json` with `followed_sources_checked`
+- maintained deep dives under `paper_reads/<branch>/<slug>.md`
 - conservative registry updates
 - watchlist for unverified but potentially important work
 - local-only undecided dossiers under `undecided/YYYY-MM-DD/`
@@ -70,7 +71,7 @@ Use one focused Codex task per role when quality matters. Each phase reads previ
 2. **Discovery Agent** checks `data/follow_sources.seed.json`, then writes `01_discovery.json`.
 3. **Evidence Analyst** writes `02_evidence.json`.
 4. **Quality Reviewer** writes `03_review.json` and optional undecided dossiers.
-5. **Taxonomy & Editor** writes `04_editor_report.md`, `05_registry_patch.json`, `paper_reads/CAND-xxxx.md`, and `run_manifest.json`.
+5. **Taxonomy & Editor** writes `04_editor_report.md`, `05_registry_patch.json`, accepted-paper `paper_reads/<branch>/<slug>.md` reports, and `run_manifest.json`.
 6. **System Harness** validates the run.
 7. **Publisher** runs `python scripts/publish_validated_update.py --message "Weekly frontier scan YYYY-MM-DD"`.
 
@@ -107,7 +108,7 @@ The publisher leaves `undecided/**` local-only by default. Those dossiers should
 - Do not let one agent write another agent's artifact.
 - Do not skip fixed follow sources silently; record `checked`, `spot_checked`, `unreachable`, or `skipped`.
 - Do not update the registry if `validate_run.py` fails.
-- Do not add a paper to `registry_additions` unless its `paper_reads/CAND-xxxx.md` deep dive exists and includes source links, novelty, contributions, task, data, method, key figures/architecture, evidence, limitations, and project relevance.
+- Do not add a paper to `registry_additions` unless it has `deep_dive_path` pointing to a top-level `paper_reads/<branch>/<slug>.md` report with source links, novelty, contributions, task, data, method, key figures/architecture, evidence, limitations, and project relevance.
 - Do not commit or push `undecided/YYYY-MM-DD/CAND-xxxx.md` during the automatic weekly publish step.
 
 ## Suggested Prompt Contract

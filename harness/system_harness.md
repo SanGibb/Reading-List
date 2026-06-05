@@ -28,7 +28,7 @@ reports/runs/YYYY-MM-DD/
 | 02 | Evidence Analyst | `02_evidence.json` | paper cards plus demo/code/project verification |
 | 03 | Quality Reviewer | `03_review.json` | visual inspection plus pass/revise/block review |
 | 04 | Taxonomy & Editor | `04_editor_report.md` | final human-readable report |
-| 05 | Taxonomy & Editor | `05_registry_patch.json`, `paper_reads/CAND-xxxx.md` | branch assignments, taxonomy proposals, registry patch draft, accepted-paper deep dives |
+| 05 | Taxonomy & Editor | `05_registry_patch.json`, `paper_reads/<branch>/<slug>.md` | branch assignments, taxonomy proposals, registry patch draft, accepted-paper deep dives |
 | manifest | Research Lead / Editor | `run_manifest.json` | records status and validation result |
 
 ## System Invariants
@@ -47,7 +47,7 @@ reports/runs/YYYY-MM-DD/
 - Visual cards can reference `analyze` or `watchlist`, but not `reject`.
 - Quality review can reference any discovered candidate, including rejected candidates.
 - Registry patch can include only candidates with `accepted_for_registry: true`.
-- Every registry addition must have a corresponding `paper_reads/CAND-xxxx.md` deep dive.
+- Every registry addition must set `deep_dive_path` and point to a corresponding top-level `paper_reads/<branch>/<slug>.md` deep dive.
 - Discovery must record which fixed PI/lab/company sources were checked.
 - Undecided dossiers are required for local publish validation but remain local-only unless explicitly approved.
 
@@ -75,7 +75,7 @@ The harness checks these boundaries through artifact shape and cross-file refere
 - Candidates with `visual_quality_decision: "undecided"` or `needs_human_decision: true` cannot appear in `registry_additions`.
 - Registry additions must have `year >= 2024`.
 - Registry additions must include the required registry fields.
-- Registry additions must include a per-paper deep dive with source links, novelty, contributions, task, data, method, key figures/architecture, evidence, limitations, and project relevance.
+- Registry additions must include `deep_dive_path` to a per-paper deep dive with source links, novelty, contributions, task, data, method, key figures/architecture, evidence, limitations, and project relevance.
 - Actual registry changes must pass `scripts/validate_registry.py`.
 
 ### 6. Report safety
@@ -105,7 +105,7 @@ A run passes if:
 - publish-time validation can require local undecided dossiers without uploading them,
 - taxonomy changes are proposal-only,
 - report and manifest exist,
-- every registry addition has a complete deep-dive Markdown file,
+- every registry addition has a complete deep-dive Markdown file under top-level `paper_reads/`,
 - registry patch is structurally valid.
 
 A run fails if any invariant is violated.

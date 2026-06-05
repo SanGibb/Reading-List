@@ -18,7 +18,7 @@ This is a local dry-run used to validate the consolidated file-driven multi-agen
 
 | Candidate | Branch | Source | Deep dive | Visual | Why it matters |
 |---|---|---|---|---|---|
-| OpenEQA | E | https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html | paper_reads/CAND-0002.md | not_applicable | Embodied QA benchmark relevant to evaluating environment understanding. |
+| OpenEQA | E | https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html | ../../../paper_reads/E_evaluation_data_infrastructure/openeqa-2024.md | not_applicable | Embodied QA benchmark relevant to evaluating environment understanding. |
 
 ## Undecided
 

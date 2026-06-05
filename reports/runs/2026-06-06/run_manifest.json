@@ -7,8 +7,10 @@
     "02_evidence.json",
     "03_review.json",
     "04_editor_report.md",
-    "05_registry_patch.json",
-    "paper_reads/CAND-0002.md"
+    "05_registry_patch.json"
+  ],
+  "maintained_library_artifacts": [
+    "paper_reads/E_evaluation_data_infrastructure/openeqa-2024.md"
   ],
   "validation": "passed",
   "note": "Local workflow validation run; registry patch is intentionally not applied.",

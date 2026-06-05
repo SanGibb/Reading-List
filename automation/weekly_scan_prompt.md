@@ -40,7 +40,7 @@ Task:
    - Discovery Agent: search, deduplicate, and triage into `01_discovery.json`.
    - Evidence Analyst: extract paper/demo evidence into `02_evidence.json`.
    - Quality Reviewer: inspect source quality, demos, and visual/generation results into `03_review.json`.
-   - Taxonomy & Editor: write `04_editor_report.md`, `05_registry_patch.json`, accepted-paper deep dives under `paper_reads/CAND-xxxx.md`, and `run_manifest.json`.
+   - Taxonomy & Editor: write `04_editor_report.md`, `05_registry_patch.json`, accepted-paper deep dives under top-level `paper_reads/<branch>/<slug>.md`, and `run_manifest.json`.
 8. For each analyzed candidate, extract:
    - title
    - authors when available
@@ -61,7 +61,7 @@ Task:
 10. If visual quality cannot be judged confidently, write a local dossier under `undecided/YYYY-MM-DD/CAND-xxxx.md` and do not add that candidate to the registry patch.
     - This dossier must still be a real paper/deep-dive analysis with source links, novelty, contributions, task, data, method, visual evidence, limitations, and the specific human decision needed.
     - Undecided dossiers are local-only by default. Do not commit or push them unless the human explicitly approves that candidate later.
-11. For every candidate in `registry_additions`, write `reports/runs/YYYY-MM-DD/paper_reads/CAND-xxxx.md`.
+11. For every candidate in `registry_additions`, write or update `paper_reads/<branch>/<slug>.md` and set `deep_dive_path` in `05_registry_patch.json`.
     - Include original paper/project/code/demo links.
     - Explain novelty, contributions, task, data, method, evidence, limitations, and project relevance.
     - Include a short evidence trail that maps central claims to paper/project/code/demo sources.

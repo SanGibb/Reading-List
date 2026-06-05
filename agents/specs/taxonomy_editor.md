@@ -20,7 +20,7 @@ This agent is the only role that can write the registry patch draft. It cannot o
 
 - `reports/runs/YYYY-MM-DD/04_editor_report.md`
 - `reports/runs/YYYY-MM-DD/05_registry_patch.json`
-- `reports/runs/YYYY-MM-DD/paper_reads/CAND-xxxx.md` for every registry addition
+- `paper_reads/<branch>/<slug>.md` for every registry addition
 - `reports/runs/YYYY-MM-DD/run_manifest.json`
 
 ## Required Patch Output
@@ -40,7 +40,8 @@ This agent is the only role that can write the registry patch draft. It cannot o
 
 - Only include candidates with `accepted_for_registry: true`.
 - Do not include candidates with `visual_quality_decision: "undecided"` or `needs_human_decision: true`.
-- Write a complete `paper_reads/CAND-xxxx.md` deep dive for every registry addition.
+- Write or update a complete top-level `paper_reads/<branch>/<slug>.md` deep dive for every registry addition.
+- Add `deep_dive_path` to every `registry_additions` item and point it to that maintained report.
 - Each deep dive must list original links and explain novelty, contributions, task, data, method, evidence, limitations, key figures/architecture, and project relevance.
 - The `Key Figures / Architecture` section should link official figures/videos or include a redrawn method diagram. If no figure is appropriate, set `figure_status: not_applicable` or `figure_status: missing` and explain why.
 - Keep top-level branches fixed to A-E.

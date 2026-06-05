@@ -27,10 +27,10 @@ Every accepted paper must include:
 Every paper added to the registry patch must also have a Markdown deep dive under:
 
 ```text
-reports/runs/YYYY-MM-DD/paper_reads/CAND-xxxx.md
+paper_reads/<branch>/<slug>.md
 ```
 
-The deep dive is part of the acceptance evidence, not optional notes.
+The registry addition must include `deep_dive_path` pointing to that file. The deep dive is part of the acceptance evidence, not optional notes.
 
 ## Evidence Discipline
 

@@ -36,7 +36,7 @@ The earlier version split search, triage, paper extraction, demo verification, v
 | Discovery Agent | Follow fixed sources, search, and cheap filtering | analyze / watchlist / reject | `01_discovery.json` |
 | Evidence Analyst | Deep paper + demo extraction | evidence extraction only | `02_evidence.json` |
 | Quality Reviewer | Source audit, visual inspection, acceptance gate | pass / needs_revision / block | `03_review.json` |
-| Taxonomy & Editor | Branch assignment, accepted-paper deep dives, final report, patch draft | registry patch from passed items only | `04_editor_report.md`, `05_registry_patch.json`, `paper_reads/CAND-xxxx.md` |
+| Taxonomy & Editor | Branch assignment, accepted-paper deep dives, final report, patch draft | registry patch from passed items only | `04_editor_report.md`, `05_registry_patch.json`, `paper_reads/<branch>/<slug>.md` |
 
 Only the Taxonomy & Editor may create a registry update draft, and that draft must pass `scripts/validate_run.py` plus `scripts/validate_registry.py` before it is applied.
 
@@ -64,12 +64,16 @@ reports/runs/YYYY-MM-DD/
   03_review.json
   04_editor_report.md
   05_registry_patch.json
-  paper_reads/
-    CAND-xxxx.md
   run_manifest.json
 ```
 
-Agents may only write their assigned stage file. This keeps the system reproducible, resumable, and reviewable while reducing handoff cost.
+Accepted-paper deep dives are maintained outside the run folder:
+
+```text
+paper_reads/<branch>/<slug>.md
+```
+
+Each `registry_additions` item must include `deep_dive_path` pointing to that maintained report. Agents may only write their assigned stage file, plus the Taxonomy & Editor may update the maintained deep-dive library for accepted papers. This keeps runs auditable while keeping final reading reports in one stable hierarchy.
 
 ## Pipeline
 
@@ -105,7 +109,7 @@ flowchart TD
 - If Quality Reviewer cannot judge visual/generation quality, the candidate goes to `undecided/YYYY-MM-DD/` and cannot enter the registry in that run.
 - If a generation-heavy paper has weak visual results, it is blocked even if it has a good venue.
 - If Taxonomy & Editor proposes a new top-level branch, it must be marked `proposal_only`.
-- If a registry addition lacks `paper_reads/CAND-xxxx.md`, the run fails.
+- If a registry addition lacks a valid `deep_dive_path` under top-level `paper_reads/`, the run fails.
 - If registry patch is created without harness validation, the update is invalid.
 
 ## What This System Harness Checks
@@ -121,7 +125,7 @@ The system harness checks the **workflow execution**, not paper taste:
 - paper/demo/review cards refer to valid candidates,
 - rejected candidates are not analyzed or added to registry,
 - undecided visual-quality candidates are not added to registry patch,
-- every registry addition has a complete paper deep dive,
+- every registry addition has a complete top-level paper deep dive,
 - taxonomy changes are proposal-only,
 - final report exists,
 - registry patch is structurally valid.
@@ -138,7 +142,7 @@ For reliable execution, run one Codex task per consolidated role:
 2. "Run Discovery Agent using `00_run_plan.json` and `data/follow_sources.seed.json`; write only `01_discovery.json`."
 3. "Run Evidence Analyst using `01_discovery.json` and write only `02_evidence.json`."
 4. "Run Quality Reviewer using `01/02` artifacts and write only `03_review.json` plus any undecided dossiers."
-5. "Run Taxonomy & Editor using all previous artifacts; write only `04_editor_report.md`, `05_registry_patch.json`, `paper_reads/CAND-xxxx.md`, and manifest updates."
+5. "Run Taxonomy & Editor using all previous artifacts; write only `04_editor_report.md`, `05_registry_patch.json`, accepted-paper `paper_reads/<branch>/<slug>.md` reports, and manifest updates."
 
 This keeps the model focused without turning the workflow into too many tiny tasks.
 
