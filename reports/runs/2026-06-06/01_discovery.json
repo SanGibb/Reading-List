@@ -2,109 +2,361 @@
   "run_id": "2026-06-06",
   "followed_sources_checked": [
     {
-      "source_id": "huggingface-lerobot",
+      "source_id": "stanford-svl-behavior",
       "status": "checked",
-      "notes": "SmolVLA candidate was found through the Hugging Face / LeRobot ecosystem and arXiv primary source.",
       "urls_checked": [
-        "https://huggingface.co/papers/2506.01844",
-        "https://github.com/huggingface/lerobot"
-      ]
+        "https://behavior.stanford.edu/",
+        "https://scenefun3d.github.io/",
+        "https://physdreamer.github.io/"
+      ],
+      "notes": "Used for BEHAVIOR-1K, SceneFun3D, PhysDreamer lines."
     },
     {
-      "source_id": "meta-fair-embodied",
+      "source_id": "princeton-pvl-infinigen",
       "status": "checked",
-      "notes": "OpenEQA candidate was found through the Meta FAIR embodied evaluation line and CVF/project sources.",
       "urls_checked": [
-        "https://open-eqa.github.io/",
-        "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html"
-      ]
+        "https://infinigen.org/"
+      ],
+      "notes": "Used for Infinigen Indoors and procedural generation branch."
     },
     {
-      "source_id": "vla-leaderboard",
+      "source_id": "ai2-embodied-prior",
+      "status": "checked",
+      "urls_checked": [
+        "https://yueyang1996.github.io/holodeck/",
+        "https://github.com/allenai/Holodeck"
+      ],
+      "notes": "Used for Holodeck embodied environment generation."
+    },
+    {
+      "source_id": "cmu-genesis-robogen",
+      "status": "checked",
+      "urls_checked": [
+        "https://robogen-ai.github.io/"
+      ],
+      "notes": "Used for RoboGen agentic PCG."
+    },
+    {
+      "source_id": "stanford-iris-openvla",
+      "status": "checked",
+      "urls_checked": [
+        "https://openvla.github.io/"
+      ],
+      "notes": "Used for OpenVLA line."
+    },
+    {
+      "source_id": "berkeley-rail-levine",
+      "status": "checked",
+      "urls_checked": [
+        "https://octo-models.github.io/",
+        "https://openvla.github.io/"
+      ],
+      "notes": "Used for Octo/OpenVLA robot policy baselines."
+    },
+    {
+      "source_id": "physical-intelligence",
+      "status": "checked",
+      "urls_checked": [
+        "https://www.pi.website/blog/pi0"
+      ],
+      "notes": "Used for pi0 high-quality robot demo evidence."
+    },
+    {
+      "source_id": "ut-austin-rpl-yuke",
       "status": "spot_checked",
-      "notes": "Used as a discovery signal for VLA-style candidates; no registry acceptance is based on leaderboard alone.",
       "urls_checked": [
-        "https://vlaleaderboard.com/"
-      ]
+        "https://roboverse.wiki/"
+      ],
+      "notes": "Used for RoboVerse infrastructure evidence."
     }
   ],
   "candidates": [
     {
       "candidate_id": "CAND-0001",
-      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics",
-      "branch_hint": "D",
-      "source_url": "https://arxiv.org/abs/2506.01844",
-      "source_type": "arxiv",
-      "discovered_from": "web search: SmolVLA efficient vision-language-action model arxiv 2025",
-      "date_hint": "2025",
-      "authors_hint": "Hugging Face / collaborators",
-      "venue_hint": "arXiv",
-      "project_url": "https://huggingface.co/papers/2506.01844",
-      "code_url": "https://github.com/huggingface/lerobot",
-      "demo_url": "https://huggingface.co/papers/2506.01844",
-      "why_candidate": "Efficient open VLA system relevant to generalist robot policies and deployable embodied control."
+      "title": "SceneFun3D: Fine-Grained Functionality and Affordance Understanding in 3D Scenes",
+      "branch_hint": "A",
+      "source_url": "https://scenefun3d.github.io/",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_primary_source_search",
+      "why_candidate": "Defines reusable fields Object, Part, Affordance, FunctionalElement, TaskLanguage, MotionParameter for our typed interactive-world representation."
     },
     {
       "candidate_id": "CAND-0002",
-      "title": "OpenEQA: Embodied Question Answering in the Era of Foundation Models",
-      "branch_hint": "E",
-      "source_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html",
-      "source_type": "cvf",
-      "discovered_from": "web search: OpenEQA Embodied Question Answering CVPR 2024",
-      "date_hint": "2024",
-      "authors_hint": "Majumdar et al.",
-      "venue_hint": "CVPR 2024",
-      "project_url": "https://open-eqa.github.io/",
-      "code_url": "",
-      "demo_url": "https://open-eqa.github.io/",
-      "why_candidate": "Embodied QA benchmark relevant to evaluating scene understanding and embodied world knowledge."
+      "title": "BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2403.09227",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_primary_source_search",
+      "why_candidate": "Directly informs Task, StatePredicate, GoalCondition, SceneObject, PhysicalProperty, and validation protocol design."
     },
     {
       "candidate_id": "CAND-0003",
-      "title": "RynnVLA-002 social-only announcement",
+      "title": "PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2605.21572",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_primary_source_search",
+      "why_candidate": "Strong candidate for PhysicalProperty, Material, DeformableState, KinematicJoint, and simulator export fields."
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "title": "PhysDreamer: Physics-Based Interaction with 3D Objects via Video Generation",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2404.13026",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_search",
+      "why_candidate": "Provides concrete fields for MaterialField, ExternalForce, DynamicResponse, and DeformableState validators."
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "title": "Feature Splatting: Language-Driven Physics-Based Scene Synthesis and Editing",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2404.01223",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_search",
+      "why_candidate": "Useful for SceneRepresentation, MaterialProperty, SegmentByText, PhysicsEdit, and simulator-backed validation."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "title": "PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2404.09465",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_primary_source_search",
+      "why_candidate": "Baseline for InteractionConstraint, Reachability, Collision, Articulation, and GeneratedScene validity metrics."
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "title": "Holodeck: Language Guided Generation of 3D Embodied AI Environments",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2312.09067",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_search",
+      "why_candidate": "Important baseline for Prompt, SceneSpec, SpatialConstraint, AssetRetrieval, LayoutOptimization, and downstream embodied evaluation."
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "title": "Infinigen Indoors: Photorealistic Indoor Scenes using Procedural Generation",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2406.11824",
+      "source_type": "primary_or_official",
+      "discovered_from": "primary_source_search",
+      "why_candidate": "Strong generator for Scene, Asset, Annotation, LayoutConstraint, and synthetic data pipelines."
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "title": "RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2311.01455",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_primary_source_search",
+      "why_candidate": "Directly motivates TaskGenerator, SceneGenerator, SupervisionGenerator, PolicyLearner, and validation-loop abstractions."
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "title": "SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Models",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2501.15830",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_primary_source_search",
+      "why_candidate": "Useful for Scene.spatial_graph, Ego3DEncoding, SpatialActionToken, and spatial instruction validation."
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "title": "Octo: An Open-Source Generalist Robot Policy",
       "branch_hint": "D",
-      "source_url": "https://www.reddit.com/r/singularity/comments/1p5kk9y/rynnvla002_a_unified_visionlanguageaction_and/",
-      "source_type": "other",
-      "discovered_from": "web search surfaced a Reddit post without primary source verification in this dry-run",
-      "date_hint": "unknown",
-      "authors_hint": "unknown",
-      "venue_hint": "unknown",
-      "project_url": "",
-      "code_url": "",
-      "demo_url": "",
-      "why_candidate": "Used to test social-only rejection path in the system harness."
+      "source_url": "https://arxiv.org/abs/2405.12213",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_primary_source_search",
+      "why_candidate": "Baseline for Policy, Observation, ActionDistribution, GoalImageCondition, and embodiment adaptation."
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2406.09246",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_primary_source_search",
+      "why_candidate": "Baseline for VLA policy execution, generated-task transfer, action-token interface, and finetuning experiments."
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "title": "pi0: A Vision-Language-Action Flow Model for General Robot Control",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2410.24164",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_primary_source_search",
+      "why_candidate": "Sets a high demo-quality target for robot execution, deformable manipulation, long-horizon interaction, and continuous action generation."
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "title": "RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2504.18904",
+      "source_type": "primary_or_official",
+      "discovered_from": "local_seed_plus_primary_source_search",
+      "why_candidate": "Useful for benchmark packaging, generated-task evaluation, policy baselines, and trajectory/data schema design."
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "title": "OpenEQA: Embodied Question Answering in the Era of Foundation Models",
+      "branch_hint": "E",
+      "source_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html",
+      "source_type": "primary_or_official",
+      "discovered_from": "previous_deep_dive_plus_primary_source_search",
+      "why_candidate": "downstream benchmark for testing whether generated interactive environments preserve object identity, spatial relations, and semantic affordances"
     }
   ],
   "triage": [
     {
       "candidate_id": "CAND-0001",
       "decision": "analyze",
-      "primary_branch": "D",
-      "reason": "Primary arXiv source, directly about efficient VLA for robotics.",
-      "dedupe_status": "new",
-      "source_quality": "primary",
-      "impact_prior": 4,
+      "primary_branch": "A",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "existing_registry_update",
+      "source_quality": "primary_or_official",
+      "impact_prior": 5,
       "project_relevance_prior": 4
     },
     {
       "candidate_id": "CAND-0002",
       "decision": "analyze",
-      "primary_branch": "E",
-      "reason": "Primary CVF source and benchmark relevance to embodied evaluation.",
-      "dedupe_status": "new",
-      "source_quality": "primary",
-      "impact_prior": 4,
+      "primary_branch": "A",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "existing_registry_update",
+      "source_quality": "primary_or_official",
+      "impact_prior": 5,
       "project_relevance_prior": 4
     },
     {
       "candidate_id": "CAND-0003",
-      "decision": "reject",
-      "primary_branch": null,
-      "reason": "Social-only source in this run; no verified primary source accepted by harness.",
-      "dedupe_status": "new",
-      "source_quality": "social_only",
-      "impact_prior": 0,
-      "project_relevance_prior": 0
+      "decision": "analyze",
+      "primary_branch": "A",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "existing_registry_update",
+      "source_quality": "primary_or_official",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "decision": "analyze",
+      "primary_branch": "A",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "new_registry_candidate",
+      "source_quality": "primary_or_official",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "decision": "analyze",
+      "primary_branch": "A",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "new_registry_candidate",
+      "source_quality": "primary_or_official",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "decision": "analyze",
+      "primary_branch": "B",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "existing_registry_update",
+      "source_quality": "primary_or_official",
+      "impact_prior": 5,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "decision": "analyze",
+      "primary_branch": "B",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "new_registry_candidate",
+      "source_quality": "primary_or_official",
+      "impact_prior": 5,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "decision": "analyze",
+      "primary_branch": "B",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "new_registry_candidate",
+      "source_quality": "primary_or_official",
+      "impact_prior": 5,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "decision": "analyze",
+      "primary_branch": "B",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "existing_registry_update",
+      "source_quality": "primary_or_official",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "decision": "analyze",
+      "primary_branch": "C",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "existing_registry_update",
+      "source_quality": "primary_or_official",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "existing_registry_update",
+      "source_quality": "primary_or_official",
+      "impact_prior": 5,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "existing_registry_update",
+      "source_quality": "primary_or_official",
+      "impact_prior": 5,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "existing_registry_update",
+      "source_quality": "primary_or_official",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "High relevance and primary/official source; selected for initialization batch.",
+      "dedupe_status": "existing_registry_update",
+      "source_quality": "primary_or_official",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Existing deep dive from prior dry-run; primary source verified and needed in registry initialization.",
+      "dedupe_status": "new_registry_candidate",
+      "source_quality": "primary_or_official",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
     }
   ]
 }

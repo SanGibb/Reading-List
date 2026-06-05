@@ -10,7 +10,7 @@
 |---|---|
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
 | 最新扩库摘要 | [reports/2026-06-06-expansion.md](reports/2026-06-06-expansion.md) |
-| 当前已收录精读 | [OpenEQA 2024](paper_reads/E_evaluation_data_infrastructure/openeqa-2024.md) |
+| 当前已收录精读 | 15 篇，见 [paper_reads/README.md](paper_reads/README.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。`05_registry_patch.json` 中的每个 `registry_additions` 条目必须包含 `deep_dive_path` 指向这个长期目录。
@@ -55,11 +55,17 @@ flowchart LR
   class A1,A2,A3,A4,B1,B2,B3,C1,C2,C3,D1,D2,D3,E1,E2,E3 leaf;
 ```
 
-## 当前收录
+## 当前精读库
 
-| Paper | Branch | Why included | Deep dive |
-|---|---|---|---|
-| OpenEQA: Embodied Question Answering in the Era of Foundation Models | E | embodied QA benchmark，可作为生成交互世界的下游环境理解评测 | [openeqa-2024.md](paper_reads/E_evaluation_data_infrastructure/openeqa-2024.md) |
+初始化批次已经覆盖 15 篇高质量工作：A 分支 5 篇，B 分支 4 篇，C 分支 1 篇，D 分支 3 篇，E 分支 2 篇。完整列表见 [paper_reads/README.md](paper_reads/README.md)。
+
+| Branch | Anchor works |
+|---|---|
+| A | SceneFun3D, BEHAVIOR-1K, PhysX-Omni, PhysDreamer, Feature Splatting |
+| B | PhyScene, Holodeck, Infinigen Indoors, RoboGen |
+| C | SpatialVLA |
+| D | Octo, OpenVLA, pi0 |
+| E | OpenEQA, RoboVerse |
 
 当前 registry 数据在 [data/papers.seed.json](data/papers.seed.json)，固定 follow 源在 [data/follow_sources.seed.json](data/follow_sources.seed.json)。
 

@@ -1,6 +1,6 @@
 {
   "run_id": "2026-06-06",
-  "status": "dry_run_complete_not_applied",
+  "status": "initial_expansion_validated",
   "created_artifacts": [
     "00_run_plan.json",
     "01_discovery.json",
@@ -10,9 +10,23 @@
     "05_registry_patch.json"
   ],
   "maintained_library_artifacts": [
+    "paper_reads/A_executable_world_representation/scenefun3d-2024.md",
+    "paper_reads/A_executable_world_representation/behavior-1k-2024.md",
+    "paper_reads/A_executable_world_representation/physx-omni-2026.md",
+    "paper_reads/A_executable_world_representation/physdreamer-2024.md",
+    "paper_reads/A_executable_world_representation/feature-splatting-2024.md",
+    "paper_reads/B_interactive_generation_pcg/physcene-2024.md",
+    "paper_reads/B_interactive_generation_pcg/holodeck-2024.md",
+    "paper_reads/B_interactive_generation_pcg/infinigen-indoors-2024.md",
+    "paper_reads/B_interactive_generation_pcg/robogen-2024.md",
+    "paper_reads/C_spatial_intelligence/spatialvla-2025.md",
+    "paper_reads/D_vla_world_action_models/octo-2024.md",
+    "paper_reads/D_vla_world_action_models/openvla-2024.md",
+    "paper_reads/D_vla_world_action_models/pi0-2024.md",
+    "paper_reads/E_evaluation_data_infrastructure/roboverse-2025.md",
     "paper_reads/E_evaluation_data_infrastructure/openeqa-2024.md"
   ],
+  "summary_artifact": "reports/2026-06-06-expansion.md",
   "validation": "passed",
-  "note": "Local workflow validation run; registry patch is intentionally not applied.",
-  "validation_command": "python frontier_research/scripts/validate_run.py 2026-06-06"
+  "note": "Initial knowledge-base expansion using local seed examples plus primary-source verification."
 }

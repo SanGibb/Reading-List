@@ -1,8 +1,9 @@
 # OpenEQA: Embodied Question Answering in the Era of Foundation Models
 
-candidate_id: CAND-0002
+candidate_id: CAND-0015
 branch: E. Evaluation and Data Infrastructure
 decision: accepted_for_registry
+registry_status: addition
 
 ## Source Links
 

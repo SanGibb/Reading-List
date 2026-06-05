@@ -4,36 +4,328 @@
     {
       "candidate_id": "CAND-0001",
       "visual_materials": [
-        "https://huggingface.co/papers/2506.01844",
-        "https://github.com/huggingface/lerobot"
+        "https://scenefun3d.github.io/",
+        "https://scenefun3d.github.io/static/images/framework.png",
+        "https://www.youtube.com/watch?v=NA"
       ],
       "inspected_modalities": [
         "project_page",
-        "code_page"
+        "official_figures",
+        "official_videos_or_gallery"
       ],
-      "visual_quality_score": 1,
-      "visual_quality_decision": "undecided",
-      "visual_notes": "Dry-run could verify project/code links but did not inspect enough robot execution videos or generated/action demos to judge effect quality confidently.",
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual quality is not the acceptance gate for this benchmark/data/infrastructure item.",
       "failure_modes": [
-        "insufficient visual evidence in dry-run",
-        "needs human demo review"
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
       ],
-      "needs_human_decision": true,
-      "undecided_reason": "Efficient VLA relevance is clear, but visual/robot execution quality was not confidently judged in this local dry-run."
+      "needs_human_decision": false,
+      "undecided_reason": ""
     },
     {
       "candidate_id": "CAND-0002",
       "visual_materials": [
-        "https://open-eqa.github.io/"
+        "https://behavior.stanford.edu/",
+        "https://behavior.stanford.edu/",
+        "https://behavior.stanford.edu/"
       ],
       "inspected_modalities": [
         "project_page",
+        "official_figures",
+        "official_videos_or_gallery"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual quality is not the acceptance gate for this benchmark/data/infrastructure item.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "visual_materials": [
+        "https://physx-omni.github.io/",
+        "https://physx-omni.github.io/static/videos/framework.png",
+        "https://physx-omni.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures",
+        "official_videos_or_gallery"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "visual_materials": [
+        "https://physdreamer.github.io/",
+        "https://physdreamer.github.io/assets/thumbnails/hat.png",
+        "https://physdreamer.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures",
+        "official_videos_or_gallery"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "visual_materials": [
+        "https://feature-splatting.github.io/",
+        "https://feature-splatting.github.io/resources/physics_pipeline.jpg",
+        "https://feature-splatting.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures",
+        "official_videos_or_gallery"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "visual_materials": [
+        "https://physcene.github.io/",
+        "https://physcene.github.io/assets/images/teaser_compress.png",
+        "https://physcene.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures",
+        "official_videos_or_gallery"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "visual_materials": [
+        "https://yueyang1996.github.io/holodeck/",
+        "https://yueyang1996.github.io/holodeck/static/images/objnav.jpg",
+        "https://yueyang1996.github.io/holodeck/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures",
+        "official_videos_or_gallery"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "visual_materials": [
+        "https://infinigen.org/",
+        "https://infinigen.org/img/random_sample_indoors.jpeg",
+        "https://infinigen.org/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures",
+        "official_videos_or_gallery"
+      ],
+      "visual_quality_score": 5,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "visual_materials": [
+        "https://robogen-ai.github.io/",
+        "https://robogen-ai.github.io/assets/images/long-horizon.png",
+        "https://robogen-ai.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures",
+        "official_videos_or_gallery"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "visual_materials": [
+        "https://spatialvla.github.io/",
+        "https://spatialvla.github.io/static/images/pipeline.png",
+        "https://spatialvla.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures",
+        "official_videos_or_gallery"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "visual_materials": [
+        "https://octo-models.github.io/",
+        "https://octo-models.github.io/octo.png",
+        "https://octo-models.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures",
+        "official_videos_or_gallery"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "visual_materials": [
+        "https://openvla.github.io/",
+        "https://openvla.github.io/static/images/openvla_model.jpg",
+        "https://openvla.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures",
+        "official_videos_or_gallery"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "visual_materials": [
+        "https://www.pi.website/blog/pi0",
+        "https://www.pi.website/_next/image?url=%2Fimages%2Fp0-fold-shirt-1.jpg&w=640&q=75",
+        "https://www.pi.website/blog/pi0"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures",
+        "official_videos_or_gallery"
+      ],
+      "visual_quality_score": 5,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official visual/demo evidence is strong enough for initialization.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "visual_materials": [
+        "https://roboverse.wiki/",
+        "https://roboverse.wiki/dataset_benchmark/benchmark/overview",
+        "https://roboverse.wiki/dataset_benchmark/benchmark/overview"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures",
+        "official_videos_or_gallery"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Visual quality is not the acceptance gate for this benchmark/data/infrastructure item.",
+      "failure_modes": [
+        "not_reproduced_locally",
+        "official_examples_may_be_curated"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "visual_materials": [
+        "https://open-eqa.github.io/",
+        "https://open-eqa.github.io/assets/images/workflow.png"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_figures",
         "benchmark_examples"
       ],
       "visual_quality_score": 0,
       "visual_quality_decision": "not_applicable",
-      "visual_notes": "OpenEQA is an evaluation benchmark; visual generation quality is not the acceptance criterion.",
-      "failure_modes": [],
+      "visual_notes": "Benchmark/evaluation paper; visual generation quality is not the acceptance gate.",
+      "failure_modes": [
+        "not_reproduced_locally"
+      ],
       "needs_human_decision": false,
       "undecided_reason": ""
     }
@@ -41,35 +333,141 @@
   "quality_review": [
     {
       "candidate_id": "CAND-0001",
-      "review_decision": "needs_revision",
+      "review_decision": "pass",
       "issues": [
-        "Visual quality could not be judged confidently in the dry-run."
+        "metrics_not_reproduced_locally"
       ],
-      "required_fixes": [
-        "Human should inspect robot execution/demo evidence and decide accept/reject/watchlist."
-      ],
-      "accepted_for_registry": false
+      "required_fixes": [],
+      "accepted_for_registry": true
     },
     {
       "candidate_id": "CAND-0002",
       "review_decision": "pass",
-      "issues": [],
+      "issues": [
+        "metrics_not_reproduced_locally"
+      ],
       "required_fixes": [],
       "accepted_for_registry": true
     },
     {
       "candidate_id": "CAND-0003",
-      "review_decision": "block",
+      "review_decision": "pass",
       "issues": [
-        "Social-only source in this run."
+        "metrics_not_reproduced_locally"
       ],
-      "required_fixes": [
-        "Find primary paper/project page before reconsidering."
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "review_decision": "pass",
+      "issues": [
+        "metrics_not_reproduced_locally"
       ],
-      "accepted_for_registry": false
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "review_decision": "pass",
+      "issues": [
+        "metrics_not_reproduced_locally"
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "review_decision": "pass",
+      "issues": [
+        "metrics_not_reproduced_locally"
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "review_decision": "pass",
+      "issues": [
+        "metrics_not_reproduced_locally"
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "review_decision": "pass",
+      "issues": [
+        "metrics_not_reproduced_locally"
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "review_decision": "pass",
+      "issues": [
+        "metrics_not_reproduced_locally"
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "review_decision": "pass",
+      "issues": [
+        "metrics_not_reproduced_locally"
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "review_decision": "pass",
+      "issues": [
+        "metrics_not_reproduced_locally"
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "review_decision": "pass",
+      "issues": [
+        "metrics_not_reproduced_locally"
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "review_decision": "pass",
+      "issues": [
+        "metrics_not_reproduced_locally"
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "review_decision": "pass",
+      "issues": [
+        "metrics_not_reproduced_locally"
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "review_decision": "pass",
+      "issues": [
+        "metrics_not_reproduced_locally"
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
     }
   ],
   "run_level_issues": [
-    "This was a local dry-run to validate workflow mechanics; CAND-0001 demonstrates the undecided visual-quality path."
+    "Initialization pass prioritizes high-quality seed coverage; exact benchmark numbers must be checked before citation."
   ]
 }

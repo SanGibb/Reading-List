@@ -8,25 +8,30 @@
     "D",
     "E"
   ],
+  "minimum_year": 2024,
   "search_windows": {
-    "default_days": 14,
-    "high_priority_days": 45
+    "default_days": 730,
+    "high_priority_days": 730
   },
   "branch_queries": {
     "A": [
-      "simulation-ready physical asset generation embodied AI"
+      "2024 2025 2026 physical deformable sim-ready 3D assets embodied AI",
+      "3D affordance functionality scene understanding CVPR 2024"
     ],
     "B": [
-      "interactive world generation agentic PCG embodied AI"
+      "interactive 3D scene generation embodied AI PCG 2024 2025 2026",
+      "language guided embodied environment generation Holodeck Infinigen PhyScene RoboGen"
     ],
     "C": [
-      "spatial intelligence VLM embodied AI benchmark"
+      "spatial VLA spatial reasoning robot policy 2025",
+      "3D spatial VLM embodied AI robot manipulation"
     ],
     "D": [
-      "vision language action model robotics VLA 2025 2026"
+      "OpenVLA Octo pi0 VLA robot foundation model 2024 2025",
+      "vision language action model robot policy open source"
     ],
     "E": [
-      "embodied world model evaluation benchmark embodied question answering"
+      "RoboVerse OpenEQA embodied benchmark robot learning evaluation 2025"
     ]
   },
   "known_registry_path": "data/papers.seed.json",
@@ -35,5 +40,5 @@
     "harness/system_harness.md",
     "harness/acceptance_harness.md"
   ],
-  "minimum_year": 2024
+  "run_goal": "initialize the knowledge base with a sufficient high-quality seed set, using local examples plus primary-source verification"
 }

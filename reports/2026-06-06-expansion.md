@@ -4,47 +4,45 @@ Date: 2026-06-06
 
 ## Summary
 
-This is a local dry-run used to validate the consolidated file-driven multi-agent workflow. It exercises accepted, blocked, and undecided visual-quality paths without applying the registry patch. The summary is an audit record; the durable knowledge-base output is the registry plus `paper_reads/`.
+This initialization run expands the repository from a mostly JSON seed list into a usable reading knowledge base. It adds 5 missing key papers to the registry and writes or updates 15 deep-dive reports under `paper_reads/`.
 
-## Followed Sources Checked
+## Accepted Papers
 
-| Source | Status | New signal | Notes |
+| Paper | Branch | Deep dive | Action |
 |---|---|---|---|
-| huggingface-lerobot | checked | SmolVLA | Candidate found but moved to undecided until visual robot/demo evidence is inspected. |
-| meta-fair-embodied | checked | OpenEQA | Accepted as an evaluation benchmark candidate in the dry-run registry patch. |
-| vla-leaderboard | spot_checked | none accepted directly | Used only as a discovery signal; no leaderboard-only claim was accepted. |
+| SceneFun3D: Fine-Grained Functionality and Affordance Understanding in 3D Scenes | A | ../paper_reads/A_executable_world_representation/scenefun3d-2024.md | update |
+| BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation | A | ../paper_reads/A_executable_world_representation/behavior-1k-2024.md | update |
+| PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects | A | ../paper_reads/A_executable_world_representation/physx-omni-2026.md | update |
+| PhysDreamer: Physics-Based Interaction with 3D Objects via Video Generation | A | ../paper_reads/A_executable_world_representation/physdreamer-2024.md | addition |
+| Feature Splatting: Language-Driven Physics-Based Scene Synthesis and Editing | A | ../paper_reads/A_executable_world_representation/feature-splatting-2024.md | addition |
+| PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI | B | ../paper_reads/B_interactive_generation_pcg/physcene-2024.md | update |
+| Holodeck: Language Guided Generation of 3D Embodied AI Environments | B | ../paper_reads/B_interactive_generation_pcg/holodeck-2024.md | addition |
+| Infinigen Indoors: Photorealistic Indoor Scenes using Procedural Generation | B | ../paper_reads/B_interactive_generation_pcg/infinigen-indoors-2024.md | addition |
+| RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation | B | ../paper_reads/B_interactive_generation_pcg/robogen-2024.md | update |
+| SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Models | C | ../paper_reads/C_spatial_intelligence/spatialvla-2025.md | update |
+| Octo: An Open-Source Generalist Robot Policy | D | ../paper_reads/D_vla_world_action_models/octo-2024.md | update |
+| OpenVLA: An Open-Source Vision-Language-Action Model | D | ../paper_reads/D_vla_world_action_models/openvla-2024.md | update |
+| pi0: A Vision-Language-Action Flow Model for General Robot Control | D | ../paper_reads/D_vla_world_action_models/pi0-2024.md | update |
+| RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning | E | ../paper_reads/E_evaluation_data_infrastructure/roboverse-2025.md | update |
+| OpenEQA: Embodied Question Answering in the Era of Foundation Models | E | ../paper_reads/E_evaluation_data_infrastructure/openeqa-2024.md | addition |
 
-## Accepted Candidates
+## New Registry Additions
 
-| Candidate | Branch | Source | Deep dive | Visual | Why it matters |
-|---|---|---|---|---|---|
-| OpenEQA | E | https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html | ../paper_reads/E_evaluation_data_infrastructure/openeqa-2024.md | not_applicable | Embodied QA benchmark relevant to evaluating environment understanding. |
+- PhysDreamer: physics-based interaction with 3D objects via video-generation priors.
+- Feature Splatting: language-driven physical scene synthesis/editing over 3D Gaussians.
+- Holodeck: language-guided 3D embodied environment generation.
+- Infinigen Indoors: photorealistic procedural indoor scene generation.
+- OpenEQA: embodied question-answering benchmark for environment understanding.
+
+## Upgraded Existing Seed Entries
+
+SceneFun3D, BEHAVIOR-1K, PhysX-Omni, PhyScene, RoboGen, SpatialVLA, Octo, OpenVLA, pi0, and RoboVerse now have maintained deep-dive reports.
 
 ## Undecided
 
-| Candidate | Dossier | Reason |
-|---|---|---|
-| SmolVLA | ../undecided/2026-06-06/CAND-0001.md | Relevance is clear, but the dry-run could not confidently judge robot/demo visual quality. |
-
-## Rejected / Blocked
-
-| Candidate | Reason |
-|---|---|
-| RynnVLA-002 social-only announcement | Blocked because this dry-run only had a social source and no verified primary source. |
-
-## Top Demos
-
-1. OpenEQA project page: benchmark examples, demo score 2.
-2. SmolVLA: moved to undecided until visual robot execution evidence is inspected.
-
-## Collection Notes
-
-- VLA branch should track efficient and deployable models, but visual/robot execution evidence must be judged before permanent registry inclusion.
-- Evaluation branch should include embodied QA benchmarks as downstream tests for generated environments.
-- Social-only claims should remain blocked or watchlisted until primary sources are found.
+None for this run. The old local dry-run SmolVLA dossier remains ignored under `undecided/` and was not published.
 
 ## Validation
 
-- System run validation: passed via `python frontier_research/scripts/validate_run.py 2026-06-06`.
-- Registry validation: passed on current registry; dry-run patch not applied.
-- Registry patch: draft only, not applied.
+- Run validation: passed via `python3 scripts/validate_run.py 2026-06-06`.
+- Registry validation: passed via `python3 scripts/validate_registry.py`.

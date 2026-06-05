@@ -3,56 +3,331 @@
   "branch_assignments": [
     {
       "candidate_id": "CAND-0001",
+      "primary_branch": "A",
+      "secondary_branches": [
+        "B",
+        "C"
+      ],
+      "taxonomy_confidence": 5,
+      "reason": "Defines reusable fields Object, Part, Affordance, FunctionalElement, TaskLanguage, MotionParameter for our typed interactive-world representation."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "primary_branch": "A",
+      "secondary_branches": [
+        "E"
+      ],
+      "taxonomy_confidence": 5,
+      "reason": "Directly informs Task, StatePredicate, GoalCondition, SceneObject, PhysicalProperty, and validation protocol design."
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "primary_branch": "A",
+      "secondary_branches": [
+        "B",
+        "E"
+      ],
+      "taxonomy_confidence": 5,
+      "reason": "Strong candidate for PhysicalProperty, Material, DeformableState, KinematicJoint, and simulator export fields."
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "primary_branch": "A",
+      "secondary_branches": [
+        "B"
+      ],
+      "taxonomy_confidence": 5,
+      "reason": "Provides concrete fields for MaterialField, ExternalForce, DynamicResponse, and DeformableState validators."
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "primary_branch": "A",
+      "secondary_branches": [
+        "B",
+        "C"
+      ],
+      "taxonomy_confidence": 5,
+      "reason": "Useful for SceneRepresentation, MaterialProperty, SegmentByText, PhysicsEdit, and simulator-backed validation."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "primary_branch": "B",
+      "secondary_branches": [
+        "A",
+        "E"
+      ],
+      "taxonomy_confidence": 5,
+      "reason": "Baseline for InteractionConstraint, Reachability, Collision, Articulation, and GeneratedScene validity metrics."
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "primary_branch": "B",
+      "secondary_branches": [
+        "E"
+      ],
+      "taxonomy_confidence": 5,
+      "reason": "Important baseline for Prompt, SceneSpec, SpatialConstraint, AssetRetrieval, LayoutOptimization, and downstream embodied evaluation."
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "primary_branch": "B",
+      "secondary_branches": [
+        "A",
+        "E"
+      ],
+      "taxonomy_confidence": 5,
+      "reason": "Strong generator for Scene, Asset, Annotation, LayoutConstraint, and synthetic data pipelines."
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "primary_branch": "B",
+      "secondary_branches": [
+        "D",
+        "E"
+      ],
+      "taxonomy_confidence": 5,
+      "reason": "Directly motivates TaskGenerator, SceneGenerator, SupervisionGenerator, PolicyLearner, and validation-loop abstractions."
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "primary_branch": "C",
+      "secondary_branches": [
+        "D"
+      ],
+      "taxonomy_confidence": 4,
+      "reason": "Useful for Scene.spatial_graph, Ego3DEncoding, SpatialActionToken, and spatial instruction validation."
+    },
+    {
+      "candidate_id": "CAND-0011",
       "primary_branch": "D",
       "secondary_branches": [
         "E"
       ],
       "taxonomy_confidence": 5,
-      "reason": "VLA model; efficiency and deployment affect data infrastructure secondarily."
+      "reason": "Baseline for Policy, Observation, ActionDistribution, GoalImageCondition, and embodiment adaptation."
     },
     {
-      "candidate_id": "CAND-0002",
+      "candidate_id": "CAND-0012",
+      "primary_branch": "D",
+      "secondary_branches": [
+        "E"
+      ],
+      "taxonomy_confidence": 5,
+      "reason": "Baseline for VLA policy execution, generated-task transfer, action-token interface, and finetuning experiments."
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "primary_branch": "D",
+      "secondary_branches": [
+        "A",
+        "E"
+      ],
+      "taxonomy_confidence": 5,
+      "reason": "Sets a high demo-quality target for robot execution, deformable manipulation, long-horizon interaction, and continuous action generation."
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "primary_branch": "E",
+      "secondary_branches": [
+        "D"
+      ],
+      "taxonomy_confidence": 4,
+      "reason": "Useful for benchmark packaging, generated-task evaluation, policy baselines, and trajectory/data schema design."
+    },
+    {
+      "candidate_id": "CAND-0015",
       "primary_branch": "E",
       "secondary_branches": [
         "C"
       ],
       "taxonomy_confidence": 5,
-      "reason": "Evaluation benchmark with spatial/environment-understanding relevance."
+      "reason": "downstream benchmark for testing whether generated interactive environments preserve object identity, spatial relations, and semantic affordances"
     }
   ],
   "taxonomy_change_proposals": [],
   "registry_additions": [
     {
-      "candidate_id": "CAND-0002",
+      "candidate_id": "CAND-0004",
+      "branch": "A",
+      "deep_dive_path": "paper_reads/A_executable_world_representation/physdreamer-2024.md",
+      "paper": {
+        "title": "PhysDreamer",
+        "year": 2024,
+        "venue": "ECCV Oral",
+        "url": "https://arxiv.org/abs/2404.13026",
+        "data": "static 3D objects, video-diffusion dynamics priors, material-field estimates, and interaction examples for elastic objects",
+        "method": "distills video generation priors into a physical material field and uses physics simulation to synthesize action-conditioned object dynamics",
+        "task": "make static 3D objects respond to external forces or manipulation in physically plausible ways",
+        "novelty": "uses video-generation dynamics priors to estimate material behavior for interactive 3D object simulation",
+        "project_relevance": "Provides concrete fields for MaterialField, ExternalForce, DynamicResponse, and DeformableState validators.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "evidence_strength": 4,
+        "deep_dive_path": "paper_reads/A_executable_world_representation/physdreamer-2024.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "branch": "A",
+      "deep_dive_path": "paper_reads/A_executable_world_representation/feature-splatting-2024.md",
+      "paper": {
+        "title": "Feature Splatting",
+        "year": 2024,
+        "venue": "ECCV",
+        "url": "https://arxiv.org/abs/2404.01223",
+        "data": "3D Gaussian scenes with distilled foundation-model features, text-grounded decomposition, material queries, and physics-simulation examples",
+        "method": "feature-bearing 3D Gaussians plus text-query segmentation and particle-based physics simulation with automatically assigned material properties",
+        "task": "language-driven physics-based scene synthesis, editing, and material-aware simulation",
+        "novelty": "turns 3DGS from a visual representation into a semantic/material/physics-aware editing and simulation substrate",
+        "project_relevance": "Useful for SceneRepresentation, MaterialProperty, SegmentByText, PhysicsEdit, and simulator-backed validation.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "evidence_strength": 4,
+        "deep_dive_path": "paper_reads/A_executable_world_representation/feature-splatting-2024.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "branch": "B",
+      "deep_dive_path": "paper_reads/B_interactive_generation_pcg/holodeck-2024.md",
+      "paper": {
+        "title": "Holodeck",
+        "year": 2024,
+        "venue": "CVPR",
+        "url": "https://arxiv.org/abs/2312.09067",
+        "data": "language prompts, Objaverse assets, AI2-THOR environments, human evaluations, and NoveltyTHOR navigation benchmark",
+        "method": "LLM-driven environment generation with spatial relational constraints, asset retrieval, layout optimization, and AI2-THOR integration",
+        "task": "generate customized 3D embodied AI environments from natural language",
+        "novelty": "uses LLM commonsense plus constraint optimization to generate diverse interactive AI2-THOR environments from open-ended prompts",
+        "project_relevance": "Important baseline for Prompt, SceneSpec, SpatialConstraint, AssetRetrieval, LayoutOptimization, and downstream embodied evaluation.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "evidence_strength": 5,
+        "deep_dive_path": "paper_reads/B_interactive_generation_pcg/holodeck-2024.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "branch": "B",
+      "deep_dive_path": "paper_reads/B_interactive_generation_pcg/infinigen-indoors-2024.md",
+      "paper": {
+        "title": "Infinigen Indoors",
+        "year": 2024,
+        "venue": "CVPR",
+        "url": "https://arxiv.org/abs/2406.11824",
+        "data": "fully procedural indoor scenes, furniture, architecture elements, appliances, and dense synthetic labels from Blender",
+        "method": "procedural indoor asset and layout generation with a constraint DSL and solver for scene composition",
+        "task": "generate photorealistic indoor scenes and annotations for vision/embodied research",
+        "novelty": "extends Infinigen from natural worlds to indoor procedural scenes with real geometry and controllable annotations",
+        "project_relevance": "Strong generator for Scene, Asset, Annotation, LayoutConstraint, and synthetic data pipelines.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "visual_quality_score": 5,
+        "visual_quality_decision": "strong",
+        "evidence_strength": 5,
+        "deep_dive_path": "paper_reads/B_interactive_generation_pcg/infinigen-indoors-2024.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0015",
       "branch": "E",
       "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/openeqa-2024.md",
       "paper": {
-        "title": "OpenEQA: Embodied Question Answering in the Era of Foundation Models",
+        "title": "OpenEQA",
         "year": 2024,
         "venue": "CVPR",
         "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html",
         "data": "embodied question-answering benchmark over physical/scanned environments",
-        "method": "open-vocabulary embodied QA benchmark formulation",
-        "task": "answer natural-language questions about an environment",
-        "novelty": "modern open-vocabulary benchmark for embodied environment understanding",
-        "project_relevance": "useful downstream benchmark for evaluating generated interactive environments",
+        "method": "open-vocabulary embodied QA benchmark and LLM-Match answer evaluation protocol",
+        "task": "answer natural-language questions about an embodied environment",
+        "novelty": "modern open-vocabulary embodied QA benchmark for evaluating environment understanding",
+        "project_relevance": "downstream benchmark for testing whether generated interactive environments preserve object identity, spatial relations, and semantic affordances",
         "source_quality": "primary_or_official",
         "demo_score": 2,
-        "evidence_strength": 4,
         "visual_quality_score": 0,
-        "visual_quality_decision": "not_applicable"
+        "visual_quality_decision": "not_applicable",
+        "evidence_strength": 4,
+        "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/openeqa-2024.md"
       }
     }
   ],
-  "registry_updates": [],
-  "registry_noops": [
+  "registry_updates": [
     {
       "candidate_id": "CAND-0001",
-      "reason": "undecided visual-quality candidate; dossier written to undecided/2026-06-06/CAND-0001.md"
+      "branch": "A",
+      "title": "SceneFun3D",
+      "update_type": "add_deep_dive_path_and_verified_initial_read",
+      "deep_dive_path": "paper_reads/A_executable_world_representation/scenefun3d-2024.md"
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "branch": "A",
+      "title": "BEHAVIOR-1K",
+      "update_type": "add_deep_dive_path_and_verified_initial_read",
+      "deep_dive_path": "paper_reads/A_executable_world_representation/behavior-1k-2024.md"
     },
     {
       "candidate_id": "CAND-0003",
-      "reason": "blocked social-only candidate"
+      "branch": "A",
+      "title": "PhysX-Omni",
+      "update_type": "add_deep_dive_path_and_verified_initial_read",
+      "deep_dive_path": "paper_reads/A_executable_world_representation/physx-omni-2026.md"
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "branch": "B",
+      "title": "PhyScene",
+      "update_type": "add_deep_dive_path_and_verified_initial_read",
+      "deep_dive_path": "paper_reads/B_interactive_generation_pcg/physcene-2024.md"
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "branch": "B",
+      "title": "RoboGen",
+      "update_type": "add_deep_dive_path_and_verified_initial_read",
+      "deep_dive_path": "paper_reads/B_interactive_generation_pcg/robogen-2024.md"
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "branch": "C",
+      "title": "SpatialVLA",
+      "update_type": "add_deep_dive_path_and_verified_initial_read",
+      "deep_dive_path": "paper_reads/C_spatial_intelligence/spatialvla-2025.md"
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "branch": "D",
+      "title": "Octo",
+      "update_type": "add_deep_dive_path_and_verified_initial_read",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/octo-2024.md"
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "branch": "D",
+      "title": "OpenVLA",
+      "update_type": "add_deep_dive_path_and_verified_initial_read",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/openvla-2024.md"
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "branch": "D",
+      "title": "pi0",
+      "update_type": "add_deep_dive_path_and_verified_initial_read",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/pi0-2024.md"
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "branch": "E",
+      "title": "RoboVerse",
+      "update_type": "add_deep_dive_path_and_verified_initial_read",
+      "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/roboverse-2025.md"
     }
-  ]
+  ],
+  "registry_noops": []
 }
