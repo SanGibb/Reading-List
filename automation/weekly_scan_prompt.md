@@ -58,7 +58,9 @@ Task:
    - visual/generation quality when applicable
    - why it matters for this repository
 9. Use Quality Reviewer to inspect project pages, figures, videos, GIFs, screenshots, robot demos, and generated samples. Do not rely on venue alone.
-10. If visual quality cannot be judged confidently, write a dossier under `undecided/YYYY-MM-DD/CAND-xxxx.md` and do not add that candidate to the registry patch.
+10. If visual quality cannot be judged confidently, write a local dossier under `undecided/YYYY-MM-DD/CAND-xxxx.md` and do not add that candidate to the registry patch.
+    - This dossier must still be a real paper/deep-dive analysis with source links, novelty, contributions, task, data, method, visual evidence, limitations, and the specific human decision needed.
+    - Undecided dossiers are local-only by default. Do not commit or push them unless the human explicitly approves that candidate later.
 11. For every candidate in `registry_additions`, write `reports/runs/YYYY-MM-DD/paper_reads/CAND-xxxx.md`.
     - Include original paper/project/code/demo links.
     - Explain novelty, contributions, task, data, method, evidence, limitations, and project relevance.
@@ -69,14 +71,21 @@ Task:
 12. Apply `harness/acceptance_harness.md` for paper relevance and `harness/system_harness.md` for workflow validity.
 13. Write a weekly markdown report under `reports/YYYY-MM-DD-weekly.md` only after the system run validates.
 14. If there are strong accepted papers, update `data/papers.seed.json` conservatively.
-15. Run:
+15. Run local validation:
 
 ```bash
-python frontier_research/scripts/validate_run.py YYYY-MM-DD
-python frontier_research/scripts/validate_registry.py
+REQUIRE_UNDECIDED_DOSSIERS=1 python scripts/validate_all.py
 ```
 
-16. Do not add social-media-only claims to the registry. Put them in a watchlist section of the report.
+16. If validation passes, publish all non-undecided changes in one step:
+
+```bash
+python scripts/publish_validated_update.py --message "Weekly frontier scan YYYY-MM-DD"
+```
+
+This script validates, stages publishable files, commits, and pushes to GitHub. It leaves `undecided/**` unstaged except for `undecided/README.md`.
+
+17. Do not add social-media-only claims to the registry. Put them in a watchlist section of the report.
 
 Output expectations:
 
@@ -86,5 +95,6 @@ Output expectations:
 - deep-dive link for every accepted paper
 - top demos and why they matter
 - undecided candidates requiring human visual judgment
+- local-only undecided deep dives generated but not pushed
 - brief collection notes for baseline / related-work usefulness
 - validation summary showing the system harness and registry validation passed

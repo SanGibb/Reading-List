@@ -194,10 +194,11 @@ Codex 自动化会读取：
 2. 由 5 个合并 agent 阶段依次写入 run plan、discovery、evidence、review、editor report 和 registry patch。
 3. Discovery Agent 先检查 [data/follow_sources.seed.json](data/follow_sources.seed.json) 中的核心 PI/lab/company 源，并在 `followed_sources_checked` 里记录。
 4. 对每篇 registry addition 写入 `reports/runs/YYYY-MM-DD/paper_reads/CAND-xxxx.md` 精读。
-5. 用 [harness/system_harness.md](harness/system_harness.md) 检查系统执行是否合规。
-6. 用 [harness/acceptance_harness.md](harness/acceptance_harness.md) 检查论文是否值得收录。
-7. 输出周报到 `reports/YYYY-MM-DD-weekly.md`。
-8. 只把强相关、高质量、来源可靠、且已完成精读的条目写入 registry。
+5. 对每篇 undecided candidate 也在本地写精读/解析，但默认不上传。
+6. 用 [harness/system_harness.md](harness/system_harness.md) 检查系统执行是否合规。
+7. 用 [harness/acceptance_harness.md](harness/acceptance_harness.md) 检查论文是否值得收录。
+8. 输出周报到 `reports/YYYY-MM-DD-weekly.md`。
+9. 用 `scripts/publish_validated_update.py` 一键校验、提交并 push 所有非 undecided 变更。
 
 ### 多 Agent 分工
 
@@ -284,6 +285,8 @@ frontier_research/
   undecided/
   scripts/
     scaffold_run.py
+    publish_validated_update.py
+    validate_all.py
     validate_run.py
     validate_registry.py
 ```

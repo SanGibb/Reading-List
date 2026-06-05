@@ -11,9 +11,19 @@ __pycache__/
 .venv/
 venv/
 
+# Local credentials or SSH keys accidentally generated in the project root.
+github
+github.pub
+*.pem
+*.key
+
 # Local-only downloaded papers, screenshots, and exports.
 papers/
 output/
+
+# Human-decision dossiers stay local until explicitly approved.
+undecided/*
+!undecided/README.md
 
 # Temporary run folders.
 reports/runs/*-smoke/

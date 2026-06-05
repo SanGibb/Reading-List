@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -323,7 +324,7 @@ def main() -> int:
             if isinstance(cid, str):
                 undecided_ids.add(cid)
                 dossier = root / "undecided" / run_id / f"{cid}.md"
-                if not dossier.exists():
+                if os.environ.get("REQUIRE_UNDECIDED_DOSSIERS") == "1" and not dossier.exists():
                     errors.append(f"undecided candidate {cid} needs dossier: {dossier.relative_to(root)}")
         if isinstance(cid, str):
             visual_card_ids.add(cid)

@@ -166,3 +166,23 @@ The `Key Figures / Architecture` section must include `figure_status:` with one 
 - `redrawn`: architecture was redrawn by us,
 - `not_applicable`: benchmark/data paper where architecture diagram is not central,
 - `missing`: figure evidence unavailable; explain why.
+
+### `undecided/YYYY-MM-DD/CAND-xxxx.md`
+
+Local-only by default. Required during publish-time local validation for every candidate with `visual_quality_decision: "undecided"` or `needs_human_decision: true`.
+
+Each dossier should use the same analytical standard as a deep dive, plus a clear human decision request:
+
+- source links,
+- TL;DR,
+- novelty,
+- contributions,
+- task,
+- data,
+- method,
+- visual/demo evidence inspected,
+- evidence trail,
+- key figures / architecture with `figure_status`,
+- limitations,
+- why the candidate is undecided,
+- accept / reject / keep-watching options.

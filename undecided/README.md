@@ -16,14 +16,25 @@ Each run may create:
 undecided/YYYY-MM-DD/CAND-xxxx.md
 ```
 
-Each dossier should include:
+Each dossier should be detailed enough to support a later human accept/reject decision. It should include:
 
 - candidate title and source link,
 - branch,
-- why it matters,
+- TL;DR,
+- novelty,
+- contributions,
+- task,
+- data,
+- method,
+- why it matters for this repository,
 - available visual/demo links,
 - what was inspected,
+- evidence trail for central claims,
+- key figures / architecture with `figure_status`,
+- limitations,
 - why the agent could not decide,
 - suggested human decision options: accept, reject, keep watching.
 
 Undecided candidates must not enter `data/papers.seed.json` or `05_registry_patch.json` until a human decision is made.
+
+By default, `undecided/YYYY-MM-DD/CAND-xxxx.md` dossiers are local-only and are not pushed by `scripts/publish_validated_update.py`. After human approval, the candidate can be promoted through a separate update.

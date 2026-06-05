@@ -41,6 +41,8 @@ Expected output:
 - `01_discovery.json` with `followed_sources_checked`
 - conservative registry updates
 - watchlist for unverified but potentially important work
+- local-only undecided dossiers under `undecided/YYYY-MM-DD/`
+- a validated commit pushed to GitHub when publishable changes exist
 
 ### 3. Paper deep-dive mode
 
@@ -70,6 +72,7 @@ Use one focused Codex task per role when quality matters. Each phase reads previ
 4. **Quality Reviewer** writes `03_review.json` and optional undecided dossiers.
 5. **Taxonomy & Editor** writes `04_editor_report.md`, `05_registry_patch.json`, `paper_reads/CAND-xxxx.md`, and `run_manifest.json`.
 6. **System Harness** validates the run.
+7. **Publisher** runs `python scripts/publish_validated_update.py --message "Weekly frontier scan YYYY-MM-DD"`.
 
 This is less fragmented than the original nine-agent setup while still separating search, evidence extraction, judgment, and registry editing.
 
@@ -85,6 +88,14 @@ To validate a completed run:
 python frontier_research/scripts/validate_run.py YYYY-MM-DD
 ```
 
+To validate, commit, and push publishable changes:
+
+```bash
+python scripts/publish_validated_update.py --message "Weekly frontier scan YYYY-MM-DD"
+```
+
+The publisher leaves `undecided/**` local-only by default. Those dossiers should still be generated and detailed, but they are uploaded only after explicit human approval.
+
 ## What Codex Should Not Do Automatically
 
 - Do not accept papers from social posts unless there is a primary paper/project URL.
@@ -97,6 +108,7 @@ python frontier_research/scripts/validate_run.py YYYY-MM-DD
 - Do not skip fixed follow sources silently; record `checked`, `spot_checked`, `unreachable`, or `skipped`.
 - Do not update the registry if `validate_run.py` fails.
 - Do not add a paper to `registry_additions` unless its `paper_reads/CAND-xxxx.md` deep dive exists and includes source links, novelty, contributions, task, data, method, key figures/architecture, evidence, limitations, and project relevance.
+- Do not commit or push `undecided/YYYY-MM-DD/CAND-xxxx.md` during the automatic weekly publish step.
 
 ## Suggested Prompt Contract
 
@@ -109,6 +121,7 @@ Every automated run should end with:
 - `Watchlist`
 - `Top demos`
 - `Undecided visual cases`
+- `Local-only undecided deep dives`
 - `Collection notes`
 - `Validation`
 

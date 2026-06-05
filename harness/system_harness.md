@@ -49,6 +49,7 @@ reports/runs/YYYY-MM-DD/
 - Registry patch can include only candidates with `accepted_for_registry: true`.
 - Every registry addition must have a corresponding `paper_reads/CAND-xxxx.md` deep dive.
 - Discovery must record which fixed PI/lab/company sources were checked.
+- Undecided dossiers are required for local publish validation but remain local-only unless explicitly approved.
 
 ### 3. Authority boundaries
 
@@ -101,6 +102,7 @@ A run passes if:
 - all cross-file references are valid,
 - no rejected or blocked candidate appears in the registry patch,
 - no undecided visual-quality candidate appears in the registry patch,
+- publish-time validation can require local undecided dossiers without uploading them,
 - taxonomy changes are proposal-only,
 - report and manifest exist,
 - every registry addition has a complete deep-dive Markdown file,

@@ -66,6 +66,14 @@ That entry point validates:
 - every completed run under `reports/runs/*`
 - accepted-paper deep dives required by registry patches
 
+For publish-time local validation, the publisher sets:
+
+```bash
+REQUIRE_UNDECIDED_DOSSIERS=1
+```
+
+This means undecided dossiers must exist locally, but `.gitignore` keeps them out of the automatic commit.
+
 ### GitHub Actions
 
 The standalone project includes:
@@ -82,6 +90,6 @@ Use hooks only for mechanical checks. Do not encode research judgment into hooks
 
 The right division is:
 
-- **hooks/scripts**: schema, links, duplicates, required fields, run artifact consistency, required deep dives.
+- **hooks/scripts**: schema, links, duplicates, required fields, run artifact consistency, required deep dives, local-only undecided dossier checks.
 - **agents**: search, summarize, source checking, demo extraction.
 - **human/Codex review**: impact, novelty, project relevance, taxonomy changes.

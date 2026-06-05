@@ -71,7 +71,7 @@ Do not include:
 From the standalone project root:
 
 ```bash
-python scripts/validate_all.py
+REQUIRE_UNDECIDED_DOSSIERS=1 python scripts/validate_all.py
 git init
 git config core.hooksPath .githooks
 git add .
@@ -93,6 +93,7 @@ Hooks are for mechanical checks only:
 - completed runs validate,
 - accepted registry additions have deep-dive Markdown files,
 - follow-source checks reference known source ids.
+- undecided dossiers exist locally before publishing, but are not pushed automatically.
 
 Hooks should not decide whether a paper is impressive, novel, or worth following. That remains the job of Quality Reviewer plus human review.
 
@@ -104,6 +105,7 @@ Weekly:
 - inspect accepted / watchlist / undecided items,
 - approve or reject undecided visual-quality dossiers,
 - keep registry updates conservative.
+- run `python scripts/publish_validated_update.py --message "Weekly frontier scan YYYY-MM-DD"` to validate, commit, and push publishable changes.
 
 Monthly:
 
