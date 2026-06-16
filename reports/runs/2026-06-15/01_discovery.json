@@ -1,0 +1,213 @@
+{
+  "run_id": "2026-06-15",
+  "followed_sources_checked": [
+    {
+      "source_id": "stanford-svl-behavior",
+      "status": "spot_checked",
+      "notes": "Checked Stanford SVL / BEHAVIOR signals for new 2024+ embodied environment and executable-world releases; no new accepted additions this run.",
+      "urls_checked": ["https://svl.stanford.edu/publications/", "https://behavior.stanford.edu/omnigibson/overview.html"]
+    },
+    {
+      "source_id": "princeton-pvl-infinigen",
+      "status": "spot_checked",
+      "notes": "Checked Princeton PVL and Infinigen surfaces for new procedural or simulation-ready world releases; no qualifying new registry addition this run.",
+      "urls_checked": ["https://pvl.cs.princeton.edu/", "https://infinigen.org/"]
+    },
+    {
+      "source_id": "ai2-embodied-prior",
+      "status": "checked",
+      "notes": "Ai2 Embodied AI produced the strongest new qualifying signal this run via MolmoAct2.",
+      "urls_checked": ["https://allenai.org/embodied-ai", "https://allenai.org/blog/molmoact2", "https://arxiv.org/abs/2605.02881"]
+    },
+    {
+      "source_id": "nvidia-cosmos-isaac",
+      "status": "spot_checked",
+      "notes": "Checked NVIDIA Cosmos / Isaac / GR00T surfaces; found recent signals but nothing newly accepted beyond already covered registry items.",
+      "urls_checked": ["https://research.nvidia.com/labs/cosmos-lab/", "https://research.nvidia.com/labs/lpr/publication/gr00tn1_2025/"]
+    },
+    {
+      "source_id": "stanford-realab-shuran",
+      "status": "spot_checked",
+      "notes": "Checked REAL lab surfaces; no new qualifying 2024+ addition beyond already captured scene-generation and manipulation lines.",
+      "urls_checked": ["https://real.stanford.edu/lab.html", "https://shurans.github.io/"]
+    },
+    {
+      "source_id": "stanford-iris-openvla",
+      "status": "spot_checked",
+      "notes": "Checked Stanford IRIS / OpenVLA surfaces; no new accepted 2024+ paper beyond existing registry coverage.",
+      "urls_checked": ["https://irislab.stanford.edu/", "https://openvla.github.io/"]
+    },
+    {
+      "source_id": "berkeley-rail-levine",
+      "status": "spot_checked",
+      "notes": "Checked Berkeley RAIL / BAIR robotics signals; broad search returned mostly background rather than new primary-source candidates for this repository.",
+      "urls_checked": ["https://rail.eecs.berkeley.edu/"]
+    },
+    {
+      "source_id": "physical-intelligence",
+      "status": "spot_checked",
+      "notes": "Checked Physical Intelligence signal space; found only indirect search results this run, so no new primary-source-backed addition was accepted.",
+      "urls_checked": ["https://www.physicalintelligence.company/"]
+    },
+    {
+      "source_id": "google-deepmind-robotics",
+      "status": "spot_checked",
+      "notes": "Checked Google DeepMind robotics signal space; results were either already known or not clean primary-source additions for this run.",
+      "urls_checked": ["https://deepmind.google/discover/blog/"]
+    },
+    {
+      "source_id": "ut-austin-rpl-yuke",
+      "status": "spot_checked",
+      "notes": "Checked UT Austin RPL signal surface via broad search for embodied and scene-generation lines; no new accepted addition emerged.",
+      "urls_checked": ["https://rpl.cs.utexas.edu/"]
+    },
+    {
+      "source_id": "meta-fair-embodied",
+      "status": "spot_checked",
+      "notes": "Checked Meta FAIR embodied signals; nothing newly accepted this run.",
+      "urls_checked": ["https://ai.meta.com/research/"]
+    },
+    {
+      "source_id": "huggingface-lerobot",
+      "status": "checked",
+      "notes": "LeRobot was relevant as a release signal because the MolmoAct2 official page explicitly announced LeRobot integration.",
+      "urls_checked": ["https://huggingface.co/blog/lerobot", "https://allenai.org/blog/molmoact2"]
+    },
+    {
+      "source_id": "toyota-research-institute-lbm",
+      "status": "spot_checked",
+      "notes": "Checked TRI LBM signal space; no new qualifying addition this run.",
+      "urls_checked": ["https://www.tri.global/research"]
+    },
+    {
+      "source_id": "mit-csail-drake-scene-generation",
+      "status": "spot_checked",
+      "notes": "Checked MIT CSAIL / Drake scene-generation line; no new accepted paper was identified in the current search window.",
+      "urls_checked": ["https://www.csail.mit.edu/"]
+    },
+    {
+      "source_id": "world-model-benchmarks",
+      "status": "checked",
+      "notes": "World-model benchmark cluster yielded WorldArena 2.0 as a direct accepted addition and GE-Sim 2.0 as an undecided candidate.",
+      "urls_checked": ["https://world-arena.ai/", "https://arxiv.org/abs/2605.17912", "https://arxiv.org/abs/2605.27491"]
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "CAND-0047",
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2605.02881",
+      "source_type": "arxiv",
+      "discovered_from": "ai2-embodied-prior",
+      "why_candidate": "Open VLA release with official blog, code/data release signal, strong real-robot evidence, and direct relevance to action-model baselines."
+    },
+    {
+      "candidate_id": "CAND-0048",
+      "title": "WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2605.17912",
+      "source_type": "arxiv",
+      "discovered_from": "world-model-benchmarks",
+      "why_candidate": "Direct benchmark upgrade for embodied world models with official benchmark site and clear relevance to evaluation infrastructure."
+    },
+    {
+      "candidate_id": "CAND-0049",
+      "title": "Embodied3DBench: Benchmarking Low-Level Embodied Spatial Intelligence of Vision Language Models",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2605.29074",
+      "source_type": "arxiv",
+      "discovered_from": "broad_primary_search",
+      "why_candidate": "New benchmark for low-level embodied spatial intelligence, grounding, affordance, grasp-point, and trajectory-oriented perception."
+    },
+    {
+      "candidate_id": "CAND-0050",
+      "title": "ESPIRE: A Diagnostic Benchmark for Embodied Spatial Reasoning of Vision-Language Models",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2603.13033",
+      "source_type": "arxiv",
+      "discovered_from": "broad_primary_search",
+      "why_candidate": "Physically grounded generative benchmark for localization and execution, closely aligned with reasoning-to-act evaluation."
+    },
+    {
+      "candidate_id": "CAND-0051",
+      "title": "GE-Sim 2.0: A Roadmap Towards Comprehensive Closed-loop Video World Simulators for Robotic Manipulation",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2605.27491",
+      "source_type": "arxiv",
+      "discovered_from": "world-model-benchmarks",
+      "why_candidate": "Potentially strong world-simulator addition, but generation-heavy and likely to require visual/demo inspection before acceptance."
+    },
+    {
+      "candidate_id": "CAND-0052",
+      "title": "Embodied-R1.5: Evolving Physical Intelligence via Embodied Foundation Models",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2606.11324",
+      "source_type": "arxiv",
+      "discovered_from": "broad_primary_search",
+      "why_candidate": "Large embodied foundation model with open-release and real-robot claims; likely relevant but demo/release confirmation was incomplete."
+    }
+  ],
+  "triage": [
+    {
+      "candidate_id": "CAND-0047",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary source plus official Ai2 release page; high impact and direct VLA baseline relevance.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 5,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0048",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary benchmark paper plus official public benchmark site; clear infrastructure fit.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0049",
+      "decision": "analyze",
+      "primary_branch": "C",
+      "reason": "New embodied spatial benchmark with explicit low-level task coverage and strong project relevance.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0050",
+      "decision": "analyze",
+      "primary_branch": "C",
+      "reason": "Physically grounded spatial benchmark with localization plus execution framing; high diagnostic value.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0051",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Potentially high-value world-simulator paper, but demo quality likely needs human confirmation.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0052",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Potentially strong embodied foundation model with real-robot relevance, but release/demo confirmation is incomplete.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    }
+  ]
+}

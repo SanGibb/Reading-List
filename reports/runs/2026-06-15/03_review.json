@@ -1,0 +1,132 @@
+{
+  "run_id": "2026-06-15",
+  "visual_cards": [
+    {
+      "candidate_id": "CAND-0047",
+      "visual_materials": [
+        "https://allenai.org/blog/molmoact2",
+        "https://arxiv.org/abs/2605.02881"
+      ],
+      "inspected_modalities": ["project_page", "official_images", "benchmark_tables", "robot_examples"],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official Ai2 release includes multiple real-robot examples, architecture images, and quantitative comparison tables that are convincing enough for acceptance.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0048",
+      "visual_materials": [
+        "https://world-arena.ai/",
+        "https://arxiv.org/abs/2605.17912"
+      ],
+      "inspected_modalities": ["benchmark_site", "visualization_examples", "leaderboard"],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Infrastructure paper; visual aesthetics are not the acceptance gate. Official site confirms benchmark scope and qualitative example surfaces.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0049",
+      "visual_materials": [
+        "https://arxiv.org/abs/2605.29074"
+      ],
+      "inspected_modalities": ["paper_abstract"],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark acceptance is based on task coverage and dataset relevance rather than generation-demo quality.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0050",
+      "visual_materials": [
+        "https://arxiv.org/abs/2603.13033"
+      ],
+      "inspected_modalities": ["paper_abstract", "paper_html_text"],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark acceptance is based on physically grounded evaluation design rather than image-generation quality.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0051",
+      "visual_materials": [
+        "https://arxiv.org/abs/2605.27491"
+      ],
+      "inspected_modalities": ["paper_abstract"],
+      "visual_quality_score": 1,
+      "visual_quality_decision": "undecided",
+      "visual_notes": "Generation-heavy world-simulator paper with no stable official demo/project surface recovered in this run; abstract alone is insufficient to judge rollout fidelity.",
+      "failure_modes": ["official_demo_not_confirmed", "rollout_quality_unverifiable"],
+      "needs_human_decision": true,
+      "undecided_reason": "Needs human inspection of official rollout videos or project artifacts before acceptance."
+    },
+    {
+      "candidate_id": "CAND-0052",
+      "visual_materials": [
+        "https://arxiv.org/abs/2606.11324"
+      ],
+      "inspected_modalities": ["paper_abstract"],
+      "visual_quality_score": 1,
+      "visual_quality_decision": "undecided",
+      "visual_notes": "Robot-demo-heavy embodied foundation model with strong claims but no stable official demo/release page confirmed in this run.",
+      "failure_modes": ["official_demo_not_confirmed", "open_release_not_confirmed"],
+      "needs_human_decision": true,
+      "undecided_reason": "Needs human review of official robot demos and release artifacts before acceptance."
+    }
+  ],
+  "quality_review": [
+    {
+      "candidate_id": "CAND-0047",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0048",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0049",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0050",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0051",
+      "review_decision": "block",
+      "issues": ["Visual/demo evidence for generated world-simulator quality is insufficient from primary/official sources recovered in this run."],
+      "required_fixes": ["Human review of official rollout videos or official project/demo artifacts."],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0052",
+      "review_decision": "block",
+      "issues": ["Real-robot demo and open-release claims could not be verified from primary/official surfaces recovered in this run."],
+      "required_fixes": ["Human review of official demos and confirmation of release artifacts."],
+      "accepted_for_registry": false
+    }
+  ],
+  "run_level_issues": [
+    "Two promising D-branch candidates were kept local-only in undecided/ because the run could not confidently judge official demo quality from primary or official sources."
+  ]
+}

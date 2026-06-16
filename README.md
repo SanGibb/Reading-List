@@ -9,20 +9,24 @@
 | 内容 | 入口 |
 |---|---|
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
-| 最新扩库摘要 | [reports/2026-06-06-expansion.md](reports/2026-06-06-expansion.md) |
-| 当前已收录精读 | 46 篇，见 [paper_reads/README.md](paper_reads/README.md) |
+| 最新扩库摘要 | [reports/2026-06-15-expansion.md](reports/2026-06-15-expansion.md) |
+| 当前已收录精读 | 50 篇，见 [paper_reads/README.md](paper_reads/README.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。通过筛选的候选应全部加入，不做固定 top-k 抽样。
 
 ## 本周更新内容
 
-本轮初始化/扩库日期：2026-06-06。完整审计摘要见 [reports/2026-06-06-expansion.md](reports/2026-06-06-expansion.md)。
+本轮扩库日期：2026-06-15。完整审计摘要见 [reports/2026-06-15-expansion.md](reports/2026-06-15-expansion.md)。
 
 ### 重点新增与补齐
 
 | Paper | Branch | 简要说明 | 精读 |
 |---|---|---|---|
+| MolmoAct2: Action Reasoning Models for Real-world Deployment | D | Strong open VLA release with open reasoning, open data/code, bimanual data, and convincing real-robot evidence. | [molmoact2-2026.md](paper_reads/D_vla_world_action_models/molmoact2-2026.md) |
+| WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform | E | Important benchmark upgrade for visuotactile, interactive-RL, and cross-platform embodied world-model evaluation. | [worldarena-2-2026.md](paper_reads/E_evaluation_data_infrastructure/worldarena-2-2026.md) |
+| Embodied3DBench: Benchmarking Low-Level Embodied Spatial Intelligence of Vision Language Models | C | Good low-level benchmark for grounding, affordances, grasp points, and trajectory-oriented perception. | [embodied3dbench-2026.md](paper_reads/C_spatial_intelligence/embodied3dbench-2026.md) |
+| ESPIRE: A Diagnostic Benchmark for Embodied Spatial Reasoning of Vision-Language Models | C | Strong reasoning-to-act spatial benchmark with localization-plus-execution evaluation in Isaac Sim. | [espire-2026.md](paper_reads/C_spatial_intelligence/espire-2026.md) |
 | PhysX-Anything: Simulation-Ready Physical 3D Assets from Single Image | A | Strong object-level source for PhysicalProperty, KinematicJoint, AssetToSimulator, and contact-rich policy-learning validation. | [physx-anything-2025.md](paper_reads/A_executable_world_representation/physx-anything-2025.md) |
 | SimuScene: Simulation-Ready Compositional 3D Scene Reconstruction from a Single Image | A | Relevant to SceneTree, SupportRelation, PhysicalViolation, and simulator-ready reconstruction validators. | [simuscene-2026.md](paper_reads/A_executable_world_representation/simuscene-2026.md) |
 | REST3D: Reconstructing Physically Stable 3D Scenes from a Single Image | A | Provides a useful template for SceneTree, SupportGraph, StabilityCheck, and PhysicsRefinement stages. | [rest3d-2026.md](paper_reads/A_executable_world_representation/rest3d-2026.md) |
@@ -50,9 +54,9 @@
 |---|---:|---|
 | A. Executable World Representation | 9 | SceneFun3D, BEHAVIOR-1K, PhysX-Omni, PhysDreamer, Feature Splatting, PhysX-Anything, SimuScene, REST3D ... |
 | B. Interactive Generation and PCG | 10 | PhyScene, RoboGen, Steerable Scene Generation, SAGE, EmbodiedGen, Holodeck, Infinigen Indoors, SceneSmith ... |
-| C. Spatial Intelligence | 9 | SpatialBot, HiSpatial, SpaceTools, Ego3D-Bench / Ego3D-VLM, Seeing Across Views / MV-RoboBench, SpatialVLA, DepthVLA, ST-VLA ... |
-| D. VLA and World-Action Models | 11 | Octo, OpenVLA, pi0, VLA-R1, World Action Models, Physically Viable World Models, GR00T N1, Green-VLA ... |
-| E. Evaluation and Data Infrastructure | 7 | EWMBench, WorldScore, RoboVerse, OpenEQA, WorldArena, World-in-World, Ctrl-World |
+| C. Spatial Intelligence | 11 | SpatialBot, HiSpatial, SpaceTools, Ego3D-Bench / Ego3D-VLM, Seeing Across Views / MV-RoboBench, SpatialVLA, DepthVLA, ST-VLA ... |
+| D. VLA and World-Action Models | 12 | Octo, OpenVLA, pi0, VLA-R1, World Action Models, Physically Viable World Models, GR00T N1, Green-VLA ... |
+| E. Evaluation and Data Infrastructure | 8 | EWMBench, WorldScore, RoboVerse, OpenEQA, WorldArena, WorldArena 2.0, World-in-World, Ctrl-World |
 
 ## 研究树
 

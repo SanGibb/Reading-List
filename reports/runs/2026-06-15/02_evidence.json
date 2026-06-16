@@ -1,0 +1,319 @@
+{
+  "run_id": "2026-06-15",
+  "paper_cards": [
+    {
+      "candidate_id": "CAND-0047",
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "year": 2026,
+      "venue": "arXiv / Ai2 release",
+      "url": "https://arxiv.org/abs/2605.02881",
+      "paper_ids": {
+        "arxiv": "2605.02881",
+        "doi": "10.48550/arXiv.2605.02881",
+        "openreview": "",
+        "project": "https://allenai.org/blog/molmoact2",
+        "github": ""
+      },
+      "primary_branch": "D",
+      "secondary_branches": ["C", "E"],
+      "data": "Molmo 2-ER reasoning corpus, MolmoAct2-Bimanual YAM, filtered DROID Franka, SO100/101, Bridge, and Open X-Embodiment-derived robot data.",
+      "method": "Embodied-reasoning VLM with a KV-cache bridge to a flow-matching action expert, adaptive-depth reasoning, and an open action tokenizer.",
+      "task": "Open real-world robot manipulation with reasoning-heavy single-arm and bimanual control.",
+      "novelty": "Combines open embodied reasoning, open action tokenization, low-cost/bimanual data, and broad release artifacts into a deployment-oriented VLA stack.",
+      "evidence": "The arXiv abstract and official Ai2 release jointly provide architecture, dataset scale, code/data release status, simulation metrics, real-world metrics, and qualitative robot evidence.",
+      "claim_checks": [
+        {
+          "claim": "Molmo 2-ER is trained on an additional ~3.3M embodied-reasoning examples.",
+          "source": "https://arxiv.org/abs/2605.02881",
+          "status": "verified",
+          "notes": "Stated in the abstract."
+        },
+        {
+          "claim": "MolmoAct2-Bimanual YAM is the largest open-source bimanual dataset with more than 700 to 720 hours of demonstrations.",
+          "source": "https://allenai.org/blog/molmoact2",
+          "status": "verified",
+          "notes": "Official blog release states the size and release framing."
+        },
+        {
+          "claim": "Full code, training data, and LeRobot integration are publicly released.",
+          "source": "https://allenai.org/blog/molmoact2",
+          "status": "verified",
+          "notes": "Explicitly stated in the 2026-05-28 update."
+        }
+      ],
+      "limitations": "Official release is still concentrated on supported embodiments and batchwise planning rather than universal reactive control.",
+      "project_relevance": "Strong open baseline for reasoning-to-action transfer, bimanual manipulation, and low-cost embodiment deployment."
+    },
+    {
+      "candidate_id": "CAND-0048",
+      "title": "WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform",
+      "year": 2026,
+      "venue": "arXiv / benchmark",
+      "url": "https://arxiv.org/abs/2605.17912",
+      "paper_ids": {
+        "arxiv": "2605.17912",
+        "doi": "",
+        "openreview": "",
+        "project": "https://world-arena.ai/",
+        "github": ""
+      },
+      "primary_branch": "E",
+      "secondary_branches": ["D", "B"],
+      "data": "Expanded embodied world-model benchmark with visuotactile, simulated, and real-world evaluation surfaces plus public leaderboard infrastructure.",
+      "method": "Benchmark extension that evaluates world models across modality, functionality, and platform with perceptual metrics and downstream embodied utility tests.",
+      "task": "Evaluate embodied world models as perceptual predictors, data engines, policy evaluators, action planners, and interactive RL environments.",
+      "novelty": "Extends WorldArena from vision-only simulator-centric evaluation toward visuotactile, policy-optimization, and cross-platform embodied testing.",
+      "evidence": "The arXiv abstract plus the official benchmark site jointly document the expansion axes, functional evaluation roles, and public benchmark infrastructure.",
+      "claim_checks": [
+        {
+          "claim": "WorldArena 2.0 extends modality to visuotactile signals, functionality to interactive RL environments, and platform to real-world evaluation.",
+          "source": "https://arxiv.org/abs/2605.17912",
+          "status": "verified",
+          "notes": "Stated in the abstract."
+        },
+        {
+          "claim": "The official benchmark site exposes leaderboard, dataset, challenge, and submission surfaces.",
+          "source": "https://world-arena.ai/",
+          "status": "verified",
+          "notes": "Visible on the official site."
+        },
+        {
+          "claim": "Perceptual evaluation includes 16 metrics across 6 sub-dimensions.",
+          "source": "https://world-arena.ai/",
+          "status": "verified",
+          "notes": "Visible in the Overview and Evaluation Framework sections."
+        }
+      ],
+      "limitations": "Public benchmark surfaces may evolve; exact protocol freeze dates should be checked before using leaderboard comparisons longitudinally.",
+      "project_relevance": "Direct evaluation target for closed-loop embodied generation, world-action models, and simulator-backed policy learning."
+    },
+    {
+      "candidate_id": "CAND-0049",
+      "title": "Embodied3DBench: Benchmarking Low-Level Embodied Spatial Intelligence of Vision Language Models",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.29074",
+      "paper_ids": {
+        "arxiv": "2605.29074",
+        "doi": "",
+        "openreview": "",
+        "project": "",
+        "github": ""
+      },
+      "primary_branch": "C",
+      "secondary_branches": ["E"],
+      "data": "Robot-centric embodied 3D benchmark with 6 task categories, 12 subcategories, 21k+ QA pairs, and a 1.3M-pair synthetic training set.",
+      "method": "Diagnostic benchmark plus synthetic QA training data for low-level embodied spatial intelligence.",
+      "task": "Benchmark low-level embodied spatial understanding and interaction-oriented perception for VLMs.",
+      "novelty": "Separates structural spatial understanding from interaction-oriented perception and pairs diagnosis with a large synthetic improvement set.",
+      "evidence": "The arXiv abstract provides clear task taxonomy, scale, model-count, and synthetic-data claims sufficient for benchmark acceptance.",
+      "claim_checks": [
+        {
+          "claim": "The benchmark contains 6 task categories and 12 subcategories.",
+          "source": "https://arxiv.org/abs/2605.29074",
+          "status": "verified",
+          "notes": "Stated in the abstract."
+        },
+        {
+          "claim": "The benchmark spans over 21k QA pairs and an additional 1.3M synthetic QA training set.",
+          "source": "https://arxiv.org/abs/2605.29074",
+          "status": "verified",
+          "notes": "Stated in the abstract."
+        },
+        {
+          "claim": "13 state-of-the-art models are evaluated.",
+          "source": "https://arxiv.org/abs/2605.29074",
+          "status": "verified",
+          "notes": "Stated in the abstract."
+        }
+      ],
+      "limitations": "No separate official project/code page was recovered during this run, so deeper release details should be rechecked before citing operational availability.",
+      "project_relevance": "Useful low-level benchmark for grounding, affordance, grasp-point, and trajectory-perception checks in generated or reconstructed worlds."
+    },
+    {
+      "candidate_id": "CAND-0050",
+      "title": "ESPIRE: A Diagnostic Benchmark for Embodied Spatial Reasoning of Vision-Language Models",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2603.13033",
+      "paper_ids": {
+        "arxiv": "2603.13033",
+        "doi": "",
+        "openreview": "",
+        "project": "",
+        "github": ""
+      },
+      "primary_branch": "C",
+      "secondary_branches": ["E"],
+      "data": "Isaac-Sim-based embodied spatial reasoning benchmark with 148 localization reasoning types and functional-program-generated scene-graph targets.",
+      "method": "Fully generative localization-plus-execution benchmark for embodied spatial reasoning in simulation.",
+      "task": "Diagnose action-oriented embodied spatial reasoning of VLMs under physically grounded execution settings.",
+      "novelty": "Turns spatial reasoning evaluation from static QA into a physically grounded generative localization and execution problem.",
+      "evidence": "The accessible arXiv abstract and HTML text make the localization/execution split, Isaac Sim grounding, and task-systematicity explicit.",
+      "claim_checks": [
+        {
+          "claim": "ESPIRE is a fully generative benchmark covering localization and execution.",
+          "source": "https://arxiv.org/abs/2603.13033",
+          "status": "verified",
+          "notes": "Stated in the abstract and accessible HTML text."
+        },
+        {
+          "claim": "The benchmark covers 148 spatial-reasoning types for localization.",
+          "source": "https://arxiv.org/abs/2603.13033",
+          "status": "verified",
+          "notes": "Visible in the accessible HTML text."
+        },
+        {
+          "claim": "Task instructions are represented as functional programs executed on 3D scene graphs.",
+          "source": "https://arxiv.org/abs/2603.13033",
+          "status": "verified",
+          "notes": "Visible in the accessible HTML text."
+        }
+      ],
+      "limitations": "No separate project/code page was confirmed during this run; benchmark availability should be rechecked before downstream use.",
+      "project_relevance": "Strong validator template for reasoning-to-act spatial competence in interactive embodied generation systems."
+    },
+    {
+      "candidate_id": "CAND-0051",
+      "title": "GE-Sim 2.0: A Roadmap Towards Comprehensive Closed-loop Video World Simulators for Robotic Manipulation",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.27491",
+      "paper_ids": {
+        "arxiv": "2605.27491",
+        "doi": "",
+        "openreview": "",
+        "project": "",
+        "github": ""
+      },
+      "primary_branch": "D",
+      "secondary_branches": ["E"],
+      "data": "Thousands of hours of real-world robot data spanning teleoperation, contact-rich interaction, and on-robot policy deployment according to the abstract.",
+      "method": "Closed-loop video world simulator with a state expert, a world judge, and accelerated rollout inference.",
+      "task": "Closed-loop policy development and evaluation for robotic manipulation through action-conditioned video rollouts.",
+      "novelty": "Moves a robotic video world simulator toward practical policy-learning loops rather than offline video prediction alone.",
+      "evidence": "The arXiv abstract is strong enough to justify review, but the run could not recover official demo/code surfaces needed for confident visual acceptance.",
+      "claim_checks": [
+        {
+          "claim": "The method adds a state expert, world judge, and acceleration framework.",
+          "source": "https://arxiv.org/abs/2605.27491",
+          "status": "verified",
+          "notes": "Stated in the abstract."
+        },
+        {
+          "claim": "It tops the public WorldArena leaderboard at 2B parameters.",
+          "source": "https://arxiv.org/abs/2605.27491",
+          "status": "partial",
+          "notes": "Source-reported in abstract; not independently checked during this run."
+        }
+      ],
+      "limitations": "Generation-heavy acceptance depends on qualitative rollout quality, which could not be judged confidently from primary official materials recovered in this run.",
+      "project_relevance": "Potentially strong world-simulator addition if rollout quality and controllability clear the demo bar."
+    },
+    {
+      "candidate_id": "CAND-0052",
+      "title": "Embodied-R1.5: Evolving Physical Intelligence via Embodied Foundation Models",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2606.11324",
+      "paper_ids": {
+        "arxiv": "2606.11324",
+        "doi": "",
+        "openreview": "",
+        "project": "",
+        "github": ""
+      },
+      "primary_branch": "D",
+      "secondary_branches": ["C", "E"],
+      "data": "A reported 15B-token embodied data system plus downstream VLA finetuning and embodied-benchmark evaluation.",
+      "method": "Unified embodied foundation model with a Planner-Grounder-Corrector loop and multi-task balanced RL recipe.",
+      "task": "Embodied reasoning with transfer into VLA-style robot manipulation.",
+      "novelty": "Claims to unify broad embodied reasoning and downstream VLA adaptation in one open EFM release.",
+      "evidence": "The arXiv abstract is promising and relevant, but the run did not recover official demo or release surfaces needed to accept real-robot claims confidently.",
+      "claim_checks": [
+        {
+          "claim": "The model uses a 15B-token embodied data system and a Planner-Grounder-Corrector closed loop.",
+          "source": "https://arxiv.org/abs/2606.11324",
+          "status": "verified",
+          "notes": "Stated in the abstract."
+        },
+        {
+          "claim": "Weights, datasets, training code, and EmbodiedEvalKit are open-sourced.",
+          "source": "https://arxiv.org/abs/2606.11324",
+          "status": "partial",
+          "notes": "Claimed in the abstract, but no official artifact URLs were confirmed in this run."
+        }
+      ],
+      "limitations": "Robot-demo-heavy acceptance depends on official visual evidence and release confirmation that were not available from primary/official sources recovered in this run.",
+      "project_relevance": "Likely strong if confirmed, especially for bridging embodied reasoning and downstream VLA capability."
+    }
+  ],
+  "demo_cards": [
+    {
+      "candidate_id": "CAND-0047",
+      "project_url": "https://allenai.org/blog/molmoact2",
+      "code_url": "https://allenai.org/blog/molmoact2",
+      "demo_url": "https://allenai.org/blog/molmoact2",
+      "checkpoint_url": "https://allenai.org/blog/molmoact2",
+      "leaderboard_url": "",
+      "demo_score": 5,
+      "demo_notes": "Official release page includes architecture images, quantitative tables, code/data release update, and extensive robot examples.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0048",
+      "project_url": "https://world-arena.ai/",
+      "code_url": "https://world-arena.ai/",
+      "demo_url": "https://world-arena.ai/",
+      "checkpoint_url": "",
+      "leaderboard_url": "https://world-arena.ai/",
+      "demo_score": 4,
+      "demo_notes": "Official benchmark site exposes overview, evaluation framework, leaderboard, dataset, challenge, and visualization examples.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0049",
+      "project_url": "",
+      "code_url": "",
+      "demo_url": "",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 2,
+      "demo_notes": "Primary source confirms benchmark scope and scale, but no separate official project/demo surface was recovered during this run.",
+      "verification_status": "partial"
+    },
+    {
+      "candidate_id": "CAND-0050",
+      "project_url": "",
+      "code_url": "",
+      "demo_url": "",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 2,
+      "demo_notes": "Benchmark paper is accessible from arXiv and enough for acceptance, but public release surfaces were not confirmed.",
+      "verification_status": "partial"
+    },
+    {
+      "candidate_id": "CAND-0051",
+      "project_url": "",
+      "code_url": "",
+      "demo_url": "",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 1,
+      "demo_notes": "Only abstract-level evidence was verified during this run; official demo surfaces were not recovered.",
+      "verification_status": "missing"
+    },
+    {
+      "candidate_id": "CAND-0052",
+      "project_url": "",
+      "code_url": "",
+      "demo_url": "",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 1,
+      "demo_notes": "The abstract claims open release and real-robot evidence, but official demo or release pages were not confirmed.",
+      "verification_status": "missing"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-15",
+  "created_at": "2026-06-15",
+  "branches": ["A", "B", "C", "D", "E"],
+  "minimum_year": 2024,
+  "search_windows": {
+    "default_days": 14,
+    "high_priority_days": 45
+  },
+  "branch_queries": {
+    "A": [
+      "simulation-ready 3D scene reconstruction embodied 2026 arXiv",
+      "physical 3D asset embodied AI 2026 arXiv"
+    ],
+    "B": [
+      "scene generation embodied AI simulator-ready 2026 arXiv",
+      "interactive world generation embodied 2026 project"
+    ],
+    "C": [
+      "embodied spatial reasoning benchmark 2026 arXiv",
+      "low-level embodied spatial intelligence VLM 2026"
+    ],
+    "D": [
+      "open VLA robot deployment 2026 arXiv",
+      "embodied foundation model real-robot 2026 arXiv"
+    ],
+    "E": [
+      "embodied world model benchmark 2026 arXiv",
+      "world model evaluation leaderboard embodied 2026"
+    ]
+  },
+  "known_registry_path": "data/papers.seed.json",
+  "follow_sources_path": "data/follow_sources.seed.json",
+  "harness_paths": [
+    "harness/system_harness.md",
+    "harness/acceptance_harness.md"
+  ]
+}

@@ -529,6 +529,42 @@
           "visual_quality_decision": "not_applicable",
           "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/C_spatial_intelligence/spatialstack-2026.md"
+        },
+        {
+          "title": "Embodied3DBench",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2605.29074",
+          "data": "robot-centric embodied 3D benchmark with 6 task categories, 12 subcategories, 21k+ QA pairs, and a 1.3M-pair synthetic training set",
+          "method": "diagnostic benchmark plus synthetic QA training data for low-level embodied spatial intelligence",
+          "task": "benchmark low-level embodied spatial understanding and interaction-oriented perception for VLMs",
+          "novelty": "separates structural spatial understanding from interaction-oriented perception and pairs diagnosis with a large synthetic improvement set",
+          "source_quality": "primary_or_official",
+          "demo_score": 2,
+          "evidence_strength": 4,
+          "project_relevance": "Useful low-level benchmark for grounding, affordance, grasp-point, and trajectory-perception checks in generated or reconstructed worlds.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "visual_inspection_status": "verified_2026_06_15",
+          "deep_dive_path": "paper_reads/C_spatial_intelligence/embodied3dbench-2026.md"
+        },
+        {
+          "title": "ESPIRE",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2603.13033",
+          "data": "Isaac-Sim-based embodied spatial reasoning benchmark with 148 localization reasoning types and functional-program-generated scene-graph targets",
+          "method": "fully generative localization-plus-execution benchmark for embodied spatial reasoning in simulation",
+          "task": "diagnose action-oriented embodied spatial reasoning of VLMs under physically grounded execution settings",
+          "novelty": "turns spatial reasoning evaluation from static QA into a physically grounded generative localization and execution problem",
+          "source_quality": "primary_or_official",
+          "demo_score": 2,
+          "evidence_strength": 4,
+          "project_relevance": "Strong validator template for reasoning-to-act spatial competence in interactive embodied generation systems.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "visual_inspection_status": "verified_2026_06_15",
+          "deep_dive_path": "paper_reads/C_spatial_intelligence/espire-2026.md"
         }
       ]
     },
@@ -733,6 +769,24 @@
           "visual_quality_decision": "adequate",
           "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/D_vla_world_action_models/mmada-vla-2026.md"
+        },
+        {
+          "title": "MolmoAct2",
+          "year": 2026,
+          "venue": "arXiv / Ai2 release",
+          "url": "https://arxiv.org/abs/2605.02881",
+          "data": "Molmo 2-ER reasoning corpus, MolmoAct2-Bimanual YAM, filtered DROID Franka, SO100/101, Bridge, and Open X-Embodiment-derived robot data",
+          "method": "embodied-reasoning VLM with a KV-cache bridge to a flow-matching action expert plus adaptive-depth reasoning and an open action tokenizer",
+          "task": "open real-world robot manipulation with reasoning-heavy single-arm and bimanual control",
+          "novelty": "combines open embodied reasoning, open action tokenization, low-cost/bimanual data, and broad release artifacts into a deployment-oriented VLA stack",
+          "source_quality": "primary_or_official",
+          "demo_score": 5,
+          "evidence_strength": 5,
+          "project_relevance": "Strong open baseline for reasoning-to-action transfer, bimanual manipulation, and low-cost embodiment deployment.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_2026_06_15",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/molmoact2-2026.md"
         }
       ]
     },
@@ -868,6 +922,24 @@
           "visual_quality_decision": "not_applicable",
           "visual_inspection_status": "verified_full_coverage_init",
           "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/ctrl-world-2026.md"
+        },
+        {
+          "title": "WorldArena 2.0",
+          "year": 2026,
+          "venue": "arXiv / benchmark",
+          "url": "https://arxiv.org/abs/2605.17912",
+          "data": "expanded embodied world-model benchmark with visuotactile, simulated, and real-world evaluation surfaces plus public leaderboard infrastructure",
+          "method": "benchmark extension that evaluates world models across modality, functionality, and platform with perceptual metrics and downstream embodied utility tests",
+          "task": "evaluate embodied world models as perceptual predictors, data engines, policy evaluators, action planners, and interactive RL environments",
+          "novelty": "extends WorldArena from vision-only simulator-centric evaluation toward visuotactile, policy-optimization, and cross-platform embodied testing",
+          "source_quality": "primary_or_official",
+          "demo_score": 4,
+          "evidence_strength": 5,
+          "project_relevance": "Direct evaluation target for closed-loop embodied generation, world-action models, and simulator-backed policy learning.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "visual_inspection_status": "verified_2026_06_15",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/worldarena-2-2026.md"
         }
       ]
     }

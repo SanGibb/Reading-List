@@ -10,9 +10,9 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 |---|---|---|---|
 | A | `A_executable_world_representation/` | executable world structures, object parts, affordances, task predicates, and physical/deformable state | 9 |
 | B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 10 |
-| C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 9 |
-| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 11 |
-| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 7 |
+| C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 11 |
+| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 12 |
+| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 8 |
 
 ## Current Reports
 
@@ -46,6 +46,8 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | DepthVLA: Enhancing Vision-Language-Action Models with Depth-Aware Spatial Reasoning | C | [depthvla-2025.md](C_spatial_intelligence/depthvla-2025.md) |
 | ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding for General Robot Manipulation | C | [st-vla-2026.md](C_spatial_intelligence/st-vla-2026.md) |
 | SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning | C | [spatialstack-2026.md](C_spatial_intelligence/spatialstack-2026.md) |
+| Embodied3DBench: Benchmarking Low-Level Embodied Spatial Intelligence of Vision Language Models | C | [embodied3dbench-2026.md](C_spatial_intelligence/embodied3dbench-2026.md) |
+| ESPIRE: A Diagnostic Benchmark for Embodied Spatial Reasoning of Vision-Language Models | C | [espire-2026.md](C_spatial_intelligence/espire-2026.md) |
 | Octo: An Open-Source Generalist Robot Policy | D | [octo-2024.md](D_vla_world_action_models/octo-2024.md) |
 | OpenVLA: An Open-Source Vision-Language-Action Model | D | [openvla-2024.md](D_vla_world_action_models/openvla-2024.md) |
 | pi0: A Vision-Language-Action Flow Model for General Robot Control | D | [pi0-2024.md](D_vla_world_action_models/pi0-2024.md) |
@@ -57,6 +59,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations | D | [xr-1-2025.md](D_vla_world_action_models/xr-1-2025.md) |
 | TwinVLA: Data-Efficient Bimanual Manipulation with Twin Single-Arm Vision-Language-Action Models | D | [twinvla-2025.md](D_vla_world_action_models/twinvla-2025.md) |
 | MMaDA-VLA: Large Diffusion Vision-Language-Action Model with Unified Multi-Modal Instruction and Generation | D | [mmada-vla-2026.md](D_vla_world_action_models/mmada-vla-2026.md) |
+| MolmoAct2: Action Reasoning Models for Real-world Deployment | D | [molmoact2-2026.md](D_vla_world_action_models/molmoact2-2026.md) |
 | EWMBench: Evaluating Embodied World Models | E | [ewmbench-2025.md](E_evaluation_data_infrastructure/ewmbench-2025.md) |
 | WorldScore: A Unified Evaluation Benchmark for World Generation | E | [worldscore-2025.md](E_evaluation_data_infrastructure/worldscore-2025.md) |
 | RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning | E | [roboverse-2025.md](E_evaluation_data_infrastructure/roboverse-2025.md) |
@@ -64,3 +67,4 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models | E | [worldarena-2026.md](E_evaluation_data_infrastructure/worldarena-2026.md) |
 | World-in-World: World Models in a Closed-Loop World | E | [world-in-world-2025.md](E_evaluation_data_infrastructure/world-in-world-2025.md) |
 | Ctrl-World | E | [ctrl-world-2026.md](E_evaluation_data_infrastructure/ctrl-world-2026.md) |
+| WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform | E | [worldarena-2-2026.md](E_evaluation_data_infrastructure/worldarena-2-2026.md) |
