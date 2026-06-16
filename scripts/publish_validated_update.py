@@ -4,6 +4,9 @@
 Undecided dossiers are intentionally local-only. This script validates that
 they exist locally when referenced, but does not stage `undecided/**` except
 for `undecided/README.md`.
+
+Push uses an explicit `HEAD:<branch>` refspec so detached-head worktrees still
+publish the newly created commit to the intended remote branch.
 """
 
 from __future__ import annotations
@@ -124,7 +127,7 @@ def main() -> int:
         )
         branch = branch_result.stdout.strip() or "main"
 
-    return run(["git", "push", args.remote, branch], root).returncode
+    return run(["git", "push", args.remote, f"HEAD:{branch}"], root).returncode
 
 
 if __name__ == "__main__":
