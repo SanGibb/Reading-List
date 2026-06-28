@@ -1,0 +1,44 @@
+{
+  "run_id": "2026-06-29",
+  "created_at": "2026-06-29",
+  "branches": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "minimum_year": 2024,
+  "search_windows": {
+    "default_days": 14,
+    "high_priority_days": 45
+  },
+  "branch_queries": {
+    "A": [
+      "executable world programs indoor scene generation 2026 arXiv",
+      "simulation-ready structured scene representation 2026 arXiv"
+    ],
+    "B": [
+      "embodied environment generation evolution 2026 arXiv",
+      "interactive world generation embodied agent learning 2026 official"
+    ],
+    "C": [
+      "spatial reasoning to action 3D scenes 2026 arXiv",
+      "embodied spatial benchmark 3D VLM 2026 official"
+    ],
+    "D": [
+      "world foundation model physical AI 2026 official arXiv",
+      "action-conditioned world model robotics 2026 official"
+    ],
+    "E": [
+      "vision-language-action evaluation harness 2026 arXiv",
+      "reproducible real-world VLA benchmark 2026 official"
+    ]
+  },
+  "known_registry_path": "data/papers.seed.json",
+  "follow_sources_path": "data/follow_sources.seed.json",
+  "harness_paths": [
+    "harness/system_harness.md",
+    "harness/acceptance_harness.md"
+  ]
+}

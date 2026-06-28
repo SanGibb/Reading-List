@@ -9,15 +9,15 @@
 | 内容 | 入口 |
 |---|---|
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
-| 最新扩库摘要 | [reports/2026-06-15-expansion.md](reports/2026-06-15-expansion.md) |
-| 当前已收录精读 | 50 篇，见 [paper_reads/README.md](paper_reads/README.md) |
+| 最新扩库摘要 | [reports/2026-06-29-expansion.md](reports/2026-06-29-expansion.md) |
+| 当前已收录精读 | 56 篇，见 [paper_reads/README.md](paper_reads/README.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。通过筛选的候选应全部加入，不做固定 top-k 抽样。
 
 ## 本周更新内容
 
-本轮扩库日期：2026-06-15。完整审计摘要见 [reports/2026-06-15-expansion.md](reports/2026-06-15-expansion.md)。
+本轮扩库日期：2026-06-29。完整审计摘要见 [reports/2026-06-29-expansion.md](reports/2026-06-29-expansion.md)。
 
 ### 重点新增与补齐
 
@@ -52,11 +52,11 @@
 
 | Branch | Count | Anchor works |
 |---|---:|---|
-| A. Executable World Representation | 9 | SceneFun3D, BEHAVIOR-1K, PhysX-Omni, PhysDreamer, Feature Splatting, PhysX-Anything, SimuScene, REST3D ... |
-| B. Interactive Generation and PCG | 10 | PhyScene, RoboGen, Steerable Scene Generation, SAGE, EmbodiedGen, Holodeck, Infinigen Indoors, SceneSmith ... |
-| C. Spatial Intelligence | 11 | SpatialBot, HiSpatial, SpaceTools, Ego3D-Bench / Ego3D-VLM, Seeing Across Views / MV-RoboBench, SpatialVLA, DepthVLA, ST-VLA ... |
-| D. VLA and World-Action Models | 12 | Octo, OpenVLA, pi0, VLA-R1, World Action Models, Physically Viable World Models, GR00T N1, Green-VLA ... |
-| E. Evaluation and Data Infrastructure | 8 | EWMBench, WorldScore, RoboVerse, OpenEQA, WorldArena, WorldArena 2.0, World-in-World, Ctrl-World |
+| A. Executable World Representation | 10 | SceneFun3D, BEHAVIOR-1K, PhysX-Omni, PhysDreamer, Feature Splatting, PhysX-Anything, SimuScene, REST3D, SceneCode ... |
+| B. Interactive Generation and PCG | 11 | PhyScene, RoboGen, Steerable Scene Generation, SAGE, EmbodiedGen, Holodeck, Infinigen Indoors, SceneSmith, SimWorld Studio ... |
+| C. Spatial Intelligence | 12 | SpatialBot, HiSpatial, SpaceTools, Ego3D-Bench / Ego3D-VLM, Seeing Across Views / MV-RoboBench, SpatialVLA, DepthVLA, ST-VLA, SpatialAct ... |
+| D. VLA and World-Action Models | 13 | Octo, OpenVLA, pi0, VLA-R1, World Action Models, Physically Viable World Models, GR00T N1, Green-VLA, Cosmos-Predict2.5 ... |
+| E. Evaluation and Data Infrastructure | 10 | EWMBench, WorldScore, RoboVerse, OpenEQA, WorldArena, WorldArena 2.0, World-in-World, Ctrl-World, vla-eval ... |
 
 ## 研究树
 

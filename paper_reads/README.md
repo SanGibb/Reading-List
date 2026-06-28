@@ -8,11 +8,11 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 
 | Branch | Directory | Focus | Count |
 |---|---|---|---|
-| A | `A_executable_world_representation/` | executable world structures, object parts, affordances, task predicates, and physical/deformable state | 9 |
-| B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 10 |
-| C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 11 |
-| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 12 |
-| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 8 |
+| A | `A_executable_world_representation/` | executable world structures, object parts, affordances, task predicates, and physical/deformable state | 10 |
+| B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 11 |
+| C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 12 |
+| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 13 |
+| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 10 |
 
 ## Current Reports
 
@@ -27,6 +27,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | SimuScene: Simulation-Ready Compositional 3D Scene Reconstruction from a Single Image | A | [simuscene-2026.md](A_executable_world_representation/simuscene-2026.md) |
 | REST3D: Reconstructing Physically Stable 3D Scenes from a Single Image | A | [rest3d-2026.md](A_executable_world_representation/rest3d-2026.md) |
 | TriSplat: Simulation-Ready Feed-Forward 3D Scene Reconstruction | A | [trisplat-2026.md](A_executable_world_representation/trisplat-2026.md) |
+| SceneCode: Editable Indoor Scene Generation using Executable World Programs | A | [scenecode-2026.md](A_executable_world_representation/scenecode-2026.md) |
 | PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI | B | [physcene-2024.md](B_interactive_generation_pcg/physcene-2024.md) |
 | RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation | B | [robogen-2024.md](B_interactive_generation_pcg/robogen-2024.md) |
 | Steerable Scene Generation | B | [steerable-scene-generation-2025.md](B_interactive_generation_pcg/steerable-scene-generation-2025.md) |
@@ -37,6 +38,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes | B | [scenesmith-2026.md](B_interactive_generation_pcg/scenesmith-2026.md) |
 | SceneFoundry: Generating Interactive Infinite 3D Worlds | B | [scenefoundry-2026.md](B_interactive_generation_pcg/scenefoundry-2026.md) |
 | HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds | B | [hy-world-2-2026.md](B_interactive_generation_pcg/hy-world-2-2026.md) |
+| SimWorld Studio: Generation and Evolution of Custom Embodied Agent Learning Environments | B | [simworld-studio-2026.md](B_interactive_generation_pcg/simworld-studio-2026.md) |
 | SpatialBot: Precise Spatial Understanding with Vision Language Models | C | [spatialbot-2024.md](C_spatial_intelligence/spatialbot-2024.md) |
 | HiSpatial: Taming Hierarchical 3D Spatial Understanding in Vision-Language Models | C | [hispatial-2026.md](C_spatial_intelligence/hispatial-2026.md) |
 | SpaceTools: Tool-Augmented Spatial Reasoning via Double Interactive RL | C | [spacetools-2026.md](C_spatial_intelligence/spacetools-2026.md) |
@@ -48,6 +50,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning | C | [spatialstack-2026.md](C_spatial_intelligence/spatialstack-2026.md) |
 | Embodied3DBench: Benchmarking Low-Level Embodied Spatial Intelligence of Vision Language Models | C | [embodied3dbench-2026.md](C_spatial_intelligence/embodied3dbench-2026.md) |
 | ESPIRE: A Diagnostic Benchmark for Embodied Spatial Reasoning of Vision-Language Models | C | [espire-2026.md](C_spatial_intelligence/espire-2026.md) |
+| SpatialAct: Probing Spatial Reasoning-to-Action Capabilities of Vision-Language Models in 3D Scenes | C | [spatialact-2026.md](C_spatial_intelligence/spatialact-2026.md) |
 | Octo: An Open-Source Generalist Robot Policy | D | [octo-2024.md](D_vla_world_action_models/octo-2024.md) |
 | OpenVLA: An Open-Source Vision-Language-Action Model | D | [openvla-2024.md](D_vla_world_action_models/openvla-2024.md) |
 | pi0: A Vision-Language-Action Flow Model for General Robot Control | D | [pi0-2024.md](D_vla_world_action_models/pi0-2024.md) |
@@ -60,6 +63,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | TwinVLA: Data-Efficient Bimanual Manipulation with Twin Single-Arm Vision-Language-Action Models | D | [twinvla-2025.md](D_vla_world_action_models/twinvla-2025.md) |
 | MMaDA-VLA: Large Diffusion Vision-Language-Action Model with Unified Multi-Modal Instruction and Generation | D | [mmada-vla-2026.md](D_vla_world_action_models/mmada-vla-2026.md) |
 | MolmoAct2: Action Reasoning Models for Real-world Deployment | D | [molmoact2-2026.md](D_vla_world_action_models/molmoact2-2026.md) |
+| Cosmos-Predict2.5: A World Foundation Model for Physical AI | D | [cosmos-predict2-5-2026.md](D_vla_world_action_models/cosmos-predict2-5-2026.md) |
 | EWMBench: Evaluating Embodied World Models | E | [ewmbench-2025.md](E_evaluation_data_infrastructure/ewmbench-2025.md) |
 | WorldScore: A Unified Evaluation Benchmark for World Generation | E | [worldscore-2025.md](E_evaluation_data_infrastructure/worldscore-2025.md) |
 | RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning | E | [roboverse-2025.md](E_evaluation_data_infrastructure/roboverse-2025.md) |
@@ -68,3 +72,5 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | World-in-World: World Models in a Closed-Loop World | E | [world-in-world-2025.md](E_evaluation_data_infrastructure/world-in-world-2025.md) |
 | Ctrl-World | E | [ctrl-world-2026.md](E_evaluation_data_infrastructure/ctrl-world-2026.md) |
 | WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform | E | [worldarena-2-2026.md](E_evaluation_data_infrastructure/worldarena-2-2026.md) |
+| A Unified Evaluation Harness for Vision-Language-Action Models | E | [vla-eval-2026.md](E_evaluation_data_infrastructure/vla-eval-2026.md) |
+| VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models | E | [vla-replica-2026.md](E_evaluation_data_infrastructure/vla-replica-2026.md) |

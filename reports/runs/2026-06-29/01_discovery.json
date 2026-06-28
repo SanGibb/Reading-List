@@ -1,0 +1,306 @@
+{
+  "run_id": "2026-06-29",
+  "followed_sources_checked": [
+    {
+      "source_id": "stanford-svl-behavior",
+      "status": "spot_checked",
+      "notes": "Checked Stanford SVL / BEHAVIOR surfaces for new executable-world and embodied benchmark signals; no new accepted additions this run.",
+      "urls_checked": [
+        "https://svl.stanford.edu/publications/",
+        "https://behavior.stanford.edu/omnigibson/overview.html"
+      ]
+    },
+    {
+      "source_id": "princeton-pvl-infinigen",
+      "status": "spot_checked",
+      "notes": "Checked Princeton PVL and Infinigen surfaces for new procedural world-generation releases; no new accepted candidate beyond existing registry coverage.",
+      "urls_checked": [
+        "https://pvl.cs.princeton.edu/",
+        "https://infinigen.org/"
+      ]
+    },
+    {
+      "source_id": "ai2-embodied-prior",
+      "status": "checked",
+      "notes": "Checked Ai2 embodied surfaces and found vla-eval as the strongest new infrastructure addition this run.",
+      "urls_checked": [
+        "https://allenai.org/embodied-ai",
+        "https://github.com/allenai/vla-evaluation-harness"
+      ]
+    },
+    {
+      "source_id": "nvidia-cosmos-isaac",
+      "status": "checked",
+      "notes": "NVIDIA Cosmos surfaces yielded Cosmos-Predict2.5 as a direct accepted world-model addition; Cosmos-Reason1 was logged but not promoted.",
+      "urls_checked": [
+        "https://research.nvidia.com/labs/cosmos-lab/",
+        "https://research.nvidia.com/labs/cosmos-lab/cosmos-predict2.5/",
+        "https://research.nvidia.com/labs/cosmos-lab/cosmos-reason1/"
+      ]
+    },
+    {
+      "source_id": "stanford-realab-shuran",
+      "status": "spot_checked",
+      "notes": "Checked REAL lab surfaces; no clean new accepted addition beyond already covered manipulation and scene-generation lines.",
+      "urls_checked": [
+        "https://real.stanford.edu/lab.html",
+        "https://shurans.github.io/"
+      ]
+    },
+    {
+      "source_id": "stanford-iris-openvla",
+      "status": "spot_checked",
+      "notes": "Checked Stanford IRIS / OpenVLA surfaces; no new accepted primary-source addition beyond existing registry coverage.",
+      "urls_checked": [
+        "https://irislab.stanford.edu/",
+        "https://openvla.github.io/"
+      ]
+    },
+    {
+      "source_id": "berkeley-rail-levine",
+      "status": "spot_checked",
+      "notes": "Checked Berkeley RAIL / BAIR robotics signal space; broad search did not yield a cleaner accepted candidate than the VLA infrastructure additions already selected.",
+      "urls_checked": [
+        "https://rail.eecs.berkeley.edu/"
+      ]
+    },
+    {
+      "source_id": "physical-intelligence",
+      "status": "spot_checked",
+      "notes": "Checked Physical Intelligence surfaces; no new accepted paper this run.",
+      "urls_checked": [
+        "https://www.pi.website/"
+      ]
+    },
+    {
+      "source_id": "google-deepmind-robotics",
+      "status": "spot_checked",
+      "notes": "Checked Google DeepMind robotics surfaces; no new accepted primary-source addition for the current branch scope.",
+      "urls_checked": [
+        "https://deepmind.google/discover/blog/"
+      ]
+    },
+    {
+      "source_id": "ut-austin-rpl-yuke",
+      "status": "spot_checked",
+      "notes": "Checked UT Austin RPL surfaces; no new accepted addition emerged in this run window.",
+      "urls_checked": [
+        "https://rpl.cs.utexas.edu/"
+      ]
+    },
+    {
+      "source_id": "meta-fair-embodied",
+      "status": "spot_checked",
+      "notes": "Checked Meta FAIR embodied signals; nothing newly accepted this run.",
+      "urls_checked": [
+        "https://ai.meta.com/research/"
+      ]
+    },
+    {
+      "source_id": "huggingface-lerobot",
+      "status": "spot_checked",
+      "notes": "Checked LeRobot release surfaces for reinforcement of recent VLA releases; no standalone accepted candidate from this source group.",
+      "urls_checked": [
+        "https://huggingface.co/blog/lerobot"
+      ]
+    },
+    {
+      "source_id": "toyota-research-institute-lbm",
+      "status": "spot_checked",
+      "notes": "Checked TRI research surfaces; no new accepted addition this run.",
+      "urls_checked": [
+        "https://www.tri.global/research"
+      ]
+    },
+    {
+      "source_id": "mit-csail-drake-scene-generation",
+      "status": "checked",
+      "notes": "SceneCode was recovered through broad primary-source search and is relevant to the scene-generation / executable-world line tracked here.",
+      "urls_checked": [
+        "https://scene-code.github.io/",
+        "https://arxiv.org/abs/2605.19587"
+      ]
+    },
+    {
+      "source_id": "world-model-benchmarks",
+      "status": "checked",
+      "notes": "World-model and VLA benchmark searches produced SpatialAct, VLA-REPLICA, and the SO-101 benchmark candidate; only the first two cleared the acceptance gates.",
+      "urls_checked": [
+        "https://arxiv.org/abs/2605.31148",
+        "https://irvlutd.github.io/VLAReplica/",
+        "https://arxiv.org/abs/2606.15971"
+      ]
+    },
+    {
+      "source_id": "vla-leaderboard",
+      "status": "checked",
+      "notes": "Used VLA benchmark and leaderboard search space to cross-check current evaluation infrastructure candidates.",
+      "urls_checked": [
+        "https://github.com/allenai/vla-evaluation-harness",
+        "https://irvlutd.github.io/VLAReplica/"
+      ]
+    },
+    {
+      "source_id": "vla-survey",
+      "status": "skipped",
+      "notes": "Survey pages were not needed once direct primary and official benchmark sources were recovered for the accepted E-branch candidates.",
+      "urls_checked": []
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "CAND-0053",
+      "title": "SceneCode: Editable Indoor Scene Generation using Executable World Programs",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2605.19587",
+      "source_type": "arxiv",
+      "discovered_from": "broad_primary_search",
+      "why_candidate": "Executable scene-program representation with official project page and clear relevance to structured world generation and editing."
+    },
+    {
+      "candidate_id": "CAND-0054",
+      "title": "SimWorld Studio: Generation and Evolution of Custom Embodied Agent Learning Environments",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2606.08498",
+      "source_type": "arxiv",
+      "discovered_from": "broad_primary_search",
+      "why_candidate": "Generation-and-evolution system for embodied learning environments with official site, public code, and benchmark-scale evidence."
+    },
+    {
+      "candidate_id": "CAND-0055",
+      "title": "SpatialAct: Probing Spatial Reasoning-to-Action Capabilities of Vision-Language Models in 3D Scenes",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2605.31148",
+      "source_type": "arxiv",
+      "discovered_from": "world-model-benchmarks",
+      "why_candidate": "Benchmark directly aligned with reasoning-to-action spatial evaluation, with official project page and clean 3D-scene task coverage."
+    },
+    {
+      "candidate_id": "CAND-0056",
+      "title": "Cosmos-Predict2.5: A World Foundation Model for Physical AI",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2605.10309",
+      "source_type": "arxiv",
+      "discovered_from": "nvidia-cosmos-isaac",
+      "why_candidate": "Official NVIDIA world-model release with large-scale data, public artifacts, and strong action-conditioned future-prediction demos."
+    },
+    {
+      "candidate_id": "CAND-0057",
+      "title": "A Unified Evaluation Harness for Vision-Language-Action Models",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2603.18995",
+      "source_type": "arxiv",
+      "discovered_from": "ai2-embodied-prior",
+      "why_candidate": "Direct evaluation-infrastructure addition with official GitHub and broad benchmark standardization value."
+    },
+    {
+      "candidate_id": "CAND-0058",
+      "title": "VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2605.20774",
+      "source_type": "arxiv",
+      "discovered_from": "world-model-benchmarks",
+      "why_candidate": "Primary-source-backed low-cost real-world VLA benchmark with official project page and explicit reproducibility framing."
+    },
+    {
+      "candidate_id": "CAND-0059",
+      "title": "Cosmos-Reason1: From Physical Common Sense To Embodied Reasoning",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2503.15558",
+      "source_type": "arxiv",
+      "discovered_from": "nvidia-cosmos-isaac",
+      "why_candidate": "Potentially useful embodied reasoning background addition, but branch fit and action-level project relevance are weaker than the accepted set."
+    },
+    {
+      "candidate_id": "CAND-0060",
+      "title": "Benchmarking VLA Models on the SO-101 Robot",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2606.15971",
+      "source_type": "arxiv",
+      "discovered_from": "world-model-benchmarks",
+      "why_candidate": "Real-robot VLA benchmark candidate, but narrower and less reusable than VLA-REPLICA plus vla-eval."
+    }
+  ],
+  "triage": [
+    {
+      "candidate_id": "CAND-0053",
+      "decision": "analyze",
+      "primary_branch": "A",
+      "reason": "Primary paper plus official project page; strong fit for executable scene structure and editing.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0054",
+      "decision": "analyze",
+      "primary_branch": "B",
+      "reason": "Official release with public code and strong embodied environment-generation relevance.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0055",
+      "decision": "analyze",
+      "primary_branch": "C",
+      "reason": "Benchmark cleanly targets spatial reasoning-to-action in 3D scenes and has an official project page.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0056",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Official NVIDIA world-model release with strong scale, demos, and direct world-action relevance.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 5,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0057",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary paper and official GitHub provide strong evidence for reusable VLA evaluation infrastructure.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0058",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Low-cost real-world benchmark with explicit reproducibility focus and official project page.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0059",
+      "decision": "watchlist",
+      "primary_branch": "C",
+      "reason": "Official and influential, but closer to embodied reasoning background than to this repository's core spatial/action interfaces.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 2
+    },
+    {
+      "candidate_id": "CAND-0060",
+      "decision": "reject",
+      "primary_branch": "E",
+      "reason": "Primary-source benchmark exists, but the scope is narrower and less reusable than the accepted VLA evaluation additions in this run.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 2,
+      "project_relevance_prior": 2
+    }
+  ]
+}

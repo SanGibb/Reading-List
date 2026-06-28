@@ -1,0 +1,199 @@
+{
+  "run_id": "2026-06-29",
+  "visual_cards": [
+    {
+      "candidate_id": "CAND-0053",
+      "visual_materials": [
+        "https://scene-code.github.io/",
+        "https://arxiv.org/abs/2605.19587"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_abstract",
+        "example_gallery"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official examples clearly show hierarchical scene-code decomposition plus generation, reconstruction, and editing outputs that are relevant to structured indoor worlds.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0054",
+      "visual_materials": [
+        "https://simworld.org/simworld-studio/",
+        "https://arxiv.org/abs/2606.08498",
+        "https://github.com/SimWorld-AI/SimWorld-Studio"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "official_images",
+        "benchmark_tables",
+        "repository"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official materials show diverse generated and evolved embodied environments and enough benchmark context to judge the release as a real PCG system.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0055",
+      "visual_materials": [
+        "https://tianhui-liu.github.io/projects/SpatialAct/",
+        "https://arxiv.org/abs/2605.31148"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "benchmark_examples",
+        "paper_abstract"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark acceptance depends on task design and spatial grounding relevance rather than generation aesthetics.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0056",
+      "visual_materials": [
+        "https://research.nvidia.com/labs/cosmos-lab/cosmos-predict2.5/",
+        "https://arxiv.org/abs/2605.10309"
+      ],
+      "inspected_modalities": [
+        "official_release_page",
+        "result_videos",
+        "paper_abstract"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official NVIDIA demos are varied and clear enough to support a strong rollout-quality judgment for a world-model release.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0057",
+      "visual_materials": [
+        "https://github.com/allenai/vla-evaluation-harness",
+        "https://arxiv.org/abs/2603.18995"
+      ],
+      "inspected_modalities": [
+        "repository",
+        "benchmark_tables",
+        "paper_abstract"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Infrastructure paper; the gate is benchmark utility and release quality, not generated visual fidelity.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0058",
+      "visual_materials": [
+        "https://irvlutd.github.io/VLAReplica/",
+        "https://arxiv.org/abs/2605.20774"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "setup_images",
+        "paper_abstract"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark acceptance is based on reproducible real-world evaluation design rather than generation quality.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0059",
+      "visual_materials": [
+        "https://research.nvidia.com/labs/cosmos-lab/cosmos-reason1/",
+        "https://arxiv.org/abs/2503.15558"
+      ],
+      "inspected_modalities": [
+        "official_release_page",
+        "paper_abstract"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Watchlist-only background candidate; the blocker is relevance, not visual evidence.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    }
+  ],
+  "quality_review": [
+    {
+      "candidate_id": "CAND-0053",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0054",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0055",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0056",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0057",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0058",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0059",
+      "review_decision": "block",
+      "issues": [
+        "Relevance to the repository's core executable-world, spatial-to-action, or action-model interfaces is too weak for registry inclusion."
+      ],
+      "required_fixes": [
+        "Only promote if a later run establishes a more direct spatial/action or executable-world role."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0060",
+      "review_decision": "block",
+      "issues": [
+        "Benchmark scope is narrower and less reusable than the accepted real-world VLA evaluation additions in this run."
+      ],
+      "required_fixes": [
+        "Reconsider only if later evidence shows broader adoption or stronger benchmark coverage."
+      ],
+      "accepted_for_registry": false
+    }
+  ],
+  "run_level_issues": []
+}

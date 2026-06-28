@@ -1,0 +1,172 @@
+{
+  "run_id": "2026-06-29",
+  "branch_assignments": [
+    {
+      "candidate_id": "CAND-0053",
+      "primary_branch": "A",
+      "taxonomy_confidence": 5,
+      "rationale": "Executable scene-program representation for indoor worlds."
+    },
+    {
+      "candidate_id": "CAND-0054",
+      "primary_branch": "B",
+      "taxonomy_confidence": 5,
+      "rationale": "Custom embodied environment generation and evolution."
+    },
+    {
+      "candidate_id": "CAND-0055",
+      "primary_branch": "C",
+      "taxonomy_confidence": 4,
+      "rationale": "Spatial reasoning-to-action benchmark in 3D scenes."
+    },
+    {
+      "candidate_id": "CAND-0056",
+      "primary_branch": "D",
+      "taxonomy_confidence": 5,
+      "rationale": "Action-conditioned world foundation model for physical AI."
+    },
+    {
+      "candidate_id": "CAND-0057",
+      "primary_branch": "E",
+      "taxonomy_confidence": 5,
+      "rationale": "Unified VLA evaluation harness."
+    },
+    {
+      "candidate_id": "CAND-0058",
+      "primary_branch": "E",
+      "taxonomy_confidence": 5,
+      "rationale": "Low-cost reproducible real-world VLA benchmark."
+    }
+  ],
+  "taxonomy_change_proposals": [],
+  "registry_additions": [
+    {
+      "candidate_id": "CAND-0053",
+      "branch": "A",
+      "deep_dive_path": "paper_reads/A_executable_world_representation/scenecode-2026.md",
+      "paper": {
+        "title": "SceneCode: Editable Indoor Scene Generation using Executable World Programs",
+        "year": 2026,
+        "venue": "arXiv / project page",
+        "url": "https://arxiv.org/abs/2605.19587",
+        "data": "indoor scene layouts and hierarchical scene-program examples covering generation, reconstruction, and editing",
+        "method": "hierarchical executable scene program that decomposes floor plans, rooms, and objects for editable scene generation",
+        "task": "generate, reconstruct, and edit indoor scenes through executable world programs",
+        "novelty": "treats indoor scene generation as structured executable program synthesis rather than opaque scene decoding",
+        "project_relevance": "Strong representation reference for structured world code, room-level decomposition, and local indoor-scene edits.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "evidence_strength": 4
+      }
+    },
+    {
+      "candidate_id": "CAND-0054",
+      "branch": "B",
+      "deep_dive_path": "paper_reads/B_interactive_generation_pcg/simworld-studio-2026.md",
+      "paper": {
+        "title": "SimWorld Studio: Generation and Evolution of Custom Embodied Agent Learning Environments",
+        "year": 2026,
+        "venue": "arXiv / official release",
+        "url": "https://arxiv.org/abs/2606.08498",
+        "data": "benchmark suite with 320 embodied tasks and 240 held-out layouts plus generated and evolved environment examples",
+        "method": "environment generation-and-evolution loop that refines embodied learning worlds from user goals and feedback",
+        "task": "generate and iteratively evolve custom embodied learning environments",
+        "novelty": "extends embodied environment generation into an explicit closed-loop evolution process rather than one-shot PCG output",
+        "project_relevance": "Strong PCG baseline for custom embodied worlds, curriculum generation, and iterative environment refinement.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "evidence_strength": 4
+      }
+    },
+    {
+      "candidate_id": "CAND-0055",
+      "branch": "C",
+      "deep_dive_path": "paper_reads/C_spatial_intelligence/spatialact-2026.md",
+      "paper": {
+        "title": "SpatialAct: Probing Spatial Reasoning-to-Action Capabilities of Vision-Language Models in 3D Scenes",
+        "year": 2026,
+        "venue": "arXiv / project page",
+        "url": "https://arxiv.org/abs/2605.31148",
+        "data": "333 synthetic 3D scenes and 4,355 QA pairs across three reasoning-to-action task categories",
+        "method": "3D-scene benchmark with tool-based repair analysis for spatial reasoning-to-action",
+        "task": "evaluate whether VLM spatial reasoning is useful for action-grounded decisions in 3D scenes",
+        "novelty": "bridges spatial QA and action-grounded reasoning with a diagnostic repair stage and 3D benchmark design",
+        "project_relevance": "Strong validator for action-grounded spatial reasoning in generated or reconstructed worlds.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "visual_quality_score": 0,
+        "visual_quality_decision": "not_applicable",
+        "evidence_strength": 4
+      }
+    },
+    {
+      "candidate_id": "CAND-0056",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/cosmos-predict2-5-2026.md",
+      "paper": {
+        "title": "Cosmos-Predict2.5: A World Foundation Model for Physical AI",
+        "year": 2026,
+        "venue": "arXiv / NVIDIA release",
+        "url": "https://arxiv.org/abs/2605.10309",
+        "data": "200 million training video clips and official world-model release artifacts for physical-AI prediction",
+        "method": "large action-conditioned world foundation model for future physical-scene prediction",
+        "task": "predict physically meaningful future observations for control, planning, and simulation-like use cases",
+        "novelty": "positions large-scale predictive world modeling directly as physical-AI infrastructure rather than generic video synthesis",
+        "project_relevance": "Strong world-model baseline for action-conditioned rollout prediction and control-facing embodied generation.",
+        "source_quality": "primary_or_official",
+        "demo_score": 5,
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "evidence_strength": 5
+      }
+    },
+    {
+      "candidate_id": "CAND-0057",
+      "branch": "E",
+      "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/vla-eval-2026.md",
+      "paper": {
+        "title": "A Unified Evaluation Harness for Vision-Language-Action Models",
+        "year": 2026,
+        "venue": "arXiv / official GitHub",
+        "url": "https://arxiv.org/abs/2603.18995",
+        "data": "multi-benchmark VLA evaluation adapters, result reporting, and active official repository coverage",
+        "method": "unified orchestration harness for running VLA models across multiple benchmark suites",
+        "task": "evaluate VLA models consistently across benchmarks and execution stacks",
+        "novelty": "standardizes VLA benchmarking infrastructure instead of leaving evaluation fragmented across project-specific scripts",
+        "project_relevance": "High-value infrastructure reference for evaluation adapters, result schemas, and standardized VLA benchmarking.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "visual_quality_score": 0,
+        "visual_quality_decision": "not_applicable",
+        "evidence_strength": 4
+      }
+    },
+    {
+      "candidate_id": "CAND-0058",
+      "branch": "E",
+      "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/vla-replica-2026.md",
+      "paper": {
+        "title": "VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models",
+        "year": 2026,
+        "venue": "arXiv / project page",
+        "url": "https://arxiv.org/abs/2605.20774",
+        "data": "low-cost real-world VLA benchmark setup with 10 tasks, demonstration data, and reproducibility checks across independently built setups",
+        "method": "standardized physical setup and evaluation protocol for reproducible real-world VLA benchmarking",
+        "task": "measure VLA performance in a replicable real-world robot setting with ID and OOD evaluation",
+        "novelty": "prioritizes affordability and cross-site reproducibility in real-world VLA evaluation",
+        "project_relevance": "Strong real-world evaluation template for low-cost embodied testing and reproducible action-model benchmarking.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "visual_quality_score": 0,
+        "visual_quality_decision": "not_applicable",
+        "evidence_strength": 4
+      }
+    }
+  ],
+  "registry_updates": [],
+  "registry_noops": []
+}
