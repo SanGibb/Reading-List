@@ -1,0 +1,45 @@
+{
+  "run_id": "2026-07-13",
+  "created_at": "2026-07-13",
+  "branches": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "minimum_year": 2024,
+  "search_windows": {
+    "default_days": 14,
+    "high_priority_days": 45
+  },
+  "branch_queries": {
+    "A": [
+      "simulation-ready 3D scene reconstruction 2026 arXiv",
+      "executable world representation embodied 2026"
+    ],
+    "B": [
+      "interactive generation embodied agents 2026 arXiv",
+      "scene generation embodied benchmark 2026"
+    ],
+    "C": [
+      "spatial reasoning action 3D benchmark 2026 arXiv",
+      "embodied spatial intelligence benchmark 2026"
+    ],
+    "D": [
+      "vision-language-action benchmark 2026 arXiv",
+      "robotic world model reliability 2026 arXiv"
+    ],
+    "E": [
+      "world model benchmark robotics 2026 arXiv",
+      "interactive world model evaluation benchmark 2026",
+      "VLA benchmark reproducible evaluation 2026"
+    ]
+  },
+  "known_registry_path": "data/papers.seed.json",
+  "follow_sources_path": "data/follow_sources.seed.json",
+  "harness_paths": [
+    "harness/system_harness.md",
+    "harness/acceptance_harness.md"
+  ]
+}

@@ -12,7 +12,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 11 |
 | C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 12 |
 | D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 13 |
-| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 10 |
+| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 19 |
 
 ## Current Reports
 
@@ -74,3 +74,12 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform | E | [worldarena-2-2026.md](E_evaluation_data_infrastructure/worldarena-2-2026.md) |
 | A Unified Evaluation Harness for Vision-Language-Action Models | E | [vla-eval-2026.md](E_evaluation_data_infrastructure/vla-eval-2026.md) |
 | VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models | E | [vla-replica-2026.md](E_evaluation_data_infrastructure/vla-replica-2026.md) |
+| RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation | E | [robowm-bench-2026.md](E_evaluation_data_infrastructure/robowm-bench-2026.md) |
+| VLA-Arena: An Open-Source Framework for Benchmarking Vision-Language-Action Models | E | [vla-arena-2026.md](E_evaluation_data_infrastructure/vla-arena-2026.md) |
+| Colosseum V2: Benchmarking Generalization for Vision Language Action Models | E | [colosseum-v2-2026.md](E_evaluation_data_infrastructure/colosseum-v2-2026.md) |
+| MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models | E | [mirabench-2026.md](E_evaluation_data_infrastructure/mirabench-2026.md) |
+| iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework | E | [iworld-bench-2026.md](E_evaluation_data_infrastructure/iworld-bench-2026.md) |
+| WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation | E | [wbench-2026.md](E_evaluation_data_infrastructure/wbench-2026.md) |
+| WorldMark: A Unified Benchmark Suite for Interactive Video World Models | E | [worldmark-2026.md](E_evaluation_data_infrastructure/worldmark-2026.md) |
+| WorldOlympiad: Can Your World Model Survive a Triathlon? | E | [worldolympiad-2026.md](E_evaluation_data_infrastructure/worldolympiad-2026.md) |
+| WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models | E | [worldbench-2026.md](E_evaluation_data_infrastructure/worldbench-2026.md) |

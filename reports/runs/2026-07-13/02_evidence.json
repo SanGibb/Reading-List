@@ -1,0 +1,497 @@
+{
+  "run_id": "2026-07-13",
+  "paper_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "title": "RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation",
+      "year": 2026,
+      "venue": "CVPR Workshops 2026",
+      "url": "https://arxiv.org/abs/2604.19092",
+      "paper_ids": {
+        "arxiv": "2604.19092",
+        "doi": "",
+        "openreview": "",
+        "project": "https://github.com/fffstrong/RoboWM-Bench",
+        "github": "https://github.com/fffstrong/RoboWM-Bench"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "data": "manipulation-centric benchmark that turns generated human-hand and robotic manipulation videos into embodied action sequences and validates them through execution in standardized manipulation scenarios",
+      "method": "convert generated behaviors into executable action sequences, replay them in a robotics execution loop, and score physically executable task completion with failure-mode analysis",
+      "task": "evaluate whether video world-model predictions can be translated into executable manipulation actions that still complete the intended task",
+      "novelty": "moves world-model evaluation from visual plausibility to embodiment-grounded action executability for robotic manipulation",
+      "evidence": "Primary evidence from CVPRW + arXiv + official GitHub; benchmark scale, task framing, and release status were traced to official or primary sources.",
+      "claim_checks": [
+        {
+          "claim": "Manipulation benchmark converts generated behaviors into embodied action sequences and validates them through execution.",
+          "source": "https://openaccess.thecvf.com/content/CVPR2026W/GigaBrainChallenge/html/Jiang_RoboWM-Bench_A_Benchmark_for_Evaluating_World_Models_in_Robotic_Manipulation_CVPRW_2026_paper.html",
+          "status": "verified",
+          "notes": "CVPRW abstract states execution-grounded conversion and validation."
+        },
+        {
+          "claim": "Benchmark exposes failure modes in spatial reasoning, contact prediction, and deformation.",
+          "source": "https://openaccess.thecvf.com/content/CVPR2026W/GigaBrainChallenge/html/Jiang_RoboWM-Bench_A_Benchmark_for_Evaluating_World_Models_in_Robotic_Manipulation_CVPRW_2026_paper.html",
+          "status": "verified",
+          "notes": "Primary abstract lists these persistent failure modes."
+        },
+        {
+          "claim": "Official code is public.",
+          "source": "https://github.com/fffstrong/RoboWM-Bench",
+          "status": "verified",
+          "notes": "Public GitHub repository exists."
+        }
+      ],
+      "limitations": "Workshop-paper scope is narrower than broader cross-domain world-model benchmarks, and the benchmark is centered on manipulation rather than navigation or open-domain interaction.",
+      "project_relevance": "Direct benchmark reference for whether generated embodied futures are actionable enough for manipulation-policy learning and validation."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "title": "VLA-Arena: An Open-Source Framework for Benchmarking Vision-Language-Action Models",
+      "year": 2026,
+      "venue": "ICML 2026",
+      "url": "https://arxiv.org/abs/2512.22539",
+      "paper_ids": {
+        "arxiv": "2512.22539",
+        "doi": "",
+        "openreview": "",
+        "project": "https://vla-arena.github.io/",
+        "github": "https://github.com/PKU-Alignment/VLA-Arena"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [
+        "D"
+      ],
+      "data": "170 tasks across 11 specialized suites with three difficulty levels, plus VLA-Arena-S/M/L datasets and orthogonal language and visual perturbation settings",
+      "method": "structured benchmark design over task structure, language command, and visual observation axes with unified tooling for task modeling, training, and automated evaluation",
+      "task": "systematically benchmark VLA robustness, safety, extrapolation, distractor handling, and long-horizon composition under controlled perturbations",
+      "novelty": "separates VLA capability-frontier measurement into orthogonal structure/language/visual axes instead of collapsing everything into one aggregate success rate",
+      "evidence": "Primary evidence from arXiv + project + official GitHub; benchmark scale, task framing, and release status were traced to official or primary sources.",
+      "claim_checks": [
+        {
+          "claim": "VLA-Arena defines 170 tasks grouped into Safety, Distractor, Extrapolation, and Long Horizon dimensions.",
+          "source": "https://arxiv.org/abs/2512.22539",
+          "status": "verified",
+          "notes": "arXiv abstract states the 170-task structure and four dimensions."
+        },
+        {
+          "claim": "The benchmark uses orthogonal language and visual perturbations and ships datasets/framework/leaderboard.",
+          "source": "https://arxiv.org/abs/2512.22539",
+          "status": "verified",
+          "notes": "Primary abstract and project links state W0-W4, V0-V4, datasets, and leaderboard."
+        },
+        {
+          "claim": "Official open-source framework is public.",
+          "source": "https://github.com/PKU-Alignment/VLA-Arena",
+          "status": "verified",
+          "notes": "GitHub repo contains toolchain and task suites."
+        }
+      ],
+      "limitations": "It is simulator-centric and VLA-specific, so it does not directly evaluate world-model video rollouts or open-domain interactive generation.",
+      "project_relevance": "Strong infrastructure reference for evaluation schemas, perturbation taxonomies, and task-difficulty ladders for embodied policy assessment."
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "title": "Colosseum V2: Benchmarking Generalization for Vision Language Action Models",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.27759",
+      "paper_ids": {
+        "arxiv": "2605.27759",
+        "doi": "",
+        "openreview": "",
+        "project": "https://arxiv.org/html/2605.27759v1",
+        "github": ""
+      },
+      "primary_branch": "E",
+      "secondary_branches": [
+        "D"
+      ],
+      "data": "large-scale ManiSkill benchmark with 28 tasks spanning 13 categories, two robot morphologies, and controlled in-domain/out-of-domain perturbation settings",
+      "method": "GPU-parallelized simulation benchmark that probes VLA generalization along visual, language, and action axes and checks ecological validity against real-world metrics",
+      "task": "measure how VLA manipulation performance degrades under distribution shift and whether simulation rankings track real-world robustness",
+      "novelty": "pushes VLA evaluation beyond nominal zero-shot perception into controlled perturbation-based generalization measurement with simulation-to-real correlation checks",
+      "evidence": "Primary evidence from arXiv HTML/abs; benchmark scale, task framing, and release status were traced to official or primary sources.",
+      "claim_checks": [
+        {
+          "claim": "Benchmark contains 28 tasks across 13 categories and two robot morphologies.",
+          "source": "https://arxiv.org/abs/2605.27759",
+          "status": "verified",
+          "notes": "Primary abstract states the scale and structure."
+        },
+        {
+          "claim": "Built on ManiSkill with fast GPU-parallelized evaluation and in-domain/out-of-domain testing.",
+          "source": "https://arxiv.org/abs/2605.27759",
+          "status": "verified",
+          "notes": "Primary abstract and HTML page describe the simulator and testing regime."
+        },
+        {
+          "claim": "Simulation metrics correlate with real-world metrics.",
+          "source": "https://arxiv.org/abs/2605.27759",
+          "status": "verified",
+          "notes": "Primary abstract explicitly claims strong correlation."
+        }
+      ],
+      "limitations": "No clearly surfaced official public code release was confirmed during this run, and current evidence comes mainly from the arXiv paper page.",
+      "project_relevance": "Useful benchmark template for large-scale, perturbation-aware embodied policy evaluation and simulation-to-real validation."
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "title": "MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.29360",
+      "paper_ids": {
+        "arxiv": "2605.29360",
+        "doi": "",
+        "openreview": "",
+        "project": "https://arxiv.org/abs/2605.29360",
+        "github": ""
+      },
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "data": "human-annotated corpus with 16k+ judgments covering tasks, failure categories, and 12 representative robotic-world-model configurations",
+      "method": "hierarchical diagnostic benchmark over physics adherence, action-following fidelity, and optimism-bias detection for action-conditioned robotic world models",
+      "task": "test whether action-conditioned robotic world models are physically consistent, obey task-relevant actions, and avoid optimistic false-success predictions",
+      "novelty": "defines action-conditioned reliability as a first-class target rather than assuming image fidelity stands in for robotic faithfulness",
+      "evidence": "Primary evidence from arXiv; benchmark scale, task framing, and release status were traced to official or primary sources.",
+      "claim_checks": [
+        {
+          "claim": "Benchmark is decomposed into Physics Adherence, Action-Following Fidelity, and Optimism Bias Detection.",
+          "source": "https://arxiv.org/abs/2605.29360",
+          "status": "verified",
+          "notes": "Explicit in the abstract."
+        },
+        {
+          "claim": "Corpus contains over 16,000 judgments and evaluates 12 representative model configurations.",
+          "source": "https://arxiv.org/abs/2605.29360",
+          "status": "verified",
+          "notes": "Primary abstract provides these counts."
+        },
+        {
+          "claim": "Visual fidelity is a poor proxy for action fidelity.",
+          "source": "https://arxiv.org/abs/2605.29360",
+          "status": "verified",
+          "notes": "Primary abstract reports this as a central finding."
+        }
+      ],
+      "limitations": "Public project/code artifacts were not clearly surfaced during this run, so reproducibility signals are weaker than the best open benchmark releases.",
+      "project_relevance": "Directly relevant to evaluating whether generated futures are faithful control simulators rather than merely plausible videos."
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "title": "iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework",
+      "year": 2026,
+      "venue": "ICML 2026",
+      "url": "https://arxiv.org/abs/2605.03941",
+      "paper_ids": {
+        "arxiv": "2605.03941",
+        "doi": "",
+        "openreview": "",
+        "project": "https://iworld-bench.com/",
+        "github": "https://github.com/EmbodiedCity/iWorld-Bench"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "data": "330k video clips, 2.1k selected high-quality samples, and 4.9k test tasks spanning varied perspectives, weather, and scenes",
+      "method": "unified action-generation framework that standardizes interaction control across modalities and scores world models on visual generation, trajectory following, and memory with nine metrics",
+      "task": "train and test interactive world models on distance perception, action control, camera control, trajectory following, and memory across diverse scenes",
+      "novelty": "turns interactive world-model evaluation into a multi-input, action-space-unified benchmark instead of model-specific camera-control demos",
+      "evidence": "Primary evidence from ICML project page + arXiv + official GitHub; benchmark scale, task framing, and release status were traced to official or primary sources.",
+      "claim_checks": [
+        {
+          "claim": "Project reports 330K video clips, 2.1K selected samples, and 4.9K test tasks.",
+          "source": "https://iworld-bench.com/",
+          "status": "verified",
+          "notes": "Official project page exposes these counts."
+        },
+        {
+          "claim": "Benchmark evaluates interactive world models across multiple inputs, action control, camera control, memory, and all-weather settings.",
+          "source": "https://iworld-bench.com/",
+          "status": "verified",
+          "notes": "Comparison table on official project page states the capability coverage."
+        },
+        {
+          "claim": "Official code and dataset are public.",
+          "source": "https://github.com/EmbodiedCity/iWorld-Bench",
+          "status": "verified",
+          "notes": "GitHub repository and dataset links are public."
+        }
+      ],
+      "limitations": "The current release is centered on interactive video-generation style world models rather than manipulation-policy world models, so mapping to robotics execution still requires care.",
+      "project_relevance": "High-value benchmark for first-person interactive world-model evaluation, camera control, memory, and multi-scene action responsiveness."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "title": "WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.25874",
+      "paper_ids": {
+        "arxiv": "2605.25874",
+        "doi": "",
+        "openreview": "",
+        "project": "https://meituan-longcat.github.io/WBench/",
+        "github": "https://github.com/meituan-longcat/WBench"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "data": "289 multi-turn test cases and 1,058 interaction turns covering navigation, subject action, event editing, and perspective switching",
+      "method": "comprehensive multi-turn benchmark with 22 automatic sub-metrics across video quality, setting adherence, interaction adherence, consistency, and physics compliance",
+      "task": "evaluate whether interactive video world models sustain coherent multi-turn behavior under heterogeneous control interfaces",
+      "novelty": "brings multi-turn interaction and heterogeneous control-interface unification into one benchmark rather than one-step or single-axis evaluation",
+      "evidence": "Primary evidence from arXiv + official homepage + official GitHub; benchmark scale, task framing, and release status were traced to official or primary sources.",
+      "claim_checks": [
+        {
+          "claim": "Benchmark has 289 test cases and 1,058 interaction turns across five evaluation dimensions.",
+          "source": "https://arxiv.org/abs/2605.25874",
+          "status": "verified",
+          "notes": "Primary abstract provides these counts and dimensions."
+        },
+        {
+          "claim": "Official repo evaluates 22 video world models across 22 metrics.",
+          "source": "https://github.com/meituan-longcat/WBench",
+          "status": "verified",
+          "notes": "Official GitHub README states the current leaderboard scale and metrics."
+        },
+        {
+          "claim": "Official code/data site is public.",
+          "source": "https://github.com/meituan-longcat/WBench",
+          "status": "verified",
+          "notes": "Public GitHub repo and homepage exist."
+        }
+      ],
+      "limitations": "The benchmark is tilted toward interactive video-world-model families rather than physically executable robot-control environments.",
+      "project_relevance": "Strong benchmark reference for multi-turn interaction fidelity and physics-compliance evaluation in interactive world generation."
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2604.21686",
+      "paper_ids": {
+        "arxiv": "2604.21686",
+        "doi": "",
+        "openreview": "",
+        "project": "https://alaya-studio.github.io/WorldMark/",
+        "github": "https://warena.ai/"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "data": "500 standardized evaluation cases built from 100 test images and 15 shared action sequences across first-person, third-person, real, and stylized scenes",
+      "method": "shared WASD-style action vocabulary, cross-model action mapping, and modular metrics for visual quality, control alignment, and world consistency, paired with the World Model Arena website",
+      "task": "compare interactive image-to-video world models under identical scenes and identical action sequences",
+      "novelty": "creates the first common playing field for interactive image-to-video world models with standardized scenes, controls, and reusable evaluation toolkit",
+      "evidence": "Primary evidence from arXiv + official project + World Model Arena; benchmark scale, task framing, and release status were traced to official or primary sources.",
+      "claim_checks": [
+        {
+          "claim": "WorldMark provides 500 evaluation cases built from 100 test images and 15 standardized action sequences.",
+          "source": "https://alaya-studio.github.io/WorldMark/",
+          "status": "verified",
+          "notes": "Official project page gives the image/action suite counts."
+        },
+        {
+          "claim": "Benchmark evaluates visual quality, control alignment, and world consistency with eight metrics.",
+          "source": "https://alaya-studio.github.io/WorldMark/",
+          "status": "verified",
+          "notes": "Official results section lists the metrics."
+        },
+        {
+          "claim": "World Model Arena provides a live leaderboard and side-by-side battles.",
+          "source": "https://warena.ai/",
+          "status": "verified",
+          "notes": "Official arena page exposes leaderboard and voting workflow."
+        }
+      ],
+      "limitations": "Current emphasis is on interactive image-to-video world models rather than embodied robot execution, and code is surfaced mainly through the project site rather than a standalone repo.",
+      "project_relevance": "Important benchmark and online-comparison reference for standardized interactive world-generation evaluation."
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "title": "WorldOlympiad: Can Your World Model Survive a Triathlon?",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2606.11129",
+      "paper_ids": {
+        "arxiv": "2606.11129",
+        "doi": "",
+        "openreview": "",
+        "project": "https://alibaba-damo-academy.github.io/WorldOlympiad/",
+        "github": "https://github.com/alibaba-damo-academy/WorldOlympiad"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "data": "1,000 long videos spanning 400 robotics, 400 gaming, and 200 general real-world videos",
+      "method": "triathlon-style benchmark with physical, geometry, and interaction tracks using segmentation-based judges, Gaussian-splatting diagnostics, and action-following checks",
+      "task": "diagnose long-video world models on physical faithfulness, geometric consistency, and interaction fidelity across multiple downstream domains",
+      "novelty": "unifies physical, geometric, and interaction diagnostics across robotics, gaming, and open-domain world-model scenarios rather than isolating one dimension",
+      "evidence": "Primary evidence from arXiv + official project + official GitHub; benchmark scale, task framing, and release status were traced to official or primary sources.",
+      "claim_checks": [
+        {
+          "claim": "Benchmark covers physical, geometric, and interactive tracks.",
+          "source": "https://alibaba-damo-academy.github.io/WorldOlympiad/",
+          "status": "verified",
+          "notes": "Official repo/project states the triathlon decomposition."
+        },
+        {
+          "claim": "Dataset contains 1,000 long videos including 400 robotics videos.",
+          "source": "https://github.com/alibaba-damo-academy/WorldOlympiad",
+          "status": "verified",
+          "notes": "Official repository overview lists the domain split."
+        },
+        {
+          "claim": "Official repository is public.",
+          "source": "https://github.com/alibaba-damo-academy/WorldOlympiad",
+          "status": "verified",
+          "notes": "Public GitHub repo exists."
+        }
+      ],
+      "limitations": "Because it spans robotics, gaming, and general video, some metrics are less tightly aligned to embodied manipulation than manipulation-specific benchmarks.",
+      "project_relevance": "Strong cross-domain benchmark for long-horizon world-model evaluation with direct relevance to robotics and interactive control."
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "title": "WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2601.21282",
+      "paper_ids": {
+        "arxiv": "2601.21282",
+        "doi": "",
+        "openreview": "",
+        "project": "https://world-bench.github.io/",
+        "github": "https://world-bench.github.io/"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "data": "video benchmark with 425 configurations over motion physics, object permanence, support relations, and scale/perspective, plus a language subset for VLM evaluation",
+      "method": "disentangled physics benchmark that scores future predictions against simulated ground-truth physical outcomes using segmentation-based comparison and concept-specific scenarios",
+      "task": "diagnose whether world models and VLMs understand specific physical concepts rather than merely producing visually plausible futures",
+      "novelty": "disentangles physical concepts into more diagnostic tests instead of entangled holistic video-quality proxies",
+      "evidence": "Primary evidence from arXiv + official project; benchmark scale, task framing, and release status were traced to official or primary sources.",
+      "claim_checks": [
+        {
+          "claim": "WorldBench covers 425 configurations across four physically rich scenarios.",
+          "source": "https://world-bench.github.io/",
+          "status": "verified",
+          "notes": "Official project page gives the configuration count and scenarios."
+        },
+        {
+          "claim": "Benchmark directly evaluates world-model video prediction against simulated physical outcomes.",
+          "source": "https://world-bench.github.io/",
+          "status": "verified",
+          "notes": "Project overview explains the evaluation loop."
+        },
+        {
+          "claim": "All tested configurations still lack sufficient physical consistency.",
+          "source": "https://world-bench.github.io/",
+          "status": "verified",
+          "notes": "Official abstract/results say current models fall short."
+        }
+      ],
+      "limitations": "It is more physics-diagnostic than interaction- or policy-oriented, so it complements but does not replace action-grounded embodied benchmarks.",
+      "project_relevance": "Useful physics-diagnostic benchmark for checking whether world models preserve support, permanence, and motion rules relevant to executable embodied worlds."
+    }
+  ],
+  "demo_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "project_url": "https://github.com/fffstrong/RoboWM-Bench",
+      "code_url": "https://github.com/fffstrong/RoboWM-Bench",
+      "demo_url": "https://github.com/fffstrong/RoboWM-Bench",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 4,
+      "demo_notes": "strongest embodied-executability benchmark in this run",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "project_url": "https://vla-arena.github.io/",
+      "code_url": "https://github.com/PKU-Alignment/VLA-Arena",
+      "demo_url": "https://github.com/PKU-Alignment/VLA-Arena",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 5,
+      "demo_notes": "best open-source VLA benchmark/toolchain release in this run",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "project_url": "https://arxiv.org/html/2605.27759v1",
+      "code_url": "not confirmed",
+      "demo_url": "https://arxiv.org/html/2605.27759v1",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 3,
+      "demo_notes": "strongest simulation-to-real VLA generalization benchmark update in this run",
+      "verification_status": "partial"
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "project_url": "https://arxiv.org/abs/2605.29360",
+      "code_url": "not confirmed",
+      "demo_url": "https://arxiv.org/abs/2605.29360",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 2,
+      "demo_notes": "best reliability-centric robotic world-model diagnostic benchmark in this run",
+      "verification_status": "partial"
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "project_url": "https://iworld-bench.com/",
+      "code_url": "https://github.com/EmbodiedCity/iWorld-Bench",
+      "demo_url": "https://iworld-bench.com/",
+      "checkpoint_url": "",
+      "leaderboard_url": "https://iworld-bench.com/",
+      "demo_score": 5,
+      "demo_notes": "best release completeness among interactive world-model benchmarks in this run",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "project_url": "https://meituan-longcat.github.io/WBench/",
+      "code_url": "https://github.com/meituan-longcat/WBench",
+      "demo_url": "https://meituan-longcat.github.io/WBench/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 5,
+      "demo_notes": "best multi-turn interactive world-model benchmark release in this run",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "project_url": "https://alaya-studio.github.io/WorldMark/",
+      "code_url": "https://warena.ai/",
+      "demo_url": "https://warena.ai/",
+      "checkpoint_url": "",
+      "leaderboard_url": "https://warena.ai/",
+      "demo_score": 5,
+      "demo_notes": "strongest standardized interactive I2V benchmark + live arena pair in this run",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "project_url": "https://alibaba-damo-academy.github.io/WorldOlympiad/",
+      "code_url": "https://github.com/alibaba-damo-academy/WorldOlympiad",
+      "demo_url": "https://alibaba-damo-academy.github.io/WorldOlympiad/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 5,
+      "demo_notes": "best cross-domain long-video world-model benchmark in this run",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "project_url": "https://world-bench.github.io/",
+      "code_url": "https://world-bench.github.io/",
+      "demo_url": "https://world-bench.github.io/",
+      "checkpoint_url": "",
+      "leaderboard_url": "https://world-bench.github.io/",
+      "demo_score": 4,
+      "demo_notes": "best concept-disentangled physics diagnostic benchmark in this run",
+      "verification_status": "verified"
+    }
+  ]
+}

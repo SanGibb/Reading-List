@@ -1,0 +1,285 @@
+{
+  "run_id": "2026-07-13",
+  "visual_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "visual_materials": [
+        "https://github.com/fffstrong/RoboWM-Bench",
+        "https://github.com/fffstrong/RoboWM-Bench"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "leaderboard"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/infrastructure paper: official figures and public benchmark surfaces were inspected, but generation-quality gating is not the acceptance criterion.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "visual_materials": [
+        "https://vla-arena.github.io/",
+        "https://github.com/PKU-Alignment/VLA-Arena"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "leaderboard"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/infrastructure paper: official figures and public benchmark surfaces were inspected, but generation-quality gating is not the acceptance criterion.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "visual_materials": [
+        "https://arxiv.org/html/2605.27759v1",
+        "https://arxiv.org/html/2605.27759v1"
+      ],
+      "inspected_modalities": [
+        "paper_figures",
+        "project_page"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/infrastructure paper: official figures and public benchmark surfaces were inspected, but generation-quality gating is not the acceptance criterion.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "visual_materials": [
+        "https://arxiv.org/abs/2605.29360",
+        "https://arxiv.org/abs/2605.29360"
+      ],
+      "inspected_modalities": [
+        "paper_figures",
+        "project_page"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/infrastructure paper: official figures and public benchmark surfaces were inspected, but generation-quality gating is not the acceptance criterion.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "visual_materials": [
+        "https://iworld-bench.com/",
+        "https://iworld-bench.com/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "leaderboard"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/infrastructure paper: official figures and public benchmark surfaces were inspected, but generation-quality gating is not the acceptance criterion.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "visual_materials": [
+        "https://meituan-longcat.github.io/WBench/",
+        "https://meituan-longcat.github.io/WBench/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "leaderboard"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/infrastructure paper: official figures and public benchmark surfaces were inspected, but generation-quality gating is not the acceptance criterion.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "visual_materials": [
+        "https://alaya-studio.github.io/WorldMark/",
+        "https://alaya-studio.github.io/WorldMark/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "leaderboard"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/infrastructure paper: official figures and public benchmark surfaces were inspected, but generation-quality gating is not the acceptance criterion.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "visual_materials": [
+        "https://alibaba-damo-academy.github.io/WorldOlympiad/",
+        "https://alibaba-damo-academy.github.io/WorldOlympiad/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "leaderboard"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/infrastructure paper: official figures and public benchmark surfaces were inspected, but generation-quality gating is not the acceptance criterion.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "visual_materials": [
+        "https://world-bench.github.io/",
+        "https://world-bench.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "leaderboard"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/infrastructure paper: official figures and public benchmark surfaces were inspected, but generation-quality gating is not the acceptance criterion.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "visual_materials": [
+        "https://arxiv.org/abs/2602.08025"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Watchlist item; visual gating is not the blocker.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "visual_materials": [
+        "https://arxiv.org/abs/2605.10806"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Watchlist item; visual gating is not the blocker.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    }
+  ],
+  "quality_review": [
+    {
+      "candidate_id": "CAND-0001",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "review_decision": "block",
+      "issues": [
+        "Useful background benchmark, but lower direct project relevance than iWorld-Bench and WorldMark because it is open-domain video-to-world memory/action analysis rather than a stronger embodied or interactive-world evaluation fit for this repo."
+      ],
+      "required_fixes": [
+        "Reassess if future run shows stronger embodied or policy-facing relevance."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "review_decision": "block",
+      "issues": [
+        "Good physics-eval paper, but current run kept it in watchlist because it is more generic video-generation physics judging than embodied, interactive-world, or policy-facing evaluation."
+      ],
+      "required_fixes": [
+        "Reassess if future run shows stronger embodied or policy-facing relevance."
+      ],
+      "accepted_for_registry": false
+    }
+  ],
+  "run_level_issues": []
+}

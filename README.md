@@ -9,44 +9,29 @@
 | 内容 | 入口 |
 |---|---|
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
-| 最新扩库摘要 | [reports/2026-06-29-expansion.md](reports/2026-06-29-expansion.md) |
-| 当前已收录精读 | 56 篇，见 [paper_reads/README.md](paper_reads/README.md) |
+| 最新扩库摘要 | [reports/2026-07-13-expansion.md](reports/2026-07-13-expansion.md) |
+| 当前已收录精读 | 65 篇，见 [paper_reads/README.md](paper_reads/README.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。通过筛选的候选应全部加入，不做固定 top-k 抽样。
 
 ## 本周更新内容
 
-本轮扩库日期：2026-06-29。完整审计摘要见 [reports/2026-06-29-expansion.md](reports/2026-06-29-expansion.md)。
+本轮扩库日期：2026-06-29。完整审计摘要见 [reports/2026-07-13-expansion.md](reports/2026-07-13-expansion.md)。
 
 ### 重点新增与补齐
 
 | Paper | Branch | 简要说明 | 精读 |
 |---|---|---|---|
-| MolmoAct2: Action Reasoning Models for Real-world Deployment | D | Strong open VLA release with open reasoning, open data/code, bimanual data, and convincing real-robot evidence. | [molmoact2-2026.md](paper_reads/D_vla_world_action_models/molmoact2-2026.md) |
-| WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform | E | Important benchmark upgrade for visuotactile, interactive-RL, and cross-platform embodied world-model evaluation. | [worldarena-2-2026.md](paper_reads/E_evaluation_data_infrastructure/worldarena-2-2026.md) |
-| Embodied3DBench: Benchmarking Low-Level Embodied Spatial Intelligence of Vision Language Models | C | Good low-level benchmark for grounding, affordances, grasp points, and trajectory-oriented perception. | [embodied3dbench-2026.md](paper_reads/C_spatial_intelligence/embodied3dbench-2026.md) |
-| ESPIRE: A Diagnostic Benchmark for Embodied Spatial Reasoning of Vision-Language Models | C | Strong reasoning-to-act spatial benchmark with localization-plus-execution evaluation in Isaac Sim. | [espire-2026.md](paper_reads/C_spatial_intelligence/espire-2026.md) |
-| PhysX-Anything: Simulation-Ready Physical 3D Assets from Single Image | A | Strong object-level source for PhysicalProperty, KinematicJoint, AssetToSimulator, and contact-rich policy-learning validation. | [physx-anything-2025.md](paper_reads/A_executable_world_representation/physx-anything-2025.md) |
-| SimuScene: Simulation-Ready Compositional 3D Scene Reconstruction from a Single Image | A | Relevant to SceneTree, SupportRelation, PhysicalViolation, and simulator-ready reconstruction validators. | [simuscene-2026.md](paper_reads/A_executable_world_representation/simuscene-2026.md) |
-| REST3D: Reconstructing Physically Stable 3D Scenes from a Single Image | A | Provides a useful template for SceneTree, SupportGraph, StabilityCheck, and PhysicsRefinement stages. | [rest3d-2026.md](paper_reads/A_executable_world_representation/rest3d-2026.md) |
-| TriSplat: Simulation-Ready Feed-Forward 3D Scene Reconstruction | A | Useful representation reference for MeshScene, CollisionSurface, and feed-forward sim-ready reconstruction. | [trisplat-2026.md](paper_reads/A_executable_world_representation/trisplat-2026.md) |
-| SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes | B | Top PCG baseline for PromptToScene, CriticLoop, ObjectPopulation, PhysicalProperty, and policy evaluation. | [scenesmith-2026.md](paper_reads/B_interactive_generation_pcg/scenesmith-2026.md) |
-| SceneFoundry: Generating Interactive Infinite 3D Worlds | B | Relevant PCG line for LayoutConstraint, ArticulationConstraint, WalkableSpace, and infinite-world expansion. | [scenefoundry-2026.md](paper_reads/B_interactive_generation_pcg/scenefoundry-2026.md) |
-| HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds | B | Strong open-source world-generation baseline for WorldRepresentation, TrajectoryPlan, 3DGSScene, MeshExport, and engine integration. | [hy-world-2-2026.md](paper_reads/B_interactive_generation_pcg/hy-world-2-2026.md) |
-| SAGE: Scalable Agentic 3D Scene Generation for Embodied AI | B | closest PCG baseline; it can use a typed interaction representation as I/O and evaluator | [sage-2026.md](paper_reads/B_interactive_generation_pcg/sage-2026.md) |
-| EmbodiedGen: Towards a Generative 3D World Engine for Embodied Intelligence | B | generation engine that can consume or be evaluated by a typed interactive-world representation | [embodiedgen-2025.md](paper_reads/B_interactive_generation_pcg/embodiedgen-2025.md) |
-| SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning | C | Good spatial encoder/validator reference for local geometry, global context, and relation checking in generated worlds. | [spatialstack-2026.md](paper_reads/C_spatial_intelligence/spatialstack-2026.md) |
-| SpaceTools: Tool-Augmented Spatial Reasoning via Double Interactive RL | C | prototype for target-task validators that invoke measurement/simulation tools | [spacetools-2026.md](paper_reads/C_spatial_intelligence/spacetools-2026.md) |
-| ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding for General Robot Manipulation | C | points to temporal/deformable state and trajectory grounding | [st-vla-2026.md](paper_reads/C_spatial_intelligence/st-vla-2026.md) |
-| GR00T N1: An Open Foundation Model for Generalist Humanoid Robots | D | Important VLA baseline for humanoid embodiments and synthetic-data-to-policy evaluation. | [gr00t-n1-2025.md](paper_reads/D_vla_world_action_models/gr00t-n1-2025.md) |
-| XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations | D | Strong VLA reference for cross-embodiment action representation and real rollout quality. | [xr-1-2025.md](paper_reads/D_vla_world_action_models/xr-1-2025.md) |
-| TwinVLA: Data-Efficient Bimanual Manipulation with Twin Single-Arm Vision-Language-Action Models | D | Good baseline for bimanual task generation and policy-evaluation suites. | [twinvla-2025.md](paper_reads/D_vla_world_action_models/twinvla-2025.md) |
-| MMaDA-VLA: Large Diffusion Vision-Language-Action Model with Unified Multi-Modal Instruction and Generation | D | Relevant to world-action interfaces because it predicts future visual outcomes and actions jointly. | [mmada-vla-2026.md](paper_reads/D_vla_world_action_models/mmada-vla-2026.md) |
-| WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models | E | Important evaluation target for our interactive embodied world generator and world-model branches. | [worldarena-2026.md](paper_reads/E_evaluation_data_infrastructure/worldarena-2026.md) |
-| World-in-World: World Models in a Closed-Loop World | E | Provides a harness template for action-conditioned rollout evaluation and closed-loop generated-world testing. | [world-in-world-2025.md](paper_reads/E_evaluation_data_infrastructure/world-in-world-2025.md) |
-| Ctrl-World | E | Useful benchmark design for world-action model validators and imagined rollout tests. | [ctrl-world-2026.md](paper_reads/E_evaluation_data_infrastructure/ctrl-world-2026.md) |
-| WorldScore: A Unified Evaluation Benchmark for World Generation | E | baseline for interactive embodied generation benchmark metrics | [worldscore-2025.md](paper_reads/E_evaluation_data_infrastructure/worldscore-2025.md) |
+| RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation | E | Strongest manipulation-grounded benchmark in this run for converting generated behavior into executable robot actions. | [robowm-bench-2026.md](paper_reads/E_evaluation_data_infrastructure/robowm-bench-2026.md) |
+| VLA-Arena: An Open-Source Framework for Benchmarking Vision-Language-Action Models | E | Strong open-source VLA benchmark/toolchain release with 170 tasks, perturbation ladders, datasets, and public framework. | [vla-arena-2026.md](paper_reads/E_evaluation_data_infrastructure/vla-arena-2026.md) |
+| Colosseum V2: Benchmarking Generalization for Vision Language Action Models | E | Strong large-scale ManiSkill benchmark for simulation-to-real VLA generalization under perturbations. | [colosseum-v2-2026.md](paper_reads/E_evaluation_data_infrastructure/colosseum-v2-2026.md) |
+| MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models | E | Reliability-oriented benchmark for physics adherence, action-following fidelity, and optimism bias in robotic world models. | [mirabench-2026.md](paper_reads/E_evaluation_data_infrastructure/mirabench-2026.md) |
+| iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework | E | Most complete interactive-world benchmark release in this run with project, code, dataset, and leaderboard. | [iworld-bench-2026.md](paper_reads/E_evaluation_data_infrastructure/iworld-bench-2026.md) |
+| WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation | E | Strong multi-turn benchmark for interaction adherence, physics compliance, and cross-interface evaluation. | [wbench-2026.md](paper_reads/E_evaluation_data_infrastructure/wbench-2026.md) |
+| WorldMark: A Unified Benchmark Suite for Interactive Video World Models | E | Standardized interactive I2V benchmark plus live World Model Arena comparison surface. | [worldmark-2026.md](paper_reads/E_evaluation_data_infrastructure/worldmark-2026.md) |
+| WorldOlympiad: Can Your World Model Survive a Triathlon? | E | Broad cross-domain long-video benchmark covering robotics, gaming, and real-world physical/geometric/interactive fidelity. | [worldolympiad-2026.md](paper_reads/E_evaluation_data_infrastructure/worldolympiad-2026.md) |
+| WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models | E | Useful concept-disentangled physics benchmark for permanence, support, motion, and scale diagnostics. | [worldbench-2026.md](paper_reads/E_evaluation_data_infrastructure/worldbench-2026.md) |
 
 ### 全量收录状态
 
@@ -56,7 +41,7 @@
 | B. Interactive Generation and PCG | 11 | PhyScene, RoboGen, Steerable Scene Generation, SAGE, EmbodiedGen, Holodeck, Infinigen Indoors, SceneSmith, SimWorld Studio ... |
 | C. Spatial Intelligence | 12 | SpatialBot, HiSpatial, SpaceTools, Ego3D-Bench / Ego3D-VLM, Seeing Across Views / MV-RoboBench, SpatialVLA, DepthVLA, ST-VLA, SpatialAct ... |
 | D. VLA and World-Action Models | 13 | Octo, OpenVLA, pi0, VLA-R1, World Action Models, Physically Viable World Models, GR00T N1, Green-VLA, Cosmos-Predict2.5 ... |
-| E. Evaluation and Data Infrastructure | 10 | EWMBench, WorldScore, RoboVerse, OpenEQA, WorldArena, WorldArena 2.0, World-in-World, Ctrl-World, vla-eval ... |
+| E. Evaluation and Data Infrastructure | 19 | EWMBench, WorldScore, RoboVerse, OpenEQA, WorldArena, WorldArena 2.0, World-in-World, Ctrl-World, vla-eval ... |
 
 ## 研究树
 

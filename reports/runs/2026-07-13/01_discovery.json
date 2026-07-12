@@ -1,0 +1,386 @@
+{
+  "run_id": "2026-07-13",
+  "followed_sources_checked": [
+    {
+      "source_id": "stanford-svl-behavior",
+      "status": "spot_checked",
+      "notes": "No stronger new 2024+ benchmark additions than existing BEHAVIOR / OmniGibson coverage in this run.",
+      "urls_checked": [
+        "https://svl.stanford.edu/publications/"
+      ]
+    },
+    {
+      "source_id": "princeton-pvl-infinigen",
+      "status": "spot_checked",
+      "notes": "No new July candidate clearing the acceptance threshold beyond existing procedural-generation coverage.",
+      "urls_checked": [
+        "https://infinigen.org/"
+      ]
+    },
+    {
+      "source_id": "ai2-embodied-prior",
+      "status": "checked",
+      "notes": "Used as a fixed-source sanity pass for embodied benchmark/VLA infrastructure; no accepted July addition from AI2 itself.",
+      "urls_checked": [
+        "https://allenai.org/embodied-ai",
+        "https://prior.allenai.org/projects/ai2thor"
+      ]
+    },
+    {
+      "source_id": "nvidia-cosmos-isaac",
+      "status": "checked",
+      "notes": "No new official July benchmark clearing the harness after the prior Cosmos-Predict2.5 addition.",
+      "urls_checked": [
+        "https://research.nvidia.com/labs/cosmos-lab/"
+      ]
+    },
+    {
+      "source_id": "stanford-realab-shuran",
+      "status": "spot_checked",
+      "notes": "No new accepted benchmark or VLA release found from this source group this run.",
+      "urls_checked": [
+        "https://real.stanford.edu/lab.html"
+      ]
+    },
+    {
+      "source_id": "stanford-iris-openvla",
+      "status": "spot_checked",
+      "notes": "Used as VLA benchmark search anchor; strongest new accepted VLA evaluation signals came from broader primary-source search.",
+      "urls_checked": [
+        "https://irislab.stanford.edu/",
+        "https://openvla.github.io/"
+      ]
+    },
+    {
+      "source_id": "berkeley-rail-levine",
+      "status": "spot_checked",
+      "notes": "No new accepted frontier paper beyond existing registry coverage.",
+      "urls_checked": [
+        "https://rail.eecs.berkeley.edu/"
+      ]
+    },
+    {
+      "source_id": "physical-intelligence",
+      "status": "spot_checked",
+      "notes": "No new official benchmark release that beat the current evaluation-cluster additions.",
+      "urls_checked": [
+        "https://www.pi.website/"
+      ]
+    },
+    {
+      "source_id": "google-deepmind-robotics",
+      "status": "spot_checked",
+      "notes": "No new accepted official benchmark surfaced in this run.",
+      "urls_checked": [
+        "https://deepmind.google/discover/blog/"
+      ]
+    },
+    {
+      "source_id": "ut-austin-rpl-yuke",
+      "status": "checked",
+      "notes": "Direct signal source for WorldOlympiad and world-model evaluation cluster activity.",
+      "urls_checked": [
+        "https://www.cs.utexas.edu/~yukez/"
+      ]
+    },
+    {
+      "source_id": "meta-fair-embodied",
+      "status": "spot_checked",
+      "notes": "No stronger new 2024+ candidate than existing OpenEQA or related coverage.",
+      "urls_checked": [
+        "https://ai.meta.com/research/"
+      ]
+    },
+    {
+      "source_id": "huggingface-lerobot",
+      "status": "spot_checked",
+      "notes": "No accepted benchmark addition surfaced from LeRobot in this run.",
+      "urls_checked": [
+        "https://huggingface.co/lerobot"
+      ]
+    },
+    {
+      "source_id": "toyota-research-institute-lbm",
+      "status": "spot_checked",
+      "notes": "No new accepted benchmark/data-infrastructure addition found.",
+      "urls_checked": [
+        "https://www.tri.global/research"
+      ]
+    },
+    {
+      "source_id": "cmu-genesis-robogen",
+      "status": "skipped",
+      "notes": "Watch-source; no stronger July signal than core-source and broad benchmark queries.",
+      "urls_checked": []
+    },
+    {
+      "source_id": "tsinghua-air-vla",
+      "status": "checked",
+      "notes": "Direct signal source for iWorld-Bench and VLA-Arena via primary pages and public repos.",
+      "urls_checked": [
+        "https://iworld-bench.com/",
+        "https://github.com/PKU-Alignment/VLA-Arena"
+      ]
+    },
+    {
+      "source_id": "embodiedgen-consortium",
+      "status": "skipped",
+      "notes": "Watch-source not prioritized after stronger accepted benchmark cluster signals.",
+      "urls_checked": []
+    },
+    {
+      "source_id": "mit-csail-drake-scene-generation",
+      "status": "spot_checked",
+      "notes": "No new accepted executable-world or PCG candidate beyond existing SceneCode coverage.",
+      "urls_checked": [
+        "https://groups.csail.mit.edu/vision/"
+      ]
+    },
+    {
+      "source_id": "tencent-hunyuan-world",
+      "status": "spot_checked",
+      "notes": "Checked as part of interactive world-model benchmark cluster; no primary-source addition beyond existing HY-World coverage.",
+      "urls_checked": [
+        "https://github.com/Tencent-Hunyuan/HY-World"
+      ]
+    },
+    {
+      "source_id": "world-model-benchmarks",
+      "status": "checked",
+      "notes": "Main accepted-signal cluster this run; produced WorldBench, WorldMark, WorldOlympiad, WBench, RoboWM-Bench, and MiraBench.",
+      "urls_checked": [
+        "https://world-bench.github.io/",
+        "https://alaya-studio.github.io/WorldMark/",
+        "https://alibaba-damo-academy.github.io/WorldOlympiad/",
+        "https://meituan-longcat.github.io/WBench/"
+      ]
+    },
+    {
+      "source_id": "vla-leaderboard",
+      "status": "checked",
+      "notes": "Used for broader VLA benchmark scan; strongest accepted additions were VLA-Arena and Colosseum V2.",
+      "urls_checked": [
+        "https://vla-arena.github.io/"
+      ]
+    },
+    {
+      "source_id": "vla-survey",
+      "status": "skipped",
+      "notes": "Survey source not needed once primary-source benchmark pages were identified.",
+      "urls_checked": []
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "CAND-0001",
+      "title": "RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation",
+      "branch_hint": "E",
+      "source_url": "https://openaccess.thecvf.com/content/CVPR2026W/GigaBrainChallenge/html/Jiang_RoboWM-Bench_A_Benchmark_for_Evaluating_World_Models_in_Robotic_Manipulation_CVPRW_2026_paper.html",
+      "source_type": "cvf",
+      "discovered_from": "follow_sources_or_broad_primary_search",
+      "why_candidate": "moves world-model evaluation from visual plausibility to embodiment-grounded action executability for robotic manipulation"
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "title": "VLA-Arena: An Open-Source Framework for Benchmarking Vision-Language-Action Models",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2512.22539",
+      "source_type": "arxiv",
+      "discovered_from": "follow_sources_or_broad_primary_search",
+      "why_candidate": "separates VLA capability-frontier measurement into orthogonal structure/language/visual axes instead of collapsing everything into one aggregate success rate"
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "title": "Colosseum V2: Benchmarking Generalization for Vision Language Action Models",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2605.27759",
+      "source_type": "arxiv",
+      "discovered_from": "follow_sources_or_broad_primary_search",
+      "why_candidate": "pushes VLA evaluation beyond nominal zero-shot perception into controlled perturbation-based generalization measurement with simulation-to-real correlation checks"
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "title": "MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2605.29360",
+      "source_type": "arxiv",
+      "discovered_from": "follow_sources_or_broad_primary_search",
+      "why_candidate": "defines action-conditioned reliability as a first-class target rather than assuming image fidelity stands in for robotic faithfulness"
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "title": "iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2605.03941",
+      "source_type": "arxiv",
+      "discovered_from": "follow_sources_or_broad_primary_search",
+      "why_candidate": "turns interactive world-model evaluation into a multi-input, action-space-unified benchmark instead of model-specific camera-control demos"
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "title": "WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2605.25874",
+      "source_type": "arxiv",
+      "discovered_from": "follow_sources_or_broad_primary_search",
+      "why_candidate": "brings multi-turn interaction and heterogeneous control-interface unification into one benchmark rather than one-step or single-axis evaluation"
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2604.21686",
+      "source_type": "arxiv",
+      "discovered_from": "follow_sources_or_broad_primary_search",
+      "why_candidate": "creates the first common playing field for interactive image-to-video world models with standardized scenes, controls, and reusable evaluation toolkit"
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "title": "WorldOlympiad: Can Your World Model Survive a Triathlon?",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2606.11129",
+      "source_type": "arxiv",
+      "discovered_from": "follow_sources_or_broad_primary_search",
+      "why_candidate": "unifies physical, geometric, and interaction diagnostics across robotics, gaming, and open-domain world-model scenarios rather than isolating one dimension"
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "title": "WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2601.21282",
+      "source_type": "arxiv",
+      "discovered_from": "follow_sources_or_broad_primary_search",
+      "why_candidate": "disentangles physical concepts into more diagnostic tests instead of entangled holistic video-quality proxies"
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "title": "MIND: Benchmarking Memory Consistency and Action Control in World Models",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2602.08025",
+      "source_type": "arxiv",
+      "discovered_from": "broad_primary_search_world_model_benchmarks",
+      "why_candidate": "Open-domain memory/action benchmark with public project page and code."
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "title": "PhyGround: Benchmarking Physical Reasoning in Generative World Models",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2605.10806",
+      "source_type": "arxiv",
+      "discovered_from": "broad_primary_search_world_model_benchmarks",
+      "why_candidate": "Strong official physical-reasoning benchmark with public project page and judge model release."
+    }
+  ],
+  "triage": [
+    {
+      "candidate_id": "CAND-0001",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source 2026 benchmark/infrastructure paper with clear branch fit and direct relevance: Direct benchmark reference for whether generated embodied futures are actionable enough for manipulation-policy learning and validation.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source 2026 benchmark/infrastructure paper with clear branch fit and direct relevance: Strong infrastructure reference for evaluation schemas, perturbation taxonomies, and task-difficulty ladders for embodied policy assessment.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 5,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source 2026 benchmark/infrastructure paper with clear branch fit and direct relevance: Useful benchmark template for large-scale, perturbation-aware embodied policy evaluation and simulation-to-real validation.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source 2026 benchmark/infrastructure paper with clear branch fit and direct relevance: Directly relevant to evaluating whether generated futures are faithful control simulators rather than merely plausible videos.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source 2026 benchmark/infrastructure paper with clear branch fit and direct relevance: High-value benchmark for first-person interactive world-model evaluation, camera control, memory, and multi-scene action responsiveness.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 5,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source 2026 benchmark/infrastructure paper with clear branch fit and direct relevance: Strong benchmark reference for multi-turn interaction fidelity and physics-compliance evaluation in interactive world generation.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source 2026 benchmark/infrastructure paper with clear branch fit and direct relevance: Important benchmark and online-comparison reference for standardized interactive world-generation evaluation.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source 2026 benchmark/infrastructure paper with clear branch fit and direct relevance: Strong cross-domain benchmark for long-horizon world-model evaluation with direct relevance to robotics and interactive control.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source 2026 benchmark/infrastructure paper with clear branch fit and direct relevance: Useful physics-diagnostic benchmark for checking whether world models preserve support, permanence, and motion rules relevant to executable embodied worlds.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "decision": "watchlist",
+      "primary_branch": "E",
+      "reason": "Useful background benchmark, but lower direct project relevance than iWorld-Bench and WorldMark because it is open-domain video-to-world memory/action analysis rather than a stronger embodied or interactive-world evaluation fit for this repo.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 3,
+      "project_relevance_prior": 2
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "decision": "watchlist",
+      "primary_branch": "E",
+      "reason": "Good physics-eval paper, but current run kept it in watchlist because it is more generic video-generation physics judging than embodied, interactive-world, or policy-facing evaluation.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 3,
+      "project_relevance_prior": 2
+    }
+  ]
+}
