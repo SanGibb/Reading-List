@@ -1,0 +1,318 @@
+{
+  "run_id": "2026-07-19",
+  "followed_sources_checked": [
+    {
+      "source_id": "stanford-svl-behavior",
+      "status": "checked",
+      "notes": "Core source group produced ESI-Bench, the strongest new spatial-intelligence benchmark in this run.",
+      "urls_checked": [
+        "https://svl.stanford.edu/publications/",
+        "https://behavior.stanford.edu/omnigibson/overview.html",
+        "https://esi-bench.github.io/"
+      ]
+    },
+    {
+      "source_id": "princeton-pvl-infinigen",
+      "status": "spot_checked",
+      "notes": "No stronger new 2024+ candidate cleared the acceptance threshold beyond existing procedural-generation coverage.",
+      "urls_checked": [
+        "https://infinigen.org/",
+        "https://pvl.cs.princeton.edu/"
+      ]
+    },
+    {
+      "source_id": "ai2-embodied-prior",
+      "status": "spot_checked",
+      "notes": "Checked as a core embodied environment source; no stronger accepted July 19, 2026 addition than the accepted set below.",
+      "urls_checked": [
+        "https://allenai.org/embodied-ai",
+        "https://prior.allenai.org/projects/ai2thor"
+      ]
+    },
+    {
+      "source_id": "nvidia-cosmos-isaac",
+      "status": "checked",
+      "notes": "Core source group produced Cosmos 3, a major new omnimodal world-model release with public source artifacts.",
+      "urls_checked": [
+        "https://research.nvidia.com/labs/cosmos-lab/",
+        "https://research.nvidia.com/labs/cosmos-lab/cosmos3"
+      ]
+    },
+    {
+      "source_id": "stanford-realab-shuran",
+      "status": "spot_checked",
+      "notes": "No stronger accepted candidate surfaced directly from this source group in this run.",
+      "urls_checked": [
+        "https://real.stanford.edu/lab.html",
+        "https://shurans.github.io/"
+      ]
+    },
+    {
+      "source_id": "stanford-iris-openvla",
+      "status": "spot_checked",
+      "notes": "Rechecked as a VLA anchor; no new official Stanford VLA release cleared the acceptance boundary beyond broader-world-model additions.",
+      "urls_checked": [
+        "https://irislab.stanford.edu/",
+        "https://openvla.github.io/"
+      ]
+    },
+    {
+      "source_id": "berkeley-rail-levine",
+      "status": "spot_checked",
+      "notes": "No new primary-source candidate beat the accepted world-action-model additions for this run.",
+      "urls_checked": [
+        "https://rail.eecs.berkeley.edu/"
+      ]
+    },
+    {
+      "source_id": "physical-intelligence",
+      "status": "checked",
+      "notes": "Produced a watchlist signal for pi0.7, but this run kept it below the acceptance line pending a stronger public technical surface than the accepted additions.",
+      "urls_checked": [
+        "https://www.pi.website/",
+        "https://www.pi.website/research/physical-reasoning"
+      ]
+    },
+    {
+      "source_id": "google-deepmind-robotics",
+      "status": "checked",
+      "notes": "Produced a watchlist signal for Gemini Robotics ER 1.6, but the current public surface remains more release-oriented than paper-like.",
+      "urls_checked": [
+        "https://deepmind.google/discover/blog/",
+        "https://deepmind.google/discover/blog/gemini-robotics-er-16/"
+      ]
+    },
+    {
+      "source_id": "ut-austin-rpl-yuke",
+      "status": "spot_checked",
+      "notes": "No stronger accepted benchmark or world-model addition surfaced directly from this source group in this run.",
+      "urls_checked": [
+        "https://www.cs.utexas.edu/~yukez/"
+      ]
+    },
+    {
+      "source_id": "meta-fair-embodied",
+      "status": "spot_checked",
+      "notes": "No new primary-source embodied spatial/VLA candidate cleared the threshold.",
+      "urls_checked": [
+        "https://ai.meta.com/research/"
+      ]
+    },
+    {
+      "source_id": "huggingface-lerobot",
+      "status": "spot_checked",
+      "notes": "Checked as an infrastructure surface; no new accepted paper-grade addition for the July 19, 2026 run.",
+      "urls_checked": [
+        "https://huggingface.co/lerobot"
+      ]
+    },
+    {
+      "source_id": "toyota-research-institute-lbm",
+      "status": "checked",
+      "notes": "Core source group helped surface Interactive World Simulator via TRI coauthorship and project page coverage.",
+      "urls_checked": [
+        "https://www.tri.global/research",
+        "https://www.yixuanwang.me/interactive_world_sim/"
+      ]
+    },
+    {
+      "source_id": "cmu-genesis-robogen",
+      "status": "skipped",
+      "notes": "Watch source not prioritized after stronger accepted primary-source signals in B/C/D.",
+      "urls_checked": []
+    },
+    {
+      "source_id": "tsinghua-air-vla",
+      "status": "skipped",
+      "notes": "Watch source was not needed once stronger accepted D-branch candidates were sourced from broader primary search.",
+      "urls_checked": []
+    },
+    {
+      "source_id": "embodiedgen-consortium",
+      "status": "spot_checked",
+      "notes": "EmbodiedGen V2 was found through broad primary-source search rather than this watch-source group directly.",
+      "urls_checked": [
+        "https://horizonrobotics.github.io/EmbodiedGen/"
+      ]
+    },
+    {
+      "source_id": "mit-csail-drake-scene-generation",
+      "status": "spot_checked",
+      "notes": "No stronger accepted executable-world or PCG addition than EmbodiedGen V2 in this run.",
+      "urls_checked": [
+        "https://groups.csail.mit.edu/vision/"
+      ]
+    },
+    {
+      "source_id": "tencent-hunyuan-world",
+      "status": "skipped",
+      "notes": "Watch source not prioritized after stronger accepted world-engine and world-action candidates were confirmed.",
+      "urls_checked": []
+    },
+    {
+      "source_id": "world-model-benchmarks",
+      "status": "spot_checked",
+      "notes": "Benchmark cluster was rechecked, but no stronger new benchmark beat the large July 13, 2026 evaluation expansion.",
+      "urls_checked": [
+        "https://world-bench.github.io/",
+        "https://alaya-studio.github.io/WorldMark/"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "CAND-0001",
+      "title": "ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop",
+      "source_url": "https://arxiv.org/abs/2605.18746",
+      "source_type": "arxiv",
+      "discovered_from": "core_follow_source_stanford_svl_behavior",
+      "why_candidate": "strong new benchmark for active spatial intelligence with an explicit perception-action loop and OmniGibson grounding",
+      "branch_hint": "C"
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "title": "EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI",
+      "source_url": "https://arxiv.org/abs/2607.07459",
+      "source_type": "arxiv",
+      "discovered_from": "broad_primary_search_after_follow_sources",
+      "why_candidate": "direct extension of the repo’s embodied world-engine line with sim-ready assets, task-driven worlds, and cross-simulator export",
+      "branch_hint": "B"
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "title": "Interactive World Simulator for Robot Policy Training and Evaluation",
+      "source_url": "https://arxiv.org/abs/2603.08546",
+      "source_type": "arxiv",
+      "discovered_from": "broad_primary_search_after_follow_sources",
+      "why_candidate": "closed-loop action-conditioned world simulator with direct policy-training and policy-evaluation relevance",
+      "branch_hint": "D"
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "title": "World Pilot: Steering Vision-Language-Action Models with World-Action Priors",
+      "source_url": "https://arxiv.org/abs/2606.12403",
+      "source_type": "arxiv",
+      "discovered_from": "broad_primary_search_after_follow_sources",
+      "why_candidate": "clean VLA-plus-WAM integration paper with public code and direct real-robot evidence",
+      "branch_hint": "D"
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "title": "Being-H0.7: A Latent World-Action Model from Egocentric Videos",
+      "source_url": "https://arxiv.org/abs/2605.00078",
+      "source_type": "arxiv",
+      "discovered_from": "broad_primary_search_after_follow_sources",
+      "why_candidate": "strong frontier world-action model that replaces pixel-space rollout with a compact latent action prior trained from egocentric video",
+      "branch_hint": "D"
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "title": "Cosmos 3: Omnimodal World Models for Physical AI",
+      "source_url": "https://arxiv.org/abs/2606.02800",
+      "source_type": "arxiv",
+      "discovered_from": "core_follow_source_nvidia_cosmos_isaac",
+      "why_candidate": "major omnimodal world-model release that unifies understanding, generation, simulation, and action for physical AI",
+      "branch_hint": "D"
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "title": "pi0.7: General-purpose Robots Learn to Reason from Physical Experience",
+      "source_url": "https://www.pi.website/research/physical-reasoning",
+      "source_type": "project",
+      "discovered_from": "core_follow_source_physical_intelligence",
+      "why_candidate": "major official VLA/update signal, but this run prioritized papers with clearer public technical artifacts and stronger world-model novelty.",
+      "branch_hint": "D"
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "title": "Gemini Robotics ER 1.6",
+      "source_url": "https://deepmind.google/discover/blog/gemini-robotics-er-16/",
+      "source_type": "project",
+      "discovered_from": "core_follow_source_google_deepmind_robotics",
+      "why_candidate": "official robotics release signal, but current public artifacts are still more release-oriented than the accepted paper-grade additions in this run.",
+      "branch_hint": "D"
+    }
+  ],
+  "triage": [
+    {
+      "candidate_id": "CAND-0001",
+      "decision": "analyze",
+      "primary_branch": "C",
+      "reason": "Primary paper plus official project and code; direct branch fit for embodied spatial reasoning beyond passive observation.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "decision": "analyze",
+      "primary_branch": "B",
+      "reason": "Primary paper plus official project, code, video, and dataset; clear fit for interactive generation and simulation-ready world building.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 5,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary paper plus official RSS project, public code, interactive demo, and direct long-horizon control evidence.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary paper and official project with code and weights; direct fit for world-action priors in VLA decision-making.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary paper plus official project and public code; clear direct fit for latent world-action modeling.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary technical report plus official NVIDIA project, public GitHub, and model cards; strong fit for the world-model side of embodied systems.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 5,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "decision": "watchlist",
+      "primary_branch": "D",
+      "reason": "Important official signal, but current public artifact mix is more release/blog oriented than the accepted paper-plus-project additions; this run kept it for future recheck.",
+      "dedupe_status": "new",
+      "source_quality": "official",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "decision": "watchlist",
+      "primary_branch": "D",
+      "reason": "Promising official robotics release, but the public technical surface is still not as source-complete as the accepted candidates in this run.",
+      "dedupe_status": "new",
+      "source_quality": "official",
+      "impact_prior": 4,
+      "project_relevance_prior": 3
+    }
+  ]
+}

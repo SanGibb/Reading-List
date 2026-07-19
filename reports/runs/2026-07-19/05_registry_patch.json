@@ -1,0 +1,181 @@
+{
+  "run_id": "2026-07-19",
+  "branch_assignments": [
+    {
+      "candidate_id": "CAND-0001",
+      "primary_branch": "C",
+      "taxonomy_confidence": 5,
+      "rationale": "Strong benchmark reference for whether generated or reconstructed worlds preserve the active spatial structure needed for embodied decision-making."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "primary_branch": "B",
+      "taxonomy_confidence": 5,
+      "rationale": "Very strong fit for the repository’s interactive generation branch because it connects asset generation, affordance/state retention, and executable world assembly."
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "primary_branch": "D",
+      "taxonomy_confidence": 5,
+      "rationale": "High-value reference for learned world simulators that can sit directly inside embodied training and evaluation loops rather than only generating showcase videos."
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "primary_branch": "D",
+      "taxonomy_confidence": 5,
+      "rationale": "Excellent fit for the world-action-model branch because it operationalizes how a learned world prior can improve a deployed VLA policy."
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "primary_branch": "D",
+      "taxonomy_confidence": 4,
+      "rationale": "Useful anchor for compact world-action priors that keep embodied reasoning in the control loop without paying full pixel-rollout cost."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "primary_branch": "D",
+      "taxonomy_confidence": 5,
+      "rationale": "High-impact anchor for world-model systems that unify perception, simulation, and action rather than treating them as separate modules."
+    }
+  ],
+  "taxonomy_change_proposals": [],
+  "registry_additions": [
+    {
+      "candidate_id": "CAND-0001",
+      "branch": "C",
+      "deep_dive_path": "paper_reads/C_spatial_intelligence/esi-bench-2026.md",
+      "paper": {
+        "title": "ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop",
+        "year": 2026,
+        "venue": "arXiv / project page",
+        "url": "https://arxiv.org/abs/2605.18746",
+        "data": "OmniGibson-grounded benchmark with 10 task categories, 29 subcategories, and 3,081 embodied spatial questions that require perception, locomotion, and manipulation decisions.",
+        "method": "recasts spatial intelligence as an active perception-action loop, evaluates embodied agents under controlled task families, and measures gains from active exploration versus passive observation.",
+        "task": "answer embodied spatial questions that require choosing how to move, inspect, and manipulate the environment to uncover hidden spatial facts.",
+        "novelty": "moves spatial intelligence benchmarking from passive or oracle-view settings into an embodied action loop where the agent must actively gather the evidence needed for reasoning.",
+        "project_relevance": "Strong benchmark reference for whether generated or reconstructed worlds preserve the active spatial structure needed for embodied decision-making.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "visual_quality_score": 0,
+        "visual_quality_decision": "not_applicable",
+        "evidence_strength": 5
+      }
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "branch": "B",
+      "deep_dive_path": "paper_reads/B_interactive_generation_pcg/embodiedgen-v2-2026.md",
+      "paper": {
+        "title": "EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI",
+        "year": 2026,
+        "venue": "arXiv / project page",
+        "url": "https://arxiv.org/abs/2607.07459",
+        "data": "sim-ready asset, scene, and task-world generation pipeline with public Hugging Face collection and dataset for cross-simulator embodied world construction.",
+        "method": "unified generative world engine that composes sim-ready assets, editable scenes, task-driven worlds, dialogue-based state editing, and cross-simulator export into one closed-loop pipeline.",
+        "task": "turn text, images, and dialogue instructions into executable multi-room 3D worlds that can be deployed across major simulators for embodied learning.",
+        "novelty": "pushes embodied world generation from isolated assets toward a reusable, agentic world engine that keeps affordances, state, layout stability, and simulator interfaces aligned.",
+        "project_relevance": "Very strong fit for the repository’s interactive generation branch because it connects asset generation, affordance/state retention, and executable world assembly.",
+        "source_quality": "primary_or_official",
+        "demo_score": 5,
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "evidence_strength": 5
+      }
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/interactive-world-simulator-2026.md",
+      "paper": {
+        "title": "Interactive World Simulator for Robot Policy Training and Evaluation",
+        "year": 2026,
+        "venue": "RSS 2026",
+        "url": "https://arxiv.org/abs/2603.08546",
+        "data": "moderate-scale robot interaction dataset driving an action-conditioned video world model that supports multiple manipulation tasks and an interactive online demo.",
+        "method": "uses consistency models for both latent dynamics prediction and image decoding to build a fast, stable action-conditioned world simulator for closed-loop robot policy training and evaluation.",
+        "task": "simulate long-horizon robot interaction rollouts quickly enough and stably enough that policies can be trained and evaluated inside the learned world model.",
+        "novelty": "targets the missing middle ground between slow pixel-rollout world models and physics engines by treating the learned model itself as an interactive simulator for policy loops.",
+        "project_relevance": "High-value reference for learned world simulators that can sit directly inside embodied training and evaluation loops rather than only generating showcase videos.",
+        "source_quality": "primary_or_official",
+        "demo_score": 5,
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "evidence_strength": 5
+      }
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/world-pilot-2026.md",
+      "paper": {
+        "title": "World Pilot: Steering Vision-Language-Action Models with World-Action Priors",
+        "year": 2026,
+        "venue": "arXiv / project page",
+        "url": "https://arxiv.org/abs/2606.12403",
+        "data": "LIBERO-Plus and real-robot manipulation evaluations paired with a world-action prior and public Hugging Face model release.",
+        "method": "injects a World-Action Model into a VLA through latent steering at the perception layer and action steering at the trajectory/action layer.",
+        "task": "improve manipulation policy quality by giving VLA policies compact anticipatory priors about scene evolution and motion.",
+        "novelty": "shows a concrete way to route world-model priors into a VLA without forcing slow explicit pixel rollouts at action time.",
+        "project_relevance": "Excellent fit for the world-action-model branch because it operationalizes how a learned world prior can improve a deployed VLA policy.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "evidence_strength": 4
+      }
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/being-h0-7-2026.md",
+      "paper": {
+        "title": "Being-H0.7: A Latent World-Action Model from Egocentric Videos",
+        "year": 2026,
+        "venue": "arXiv / official project",
+        "url": "https://arxiv.org/abs/2605.00078",
+        "data": "large-scale egocentric video pretraining paired with robot-control evaluation and public code for a latent world-action model.",
+        "method": "learns a latent world-action model that carries future-aware interaction structure from egocentric videos into a deployable action prior without explicit pixel rollout at test time.",
+        "task": "improve robot control by giving policies future-aware latent dynamics and task-progress signals extracted from dense video structure.",
+        "novelty": "keeps the predictive benefits of world modeling while moving the reasoning substrate from expensive pixel prediction into a compact latent control interface.",
+        "project_relevance": "Useful anchor for compact world-action priors that keep embodied reasoning in the control loop without paying full pixel-rollout cost.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "evidence_strength": 4
+      }
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/cosmos-3-2026.md",
+      "paper": {
+        "title": "Cosmos 3: Omnimodal World Models for Physical AI",
+        "year": 2026,
+        "venue": "arXiv / NVIDIA technical report",
+        "url": "https://arxiv.org/abs/2606.02800",
+        "data": "omnimodal physical-AI release surface spanning language, image, video, audio, and action sequences with public model cards and source code.",
+        "method": "unified mixture-of-transformers world-model family that jointly processes and generates multimodal physical-world sequences, subsuming VLMs, video generators, world simulators, and world-action models.",
+        "task": "support understanding, generation, simulation, and action inside one omnimodal world-model stack for physical AI use cases.",
+        "novelty": "collapses several previously separate embodied model classes into one omnimodal world-model family with flexible input-output configurations.",
+        "project_relevance": "High-impact anchor for world-model systems that unify perception, simulation, and action rather than treating them as separate modules.",
+        "source_quality": "primary_or_official",
+        "demo_score": 5,
+        "visual_quality_score": 5,
+        "visual_quality_decision": "strong",
+        "evidence_strength": 5
+      }
+    }
+  ],
+  "registry_updates": [],
+  "registry_noops": [
+    {
+      "candidate_id": "CAND-0007",
+      "reason": "Important Physical Intelligence signal, but current public materials remain more release/blog oriented than the accepted paper-plus-project additions for July 19, 2026."
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "reason": "Official DeepMind robotics release worth monitoring, but the public technical surface is not yet as complete as the accepted candidates in this run."
+    }
+  ]
+}

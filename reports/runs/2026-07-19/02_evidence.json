@@ -1,0 +1,345 @@
+{
+  "run_id": "2026-07-19",
+  "paper_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "title": "ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop",
+      "year": 2026,
+      "venue": "arXiv / project page",
+      "url": "https://arxiv.org/abs/2605.18746",
+      "paper_ids": {
+        "arxiv": "2605.18746",
+        "doi": "",
+        "openreview": "",
+        "project": "https://esi-bench.github.io/",
+        "github": "https://github.com/ESI-Bench/ESI-Bench"
+      },
+      "primary_branch": "C",
+      "secondary_branches": [
+        "E"
+      ],
+      "data": "OmniGibson-grounded benchmark with 10 task categories, 29 subcategories, and 3,081 embodied spatial questions that require perception, locomotion, and manipulation decisions.",
+      "method": "recasts spatial intelligence as an active perception-action loop, evaluates embodied agents under controlled task families, and measures gains from active exploration versus passive observation.",
+      "task": "answer embodied spatial questions that require choosing how to move, inspect, and manipulate the environment to uncover hidden spatial facts.",
+      "novelty": "moves spatial intelligence benchmarking from passive or oracle-view settings into an embodied action loop where the agent must actively gather the evidence needed for reasoning.",
+      "evidence": "Primary evidence comes from the arXiv paper, official project page, and official GitHub repository; benchmark scope, task taxonomy, and code availability are source-traced.",
+      "claim_checks": [
+        {
+          "claim": "ESI-Bench benchmarks embodied spatial intelligence through a perception-action loop rather than passive observation.",
+          "source": "https://arxiv.org/abs/2605.18746",
+          "status": "verified",
+          "notes": "Abstract explicitly frames spatial intelligence as active observation conditioned on action."
+        },
+        {
+          "claim": "The benchmark spans 10 task categories and 29 subcategories built on OmniGibson.",
+          "source": "https://esi-bench.github.io/",
+          "status": "verified",
+          "notes": "Official project page states the task-category and subcategory counts."
+        },
+        {
+          "claim": "The benchmark contains 3,081 embodied QA tasks.",
+          "source": "https://esi-bench.github.io/",
+          "status": "verified",
+          "notes": "Official project page reports 3,081 questions."
+        },
+        {
+          "claim": "Official code and dataset are public.",
+          "source": "https://github.com/ESI-Bench/ESI-Bench",
+          "status": "verified",
+          "notes": "Official repository is public and linked from the project page."
+        }
+      ],
+      "limitations": "Benchmark conclusions still depend on OmniGibson task design and evaluation scripts; this run did not re-execute the benchmark locally.",
+      "project_relevance": "Strong benchmark reference for whether generated or reconstructed worlds preserve the active spatial structure needed for embodied decision-making."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "title": "EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI",
+      "year": 2026,
+      "venue": "arXiv / project page",
+      "url": "https://arxiv.org/abs/2607.07459",
+      "paper_ids": {
+        "arxiv": "2607.07459",
+        "doi": "",
+        "openreview": "",
+        "project": "https://horizonrobotics.github.io/EmbodiedGen/",
+        "github": "https://github.com/HorizonRobotics/EmbodiedGen"
+      },
+      "primary_branch": "B",
+      "secondary_branches": [
+        "A"
+      ],
+      "data": "sim-ready asset, scene, and task-world generation pipeline with public Hugging Face collection and dataset for cross-simulator embodied world construction.",
+      "method": "unified generative world engine that composes sim-ready assets, editable scenes, task-driven worlds, dialogue-based state editing, and cross-simulator export into one closed-loop pipeline.",
+      "task": "turn text, images, and dialogue instructions into executable multi-room 3D worlds that can be deployed across major simulators for embodied learning.",
+      "novelty": "pushes embodied world generation from isolated assets toward a reusable, agentic world engine that keeps affordances, state, layout stability, and simulator interfaces aligned.",
+      "evidence": "Primary evidence comes from the arXiv paper, official project page, public GitHub repository, video, Hugging Face collection, and public dataset links.",
+      "claim_checks": [
+        {
+          "claim": "EmbodiedGen V2 is framed as an agentic, simulation-ready 3D world engine for embodied AI.",
+          "source": "https://arxiv.org/abs/2607.07459",
+          "status": "verified",
+          "notes": "Title and abstract state the world-engine positioning."
+        },
+        {
+          "claim": "The system supports sim-ready assets, large-scale scenes, task-driven worlds, vibe coding, and cross-simulator export.",
+          "source": "https://horizonrobotics.github.io/EmbodiedGen/",
+          "status": "verified",
+          "notes": "Official project overview lists each stage explicitly."
+        },
+        {
+          "claim": "Official code, model collection, and dataset are public.",
+          "source": "https://horizonrobotics.github.io/EmbodiedGen/",
+          "status": "verified",
+          "notes": "Project page links GitHub, Hugging Face collection, and dataset."
+        }
+      ],
+      "limitations": "This run verified the project surface and paper claims but did not execute the cross-simulator export or world-editing loops locally.",
+      "project_relevance": "Very strong fit for the repository’s interactive generation branch because it connects asset generation, affordance/state retention, and executable world assembly."
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "title": "Interactive World Simulator for Robot Policy Training and Evaluation",
+      "year": 2026,
+      "venue": "RSS 2026",
+      "url": "https://arxiv.org/abs/2603.08546",
+      "paper_ids": {
+        "arxiv": "2603.08546",
+        "doi": "",
+        "openreview": "",
+        "project": "https://www.yixuanwang.me/interactive_world_sim/",
+        "github": "https://github.com/WangYixuan12/interactive_world_sim"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [
+        "E"
+      ],
+      "data": "moderate-scale robot interaction dataset driving an action-conditioned video world model that supports multiple manipulation tasks and an interactive online demo.",
+      "method": "uses consistency models for both latent dynamics prediction and image decoding to build a fast, stable action-conditioned world simulator for closed-loop robot policy training and evaluation.",
+      "task": "simulate long-horizon robot interaction rollouts quickly enough and stably enough that policies can be trained and evaluated inside the learned world model.",
+      "novelty": "targets the missing middle ground between slow pixel-rollout world models and physics engines by treating the learned model itself as an interactive simulator for policy loops.",
+      "evidence": "Primary evidence comes from the arXiv paper, official RSS project page, public code, and interactive demo; long-horizon runtime claims are source-traced.",
+      "claim_checks": [
+        {
+          "claim": "The simulator supports stable long-horizon interaction for more than 10 minutes at 15 FPS.",
+          "source": "https://www.yixuanwang.me/interactive_world_sim/",
+          "status": "verified",
+          "notes": "Official project page states the runtime and horizon claim."
+        },
+        {
+          "claim": "The system uses consistency models for both image decoding and latent-space dynamics.",
+          "source": "https://arxiv.org/abs/2603.08546",
+          "status": "verified",
+          "notes": "Abstract states both uses explicitly."
+        },
+        {
+          "claim": "Official code and an interactive demo are public.",
+          "source": "https://www.yixuanwang.me/interactive_world_sim/",
+          "status": "verified",
+          "notes": "Project page links both the GitHub repository and online demo."
+        }
+      ],
+      "limitations": "Visual and control quality were judged from the official demo surface and paper rather than independent rollout execution inside this run.",
+      "project_relevance": "High-value reference for learned world simulators that can sit directly inside embodied training and evaluation loops rather than only generating showcase videos."
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "title": "World Pilot: Steering Vision-Language-Action Models with World-Action Priors",
+      "year": 2026,
+      "venue": "arXiv / project page",
+      "url": "https://arxiv.org/abs/2606.12403",
+      "paper_ids": {
+        "arxiv": "2606.12403",
+        "doi": "",
+        "openreview": "",
+        "project": "https://world-pilot.github.io/",
+        "github": "https://github.com/ZefuLin/WorldPilot"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "data": "LIBERO-Plus and real-robot manipulation evaluations paired with a world-action prior and public Hugging Face model release.",
+      "method": "injects a World-Action Model into a VLA through latent steering at the perception layer and action steering at the trajectory/action layer.",
+      "task": "improve manipulation policy quality by giving VLA policies compact anticipatory priors about scene evolution and motion.",
+      "novelty": "shows a concrete way to route world-model priors into a VLA without forcing slow explicit pixel rollouts at action time.",
+      "evidence": "Primary evidence comes from the arXiv paper, official project page, GitHub repository, and Hugging Face weights; performance claims are kept source-reported.",
+      "claim_checks": [
+        {
+          "claim": "World Pilot augments a VLA with world-action priors through latent steering and action steering.",
+          "source": "https://arxiv.org/abs/2606.12403",
+          "status": "verified",
+          "notes": "Abstract describes both routing pathways."
+        },
+        {
+          "claim": "The method reaches source-reported state-of-the-art performance on LIBERO-Plus and real-robot tasks.",
+          "source": "https://world-pilot.github.io/",
+          "status": "partial",
+          "notes": "Treat exact numbers as source-reported; this run did not reproduce results."
+        },
+        {
+          "claim": "Official code and Hugging Face weights are public.",
+          "source": "https://world-pilot.github.io/",
+          "status": "verified",
+          "notes": "Project page links both GitHub and Hugging Face."
+        }
+      ],
+      "limitations": "Benchmark leadership claims remain source-reported; this run did not rerun LIBERO-Plus or real-robot evaluations.",
+      "project_relevance": "Excellent fit for the world-action-model branch because it operationalizes how a learned world prior can improve a deployed VLA policy."
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "title": "Being-H0.7: A Latent World-Action Model from Egocentric Videos",
+      "year": 2026,
+      "venue": "arXiv / official project",
+      "url": "https://arxiv.org/abs/2605.00078",
+      "paper_ids": {
+        "arxiv": "2605.00078",
+        "doi": "",
+        "openreview": "",
+        "project": "https://research.beingbeyond.com/being-h07",
+        "github": "https://github.com/BeingBeyond/Being-H"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "data": "large-scale egocentric video pretraining paired with robot-control evaluation and public code for a latent world-action model.",
+      "method": "learns a latent world-action model that carries future-aware interaction structure from egocentric videos into a deployable action prior without explicit pixel rollout at test time.",
+      "task": "improve robot control by giving policies future-aware latent dynamics and task-progress signals extracted from dense video structure.",
+      "novelty": "keeps the predictive benefits of world modeling while moving the reasoning substrate from expensive pixel prediction into a compact latent control interface.",
+      "evidence": "Primary evidence comes from the arXiv paper, official project page, and public GitHub organization; scale and positioning claims are source-traced.",
+      "claim_checks": [
+        {
+          "claim": "Being-H0.7 is a latent world-action model trained from egocentric videos.",
+          "source": "https://arxiv.org/abs/2605.00078",
+          "status": "verified",
+          "notes": "Title and abstract state the latent world-action formulation and egocentric-video data source."
+        },
+        {
+          "claim": "The official project positions the method as preserving world-model predictive value without explicit future-image generation at test time.",
+          "source": "https://research.beingbeyond.com/being-h07",
+          "status": "verified",
+          "notes": "Official project text makes this comparison directly."
+        },
+        {
+          "claim": "Official code is public.",
+          "source": "https://github.com/BeingBeyond/Being-H",
+          "status": "verified",
+          "notes": "The Being-H repository is linked from the official project page."
+        }
+      ],
+      "limitations": "Exact data scale and downstream robot metrics should be cited from the paper directly; this run did not independently evaluate the released model.",
+      "project_relevance": "Useful anchor for compact world-action priors that keep embodied reasoning in the control loop without paying full pixel-rollout cost."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "title": "Cosmos 3: Omnimodal World Models for Physical AI",
+      "year": 2026,
+      "venue": "arXiv / NVIDIA technical report",
+      "url": "https://arxiv.org/abs/2606.02800",
+      "paper_ids": {
+        "arxiv": "2606.02800",
+        "doi": "",
+        "openreview": "",
+        "project": "https://research.nvidia.com/labs/cosmos-lab/cosmos3",
+        "github": "https://github.com/NVIDIA/cosmos"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [
+        "A"
+      ],
+      "data": "omnimodal physical-AI release surface spanning language, image, video, audio, and action sequences with public model cards and source code.",
+      "method": "unified mixture-of-transformers world-model family that jointly processes and generates multimodal physical-world sequences, subsuming VLMs, video generators, world simulators, and world-action models.",
+      "task": "support understanding, generation, simulation, and action inside one omnimodal world-model stack for physical AI use cases.",
+      "novelty": "collapses several previously separate embodied model classes into one omnimodal world-model family with flexible input-output configurations.",
+      "evidence": "Primary evidence comes from the arXiv technical report, official NVIDIA Cosmos 3 page, public model-card collection, and official GitHub repository.",
+      "claim_checks": [
+        {
+          "claim": "Cosmos 3 jointly processes and generates language, image, video, audio, and action sequences in one architecture.",
+          "source": "https://arxiv.org/abs/2606.02800",
+          "status": "verified",
+          "notes": "Abstract states the omnimodal scope and unified architecture."
+        },
+        {
+          "claim": "The release surface positions Cosmos 3 as one model family connecting understanding, generation, simulation, and action.",
+          "source": "https://research.nvidia.com/labs/cosmos-lab/cosmos3",
+          "status": "verified",
+          "notes": "Official NVIDIA page states the shared omnimodal model framing directly."
+        },
+        {
+          "claim": "Official GitHub code and Hugging Face model cards are public.",
+          "source": "https://research.nvidia.com/labs/cosmos-lab/cosmos3",
+          "status": "verified",
+          "notes": "NVIDIA page links public GitHub code and model-card collection."
+        }
+      ],
+      "limitations": "Performance leadership claims remain source-reported and tied to NVIDIA’s evaluation stack; this run did not execute the released models locally.",
+      "project_relevance": "High-impact anchor for world-model systems that unify perception, simulation, and action rather than treating them as separate modules."
+    }
+  ],
+  "demo_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "project_url": "https://esi-bench.github.io/",
+      "code_url": "https://github.com/ESI-Bench/ESI-Bench",
+      "demo_url": "https://esi-bench.github.io/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 4,
+      "demo_notes": "Official project page includes benchmark overview, examples, video, dataset, and public code.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "project_url": "https://horizonrobotics.github.io/EmbodiedGen/",
+      "code_url": "https://github.com/HorizonRobotics/EmbodiedGen",
+      "demo_url": "https://youtu.be/MIkJJSVM8L4",
+      "checkpoint_url": "https://huggingface.co/collections/HorizonRobotics/embodiedgen",
+      "leaderboard_url": "",
+      "demo_score": 5,
+      "demo_notes": "Official project page ships code, video, dataset, and Hugging Face artifacts with concrete world-generation examples.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "project_url": "https://www.yixuanwang.me/interactive_world_sim/",
+      "code_url": "https://github.com/WangYixuan12/interactive_world_sim",
+      "demo_url": "https://youtu.be/H6Um4zZYm5Y",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 5,
+      "demo_notes": "Official project page includes an interactive demo, long-form walkthrough, video, and code repository.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "project_url": "https://world-pilot.github.io/",
+      "code_url": "https://github.com/ZefuLin/WorldPilot",
+      "demo_url": "https://world-pilot.github.io/#video",
+      "checkpoint_url": "https://huggingface.co/Chedan86/WorldPilot-LIBERO",
+      "leaderboard_url": "",
+      "demo_score": 4,
+      "demo_notes": "Official project page provides demo video, code, method overview, and public model weights.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "project_url": "https://research.beingbeyond.com/being-h07",
+      "code_url": "https://github.com/BeingBeyond/Being-H",
+      "demo_url": "https://research.beingbeyond.com/being-h07",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 4,
+      "demo_notes": "Official project page includes overview video, method narrative, and linked public code.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "project_url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3",
+      "code_url": "https://github.com/NVIDIA/cosmos",
+      "demo_url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3",
+      "checkpoint_url": "https://huggingface.co/collections/nvidia/cosmos3",
+      "leaderboard_url": "",
+      "demo_score": 5,
+      "demo_notes": "Official NVIDIA page includes multimodal demos, public code, and public model-card collection.",
+      "verification_status": "verified"
+    }
+  ]
+}

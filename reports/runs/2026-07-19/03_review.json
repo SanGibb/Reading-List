@@ -1,0 +1,172 @@
+{
+  "run_id": "2026-07-19",
+  "visual_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "visual_materials": [
+        "https://esi-bench.github.io/",
+        "https://arxiv.org/abs/2605.18746"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark paper: official examples and video were inspected, but generation-quality gating is not the acceptance criterion.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "visual_materials": [
+        "https://horizonrobotics.github.io/EmbodiedGen/",
+        "https://youtu.be/MIkJJSVM8L4"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video",
+        "screenshots"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official page shows coherent sim-ready assets, editable multi-room worlds, and task-conditioned layouts with convincing simulator-facing outputs.",
+      "failure_modes": [
+        "cross-simulator robustness is source-reported rather than independently reproduced"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "visual_materials": [
+        "https://www.yixuanwang.me/interactive_world_sim/",
+        "https://youtu.be/H6Um4zZYm5Y"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video",
+        "interactive_demo"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "The official demo surface shows temporally stable manipulation rollouts and interactive control, making the simulator visibly more than a static benchmark artifact.",
+      "failure_modes": [
+        "cloud demo availability may vary",
+        "independent long-horizon stress tests were not run in this repository"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "visual_materials": [
+        "https://world-pilot.github.io/",
+        "https://world-pilot.github.io/#video"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official demo materials show policy rollouts and method diagrams clearly enough to judge the WAM-conditioned VLA behavior as convincing.",
+      "failure_modes": [
+        "exact SOTA margins remain source-reported"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "visual_materials": [
+        "https://research.beingbeyond.com/being-h07",
+        "https://arxiv.org/abs/2605.00078"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "The official project page shows enough rollout and control framing to judge the latent-prior approach as visually and functionally convincing.",
+      "failure_modes": [
+        "result details beyond the official page remain source-reported"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "visual_materials": [
+        "https://research.nvidia.com/labs/cosmos-lab/cosmos3",
+        "https://huggingface.co/collections/nvidia/cosmos3"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video",
+        "screenshots"
+      ],
+      "visual_quality_score": 5,
+      "visual_quality_decision": "strong",
+      "visual_notes": "The official release surface shows broad, polished multimodal demos with clear physical-AI task framing and strong rollout quality.",
+      "failure_modes": [
+        "independent external evaluation is still limited compared with NVIDIA-owned surfaces"
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    }
+  ],
+  "quality_review": [
+    {
+      "candidate_id": "CAND-0001",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    }
+  ],
+  "run_level_issues": []
+}
