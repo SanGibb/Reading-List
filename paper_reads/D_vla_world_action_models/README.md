@@ -15,3 +15,6 @@ Deep dives for papers about vision-language-action models, robot foundation poli
 - [XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations](xr-1-2025.md)
 - [TwinVLA: Data-Efficient Bimanual Manipulation with Twin Single-Arm Vision-Language-Action Models](twinvla-2025.md)
 - [MMaDA-VLA: Large Diffusion Vision-Language-Action Model with Unified Multi-Modal Instruction and Generation](mmada-vla-2026.md)
+- [Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models](mask2real-wm-2026.md)
+- [Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation](lift3d-vla-2026.md)
+- [Native Video-Action Pretraining for Generalizable Robot Control](lingbot-va-2-2026.md)

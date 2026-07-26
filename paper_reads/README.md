@@ -9,9 +9,9 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | Branch | Directory | Focus | Count |
 |---|---|---|---|
 | A | `A_executable_world_representation/` | executable world structures, object parts, affordances, task predicates, and physical/deformable state | 10 |
-| B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 12 |
+| B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 13 |
 | C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 13 |
-| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 17 |
+| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 20 |
 | E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 19 |
 
 ## Current Reports
@@ -40,6 +40,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | HY-World 2.0 | B | [hy-world-2-2026.md](B_interactive_generation_pcg/hy-world-2-2026.md) |
 | SimWorld Studio: Generation and Evolution of Custom Embodied Agent Learning Environments | B | [simworld-studio-2026.md](B_interactive_generation_pcg/simworld-studio-2026.md) |
 | EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI | B | [embodiedgen-v2-2026.md](B_interactive_generation_pcg/embodiedgen-v2-2026.md) |
+| Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator | B | [image2sim-2026.md](B_interactive_generation_pcg/image2sim-2026.md) |
 | SpatialBot | C | [spatialbot-2024.md](C_spatial_intelligence/spatialbot-2024.md) |
 | HiSpatial | C | [hispatial-2026.md](C_spatial_intelligence/hispatial-2026.md) |
 | SpaceTools | C | [spacetools-2026.md](C_spatial_intelligence/spacetools-2026.md) |
@@ -70,6 +71,9 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | World Pilot: Steering Vision-Language-Action Models with World-Action Priors | D | [world-pilot-2026.md](D_vla_world_action_models/world-pilot-2026.md) |
 | Being-H0.7: A Latent World-Action Model from Egocentric Videos | D | [being-h0-7-2026.md](D_vla_world_action_models/being-h0-7-2026.md) |
 | Cosmos 3: Omnimodal World Models for Physical AI | D | [cosmos-3-2026.md](D_vla_world_action_models/cosmos-3-2026.md) |
+| Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models | D | [mask2real-wm-2026.md](D_vla_world_action_models/mask2real-wm-2026.md) |
+| Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation | D | [lift3d-vla-2026.md](D_vla_world_action_models/lift3d-vla-2026.md) |
+| Native Video-Action Pretraining for Generalizable Robot Control | D | [lingbot-va-2-2026.md](D_vla_world_action_models/lingbot-va-2-2026.md) |
 | EWMBench | E | [ewmbench-2025.md](E_evaluation_data_infrastructure/ewmbench-2025.md) |
 | WorldScore | E | [worldscore-2025.md](E_evaluation_data_infrastructure/worldscore-2025.md) |
 | RoboVerse | E | [roboverse-2025.md](E_evaluation_data_infrastructure/roboverse-2025.md) |

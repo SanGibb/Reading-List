@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-07-27",
+  "visual_cards": [
+    {"candidate_id":"CAND-0001","visual_materials":["official framework figure","official navigation videos"],"inspected_modalities":["project figure","video previews"],"visual_quality_score":4,"visual_quality_decision":"strong","visual_notes":"Panoramic observations are high fidelity and the diagram establishes executable motion/data generation.","failure_modes":["Full 20K-scene diversity not inspectable","navigation only"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0002","visual_materials":["teaser","narrated video","long-horizon side-by-side","OOD policy rollouts"],"inspected_modalities":["official figures","official video thumbnail/rollout surfaces","supplementary page"],"visual_quality_score":4,"visual_quality_decision":"strong","visual_notes":"Fine-grained hand/object effects are visible and long-horizon outputs remain task aligned, with mild blur.","failure_modes":["Some rendering blur","single setup"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0003","visual_materials":["teaser","method figure","pouring/picking/stacking videos","OOD videos"],"inspected_modalities":["official figures","official videos"],"visual_quality_score":4,"visual_quality_decision":"strong","visual_notes":"Diverse real-robot tasks and OOD variations provide convincing action evidence.","failure_modes":["Short curated clips","failure distribution absent"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0004","visual_materials":["official project demos","repository teaser","model release surface"],"inspected_modalities":["official demo page","official repository media"],"visual_quality_score":4,"visual_quality_decision":"strong","visual_notes":"Contact-rich manipulation and sustained closed-loop sequences are diverse and task relevant.","failure_modes":["Polished official selection","exact 2.0 asset mapping partly unclear"],"needs_human_decision":false,"undecided_reason":""}
+  ],
+  "quality_review": [
+    {"candidate_id":"CAND-0001","review_decision":"pass","issues":[],"required_fixes":[],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0002","review_decision":"pass","issues":["Code release pending"],"required_fixes":["State code status explicitly in deep dive"],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0003","review_decision":"pass","issues":["Code not confirmed"],"required_fixes":["Avoid reproducibility overclaim"],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0004","review_decision":"pass","issues":["Exact 2.0 checkpoint completeness partly verified"],"required_fixes":["Separate 2.0 paper from predecessor release lineage"],"accepted_for_registry":true}
+  ],
+  "run_level_issues": ["Search engines did not reliably expose post-2026-07-19 arXiv submissions; broad discovery therefore also checked newly surfaced July primary sources."]
+}

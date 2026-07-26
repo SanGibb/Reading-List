@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-07-27",
+  "created_at": "2026-07-27",
+  "branches": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "minimum_year": 2024,
+  "search_windows": {
+    "default_days": 14,
+    "high_priority_days": 45
+  },
+  "branch_queries": {
+    "A": ["simulation-ready 3D representation embodied AI July 2026"],
+    "B": ["interactive neural simulator embodied navigation 2026", "3D world generation embodied AI July 2026"],
+    "C": ["3D spatial intelligence embodied action July 2026"],
+    "D": ["video-action world model robot control July 2026", "3D VLA manipulation July 2026", "dexterous world model sim-to-real 2026"],
+    "E": ["world model VLA evaluation benchmark July 2026"]
+  },
+  "known_registry_path": "data/papers.seed.json",
+  "follow_sources_path": "data/follow_sources.seed.json",
+  "harness_paths": [
+    "harness/system_harness.md",
+    "harness/acceptance_harness.md"
+  ]
+}
