@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "updated": "2026-07-27",
+  "updated": "2026-08-03",
   "branches": [
     {
       "id": "A",
@@ -673,6 +673,24 @@
           "visual_quality_decision": "not_applicable",
           "visual_inspection_status": "verified_2026_07_19",
           "deep_dive_path": "paper_reads/C_spatial_intelligence/esi-bench-2026.md"
+        },
+        {
+          "title": "Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence",
+          "year": 2026,
+          "venue": "ACM MM 2026 / arXiv",
+          "url": "https://arxiv.org/abs/2607.12477",
+          "data": "4,856 QA pairs across 13 tasks from 1,646 real UAV videos (about 14.9 hours), with dual-expert verification and public code/data.",
+          "method": "self-in-space evaluation hierarchy spanning spatial cognition, self-motion awareness, perception, memory, and reasoning, plus an optical-flow-aware SIS-Motion baseline",
+          "task": "evaluate whether video MLLMs jointly model external spatial structure and the UAV's own evolving motion/action state",
+          "novelty": "makes agent self-state explicit alongside environmental spatial cognition in aerial embodied evaluation",
+          "source_quality": "primary_or_official",
+          "demo_score": 5,
+          "evidence_strength": 5,
+          "project_relevance": "Provides reusable AgentState, MotionHistory, SpatialMemory, ActionPrediction, and PathPlanning evaluation fields.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "visual_inspection_status": "verified_2026_08_03",
+          "deep_dive_path": "paper_reads/C_spatial_intelligence/self-in-space-2026.md"
         }
       ]
     },
@@ -1390,6 +1408,24 @@
           "visual_quality_decision": "not_applicable",
           "visual_inspection_status": "verified_2026_07_13",
           "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/worldbench-2026.md"
+        },
+        {
+          "title": "Rethinking Video Generation Model for the Embodied World",
+          "year": 2026,
+          "venue": "ICML 2026 / arXiv",
+          "url": "https://arxiv.org/abs/2601.15282",
+          "data": "RBench with 650 image-text cases across five tasks and four embodiments, plus RoVid-X with 4M annotated 720p clips over 1,300+ skills",
+          "method": "nine-indicator embodied video evaluation paired with a four-stage robot-video collection, filtering, segmentation, and annotation pipeline",
+          "task": "evaluate task correctness, physical plausibility, action completeness, and visual fidelity of robot-oriented video generators and provide training data",
+          "novelty": "couples a reproducible embodied video benchmark with a large multi-embodiment physically annotated training corpus and public leaderboard",
+          "source_quality": "primary_or_official",
+          "demo_score": 5,
+          "evidence_strength": 5,
+          "project_relevance": "Direct evaluator and data-source reference for generated physical-world consistency and action-aligned video.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_2026_08_03",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/rethinking-embodied-video-generation-2026.md"
         }
       ]
     }

@@ -1,0 +1,19 @@
+{
+  "run_id": "2026-08-03",
+  "branch_assignments": [
+    {"candidate_id":"CAND-0001","primary_branch":"C","taxonomy_confidence":5,"rationale":"Embodied spatial intelligence benchmark centered on agent/world state."},
+    {"candidate_id":"CAND-0002","primary_branch":"E","taxonomy_confidence":5,"rationale":"Benchmark, data, leaderboard, and evaluation infrastructure for embodied video generation."}
+  ],
+  "taxonomy_change_proposals": [],
+  "registry_additions": [
+    {"candidate_id":"CAND-0001","branch":"C","deep_dive_path":"paper_reads/C_spatial_intelligence/self-in-space-2026.md","paper":{"title":"Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence","year":2026,"venue":"ACM MM 2026 / arXiv","url":"https://arxiv.org/abs/2607.12477","data":"4,856 QA pairs across 13 tasks from 1,646 real UAV videos (about 14.9 hours), with dual-expert verification and public code/data.","method":"Self-in-space hierarchy spanning spatial cognition, self-motion awareness, perception, memory, and reasoning, plus SIS-Motion optical-flow feature fusion.","task":"Evaluate whether video MLLMs jointly model external spatial structure and the UAV's own evolving motion/action state.","novelty":"Makes agent self-state explicit alongside environmental spatial cognition in aerial embodied evaluation.","project_relevance":"Provides reusable AgentState, MotionHistory, SpatialMemory, ActionPrediction, and PathPlanning evaluation fields.","source_quality":"primary_or_official","demo_score":5,"visual_quality_score":0,"visual_quality_decision":"not_applicable","evidence_strength":5}},
+    {"candidate_id":"CAND-0002","branch":"E","deep_dive_path":"paper_reads/E_evaluation_data_infrastructure/rethinking-embodied-video-generation-2026.md","paper":{"title":"Rethinking Video Generation Model for the Embodied World","year":2026,"venue":"ICML 2026 / arXiv","url":"https://arxiv.org/abs/2601.15282","data":"RBench with 650 image-text cases across five tasks and four embodiments, plus RoVid-X with 4M annotated 720p clips over 1,300+ skills.","method":"Nine-indicator embodied video evaluation paired with a four-stage robot-video collection, filtering, segmentation, and annotation pipeline.","task":"Evaluate task correctness, physical plausibility, action completeness, and visual fidelity of robot-oriented video generators and provide training data.","novelty":"Couples a reproducible embodied video benchmark with a large multi-embodiment physically annotated training corpus and public leaderboard.","project_relevance":"Direct evaluator and data-source reference for generated physical-world consistency and action-aligned video.","source_quality":"primary_or_official","demo_score":5,"visual_quality_score":4,"visual_quality_decision":"strong","evidence_strength":5}}
+  ],
+  "registry_updates": [],
+  "registry_noops": [
+    {"candidate_id":"CAND-0003","reason":"Local-only undecided dossier: VLA physical demo quality could not be judged confidently."},
+    {"candidate_id":"CAND-0004","reason":"Watchlist: impact below threshold and official release maturity not verified."},
+    {"candidate_id":"CAND-0005","reason":"Watchlist: narrower older benchmark with impact below threshold for this run."},
+    {"candidate_id":"CAND-0006","reason":"Watchlist: narrow action-interface scope and broad release not verified."}
+  ]
+}

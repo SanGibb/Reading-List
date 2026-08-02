@@ -9,24 +9,22 @@
 | 内容 | 入口 |
 |---|---|
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
-| 最新扩库摘要 | [reports/2026-07-27-expansion.md](reports/2026-07-27-expansion.md) |
-| 当前已收录精读 | 75 篇，见 [paper_reads/README.md](paper_reads/README.md) |
+| 最新扩库摘要 | [reports/2026-08-03-expansion.md](reports/2026-08-03-expansion.md) |
+| 当前已收录精读 | 77 篇，见 [paper_reads/README.md](paper_reads/README.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。通过筛选的候选应全部加入，不做固定 top-k 抽样。
 
 ## 本周更新内容
 
-本轮扩库日期：2026-07-27。完整审计摘要见 [reports/2026-07-27-expansion.md](reports/2026-07-27-expansion.md)。
+本轮扩库日期：2026-08-03。完整审计摘要见 [reports/2026-08-03-expansion.md](reports/2026-08-03-expansion.md)。
 
 ### 重点新增与补齐
 
 | Paper | Branch | 简要说明 | 精读 |
 |---|---|---|---|
-| Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator | B | Converts captured RGB-D imagery into interactive neural environments and action-aligned navigation data at scale. | [image2sim-2026.md](paper_reads/B_interactive_generation_pcg/image2sim-2026.md) |
-| Mask2Real-WM | D | Separates mask-space dynamics from RGB rendering for fine-grained 23-DoF sim-to-real world modeling. | [mask2real-wm-2026.md](paper_reads/D_vla_world_action_models/mask2real-wm-2026.md) |
-| Lift3D-VLA | D | Adds explicit current/future 3D geometry and temporally structured actions to VLA manipulation. | [lift3d-vla-2026.md](paper_reads/D_vla_world_action_models/lift3d-vla-2026.md) |
-| LingBot-VA 2.0 | D | Native causal video-action pretraining with sparse MoE scaling and asynchronous closed-loop control. | [lingbot-va-2-2026.md](paper_reads/D_vla_world_action_models/lingbot-va-2-2026.md) |
+| Self in Space / SIS-Bench | C | Evaluates spatial cognition together with UAV self-motion awareness across perception, memory, and reasoning. | [self-in-space-2026.md](paper_reads/C_spatial_intelligence/self-in-space-2026.md) |
+| RBench + RoVid-X | E | Couples embodied video-generation evaluation with a public leaderboard and 4M-clip robot-video corpus. | [rethinking-embodied-video-generation-2026.md](paper_reads/E_evaluation_data_infrastructure/rethinking-embodied-video-generation-2026.md) |
 
 ### 全量收录状态
 
@@ -34,9 +32,9 @@
 |---|---:|---|
 | A. Executable World Representation | 10 | SceneFun3D, BEHAVIOR-1K, PhysX-Omni, PhysDreamer, Feature Splatting, PhysX-Anything, SimuScene, REST3D, SceneCode ... |
 | B. Interactive Generation and PCG | 13 | PhyScene, RoboGen, Steerable Scene Generation, SAGE, EmbodiedGen, EmbodiedGen V2, Image2Sim, Holodeck, Infinigen Indoors, SceneSmith ... |
-| C. Spatial Intelligence | 13 | SpatialBot, HiSpatial, SpaceTools, Ego3D-Bench / Ego3D-VLM, Seeing Across Views / MV-RoboBench, ESI-Bench, SpatialVLA, DepthVLA, ST-VLA ... |
+| C. Spatial Intelligence | 14 | SpatialBot, HiSpatial, SpaceTools, Ego3D-Bench / Ego3D-VLM, Seeing Across Views / MV-RoboBench, ESI-Bench, SIS-Bench, SpatialVLA ... |
 | D. VLA and World-Action Models | 20 | Octo, OpenVLA, pi0, VLA-R1, World Action Models, Mask2Real-WM, Lift3D-VLA, LingBot-VA 2.0, Cosmos 3 ... |
-| E. Evaluation and Data Infrastructure | 19 | EWMBench, WorldScore, RoboVerse, OpenEQA, WorldArena, WorldArena 2.0, World-in-World, Ctrl-World, vla-eval ... |
+| E. Evaluation and Data Infrastructure | 20 | EWMBench, WorldScore, RoboVerse, OpenEQA, RBench/RoVid-X, WorldArena, WorldArena 2.0, World-in-World ... |
 
 ## 研究树
 

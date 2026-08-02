@@ -1,0 +1,17 @@
+{
+  "run_id": "2026-08-03",
+  "created_at": "2026-08-03",
+  "branches": ["A", "B", "C", "D", "E"],
+  "minimum_year": 2024,
+  "search_windows": {"default_days": 14, "high_priority_days": 45},
+  "branch_queries": {
+    "A": ["simulation-ready physical 3D representation embodied AI 2026"],
+    "B": ["interactive world generation PCG embodied AI July August 2026"],
+    "C": ["spatial intelligence embodied UAV benchmark July 2026"],
+    "D": ["vision-language-action world-action robot model July August 2026"],
+    "E": ["robot video world model evaluation dataset benchmark 2026"]
+  },
+  "known_registry_path": "data/papers.seed.json",
+  "follow_sources_path": "data/follow_sources.seed.json",
+  "harness_paths": ["harness/system_harness.md", "harness/acceptance_harness.md"]
+}

@@ -1,0 +1,17 @@
+{
+  "run_id": "2026-08-03",
+  "visual_cards": [
+    {"candidate_id":"CAND-0001","visual_materials":["official task figures","six representative UAV video selectors","benchmark construction figure","full results tables"],"inspected_modalities":["project_page","official_figures","video","dataset_card"],"visual_quality_score":0,"visual_quality_decision":"not_applicable","visual_notes":"This is evaluation infrastructure; official samples establish task validity, but generative visual quality is not an acceptance criterion.","failure_modes":["Multiple-choice format","aerial-domain concentration"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0002","visual_materials":["official teaser","task-wise comparisons","embodiment-wise comparisons","automatic failure examples","demo video","leaderboard"],"inspected_modalities":["project_page","official_figures","video","qualitative_gallery","leaderboard"],"visual_quality_score":4,"visual_quality_decision":"strong","visual_notes":"Official comparisons visibly cover physical violations, quantity anomalies, subject stability, and task adherence across diverse embodiments.","failure_modes":["Curated official examples","dataset aggregation bias","author affiliation conflict disclosed"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0003","visual_materials":["paper figures only"],"inspected_modalities":["paper_figures"],"visual_quality_score":1,"visual_quality_decision":"undecided","visual_notes":"The VLA/world-action claims depend on physical execution quality, but no sufficiently inspectable official demo surface was found.","failure_modes":["No verified official video gallery","no public code/checkpoint","reported metrics alone cannot establish execution quality"],"needs_human_decision":true,"undecided_reason":"Human should inspect the paper supplementary material or an official release and judge real-robot diversity, contact quality, failures, and long-horizon consistency."}
+  ],
+  "quality_review": [
+    {"candidate_id":"CAND-0001","review_decision":"pass","issues":[],"required_fixes":[],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0002","review_decision":"pass","issues":["Scale and correlation are author-reported","potential affiliation conflict"],"required_fixes":["State both caveats in deep dive"],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0003","review_decision":"block","issues":["Visual/demo quality undecided"],"required_fixes":["Human inspection of official supplementary demos or release"],"accepted_for_registry":false},
+    {"candidate_id":"CAND-0004","review_decision":"block","issues":["Impact prior below 3","release maturity not verified"],"required_fixes":[],"accepted_for_registry":false},
+    {"candidate_id":"CAND-0005","review_decision":"block","issues":["Impact prior below 3 for this registry run"],"required_fixes":[],"accepted_for_registry":false},
+    {"candidate_id":"CAND-0006","review_decision":"block","issues":["Impact prior below 3 and broad release not verified"],"required_fixes":[],"accepted_for_registry":false}
+  ],
+  "run_level_issues": ["Search indexing around the 2026-07-27 cutoff was incomplete; newly surfaced older 2026 primary sources were triaged explicitly rather than silently omitted."]
+}

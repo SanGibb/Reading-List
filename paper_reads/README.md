@@ -10,9 +10,9 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 |---|---|---|---|
 | A | `A_executable_world_representation/` | executable world structures, object parts, affordances, task predicates, and physical/deformable state | 10 |
 | B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 13 |
-| C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 13 |
+| C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 14 |
 | D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 20 |
-| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 19 |
+| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 20 |
 
 ## Current Reports
 
@@ -54,6 +54,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | ESPIRE | C | [espire-2026.md](C_spatial_intelligence/espire-2026.md) |
 | SpatialAct: Probing Spatial Reasoning-to-Action Capabilities of Vision-Language Models in 3D Scenes | C | [spatialact-2026.md](C_spatial_intelligence/spatialact-2026.md) |
 | ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop | C | [esi-bench-2026.md](C_spatial_intelligence/esi-bench-2026.md) |
+| Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence | C | [self-in-space-2026.md](C_spatial_intelligence/self-in-space-2026.md) |
 | Octo | D | [octo-2024.md](D_vla_world_action_models/octo-2024.md) |
 | OpenVLA | D | [openvla-2024.md](D_vla_world_action_models/openvla-2024.md) |
 | pi0 | D | [pi0-2024.md](D_vla_world_action_models/pi0-2024.md) |
@@ -93,3 +94,4 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | WorldMark: A Unified Benchmark Suite for Interactive Video World Models | E | [worldmark-2026.md](E_evaluation_data_infrastructure/worldmark-2026.md) |
 | WorldOlympiad: Can Your World Model Survive a Triathlon? | E | [worldolympiad-2026.md](E_evaluation_data_infrastructure/worldolympiad-2026.md) |
 | WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models | E | [worldbench-2026.md](E_evaluation_data_infrastructure/worldbench-2026.md) |
+| Rethinking Video Generation Model for the Embodied World | E | [rethinking-embodied-video-generation-2026.md](E_evaluation_data_infrastructure/rethinking-embodied-video-generation-2026.md) |
