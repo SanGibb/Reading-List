@@ -13,3 +13,4 @@ Deep dives for papers about 3D reasoning, multi-view understanding, spatial VLMs
 - [DepthVLA: Enhancing Vision-Language-Action Models with Depth-Aware Spatial Reasoning](depthvla-2025.md)
 - [ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding for General Robot Manipulation](st-vla-2026.md)
 - [SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning](spatialstack-2026.md)
+- [Point-It-Out: Benchmarking Embodied Reasoning in Multi-Stage Visual Grounding](point-it-out-2025.md)

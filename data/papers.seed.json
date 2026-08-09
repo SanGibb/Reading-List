@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "updated": "2026-08-03",
+  "updated": "2026-08-10",
   "branches": [
     {
       "id": "A",
@@ -691,6 +691,24 @@
           "visual_quality_decision": "not_applicable",
           "visual_inspection_status": "verified_2026_08_03",
           "deep_dive_path": "paper_reads/C_spatial_intelligence/self-in-space-2026.md"
+        },
+        {
+          "title": "Point-It-Out: Benchmarking Embodied Reasoning for Vision Language Models in Multi-Stage Visual Grounding",
+          "year": 2025,
+          "venue": "TMLR 2026 / arXiv",
+          "url": "https://arxiv.org/abs/2509.25794",
+          "data": "600+ human-annotated box, point, and visual-trace QA pairs across household, kitchen, driving, and robot manipulation scenarios",
+          "method": "three-stage pixel-level benchmark for referred-object localization, task-driven pointing, and visual trace prediction",
+          "task": "evaluate whether VLMs convert embodied reasoning into precise spatial grounding and action traces",
+          "novelty": "replaces indirect multiple-choice embodied reasoning tests with a hierarchical box-to-point-to-trajectory grounding protocol",
+          "source_quality": "primary_or_official",
+          "demo_score": 3,
+          "evidence_strength": 4,
+          "project_relevance": "Provides reusable GroundingStage, TargetBox, ActionPoint, and VisualTrace fields for spatial-to-action evaluation.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "visual_inspection_status": "verified_2026_08_10",
+          "deep_dive_path": "paper_reads/C_spatial_intelligence/point-it-out-2025.md"
         }
       ]
     },
@@ -1057,6 +1075,78 @@
           "visual_quality_decision": "strong",
           "visual_inspection_status": "verified_2026_07_27",
           "deep_dive_path": "paper_reads/D_vla_world_action_models/lingbot-va-2-2026.md"
+        },
+        {
+          "title": "VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model",
+          "year": 2026,
+          "venue": "arXiv / LeRobot integration",
+          "url": "https://arxiv.org/abs/2602.10098",
+          "data": "SSV2, DROID, BridgeV2, LIBERO, LIBERO-Plus, SimplerEnv, and real-world manipulation tasks",
+          "method": "leakage-free JEPA future-latent prediction from current-only observations followed by VLA action-head fine-tuning",
+          "task": "language-conditioned manipulation with training-time latent world-model supervision and direct inference-time action prediction",
+          "novelty": "learns action-relevant future states without pixel prediction, future-input leakage, or an inference-time world-model branch",
+          "source_quality": "primary_or_official",
+          "demo_score": 4,
+          "evidence_strength": 4,
+          "project_relevance": "Clean baseline for FutureLatentTarget, LeakageGuard, ActionHead, and TrainingOnlyWorldModel design.",
+          "visual_quality_score": 3,
+          "visual_quality_decision": "adequate",
+          "visual_inspection_status": "verified_2026_08_10",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/vla-jepa-2026.md"
+        },
+        {
+          "title": "Geometry-aware 4D Video Generation for Robot Manipulation",
+          "year": 2025,
+          "venue": "ICLR 2026",
+          "url": "https://arxiv.org/abs/2507.01099",
+          "data": "multi-view RGB-D manipulation sequences with pointmaps, robot poses, simulated tasks, and real-world examples",
+          "method": "dual-view video diffusion with cross-attention and pointmap supervision followed by off-the-shelf 6-DoF pose tracking",
+          "task": "generate geometrically aligned future RGB-D videos and recover executable end-effector trajectories",
+          "novelty": "combines temporal generation with cross-view metric geometry so generated futures can drive downstream robot manipulation",
+          "source_quality": "primary_or_official",
+          "demo_score": 5,
+          "evidence_strength": 5,
+          "project_relevance": "Direct reference for CameraView, DepthFrame, PointMap, CrossViewCorrespondence, and EndEffectorPose.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_2026_08_10",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/geometry-aware-4d-video-generation-2025.md"
+        },
+        {
+          "title": "GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2605.22882",
+          "data": "DROID, RLBench, Bridge, RT-1, and real UF ARM manipulation tasks",
+          "method": "dense 4D correspondence distillation into a video DiT followed by adaptive grounding, tracking correction, and inverse kinematics",
+          "task": "generate geometry-consistent future videos and convert them into executable simulated and real robot trajectories",
+          "novelty": "uses a geometry teacher only during training to improve rollout correspondence without extra inference cost",
+          "source_quality": "primary_or_official",
+          "demo_score": 3,
+          "evidence_strength": 4,
+          "project_relevance": "Strong source for GeometryTeacher, CorrespondenceField, TrackingCorrection, and InverseKinematics fields.",
+          "visual_quality_score": 3,
+          "visual_quality_decision": "adequate",
+          "visual_inspection_status": "verified_2026_08_10",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/gem-4d-2026.md"
+        },
+        {
+          "title": "ORV: 4D Occupancy-centric Robot Video Generation",
+          "year": 2025,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2506.03079",
+          "data": "ORV-Data plus BridgeV2, DROID, and RT-1 with 4D semantic occupancy, RGB video, robot actions, and multiple views",
+          "method": "Action-Expert AdaLN for chunked 7-DoF controls plus rendered 4D occupancy soft guidance in video diffusion",
+          "task": "generate controllable single- and multi-view robot videos for prediction, planning, policy learning, and sim-to-real augmentation",
+          "novelty": "uses dense semantic occupancy to bridge sparse robot controls and pixel generation while supporting multiview consistency",
+          "source_quality": "primary_or_official",
+          "demo_score": 4,
+          "evidence_strength": 4,
+          "project_relevance": "Provides reusable ActionChunk, SemanticOccupancy4D, ViewSet, SimToRealTransfer, and ControlAlignment fields.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_2026_08_10",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/orv-2025.md"
         }
       ]
     },
@@ -1426,6 +1516,24 @@
           "visual_quality_decision": "strong",
           "visual_inspection_status": "verified_2026_08_03",
           "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/rethinking-embodied-video-generation-2026.md"
+        },
+        {
+          "title": "MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation",
+          "year": 2026,
+          "venue": "arXiv / official Ai2 release",
+          "url": "https://arxiv.org/abs/2602.11337",
+          "data": "230K+ indoor environments, 130K objects, 48K manipulable objects, 42M stable grasps, and eight benchmark tasks",
+          "method": "simulator-agnostic scene and asset normalization, grasp generation, task configuration, rollout, and evaluation for MuJoCo, Isaac, and ManiSkill",
+          "task": "train and evaluate navigation, static/mobile manipulation, and multi-room policies under controlled long-tail variation",
+          "novelty": "unifies very large scene, object, grasp, task, adapter, and benchmark resources in one open cross-simulator ecosystem",
+          "source_quality": "primary_or_official",
+          "demo_score": 5,
+          "evidence_strength": 5,
+          "project_relevance": "Direct executable-world source for SceneFamily, ObjectAsset, StableGrasp, SimulatorAdapter, and TaskConfig schemas.",
+          "visual_quality_score": 3,
+          "visual_quality_decision": "adequate",
+          "visual_inspection_status": "verified_2026_08_10",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/molmospaces-2026.md"
         }
       ]
     }

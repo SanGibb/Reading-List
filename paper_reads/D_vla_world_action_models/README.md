@@ -18,3 +18,7 @@ Deep dives for papers about vision-language-action models, robot foundation poli
 - [Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models](mask2real-wm-2026.md)
 - [Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation](lift3d-vla-2026.md)
 - [Native Video-Action Pretraining for Generalizable Robot Control](lingbot-va-2-2026.md)
+- [VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model](vla-jepa-2026.md)
+- [Geometry-aware 4D Video Generation for Robot Manipulation](geometry-aware-4d-video-generation-2025.md)
+- [GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation](gem-4d-2026.md)
+- [ORV: 4D Occupancy-centric Robot Video Generation](orv-2025.md)

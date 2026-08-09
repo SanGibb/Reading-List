@@ -20,3 +20,4 @@ Deep dives for papers about embodied/world benchmarks, robot data infrastructure
 - [WorldMark: A Unified Benchmark Suite for Interactive Video World Models](worldmark-2026.md)
 - [WorldOlympiad: Can Your World Model Survive a Triathlon?](worldolympiad-2026.md)
 - [WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models](worldbench-2026.md)
+- [MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation](molmospaces-2026.md)

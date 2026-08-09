@@ -1,0 +1,21 @@
+{
+ "run_id":"2026-08-10",
+ "visual_cards":[
+  {"candidate_id":"CAND-0001","visual_materials":["https://allenai.github.io/molmospaces/","https://molmospaces.allen.ai/"],"inspected_modalities":["project_page","interactive_demo","paper_figures","screenshots"],"visual_quality_score":3,"visual_quality_decision":"adequate","visual_notes":"Official browser and figures show diverse executable scenes and interactions; sufficient for infrastructure acceptance.","failure_modes":["curated snapshot","asset quality variance"],"needs_human_decision":false,"undecided_reason":""},
+  {"candidate_id":"CAND-0002","visual_materials":["https://ginwind.github.io/VLA-JEPA/","https://github.com/ginwind/VLA-JEPA"],"inspected_modalities":["project_page","paper_figures","robot_rollouts","code"],"visual_quality_score":3,"visual_quality_decision":"adequate","visual_notes":"Manipulation rollouts and benchmark evidence are task-relevant; partial training code is a reproducibility limitation, not a visual blocker.","failure_modes":["selected rollouts","partial release"],"needs_human_decision":false,"undecided_reason":""},
+  {"candidate_id":"CAND-0003","visual_materials":["https://research.nvidia.com/labs/cosmos-lab/pio/","https://openreview.net/forum?id=9e0hRhFsal"],"inspected_modalities":["project_page","paper_figures","screenshots"],"visual_quality_score":0,"visual_quality_decision":"not_applicable","visual_notes":"Benchmark quality rests on annotation and diagnostic design, not generated visuals.","failure_modes":[],"needs_human_decision":false,"undecided_reason":""},
+  {"candidate_id":"CAND-0004","visual_materials":["https://robot4dgen.github.io/"],"inspected_modalities":["project_page","paper_figures","video","rgb_depth","robot_rollouts"],"visual_quality_score":4,"visual_quality_decision":"strong","visual_notes":"Extensive paired RGB/depth futures, unseen-view tasks, baseline failures, and real results convincingly support geometric utility.","failure_modes":["compressed depth video","limited real task diversity"],"needs_human_decision":false,"undecided_reason":""},
+  {"candidate_id":"CAND-0005","visual_materials":["https://gem-4d.github.io/"],"inspected_modalities":["project_page","paper_figures","video_gallery","real_robot"],"visual_quality_score":3,"visual_quality_decision":"adequate","visual_notes":"Diverse generated rollouts and paired real executions are relevant and coherent enough; missing code caps confidence.","failure_modes":["selected successes","no public code"],"needs_human_decision":false,"undecided_reason":""},
+  {"candidate_id":"CAND-0006","visual_materials":["https://orangesodahub.github.io/ORV/"],"inspected_modalities":["project_page","paper_figures","video","multiview_gallery","sim_to_real"],"visual_quality_score":4,"visual_quality_decision":"strong","visual_notes":"Large prediction/GT, three-view, and augmentation galleries across three datasets provide broad visual coverage.","failure_modes":["320x480 display","long-horizon drift unclear"],"needs_human_decision":false,"undecided_reason":""}
+ ],
+ "quality_review":[
+  {"candidate_id":"CAND-0001","review_decision":"pass","issues":["MuJoCo-first benchmark maturity"],"required_fixes":[],"accepted_for_registry":true},
+  {"candidate_id":"CAND-0002","review_decision":"pass","issues":["partial training release"],"required_fixes":[],"accepted_for_registry":true},
+  {"candidate_id":"CAND-0003","review_decision":"pass","issues":["modest scale","no verified standalone evaluator code"],"required_fixes":[],"accepted_for_registry":true},
+  {"candidate_id":"CAND-0004","review_decision":"pass","issues":["calibrated RGB-D requirement"],"required_fixes":[],"accepted_for_registry":true},
+  {"candidate_id":"CAND-0005","review_decision":"pass","issues":["no public code"],"required_fixes":[],"accepted_for_registry":true},
+  {"candidate_id":"CAND-0006","review_decision":"pass","issues":["occupancy cost","modest downstream gains"],"required_fixes":[],"accepted_for_registry":true},
+  {"candidate_id":"CAND-0007","review_decision":"block","issues":["release-level artifact rather than standalone paper"],"required_fixes":["Track underlying papers individually"],"accepted_for_registry":false}
+ ],
+ "run_level_issues":["All numerical gains remain source-reported; no local model reproduction was attempted."]
+}
