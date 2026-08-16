@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-08-17",
+  "created_at": "2026-08-17",
+  "branches": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "minimum_year": 2024,
+  "search_windows": {
+    "default_days": 14,
+    "high_priority_days": 45
+  },
+  "branch_queries": {
+    "A": ["simulation-ready assets", "executable 3D worlds", "physical world representation"],
+    "B": ["interactive world generation", "agentic PCG", "camera-controllable world model"],
+    "C": ["embodied spatial intelligence", "3D grounding", "active perception benchmark"],
+    "D": ["vision-language-action", "world-action model", "latent world model robot"],
+    "E": ["embodied benchmark", "world-model evaluation", "long-horizon world-model dataset"]
+  },
+  "known_registry_path": "data/papers.seed.json",
+  "follow_sources_path": "data/follow_sources.seed.json",
+  "harness_paths": [
+    "harness/system_harness.md",
+    "harness/acceptance_harness.md"
+  ]
+}

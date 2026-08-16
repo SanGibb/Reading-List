@@ -9,26 +9,26 @@
 | 内容 | 入口 |
 |---|---|
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
-| 最新扩库摘要 | [reports/2026-08-10-expansion.md](reports/2026-08-10-expansion.md) |
-| 当前已收录精读 | 83 篇，见 [paper_reads/README.md](paper_reads/README.md) |
+| 最新扩库摘要 | [reports/2026-08-17-expansion.md](reports/2026-08-17-expansion.md) |
+| 当前已收录精读 | 89 篇，见 [paper_reads/README.md](paper_reads/README.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。通过筛选的候选应全部加入，不做固定 top-k 抽样。
 
 ## 本周更新内容
 
-本轮扩库日期：2026-08-10。完整审计摘要见 [reports/2026-08-10-expansion.md](reports/2026-08-10-expansion.md)。
+本轮扩库日期：2026-08-17。完整审计摘要见 [reports/2026-08-17-expansion.md](reports/2026-08-17-expansion.md)。
 
 ### 重点新增与补齐
 
 | Paper | Branch | 简要说明 | 精读 |
 |---|---|---|---|
-| Point-It-Out | C | Pixel-level localization, affordance pointing, and action-trace benchmark. | [point-it-out-2025.md](paper_reads/C_spatial_intelligence/point-it-out-2025.md) |
-| VLA-JEPA | D | Leakage-free latent world supervision for VLA learning. | [vla-jepa-2026.md](paper_reads/D_vla_world_action_models/vla-jepa-2026.md) |
-| Geometry-aware 4D Video Generation | D | Multi-view RGB-D futures converted into 6-DoF actions. | [geometry-aware-4d-video-generation-2025.md](paper_reads/D_vla_world_action_models/geometry-aware-4d-video-generation-2025.md) |
-| GEM-4D | D | Correspondence-distilled video world model with adaptive inverse dynamics. | [gem-4d-2026.md](paper_reads/D_vla_world_action_models/gem-4d-2026.md) |
-| ORV | D | Occupancy/action-conditioned multi-view robot video generation. | [orv-2025.md](paper_reads/D_vla_world_action_models/orv-2025.md) |
-| MolmoSpaces | E | Cross-simulator scenes, objects, grasps, tasks, and benchmark infrastructure. | [molmospaces-2026.md](paper_reads/E_evaluation_data_infrastructure/molmospaces-2026.md) |
+| G0.5 | D | Unified autoregressive reasoning and cross-embodiment action stream. | [g05-2026.md](paper_reads/D_vla_world_action_models/g05-2026.md) |
+| StellaVLA | D | Structured in-context demonstrations for OOD VLA adaptation. | [stellavla-2026.md](paper_reads/D_vla_world_action_models/stellavla-2026.md) |
+| SLIM-0.5B | D | Compact action-grounded predictive latent policy. | [slim-0-5b-2026.md](paper_reads/D_vla_world_action_models/slim-0-5b-2026.md) |
+| World Tokens | D | Training-time video world modeling with VLA-level deployment. | [world-tokens-2026.md](paper_reads/D_vla_world_action_models/world-tokens-2026.md) |
+| JEPA-WAM | D | Dense joint-embedding world-action learning. | [jepa-wam-2026.md](paper_reads/D_vla_world_action_models/jepa-wam-2026.md) |
+| Sekai2 | E | Long-horizon trajectory/caption data with loop-and-revisit supervision. | [sekai2-2026.md](paper_reads/E_evaluation_data_infrastructure/sekai2-2026.md) |
 
 ### 全量收录状态
 
@@ -37,8 +37,8 @@
 | A. Executable World Representation | 10 | SceneFun3D, BEHAVIOR-1K, PhysX-Omni, PhysDreamer, Feature Splatting, PhysX-Anything, SimuScene, REST3D, SceneCode ... |
 | B. Interactive Generation and PCG | 13 | PhyScene, RoboGen, Steerable Scene Generation, SAGE, EmbodiedGen, EmbodiedGen V2, Image2Sim, Holodeck, Infinigen Indoors, SceneSmith ... |
 | C. Spatial Intelligence | 15 | SpatialBot, HiSpatial, SpaceTools, Point-It-Out, ESI-Bench, SIS-Bench, SpatialVLA ... |
-| D. VLA and World-Action Models | 24 | Octo, OpenVLA, VLA-JEPA, Geometry-aware 4D, GEM-4D, ORV, Cosmos 3 ... |
-| E. Evaluation and Data Infrastructure | 21 | MolmoSpaces, EWMBench, WorldScore, RoboVerse, OpenEQA, RBench/RoVid-X, WorldArena ... |
+| D. VLA and World-Action Models | 29 | Octo, OpenVLA, G0.5, StellaVLA, SLIM, World Tokens, JEPA-WAM, Cosmos 3 ... |
+| E. Evaluation and Data Infrastructure | 22 | Sekai2, MolmoSpaces, EWMBench, WorldScore, RoboVerse, OpenEQA, WorldArena ... |
 
 ## 研究树
 

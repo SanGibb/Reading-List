@@ -11,8 +11,8 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | A | `A_executable_world_representation/` | executable world structures, object parts, affordances, task predicates, and physical/deformable state | 10 |
 | B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 13 |
 | C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 15 |
-| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 24 |
-| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 21 |
+| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 29 |
+| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 22 |
 
 ## Current Reports
 
@@ -80,6 +80,11 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | Geometry-aware 4D Video Generation for Robot Manipulation | D | [geometry-aware-4d-video-generation-2025.md](D_vla_world_action_models/geometry-aware-4d-video-generation-2025.md) |
 | GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation | D | [gem-4d-2026.md](D_vla_world_action_models/gem-4d-2026.md) |
 | ORV: 4D Occupancy-centric Robot Video Generation | D | [orv-2025.md](D_vla_world_action_models/orv-2025.md) |
+| G0.5: One Autoregressive Stream for Robot Reasoning and Action | D | [g05-2026.md](D_vla_world_action_models/g05-2026.md) |
+| StellaVLA | D | [stellavla-2026.md](D_vla_world_action_models/stellavla-2026.md) |
+| SLIM-0.5B | D | [slim-0-5b-2026.md](D_vla_world_action_models/slim-0-5b-2026.md) |
+| World Tokens | D | [world-tokens-2026.md](D_vla_world_action_models/world-tokens-2026.md) |
+| JEPA-WAM | D | [jepa-wam-2026.md](D_vla_world_action_models/jepa-wam-2026.md) |
 | EWMBench | E | [ewmbench-2025.md](E_evaluation_data_infrastructure/ewmbench-2025.md) |
 | WorldScore | E | [worldscore-2025.md](E_evaluation_data_infrastructure/worldscore-2025.md) |
 | RoboVerse | E | [roboverse-2025.md](E_evaluation_data_infrastructure/roboverse-2025.md) |
@@ -101,3 +106,4 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models | E | [worldbench-2026.md](E_evaluation_data_infrastructure/worldbench-2026.md) |
 | Rethinking Video Generation Model for the Embodied World | E | [rethinking-embodied-video-generation-2026.md](E_evaluation_data_infrastructure/rethinking-embodied-video-generation-2026.md) |
 | MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation | E | [molmospaces-2026.md](E_evaluation_data_infrastructure/molmospaces-2026.md) |
+| Sekai2: From World Exploration to Interactive World Modeling | E | [sekai2-2026.md](E_evaluation_data_infrastructure/sekai2-2026.md) |

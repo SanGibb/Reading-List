@@ -1,0 +1,22 @@
+{
+  "run_id":"2026-08-17",
+  "visual_cards":[
+    {"candidate_id":"CAND-0001","visual_materials":["official project videos","paper figures"],"inspected_modalities":["video","figures","real robot"],"visual_quality_score":4,"visual_quality_decision":"strong","visual_notes":"Broad, legible real/sim rollouts with failures.","failure_modes":["appliance/cabinet underrepresentation","AR latency"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0002","visual_materials":["official paper","project link"],"inspected_modalities":["figures","real robot","XR"],"visual_quality_score":3,"visual_quality_decision":"adequate","visual_notes":"Cross-embodiment examples support the claim; gallery breadth is moderate.","failure_modes":["retrieval mismatch"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0003","visual_materials":["official project","rendered PDF"],"inspected_modalities":["architecture","plots","real robot"],"visual_quality_score":3,"visual_quality_decision":"adequate","visual_notes":"Architecture and physical results are judgeable.","failure_modes":["semantic capacity tradeoff"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0004","visual_materials":["rendered official PDF"],"inspected_modalities":["architecture","plots","real robot"],"visual_quality_score":3,"visual_quality_decision":"adequate","visual_notes":"Physical evidence is adequate for a policy paper; generated futures are training-only.","failure_modes":["no public code"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0005","visual_materials":["official project","rendered PDF"],"inspected_modalities":["architecture","plots","real robot"],"visual_quality_score":3,"visual_quality_decision":"adequate","visual_notes":"Dense-latent architecture and bimanual evidence are clear.","failure_modes":["representation dependency"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0006","visual_materials":["paper corpus statistics"],"inspected_modalities":["tables","trajectory examples"],"visual_quality_score":0,"visual_quality_decision":"not_applicable","visual_notes":"Dataset acceptance rests on corpus evidence, not generation quality.","failure_modes":["pose noise","licensing bias"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0007","visual_materials":["arXiv PDF retrieval"],"inspected_modalities":["metadata","partial PDF"],"visual_quality_score":0,"visual_quality_decision":"undecided","visual_notes":"Stable long-session qualitative evidence was not available to judge drift and responsiveness.","failure_modes":["geometry drift","identity drift","memory retrieval errors"],"needs_human_decision":true,"undecided_reason":"Generation-heavy candidate lacks confidently inspectable official demo."}
+  ],
+  "quality_review":[
+    {"candidate_id":"CAND-0001","review_decision":"pass","issues":[],"required_fixes":[],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0002","review_decision":"pass","issues":["leaderboard is time-sensitive"],"required_fixes":[],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0003","review_decision":"pass","issues":["code status unverified"],"required_fixes":[],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0004","review_decision":"pass","issues":["no standalone project/code located"],"required_fixes":[],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0005","review_decision":"pass","issues":["source-reported metrics"],"required_fixes":[],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0006","review_decision":"pass","issues":["access/license needs follow-up"],"required_fixes":[],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0007","review_decision":"block","issues":["mandatory visual gate unresolved"],"required_fixes":["human inspection of stable official long-session demo"],"accepted_for_registry":false}
+  ],
+  "run_level_issues":["Current-week arXiv candidates are source-reported and not independently reproduced.","Alaya-EVOKE remains local-only pending visual judgment."]
+}
