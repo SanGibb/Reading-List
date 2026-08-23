@@ -22,3 +22,5 @@ Deep dives for papers about vision-language-action models, robot foundation poli
 - [Geometry-aware 4D Video Generation for Robot Manipulation](geometry-aware-4d-video-generation-2025.md)
 - [GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation](gem-4d-2026.md)
 - [ORV: 4D Occupancy-centric Robot Video Generation](orv-2025.md)
+- [ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment](abot-physworld-2026.md)
+- [PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation](paiworld-2026.md)

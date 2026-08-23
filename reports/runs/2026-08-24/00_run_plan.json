@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-08-24",
+  "created_at": "2026-08-24",
+  "branches": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "minimum_year": 2024,
+  "search_windows": {
+    "default_days": 14,
+    "high_priority_days": 45
+  },
+  "branch_queries": {
+    "A": ["2024+ executable physical world representations", "simulation-ready 3D assets and dynamics"],
+    "B": ["2024+ interactive 3D world generation PCG", "action-conditioned dynamic scene generation"],
+    "C": ["2024+ embodied spatial intelligence benchmarks", "physical and multi-view spatial reasoning"],
+    "D": ["2024+ VLA and action-conditioned robot world models", "multi-view world-action models"],
+    "E": ["2024+ physical AI and embodied world-model evaluation", "robot world-model datasets and leaderboards"]
+  },
+  "known_registry_path": "data/papers.seed.json",
+  "follow_sources_path": "data/follow_sources.seed.json",
+  "harness_paths": [
+    "harness/system_harness.md",
+    "harness/acceptance_harness.md"
+  ]
+}

@@ -8,11 +8,11 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 
 | Branch | Directory | Focus | Count |
 |---|---|---|---|
-| A | `A_executable_world_representation/` | executable world structures, object parts, affordances, task predicates, and physical/deformable state | 10 |
-| B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 13 |
+| A | `A_executable_world_representation/` | executable world structures, object parts, affordances, task predicates, and physical/deformable state | 11 |
+| B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 14 |
 | C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 15 |
-| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 29 |
-| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 22 |
+| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 31 |
+| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 25 |
 
 ## Current Reports
 
@@ -28,6 +28,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | REST3D | A | [rest3d-2026.md](A_executable_world_representation/rest3d-2026.md) |
 | TriSplat | A | [trisplat-2026.md](A_executable_world_representation/trisplat-2026.md) |
 | SceneCode: Editable Indoor Scene Generation using Executable World Programs | A | [scenecode-2026.md](A_executable_world_representation/scenecode-2026.md) |
+| WonderPlay: Dynamic 3D Scene Generation from a Single Image and Actions | A | [wonderplay-2025.md](A_executable_world_representation/wonderplay-2025.md) |
 | PhyScene | B | [physcene-2024.md](B_interactive_generation_pcg/physcene-2024.md) |
 | RoboGen | B | [robogen-2024.md](B_interactive_generation_pcg/robogen-2024.md) |
 | Steerable Scene Generation | B | [steerable-scene-generation-2025.md](B_interactive_generation_pcg/steerable-scene-generation-2025.md) |
@@ -41,6 +42,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | SimWorld Studio: Generation and Evolution of Custom Embodied Agent Learning Environments | B | [simworld-studio-2026.md](B_interactive_generation_pcg/simworld-studio-2026.md) |
 | EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI | B | [embodiedgen-v2-2026.md](B_interactive_generation_pcg/embodiedgen-v2-2026.md) |
 | Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator | B | [image2sim-2026.md](B_interactive_generation_pcg/image2sim-2026.md) |
+| WonderWorld: Interactive 3D Scene Generation from a Single Image | B | [wonderworld-2024.md](B_interactive_generation_pcg/wonderworld-2024.md) |
 | SpatialBot | C | [spatialbot-2024.md](C_spatial_intelligence/spatialbot-2024.md) |
 | HiSpatial | C | [hispatial-2026.md](C_spatial_intelligence/hispatial-2026.md) |
 | SpaceTools | C | [spacetools-2026.md](C_spatial_intelligence/spacetools-2026.md) |
@@ -85,6 +87,8 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | SLIM-0.5B | D | [slim-0-5b-2026.md](D_vla_world_action_models/slim-0-5b-2026.md) |
 | World Tokens | D | [world-tokens-2026.md](D_vla_world_action_models/world-tokens-2026.md) |
 | JEPA-WAM | D | [jepa-wam-2026.md](D_vla_world_action_models/jepa-wam-2026.md) |
+| ABot-PhysWorld | D | [abot-physworld-2026.md](D_vla_world_action_models/abot-physworld-2026.md) |
+| PAIWorld | D | [paiworld-2026.md](D_vla_world_action_models/paiworld-2026.md) |
 | EWMBench | E | [ewmbench-2025.md](E_evaluation_data_infrastructure/ewmbench-2025.md) |
 | WorldScore | E | [worldscore-2025.md](E_evaluation_data_infrastructure/worldscore-2025.md) |
 | RoboVerse | E | [roboverse-2025.md](E_evaluation_data_infrastructure/roboverse-2025.md) |
@@ -107,3 +111,6 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | Rethinking Video Generation Model for the Embodied World | E | [rethinking-embodied-video-generation-2026.md](E_evaluation_data_infrastructure/rethinking-embodied-video-generation-2026.md) |
 | MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation | E | [molmospaces-2026.md](E_evaluation_data_infrastructure/molmospaces-2026.md) |
 | Sekai2: From World Exploration to Interactive World Modeling | E | [sekai2-2026.md](E_evaluation_data_infrastructure/sekai2-2026.md) |
+| PBench | E | [pbench-2025.md](E_evaluation_data_infrastructure/pbench-2025.md) |
+| PAI-Bench | E | [pai-bench-2025.md](E_evaluation_data_infrastructure/pai-bench-2025.md) |
+| PhysBench | E | [physbench-2025.md](E_evaluation_data_infrastructure/physbench-2025.md) |

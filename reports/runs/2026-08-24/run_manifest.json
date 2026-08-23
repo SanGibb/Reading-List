@@ -1,0 +1,14 @@
+{
+  "run_id": "2026-08-24",
+  "status": "validated",
+  "created_artifacts": [
+    "00_run_plan.json",
+    "01_discovery.json",
+    "02_evidence.json",
+    "03_review.json",
+    "04_editor_report.md",
+    "05_registry_patch.json"
+  ],
+  "created_directories": [],
+  "validation": "passed_strict_require_undecided_dossiers"
+}

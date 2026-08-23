@@ -9,36 +9,37 @@
 | 内容 | 入口 |
 |---|---|
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
-| 最新扩库摘要 | [reports/2026-08-17-expansion.md](reports/2026-08-17-expansion.md) |
-| 当前已收录精读 | 89 篇，见 [paper_reads/README.md](paper_reads/README.md) |
+| 最新扩库摘要 | [reports/2026-08-24-expansion.md](reports/2026-08-24-expansion.md) |
+| 当前已收录精读 | 96 篇，见 [paper_reads/README.md](paper_reads/README.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。通过筛选的候选应全部加入，不做固定 top-k 抽样。
 
 ## 本周更新内容
 
-本轮扩库日期：2026-08-17。完整审计摘要见 [reports/2026-08-17-expansion.md](reports/2026-08-17-expansion.md)。
+本轮扩库日期：2026-08-24。完整审计摘要见 [reports/2026-08-24-expansion.md](reports/2026-08-24-expansion.md)。
 
 ### 重点新增与补齐
 
 | Paper | Branch | 简要说明 | 精读 |
 |---|---|---|---|
-| G0.5 | D | Unified autoregressive reasoning and cross-embodiment action stream. | [g05-2026.md](paper_reads/D_vla_world_action_models/g05-2026.md) |
-| StellaVLA | D | Structured in-context demonstrations for OOD VLA adaptation. | [stellavla-2026.md](paper_reads/D_vla_world_action_models/stellavla-2026.md) |
-| SLIM-0.5B | D | Compact action-grounded predictive latent policy. | [slim-0-5b-2026.md](paper_reads/D_vla_world_action_models/slim-0-5b-2026.md) |
-| World Tokens | D | Training-time video world modeling with VLA-level deployment. | [world-tokens-2026.md](paper_reads/D_vla_world_action_models/world-tokens-2026.md) |
-| JEPA-WAM | D | Dense joint-embedding world-action learning. | [jepa-wam-2026.md](paper_reads/D_vla_world_action_models/jepa-wam-2026.md) |
-| Sekai2 | E | Long-horizon trajectory/caption data with loop-and-revisit supervision. | [sekai2-2026.md](paper_reads/E_evaluation_data_infrastructure/sekai2-2026.md) |
+| WonderPlay | A | Hybrid multi-material physics plus generative 3D refinement. | [wonderplay-2025.md](paper_reads/A_executable_world_representation/wonderplay-2025.md) |
+| WonderWorld | B | Low-latency user-steered connected 3D generation. | [wonderworld-2024.md](paper_reads/B_interactive_generation_pcg/wonderworld-2024.md) |
+| ABot-PhysWorld | D | Open physics-aligned action-to-video robot world model. | [abot-physworld-2026.md](paper_reads/D_vla_world_action_models/abot-physworld-2026.md) |
+| PAIWorld | D | Geometry-aware multi-view robot future generation. | [paiworld-2026.md](paper_reads/D_vla_world_action_models/paiworld-2026.md) |
+| PBench | E | Physical-domain QA plus video-quality evaluation. | [pbench-2025.md](paper_reads/E_evaluation_data_infrastructure/pbench-2025.md) |
+| PAI-Bench | E | Unified Physical AI generation and understanding suite. | [pai-bench-2025.md](paper_reads/E_evaluation_data_infrastructure/pai-bench-2025.md) |
+| PhysBench | E | Broad physical-world understanding benchmark. | [physbench-2025.md](paper_reads/E_evaluation_data_infrastructure/physbench-2025.md) |
 
 ### 全量收录状态
 
 | Branch | Count | Anchor works |
 |---|---:|---|
-| A. Executable World Representation | 10 | SceneFun3D, BEHAVIOR-1K, PhysX-Omni, PhysDreamer, Feature Splatting, PhysX-Anything, SimuScene, REST3D, SceneCode ... |
-| B. Interactive Generation and PCG | 13 | PhyScene, RoboGen, Steerable Scene Generation, SAGE, EmbodiedGen, EmbodiedGen V2, Image2Sim, Holodeck, Infinigen Indoors, SceneSmith ... |
+| A. Executable World Representation | 11 | SceneFun3D, BEHAVIOR-1K, PhysX-Omni, PhysDreamer, WonderPlay, PhysX-Anything, SimuScene, REST3D, SceneCode ... |
+| B. Interactive Generation and PCG | 14 | PhyScene, RoboGen, WonderWorld, SAGE, EmbodiedGen, EmbodiedGen V2, Image2Sim, Holodeck, Infinigen Indoors, SceneSmith ... |
 | C. Spatial Intelligence | 15 | SpatialBot, HiSpatial, SpaceTools, Point-It-Out, ESI-Bench, SIS-Bench, SpatialVLA ... |
-| D. VLA and World-Action Models | 29 | Octo, OpenVLA, G0.5, StellaVLA, SLIM, World Tokens, JEPA-WAM, Cosmos 3 ... |
-| E. Evaluation and Data Infrastructure | 22 | Sekai2, MolmoSpaces, EWMBench, WorldScore, RoboVerse, OpenEQA, WorldArena ... |
+| D. VLA and World-Action Models | 31 | Octo, OpenVLA, ABot-PhysWorld, PAIWorld, G0.5, StellaVLA, SLIM, World Tokens, JEPA-WAM, Cosmos 3 ... |
+| E. Evaluation and Data Infrastructure | 25 | PBench, PAI-Bench, PhysBench, Sekai2, MolmoSpaces, EWMBench, WorldScore, RoboVerse, OpenEQA, WorldArena ... |
 
 ## 研究树
 

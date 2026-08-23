@@ -13,3 +13,4 @@ Deep dives for papers about executable world structures, object parts, affordanc
 - [SimuScene: Simulation-Ready Compositional 3D Scene Reconstruction from a Single Image](simuscene-2026.md)
 - [REST3D: Reconstructing Physically Stable 3D Scenes from a Single Image](rest3d-2026.md)
 - [TriSplat: Simulation-Ready Feed-Forward 3D Scene Reconstruction](trisplat-2026.md)
+- [WonderPlay: Dynamic 3D Scene Generation from a Single Image and Actions](wonderplay-2025.md)

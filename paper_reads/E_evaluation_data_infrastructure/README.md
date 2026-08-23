@@ -21,3 +21,6 @@ Deep dives for papers about embodied/world benchmarks, robot data infrastructure
 - [WorldOlympiad: Can Your World Model Survive a Triathlon?](worldolympiad-2026.md)
 - [WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models](worldbench-2026.md)
 - [MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation](molmospaces-2026.md)
+- [PBench: A Physical AI Benchmark for World Models](pbench-2025.md)
+- [PAI-Bench: A Comprehensive Benchmark For Physical AI](pai-bench-2025.md)
+- [PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding](physbench-2025.md)
