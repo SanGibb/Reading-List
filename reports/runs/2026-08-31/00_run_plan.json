@@ -1,0 +1,17 @@
+{
+  "run_id": "2026-08-31",
+  "created_at": "2026-08-31",
+  "branches": ["A", "B", "C", "D", "E"],
+  "minimum_year": 2024,
+  "search_windows": {"default_days": 14, "high_priority_days": 45},
+  "branch_queries": {
+    "A": ["August 2026 executable 3D world representation physics-ready simulation"],
+    "B": ["August 2026 interactive world generation procedural 4D embodied simulation"],
+    "C": ["August 2026 spatial intelligence 3D proxy embodied reasoning"],
+    "D": ["August 2026 VLA world-action model cross-embodiment robot"],
+    "E": ["August 2026 interactive world model benchmark memory probability action following"]
+  },
+  "known_registry_path": "data/papers.seed.json",
+  "follow_sources_path": "data/follow_sources.seed.json",
+  "harness_paths": ["harness/system_harness.md", "harness/acceptance_harness.md"]
+}

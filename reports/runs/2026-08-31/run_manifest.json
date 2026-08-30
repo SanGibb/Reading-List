@@ -1,0 +1,11 @@
+{
+  "run_id": "2026-08-31",
+  "status": "validated_ready_to_publish",
+  "created_artifacts": ["00_run_plan.json", "01_discovery.json", "02_evidence.json", "03_review.json", "04_editor_report.md", "05_registry_patch.json", "run_manifest.json"],
+  "created_directories": ["undecided/2026-08-31"],
+  "accepted_candidate_ids": ["CAND-0001", "CAND-0002", "CAND-0003", "CAND-0004", "CAND-0005"],
+  "watchlist_candidate_ids": ["CAND-0009"],
+  "undecided_candidate_ids": ["CAND-0006", "CAND-0007", "CAND-0008"],
+  "validation": "passed",
+  "validated_with": ["REQUIRE_UNDECIDED_DOSSIERS=1 python3 scripts/validate_all.py"]
+}

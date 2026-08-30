@@ -9,10 +9,10 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | Branch | Directory | Focus | Count |
 |---|---|---|---|
 | A | `A_executable_world_representation/` | executable world structures, object parts, affordances, task predicates, and physical/deformable state | 11 |
-| B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 14 |
+| B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 15 |
 | C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 15 |
-| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 31 |
-| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 25 |
+| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 33 |
+| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 27 |
 
 ## Current Reports
 
@@ -43,6 +43,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI | B | [embodiedgen-v2-2026.md](B_interactive_generation_pcg/embodiedgen-v2-2026.md) |
 | Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator | B | [image2sim-2026.md](B_interactive_generation_pcg/image2sim-2026.md) |
 | WonderWorld: Interactive 3D Scene Generation from a Single Image | B | [wonderworld-2024.md](B_interactive_generation_pcg/wonderworld-2024.md) |
+| SpatialCrafter: Single Image World Modeling with Generative 3D Proxies | B | [spatialcrafter-2026.md](B_interactive_generation_pcg/spatialcrafter-2026.md) |
 | SpatialBot | C | [spatialbot-2024.md](C_spatial_intelligence/spatialbot-2024.md) |
 | HiSpatial | C | [hispatial-2026.md](C_spatial_intelligence/hispatial-2026.md) |
 | SpaceTools | C | [spacetools-2026.md](C_spatial_intelligence/spacetools-2026.md) |
@@ -89,6 +90,8 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | JEPA-WAM | D | [jepa-wam-2026.md](D_vla_world_action_models/jepa-wam-2026.md) |
 | ABot-PhysWorld | D | [abot-physworld-2026.md](D_vla_world_action_models/abot-physworld-2026.md) |
 | PAIWorld | D | [paiworld-2026.md](D_vla_world_action_models/paiworld-2026.md) |
+| Gemini Robotics 2 | D | [gemini-robotics-2-2026.md](D_vla_world_action_models/gemini-robotics-2-2026.md) |
+| CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators | D | [clap-cross-embodiment-world-models-2026.md](D_vla_world_action_models/clap-cross-embodiment-world-models-2026.md) |
 | EWMBench | E | [ewmbench-2025.md](E_evaluation_data_infrastructure/ewmbench-2025.md) |
 | WorldScore | E | [worldscore-2025.md](E_evaluation_data_infrastructure/worldscore-2025.md) |
 | RoboVerse | E | [roboverse-2025.md](E_evaluation_data_infrastructure/roboverse-2025.md) |
@@ -114,3 +117,5 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | PBench | E | [pbench-2025.md](E_evaluation_data_infrastructure/pbench-2025.md) |
 | PAI-Bench | E | [pai-bench-2025.md](E_evaluation_data_infrastructure/pai-bench-2025.md) |
 | PhysBench | E | [physbench-2025.md](E_evaluation_data_infrastructure/physbench-2025.md) |
+| PAWBench: How Far Are We from Probabilistically Aligned World Modeling? | E | [pawbench-2026.md](E_evaluation_data_infrastructure/pawbench-2026.md) |
+| R2M-Bench: Evaluating Revisit Memory via Relative Consistency in Interactive Video World Models | E | [r2m-bench-2026.md](E_evaluation_data_infrastructure/r2m-bench-2026.md) |

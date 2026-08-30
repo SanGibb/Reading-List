@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "updated": "2026-08-24",
+  "updated": "2026-08-31",
   "branches": [
     {
       "id": "A",
@@ -469,6 +469,24 @@
           "visual_quality_decision": "strong",
           "visual_inspection_status": "verified_2026_08_24",
           "deep_dive_path": "paper_reads/B_interactive_generation_pcg/wonderworld-2024.md"
+        },
+        {
+          "title": "SpatialCrafter: Single Image World Modeling with Generative 3D Proxies",
+          "year": 2026,
+          "venue": "SIGGRAPH Asia 2026",
+          "url": "https://arxiv.org/abs/2608.27073",
+          "data": "Single-image indoor/outdoor scenes, camera trajectories, and long-video evaluations shown on the official project page.",
+          "method": "Point-anchored Sparse Structure Flow generates a global 3D proxy, followed by proxy-conditioned video diffusion appearance refinement.",
+          "task": "Generate controllable, explorable, long-horizon scene videos from a single image.",
+          "novelty": "Uses a generative global 3D proxy as persistent structure and spatial memory to reduce drift during chunked exploration.",
+          "source_quality": "primary_or_official",
+          "demo_score": 3,
+          "evidence_strength": 4,
+          "project_relevance": "Strong reference for persistent 3D memory, controllable camera trajectories, and structure/appearance separation in interactive generation.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_2026_08_31",
+          "deep_dive_path": "paper_reads/B_interactive_generation_pcg/spatialcrafter-2026.md"
         }
       ]
     },
@@ -1309,6 +1327,42 @@
           "visual_quality_decision": "strong",
           "visual_inspection_status": "verified_2026_08_24",
           "deep_dive_path": "paper_reads/D_vla_world_action_models/paiworld-2026.md"
+        },
+        {
+          "title": "Gemini Robotics 2",
+          "year": 2026,
+          "venue": "Official Google DeepMind release",
+          "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+          "data": "Undisclosed training mixture; official evaluation covers humanoid whole-body control, bi-arm dexterity, cross-embodiment transfer, multi-robot collaboration, and embodied reasoning.",
+          "method": "Gemini-based VLA family with whole-body control, an on-device variant, and ER 2 high-level embodied reasoning that hands execution to lower-level policies.",
+          "task": "Perform dexterous, whole-body, multi-stage and coordinated physical tasks across robot forms.",
+          "novelty": "Unifies whole-body humanoid control, cross-embodiment dexterity, local deployment and multi-robot orchestration in one official robotics family.",
+          "source_quality": "primary_or_official",
+          "demo_score": 3,
+          "evidence_strength": 4,
+          "project_relevance": "High-value reference for hierarchical VLA/ER decomposition, whole-body action interfaces and multi-robot coordination.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_2026_08_31",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/gemini-robotics-2-2026.md"
+        },
+        {
+          "title": "CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators",
+          "year": 2026,
+          "venue": "arXiv / official open release",
+          "url": "https://arxiv.org/abs/2608.27406",
+          "data": "Heterogeneous OXE robot video, DROID, Bridge, bimanual YAM, G1 humanoid and egocentric human video.",
+          "method": "Two-stage curriculum learns latent-action physical priors from unlabeled video, then grounds them in end-effector action spaces for zero/few-shot deployment.",
+          "task": "Predict action-conditioned futures across embodiments for planning, evaluation and policy improvement.",
+          "novelty": "Reconciles robot and human action spaces through end-effector, language and latent-action interfaces in one cross-embodiment video world model.",
+          "source_quality": "primary_or_official",
+          "demo_score": 5,
+          "evidence_strength": 5,
+          "project_relevance": "Direct open reference for universal action schemas, cross-embodiment dynamics and policy-in-the-loop learned simulation.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_2026_08_31",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/clap-cross-embodiment-world-models-2026.md"
         }
       ]
     },
@@ -1768,6 +1822,42 @@
           "visual_quality_decision": "not_applicable",
           "visual_inspection_status": "verified_2026_08_24",
           "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/physbench-2025.md"
+        },
+        {
+          "title": "PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
+          "year": 2026,
+          "venue": "arXiv / official benchmark release",
+          "url": "https://arxiv.org/abs/2608.27345",
+          "data": "50 scenarios across eight physical-mechanism groups, split into 25 calibration cases and 25 support-coverage cases.",
+          "method": "Repeated rollouts are mapped to terminal outcomes and scored separately for valid-support recovery and probability-mass calibration.",
+          "task": "Evaluate whether stochastic video world models represent which physical futures are possible and how likely they are.",
+          "novelty": "Moves evaluation from one plausible rollout to the full induced distribution over possible terminal futures.",
+          "source_quality": "primary_or_official",
+          "demo_score": 4,
+          "evidence_strength": 5,
+          "project_relevance": "Provides PossibleOutcome, OutcomeProbability, SupportCoverage and CalibrationError fields for stochastic physical-world evaluation.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "visual_inspection_status": "verified_2026_08_31",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/pawbench-2026.md"
+        },
+        {
+          "title": "R2M-Bench: Evaluating Revisit Memory via Relative Consistency in Interactive Video World Models",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2608.27328",
+          "data": "100 reference scenes with three leave-and-return trajectories each, producing 300 instances across appearance, identity, geometry, and persistent-state criteria.",
+          "method": "MemoryGain and Normalized Memory Ratio compare revisits with gap-matched non-revisit and short-range controls from the same rollout.",
+          "task": "Measure revisit-specific memory in interactive video world models without rewarding static or failed-motion rollouts.",
+          "novelty": "Introduces same-rollout relative calibration that discounts generic temporal stability and the slow-motion shortcut.",
+          "source_quality": "primary_or_official",
+          "demo_score": 1,
+          "evidence_strength": 4,
+          "project_relevance": "Direct metric reference for persistent world state, return consistency and shortcut-resistant long-horizon evaluation.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "visual_inspection_status": "verified_2026_08_31",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/r2m-bench-2026.md"
         }
       ]
     }
