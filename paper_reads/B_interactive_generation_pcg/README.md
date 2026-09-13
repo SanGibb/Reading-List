@@ -16,3 +16,4 @@ Deep dives for papers about interactive assets, scenes, tasks, worlds, and PCG-s
 - [HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds](hy-world-2-2026.md)
 - [Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator](image2sim-2026.md)
 - [WonderWorld: Interactive 3D Scene Generation from a Single Image](wonderworld-2024.md)
+- [Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players](gamma-world-2026.md)

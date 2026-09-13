@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "updated": "2026-08-31",
+  "updated": "2026-09-14",
   "branches": [
     {
       "id": "A",
@@ -487,6 +487,24 @@
           "visual_quality_decision": "strong",
           "visual_inspection_status": "verified_2026_08_31",
           "deep_dive_path": "paper_reads/B_interactive_generation_pcg/spatialcrafter-2026.md"
+        },
+        {
+          "title": "Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players",
+          "year": 2026,
+          "venue": "arXiv / official NVIDIA release",
+          "url": "https://arxiv.org/abs/2605.28816",
+          "data": "Synchronized multi-agent gameplay and real multi-robot sequences with released training and inference workflows.",
+          "method": "Simplex Rotary Agent Encoding, Sparse Hub Attention, and bidirectional-teacher to block-causal-student distillation with KV caching.",
+          "task": "Generate one coherent, action-responsive video world for multiple independently controlled agents.",
+          "novelty": "Extends interactive video world models beyond one action stream with permutation-equivalent agent identity, linear-cost cross-agent communication, and real-time rollout.",
+          "source_quality": "primary_or_official",
+          "demo_score": 5,
+          "evidence_strength": 4,
+          "project_relevance": "Direct architecture and evaluation reference for synchronized multi-agent generation, action streams, and shared-world consistency.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_2026_09_14",
+          "deep_dive_path": "paper_reads/B_interactive_generation_pcg/gamma-world-2026.md"
         }
       ]
     },
@@ -1435,6 +1453,60 @@
           "visual_quality_decision": "adequate",
           "visual_inspection_status": "verified_2026_09_07",
           "deep_dive_path": "paper_reads/D_vla_world_action_models/vlaw-2026.md"
+        },
+        {
+          "title": "OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2609.07398",
+          "data": "518.5M frames (about 6,400 hours) of egocentric human and robot data represented in an 80-D unified action space.",
+          "method": "Modular WAM infrastructure and controlled design studies instantiate a model with dedicated action capacity, world-to-action information flow, and synchronized joint denoising.",
+          "task": "Pretrain and evaluate generalist world-action models across eight simulation benchmarks and three real-robot platforms.",
+          "novelty": "Turns tightly coupled WAM design into a controlled modular program and releases the resulting full stack.",
+          "source_quality": "primary_or_official",
+          "demo_score": 5,
+          "evidence_strength": 5,
+          "project_relevance": "Direct implementation reference for modular world/action coupling, unified action spaces, simulator evaluation, and reproducible ablations.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_2026_09_14",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/openwam-2026.md"
+        },
+        {
+          "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+          "year": 2026,
+          "venue": "arXiv / official project release",
+          "url": "https://arxiv.org/abs/2609.10522",
+          "data": "GUMI human and GUI-agent demonstrations, released corpus and six LoRA adapters, with simulation and real-robot evaluations across Franka and AgileX.",
+          "method": "A compact semantic action vocabulary is grounded through embodiment-specific interpreters while perception, reasoning, and action plugins close the VLM control loop.",
+          "task": "Enable frontier and small open VLMs to control heterogeneous robots and collect demonstrations through one interface.",
+          "novelty": "Makes the model-facing action interface a reusable cross-embodiment abstraction without requiring a new large VLA backbone.",
+          "source_quality": "primary_or_official",
+          "demo_score": 5,
+          "evidence_strength": 4,
+          "project_relevance": "Reusable embodied action schema, interpreter boundary, safety projection, and low-cost demonstration collection pattern.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "visual_inspection_status": "verified_2026_09_14",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/show-harness-2026.md"
+        },
+        {
+          "title": "ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2609.11697",
+          "data": "Experiments on pi0.5 and Fast-WAM across constrained manipulation tasks.",
+          "method": "Analytical ray-shooting rescales every discrete flow update to the nearest feasible-set boundary while preserving differentiability and boundary-sliding gradients.",
+          "task": "Train and deploy flow-matching VLA/WAM policies with hard per-step action feasibility.",
+          "novelty": "Integrates deterministic constraint enforcement into both training and inference rather than applying an inference-only correction.",
+          "source_quality": "primary_or_official",
+          "demo_score": 1,
+          "evidence_strength": 4,
+          "project_relevance": "Provides an executable action-validity layer and training-aligned safety primitive for flow-based policies.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "visual_inspection_status": "verified_2026_09_14",
+          "deep_dive_path": "paper_reads/D_vla_world_action_models/actsafeguard-2026.md"
         }
       ]
     },

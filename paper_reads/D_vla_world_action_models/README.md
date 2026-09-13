@@ -28,3 +28,6 @@ Deep dives for papers about vision-language-action models, robot foundation poli
 - [FACT: Demystifying Contact-Rich VLA Failures](fact-contact-rich-vla-2026.md)
 - [CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy](chorus-2026.md)
 - [VLAW: Iterative Co-Improvement of VLA Policy and World Model](vlaw-2026.md)
+- [OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining](openwam-2026.md)
+- [Show-Harness: Just a VLM Agent Can Play Robots](show-harness-2026.md)
+- [ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies](actsafeguard-2026.md)

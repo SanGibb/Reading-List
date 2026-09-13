@@ -9,34 +9,33 @@
 | 内容 | 入口 |
 |---|---|
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
-| 最新扩库摘要 | [reports/2026-09-07-expansion.md](reports/2026-09-07-expansion.md) |
-| 当前已收录精读 | 106 篇，见 [paper_reads/README.md](paper_reads/README.md) |
+| 最新扩库摘要 | [reports/2026-09-14-expansion.md](reports/2026-09-14-expansion.md) |
+| 当前已收录精读 | 110 篇，见 [paper_reads/README.md](paper_reads/README.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。通过筛选的候选应全部加入，不做固定 top-k 抽样。
 
 ## 本周更新内容
 
-本轮扩库日期：2026-09-07。完整审计摘要见 [reports/2026-09-07-expansion.md](reports/2026-09-07-expansion.md)。
+本轮扩库日期：2026-09-14。完整审计摘要见 [reports/2026-09-14-expansion.md](reports/2026-09-14-expansion.md)。
 
 ### 重点新增与补齐
 
 | Paper | Branch | 简要说明 | 精读 |
 |---|---|---|---|
-| SPD | D | Simulation-only on-embodiment pre-training for bimanual dexterity. | [spd-2026.md](paper_reads/D_vla_world_action_models/spd-2026.md) |
-| FACT | D | Diagnoses and repairs precision and force failures in contact-rich VLAs. | [fact-contact-rich-vla-2026.md](paper_reads/D_vla_world_action_models/fact-contact-rich-vla-2026.md) |
-| CHORUS | D | One shared VLA for decentralized heterogeneous robot collaboration. | [chorus-2026.md](paper_reads/D_vla_world_action_models/chorus-2026.md) |
-| VLAW | D | Iteratively co-improves a VLA and action-conditioned world model. | [vlaw-2026.md](paper_reads/D_vla_world_action_models/vlaw-2026.md) |
-| RoboMME | E | Executable benchmark for four kinds of robot memory. | [robomme-2026.md](paper_reads/E_evaluation_data_infrastructure/robomme-2026.md) |
+| Gamma-World | B | Real-time shared video worlds for independently controlled agents. | [gamma-world-2026.md](paper_reads/B_interactive_generation_pcg/gamma-world-2026.md) |
+| OpenWAM | D | Modular open WAM stack with controlled studies and robot deployment. | [openwam-2026.md](paper_reads/D_vla_world_action_models/openwam-2026.md) |
+| Show-Harness | D | Semantic robot interface shared by frontier and small open VLMs. | [show-harness-2026.md](paper_reads/D_vla_world_action_models/show-harness-2026.md) |
+| ActSafeGuard | D | Differentiable hard-feasibility layer for flow-based VLA/WAM actions. | [actsafeguard-2026.md](paper_reads/D_vla_world_action_models/actsafeguard-2026.md) |
 
 ### 全量收录状态
 
 | Branch | Count | Anchor works |
 |---|---:|---|
 | A. Executable World Representation | 11 | SceneFun3D, BEHAVIOR-1K, WonderPlay, PhysX-Omni, PhysDreamer, SceneCode ... |
-| B. Interactive Generation and PCG | 15 | PhyScene, WonderWorld, SpatialCrafter, SAGE, EmbodiedGen V2, Image2Sim, SceneSmith ... |
+| B. Interactive Generation and PCG | 16 | PhyScene, WonderWorld, Gamma-World, SpatialCrafter, SAGE, Image2Sim ... |
 | C. Spatial Intelligence | 15 | SpatialBot, HiSpatial, SpaceTools, Point-It-Out, ESI-Bench, SIS-Bench, SpatialVLA ... |
-| D. VLA and World-Action Models | 37 | Octo, OpenVLA, SPD, FACT, CHORUS, VLAW, Gemini Robotics 2, CLAP, Cosmos 3 ... |
+| D. VLA and World-Action Models | 40 | OpenWAM, Show-Harness, ActSafeGuard, OpenVLA, VLAW, Gemini Robotics 2 ... |
 | E. Evaluation and Data Infrastructure | 28 | RoboMME, PAWBench, R2M-Bench, PBench, PhysBench, MolmoSpaces, WorldArena ... |
 
 ## 研究树

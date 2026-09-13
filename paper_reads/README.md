@@ -9,9 +9,9 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | Branch | Directory | Focus | Count |
 |---|---|---|---|
 | A | `A_executable_world_representation/` | executable world structures, object parts, affordances, task predicates, and physical/deformable state | 11 |
-| B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 15 |
+| B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 16 |
 | C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 15 |
-| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 37 |
+| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 40 |
 | E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 28 |
 
 ## Current Reports
@@ -44,6 +44,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator | B | [image2sim-2026.md](B_interactive_generation_pcg/image2sim-2026.md) |
 | WonderWorld: Interactive 3D Scene Generation from a Single Image | B | [wonderworld-2024.md](B_interactive_generation_pcg/wonderworld-2024.md) |
 | SpatialCrafter: Single Image World Modeling with Generative 3D Proxies | B | [spatialcrafter-2026.md](B_interactive_generation_pcg/spatialcrafter-2026.md) |
+| Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players | B | [gamma-world-2026.md](B_interactive_generation_pcg/gamma-world-2026.md) |
 | SpatialBot | C | [spatialbot-2024.md](C_spatial_intelligence/spatialbot-2024.md) |
 | HiSpatial | C | [hispatial-2026.md](C_spatial_intelligence/hispatial-2026.md) |
 | SpaceTools | C | [spacetools-2026.md](C_spatial_intelligence/spacetools-2026.md) |
@@ -96,6 +97,9 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them | D | [fact-contact-rich-vla-2026.md](D_vla_world_action_models/fact-contact-rich-vla-2026.md) |
 | CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy | D | [chorus-2026.md](D_vla_world_action_models/chorus-2026.md) |
 | VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model | D | [vlaw-2026.md](D_vla_world_action_models/vlaw-2026.md) |
+| OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining | D | [openwam-2026.md](D_vla_world_action_models/openwam-2026.md) |
+| Show-Harness: Just a VLM Agent Can Play Robots | D | [show-harness-2026.md](D_vla_world_action_models/show-harness-2026.md) |
+| ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies | D | [actsafeguard-2026.md](D_vla_world_action_models/actsafeguard-2026.md) |
 | EWMBench | E | [ewmbench-2025.md](E_evaluation_data_infrastructure/ewmbench-2025.md) |
 | WorldScore | E | [worldscore-2025.md](E_evaluation_data_infrastructure/worldscore-2025.md) |
 | RoboVerse | E | [roboverse-2025.md](E_evaluation_data_infrastructure/roboverse-2025.md) |
