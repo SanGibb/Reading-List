@@ -1,0 +1,18 @@
+{
+  "run_id": "2026-09-07",
+  "visual_cards": [
+    {"candidate_id":"CAND-0001","visual_materials":["https://spd.bot/"],"inspected_modalities":["project_page","autonomous_robot_videos","architecture_figures","result_plots"],"visual_quality_score":4,"visual_quality_decision":"strong","visual_notes":"Long-horizon bimanual rollouts cover contact-rich, multi-stage tasks.","failure_modes":["selected examples","no public raw rollout set"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0002","visual_materials":["https://stanford-iprl-lab.github.io/fact/"],"inspected_modalities":["project_page","robot_videos","force_profiles","architecture_figures"],"visual_quality_score":4,"visual_quality_decision":"strong","visual_notes":"Side-by-side success and two failure modes are directly inspectable.","failure_modes":["lab task scope","source-selected rollouts"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0003","visual_materials":["https://chorus-model.github.io/"],"inspected_modalities":["project_page","multi_robot_videos","baseline_comparisons","architecture_figures"],"visual_quality_score":4,"visual_quality_decision":"strong","visual_notes":"Coordination and perturbation recovery are visible across heterogeneous robots.","failure_modes":["4x playback","small team sizes"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0004","visual_materials":["https://openreview.net/pdf?id=Ro0eQ0ly3q"],"inspected_modalities":["paper_figures","generated_real_comparisons","result_tables"],"visual_quality_score":3,"visual_quality_decision":"adequate","visual_notes":"Paper figures support the claimed fidelity direction, though the standalone project page is sparse.","failure_modes":["limited interactive surface","paper-selected examples"],"needs_human_decision":false,"undecided_reason":""},
+    {"candidate_id":"CAND-0005","visual_materials":["https://robomme.github.io/"],"inspected_modalities":["task_videos","interactive_demo","taxonomy_figures","leaderboard"],"visual_quality_score":0,"visual_quality_decision":"not_applicable","visual_notes":"Benchmark acceptance rests on executable release and task design; videos corroborate implementation.","failure_modes":["simulation-only"],"needs_human_decision":false,"undecided_reason":""}
+  ],
+  "quality_review": [
+    {"candidate_id":"CAND-0001","review_decision":"pass","issues":["Code/data not yet linked"],"required_fixes":[],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0002","review_decision":"pass","issues":["Independent reproduction pending"],"required_fixes":[],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0003","review_decision":"pass","issues":["Closed backbone"],"required_fixes":[],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0004","review_decision":"pass","issues":["Sparse project page"],"required_fixes":[],"accepted_for_registry":true},
+    {"candidate_id":"CAND-0005","review_decision":"pass","issues":["Simulation-only"],"required_fixes":[],"accepted_for_registry":true}
+  ],
+  "run_level_issues": ["The configured Berkeley RAIL URL redirects to an unrelated IT site.","No new September 1–7 primary release cleared the gates; accepted items are newly influential fixed-source omissions.","Historical undecided dossiers must be restored locally in this fresh worktree before strict validation."]
+}

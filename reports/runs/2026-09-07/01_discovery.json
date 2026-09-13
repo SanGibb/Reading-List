@@ -1,0 +1,40 @@
+{
+  "run_id": "2026-09-07",
+  "followed_sources_checked": [
+    {"source_id":"stanford-svl-behavior","status":"checked","notes":"Official SVL/BEHAVIOR surfaces checked; SPD surfaced through the Stanford network.","urls_checked":["https://svl.stanford.edu/publications/","https://behavior.stanford.edu/"]},
+    {"source_id":"princeton-pvl-infinigen","status":"checked","notes":"Lab page and releases checked; no qualifying post-August-31 addition.","urls_checked":["https://pvl.cs.princeton.edu/","https://github.com/princeton-vl/infinigen/releases"]},
+    {"source_id":"ai2-embodied-prior","status":"checked","notes":"Official embodied overview checked; existing Molmo coverage deduplicated.","urls_checked":["https://allenai.org/embodied-ai","https://allenai.org/blog/molmospaces"]},
+    {"source_id":"nvidia-cosmos-isaac","status":"checked","notes":"Cosmos Lab checked; Cosmos 3 already registered.","urls_checked":["https://research.nvidia.com/labs/cosmos-lab/"]},
+    {"source_id":"stanford-realab-shuran","status":"checked","notes":"REAL/IPRL surfaces checked; FACT and SPD analyzed.","urls_checked":["https://real.stanford.edu/lab.html","https://stanford-iprl-lab.github.io/fact/","https://spd.bot/"]},
+    {"source_id":"stanford-iris-openvla","status":"checked","notes":"Current publications checked; four registry omissions analyzed.","urls_checked":["https://irislab.stanford.edu/publications.html","https://chorus-model.github.io/","https://robomme.github.io/"]},
+    {"source_id":"berkeley-rail-levine","status":"unreachable","notes":"Configured URL redirects to unrelated Berkeley IT; compensated with primary author/lab pages.","urls_checked":["https://rail.eecs.berkeley.edu/"]},
+    {"source_id":"physical-intelligence","status":"checked","notes":"Official research index checked; current pi-series coverage deduplicated.","urls_checked":["https://www.pi.website/research"]},
+    {"source_id":"google-deepmind-robotics","status":"checked","notes":"Official Gemini Robotics surfaces checked; no new delta.","urls_checked":["https://deepmind.google/models/gemini-robotics/vla/"]},
+    {"source_id":"ut-austin-rpl-yuke","status":"checked","notes":"RPL and RoboCasa365 checked; no registry delta.","urls_checked":["https://rpl.cs.utexas.edu/people/"]},
+    {"source_id":"meta-fair-embodied","status":"checked","notes":"Official FAIR robotics surface checked; no new paper-grade signal.","urls_checked":["https://ai.meta.com/blog/fair-robotics-open-source/"]},
+    {"source_id":"huggingface-lerobot","status":"checked","notes":"Repository/docs checked; RoboMME integration corroborated release quality.","urls_checked":["https://github.com/huggingface/lerobot","https://huggingface.co/docs/lerobot/v0.6.0/en/robomme"]},
+    {"source_id":"toyota-research-institute-lbm","status":"checked","notes":"Official TRI surface checked; no new release.","urls_checked":["https://global.toyota/en/mobility/frontier-research/42394425.html"]},
+    {"source_id":"mit-csail-drake-scene-generation","status":"checked","notes":"SceneSmith/Drake checked; no registry delta.","urls_checked":["https://scenesmith.github.io/","https://drake.mit.edu/"]},
+    {"source_id":"world-model-benchmarks","status":"checked","notes":"Core benchmark surfaces checked; RoboMME was the only passing omission.","urls_checked":["https://world-arena.ai/","https://ctrl-world.github.io/"]},
+    {"source_id":"cmu-genesis-robogen","status":"spot_checked","notes":"Watch source checked; no paper-grade delta.","urls_checked":["https://github.com/Genesis-Embodied-AI/RoboGen"]},
+    {"source_id":"tsinghua-air-vla","status":"spot_checked","notes":"Watch source checked; no newly verified release.","urls_checked":["https://air.tsinghua.edu.cn/info/1007/2467.htm"]},
+    {"source_id":"embodiedgen-consortium","status":"spot_checked","notes":"Survey/project checked as discovery maps.","urls_checked":["https://3dgen4robot.github.io/"]},
+    {"source_id":"tencent-hunyuan-world","status":"spot_checked","notes":"HY-World checked; existing coverage deduplicated.","urls_checked":["https://hyworld.dev/"]}
+  ],
+  "candidates": [
+    {"candidate_id":"CAND-0001","title":"Pre-training Visual Dexterity in Simulation","branch_hint":"D","source_url":"https://arxiv.org/abs/2608.15917","source_type":"arxiv","discovered_from":"stanford-svl-behavior","why_candidate":"Recent simulation pre-training with official real-robot demos."},
+    {"candidate_id":"CAND-0002","title":"Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them","branch_hint":"D","source_url":"https://arxiv.org/abs/2608.01402","source_type":"arxiv","discovered_from":"stanford-realab-shuran","why_candidate":"Large real-rollout contact failure diagnosis."},
+    {"candidate_id":"CAND-0003","title":"CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy","branch_hint":"D","source_url":"https://arxiv.org/abs/2606.12352","source_type":"arxiv","discovered_from":"stanford-iris-openvla","why_candidate":"Strong shared-policy multi-robot evidence."},
+    {"candidate_id":"CAND-0004","title":"VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model","branch_hint":"D","source_url":"https://arxiv.org/abs/2602.12063","source_type":"arxiv","discovered_from":"stanford-iris-openvla","why_candidate":"ICML policy/world-model co-improvement loop."},
+    {"candidate_id":"CAND-0005","title":"RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies","branch_hint":"E","source_url":"https://arxiv.org/abs/2603.04639","source_type":"arxiv","discovered_from":"stanford-iris-openvla","why_candidate":"ICML Oral benchmark with complete executable release."},
+    {"candidate_id":"CAND-0006","title":"World Model for Robot Learning: A Comprehensive Survey","branch_hint":"E","source_url":"https://arxiv.org/abs/2605.00080","source_type":"arxiv","discovered_from":"broad_primary_search","why_candidate":"Useful evidence map but not new benchmark infrastructure."}
+  ],
+  "triage": [
+    {"candidate_id":"CAND-0001","decision":"analyze","primary_branch":"D","reason":"Passes all gates.","dedupe_status":"new","source_quality":5,"impact_prior":4,"project_relevance_prior":5},
+    {"candidate_id":"CAND-0002","decision":"analyze","primary_branch":"D","reason":"Passes all gates.","dedupe_status":"new","source_quality":5,"impact_prior":5,"project_relevance_prior":5},
+    {"candidate_id":"CAND-0003","decision":"analyze","primary_branch":"D","reason":"Passes all gates.","dedupe_status":"new","source_quality":5,"impact_prior":4,"project_relevance_prior":4},
+    {"candidate_id":"CAND-0004","decision":"analyze","primary_branch":"D","reason":"Passes all gates.","dedupe_status":"new","source_quality":5,"impact_prior":5,"project_relevance_prior":5},
+    {"candidate_id":"CAND-0005","decision":"analyze","primary_branch":"E","reason":"Passes all gates.","dedupe_status":"new","source_quality":5,"impact_prior":5,"project_relevance_prior":5},
+    {"candidate_id":"CAND-0006","decision":"watchlist","primary_branch":"E","reason":"Survey fails novel registry-artifact gate.","dedupe_status":"new","source_quality":5,"impact_prior":3,"project_relevance_prior":3}
+  ]
+}

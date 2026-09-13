@@ -1,0 +1,19 @@
+{
+  "run_id": "2026-09-07",
+  "status": "validated_publication_blocked",
+  "created_artifacts": [
+    "00_run_plan.json",
+    "01_discovery.json",
+    "02_evidence.json",
+    "03_review.json",
+    "04_editor_report.md",
+    "05_registry_patch.json"
+  ],
+  "created_directories": [],
+  "accepted_candidate_ids": ["CAND-0001", "CAND-0002", "CAND-0003", "CAND-0004", "CAND-0005"],
+  "watchlist_candidate_ids": ["CAND-0006"],
+  "undecided_candidate_ids": [],
+  "validation": "passed",
+  "validated_with": ["REQUIRE_UNDECIDED_DOSSIERS=1 python3 scripts/validate_all.py"],
+  "validation_notes": ["Only pre-existing missing-local-PDF warnings remain.", "Historical undecided dossiers restored local-only for strict validation.", "Publication script revalidated successfully but git add could not create the linked-worktree index.lock due to environment permissions; no commit or push occurred."]
+}

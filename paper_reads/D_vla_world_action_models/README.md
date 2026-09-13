@@ -24,3 +24,7 @@ Deep dives for papers about vision-language-action models, robot foundation poli
 - [ORV: 4D Occupancy-centric Robot Video Generation](orv-2025.md)
 - [ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment](abot-physworld-2026.md)
 - [PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation](paiworld-2026.md)
+- [Pre-training Visual Dexterity in Simulation](spd-2026.md)
+- [FACT: Demystifying Contact-Rich VLA Failures](fact-contact-rich-vla-2026.md)
+- [CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy](chorus-2026.md)
+- [VLAW: Iterative Co-Improvement of VLA Policy and World Model](vlaw-2026.md)

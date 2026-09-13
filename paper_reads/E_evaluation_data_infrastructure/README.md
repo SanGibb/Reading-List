@@ -24,3 +24,4 @@ Deep dives for papers about embodied/world benchmarks, robot data infrastructure
 - [PBench: A Physical AI Benchmark for World Models](pbench-2025.md)
 - [PAI-Bench: A Comprehensive Benchmark For Physical AI](pai-bench-2025.md)
 - [PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding](physbench-2025.md)
+- [RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies](robomme-2026.md)

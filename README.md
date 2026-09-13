@@ -9,25 +9,25 @@
 | 内容 | 入口 |
 |---|---|
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
-| 最新扩库摘要 | [reports/2026-08-31-expansion.md](reports/2026-08-31-expansion.md) |
-| 当前已收录精读 | 101 篇，见 [paper_reads/README.md](paper_reads/README.md) |
+| 最新扩库摘要 | [reports/2026-09-07-expansion.md](reports/2026-09-07-expansion.md) |
+| 当前已收录精读 | 106 篇，见 [paper_reads/README.md](paper_reads/README.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。通过筛选的候选应全部加入，不做固定 top-k 抽样。
 
 ## 本周更新内容
 
-本轮扩库日期：2026-08-31。完整审计摘要见 [reports/2026-08-31-expansion.md](reports/2026-08-31-expansion.md)。
+本轮扩库日期：2026-09-07。完整审计摘要见 [reports/2026-09-07-expansion.md](reports/2026-09-07-expansion.md)。
 
 ### 重点新增与补齐
 
 | Paper | Branch | 简要说明 | 精读 |
 |---|---|---|---|
-| SpatialCrafter | B | Uses a persistent generative 3D proxy for controllable single-image world exploration. | [spatialcrafter-2026.md](paper_reads/B_interactive_generation_pcg/spatialcrafter-2026.md) |
-| Gemini Robotics 2 | D | Extends VLA control to whole-body, cross-embodiment, and coordinated multi-robot tasks. | [gemini-robotics-2-2026.md](paper_reads/D_vla_world_action_models/gemini-robotics-2-2026.md) |
-| CLAP | D | Open cross-embodiment video world model with policy-in-the-loop deployment. | [clap-cross-embodiment-world-models-2026.md](paper_reads/D_vla_world_action_models/clap-cross-embodiment-world-models-2026.md) |
-| PAWBench | E | Evaluates support and probability mass across possible physical futures. | [pawbench-2026.md](paper_reads/E_evaluation_data_infrastructure/pawbench-2026.md) |
-| R2M-Bench | E | Measures revisit-specific memory without rewarding static rollouts. | [r2m-bench-2026.md](paper_reads/E_evaluation_data_infrastructure/r2m-bench-2026.md) |
+| SPD | D | Simulation-only on-embodiment pre-training for bimanual dexterity. | [spd-2026.md](paper_reads/D_vla_world_action_models/spd-2026.md) |
+| FACT | D | Diagnoses and repairs precision and force failures in contact-rich VLAs. | [fact-contact-rich-vla-2026.md](paper_reads/D_vla_world_action_models/fact-contact-rich-vla-2026.md) |
+| CHORUS | D | One shared VLA for decentralized heterogeneous robot collaboration. | [chorus-2026.md](paper_reads/D_vla_world_action_models/chorus-2026.md) |
+| VLAW | D | Iteratively co-improves a VLA and action-conditioned world model. | [vlaw-2026.md](paper_reads/D_vla_world_action_models/vlaw-2026.md) |
+| RoboMME | E | Executable benchmark for four kinds of robot memory. | [robomme-2026.md](paper_reads/E_evaluation_data_infrastructure/robomme-2026.md) |
 
 ### 全量收录状态
 
@@ -36,8 +36,8 @@
 | A. Executable World Representation | 11 | SceneFun3D, BEHAVIOR-1K, WonderPlay, PhysX-Omni, PhysDreamer, SceneCode ... |
 | B. Interactive Generation and PCG | 15 | PhyScene, WonderWorld, SpatialCrafter, SAGE, EmbodiedGen V2, Image2Sim, SceneSmith ... |
 | C. Spatial Intelligence | 15 | SpatialBot, HiSpatial, SpaceTools, Point-It-Out, ESI-Bench, SIS-Bench, SpatialVLA ... |
-| D. VLA and World-Action Models | 33 | Octo, OpenVLA, Gemini Robotics 2, CLAP, ABot-PhysWorld, PAIWorld, G0.5, JEPA-WAM, Cosmos 3 ... |
-| E. Evaluation and Data Infrastructure | 27 | PAWBench, R2M-Bench, PBench, PAI-Bench, PhysBench, Sekai2, MolmoSpaces, WorldArena ... |
+| D. VLA and World-Action Models | 37 | Octo, OpenVLA, SPD, FACT, CHORUS, VLAW, Gemini Robotics 2, CLAP, Cosmos 3 ... |
+| E. Evaluation and Data Infrastructure | 28 | RoboMME, PAWBench, R2M-Bench, PBench, PhysBench, MolmoSpaces, WorldArena ... |
 
 ## 研究树
 

@@ -11,8 +11,8 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | A | `A_executable_world_representation/` | executable world structures, object parts, affordances, task predicates, and physical/deformable state | 11 |
 | B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 15 |
 | C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 15 |
-| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 33 |
-| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 27 |
+| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 37 |
+| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 28 |
 
 ## Current Reports
 
@@ -92,6 +92,10 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | PAIWorld | D | [paiworld-2026.md](D_vla_world_action_models/paiworld-2026.md) |
 | Gemini Robotics 2 | D | [gemini-robotics-2-2026.md](D_vla_world_action_models/gemini-robotics-2-2026.md) |
 | CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators | D | [clap-cross-embodiment-world-models-2026.md](D_vla_world_action_models/clap-cross-embodiment-world-models-2026.md) |
+| Pre-training Visual Dexterity in Simulation | D | [spd-2026.md](D_vla_world_action_models/spd-2026.md) |
+| Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them | D | [fact-contact-rich-vla-2026.md](D_vla_world_action_models/fact-contact-rich-vla-2026.md) |
+| CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy | D | [chorus-2026.md](D_vla_world_action_models/chorus-2026.md) |
+| VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model | D | [vlaw-2026.md](D_vla_world_action_models/vlaw-2026.md) |
 | EWMBench | E | [ewmbench-2025.md](E_evaluation_data_infrastructure/ewmbench-2025.md) |
 | WorldScore | E | [worldscore-2025.md](E_evaluation_data_infrastructure/worldscore-2025.md) |
 | RoboVerse | E | [roboverse-2025.md](E_evaluation_data_infrastructure/roboverse-2025.md) |
@@ -119,3 +123,4 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | PhysBench | E | [physbench-2025.md](E_evaluation_data_infrastructure/physbench-2025.md) |
 | PAWBench: How Far Are We from Probabilistically Aligned World Modeling? | E | [pawbench-2026.md](E_evaluation_data_infrastructure/pawbench-2026.md) |
 | R2M-Bench: Evaluating Revisit Memory via Relative Consistency in Interactive Video World Models | E | [r2m-bench-2026.md](E_evaluation_data_infrastructure/r2m-bench-2026.md) |
+| RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies | E | [robomme-2026.md](E_evaluation_data_infrastructure/robomme-2026.md) |

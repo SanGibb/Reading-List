@@ -1,0 +1,30 @@
+{
+  "run_id": "2026-09-07",
+  "created_at": "2026-09-07T00:00:00+08:00",
+  "branches": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "minimum_year": 2024,
+  "search_windows": {
+    "default_days": 14,
+    "high_priority_days": 45
+  },
+  "branch_queries": {
+    "A": ["2026 executable world representation simulation-ready assets physics"],
+    "B": ["2026 interactive world generation PCG embodied simulation"],
+    "C": ["2026 spatial intelligence embodied reasoning multi-view"],
+    "D": ["2026 VLA world-action model dexterity contact multi-robot"],
+    "E": ["2026 embodied robot memory world-model evaluation benchmark"]
+  },
+  "known_registry_path": "data/papers.seed.json",
+  "follow_sources_path": "data/follow_sources.seed.json",
+  "harness_paths": [
+      "harness/system_harness.md",
+      "harness/artifact_contracts.md",
+      "harness/acceptance_harness.md"
+  ]
+}
