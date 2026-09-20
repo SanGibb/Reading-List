@@ -14,3 +14,5 @@ Deep dives for papers about executable world structures, object parts, affordanc
 - [REST3D: Reconstructing Physically Stable 3D Scenes from a Single Image](rest3d-2026.md)
 - [TriSplat: Simulation-Ready Feed-Forward 3D Scene Reconstruction](trisplat-2026.md)
 - [WonderPlay: Dynamic 3D Scene Generation from a Single Image and Actions](wonderplay-2025.md)
+- [FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations](famos-2026.md)
+- [FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents](funart-2026.md)

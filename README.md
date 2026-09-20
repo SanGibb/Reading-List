@@ -9,34 +9,36 @@
 | 内容 | 入口 |
 |---|---|
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
-| 最新扩库摘要 | [reports/2026-09-14-expansion.md](reports/2026-09-14-expansion.md) |
-| 当前已收录精读 | 110 篇，见 [paper_reads/README.md](paper_reads/README.md) |
+| 最新扩库摘要 | [reports/2026-09-21-expansion.md](reports/2026-09-21-expansion.md) |
+| 当前已收录精读 | 118 篇，见 [paper_reads/README.md](paper_reads/README.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。通过筛选的候选应全部加入，不做固定 top-k 抽样。
 
 ## 本周更新内容
 
-本轮扩库日期：2026-09-14。完整审计摘要见 [reports/2026-09-14-expansion.md](reports/2026-09-14-expansion.md)。
+本轮扩库日期：2026-09-21。完整审计摘要见 [reports/2026-09-21-expansion.md](reports/2026-09-21-expansion.md)。
 
 ### 重点新增与补齐
 
 | Paper | Branch | 简要说明 | 精读 |
 |---|---|---|---|
-| Gamma-World | B | Real-time shared video worlds for independently controlled agents. | [gamma-world-2026.md](paper_reads/B_interactive_generation_pcg/gamma-world-2026.md) |
-| OpenWAM | D | Modular open WAM stack with controlled studies and robot deployment. | [openwam-2026.md](paper_reads/D_vla_world_action_models/openwam-2026.md) |
-| Show-Harness | D | Semantic robot interface shared by frontier and small open VLMs. | [show-harness-2026.md](paper_reads/D_vla_world_action_models/show-harness-2026.md) |
-| ActSafeGuard | D | Differentiable hard-feasibility layer for flow-based VLA/WAM actions. | [actsafeguard-2026.md](paper_reads/D_vla_world_action_models/actsafeguard-2026.md) |
+| FAMOS | A | Sparse multi-state articulation with executable joint recovery. | [famos-2026.md](paper_reads/A_executable_world_representation/famos-2026.md) |
+| FunArt | A | Functional elements and articulation from generative 3D latents. | [funart-2026.md](paper_reads/A_executable_world_representation/funart-2026.md) |
+| Astronex-World 1.0 | B | Open real-time camera/action/event-controllable video worlds. | [astronex-world-2026.md](paper_reads/B_interactive_generation_pcg/astronex-world-2026.md) |
+| Agile-WAM | D | Efficient tactile future prediction for contact-rich control. | [agile-wam-2026.md](paper_reads/D_vla_world_action_models/agile-wam-2026.md) |
+| PersistBench | E | Panoramic-ground-truth benchmark for off-screen world memory. | [persistbench-2026.md](paper_reads/E_evaluation_data_infrastructure/persistbench-2026.md) |
+| UNI / BinoGen / SlugTrails | E | New embodied data collection, binocular generation, and localization infrastructure. | [paper_reads/E](paper_reads/E_evaluation_data_infrastructure/README.md) |
 
 ### 全量收录状态
 
 | Branch | Count | Anchor works |
 |---|---:|---|
-| A. Executable World Representation | 11 | SceneFun3D, BEHAVIOR-1K, WonderPlay, PhysX-Omni, PhysDreamer, SceneCode ... |
-| B. Interactive Generation and PCG | 16 | PhyScene, WonderWorld, Gamma-World, SpatialCrafter, SAGE, Image2Sim ... |
+| A. Executable World Representation | 13 | SceneFun3D, BEHAVIOR-1K, FAMOS, FunArt, WonderPlay, PhysX-Omni ... |
+| B. Interactive Generation and PCG | 17 | PhyScene, WonderWorld, Astronex-World, Gamma-World, SpatialCrafter, SAGE ... |
 | C. Spatial Intelligence | 15 | SpatialBot, HiSpatial, SpaceTools, Point-It-Out, ESI-Bench, SIS-Bench, SpatialVLA ... |
-| D. VLA and World-Action Models | 40 | OpenWAM, Show-Harness, ActSafeGuard, OpenVLA, VLAW, Gemini Robotics 2 ... |
-| E. Evaluation and Data Infrastructure | 28 | RoboMME, PAWBench, R2M-Bench, PBench, PhysBench, MolmoSpaces, WorldArena ... |
+| D. VLA and World-Action Models | 41 | Agile-WAM, OpenWAM, Show-Harness, ActSafeGuard, OpenVLA, VLAW ... |
+| E. Evaluation and Data Infrastructure | 32 | PersistBench, UNI, BinoGen, SlugTrails, RoboMME, PAWBench ... |
 
 ## 研究树
 

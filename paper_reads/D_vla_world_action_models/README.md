@@ -31,3 +31,4 @@ Deep dives for papers about vision-language-action models, robot foundation poli
 - [OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining](openwam-2026.md)
 - [Show-Harness: Just a VLM Agent Can Play Robots](show-harness-2026.md)
 - [ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies](actsafeguard-2026.md)
+- [Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control](agile-wam-2026.md)

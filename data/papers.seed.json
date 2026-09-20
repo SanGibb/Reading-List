@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "updated": "2026-09-14",
+  "updated": "2026-09-21",
   "branches": [
     {
       "id": "A",
@@ -206,6 +206,14 @@
           "visual_quality_decision": "strong",
           "visual_inspection_status": "verified_2026_08_24",
           "deep_dive_path": "paper_reads/A_executable_world_representation/wonderplay-2025.md"
+        },
+        {
+          "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations", "year": 2026, "venue": "arXiv / official project release", "url": "https://arxiv.org/abs/2609.20817",
+          "data": "PartNet-Mobility, ACD, ArtiCraft-10K, and procedurally generated articulated assets.", "method": "Multi-state articulation transformer with motion-span supervision.", "task": "Infer movable parts and executable joints from sparse unordered point clouds.", "novelty": "Feed-forward variable-view articulation recovery across observed states.", "source_quality": "primary_or_official", "demo_score": 3, "evidence_strength": 4, "project_relevance": "MovablePart, JointAxis, JointOrigin, MotionRange, and multi-state evidence fields.", "visual_quality_score": 4, "visual_quality_decision": "strong", "visual_inspection_status": "verified_2026_09_21", "deep_dive_path": "paper_reads/A_executable_world_representation/famos-2026.md"
+        },
+        {
+          "title": "FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents", "year": 2026, "venue": "arXiv", "url": "https://arxiv.org/abs/2609.20673",
+          "data": "Articulate3D posed RGB-D observations.", "method": "Frozen TRELLIS.2 O-Voxel prior plus a joint functional/articulation decoder.", "task": "Construct articulation-aware functional 3D scene graphs.", "novelty": "Decodes actionable function and kinematics jointly from generative 3D latents.", "source_quality": "primary_or_official", "demo_score": 1, "evidence_strength": 4, "project_relevance": "FunctionalElement, MovablePart, JointType, Axis, Origin, and Range fields.", "visual_quality_score": 0, "visual_quality_decision": "not_applicable", "visual_inspection_status": "verified_2026_09_21", "deep_dive_path": "paper_reads/A_executable_world_representation/funart-2026.md"
         }
       ]
     },
@@ -505,6 +513,10 @@
           "visual_quality_decision": "strong",
           "visual_inspection_status": "verified_2026_09_14",
           "deep_dive_path": "paper_reads/B_interactive_generation_pcg/gamma-world-2026.md"
+        },
+        {
+          "title": "Astronex-World 1.0: Real-Time Interactive World Model Foundation", "year": 2026, "venue": "arXiv / official open release", "url": "https://arxiv.org/abs/2609.20034",
+          "data": "Mixed controllable video domains with released training assets and weights.", "method": "Pose-aware bidirectional and block-causal video models with action conditioning and distillation.", "task": "Generate persistent video under camera, action, embodiment, and event control.", "novelty": "Open full-context and real-time causal streaming in one world-model family.", "source_quality": "primary_or_official", "demo_score": 5, "evidence_strength": 4, "project_relevance": "Baseline for real-time world generation and action/camera/event interfaces.", "visual_quality_score": 4, "visual_quality_decision": "strong", "visual_inspection_status": "verified_2026_09_21", "deep_dive_path": "paper_reads/B_interactive_generation_pcg/astronex-world-2026.md"
         }
       ]
     },
@@ -1507,6 +1519,10 @@
           "visual_quality_decision": "not_applicable",
           "visual_inspection_status": "verified_2026_09_14",
           "deep_dive_path": "paper_reads/D_vla_world_action_models/actsafeguard-2026.md"
+        },
+        {
+          "title": "Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control", "year": 2026, "venue": "arXiv / official project release", "url": "https://arxiv.org/abs/2609.20761",
+          "data": "Nine simulated and five real contact-rich tasks with synchronized vision, touch, and actions.", "method": "Compact shared latent predicts actions and modality-specific-horizon visual/tactile futures.", "task": "High-frequency contact-rich control with explicit multimodal future prediction.", "novelty": "Efficient tactile WAM without a large video-generation backbone.", "source_quality": "primary_or_official", "demo_score": 4, "evidence_strength": 4, "project_relevance": "TactileState, contact dynamics, recovery, and high-frequency WAM control.", "visual_quality_score": 4, "visual_quality_decision": "strong", "visual_inspection_status": "verified_2026_09_21", "deep_dive_path": "paper_reads/D_vla_world_action_models/agile-wam-2026.md"
         }
       ]
     },
@@ -2020,6 +2036,22 @@
           "visual_quality_decision": "not_applicable",
           "visual_inspection_status": "verified_2026_09_07",
           "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/robomme-2026.md"
+        },
+        {
+          "title": "Can 4D Foundation Models Remember?", "year": 2026, "venue": "arXiv / official project release", "url": "https://arxiv.org/abs/2609.20819",
+          "data": "PersistBench 360-degree videos provide omniscient off-screen object references.", "method": "Object-centric permanence, motion-continuity, and appearance metrics.", "task": "Evaluate off-screen memory in video and 4D models.", "novelty": "Separates visual memory from local pixel consistency using panoramic ground truth.", "source_quality": "primary_or_official", "demo_score": 5, "evidence_strength": 5, "project_relevance": "Persistent-state and revisit-memory benchmark.", "visual_quality_score": 0, "visual_quality_decision": "not_applicable", "visual_inspection_status": "verified_2026_09_21", "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/persistbench-2026.md"
+        },
+        {
+          "title": "Universal Navigation Interface: Robot-Free Data for Wheeled Robot Navigation", "year": 2026, "venue": "arXiv / official project release", "url": "https://arxiv.org/abs/2609.20114",
+          "data": "37.2 km of smartphone and rollator demonstrations with metric trajectories.", "method": "A physically constrained rollator provides wheeled-feasible supervision.", "task": "Collect robot-free data and transfer navigation policies.", "novelty": "Encodes embodiment feasibility in the collection device.", "source_quality": "primary_or_official", "demo_score": 4, "evidence_strength": 4, "project_relevance": "Embodiment-constrained data collection and navigation evaluation.", "visual_quality_score": 4, "visual_quality_decision": "strong", "visual_inspection_status": "verified_2026_09_21", "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/universal-navigation-interface-2026.md"
+        },
+        {
+          "title": "BinoGen: Scaling egocentric binocular data for embodied visual perception and learning", "year": 2026, "venue": "arXiv", "url": "https://arxiv.org/abs/2609.19881",
+          "data": "More than 20 million binocular images with dense geometry and motion labels.", "method": "Procedural worlds, trajectories, appearance variation, and observer-specific binocular rigs.", "task": "Generate embodiment-aware egocentric experience for perception training.", "novelty": "Jointly controls world and observer morphology with paired supervision.", "source_quality": "primary_or_official", "demo_score": 1, "evidence_strength": 4, "project_relevance": "ObserverEmbodiment, BinocularRig, SensorTrajectory, and dense supervision.", "visual_quality_score": 0, "visual_quality_decision": "not_applicable", "visual_inspection_status": "verified_2026_09_21", "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/binogen-2026.md"
+        },
+        {
+          "title": "SlugTrails: An Egocentric Benchmark for Floor Plan Localization in Large Buildings", "year": 2026, "venue": "arXiv / official GitHub release", "url": "https://arxiv.org/abs/2609.19876",
+          "data": "30 Hz Aria recordings across three buildings, six floors, and 22,089 square meters.", "method": "Unified single-frame, multi-view-sweep, and sequential-odometry protocols.", "task": "Benchmark egocentric floor-plan localization in large buildings.", "novelty": "Deployment-scale localization under multiple limited-FOV sensing regimes.", "source_quality": "primary_or_official", "demo_score": 4, "evidence_strength": 4, "project_relevance": "Map grounding, spatial memory, localization, and multi-view accumulation.", "visual_quality_score": 0, "visual_quality_decision": "not_applicable", "visual_inspection_status": "verified_2026_09_21", "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/slugtrails-2026.md"
         }
       ]
     }

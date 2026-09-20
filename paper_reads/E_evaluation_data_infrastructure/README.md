@@ -25,3 +25,7 @@ Deep dives for papers about embodied/world benchmarks, robot data infrastructure
 - [PAI-Bench: A Comprehensive Benchmark For Physical AI](pai-bench-2025.md)
 - [PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding](physbench-2025.md)
 - [RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies](robomme-2026.md)
+- [Can 4D Foundation Models Remember? (PersistBench)](persistbench-2026.md)
+- [Universal Navigation Interface: Robot-Free Data for Wheeled Robot Navigation](universal-navigation-interface-2026.md)
+- [BinoGen: Scaling egocentric binocular data for embodied visual perception and learning](binogen-2026.md)
+- [SlugTrails: An Egocentric Benchmark for Floor Plan Localization in Large Buildings](slugtrails-2026.md)
