@@ -32,3 +32,8 @@ Deep dives for papers about vision-language-action models, robot foundation poli
 - [Show-Harness: Just a VLM Agent Can Play Robots](show-harness-2026.md)
 - [ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies](actsafeguard-2026.md)
 - [Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control](agile-wam-2026.md)
+- [AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control](ad-wm-2026.md)
+- [Self-Adaptive VLA for Robust Robot Deployment](self-adaptive-vla-2026.md)
+- [Rolling-WAM: World Action Models with Rolling Imagination](rolling-wam-2026.md)
+- [Streaming-WAM: Action-Conditioned World-Action Model for Asynchronous Robot Manipulation](streaming-wam-2026.md)
+- [InternW0: A Foundational Physical World Model for Efficient Real-World Interactions](internw0-2026.md)

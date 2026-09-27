@@ -29,3 +29,6 @@ Deep dives for papers about embodied/world benchmarks, robot data infrastructure
 - [Universal Navigation Interface: Robot-Free Data for Wheeled Robot Navigation](universal-navigation-interface-2026.md)
 - [BinoGen: Scaling egocentric binocular data for embodied visual perception and learning](binogen-2026.md)
 - [SlugTrails: An Egocentric Benchmark for Floor Plan Localization in Large Buildings](slugtrails-2026.md)
+- [EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks](embodiedmemory-bench-2026.md)
+- [Training Object Permanence in World Models](wrop-object-permanence-2026.md)
+- [RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?](robotwin-phys-2026.md)

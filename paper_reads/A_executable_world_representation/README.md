@@ -16,3 +16,4 @@ Deep dives for papers about executable world structures, object parts, affordanc
 - [WonderPlay: Dynamic 3D Scene Generation from a Single Image and Actions](wonderplay-2025.md)
 - [FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations](famos-2026.md)
 - [FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents](funart-2026.md)
+- [PointCast: One World Model for Rigid, Articulated, and Deformable Object Manipulation](pointcast-2026.md)

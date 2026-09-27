@@ -1,0 +1,17 @@
+{
+  "run_id": "2026-09-28",
+  "created_at": "2026-09-28T00:00:00+08:00",
+  "branches": ["A", "B", "C", "D", "E"],
+  "minimum_year": 2024,
+  "search_windows": {"default_days": 7, "high_priority_days": 45},
+  "branch_queries": {
+    "A": ["2026 executable articulated deformable physical 3D world representation"],
+    "B": ["2026 interactive world generation procedural simulation robotics"],
+    "C": ["2026 spatial intelligence embodied reasoning metric 3D"],
+    "D": ["2026 vision-language-action world-action model robot"],
+    "E": ["2026 embodied world model benchmark dataset evaluation memory physics"]
+  },
+  "known_registry_path": "data/papers.seed.json",
+  "follow_sources_path": "data/follow_sources.seed.json",
+  "harness_paths": ["harness/system_harness.md", "harness/artifact_contracts.md", "harness/acceptance_harness.md"]
+}

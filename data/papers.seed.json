@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "updated": "2026-09-21",
+  "updated": "2026-09-28",
   "branches": [
     {
       "id": "A",
@@ -214,6 +214,10 @@
         {
           "title": "FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents", "year": 2026, "venue": "arXiv", "url": "https://arxiv.org/abs/2609.20673",
           "data": "Articulate3D posed RGB-D observations.", "method": "Frozen TRELLIS.2 O-Voxel prior plus a joint functional/articulation decoder.", "task": "Construct articulation-aware functional 3D scene graphs.", "novelty": "Decodes actionable function and kinematics jointly from generative 3D latents.", "source_quality": "primary_or_official", "demo_score": 1, "evidence_strength": 4, "project_relevance": "FunctionalElement, MovablePart, JointType, Axis, Origin, and Range fields.", "visual_quality_score": 0, "visual_quality_decision": "not_applicable", "visual_inspection_status": "verified_2026_09_21", "deep_dive_path": "paper_reads/A_executable_world_representation/funart-2026.md"
+        },
+        {
+          "title": "PointCast: One World Model for Rigid, Articulated, and Deformable Object Manipulation", "year": 2026, "venue": "arXiv / official project release", "url": "https://arxiv.org/abs/2609.28393",
+          "data": "Randomized rigid, cloth, rope, and cabinet simulation plus real teleoperation data.", "method": "Identity-preserving point-set diffusion dynamics conditioned on end-effector motion.", "task": "Predict object dynamics and support model-predictive manipulation control.", "novelty": "One mesh-free topology-agnostic representation spans rigid, articulated, and deformable objects.", "source_quality": "primary_or_official", "demo_score": 3, "evidence_strength": 4, "project_relevance": "PointIdentity, ObjectState, EndEffectorMotion, PredictedTrajectory, and topology-regime fields.", "visual_quality_score": 4, "visual_quality_decision": "strong", "visual_inspection_status": "verified_2026_09_28", "deep_dive_path": "paper_reads/A_executable_world_representation/pointcast-2026.md"
         }
       ]
     },
@@ -517,6 +521,10 @@
         {
           "title": "Astronex-World 1.0: Real-Time Interactive World Model Foundation", "year": 2026, "venue": "arXiv / official open release", "url": "https://arxiv.org/abs/2609.20034",
           "data": "Mixed controllable video domains with released training assets and weights.", "method": "Pose-aware bidirectional and block-causal video models with action conditioning and distillation.", "task": "Generate persistent video under camera, action, embodiment, and event control.", "novelty": "Open full-context and real-time causal streaming in one world-model family.", "source_quality": "primary_or_official", "demo_score": 5, "evidence_strength": 4, "project_relevance": "Baseline for real-time world generation and action/camera/event interfaces.", "visual_quality_score": 4, "visual_quality_decision": "strong", "visual_inspection_status": "verified_2026_09_21", "deep_dive_path": "paper_reads/B_interactive_generation_pcg/astronex-world-2026.md"
+        },
+        {
+          "title": "AgriGen: Large-Scale Scene Generation Framework for Photorealistic Agricultural Robotics Simulation", "year": 2026, "venue": "ICRA 2026 Workshop on Agricultural Robotics", "url": "https://arxiv.org/abs/2609.25725",
+          "data": "Procedural row-crop, orchard, and vineyard environments with layout and lighting variation.", "method": "ROS-integrated Isaac Sim scene generation with physics and domain randomization.", "task": "Generate scalable agricultural simulation worlds for robot learning and evaluation.", "novelty": "Packages agricultural morphology and seasonal/layout variation into a controllable robotics PCG interface.", "source_quality": "primary_or_official", "demo_score": 2, "evidence_strength": 3, "project_relevance": "CropType, RowCurve, PlantSpacing, Lighting, PhysicsConfig, and randomization fields.", "visual_quality_score": 3, "visual_quality_decision": "adequate", "visual_inspection_status": "verified_2026_09_28", "deep_dive_path": "paper_reads/B_interactive_generation_pcg/agrigen-2026.md"
         }
       ]
     },
@@ -1523,6 +1531,26 @@
         {
           "title": "Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control", "year": 2026, "venue": "arXiv / official project release", "url": "https://arxiv.org/abs/2609.20761",
           "data": "Nine simulated and five real contact-rich tasks with synchronized vision, touch, and actions.", "method": "Compact shared latent predicts actions and modality-specific-horizon visual/tactile futures.", "task": "High-frequency contact-rich control with explicit multimodal future prediction.", "novelty": "Efficient tactile WAM without a large video-generation backbone.", "source_quality": "primary_or_official", "demo_score": 4, "evidence_strength": 4, "project_relevance": "TactileState, contact dynamics, recovery, and high-frequency WAM control.", "visual_quality_score": 4, "visual_quality_decision": "strong", "visual_inspection_status": "verified_2026_09_21", "deep_dive_path": "paper_reads/D_vla_world_action_models/agile-wam-2026.md"
+        },
+        {
+          "title": "AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control", "year": 2026, "venue": "arXiv / official project release", "url": "https://arxiv.org/abs/2609.30264",
+          "data": "OGBench-Cube, five simulation environments, and DROID post-training for Franka transfer.", "method": "Residual joint-embedding dynamics with inverse and normalized action-recovery objectives.", "task": "Counterfactual action ranking and closed-loop MPC.", "novelty": "Optimizes action separability needed by planning instead of factual prediction alone.", "source_quality": "primary_or_official", "demo_score": 4, "evidence_strength": 4, "project_relevance": "CounterfactualAction, ActionSeparability, EliteRegret, and planning diagnostics.", "visual_quality_score": 4, "visual_quality_decision": "strong", "visual_inspection_status": "verified_2026_09_28", "deep_dive_path": "paper_reads/D_vla_world_action_models/ad-wm-2026.md"
+        },
+        {
+          "title": "Self-Adaptive VLA for Robust Robot Deployment", "year": 2026, "venue": "arXiv / official project release", "url": "https://arxiv.org/abs/2609.30092",
+          "data": "Shifted-policy rollouts across four bimanual and dexterous tasks.", "method": "Rollout-context encoder and AdaLN policy modulation with context ensembling.", "task": "Adapt a VLA to hardware and workstation shifts during deployment.", "novelty": "Uses the policy's own rollouts to infer and iteratively correct hardware shift.", "source_quality": "primary_or_official", "demo_score": 3, "evidence_strength": 4, "project_relevance": "DeploymentShift, RolloutContext, AdaptationIteration, and recovered-performance fields.", "visual_quality_score": 4, "visual_quality_decision": "strong", "visual_inspection_status": "verified_2026_09_28", "deep_dive_path": "paper_reads/D_vla_world_action_models/self-adaptive-vla-2026.md"
+        },
+        {
+          "title": "Rolling-WAM: World Action Models with Rolling Imagination", "year": 2026, "venue": "arXiv / official open release", "url": "https://arxiv.org/abs/2609.30247",
+          "data": "LIBERO, RoboTwin 2.0, and real Unitree G1 tasks.", "method": "Sliding video-action window with staggered denoising across replanning cycles.", "task": "Low-latency closed-loop world-action manipulation.", "novelty": "Amortizes joint future denoising through rolling imagination.", "source_quality": "primary_or_official", "demo_score": 4, "evidence_strength": 4, "project_relevance": "PredictionChunk, NoiseLevel, RollingWindow, and ReplanLatency fields.", "visual_quality_score": 3, "visual_quality_decision": "adequate", "visual_inspection_status": "verified_2026_09_28", "deep_dive_path": "paper_reads/D_vla_world_action_models/rolling-wam-2026.md"
+        },
+        {
+          "title": "Streaming-WAM: Action-Conditioned World-Action Model for Asynchronous Robot Manipulation", "year": 2026, "venue": "arXiv / official open-source release", "url": "https://arxiv.org/abs/2609.28927",
+          "data": "LIBERO, RoboTwin 2.0, and real stamp/block manipulation.", "method": "Streaming visual-action prediction conditioned on committed action prefixes.", "task": "Continuous asynchronous robot manipulation.", "novelty": "Aligns future prediction with actions executed during inference.", "source_quality": "primary_or_official", "demo_score": 5, "evidence_strength": 5, "project_relevance": "CommittedActionPrefix, StreamUpdate, ConditionSlot, and ExecutionOverlap fields.", "visual_quality_score": 4, "visual_quality_decision": "strong", "visual_inspection_status": "verified_2026_09_28", "deep_dive_path": "paper_reads/D_vla_world_action_models/streaming-wam-2026.md"
+        },
+        {
+          "title": "InternW0: A Foundational Physical World Model for Efficient Real-World Interactions", "year": 2026, "venue": "arXiv / official model release", "url": "https://arxiv.org/abs/2609.27656",
+          "data": "7,233.5 hours and 811,969 episodes across 25 domains, including EgoLab.", "method": "Asynchronous video/action experts, cached predictive context, embodiment interfaces, and tactile/force post-training.", "task": "Efficient physical prediction and heterogeneous robot control including scientific workflows.", "novelty": "Open omnimodal multi-frequency world-action model with science-native evaluation.", "source_quality": "primary_or_official", "demo_score": 5, "evidence_strength": 5, "project_relevance": "VisualFuture, ActionExpert, ContextCache, Force, Tactile, and ordered progress fields.", "visual_quality_score": 5, "visual_quality_decision": "strong", "visual_inspection_status": "verified_2026_09_28", "deep_dive_path": "paper_reads/D_vla_world_action_models/internw0-2026.md"
         }
       ]
     },
@@ -2052,6 +2080,18 @@
         {
           "title": "SlugTrails: An Egocentric Benchmark for Floor Plan Localization in Large Buildings", "year": 2026, "venue": "arXiv / official GitHub release", "url": "https://arxiv.org/abs/2609.19876",
           "data": "30 Hz Aria recordings across three buildings, six floors, and 22,089 square meters.", "method": "Unified single-frame, multi-view-sweep, and sequential-odometry protocols.", "task": "Benchmark egocentric floor-plan localization in large buildings.", "novelty": "Deployment-scale localization under multiple limited-FOV sensing regimes.", "source_quality": "primary_or_official", "demo_score": 4, "evidence_strength": 4, "project_relevance": "Map grounding, spatial memory, localization, and multi-view accumulation.", "visual_quality_score": 0, "visual_quality_decision": "not_applicable", "visual_inspection_status": "verified_2026_09_21", "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/slugtrails-2026.md"
+        },
+        {
+          "title": "EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks", "year": 2026, "venue": "arXiv / official dataset release", "url": "https://arxiv.org/abs/2609.28236",
+          "data": "2,554 executable AI2-THOR/ProcTHOR episodes across four memory challenges.", "method": "Later action tasks evaluate spatial, event, scene, and interaction-derived memory.", "task": "Measure retention, state updating, failure memory, and experience generalization.", "novelty": "Tests embodied memory through executable later action rather than static recall alone.", "source_quality": "primary_or_official", "demo_score": 5, "evidence_strength": 5, "project_relevance": "SpatialMemory, EventMemory, SceneMemory, StateUpdate, and ErrorRecurrence fields.", "visual_quality_score": 0, "visual_quality_decision": "not_applicable", "visual_inspection_status": "verified_2026_09_28", "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/embodiedmemory-bench-2026.md"
+        },
+        {
+          "title": "Training Object Permanence in World Models", "year": 2026, "venue": "arXiv / official open release", "url": "https://arxiv.org/abs/2609.28654",
+          "data": "150 Blender task generators, 1.5M samples, and a 300-question exam.", "method": "Core-cognition procedural generation and 16B PWM-WROP world-model training.", "task": "Train and evaluate object permanence and solidity in video world models.", "novelty": "Full open stack of cognitive generators, corpus, exam, answers, weights, and training code.", "source_quality": "primary_or_official", "demo_score": 5, "evidence_strength": 5, "project_relevance": "ObjectPermanence, Solidity, Occlusion, Containment, Support, and test-generator fields.", "visual_quality_score": 4, "visual_quality_decision": "strong", "visual_inspection_status": "verified_2026_09_28", "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/wrop-object-permanence-2026.md"
+        },
+        {
+          "title": "RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?", "year": 2026, "venue": "arXiv technical report", "url": "https://arxiv.org/abs/2609.26292",
+          "data": "More than 5,000 demonstrations with ground-truth values for 13 physical attributes.", "method": "Continuous plausible mass, friction, joint-dynamics, and related physics variation.", "task": "Evaluate WAM/VLA robustness to physical-condition shifts.", "novelty": "Makes physical parameters a first-class benchmark axis beyond visual/layout randomization.", "source_quality": "primary_or_official", "demo_score": 1, "evidence_strength": 4, "project_relevance": "Mass, Friction, JointDynamics, PhysicalCondition, and robustness fields.", "visual_quality_score": 0, "visual_quality_decision": "not_applicable", "visual_inspection_status": "verified_2026_09_28", "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/robotwin-phys-2026.md"
         }
       ]
     }

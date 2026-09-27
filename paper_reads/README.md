@@ -8,11 +8,11 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 
 | Branch | Directory | Focus | Count |
 |---|---|---|---|
-| A | `A_executable_world_representation/` | executable world structures, object parts, affordances, task predicates, and physical/deformable state | 13 |
-| B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 17 |
+| A | `A_executable_world_representation/` | executable world structures, object parts, affordances, task predicates, and physical/deformable state | 14 |
+| B | `B_interactive_generation_pcg/` | interactive assets, scenes, tasks, worlds, and PCG-style simulation data | 18 |
 | C | `C_spatial_intelligence/` | 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action | 15 |
-| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 41 |
-| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 32 |
+| D | `D_vla_world_action_models/` | vision-language-action models, robot foundation policies, and action-conditioned world models | 46 |
+| E | `E_evaluation_data_infrastructure/` | embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility | 35 |
 
 ## Current Reports
 
@@ -31,6 +31,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | WonderPlay: Dynamic 3D Scene Generation from a Single Image and Actions | A | [wonderplay-2025.md](A_executable_world_representation/wonderplay-2025.md) |
 | FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations | A | [famos-2026.md](A_executable_world_representation/famos-2026.md) |
 | FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents | A | [funart-2026.md](A_executable_world_representation/funart-2026.md) |
+| PointCast: One World Model for Rigid, Articulated, and Deformable Object Manipulation | A | [pointcast-2026.md](A_executable_world_representation/pointcast-2026.md) |
 | PhyScene | B | [physcene-2024.md](B_interactive_generation_pcg/physcene-2024.md) |
 | RoboGen | B | [robogen-2024.md](B_interactive_generation_pcg/robogen-2024.md) |
 | Steerable Scene Generation | B | [steerable-scene-generation-2025.md](B_interactive_generation_pcg/steerable-scene-generation-2025.md) |
@@ -48,6 +49,7 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | SpatialCrafter: Single Image World Modeling with Generative 3D Proxies | B | [spatialcrafter-2026.md](B_interactive_generation_pcg/spatialcrafter-2026.md) |
 | Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players | B | [gamma-world-2026.md](B_interactive_generation_pcg/gamma-world-2026.md) |
 | Astronex-World 1.0: Real-Time Interactive World Model Foundation | B | [astronex-world-2026.md](B_interactive_generation_pcg/astronex-world-2026.md) |
+| AgriGen: Large-Scale Scene Generation Framework for Photorealistic Agricultural Robotics Simulation | B | [agrigen-2026.md](B_interactive_generation_pcg/agrigen-2026.md) |
 | SpatialBot | C | [spatialbot-2024.md](C_spatial_intelligence/spatialbot-2024.md) |
 | HiSpatial | C | [hispatial-2026.md](C_spatial_intelligence/hispatial-2026.md) |
 | SpaceTools | C | [spacetools-2026.md](C_spatial_intelligence/spacetools-2026.md) |
@@ -104,6 +106,11 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | Show-Harness: Just a VLM Agent Can Play Robots | D | [show-harness-2026.md](D_vla_world_action_models/show-harness-2026.md) |
 | ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies | D | [actsafeguard-2026.md](D_vla_world_action_models/actsafeguard-2026.md) |
 | Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control | D | [agile-wam-2026.md](D_vla_world_action_models/agile-wam-2026.md) |
+| AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control | D | [ad-wm-2026.md](D_vla_world_action_models/ad-wm-2026.md) |
+| Self-Adaptive VLA for Robust Robot Deployment | D | [self-adaptive-vla-2026.md](D_vla_world_action_models/self-adaptive-vla-2026.md) |
+| Rolling-WAM: World Action Models with Rolling Imagination | D | [rolling-wam-2026.md](D_vla_world_action_models/rolling-wam-2026.md) |
+| Streaming-WAM: Action-Conditioned World-Action Model for Asynchronous Robot Manipulation | D | [streaming-wam-2026.md](D_vla_world_action_models/streaming-wam-2026.md) |
+| InternW0: A Foundational Physical World Model for Efficient Real-World Interactions | D | [internw0-2026.md](D_vla_world_action_models/internw0-2026.md) |
 | EWMBench | E | [ewmbench-2025.md](E_evaluation_data_infrastructure/ewmbench-2025.md) |
 | WorldScore | E | [worldscore-2025.md](E_evaluation_data_infrastructure/worldscore-2025.md) |
 | RoboVerse | E | [roboverse-2025.md](E_evaluation_data_infrastructure/roboverse-2025.md) |
@@ -136,3 +143,6 @@ Each report is updated across runs and linked from `data/papers.seed.json` throu
 | Universal Navigation Interface | E | [universal-navigation-interface-2026.md](E_evaluation_data_infrastructure/universal-navigation-interface-2026.md) |
 | BinoGen | E | [binogen-2026.md](E_evaluation_data_infrastructure/binogen-2026.md) |
 | SlugTrails | E | [slugtrails-2026.md](E_evaluation_data_infrastructure/slugtrails-2026.md) |
+| EmbodiedMemory-Bench | E | [embodiedmemory-bench-2026.md](E_evaluation_data_infrastructure/embodiedmemory-bench-2026.md) |
+| Training Object Permanence in World Models | E | [wrop-object-permanence-2026.md](E_evaluation_data_infrastructure/wrop-object-permanence-2026.md) |
+| RoboTwin-Phys | E | [robotwin-phys-2026.md](E_evaluation_data_infrastructure/robotwin-phys-2026.md) |
