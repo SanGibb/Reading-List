@@ -1,16 +1,20 @@
-# C. Spatial Intelligence
+# Spatial Intelligence
 
-Deep dives for papers about 3D reasoning, multi-view understanding, spatial VLMs, and spatial representations for action.
+Maintained deep dives: 16
 
-## Reports
-
-- [SpatialBot: Precise Spatial Understanding with Vision Language Models](spatialbot-2024.md)
-- [HiSpatial: Taming Hierarchical 3D Spatial Understanding in Vision-Language Models](hispatial-2026.md)
-- [SpaceTools: Tool-Augmented Spatial Reasoning via Double Interactive RL](spacetools-2026.md)
-- [Spatial Reasoning with Vision-Language Models in Ego-Centric Multi-View Scenes](ego3d-bench-2025.md)
+- [SpatialBot](spatialbot-2024.md)
+- [HiSpatial](hispatial-2026.md)
+- [SpaceTools](spacetools-2026.md)
+- [Ego3D-Bench / Ego3D-VLM](ego3d-bench-2025.md)
 - [Seeing Across Views / MV-RoboBench](mv-robobench-2026.md)
-- [SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Models](spatialvla-2025.md)
-- [DepthVLA: Enhancing Vision-Language-Action Models with Depth-Aware Spatial Reasoning](depthvla-2025.md)
-- [ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding for General Robot Manipulation](st-vla-2026.md)
-- [SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning](spatialstack-2026.md)
-- [Point-It-Out: Benchmarking Embodied Reasoning in Multi-Stage Visual Grounding](point-it-out-2025.md)
+- [SpatialVLA](spatialvla-2025.md)
+- [DepthVLA](depthvla-2025.md)
+- [ST-VLA](st-vla-2026.md)
+- [SpatialStack](spatialstack-2026.md)
+- [Embodied3DBench](embodied3dbench-2026.md)
+- [ESPIRE](espire-2026.md)
+- [SpatialAct: Probing Spatial Reasoning-to-Action Capabilities of Vision-Language Models in 3D Scenes](spatialact-2026.md)
+- [ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop](esi-bench-2026.md)
+- [Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence](self-in-space-2026.md)
+- [Point-It-Out: Benchmarking Embodied Reasoning for Vision Language Models in Multi-Stage Visual Grounding](point-it-out-2025.md)
+- [Vesta: A Generalist Embodied Reasoning Model](vesta-2026.md)

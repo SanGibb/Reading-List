@@ -1,0 +1,40 @@
+{
+  "run_id": "2026-10-05",
+  "created_at": "2026-10-05T00:00:00+08:00",
+  "branches": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "minimum_year": 2024,
+  "search_windows": {
+    "default_days": 7,
+    "high_priority_days": 60
+  },
+  "branch_queries": {
+    "A": [
+      "2026 executable physical articulated world representation"
+    ],
+    "B": [
+      "2026 simulation-ready scene generation procedural embodied world"
+    ],
+    "C": [
+      "2026 embodied spatial reasoning memory navigation"
+    ],
+    "D": [
+      "2026 VLA world-action model robot policy"
+    ],
+    "E": [
+      "2026 embodied dataset benchmark simulator evaluation"
+    ]
+  },
+  "known_registry_path": "data/papers.seed.json",
+  "follow_sources_path": "data/follow_sources.seed.json",
+  "harness_paths": [
+    "harness/system_harness.md",
+    "harness/artifact_contracts.md",
+    "harness/acceptance_harness.md"
+  ]
+}

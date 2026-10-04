@@ -1,0 +1,412 @@
+{
+  "run_id": "2026-10-05",
+  "followed_sources_checked": [
+    {
+      "source_id": "stanford-svl-behavior",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://svl.stanford.edu/publications/",
+        "https://jiajunwu.com/",
+        "https://behavior.stanford.edu/omnigibson/overview.html"
+      ]
+    },
+    {
+      "source_id": "princeton-pvl-infinigen",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://pvl.cs.princeton.edu/",
+        "https://infinigen.org/"
+      ]
+    },
+    {
+      "source_id": "ai2-embodied-prior",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://allenai.org/embodied-ai",
+        "https://prior.allenai.org/projects/ai2thor",
+        "https://procthor.allenai.org/"
+      ]
+    },
+    {
+      "source_id": "nvidia-cosmos-isaac",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://research.nvidia.com/labs/cosmos-lab/",
+        "https://research.nvidia.com/labs/dir/sage/",
+        "https://research.nvidia.com/labs/cosmos-lab/cosmos3",
+        "https://research.nvidia.com/labs/lpr/publication/gr00tn1_2025/"
+      ]
+    },
+    {
+      "source_id": "stanford-realab-shuran",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://real.stanford.edu/lab.html",
+        "https://shurans.github.io/"
+      ]
+    },
+    {
+      "source_id": "stanford-iris-openvla",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://irislab.stanford.edu/",
+        "https://openvla.github.io/"
+      ]
+    },
+    {
+      "source_id": "berkeley-rail-levine",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://rail.eecs.berkeley.edu/"
+      ]
+    },
+    {
+      "source_id": "physical-intelligence",
+      "status": "unreachable",
+      "notes": "Official home returned HTTP 403; query-indexed official PDFs showed no newer release.",
+      "urls_checked": [
+        "https://www.pi.website/",
+        "https://www.pi.website/blog/pi0"
+      ]
+    },
+    {
+      "source_id": "google-deepmind-robotics",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://deepmind.google/models/gemini-robotics/gemini-robotics/",
+        "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+        "https://github.com/google-deepmind/open_x_embodiment"
+      ]
+    },
+    {
+      "source_id": "ut-austin-rpl-yuke",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://rpl.cs.utexas.edu/people/",
+        "https://www.cs.utexas.edu/research/intelligent-robotics",
+        "https://robocasa.ai/"
+      ]
+    },
+    {
+      "source_id": "meta-fair-embodied",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/",
+        "https://ai.meta.com/blog/fair-robotics-open-source/",
+        "https://dhruvbatra.com/"
+      ]
+    },
+    {
+      "source_id": "huggingface-lerobot",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://huggingface.co/blog/smolvla",
+        "https://github.com/huggingface/lerobot",
+        "https://huggingface.co/docs/lerobot"
+      ]
+    },
+    {
+      "source_id": "toyota-research-institute-lbm",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://global.toyota/en/mobility/frontier-research/42394425.html",
+        "https://www.tri.global/about-us/dr-russ-tedrake"
+      ]
+    },
+    {
+      "source_id": "cmu-genesis-robogen",
+      "status": "spot_checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://github.com/Genesis-Embodied-AI/RoboGen"
+      ]
+    },
+    {
+      "source_id": "tsinghua-air-vla",
+      "status": "spot_checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://air.tsinghua.edu.cn/info/1007/2467.htm"
+      ]
+    },
+    {
+      "source_id": "embodiedgen-consortium",
+      "status": "spot_checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://arxiv.org/abs/2506.10600",
+        "https://3dgen4robot.github.io/"
+      ]
+    },
+    {
+      "source_id": "mit-csail-drake-scene-generation",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://scenesmith.github.io/",
+        "https://drake.mit.edu/"
+      ]
+    },
+    {
+      "source_id": "tencent-hunyuan-world",
+      "status": "spot_checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://hyworld.dev/",
+        "https://huggingface.co/tencent/HY-World-2.0"
+      ]
+    },
+    {
+      "source_id": "world-model-benchmarks",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://haoyi-duan.github.io/WorldScore/",
+        "https://world-arena.ai/",
+        "https://world-in-world.github.io/",
+        "https://ctrl-world.github.io/"
+      ]
+    },
+    {
+      "source_id": "vla-leaderboard",
+      "status": "checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://vlaleaderboard.com/"
+      ]
+    },
+    {
+      "source_id": "vla-survey",
+      "status": "spot_checked",
+      "notes": "Official surface and configured queries checked; no newer gate-clearing signal beyond candidates recorded in this run.",
+      "urls_checked": [
+        "https://vla-survey.github.io/"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "CAND-0001",
+      "title": "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2602.06949",
+      "source_type": "arxiv",
+      "discovered_from": "fixed core follow-source sweep",
+      "why_candidate": "Transfers interaction knowledge from unprecedented-scale unlabeled human video into a controllable robot world model and distills it to sustained real-time generation."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "title": "SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2606.28276",
+      "source_type": "arxiv",
+      "discovered_from": "fixed core follow-source sweep",
+      "why_candidate": "Connects automated real-to-sim reconstruction with systematic digital-cousin generation and validates both policy ranking and zero-shot real transfer."
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "title": "MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2603.16861",
+      "source_type": "arxiv",
+      "discovered_from": "fixed core follow-source sweep",
+      "why_candidate": "Demonstrates a fully open sim-only manipulation stack that transfers zero-shot to two real robot platforms without target-domain fine-tuning."
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "title": "MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2602.11337",
+      "source_type": "arxiv",
+      "discovered_from": "fixed core follow-source sweep",
+      "why_candidate": "Unifies unusually large scene, asset, grasp, simulator-portability, and factor-controlled evaluation layers in one open embodied ecosystem."
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "title": "Vesta: A Generalist Embodied Reasoning Model",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2606.20905",
+      "source_type": "arxiv",
+      "discovered_from": "fixed core follow-source sweep",
+      "why_candidate": "Shows that one embodied reasoning checkpoint can match specialist systems while retaining explicit episodic memory and tool-calling for robot planning."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2605.30280",
+      "source_type": "arxiv",
+      "discovered_from": "fixed core follow-source sweep",
+      "why_candidate": "Treats manipulation, navigation, and trajectory prediction as one transferable action-generation problem instead of separate specialist policies."
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "title": "Improving Robotic Generalist Policies via Flow Reversal Steering",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2606.13675",
+      "source_type": "arxiv",
+      "discovered_from": "fixed core follow-source sweep",
+      "why_candidate": "Uses the invertible correspondence of flow matching to translate coarse semantic actions into precise policy-native actions and a compact learnable noise-space controller."
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "title": "World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2604.01985",
+      "source_type": "arxiv",
+      "discovered_from": "fixed core follow-source sweep",
+      "why_candidate": "Turns forward-inverse asymmetry into a self-verification and exploration mechanism instead of estimating forward-model uncertainty directly."
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "title": "Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2604.21017",
+      "source_type": "arxiv",
+      "discovered_from": "fixed core follow-source sweep",
+      "why_candidate": "Provides the largest reported open synchronized medical-robot corpus and demonstrates both a VLA and one-checkpoint multi-platform world model on it."
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "title": "Q-Learning With World Models",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2608.17163",
+      "source_type": "arxiv",
+      "discovered_from": "broad primary-source search",
+      "why_candidate": "Narrow model-based RL contribution lacks an official embodied demo surface and does not clear the impact threshold for this registry."
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "title": "Robot World Models Are Not Invariant to How the Actions Are Written",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2609.23252",
+      "source_type": "arxiv",
+      "discovered_from": "broad primary-source search",
+      "why_candidate": "Useful diagnostic result, but narrow action-encoding scope and impact prior 2 fall below the acceptance threshold."
+    }
+  ],
+  "triage": [
+    {
+      "candidate_id": "CAND-0001",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary evidence, impact and project relevance priors clear the analysis threshold.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 5,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "decision": "analyze",
+      "primary_branch": "B",
+      "reason": "Primary evidence, impact and project relevance priors clear the analysis threshold.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 5,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary evidence, impact and project relevance priors clear the analysis threshold.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 5,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary evidence, impact and project relevance priors clear the analysis threshold.",
+      "dedupe_status": "duplicate",
+      "source_quality": "primary",
+      "impact_prior": 5,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "decision": "analyze",
+      "primary_branch": "C",
+      "reason": "Primary evidence, impact and project relevance priors clear the analysis threshold.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary evidence, impact and project relevance priors clear the analysis threshold.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 5,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary evidence, impact and project relevance priors clear the analysis threshold.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary evidence, impact and project relevance priors clear the analysis threshold.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary evidence, impact and project relevance priors clear the analysis threshold.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 5,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "decision": "reject",
+      "primary_branch": "D",
+      "reason": "Narrow model-based RL contribution lacks an official embodied demo surface and does not clear the impact threshold for this registry.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 2,
+      "project_relevance_prior": 3
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "decision": "reject",
+      "primary_branch": "D",
+      "reason": "Useful diagnostic result, but narrow action-encoding scope and impact prior 2 fall below the acceptance threshold.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 2,
+      "project_relevance_prior": 3
+    }
+  ]
+}

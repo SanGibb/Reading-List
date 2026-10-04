@@ -1,21 +1,23 @@
-# B. Interactive Generation and PCG
+# Interactive Generation and PCG
 
-Deep dives for papers about interactive assets, scenes, tasks, worlds, and PCG-style simulation data.
+Maintained deep dives: 19
 
-## Reports
-
-- [PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI](physcene-2024.md)
-- [RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](robogen-2024.md)
+- [PhyScene](physcene-2024.md)
+- [RoboGen](robogen-2024.md)
 - [Steerable Scene Generation](steerable-scene-generation-2025.md)
-- [SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](sage-2026.md)
-- [EmbodiedGen: Towards a Generative 3D World Engine for Embodied Intelligence](embodiedgen-2025.md)
-- [Holodeck: Language Guided Generation of 3D Embodied AI Environments](holodeck-2024.md)
-- [Infinigen Indoors: Photorealistic Indoor Scenes using Procedural Generation](infinigen-indoors-2024.md)
-- [SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](scenesmith-2026.md)
-- [SceneFoundry: Generating Interactive Infinite 3D Worlds](scenefoundry-2026.md)
-- [HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds](hy-world-2-2026.md)
+- [SAGE](sage-2026.md)
+- [EmbodiedGen](embodiedgen-2025.md)
+- [Holodeck](holodeck-2024.md)
+- [Infinigen Indoors](infinigen-indoors-2024.md)
+- [SceneSmith](scenesmith-2026.md)
+- [SceneFoundry](scenefoundry-2026.md)
+- [HY-World 2.0](hy-world-2-2026.md)
+- [SimWorld Studio: Generation and Evolution of Custom Embodied Agent Learning Environments](simworld-studio-2026.md)
+- [EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](embodiedgen-v2-2026.md)
 - [Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator](image2sim-2026.md)
 - [WonderWorld: Interactive 3D Scene Generation from a Single Image](wonderworld-2024.md)
+- [SpatialCrafter: Single Image World Modeling with Generative 3D Proxies](spatialcrafter-2026.md)
 - [Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players](gamma-world-2026.md)
 - [Astronex-World 1.0: Real-Time Interactive World Model Foundation](astronex-world-2026.md)
 - [AgriGen: Large-Scale Scene Generation Framework for Photorealistic Agricultural Robotics Simulation](agrigen-2026.md)
+- [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](simfoundry-2026.md)

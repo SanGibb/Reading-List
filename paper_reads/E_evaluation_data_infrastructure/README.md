@@ -1,16 +1,17 @@
-# E. Evaluation and Data Infrastructure
+# Evaluation and Data Infrastructure
 
-Deep dives for papers about embodied/world benchmarks, robot data infrastructure, evaluation protocols, and reproducibility.
+Maintained deep dives: 36
 
-## Reports
-
-- [EWMBench: Evaluating Embodied World Models](ewmbench-2025.md)
-- [WorldScore: A Unified Evaluation Benchmark for World Generation](worldscore-2025.md)
-- [RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning](roboverse-2025.md)
-- [OpenEQA: Embodied Question Answering in the Era of Foundation Models](openeqa-2024.md)
-- [WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models](worldarena-2026.md)
-- [World-in-World: World Models in a Closed-Loop World](world-in-world-2025.md)
+- [EWMBench](ewmbench-2025.md)
+- [WorldScore](worldscore-2025.md)
+- [RoboVerse](roboverse-2025.md)
+- [OpenEQA](openeqa-2024.md)
+- [WorldArena](worldarena-2026.md)
+- [World-in-World](world-in-world-2025.md)
 - [Ctrl-World](ctrl-world-2026.md)
+- [WorldArena 2.0](worldarena-2-2026.md)
+- [A Unified Evaluation Harness for Vision-Language-Action Models](vla-eval-2026.md)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](vla-replica-2026.md)
 - [RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation](robowm-bench-2026.md)
 - [VLA-Arena: An Open-Source Framework for Benchmarking Vision-Language-Action Models](vla-arena-2026.md)
 - [Colosseum V2: Benchmarking Generalization for Vision Language Action Models](colosseum-v2-2026.md)
@@ -20,15 +21,20 @@ Deep dives for papers about embodied/world benchmarks, robot data infrastructure
 - [WorldMark: A Unified Benchmark Suite for Interactive Video World Models](worldmark-2026.md)
 - [WorldOlympiad: Can Your World Model Survive a Triathlon?](worldolympiad-2026.md)
 - [WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models](worldbench-2026.md)
+- [Rethinking Video Generation Model for the Embodied World](rethinking-embodied-video-generation-2026.md)
 - [MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation](molmospaces-2026.md)
+- [Sekai2: From World Exploration to Interactive World Modeling](sekai2-2026.md)
 - [PBench: A Physical AI Benchmark for World Models](pbench-2025.md)
 - [PAI-Bench: A Comprehensive Benchmark For Physical AI](pai-bench-2025.md)
 - [PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding](physbench-2025.md)
+- [PAWBench: How Far Are We from Probabilistically Aligned World Modeling?](pawbench-2026.md)
+- [R2M-Bench: Evaluating Revisit Memory via Relative Consistency in Interactive Video World Models](r2m-bench-2026.md)
 - [RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies](robomme-2026.md)
-- [Can 4D Foundation Models Remember? (PersistBench)](persistbench-2026.md)
+- [Can 4D Foundation Models Remember?](persistbench-2026.md)
 - [Universal Navigation Interface: Robot-Free Data for Wheeled Robot Navigation](universal-navigation-interface-2026.md)
 - [BinoGen: Scaling egocentric binocular data for embodied visual perception and learning](binogen-2026.md)
 - [SlugTrails: An Egocentric Benchmark for Floor Plan Localization in Large Buildings](slugtrails-2026.md)
 - [EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks](embodiedmemory-bench-2026.md)
 - [Training Object Permanence in World Models](wrop-object-permanence-2026.md)
 - [RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?](robotwin-phys-2026.md)
+- [Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics](open-h-embodiment-2026.md)

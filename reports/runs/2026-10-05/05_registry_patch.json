@@ -1,0 +1,271 @@
+{
+  "run_id": "2026-10-05",
+  "branch_assignments": [
+    {
+      "candidate_id": "CAND-0001",
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "A strong reference for latent action fields, action-conditioned rollout, real-time simulation, cross-embodiment adaptation, and neural policy-evaluation interfaces."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "primary_branch": "B",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Direct compiler reference for SceneAsset, Articulation, PhysicalParameter, DigitalTwin, DigitalCousin, TaskVariant, and sim-real validation fields."
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Useful baseline for synthetic-only policy training, procedural diversity, domain randomization, embodiment transfer, and open sim-to-real evaluation."
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Direct source for Scene, Asset, Collider, Joint, Grasp, PhysicalParameter, DistributionShiftAxis, and cross-simulator evaluation schemas."
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "primary_branch": "C",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Provides a concrete memory-and-planning interface for Observation, Progress, Reasoning, Action, EpisodicMemory, PixelGoal, and ToolCall fields."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Strong multi-task VLA baseline for EmbodimentDescription, ControlConvention, ContinuousAction, NavigationWaypoint, and trajectory-transfer schemas."
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Reusable inference-time adaptation reference for ReferenceAction, LatentNoise, FlowReverse, SteeringPolicy, SemanticReasoner, and sparse-reward bootstrapping."
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Direct design reference for Plausibility, Reachability, InverseAction, CycleConsistency, ActionFollowingScore, and model-error-directed collection."
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Extends embodied data infrastructure with synchronized video-kinematics, clinical embodiment metadata, multi-platform action schemas, and long-horizon procedure evaluation."
+    }
+  ],
+  "taxonomy_change_proposals": [],
+  "registry_additions": [
+    {
+      "candidate_id": "CAND-0001",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/dreamdojo-2026.md",
+      "paper": {
+        "title": "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos",
+        "year": 2026,
+        "venue": "ICML 2026 Spotlight",
+        "url": "https://arxiv.org/abs/2602.06949",
+        "data": "44,000+ hours of egocentric human video spanning daily environments, objects, and dexterous interactions, followed by small target-robot post-training sets.",
+        "method": "A video foundation world model pretrained with continuous latent proxy actions on unlabeled human video, robot-action post-training, and few-step autoregressive distillation for real-time rollout.",
+        "task": "Generate action-conditioned robot futures for teleoperation, policy evaluation, and model-based planning across embodiments.",
+        "novelty": "Transfers interaction knowledge from unprecedented-scale unlabeled human video into a controllable robot world model and distills it to sustained real-time generation.",
+        "source_quality": "primary_or_official",
+        "demo_score": 5,
+        "evidence_strength": 5,
+        "project_relevance": "A strong reference for latent action fields, action-conditioned rollout, real-time simulation, cross-embodiment adaptation, and neural policy-evaluation interfaces.",
+        "visual_quality_score": 5,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_2026_10_05",
+        "deep_dive_path": "paper_reads/D_vla_world_action_models/dreamdojo-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "branch": "B",
+      "deep_dive_path": "paper_reads/B_interactive_generation_pcg/simfoundry-2026.md",
+      "paper": {
+        "title": "SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation",
+        "year": 2026,
+        "venue": "arXiv / official open-source release",
+        "url": "https://arxiv.org/abs/2606.28276",
+        "data": "Short real-world videos converted into digital twins plus object, scene, and task digital cousins across seven manipulation tasks and five policy architectures.",
+        "method": "A modular extraction-generation-augmentation pipeline segments a video, reconstructs objects and background, estimates physics and articulation, compiles an OmniGibson scene, and generates affordance-preserving cousins.",
+        "task": "Automatically build editable simulation-ready scenes for robot-policy training and evaluation from real video.",
+        "novelty": "Connects automated real-to-sim reconstruction with systematic digital-cousin generation and validates both policy ranking and zero-shot real transfer.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "evidence_strength": 5,
+        "project_relevance": "Direct compiler reference for SceneAsset, Articulation, PhysicalParameter, DigitalTwin, DigitalCousin, TaskVariant, and sim-real validation fields.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_2026_10_05",
+        "deep_dive_path": "paper_reads/B_interactive_generation_pcg/simfoundry-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/molmobot-2026.md",
+      "paper": {
+        "title": "MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation",
+        "year": 2026,
+        "venue": "arXiv / official open release",
+        "url": "https://arxiv.org/abs/2603.16861",
+        "data": "1.7M expert manipulation trajectories over 11K+ objects, 94K+ procedurally generated environments, eight tasks, and Franka FR3 plus RB-Y1 embodiments.",
+        "method": "A suite of behavior-cloned policies trained only on aggressively randomized procedural simulation data, with VLM-based, lightweight-transformer, and pi0-compatible architectures.",
+        "task": "Zero-shot sim-to-real pick-and-place, articulated-object manipulation, and door opening on unseen objects and environments.",
+        "novelty": "Demonstrates a fully open sim-only manipulation stack that transfers zero-shot to two real robot platforms without target-domain fine-tuning.",
+        "source_quality": "primary_or_official",
+        "demo_score": 5,
+        "evidence_strength": 5,
+        "project_relevance": "Useful baseline for synthetic-only policy training, procedural diversity, domain randomization, embodiment transfer, and open sim-to-real evaluation.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_2026_10_05",
+        "deep_dive_path": "paper_reads/D_vla_world_action_models/molmobot-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "branch": "C",
+      "deep_dive_path": "paper_reads/C_spatial_intelligence/vesta-2026.md",
+      "paper": {
+        "title": "Vesta: A Generalist Embodied Reasoning Model",
+        "year": 2026,
+        "venue": "arXiv technical report",
+        "url": "https://arxiv.org/abs/2606.20905",
+        "data": "A curated SFT mixture spanning localization, navigation, spatial intelligence, grounding, embodied reasoning, general VLM data, and real-robot action planning.",
+        "method": "Qwen3-VL-8B fine-tuning plus a multimodal memory harness that interleaves observations, textual progress state, reasoning, and next-subtask actions for hierarchical control.",
+        "task": "Unify spatial grounding, navigation, embodied QA, memory, and long-horizon robot planning in a single model.",
+        "novelty": "Shows that one embodied reasoning checkpoint can match specialist systems while retaining explicit episodic memory and tool-calling for robot planning.",
+        "source_quality": "primary_or_official",
+        "demo_score": 3,
+        "evidence_strength": 5,
+        "project_relevance": "Provides a concrete memory-and-planning interface for Observation, Progress, Reasoning, Action, EpisodicMemory, PixelGoal, and ToolCall fields.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_2026_10_05",
+        "deep_dive_path": "paper_reads/C_spatial_intelligence/vesta-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/qwen-vla-2026.md",
+      "paper": {
+        "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
+        "year": 2026,
+        "venue": "arXiv / official code release",
+        "url": "https://arxiv.org/abs/2605.30280",
+        "data": "Joint pretraining over robot manipulation trajectories, egocentric human demonstrations, simulation, vision-language navigation, trajectory supervision, and auxiliary vision-language data.",
+        "method": "A Qwen vision-language backbone with a DiT continuous-action decoder and embodiment-aware textual conditioning that unifies manipulation, navigation, and trajectory prediction.",
+        "task": "Generate continuous actions and trajectories across tasks, environments, and heterogeneous robot embodiments.",
+        "novelty": "Treats manipulation, navigation, and trajectory prediction as one transferable action-generation problem instead of separate specialist policies.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "evidence_strength": 5,
+        "project_relevance": "Strong multi-task VLA baseline for EmbodimentDescription, ControlConvention, ContinuousAction, NavigationWaypoint, and trajectory-transfer schemas.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_2026_10_05",
+        "deep_dive_path": "paper_reads/D_vla_world_action_models/qwen-vla-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/flow-reversal-steering-2026.md",
+      "paper": {
+        "title": "Improving Robotic Generalist Policies via Flow Reversal Steering",
+        "year": 2026,
+        "venue": "CoRL 2026",
+        "url": "https://arxiv.org/abs/2606.13675",
+        "data": "LIBERO simulation and six real DROID manipulation tasks using pi0.5 flow-matching VLA policies, coarse human/VLM guidance, and small task-specific steering sets.",
+        "method": "Reverse-integrates a flow policy from a coarse reference action into latent noise, then denoises toward a nearby in-distribution behavior; discovered noises support zero-shot steering, behavioral cloning, or RL bootstrapping.",
+        "task": "Elicit useful modes from a frozen generalist flow policy for hard new robot tasks.",
+        "novelty": "Uses the invertible correspondence of flow matching to translate coarse semantic actions into precise policy-native actions and a compact learnable noise-space controller.",
+        "source_quality": "primary_or_official",
+        "demo_score": 3,
+        "evidence_strength": 4,
+        "project_relevance": "Reusable inference-time adaptation reference for ReferenceAction, LatentNoise, FlowReverse, SteeringPolicy, SemanticReasoner, and sparse-reward bootstrapping.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_2026_10_05",
+        "deep_dive_path": "paper_reads/D_vla_world_action_models/flow-reversal-steering-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/world-action-verifier-2026.md",
+      "paper": {
+        "title": "World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry",
+        "year": 2026,
+        "venue": "NeurIPS 2026",
+        "url": "https://arxiv.org/abs/2604.01985",
+        "data": "Nine tasks across MiniGrid, RoboMimic, and ManiSkill, combining action-labeled transitions with broader action-free video-derived subgoals.",
+        "method": "Factorizes verification into state plausibility and action reachability, using a video-trained subgoal generator, sparse inverse dynamics, and forward-cycle consistency to target model failures.",
+        "task": "Let a world model discover under-covered failures, collect useful transitions, and improve downstream imagination-based policy learning.",
+        "novelty": "Turns forward-inverse asymmetry into a self-verification and exploration mechanism instead of estimating forward-model uncertainty directly.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "evidence_strength": 5,
+        "project_relevance": "Direct design reference for Plausibility, Reachability, InverseAction, CycleConsistency, ActionFollowingScore, and model-error-directed collection.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_2026_10_05",
+        "deep_dive_path": "paper_reads/D_vla_world_action_models/world-action-verifier-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "branch": "E",
+      "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/open-h-embodiment-2026.md",
+      "paper": {
+        "title": "Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics",
+        "year": 2026,
+        "venue": "arXiv / consortium data release",
+        "url": "https://arxiv.org/abs/2604.21017",
+        "data": "Open synchronized medical-robot video and kinematics from 49+ institutions and multiple platforms across surgery, ultrasound, and endoscopy.",
+        "method": "A cross-institution, multi-embodiment data standard plus GR00T-H VLA and Cosmos-H action-conditioned surgical world-model baselines.",
+        "task": "Train and evaluate medical robot foundation models, action prediction, and multi-embodiment surgical simulation.",
+        "novelty": "Provides the largest reported open synchronized medical-robot corpus and demonstrates both a VLA and one-checkpoint multi-platform world model on it.",
+        "source_quality": "primary_or_official",
+        "demo_score": 3,
+        "evidence_strength": 4,
+        "project_relevance": "Extends embodied data infrastructure with synchronized video-kinematics, clinical embodiment metadata, multi-platform action schemas, and long-horizon procedure evaluation.",
+        "visual_quality_score": 0,
+        "visual_quality_decision": "not_applicable",
+        "visual_inspection_status": "verified_2026_10_05",
+        "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/open-h-embodiment-2026.md"
+      }
+    }
+  ],
+  "registry_updates": [
+    {
+      "candidate_id": "CAND-0004",
+      "reason": "Existing MolmoSpaces entry retained; maintained deep dive refreshed from the current official release."
+    }
+  ],
+  "registry_noops": [
+    {
+      "candidate_id": "CAND-0010",
+      "reason": "Narrow model-based RL contribution lacks an official embodied demo surface and does not clear the impact threshold for this registry."
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "reason": "Useful diagnostic result, but narrow action-encoding scope and impact prior 2 fall below the acceptance threshold."
+    }
+  ]
+}

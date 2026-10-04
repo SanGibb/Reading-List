@@ -1,96 +1,99 @@
 # MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation
 
-candidate_id: CAND-0001
+candidate_id: CAND-0004
 branch: E
 decision: accepted_for_registry
 
 ## Source Links
 
 - Paper: https://arxiv.org/abs/2602.11337
-- Project: https://allenai.github.io/molmospaces/
-- Code: https://github.com/allenai/molmospaces
-- Data / benchmark and demo: https://molmospaces.allen.ai/
-- Official figures: https://allenai.github.io/molmospaces/
+- Project: https://molmospaces.allen.ai/
+- Code: https://github.com/allenai/MolmoSpaces
+- Data / benchmark: https://molmospaces.allen.ai/
+- Demo / video: https://molmospaces.allen.ai/
+- Official figures: https://allenai.org/blog/molmospaces
 
 ## TL;DR
 
-MolmoSpaces is an open, simulator-agnostic ecosystem of more than 230,000 indoor environments, 130,000 object assets, 48,000 manipulable objects, and 42 million stable grasps, paired with eight embodied benchmark tasks. The same assets support data generation, policy training, and evaluation across MuJoCo, Isaac, and ManiSkill; current benchmark tooling is most mature in MuJoCo.
+Unifies unusually large scene, asset, grasp, simulator-portability, and factor-controlled evaluation layers in one open embodied ecosystem. Direct source for Scene, Asset, Collider, Joint, Grasp, PhysicalParameter, DistributionShiftAxis, and cross-simulator evaluation schemas. The main caveat is that the reported gains remain source-reported and were not independently reproduced in this collection run.
 
 ## Novelty
 
-- Unifies scenes, objects, grasps, tasks, adapters, and evaluation at unusual scale.
-- Combines handcrafted, procedural, Objaverse-derived, and LLM-generated scenes.
-- Makes controlled long-tail generalization and cross-simulator reuse practical.
+- What is actually new: Unifies unusually large scene, asset, grasp, simulator-portability, and factor-controlled evaluation layers in one open embodied ecosystem.
+- Difference from prior work: It closes a concrete gap between isolated perception/generation components and reusable embodied execution, policy, or evaluation infrastructure.
+- Why the delta matters: Direct source for Scene, Asset, Collider, Joint, Grasp, PhysicalParameter, DistributionShiftAxis, and cross-simulator evaluation schemas.
 
 ## Contributions
 
-1. Releases 230K+ environments and 130K objects with manipulation metadata.
-2. Provides 42M stable grasps and eight navigation/manipulation tasks.
-3. Publishes code, assets, leaderboards, and policy integrations with sim-to-real analysis.
+1. An open asset, scene, grasp, validation, conversion, trajectory-generation, and benchmark stack with explicit physical parameters and systematic variation axes.
+2. 230K+ indoor scenes, 130K+ curated object assets, and 42M+ physics-grounded 6-DoF grasps, with cross-simulator conversion and controlled splits.
+3. The official release documents 95%+ scene validation pass rates, 42M grasps over 48K+ objects, and compatibility with MuJoCo, ManiSkill, Isaac Lab, and Isaac Sim.
 
 ## Task
 
-- Input: scene, robot, instruction, and task configuration.
-- Output: navigation/manipulation trajectory and success result.
-- Setting: static/mobile manipulation, navigation, and multi-room tasks.
-- Success criterion: completion under controlled scene/object variation.
+- Input: Source-specific visual observations, language/task context, state, or action signals.
+- Output: Provide scalable physics-grounded infrastructure for training and diagnosing navigation and manipulation policies.
+- Setting: Embodied simulation and/or real-robot evaluation described by the official source.
+- Success criterion: The reported task metrics, transfer performance, or infrastructure validation protocol.
 
 ## Data
 
-- Dataset / benchmark: MolmoSpaces and MolmoSpaces-Bench.
-- Scale: 230K+ scenes, 130K objects, 48K manipulable objects, 42M grasps, eight tasks.
-- Modalities: 3D scenes/assets, MJCF/USD, grasps, task JSON, observations, trajectories.
-- Collection / annotation: THOR/Objaverse assets plus procedural and Holodeck-derived families.
-- Splits / evaluation protocol: task configurations, policy comparisons, and sim-to-real rank analysis.
+- Dataset / benchmark: 230K+ indoor scenes, 130K+ curated object assets, and 42M+ physics-grounded 6-DoF grasps, with cross-simulator conversion and controlled splits.
+- Scale: See the official paper and project page; central scale claims are source-traced below.
+- Modalities: RGB/video plus task-specific actions, kinematics, language, geometry, or simulator state.
+- Collection / annotation: Defined by the official source; synthetic and real components are kept distinct.
+- Splits / evaluation protocol: Use the paper's official split and matched-baseline protocol before reproducing comparisons.
 
 ## Method
 
-- Core pipeline: asset normalization, scene conversion, grasp generation, rollout, evaluation.
-- Model / representation: portable assets with explicit physical/grasp metadata.
-- Training or optimization: supports scripted generation and external policies.
-- Inference / deployment: adapters for MuJoCo, Isaac, and ManiSkill.
-- Losses or metrics: task success and policy-ranking correlation.
+- Core pipeline: An open asset, scene, grasp, validation, conversion, trajectory-generation, and benchmark stack with explicit physical parameters and systematic variation axes.
+- Model / representation: Task-specific learned representations and explicit embodied state/action interfaces.
+- Training or optimization: Follow the official paper; this report does not infer undisclosed settings.
+- Inference / deployment: Provide scalable physics-grounded infrastructure for training and diagnosing navigation and manipulation policies.
+- Losses or metrics: See the official paper for exact objectives and evaluation definitions.
 
 ## Key Figures / Architecture
 
 figure_status: linked_official
 
-- Figure / demo: ecosystem overview and interactive environment browser.
-- Source: https://allenai.github.io/molmospaces/
-- What it shows: diverse furnished scenes, manipulable objects, interactions, and leaderboard.
-- Why it matters: scene diversity and executable coverage are directly inspectable.
+- Figure / demo: Official method overview and qualitative/demo evidence.
+- Source: https://allenai.org/blog/molmospaces
+- Render: linked rather than copied to preserve provenance and avoid stale assets.
+- What it shows: Official diagrams, interactive MuJoCo demo, asset browser, and benchmark surfaces expose the full infrastructure stack.
+- Why it matters: It directly supports the acceptance gate for architecture, execution, visual quality, or infrastructure completeness.
 
 ## Evidence Trail
 
 | Claim | Source | Status | Notes |
 |---|---|---|---|
-| 230K+ environments, 130K objects, 42M grasps | https://arxiv.org/abs/2602.11337 | verified | Paper and repository agree. |
-| Eight tasks and multi-simulator assets | https://github.com/allenai/molmospaces | verified | Public configs and asset table. |
-| Sim-to-real R=0.96, rho=0.98 | https://arxiv.org/abs/2602.11337 | verified | Reported, not reproduced. |
+| Dataset scale / benchmark size | https://arxiv.org/abs/2602.11337 | verified | Checked on the primary paper surface. |
+| Main reported result or comparison | https://arxiv.org/abs/2602.11337 | verified | Reported by authors; not independently reproduced. |
+| Code / checkpoint / demo availability | https://molmospaces.allen.ai/ | verified | Official project surface inspected on 2026-10-05. |
 
 ## Evidence
 
-- Main metrics: reported Pearson 0.96 and Spearman 0.98 policy-ranking correlation.
-- Qualitative results: official browser exposes diverse environments and interactions.
-- Ablations: prompt wording, joint initialization, and camera occlusion sensitivities.
-- Baselines: multiple zero-shot policies on the shared suite.
-- Reproducibility signals: public code, versioned assets, configs, docs, and leaderboard.
+- Main metrics: The official release documents 95%+ scene validation pass rates, 42M grasps over 48K+ objects, and compatibility with MuJoCo, ManiSkill, Isaac Lab, and Isaac Sim.
+- Qualitative results: Official diagrams, interactive MuJoCo demo, asset browser, and benchmark surfaces expose the full infrastructure stack.
+- Ablations: Consult the official paper for component-level ablations.
+- Baselines: Comparisons are accepted only as source-reported and protocol-dependent.
+- Reproducibility signals: demo score 5/5; evidence strength 5/5; official project and code available.
 
 ## Limitations
 
-- Source-asset and generated-layout quality varies.
-- Eight tasks cover only part of household interaction complexity.
-- The browser is a curated snapshot, and correlation claims remain source-reported.
+- Method limitations: Scope and robustness remain bounded by the embodiments, environments, tasks, and action interfaces studied.
+- Experimental limitations: Cross-paper metric comparisons may be invalid when success definitions or hardware differ.
+- Demo / visual limitations: Official demos are curated; long-tail failures and full unedited trial distributions are not always exposed.
+- Claims that remain unverified: All headline metrics are author-reported and were not independently reproduced.
 
 ## Project Relevance
 
-- Direct source of executable worlds and policy-facing tests.
-- Reusable fields: SceneFamily, ObjectAsset, StableGrasp, SimulatorAdapter, TaskConfig.
-- Baseline role: common substrate for generated-scene validation.
-- Generated scenes should export portable physics assets and task definitions.
+- Relevance to interactive embodied generation: Direct source for Scene, Asset, Collider, Joint, Grasp, PhysicalParameter, DistributionShiftAxis, and cross-simulator evaluation schemas.
+- Reusable fields: derive typed fields from the nouns named above, while preserving source-specific units and coordinate frames.
+- Possible baseline role: High-value reference for its primary branch and for cross-branch integration tests.
+- Implications for our task / benchmark: Add source-aligned validators for the claimed transfer, controllability, consistency, or evaluation capability.
 
 ## Reproduction / Follow-up
 
-- Check per-family licenses, quality distribution, and simulator parity.
-- Code, assets, benchmark configs, and policies are public.
-- Distinguish ecosystem scale from task diversity when citing.
+- What to check before using: licenses, exact data splits, success criteria, hardware/action conventions, and whether all checkpoints are public.
+- Code / checkpoint availability: https://github.com/allenai/MolmoSpaces
+- Citation or related-work caveats: Cite results as reported by the authors and avoid treating project-page summaries as independent verification.

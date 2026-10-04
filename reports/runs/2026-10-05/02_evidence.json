@@ -1,0 +1,439 @@
+{
+  "run_id": "2026-10-05",
+  "paper_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "title": "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos",
+      "year": 2026,
+      "venue": "ICML 2026 Spotlight",
+      "url": "https://arxiv.org/abs/2602.06949",
+      "paper_ids": {
+        "arxiv": "2602.06949",
+        "doi": "",
+        "openreview": "",
+        "project": "https://dreamdojo-world.github.io/",
+        "github": "https://github.com/NVlabs/DreamDojo"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "data": "44,000+ hours of egocentric human video spanning daily environments, objects, and dexterous interactions, followed by small target-robot post-training sets.",
+      "method": "A video foundation world model pretrained with continuous latent proxy actions on unlabeled human video, robot-action post-training, and few-step autoregressive distillation for real-time rollout.",
+      "task": "Generate action-conditioned robot futures for teleoperation, policy evaluation, and model-based planning across embodiments.",
+      "novelty": "Transfers interaction knowledge from unprecedented-scale unlabeled human video into a controllable robot world model and distills it to sustained real-time generation.",
+      "evidence": "The official project reports 10.81 FPS generation, stable rollouts beyond one minute, and applications to live teleoperation, policy evaluation, and planning.",
+      "claim_checks": [
+        {
+          "claim": "Dataset scale and evaluation result",
+          "source": "https://arxiv.org/abs/2602.06949",
+          "status": "verified",
+          "notes": "Checked against the official abstract/paper surface."
+        },
+        {
+          "claim": "Project, demo, or code availability",
+          "source": "https://dreamdojo-world.github.io/",
+          "status": "verified",
+          "notes": "Official project or consortium surface inspected."
+        }
+      ],
+      "limitations": "Reported results were not independently reproduced; transfer breadth, closed components, and benchmark-specific protocol choices should be checked before direct comparison.",
+      "project_relevance": "A strong reference for latent action fields, action-conditioned rollout, real-time simulation, cross-embodiment adaptation, and neural policy-evaluation interfaces."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "title": "SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation",
+      "year": 2026,
+      "venue": "arXiv / official open-source release",
+      "url": "https://arxiv.org/abs/2606.28276",
+      "paper_ids": {
+        "arxiv": "2606.28276",
+        "doi": "",
+        "openreview": "",
+        "project": "https://research.nvidia.com/labs/gear/simfoundry/",
+        "github": "https://github.com/NVlabs/simfoundry"
+      },
+      "primary_branch": "B",
+      "secondary_branches": [],
+      "data": "Short real-world videos converted into digital twins plus object, scene, and task digital cousins across seven manipulation tasks and five policy architectures.",
+      "method": "A modular extraction-generation-augmentation pipeline segments a video, reconstructs objects and background, estimates physics and articulation, compiles an OmniGibson scene, and generates affordance-preserving cousins.",
+      "task": "Automatically build editable simulation-ready scenes for robot-policy training and evaluation from real video.",
+      "novelty": "Connects automated real-to-sim reconstruction with systematic digital-cousin generation and validates both policy ranking and zero-shot real transfer.",
+      "evidence": "The paper reports mean sim-real Pearson correlation 0.911 and zero-shot real success gains of 17%, 21%, and 40% from object, scene, and task cousins.",
+      "claim_checks": [
+        {
+          "claim": "Dataset scale and evaluation result",
+          "source": "https://arxiv.org/abs/2606.28276",
+          "status": "verified",
+          "notes": "Checked against the official abstract/paper surface."
+        },
+        {
+          "claim": "Project, demo, or code availability",
+          "source": "https://research.nvidia.com/labs/gear/simfoundry/",
+          "status": "verified",
+          "notes": "Official project or consortium surface inspected."
+        }
+      ],
+      "limitations": "Reported results were not independently reproduced; transfer breadth, closed components, and benchmark-specific protocol choices should be checked before direct comparison.",
+      "project_relevance": "Direct compiler reference for SceneAsset, Articulation, PhysicalParameter, DigitalTwin, DigitalCousin, TaskVariant, and sim-real validation fields."
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "title": "MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation",
+      "year": 2026,
+      "venue": "arXiv / official open release",
+      "url": "https://arxiv.org/abs/2603.16861",
+      "paper_ids": {
+        "arxiv": "2603.16861",
+        "doi": "",
+        "openreview": "",
+        "project": "https://allenai.github.io/MolmoBot/",
+        "github": "https://github.com/allenai/MolmoBot"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "data": "1.7M expert manipulation trajectories over 11K+ objects, 94K+ procedurally generated environments, eight tasks, and Franka FR3 plus RB-Y1 embodiments.",
+      "method": "A suite of behavior-cloned policies trained only on aggressively randomized procedural simulation data, with VLM-based, lightweight-transformer, and pi0-compatible architectures.",
+      "task": "Zero-shot sim-to-real pick-and-place, articulated-object manipulation, and door opening on unseen objects and environments.",
+      "novelty": "Demonstrates a fully open sim-only manipulation stack that transfers zero-shot to two real robot platforms without target-domain fine-tuning.",
+      "evidence": "Ai2 reports full models, data, engine, training and evaluation code; the paper reports 79.2% Franka pick-and-place success versus 39.2% for the matched pi0.5-DROID comparison.",
+      "claim_checks": [
+        {
+          "claim": "Dataset scale and evaluation result",
+          "source": "https://arxiv.org/abs/2603.16861",
+          "status": "verified",
+          "notes": "Checked against the official abstract/paper surface."
+        },
+        {
+          "claim": "Project, demo, or code availability",
+          "source": "https://allenai.github.io/MolmoBot/",
+          "status": "verified",
+          "notes": "Official project or consortium surface inspected."
+        }
+      ],
+      "limitations": "Reported results were not independently reproduced; transfer breadth, closed components, and benchmark-specific protocol choices should be checked before direct comparison.",
+      "project_relevance": "Useful baseline for synthetic-only policy training, procedural diversity, domain randomization, embodiment transfer, and open sim-to-real evaluation."
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "title": "MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation",
+      "year": 2026,
+      "venue": "arXiv / official open infrastructure release",
+      "url": "https://arxiv.org/abs/2602.11337",
+      "paper_ids": {
+        "arxiv": "2602.11337",
+        "doi": "",
+        "openreview": "",
+        "project": "https://molmospaces.allen.ai/",
+        "github": "https://github.com/allenai/MolmoSpaces"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "data": "230K+ indoor scenes, 130K+ curated object assets, and 42M+ physics-grounded 6-DoF grasps, with cross-simulator conversion and controlled splits.",
+      "method": "An open asset, scene, grasp, validation, conversion, trajectory-generation, and benchmark stack with explicit physical parameters and systematic variation axes.",
+      "task": "Provide scalable physics-grounded infrastructure for training and diagnosing navigation and manipulation policies.",
+      "novelty": "Unifies unusually large scene, asset, grasp, simulator-portability, and factor-controlled evaluation layers in one open embodied ecosystem.",
+      "evidence": "The official release documents 95%+ scene validation pass rates, 42M grasps over 48K+ objects, and compatibility with MuJoCo, ManiSkill, Isaac Lab, and Isaac Sim.",
+      "claim_checks": [
+        {
+          "claim": "Dataset scale and evaluation result",
+          "source": "https://arxiv.org/abs/2602.11337",
+          "status": "verified",
+          "notes": "Checked against the official abstract/paper surface."
+        },
+        {
+          "claim": "Project, demo, or code availability",
+          "source": "https://molmospaces.allen.ai/",
+          "status": "verified",
+          "notes": "Official project or consortium surface inspected."
+        }
+      ],
+      "limitations": "Reported results were not independently reproduced; transfer breadth, closed components, and benchmark-specific protocol choices should be checked before direct comparison.",
+      "project_relevance": "Direct source for Scene, Asset, Collider, Joint, Grasp, PhysicalParameter, DistributionShiftAxis, and cross-simulator evaluation schemas."
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "title": "Vesta: A Generalist Embodied Reasoning Model",
+      "year": 2026,
+      "venue": "arXiv technical report",
+      "url": "https://arxiv.org/abs/2606.20905",
+      "paper_ids": {
+        "arxiv": "2606.20905",
+        "doi": "",
+        "openreview": "",
+        "project": "https://research.nvidia.com/labs/gear/vesta/",
+        "github": ""
+      },
+      "primary_branch": "C",
+      "secondary_branches": [],
+      "data": "A curated SFT mixture spanning localization, navigation, spatial intelligence, grounding, embodied reasoning, general VLM data, and real-robot action planning.",
+      "method": "Qwen3-VL-8B fine-tuning plus a multimodal memory harness that interleaves observations, textual progress state, reasoning, and next-subtask actions for hierarchical control.",
+      "task": "Unify spatial grounding, navigation, embodied QA, memory, and long-horizon robot planning in a single model.",
+      "novelty": "Shows that one embodied reasoning checkpoint can match specialist systems while retaining explicit episodic memory and tool-calling for robot planning.",
+      "evidence": "The official project reports 68.7 average embodied-cognition score, 55.5 R2R-CE success, and a 38.3-point real-robot success improvement over actor-only control.",
+      "claim_checks": [
+        {
+          "claim": "Dataset scale and evaluation result",
+          "source": "https://arxiv.org/abs/2606.20905",
+          "status": "verified",
+          "notes": "Checked against the official abstract/paper surface."
+        },
+        {
+          "claim": "Project, demo, or code availability",
+          "source": "https://research.nvidia.com/labs/gear/vesta/",
+          "status": "verified",
+          "notes": "Official project or consortium surface inspected."
+        }
+      ],
+      "limitations": "Reported results were not independently reproduced; transfer breadth, closed components, and benchmark-specific protocol choices should be checked before direct comparison.",
+      "project_relevance": "Provides a concrete memory-and-planning interface for Observation, Progress, Reasoning, Action, EpisodicMemory, PixelGoal, and ToolCall fields."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
+      "year": 2026,
+      "venue": "arXiv / official code release",
+      "url": "https://arxiv.org/abs/2605.30280",
+      "paper_ids": {
+        "arxiv": "2605.30280",
+        "doi": "",
+        "openreview": "",
+        "project": "https://github.com/QwenLM/Qwen-VLA",
+        "github": "https://github.com/QwenLM/Qwen-VLA"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "data": "Joint pretraining over robot manipulation trajectories, egocentric human demonstrations, simulation, vision-language navigation, trajectory supervision, and auxiliary vision-language data.",
+      "method": "A Qwen vision-language backbone with a DiT continuous-action decoder and embodiment-aware textual conditioning that unifies manipulation, navigation, and trajectory prediction.",
+      "task": "Generate continuous actions and trajectories across tasks, environments, and heterogeneous robot embodiments.",
+      "novelty": "Treats manipulation, navigation, and trajectory prediction as one transferable action-generation problem instead of separate specialist policies.",
+      "evidence": "The paper reports 97.9% LIBERO, 73.7% Simpler-WidowX, 86.1/87.2% RoboTwin Easy/Hard, 76.9% average real ALOHA OOD success, and 26.6% zero-shot DOMINO success.",
+      "claim_checks": [
+        {
+          "claim": "Dataset scale and evaluation result",
+          "source": "https://arxiv.org/abs/2605.30280",
+          "status": "verified",
+          "notes": "Checked against the official abstract/paper surface."
+        },
+        {
+          "claim": "Project, demo, or code availability",
+          "source": "https://github.com/QwenLM/Qwen-VLA",
+          "status": "verified",
+          "notes": "Official project or consortium surface inspected."
+        }
+      ],
+      "limitations": "Reported results were not independently reproduced; transfer breadth, closed components, and benchmark-specific protocol choices should be checked before direct comparison.",
+      "project_relevance": "Strong multi-task VLA baseline for EmbodimentDescription, ControlConvention, ContinuousAction, NavigationWaypoint, and trajectory-transfer schemas."
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "title": "Improving Robotic Generalist Policies via Flow Reversal Steering",
+      "year": 2026,
+      "venue": "CoRL 2026",
+      "url": "https://arxiv.org/abs/2606.13675",
+      "paper_ids": {
+        "arxiv": "2606.13675",
+        "doi": "",
+        "openreview": "",
+        "project": "https://flow-reversal-steering.github.io/",
+        "github": ""
+      },
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "data": "LIBERO simulation and six real DROID manipulation tasks using pi0.5 flow-matching VLA policies, coarse human/VLM guidance, and small task-specific steering sets.",
+      "method": "Reverse-integrates a flow policy from a coarse reference action into latent noise, then denoises toward a nearby in-distribution behavior; discovered noises support zero-shot steering, behavioral cloning, or RL bootstrapping.",
+      "task": "Elicit useful modes from a frozen generalist flow policy for hard new robot tasks.",
+      "novelty": "Uses the invertible correspondence of flow matching to translate coarse semantic actions into precise policy-native actions and a compact learnable noise-space controller.",
+      "evidence": "The official project reports up to 95-point absolute gains, 80% versus 20% on six real DROID tasks, and auxiliary-policy training in under one minute.",
+      "claim_checks": [
+        {
+          "claim": "Dataset scale and evaluation result",
+          "source": "https://arxiv.org/abs/2606.13675",
+          "status": "verified",
+          "notes": "Checked against the official abstract/paper surface."
+        },
+        {
+          "claim": "Project, demo, or code availability",
+          "source": "https://flow-reversal-steering.github.io/",
+          "status": "verified",
+          "notes": "Official project or consortium surface inspected."
+        }
+      ],
+      "limitations": "Reported results were not independently reproduced; transfer breadth, closed components, and benchmark-specific protocol choices should be checked before direct comparison.",
+      "project_relevance": "Reusable inference-time adaptation reference for ReferenceAction, LatentNoise, FlowReverse, SteeringPolicy, SemanticReasoner, and sparse-reward bootstrapping."
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "title": "World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry",
+      "year": 2026,
+      "venue": "NeurIPS 2026",
+      "url": "https://arxiv.org/abs/2604.01985",
+      "paper_ids": {
+        "arxiv": "2604.01985",
+        "doi": "",
+        "openreview": "",
+        "project": "https://world-action-verifier.github.io/",
+        "github": "https://github.com/yuejiangliu/world-action-verifier"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "data": "Nine tasks across MiniGrid, RoboMimic, and ManiSkill, combining action-labeled transitions with broader action-free video-derived subgoals.",
+      "method": "Factorizes verification into state plausibility and action reachability, using a video-trained subgoal generator, sparse inverse dynamics, and forward-cycle consistency to target model failures.",
+      "task": "Let a world model discover under-covered failures, collect useful transitions, and improve downstream imagination-based policy learning.",
+      "novelty": "Turns forward-inverse asymmetry into a self-verification and exploration mechanism instead of estimating forward-model uncertainty directly.",
+      "evidence": "The paper reports 2x sample efficiency and more than 18% downstream policy improvement; official code and qualitative rollout comparisons are public.",
+      "claim_checks": [
+        {
+          "claim": "Dataset scale and evaluation result",
+          "source": "https://arxiv.org/abs/2604.01985",
+          "status": "verified",
+          "notes": "Checked against the official abstract/paper surface."
+        },
+        {
+          "claim": "Project, demo, or code availability",
+          "source": "https://world-action-verifier.github.io/",
+          "status": "verified",
+          "notes": "Official project or consortium surface inspected."
+        }
+      ],
+      "limitations": "Reported results were not independently reproduced; transfer breadth, closed components, and benchmark-specific protocol choices should be checked before direct comparison.",
+      "project_relevance": "Direct design reference for Plausibility, Reachability, InverseAction, CycleConsistency, ActionFollowingScore, and model-error-directed collection."
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "title": "Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics",
+      "year": 2026,
+      "venue": "arXiv / consortium data release",
+      "url": "https://arxiv.org/abs/2604.21017",
+      "paper_ids": {
+        "arxiv": "2604.21017",
+        "doi": "",
+        "openreview": "",
+        "project": "https://openhembodiment.org/",
+        "github": ""
+      },
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "data": "Open synchronized medical-robot video and kinematics from 49+ institutions and multiple platforms across surgery, ultrasound, and endoscopy.",
+      "method": "A cross-institution, multi-embodiment data standard plus GR00T-H VLA and Cosmos-H action-conditioned surgical world-model baselines.",
+      "task": "Train and evaluate medical robot foundation models, action prediction, and multi-embodiment surgical simulation.",
+      "novelty": "Provides the largest reported open synchronized medical-robot corpus and demonstrates both a VLA and one-checkpoint multi-platform world model on it.",
+      "evidence": "The paper reports GR00T-H as the only evaluated model completing the structured suturing task (25%) and 64% average success across a 29-step ex-vivo sequence.",
+      "claim_checks": [
+        {
+          "claim": "Dataset scale and evaluation result",
+          "source": "https://arxiv.org/abs/2604.21017",
+          "status": "verified",
+          "notes": "Checked against the official abstract/paper surface."
+        },
+        {
+          "claim": "Project, demo, or code availability",
+          "source": "https://openhembodiment.org/",
+          "status": "verified",
+          "notes": "Official project or consortium surface inspected."
+        }
+      ],
+      "limitations": "Reported results were not independently reproduced; transfer breadth, closed components, and benchmark-specific protocol choices should be checked before direct comparison.",
+      "project_relevance": "Extends embodied data infrastructure with synchronized video-kinematics, clinical embodiment metadata, multi-platform action schemas, and long-horizon procedure evaluation."
+    }
+  ],
+  "demo_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "project_url": "https://dreamdojo-world.github.io/",
+      "code_url": "https://github.com/NVlabs/DreamDojo",
+      "demo_url": "https://dreamdojo-world.github.io/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 5,
+      "demo_notes": "Official project overview and extensive action-conditioned rollout videos across GR-1, G1, AgiBot, and YAM.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "project_url": "https://research.nvidia.com/labs/gear/simfoundry/",
+      "code_url": "https://github.com/NVlabs/simfoundry",
+      "demo_url": "https://research.nvidia.com/labs/gear/simfoundry/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 4,
+      "demo_notes": "Official project videos show reconstruction, editing, articulated interaction, bimanual tasks, and sim-to-real executions.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "project_url": "https://allenai.github.io/MolmoBot/",
+      "code_url": "https://github.com/allenai/MolmoBot",
+      "demo_url": "https://allenai.github.io/MolmoBot/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 5,
+      "demo_notes": "Official technical site provides side-by-side simulation and continuous real-robot executions for all task families.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "project_url": "https://molmospaces.allen.ai/",
+      "code_url": "https://github.com/allenai/MolmoSpaces",
+      "demo_url": "https://molmospaces.allen.ai/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 5,
+      "demo_notes": "Official diagrams, interactive MuJoCo demo, asset browser, and benchmark surfaces expose the full infrastructure stack.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "project_url": "https://research.nvidia.com/labs/gear/vesta/",
+      "code_url": "",
+      "demo_url": "https://research.nvidia.com/labs/gear/vesta/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 3,
+      "demo_notes": "Official page includes architecture figures and continuous YAM manipulation and simulated G1 navigation videos.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "project_url": "https://github.com/QwenLM/Qwen-VLA",
+      "code_url": "https://github.com/QwenLM/Qwen-VLA",
+      "demo_url": "https://github.com/QwenLM/Qwen-VLA",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 4,
+      "demo_notes": "The official repository exposes architecture, benchmark tables, and continuous robot demo videos.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "project_url": "https://flow-reversal-steering.github.io/",
+      "code_url": "",
+      "demo_url": "https://flow-reversal-steering.github.io/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 3,
+      "demo_notes": "Official page provides an interactive flow visualization, LIBERO trajectories, and real DROID execution comparisons.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "project_url": "https://world-action-verifier.github.io/",
+      "code_url": "https://github.com/yuejiangliu/world-action-verifier",
+      "demo_url": "https://world-action-verifier.github.io/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 4,
+      "demo_notes": "Official page links method diagrams, an interactive MiniGrid predictor, and side-by-side RoboMimic rollout videos.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "project_url": "https://openhembodiment.org/",
+      "code_url": "",
+      "demo_url": "https://openhembodiment.org/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 3,
+      "demo_notes": "Dataset/infrastructure paper; architecture and corpus figures are linked through the official paper rather than used as a generation-quality gate.",
+      "verification_status": "verified"
+    }
+  ]
+}

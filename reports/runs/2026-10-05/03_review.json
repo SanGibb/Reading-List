@@ -1,0 +1,269 @@
+{
+  "run_id": "2026-10-05",
+  "visual_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "visual_materials": [
+        "https://dreamdojo-world.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video",
+        "screenshots"
+      ],
+      "visual_quality_score": 5,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official project overview and extensive action-conditioned rollout videos across GR-1, G1, AgiBot, and YAM.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "visual_materials": [
+        "https://research.nvidia.com/labs/gear/simfoundry/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video",
+        "screenshots"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official project videos show reconstruction, editing, articulated interaction, bimanual tasks, and sim-to-real executions.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "visual_materials": [
+        "https://allenai.github.io/MolmoBot/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video",
+        "screenshots"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official technical site provides side-by-side simulation and continuous real-robot executions for all task families.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "visual_materials": [
+        "https://allenai.org/blog/molmospaces"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video",
+        "screenshots"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official diagrams, interactive MuJoCo demo, asset browser, and benchmark surfaces expose the full infrastructure stack.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "visual_materials": [
+        "https://research.nvidia.com/labs/gear/vesta/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video",
+        "screenshots"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official page includes architecture figures and continuous YAM manipulation and simulated G1 navigation videos.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "visual_materials": [
+        "https://github.com/QwenLM/Qwen-VLA"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video",
+        "screenshots"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "The official repository exposes architecture, benchmark tables, and continuous robot demo videos.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "visual_materials": [
+        "https://flow-reversal-steering.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video",
+        "screenshots"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official page provides an interactive flow visualization, LIBERO trajectories, and real DROID execution comparisons.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "visual_materials": [
+        "https://world-action-verifier.github.io/"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video",
+        "screenshots"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official page links method diagrams, an interactive MiniGrid predictor, and side-by-side RoboMimic rollout videos.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "visual_materials": [
+        "https://arxiv.org/abs/2604.21017"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Dataset/infrastructure paper; architecture and corpus figures are linked through the official paper rather than used as a generation-quality gate.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    }
+  ],
+  "quality_review": [
+    {
+      "candidate_id": "CAND-0001",
+      "review_decision": "pass",
+      "issues": [
+        "Claims are source-reported, not independently reproduced."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "review_decision": "pass",
+      "issues": [
+        "Claims are source-reported, not independently reproduced."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "review_decision": "pass",
+      "issues": [
+        "Claims are source-reported, not independently reproduced."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "review_decision": "pass",
+      "issues": [
+        "Claims are source-reported, not independently reproduced."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "review_decision": "pass",
+      "issues": [
+        "Claims are source-reported, not independently reproduced."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "review_decision": "pass",
+      "issues": [
+        "Claims are source-reported, not independently reproduced."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "review_decision": "pass",
+      "issues": [
+        "Claims are source-reported, not independently reproduced."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "review_decision": "pass",
+      "issues": [
+        "Claims are source-reported, not independently reproduced."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "review_decision": "pass",
+      "issues": [
+        "Claims are source-reported, not independently reproduced."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "review_decision": "block",
+      "issues": [
+        "Narrow model-based RL contribution lacks an official embodied demo surface and does not clear the impact threshold for this registry."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "review_decision": "block",
+      "issues": [
+        "Useful diagnostic result, but narrow action-encoding scope and impact prior 2 fall below the acceptance threshold."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": false
+    }
+  ],
+  "run_level_issues": [
+    "No brand-new October 1-5 release cleared all gates; accepted items are newly influential omissions surfaced by fixed official sources."
+  ]
+}
