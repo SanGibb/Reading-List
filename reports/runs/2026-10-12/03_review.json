@@ -1,0 +1,431 @@
+{
+  "run_id": "2026-10-12",
+  "visual_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.07609"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures",
+        "official demo/video media"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official qualitative evidence is coherent and task-relevant.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "visual_materials": [
+        "https://ziyang-ye.github.io/WorldCast-Page"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures",
+        "official demo/video media"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official qualitative evidence is coherent and task-relevant.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "visual_materials": [
+        "https://cvlab-kaist.github.io/Tetris3D/"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures",
+        "official demo/video media"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official qualitative evidence is coherent and task-relevant.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "visual_materials": [
+        "https://ledger-3d.github.io/"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/data contribution; visual generation quality is not applicable.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "visual_materials": [
+        "https://brave-eai.github.io/DreamTrue"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures",
+        "official demo/video media"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official qualitative evidence is coherent and task-relevant.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.12285"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures",
+        "official demo/video media"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Official qualitative evidence is coherent and task-relevant.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "visual_materials": [
+        "https://unitas-wam.github.io/"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures",
+        "official demo/video media"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official qualitative evidence is coherent and task-relevant.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.10515"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures",
+        "official demo/video media"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official qualitative evidence is coherent and task-relevant.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.10528"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures",
+        "official demo/video media"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official qualitative evidence is coherent and task-relevant.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "visual_materials": [
+        "https://www.jaibardhan.com/depthworld"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures",
+        "official demo/video media"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official qualitative evidence is coherent and task-relevant.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.12069"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/data contribution; visual generation quality is not applicable.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.11723"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/data contribution; visual generation quality is not applicable.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "visual_materials": [
+        "https://fvl-repo.github.io/OpenViTac/"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/data contribution; visual generation quality is not applicable.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.09294"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/data contribution; visual generation quality is not applicable.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.07597"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/data contribution; visual generation quality is not applicable.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "visual_materials": [
+        "https://bigym2.github.io/"
+      ],
+      "inspected_modalities": [
+        "official project/paper figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Benchmark/data contribution; visual generation quality is not applicable.",
+      "failure_modes": [
+        "Curated examples may not expose the full long-tail failure distribution."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    }
+  ],
+  "quality_review": [
+    {
+      "candidate_id": "CAND-0001",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "review_decision": "pass",
+      "issues": [],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "review_decision": "block",
+      "issues": [
+        "Promising 8.90x-10.67x latency result, but the linked project is still an anonymous staging surface and the current run could not confidently inspect representative unedited hardware demos."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "review_decision": "block",
+      "issues": [
+        "Strong local 3D control, but current evidence is object generation rather than interactive scene/world generation; project relevance is below the branch threshold."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "review_decision": "block",
+      "issues": [
+        "Impressive simulation-scale RL, but it is a policy optimization contribution rather than VLA/world-action modeling or shared evaluation infrastructure for this repository."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": false
+    }
+  ],
+  "run_level_issues": [
+    "Physical Intelligence returned HTTP 403.",
+    "RealtimeWAM retained on watchlist because its current demo surface was not sufficiently inspectable."
+  ]
+}

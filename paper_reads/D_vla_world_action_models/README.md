@@ -1,6 +1,6 @@
 # VLA and World-Action Models
 
-Maintained deep dives: 51
+Maintained deep dives: 57
 
 - [Octo](octo-2024.md)
 - [OpenVLA](openvla-2024.md)
@@ -53,3 +53,9 @@ Maintained deep dives: 51
 - [Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments](qwen-vla-2026.md)
 - [Improving Robotic Generalist Policies via Flow Reversal Steering](flow-reversal-steering-2026.md)
 - [World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry](world-action-verifier-2026.md)
+- [DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training](dreamtrue-2026.md)
+- [PLaW-VLA: Predictive Latent World Modeling for Vision-Language-Action Policies](plaw-vla-2026.md)
+- [UNITAS: A 3D-Native World Action Model for Embodied Manipulation](unitas-2026.md)
+- [RoboJEPA: Scaling Robotic Latent World Models](robojepa-2026.md)
+- [Long-WAM: Scaling the Context of World-Action Models](long-wam-2026.md)
+- [DepthWorld: 3D World Model for Robot Manipulation](depthworld-2026.md)

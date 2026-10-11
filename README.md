@@ -9,35 +9,36 @@
 | 内容 | 入口 |
 |---|---|
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
-| 最新扩库摘要 | [reports/2026-10-05-expansion.md](reports/2026-10-05-expansion.md) |
-| 当前已收录精读 | 136 篇，见 [paper_reads/README.md](paper_reads/README.md) |
+| 最新扩库摘要 | [reports/2026-10-12-expansion.md](reports/2026-10-12-expansion.md) |
+| 当前已收录精读 | 152 篇，见 [paper_reads/README.md](paper_reads/README.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。通过筛选的候选应全部加入，不做固定 top-k 抽样。
 
 ## 本周更新内容
 
-本轮扩库日期：2026-10-05。完整审计摘要见 [reports/2026-10-05-expansion.md](reports/2026-10-05-expansion.md)。
+本轮扩库日期：2026-10-12。完整审计摘要见 [reports/2026-10-12-expansion.md](reports/2026-10-12-expansion.md)。
 
 ### 重点新增与补齐
 
 | Paper | Branch | 简要说明 | 精读 |
 |---|---|---|---|
-| DreamDojo | D | 44K-hour human-video robot world model with real-time controllable rollout. | [dreamdojo-2026.md](paper_reads/D_vla_world_action_models/dreamdojo-2026.md) |
-| SimFoundry | B | Video-to-simulation digital twins and editable digital cousins. | [simfoundry-2026.md](paper_reads/B_interactive_generation_pcg/simfoundry-2026.md) |
-| MolmoB0T / Qwen-VLA | D | Open sim-only transfer and unified cross-task continuous action modeling. | [paper_reads/D](paper_reads/D_vla_world_action_models/README.md) |
-| Vesta / WAV / FRS | C/D | Memory-aware embodied reasoning, world-model verification, and flow-policy steering. | [paper_reads](paper_reads/README.md) |
-| MolmoSpaces / Open-H | E | Large-scale open simulation and medical-robot data infrastructure. | [paper_reads/E](paper_reads/E_evaluation_data_infrastructure/README.md) |
+| PhysLDM | A | Latent-diffusion simulation of high-resolution deformable dynamics. | [physldm-2026.md](paper_reads/A_executable_world_representation/physldm-2026.md) |
+| WorldCast / Tetris3D | B | Distributed shared worlds and physically coherent scene assembly. | [paper_reads/B](paper_reads/B_interactive_generation_pcg/README.md) |
+| Ledger | C | Persistent 3D object memory from long egocentric video. | [ledger-3d-2026.md](paper_reads/C_spatial_intelligence/ledger-3d-2026.md) |
+| DreamTrue / UNITAS / RoboJEPA | D | Counterfactual, 3D-native, and scalable latent world-action modeling. | [paper_reads/D](paper_reads/D_vla_world_action_models/README.md) |
+| Long-WAM / DepthWorld / PLaW-VLA | D | Long-context, metric-3D, and efficient predictive control. | [paper_reads/D](paper_reads/D_vla_world_action_models/README.md) |
+| LIVIN / MultiWorldBench / OpenViTac / RT-Safe / GaugeBench / BiGym 2.0 | E | Digital twins, consistency, touch, safety, invariance, and humanoid evaluation. | [paper_reads/E](paper_reads/E_evaluation_data_infrastructure/README.md) |
 
 ### 全量收录状态
 
 | Branch | Count | Anchor works |
 |---|---:|---|
-| A. Executable World Representation | 14 | SceneFun3D, BEHAVIOR-1K, PointCast, FAMOS, FunArt, WonderPlay ... |
-| B. Interactive Generation and PCG | 19 | PhyScene, AgriGen, WonderWorld, Astronex-World, Gamma-World, SAGE ... |
-| C. Spatial Intelligence | 16 | SpatialBot, HiSpatial, SpaceTools, Point-It-Out, ESI-Bench, SIS-Bench, SpatialVLA ... |
-| D. VLA and World-Action Models | 51 | InternW0, Streaming-WAM, Rolling-WAM, AD-WM, Agile-WAM, OpenWAM ... |
-| E. Evaluation and Data Infrastructure | 36 | EMem-Bench, WROP, RoboTwin-Phys, PersistBench, UNI, RoboMME ... |
+| A. Executable World Representation | 15 | SceneFun3D, PointCast, PhysLDM, FAMOS, FunArt, WonderPlay ... |
+| B. Interactive Generation and PCG | 21 | WorldCast, Tetris3D, SimFoundry, AgriGen, Gamma-World, SAGE ... |
+| C. Spatial Intelligence | 17 | Ledger, Vesta, SpatialBot, SpaceTools, Point-It-Out, ESI-Bench ... |
+| D. VLA and World-Action Models | 57 | DreamTrue, UNITAS, RoboJEPA, Long-WAM, DepthWorld, PLaW-VLA ... |
+| E. Evaluation and Data Infrastructure | 42 | LIVIN, MultiWorldBench, OpenViTac, RT-Safe, GaugeBench, BiGym 2.0 ... |
 
 ## 研究树
 

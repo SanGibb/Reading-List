@@ -1,0 +1,564 @@
+{
+  "run_id": "2026-10-12",
+  "followed_sources_checked": [
+    {
+      "source_id": "stanford-svl-behavior",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "lab": "https://svl.stanford.edu/publications/",
+        "jiajun_wu": "https://jiajunwu.com/",
+        "behavior": "https://behavior.stanford.edu/omnigibson/overview.html"
+      }
+    },
+    {
+      "source_id": "princeton-pvl-infinigen",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "lab": "https://pvl.cs.princeton.edu/",
+        "infinigen": "https://infinigen.org/"
+      }
+    },
+    {
+      "source_id": "ai2-embodied-prior",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "embodied_ai": "https://allenai.org/embodied-ai",
+        "ai2thor": "https://prior.allenai.org/projects/ai2thor",
+        "procthor": "https://procthor.allenai.org/"
+      }
+    },
+    {
+      "source_id": "nvidia-cosmos-isaac",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "cosmos_lab": "https://research.nvidia.com/labs/cosmos-lab/",
+        "sage": "https://research.nvidia.com/labs/dir/sage/",
+        "cosmos3": "https://research.nvidia.com/labs/cosmos-lab/cosmos3",
+        "groot": "https://research.nvidia.com/labs/lpr/publication/gr00tn1_2025/"
+      }
+    },
+    {
+      "source_id": "stanford-realab-shuran",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "lab": "https://real.stanford.edu/lab.html",
+        "pi": "https://shurans.github.io/"
+      }
+    },
+    {
+      "source_id": "stanford-iris-openvla",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "lab": "https://irislab.stanford.edu/",
+        "openvla": "https://openvla.github.io/"
+      }
+    },
+    {
+      "source_id": "berkeley-rail-levine",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "lab": "https://rail.eecs.berkeley.edu/"
+      }
+    },
+    {
+      "source_id": "physical-intelligence",
+      "status": "unreachable",
+      "notes": "Official home returned HTTP 403; official/source-indexed release searches were checked instead.",
+      "urls_checked": {
+        "home": "https://www.pi.website/",
+        "pi0": "https://www.pi.website/blog/pi0"
+      }
+    },
+    {
+      "source_id": "google-deepmind-robotics",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "gemini_robotics": "https://deepmind.google/models/gemini-robotics/gemini-robotics/",
+        "gemini_robotics_blog": "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+        "open_x_embodiment": "https://github.com/google-deepmind/open_x_embodiment"
+      }
+    },
+    {
+      "source_id": "ut-austin-rpl-yuke",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "lab_people": "https://rpl.cs.utexas.edu/people/",
+        "ut_robotics": "https://www.cs.utexas.edu/research/intelligent-robotics",
+        "robocasa": "https://robocasa.ai/"
+      }
+    },
+    {
+      "source_id": "meta-fair-embodied",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "open_eqa_blog": "https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/",
+        "fair_robotics": "https://ai.meta.com/blog/fair-robotics-open-source/",
+        "dhruv_batra": "https://dhruvbatra.com/"
+      }
+    },
+    {
+      "source_id": "huggingface-lerobot",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "smolvla_blog": "https://huggingface.co/blog/smolvla",
+        "lerobot_github": "https://github.com/huggingface/lerobot",
+        "lerobot_docs": "https://huggingface.co/docs/lerobot"
+      }
+    },
+    {
+      "source_id": "toyota-research-institute-lbm",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "frontier_research": "https://global.toyota/en/mobility/frontier-research/42394425.html",
+        "russ_tedrake": "https://www.tri.global/about-us/dr-russ-tedrake"
+      }
+    },
+    {
+      "source_id": "cmu-genesis-robogen",
+      "status": "spot_checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "robogen_github": "https://github.com/Genesis-Embodied-AI/RoboGen"
+      }
+    },
+    {
+      "source_id": "tsinghua-air-vla",
+      "status": "spot_checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "xvla_news": "https://air.tsinghua.edu.cn/info/1007/2467.htm"
+      }
+    },
+    {
+      "source_id": "embodiedgen-consortium",
+      "status": "spot_checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "embodiedgen_arxiv": "https://arxiv.org/abs/2506.10600",
+        "survey_project": "https://3dgen4robot.github.io/"
+      }
+    },
+    {
+      "source_id": "mit-csail-drake-scene-generation",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "scenesmith": "https://scenesmith.github.io/",
+        "drake": "https://drake.mit.edu/"
+      }
+    },
+    {
+      "source_id": "tencent-hunyuan-world",
+      "status": "spot_checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "hyworld": "https://hyworld.dev/",
+        "hf": "https://huggingface.co/tencent/HY-World-2.0"
+      }
+    },
+    {
+      "source_id": "world-model-benchmarks",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "worldscore": "https://haoyi-duan.github.io/WorldScore/",
+        "worldarena": "https://world-arena.ai/",
+        "world_in_world": "https://world-in-world.github.io/",
+        "ctrl_world": "https://ctrl-world.github.io/"
+      }
+    },
+    {
+      "source_id": "vla-leaderboard",
+      "status": "checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "leaderboard": "https://vlaleaderboard.com/"
+      }
+    },
+    {
+      "source_id": "vla-survey",
+      "status": "spot_checked",
+      "notes": "Official surfaces and source-indexed releases checked; qualifying hits are represented in this run.",
+      "urls_checked": {
+        "survey": "https://vla-survey.github.io/"
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "CAND-0001",
+      "title": "PhysLDM: Latent Diffusion for High-Fidelity Deformable Simulation",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2610.07609",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Introduces a compact spatiotemporal latent-diffusion formulation for volumetric deformable simulation and shows diffusion avoids non-physical regression averages in chaotic regimes."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "title": "WorldCast: Distributed Multiplayer World Models",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2610.12412",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Replaces costly joint multi-view generation with distributed local world-model clients coordinated through compact shared state."
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "title": "Tetris3D: 3D Scene Generation With Objects That Fit Together",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2610.10539",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Makes local inter-object fit an explicit generation condition rather than generating scene objects independently."
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "title": "Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2610.10538",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Combines persistent 3D localization, object histories, and contextual descriptions while retaining untouched and out-of-view objects."
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.12468",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Targets success bias in robot video data through counterfactual action post-training and explicit human-rated interaction defects."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "title": "PLaW-VLA: Predictive Latent World Modeling for Vision-Language-Action Policies",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.12285",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Models task-relevant predictive latents instead of reconstructing pixels, cutting world-model inference cost while preserving policy gains."
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "title": "UNITAS: A 3D-Native World Action Model for Embodied Manipulation",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.12099",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Moves WAM representation from view-dependent pixels to a shared metric 3D motion interface."
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "title": "RoboJEPA: Scaling Robotic Latent World Models",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.10515",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Establishes empirical scaling laws for multi-embodiment latent robot world models and validates imagination error as a real-robot proxy."
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "title": "Long-WAM: Scaling the Context of World-Action Models",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.10528",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Shows long context benefits depend on autoregressive video foundations and packages that history into a real-time WAM system."
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "title": "DepthWorld: 3D World Model for Robot Manipulation",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.08780",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Adds large-scale metric 3D supervision to a pretrained robot video world model without replacing its visual VAE."
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "title": "LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.12069",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Combines real-home correspondence, interaction readiness, and dense lived-in arrangements in one digital-twin benchmark."
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "title": "MultiWorldBench: Do Independently Controlled Views Describe One Shared World?",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.11723",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Separates plausible single views from persistent multi-client world consistency with capability-level diagnostics."
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "title": "OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.10384",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Provides aligned sim-real tactile tasks and controlled comparisons of tactile representations, fusion, and co-training."
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "title": "RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.09294",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Makes inference latency itself part of the embodied safety environment instead of freezing the world at observation time."
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "title": "The Robot Is Not Its Description: GaugeBench for Representation Robustness in Morphology-Aware Policies",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.07597",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Separates embodiment generalization from arbitrary representation-gauge robustness."
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "title": "BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.07594",
+      "source_type": "arxiv_primary",
+      "discovered_from": "2026-10-06 through 2026-10-12 arXiv primary-source sweep plus fixed-source checks",
+      "why_candidate": "Places coding-agent policies and learned humanoid controllers in the same open, replayable evaluation harness."
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "title": "RealtimeWAM: How Fast Can I Run My World Action Model?",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.10079",
+      "source_type": "arxiv_primary",
+      "discovered_from": "broad primary-source search",
+      "why_candidate": "Promising 8.90x-10.67x latency result, but the linked project is still an anonymous staging surface and the current run could not confidently inspect representative unedited hardware demos."
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "title": "SpaceFlow: Locally Controllable 3D Generation",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2610.12399",
+      "source_type": "arxiv_primary",
+      "discovered_from": "broad primary-source search",
+      "why_candidate": "Strong local 3D control, but current evidence is object generation rather than interactive scene/world generation; project relevance is below the branch threshold."
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.12465",
+      "source_type": "arxiv_primary",
+      "discovered_from": "broad primary-source search",
+      "why_candidate": "Impressive simulation-scale RL, but it is a policy optimization contribution rather than VLA/world-action modeling or shared evaluation infrastructure for this repository."
+    }
+  ],
+  "triage": [
+    {
+      "candidate_id": "CAND-0001",
+      "decision": "analyze",
+      "primary_branch": "A",
+      "reason": "Directly informs DeformableState, VolumetricMesh, MaterialDynamics, BoundaryCondition, and differentiable simulator interfaces.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "decision": "analyze",
+      "primary_branch": "B",
+      "reason": "Useful for SharedWorldState, PlayerState, CrossViewConsistency, ConcurrentAction, and distributed interactive-world runtime contracts.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "decision": "analyze",
+      "primary_branch": "B",
+      "reason": "Direct reference for ContactRelation, Support, FitConstraint, OccludedGeometry, PhysicalStability, and scene-assembly validators.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "decision": "analyze",
+      "primary_branch": "C",
+      "reason": "Provides concrete PersistentObject, RestingLocation, MoveEvent, ContainerState, ObservationHistory, and retrieval fields.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Strong reference for ActionTrajectory, Calibration, CounterfactualOutcome, InteractionDefect, and world-model reward interfaces.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Useful baseline for FutureLatent, TaskSemantics, CausalConditioning, Horizon, and long-horizon control evaluation.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Direct reference for MetricFrame, ActionFlow, SceneFlow, PointTrajectory, PhysicalTime, and cross-embodiment action schemas.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Useful for LatentRollout, ImaginationError, ComputeBudget, Embodiment, GoalImage, and scaling-law evaluation.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Direct baseline for ObservationHistory, ProgressState, StreamingEncoder, AsyncExecution, ContextLength, and latency-aware control.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Provides CameraCalibration, MetricDepth, Extrinsics, ReprojectionError, MultiViewFuture, and geometry-consistency fields.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Direct infrastructure for HomeTwin, ObjectArrangement, FreeSpace, InteractionRegion, Reconstruction, Navigation, and LocoManipulation schemas.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Essential evaluation layer for SharedState, Persistence, ConcurrentInteraction, CrossViewMotion, DelayedRevisit, and StructuralConsistency.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Direct source for TactileHistory, PhysicalProperty, SensorType, SimRealPair, ContactTask, and cross-domain evaluation.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Adds ObservationTime, DecisionLatency, ExecutionTime, DynamicHazard, CollisionEvent, and SafeCompletion fields.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Direct validator for EmbodimentDescription, JointAxis, CoordinateConvention, LinkOrder, ActionTransport, and invariance tests.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Strong infrastructure for WholeBodyController, VRDemonstration, HiddenSeed, AgentWrittenPolicy, ReplayTrace, and humanoid task evaluation.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "decision": "watchlist",
+      "primary_branch": "D",
+      "reason": "Promising 8.90x-10.67x latency result, but the linked project is still an anonymous staging surface and the current run could not confidently inspect representative unedited hardware demos.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "decision": "reject",
+      "primary_branch": "B",
+      "reason": "Strong local 3D control, but current evidence is object generation rather than interactive scene/world generation; project relevance is below the branch threshold.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 2
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "decision": "reject",
+      "primary_branch": "D",
+      "reason": "Impressive simulation-scale RL, but it is a policy optimization contribution rather than VLA/world-action modeling or shared evaluation infrastructure for this repository.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 3,
+      "project_relevance_prior": 2
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "run_id": "2026-10-12",
+  "branch_assignments": [
+    {
+      "candidate_id": "CAND-0001",
+      "primary_branch": "A",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Directly informs DeformableState, VolumetricMesh, MaterialDynamics, BoundaryCondition, and differentiable simulator interfaces."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "primary_branch": "B",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Useful for SharedWorldState, PlayerState, CrossViewConsistency, ConcurrentAction, and distributed interactive-world runtime contracts."
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "primary_branch": "B",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Direct reference for ContactRelation, Support, FitConstraint, OccludedGeometry, PhysicalStability, and scene-assembly validators."
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "primary_branch": "C",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Provides concrete PersistentObject, RestingLocation, MoveEvent, ContainerState, ObservationHistory, and retrieval fields."
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Strong reference for ActionTrajectory, Calibration, CounterfactualOutcome, InteractionDefect, and world-model reward interfaces."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Useful baseline for FutureLatent, TaskSemantics, CausalConditioning, Horizon, and long-horizon control evaluation."
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Direct reference for MetricFrame, ActionFlow, SceneFlow, PointTrajectory, PhysicalTime, and cross-embodiment action schemas."
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Useful for LatentRollout, ImaginationError, ComputeBudget, Embodiment, GoalImage, and scaling-law evaluation."
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Direct baseline for ObservationHistory, ProgressState, StreamingEncoder, AsyncExecution, ContextLength, and latency-aware control."
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Provides CameraCalibration, MetricDepth, Extrinsics, ReprojectionError, MultiViewFuture, and geometry-consistency fields."
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Direct infrastructure for HomeTwin, ObjectArrangement, FreeSpace, InteractionRegion, Reconstruction, Navigation, and LocoManipulation schemas."
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Essential evaluation layer for SharedState, Persistence, ConcurrentInteraction, CrossViewMotion, DelayedRevisit, and StructuralConsistency."
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Direct source for TactileHistory, PhysicalProperty, SensorType, SimRealPair, ContactTask, and cross-domain evaluation."
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Adds ObservationTime, DecisionLatency, ExecutionTime, DynamicHazard, CollisionEvent, and SafeCompletion fields."
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Direct validator for EmbodimentDescription, JointAxis, CoordinateConvention, LinkOrder, ActionTransport, and invariance tests."
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "taxonomy_confidence": 5,
+      "reason": "Strong infrastructure for WholeBodyController, VRDemonstration, HiddenSeed, AgentWrittenPolicy, ReplayTrace, and humanoid task evaluation."
+    }
+  ],
+  "taxonomy_change_proposals": [],
+  "registry_additions": [
+    {
+      "candidate_id": "CAND-0001",
+      "branch": "A",
+      "deep_dive_path": "paper_reads/A_executable_world_representation/physldm-2026.md",
+      "paper": {
+        "title": "PhysLDM: Latent Diffusion for High-Fidelity Deformable Simulation",
+        "year": 2026,
+        "venue": "arXiv",
+        "url": "https://arxiv.org/abs/2610.07609",
+        "data": "Objaverse-scale kinematic volumetric-mesh trajectories, with OOD evaluation on GSO and Toys4K.",
+        "method": "A holistic spatiotemporal VAE compresses high-resolution volumetric trajectories, followed by latent diffusion for one-shot deformable dynamics prediction.",
+        "task": "Predict long-horizon, high-resolution deformable-body trajectories and support differentiable inverse/design optimization.",
+        "novelty": "Introduces a compact spatiotemporal latent-diffusion formulation for volumetric deformable simulation and shows diffusion avoids non-physical regression averages in chaotic regimes.",
+        "source_quality": "primary_or_official",
+        "demo_score": 3,
+        "evidence_strength": 4,
+        "project_relevance": "Directly informs DeformableState, VolumetricMesh, MaterialDynamics, BoundaryCondition, and differentiable simulator interfaces.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/A_executable_world_representation/physldm-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "branch": "B",
+      "deep_dive_path": "paper_reads/B_interactive_generation_pcg/worldcast-2026.md",
+      "paper": {
+        "title": "WorldCast: Distributed Multiplayer World Models",
+        "year": 2026,
+        "venue": "arXiv",
+        "url": "https://arxiv.org/abs/2610.12412",
+        "data": "Counter-Strike 2 multi-player trajectories with player positions, map geometry, controls, and synchronized views.",
+        "method": "Each player runs a local video-generator/state-model client; clients exchange compact player and scene states projected into camera-aligned fields.",
+        "task": "Generate independently controlled, mutually consistent multiplayer views in real time.",
+        "novelty": "Replaces costly joint multi-view generation with distributed local world-model clients coordinated through compact shared state.",
+        "source_quality": "primary_or_official",
+        "demo_score": 3,
+        "evidence_strength": 4,
+        "project_relevance": "Useful for SharedWorldState, PlayerState, CrossViewConsistency, ConcurrentAction, and distributed interactive-world runtime contracts.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/B_interactive_generation_pcg/worldcast-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "branch": "B",
+      "deep_dive_path": "paper_reads/B_interactive_generation_pcg/tetris3d-2026.md",
+      "paper": {
+        "title": "Tetris3D: 3D Scene Generation With Objects That Fit Together",
+        "year": 2026,
+        "venue": "arXiv",
+        "url": "https://arxiv.org/abs/2610.10539",
+        "data": "ComOb, a physics-simulation dataset of 1.2M scenes with per-object meshes and pairwise physical-relation annotations.",
+        "method": "Generates each scene object conditioned on surrounding geometry and physical relations so shape and pose remain compatible at occluded interaction regions.",
+        "task": "Reconstruct physically and geometrically coherent object-level 3D scenes from a single image.",
+        "novelty": "Makes local inter-object fit an explicit generation condition rather than generating scene objects independently.",
+        "source_quality": "primary_or_official",
+        "demo_score": 3,
+        "evidence_strength": 4,
+        "project_relevance": "Direct reference for ContactRelation, Support, FitConstraint, OccludedGeometry, PhysicalStability, and scene-assembly validators.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/B_interactive_generation_pcg/tetris3d-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "branch": "C",
+      "deep_dive_path": "paper_reads/C_spatial_intelligence/ledger-3d-2026.md",
+      "paper": {
+        "title": "Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos",
+        "year": 2026,
+        "venue": "arXiv",
+        "url": "https://arxiv.org/abs/2610.10538",
+        "data": "HD-EPIC, UCS-Bench, Ego4D, and 100 stitched multi-scene egocentric streams.",
+        "method": "Ledger associates object observations into persistent 3D records, clusters resting locations, confirms moves with repeated evidence, and stores contextual descriptions.",
+        "task": "Answer later spatial/object-state questions without replaying the original egocentric video.",
+        "novelty": "Combines persistent 3D localization, object histories, and contextual descriptions while retaining untouched and out-of-view objects.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "evidence_strength": 4,
+        "project_relevance": "Provides concrete PersistentObject, RestingLocation, MoveEvent, ContainerState, ObservationHistory, and retrieval fields.",
+        "visual_quality_score": 0,
+        "visual_quality_decision": "not_applicable",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/C_spatial_intelligence/ledger-3d-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/dreamtrue-2026.md",
+      "paper": {
+        "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
+        "year": 2026,
+        "venue": "arXiv / AgiBot World Challenge 2026",
+        "url": "https://arxiv.org/abs/2610.12468",
+        "data": "Multi-view AgiBot and cross-embodiment robot video plus a human-annotated interaction-defect reward dataset.",
+        "method": "Image-space action trajectories and offline calibration improve action alignment; counterfactual actions broaden failures; an embodied video reward model guides RL post-training.",
+        "task": "Predict physically plausible, action-faithful multi-view robot futures across embodiments.",
+        "novelty": "Targets success bias in robot video data through counterfactual action post-training and explicit human-rated interaction defects.",
+        "source_quality": "primary_or_official",
+        "demo_score": 4,
+        "evidence_strength": 4,
+        "project_relevance": "Strong reference for ActionTrajectory, Calibration, CounterfactualOutcome, InteractionDefect, and world-model reward interfaces.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/D_vla_world_action_models/dreamtrue-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/plaw-vla-2026.md",
+      "paper": {
+        "title": "PLaW-VLA: Predictive Latent World Modeling for Vision-Language-Action Policies",
+        "year": 2026,
+        "venue": "CoRL 2026",
+        "url": "https://arxiv.org/abs/2610.12285",
+        "data": "RoboTwin Hard Horizon III, LIBERO-Plus, and long-horizon manipulation trajectories.",
+        "method": "A Mixture-of-Transformers predicts task-relevant future states in a pretrained latent space and conditions action generation via causal attention.",
+        "task": "Use lightweight future prediction to improve long-horizon VLA control and distribution-shift generalization.",
+        "novelty": "Models task-relevant predictive latents instead of reconstructing pixels, cutting world-model inference cost while preserving policy gains.",
+        "source_quality": "primary_or_official",
+        "demo_score": 2,
+        "evidence_strength": 4,
+        "project_relevance": "Useful baseline for FutureLatent, TaskSemantics, CausalConditioning, Horizon, and long-horizon control evaluation.",
+        "visual_quality_score": 3,
+        "visual_quality_decision": "adequate",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/D_vla_world_action_models/plaw-vla-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/unitas-2026.md",
+      "paper": {
+        "title": "UNITAS: A 3D-Native World Action Model for Embodied Manipulation",
+        "year": 2026,
+        "venue": "arXiv",
+        "url": "https://arxiv.org/abs/2610.12099",
+        "data": "RoboTwin, LIBERO, real-world tasks, and mixed human-hand/robot interaction data.",
+        "method": "Unifies visual observations, action flow, and scene flow in a metric 3D frame using point trajectories, scene displacements, and world-aligned embeddings.",
+        "task": "Jointly generate executable actions and action-conditioned 3D scene evolution across hands and robot embodiments.",
+        "novelty": "Moves WAM representation from view-dependent pixels to a shared metric 3D motion interface.",
+        "source_quality": "primary_or_official",
+        "demo_score": 3,
+        "evidence_strength": 4,
+        "project_relevance": "Direct reference for MetricFrame, ActionFlow, SceneFlow, PointTrajectory, PhysicalTime, and cross-embodiment action schemas.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/D_vla_world_action_models/unitas-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/robojepa-2026.md",
+      "paper": {
+        "title": "RoboJEPA: Scaling Robotic Latent World Models",
+        "year": 2026,
+        "venue": "arXiv",
+        "url": "https://arxiv.org/abs/2610.10515",
+        "data": "Large-scale real robot data spanning 12 embodiments, with released checkpoints and robot-deployment code.",
+        "method": "An 8B-parameter JEPA predictor learns latent rollouts; second-order compute scaling laws link imagination error to downstream planning performance.",
+        "task": "Predict latent robot futures and plan zero-shot toward goal images on real hardware.",
+        "novelty": "Establishes empirical scaling laws for multi-embodiment latent robot world models and validates imagination error as a real-robot proxy.",
+        "source_quality": "primary_or_official",
+        "demo_score": 5,
+        "evidence_strength": 4,
+        "project_relevance": "Useful for LatentRollout, ImaginationError, ComputeBudget, Embodiment, GoalImage, and scaling-law evaluation.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/D_vla_world_action_models/robojepa-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/long-wam-2026.md",
+      "paper": {
+        "title": "Long-WAM: Scaling the Context of World-Action Models",
+        "year": 2026,
+        "venue": "arXiv",
+        "url": "https://arxiv.org/abs/2610.10528",
+        "data": "Robot and egocentric video, RoboCasa GR-1, LIBERO-Long, RoboTwin 2.0, DOMINO, Unitree G1, and YAM deployments.",
+        "method": "Causal autoregressive pretraining is preserved during WAM adaptation, with streaming encoding, asynchronous execution, and hardware-specific acceleration.",
+        "task": "Use long visual histories for responsive, dynamic, long-horizon manipulation.",
+        "novelty": "Shows long context benefits depend on autoregressive video foundations and packages that history into a real-time WAM system.",
+        "source_quality": "primary_or_official",
+        "demo_score": 3,
+        "evidence_strength": 4,
+        "project_relevance": "Direct baseline for ObservationHistory, ProgressState, StreamingEncoder, AsyncExecution, ContextLength, and latency-aware control.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/D_vla_world_action_models/long-wam-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "branch": "D",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/depthworld-2026.md",
+      "paper": {
+        "title": "DepthWorld: 3D World Model for Robot Manipulation",
+        "year": 2026,
+        "venue": "CoRL 2026",
+        "url": "https://arxiv.org/abs/2610.08780",
+        "data": "DROID-3D, a calibrated derivative of DROID with dense metric depth and recalibrated multi-view extrinsics.",
+        "method": "Joint factor-graph calibration pools episodes from each robot, then a tiled Stable Video Diffusion model predicts multi-view RGB and metric depth.",
+        "task": "Generate geometrically consistent action-conditioned robot futures for planning and evaluation.",
+        "novelty": "Adds large-scale metric 3D supervision to a pretrained robot video world model without replacing its visual VAE.",
+        "source_quality": "primary_or_official",
+        "demo_score": 3,
+        "evidence_strength": 4,
+        "project_relevance": "Provides CameraCalibration, MetricDepth, Extrinsics, ReprojectionError, MultiViewFuture, and geometry-consistency fields.",
+        "visual_quality_score": 4,
+        "visual_quality_decision": "strong",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/D_vla_world_action_models/depthworld-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "branch": "E",
+      "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/livin-2026.md",
+      "paper": {
+        "title": "LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes",
+        "year": 2026,
+        "venue": "arXiv",
+        "url": "https://arxiv.org/abs/2610.12069",
+        "data": "Digital twins of 30 diverse lived-in homes preserving layouts, furniture, belongings, and constrained interaction regions.",
+        "method": "Human-in-the-loop instance recognition, architectural reconstruction, object generation, and placement, with review against source observations.",
+        "task": "Evaluate 3D detection, reconstruction, navigation, and loco-manipulation in realistic lived-in homes.",
+        "novelty": "Combines real-home correspondence, interaction readiness, and dense lived-in arrangements in one digital-twin benchmark.",
+        "source_quality": "primary_or_official",
+        "demo_score": 2,
+        "evidence_strength": 4,
+        "project_relevance": "Direct infrastructure for HomeTwin, ObjectArrangement, FreeSpace, InteractionRegion, Reconstruction, Navigation, and LocoManipulation schemas.",
+        "visual_quality_score": 0,
+        "visual_quality_decision": "not_applicable",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/livin-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "branch": "E",
+      "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/multiworldbench-2026.md",
+      "paper": {
+        "title": "MultiWorldBench: Do Independently Controlled Views Describe One Shared World?",
+        "year": 2026,
+        "venue": "arXiv",
+        "url": "https://arxiv.org/abs/2610.11723",
+        "data": "495 Minecraft case configurations across seven suites and ten multiplayer world-consistency capabilities.",
+        "method": "Diagnostic automatic and human evaluation of control, cross-view motion, shared state, persistence, concurrency, delayed revisit, and structure.",
+        "task": "Measure whether independently controlled generated views remain one coherent shared world.",
+        "novelty": "Separates plausible single views from persistent multi-client world consistency with capability-level diagnostics.",
+        "source_quality": "primary_or_official",
+        "demo_score": 2,
+        "evidence_strength": 4,
+        "project_relevance": "Essential evaluation layer for SharedState, Persistence, ConcurrentInteraction, CrossViewMotion, DelayedRevisit, and StructuralConsistency.",
+        "visual_quality_score": 0,
+        "visual_quality_decision": "not_applicable",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/multiworldbench-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "branch": "E",
+      "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/openvitac-2026.md",
+      "paper": {
+        "title": "OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework",
+        "year": 2026,
+        "venue": "arXiv / official release",
+        "url": "https://arxiv.org/abs/2610.10384",
+        "data": "11 simulation tasks, eight paired real tasks, four tactile capabilities, and three tactile-sensor types.",
+        "method": "A paired sim-real benchmark plus OpenVTLA, which prepends temporally encoded tactile tokens to a pretrained VLA visual sequence.",
+        "task": "Evaluate and train VLA, WAM, and VTLA policies on contact-rich manipulation in simulation and reality.",
+        "novelty": "Provides aligned sim-real tactile tasks and controlled comparisons of tactile representations, fusion, and co-training.",
+        "source_quality": "primary_or_official",
+        "demo_score": 3,
+        "evidence_strength": 4,
+        "project_relevance": "Direct source for TactileHistory, PhysicalProperty, SensorType, SimRealPair, ContactTask, and cross-domain evaluation.",
+        "visual_quality_score": 0,
+        "visual_quality_decision": "not_applicable",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/openvitac-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "branch": "E",
+      "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/rt-safe-2026.md",
+      "paper": {
+        "title": "RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment",
+        "year": 2026,
+        "venue": "arXiv",
+        "url": "https://arxiv.org/abs/2610.09294",
+        "data": "Simulated urban navigation tasks with moving actors, hazards, traffic rules, and worlds that evolve during inference.",
+        "method": "Matched static and real-time evaluation explicitly measures both decision safety and latency-induced risk; the benchmark also supports offline RL.",
+        "task": "Evaluate embodied-agent safety when the physical world continues changing during reasoning and execution.",
+        "novelty": "Makes inference latency itself part of the embodied safety environment instead of freezing the world at observation time.",
+        "source_quality": "primary_or_official",
+        "demo_score": 2,
+        "evidence_strength": 4,
+        "project_relevance": "Adds ObservationTime, DecisionLatency, ExecutionTime, DynamicHazard, CollisionEvent, and SafeCompletion fields.",
+        "visual_quality_score": 0,
+        "visual_quality_decision": "not_applicable",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/rt-safe-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "branch": "E",
+      "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/gaugebench-2026.md",
+      "paper": {
+        "title": "The Robot Is Not Its Description: GaugeBench for Representation Robustness in Morphology-Aware Policies",
+        "year": 2026,
+        "venue": "arXiv",
+        "url": "https://arxiv.org/abs/2610.07597",
+        "data": "Physically equivalent rewrites of 80 familiar and 98 held-out robot mechanisms across MetaMorph, ModuMorph, and PyBullet.",
+        "method": "Rewrites axis direction, angle zero, link/joint ordering, and coordinates while verifying the physical mechanism and policy interface remain equivalent.",
+        "task": "Test whether morphology-aware policies preserve behavior under equivalent robot-description conventions.",
+        "novelty": "Separates embodiment generalization from arbitrary representation-gauge robustness.",
+        "source_quality": "primary_or_official",
+        "demo_score": 2,
+        "evidence_strength": 4,
+        "project_relevance": "Direct validator for EmbodimentDescription, JointAxis, CoordinateConvention, LinkOrder, ActionTransport, and invariance tests.",
+        "visual_quality_score": 0,
+        "visual_quality_decision": "not_applicable",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/gaugebench-2026.md"
+      }
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "branch": "E",
+      "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/bigym-2-2026.md",
+      "paper": {
+        "title": "BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation",
+        "year": 2026,
+        "venue": "arXiv / official open-source release",
+        "url": "https://arxiv.org/abs/2610.07594",
+        "data": "20 Unitree G1 household tasks, 60 VR demonstrations per task, 1,200 demonstrations, and 5,400 coding-agent evaluation episodes.",
+        "method": "A common whole-body controller and observation/action interface compare VLA fine-tuning, imitation, demo-driven RL, and code-writing agents under fixed seeds.",
+        "task": "Benchmark learned and agent-authored humanoid household manipulation policies.",
+        "novelty": "Places coding-agent policies and learned humanoid controllers in the same open, replayable evaluation harness.",
+        "source_quality": "primary_or_official",
+        "demo_score": 5,
+        "evidence_strength": 4,
+        "project_relevance": "Strong infrastructure for WholeBodyController, VRDemonstration, HiddenSeed, AgentWrittenPolicy, ReplayTrace, and humanoid task evaluation.",
+        "visual_quality_score": 0,
+        "visual_quality_decision": "not_applicable",
+        "visual_inspection_status": "verified_official_materials_2026_10_12",
+        "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/bigym-2-2026.md"
+      }
+    }
+  ],
+  "registry_updates": [],
+  "registry_noops": []
+}

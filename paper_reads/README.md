@@ -1,6 +1,6 @@
 # Paper Reads
 
-Maintained deep dives: 136
+Maintained deep dives: 152
 
 ## A. Executable World Representation
 
@@ -18,6 +18,7 @@ Maintained deep dives: 136
 - [FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations](A_executable_world_representation/famos-2026.md)
 - [FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents](A_executable_world_representation/funart-2026.md)
 - [PointCast: One World Model for Rigid, Articulated, and Deformable Object Manipulation](A_executable_world_representation/pointcast-2026.md)
+- [PhysLDM: Latent Diffusion for High-Fidelity Deformable Simulation](A_executable_world_representation/physldm-2026.md)
 
 ## B. Interactive Generation and PCG
 
@@ -40,6 +41,8 @@ Maintained deep dives: 136
 - [Astronex-World 1.0: Real-Time Interactive World Model Foundation](B_interactive_generation_pcg/astronex-world-2026.md)
 - [AgriGen: Large-Scale Scene Generation Framework for Photorealistic Agricultural Robotics Simulation](B_interactive_generation_pcg/agrigen-2026.md)
 - [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](B_interactive_generation_pcg/simfoundry-2026.md)
+- [WorldCast: Distributed Multiplayer World Models](B_interactive_generation_pcg/worldcast-2026.md)
+- [Tetris3D: 3D Scene Generation With Objects That Fit Together](B_interactive_generation_pcg/tetris3d-2026.md)
 
 ## C. Spatial Intelligence
 
@@ -59,6 +62,7 @@ Maintained deep dives: 136
 - [Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence](C_spatial_intelligence/self-in-space-2026.md)
 - [Point-It-Out: Benchmarking Embodied Reasoning for Vision Language Models in Multi-Stage Visual Grounding](C_spatial_intelligence/point-it-out-2025.md)
 - [Vesta: A Generalist Embodied Reasoning Model](C_spatial_intelligence/vesta-2026.md)
+- [Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos](C_spatial_intelligence/ledger-3d-2026.md)
 
 ## D. VLA and World-Action Models
 
@@ -113,6 +117,12 @@ Maintained deep dives: 136
 - [Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments](D_vla_world_action_models/qwen-vla-2026.md)
 - [Improving Robotic Generalist Policies via Flow Reversal Steering](D_vla_world_action_models/flow-reversal-steering-2026.md)
 - [World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry](D_vla_world_action_models/world-action-verifier-2026.md)
+- [DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training](D_vla_world_action_models/dreamtrue-2026.md)
+- [PLaW-VLA: Predictive Latent World Modeling for Vision-Language-Action Policies](D_vla_world_action_models/plaw-vla-2026.md)
+- [UNITAS: A 3D-Native World Action Model for Embodied Manipulation](D_vla_world_action_models/unitas-2026.md)
+- [RoboJEPA: Scaling Robotic Latent World Models](D_vla_world_action_models/robojepa-2026.md)
+- [Long-WAM: Scaling the Context of World-Action Models](D_vla_world_action_models/long-wam-2026.md)
+- [DepthWorld: 3D World Model for Robot Manipulation](D_vla_world_action_models/depthworld-2026.md)
 
 ## E. Evaluation and Data Infrastructure
 
@@ -152,3 +162,9 @@ Maintained deep dives: 136
 - [Training Object Permanence in World Models](E_evaluation_data_infrastructure/wrop-object-permanence-2026.md)
 - [RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?](E_evaluation_data_infrastructure/robotwin-phys-2026.md)
 - [Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics](E_evaluation_data_infrastructure/open-h-embodiment-2026.md)
+- [LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes](E_evaluation_data_infrastructure/livin-2026.md)
+- [MultiWorldBench: Do Independently Controlled Views Describe One Shared World?](E_evaluation_data_infrastructure/multiworldbench-2026.md)
+- [OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework](E_evaluation_data_infrastructure/openvitac-2026.md)
+- [RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment](E_evaluation_data_infrastructure/rt-safe-2026.md)
+- [The Robot Is Not Its Description: GaugeBench for Representation Robustness in Morphology-Aware Policies](E_evaluation_data_infrastructure/gaugebench-2026.md)
+- [BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](E_evaluation_data_infrastructure/bigym-2-2026.md)

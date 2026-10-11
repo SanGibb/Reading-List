@@ -1,6 +1,6 @@
 # Evaluation and Data Infrastructure
 
-Maintained deep dives: 36
+Maintained deep dives: 42
 
 - [EWMBench](ewmbench-2025.md)
 - [WorldScore](worldscore-2025.md)
@@ -38,3 +38,9 @@ Maintained deep dives: 36
 - [Training Object Permanence in World Models](wrop-object-permanence-2026.md)
 - [RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?](robotwin-phys-2026.md)
 - [Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics](open-h-embodiment-2026.md)
+- [LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes](livin-2026.md)
+- [MultiWorldBench: Do Independently Controlled Views Describe One Shared World?](multiworldbench-2026.md)
+- [OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework](openvitac-2026.md)
+- [RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment](rt-safe-2026.md)
+- [The Robot Is Not Its Description: GaugeBench for Representation Robustness in Morphology-Aware Policies](gaugebench-2026.md)
+- [BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](bigym-2-2026.md)

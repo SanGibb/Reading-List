@@ -1,6 +1,6 @@
 # Interactive Generation and PCG
 
-Maintained deep dives: 19
+Maintained deep dives: 21
 
 - [PhyScene](physcene-2024.md)
 - [RoboGen](robogen-2024.md)
@@ -21,3 +21,5 @@ Maintained deep dives: 19
 - [Astronex-World 1.0: Real-Time Interactive World Model Foundation](astronex-world-2026.md)
 - [AgriGen: Large-Scale Scene Generation Framework for Photorealistic Agricultural Robotics Simulation](agrigen-2026.md)
 - [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](simfoundry-2026.md)
+- [WorldCast: Distributed Multiplayer World Models](worldcast-2026.md)
+- [Tetris3D: 3D Scene Generation With Objects That Fit Together](tetris3d-2026.md)

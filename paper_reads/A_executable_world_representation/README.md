@@ -1,6 +1,6 @@
 # Executable World Representation
 
-Maintained deep dives: 14
+Maintained deep dives: 15
 
 - [SceneFun3D](scenefun3d-2024.md)
 - [BEHAVIOR-1K](behavior-1k-2024.md)
@@ -16,3 +16,4 @@ Maintained deep dives: 14
 - [FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations](famos-2026.md)
 - [FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents](funart-2026.md)
 - [PointCast: One World Model for Rigid, Articulated, and Deformable Object Manipulation](pointcast-2026.md)
+- [PhysLDM: Latent Diffusion for High-Fidelity Deformable Simulation](physldm-2026.md)
