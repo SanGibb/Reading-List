@@ -44,3 +44,11 @@ Maintained deep dives: 42
 - [RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment](rt-safe-2026.md)
 - [The Robot Is Not Its Description: GaugeBench for Representation Robustness in Morphology-Aware Policies](gaugebench-2026.md)
 - [BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](bigym-2-2026.md)
+
+## 2026-10-18 additions
+
+- [LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation](libero-perm-2026.md)
+- [Orbia: Do Generated Videos Form a Consistent 3D World?](orbia-2026.md)
+- [ForceBench: Benchmarking Force Integration for Robotic Manipulation](forcebench-2026.md)
+- [TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation](tacclaw-infinity-2026.md)
+- [Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training](active-generative-simulation-2026.md)

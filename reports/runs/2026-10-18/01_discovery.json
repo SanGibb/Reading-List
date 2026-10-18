@@ -1,0 +1,602 @@
+{
+  "run_id": "2026-10-18",
+  "followed_sources_checked": [
+    {
+      "source_id": "stanford-svl-behavior",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://svl.stanford.edu/publications/",
+        "https://jiajunwu.com/",
+        "https://behavior.stanford.edu/omnigibson/overview.html"
+      ]
+    },
+    {
+      "source_id": "princeton-pvl-infinigen",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://pvl.cs.princeton.edu/",
+        "https://infinigen.org/"
+      ]
+    },
+    {
+      "source_id": "ai2-embodied-prior",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://allenai.org/embodied-ai",
+        "https://prior.allenai.org/projects/ai2thor",
+        "https://procthor.allenai.org/"
+      ]
+    },
+    {
+      "source_id": "nvidia-cosmos-isaac",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://research.nvidia.com/labs/cosmos-lab/",
+        "https://research.nvidia.com/labs/dir/sage/",
+        "https://research.nvidia.com/labs/cosmos-lab/cosmos3",
+        "https://research.nvidia.com/labs/lpr/publication/gr00tn1_2025/"
+      ]
+    },
+    {
+      "source_id": "stanford-realab-shuran",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://real.stanford.edu/lab.html",
+        "https://shurans.github.io/"
+      ]
+    },
+    {
+      "source_id": "stanford-iris-openvla",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://irislab.stanford.edu/",
+        "https://openvla.github.io/"
+      ]
+    },
+    {
+      "source_id": "berkeley-rail-levine",
+      "status": "checked",
+      "notes": "Configured lab URL remains unsuitable/redirected; primary-author and arXiv searches were used.",
+      "urls_checked": [
+        "https://rail.eecs.berkeley.edu/"
+      ]
+    },
+    {
+      "source_id": "physical-intelligence",
+      "status": "checked",
+      "notes": "Official site returned access controls; indexed official pages and primary-paper searches were checked instead.",
+      "urls_checked": [
+        "https://www.pi.website/",
+        "https://www.pi.website/blog/pi0"
+      ]
+    },
+    {
+      "source_id": "google-deepmind-robotics",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://deepmind.google/models/gemini-robotics/gemini-robotics/",
+        "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+        "https://github.com/google-deepmind/open_x_embodiment"
+      ]
+    },
+    {
+      "source_id": "ut-austin-rpl-yuke",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://rpl.cs.utexas.edu/people/",
+        "https://www.cs.utexas.edu/research/intelligent-robotics",
+        "https://robocasa.ai/"
+      ]
+    },
+    {
+      "source_id": "meta-fair-embodied",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/",
+        "https://ai.meta.com/blog/fair-robotics-open-source/",
+        "https://dhruvbatra.com/"
+      ]
+    },
+    {
+      "source_id": "huggingface-lerobot",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://huggingface.co/blog/smolvla",
+        "https://github.com/huggingface/lerobot",
+        "https://huggingface.co/docs/lerobot"
+      ]
+    },
+    {
+      "source_id": "toyota-research-institute-lbm",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://global.toyota/en/mobility/frontier-research/42394425.html",
+        "https://www.tri.global/about-us/dr-russ-tedrake"
+      ]
+    },
+    {
+      "source_id": "cmu-genesis-robogen",
+      "status": "spot_checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://github.com/Genesis-Embodied-AI/RoboGen"
+      ]
+    },
+    {
+      "source_id": "tsinghua-air-vla",
+      "status": "spot_checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://air.tsinghua.edu.cn/info/1007/2467.htm"
+      ]
+    },
+    {
+      "source_id": "embodiedgen-consortium",
+      "status": "spot_checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://arxiv.org/abs/2506.10600",
+        "https://3dgen4robot.github.io/"
+      ]
+    },
+    {
+      "source_id": "mit-csail-drake-scene-generation",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://scenesmith.github.io/",
+        "https://drake.mit.edu/"
+      ]
+    },
+    {
+      "source_id": "tencent-hunyuan-world",
+      "status": "spot_checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://hyworld.dev/",
+        "https://huggingface.co/tencent/HY-World-2.0"
+      ]
+    },
+    {
+      "source_id": "world-model-benchmarks",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://haoyi-duan.github.io/WorldScore/",
+        "https://world-arena.ai/",
+        "https://world-in-world.github.io/",
+        "https://ctrl-world.github.io/"
+      ]
+    },
+    {
+      "source_id": "vla-leaderboard",
+      "status": "checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://vlaleaderboard.com/"
+      ]
+    },
+    {
+      "source_id": "vla-survey",
+      "status": "spot_checked",
+      "notes": "Official surface and indexed recent primary-source results checked for the 2026-10-13 through 2026-10-18 window.",
+      "urls_checked": [
+        "https://vla-survey.github.io/"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "CAND-0001",
+      "title": "RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2610.18835",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Makes contact modeling and physical parameter revision explicit, editable, and agent-operable rather than hiding them in a one-shot real-to-sim pipeline."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "title": "AutoRSR: Automated Real-to-Sim-to-Real Data Generation for Scalable Robot Learning",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2610.20336",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Automates object extraction, metric scene registration, trajectory generation, and sim-to-real data scaling in one pipeline."
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "title": "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2610.20560",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Grounds agentic 3D composition in closed-loop contact dynamics and executable simulator actions rather than static coordinate prediction."
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "title": "From Failures to Learnable Worlds: Policy-Conditioned Environment Generation for Navigation Agents",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2610.19420",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Uses an agent's measured weaknesses\u2014not generic realism or difficulty\u2014to drive environment generation and iterative adaptation."
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "title": "PAWA: Panoramic Action-conditioned World Modeling for Multiple Agents",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2610.20240",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Introduces panoramic shared state and aligned multiplayer action data for scalable multi-agent world modeling."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "title": "DeSpatial: The devil of Agentic Spatial Reasoning Lies in 3D Itself",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2610.20990",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Diagnoses perception as the dominant bottleneck and separates scene reconciliation from downstream reasoning tools."
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "title": "DynThinker: Unifying Static 3D and Dynamic 4D Spatial Reasoning",
+      "branch_hint": "C",
+      "source_url": "https://arxiv.org/abs/2610.20598",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Targets non-uniform spatial-dynamic interference at parameter-group level instead of training separate static and dynamic models."
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.22364",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Infers unsupervised environment factors such as friction, mass, and rules through test-time latent optimization."
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "title": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.22343",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Decouples predictive geometry state from viewpoint while preserving one context-derived scale over rollout."
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "title": "OneWM: Can World and Action Modeling Benefit Each Other under Unified Causal Training?",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.21095",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Provides controlled evidence that forward modeling improves policies and action learning improves multi-view world prediction in the same architecture."
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "title": "What Matters for World Modeling in Vision-Language-Action Models?",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.19825",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Separates representation, integration paradigm, and backbone effects that prior systems change simultaneously."
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.22372",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Separates robotic task success from how a user wants the task performed with reusable, automatically scored preference variables."
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "title": "Orbia: Do Generated Videos Form a Consistent 3D World?",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.20693",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Systematically tests newly generated regions for persistence as well as cross-view geometric agreement and minute-long return consistency."
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "title": "ForceBench: Benchmarking Force Integration for Robotic Manipulation",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.19604",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Provides a unified protocol that separates force-fusion architecture effects from task and control differences."
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "title": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.20320",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Combines unprecedented VTLA scale with contact segmentation, subtasks, spatial grounding, and collection independent of the target robot."
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "title": "Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.19479",
+      "source_type": "arxiv",
+      "discovered_from": "fixed-source and broad primary-source delta scan",
+      "why_candidate": "Turns simulator data generation into a downstream-performance optimization problem rather than uniform sampling or manual alignment."
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "title": "Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.22363",
+      "source_type": "arxiv",
+      "discovered_from": "broad primary-source delta scan",
+      "why_candidate": "Official project surface returned access controls and representative unedited execution/generation quality could not be judged confidently."
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "title": "VLA-Delta: Learning Physical State Transition for Vision-Language-Action Models",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.21306",
+      "source_type": "arxiv",
+      "discovered_from": "broad primary-source delta scan",
+      "why_candidate": "Relevant but incremental relative to existing future-state and world-action entries; project relevance/impact prior remained below 3."
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "title": "VeriVLA: Adaptive Test-Time Verification for Flow-Based VLAs with Latent World Models",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.21985",
+      "source_type": "arxiv",
+      "discovered_from": "broad primary-source delta scan",
+      "why_candidate": "Useful verifier, but narrow three-task evidence and no confirmed public demo/code surface kept impact below threshold."
+    },
+    {
+      "candidate_id": "CAND-0020",
+      "title": "Mallea: Building, Steering, and Memorizing Worlds with Coding Agent",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2610.21283",
+      "source_type": "arxiv",
+      "discovered_from": "broad primary-source delta scan",
+      "why_candidate": "Promising agentic world-building signal, but official project/code/demo evidence was not found in this run."
+    },
+    {
+      "candidate_id": "CAND-0021",
+      "title": "GRASE: Geometry-native Real-to-sim Agentic Scene Modeling from Video",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2610.21498",
+      "source_type": "arxiv",
+      "discovered_from": "broad primary-source delta scan",
+      "why_candidate": "Strong fit, but no official inspectable project/demo surface was found and the central comparison includes an unreleased model."
+    }
+  ],
+  "triage": [
+    {
+      "candidate_id": "CAND-0001",
+      "decision": "analyze",
+      "primary_branch": "A",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "decision": "analyze",
+      "primary_branch": "A",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "decision": "analyze",
+      "primary_branch": "B",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "decision": "analyze",
+      "primary_branch": "B",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "decision": "analyze",
+      "primary_branch": "B",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "decision": "analyze",
+      "primary_branch": "C",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "decision": "analyze",
+      "primary_branch": "C",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "decision": "analyze",
+      "primary_branch": "E",
+      "reason": "Primary-source candidate clears impact and repository-relevance priors.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "decision": "watchlist",
+      "primary_branch": "D",
+      "reason": "Official project surface returned access controls and representative unedited execution/generation quality could not be judged confidently.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "decision": "reject",
+      "primary_branch": "D",
+      "reason": "Relevant but incremental relative to existing future-state and world-action entries; project relevance/impact prior remained below 3.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 2,
+      "project_relevance_prior": 3
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "decision": "reject",
+      "primary_branch": "D",
+      "reason": "Useful verifier, but narrow three-task evidence and no confirmed public demo/code surface kept impact below threshold.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 2,
+      "project_relevance_prior": 3
+    },
+    {
+      "candidate_id": "CAND-0020",
+      "decision": "watchlist",
+      "primary_branch": "B",
+      "reason": "Promising agentic world-building signal, but official project/code/demo evidence was not found in this run.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    },
+    {
+      "candidate_id": "CAND-0021",
+      "decision": "watchlist",
+      "primary_branch": "A",
+      "reason": "Strong fit, but no official inspectable project/demo surface was found and the central comparison includes an unreleased model.",
+      "dedupe_status": "new",
+      "source_quality": "primary",
+      "impact_prior": 3,
+      "project_relevance_prior": 4
+    }
+  ]
+}

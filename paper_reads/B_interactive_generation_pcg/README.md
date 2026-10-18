@@ -23,3 +23,9 @@ Maintained deep dives: 21
 - [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](simfoundry-2026.md)
 - [WorldCast: Distributed Multiplayer World Models](worldcast-2026.md)
 - [Tetris3D: 3D Scene Generation With Objects That Fit Together](tetris3d-2026.md)
+
+## 2026-10-18 additions
+
+- [PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition](physga-2026.md)
+- [From Failures to Learnable Worlds: Policy-Conditioned Environment Generation for Navigation Agents](wedge-2026.md)
+- [PAWA: Panoramic Action-conditioned World Modeling for Multiple Agents](pawa-2026.md)

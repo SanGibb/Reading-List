@@ -9,36 +9,35 @@
 | 内容 | 入口 |
 |---|---|
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
-| 最新扩库摘要 | [reports/2026-10-12-expansion.md](reports/2026-10-12-expansion.md) |
-| 当前已收录精读 | 152 篇，见 [paper_reads/README.md](paper_reads/README.md) |
+| 最新扩库摘要 | [reports/2026-10-18-expansion.md](reports/2026-10-18-expansion.md) |
+| 当前已收录精读 | 168 篇，见 [paper_reads/README.md](paper_reads/README.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。通过筛选的候选应全部加入，不做固定 top-k 抽样。
 
 ## 本周更新内容
 
-本轮扩库日期：2026-10-12。完整审计摘要见 [reports/2026-10-12-expansion.md](reports/2026-10-12-expansion.md)。
+本轮扩库日期：2026-10-18。完整审计摘要见 [reports/2026-10-18-expansion.md](reports/2026-10-18-expansion.md)。
 
 ### 重点新增与补齐
 
 | Paper | Branch | 简要说明 | 精读 |
 |---|---|---|---|
-| PhysLDM | A | Latent-diffusion simulation of high-resolution deformable dynamics. | [physldm-2026.md](paper_reads/A_executable_world_representation/physldm-2026.md) |
-| WorldCast / Tetris3D | B | Distributed shared worlds and physically coherent scene assembly. | [paper_reads/B](paper_reads/B_interactive_generation_pcg/README.md) |
-| Ledger | C | Persistent 3D object memory from long egocentric video. | [ledger-3d-2026.md](paper_reads/C_spatial_intelligence/ledger-3d-2026.md) |
-| DreamTrue / UNITAS / RoboJEPA | D | Counterfactual, 3D-native, and scalable latent world-action modeling. | [paper_reads/D](paper_reads/D_vla_world_action_models/README.md) |
-| Long-WAM / DepthWorld / PLaW-VLA | D | Long-context, metric-3D, and efficient predictive control. | [paper_reads/D](paper_reads/D_vla_world_action_models/README.md) |
-| LIVIN / MultiWorldBench / OpenViTac / RT-Safe / GaugeBench / BiGym 2.0 | E | Digital twins, consistency, touch, safety, invariance, and humanoid evaluation. | [paper_reads/E](paper_reads/E_evaluation_data_infrastructure/README.md) |
+| RoboSimStudio / AutoRSR | A | Editable contact physics and automated executable real-to-sim assets. | [paper_reads/A](paper_reads/A_executable_world_representation/README.md) |
+| PhySGA / WEDGE / PAWA | B | Physics-grounded composition, weakness-guided PCG, and shared multiplayer worlds. | [paper_reads/B](paper_reads/B_interactive_generation_pcg/README.md) |
+| DeSpatial / DynThinker | C | Unified metric perception and static-dynamic spatial reasoning. | [paper_reads/C](paper_reads/C_spatial_intelligence/README.md) |
+| T2-z / GeoState / OneWM | D | Adaptive environment latents, view-decoupled geometry, and unified causal world-action learning. | [paper_reads/D](paper_reads/D_vla_world_action_models/README.md) |
+| LIBERO-PeRM / Orbia / ForceBench / TacClaw-Infinity | E | Preference, 3D consistency, force, and tactile-data evaluation infrastructure. | [paper_reads/E](paper_reads/E_evaluation_data_infrastructure/README.md) |
 
 ### 全量收录状态
 
 | Branch | Count | Anchor works |
 |---|---:|---|
-| A. Executable World Representation | 15 | SceneFun3D, PointCast, PhysLDM, FAMOS, FunArt, WonderPlay ... |
-| B. Interactive Generation and PCG | 21 | WorldCast, Tetris3D, SimFoundry, AgriGen, Gamma-World, SAGE ... |
-| C. Spatial Intelligence | 17 | Ledger, Vesta, SpatialBot, SpaceTools, Point-It-Out, ESI-Bench ... |
-| D. VLA and World-Action Models | 57 | DreamTrue, UNITAS, RoboJEPA, Long-WAM, DepthWorld, PLaW-VLA ... |
-| E. Evaluation and Data Infrastructure | 42 | LIVIN, MultiWorldBench, OpenViTac, RT-Safe, GaugeBench, BiGym 2.0 ... |
+| A. Executable World Representation | 17 | SceneFun3D, PointCast, PhysLDM, FAMOS, FunArt, WonderPlay ... |
+| B. Interactive Generation and PCG | 24 | WorldCast, Tetris3D, SimFoundry, AgriGen, Gamma-World, SAGE ... |
+| C. Spatial Intelligence | 19 | Ledger, Vesta, SpatialBot, SpaceTools, Point-It-Out, ESI-Bench ... |
+| D. VLA and World-Action Models | 61 | DreamTrue, UNITAS, RoboJEPA, Long-WAM, DepthWorld, PLaW-VLA ... |
+| E. Evaluation and Data Infrastructure | 47 | LIVIN, MultiWorldBench, OpenViTac, RT-Safe, GaugeBench, BiGym 2.0 ... |
 
 ## 研究树
 

@@ -17,3 +17,8 @@ Maintained deep dives: 15
 - [FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents](funart-2026.md)
 - [PointCast: One World Model for Rigid, Articulated, and Deformable Object Manipulation](pointcast-2026.md)
 - [PhysLDM: Latent Diffusion for High-Fidelity Deformable Simulation](physldm-2026.md)
+
+## 2026-10-18 additions
+
+- [RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](robosimstudio-2026.md)
+- [AutoRSR: Automated Real-to-Sim-to-Real Data Generation for Scalable Robot Learning](autorsr-2026.md)

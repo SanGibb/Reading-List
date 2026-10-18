@@ -59,3 +59,10 @@ Maintained deep dives: 57
 - [RoboJEPA: Scaling Robotic Latent World Models](robojepa-2026.md)
 - [Long-WAM: Scaling the Context of World-Action Models](long-wam-2026.md)
 - [DepthWorld: 3D World Model for Robot Manipulation](depthworld-2026.md)
+
+## 2026-10-18 additions
+
+- [T2-z: Test-Time Optimization of Environment Latents for Robotic World Models](t2-z-2026.md)
+- [GeoState: Learning View-Decoupled Geometry States for 3D World Modeling](geostate-2026.md)
+- [OneWM: Can World and Action Modeling Benefit Each Other under Unified Causal Training?](onewm-2026.md)
+- [What Matters for World Modeling in Vision-Language-Action Models?](what-matters-world-modeling-vla-2026.md)

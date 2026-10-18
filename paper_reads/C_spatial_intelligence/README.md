@@ -19,3 +19,8 @@ Maintained deep dives: 17
 - [Point-It-Out: Benchmarking Embodied Reasoning for Vision Language Models in Multi-Stage Visual Grounding](point-it-out-2025.md)
 - [Vesta: A Generalist Embodied Reasoning Model](vesta-2026.md)
 - [Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos](ledger-3d-2026.md)
+
+## 2026-10-18 additions
+
+- [DeSpatial: The devil of Agentic Spatial Reasoning Lies in 3D Itself](despatial-2026.md)
+- [DynThinker: Unifying Static 3D and Dynamic 4D Spatial Reasoning](dynthinker-2026.md)

@@ -1,0 +1,558 @@
+{
+  "run_id": "2026-10-18",
+  "visual_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "visual_materials": [
+        "https://robosimstudio.github.io/",
+        "https://arxiv.org/pdf/2610.18835"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official project page exposes source code and multiple real/generated/output/deployment videos.",
+      "failure_modes": [
+        "Author-selected demonstrations; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "visual_materials": [
+        "https://arxiv.org/pdf/2610.20336"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Paper reports 73.3\u201386.7% real-world success from 1K automatically generated episodes per task and an order-of-magnitude reduction in human time.",
+      "failure_modes": [
+        "Author-selected demonstrations; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "visual_materials": [
+        "https://agenticei.github.io/PhySGA-page/",
+        "https://arxiv.org/pdf/2610.20560"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official project page provides code and a supplementary video with rigid, articulated, and deformable assembly results.",
+      "failure_modes": [
+        "Author-selected demonstrations; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "visual_materials": [
+        "https://zhangyuejoslin.github.io/WEDGE/",
+        "https://arxiv.org/pdf/2610.19420"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official page contains extensive generated-environment videos, code, and cross-agent ProcTHOR/HM3D results.",
+      "failure_modes": [
+        "Author-selected demonstrations; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "visual_materials": [
+        "https://pawa.siki.moe",
+        "https://arxiv.org/pdf/2610.20240"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official page presents model comparisons and world-state visualizations; the paper reports open-source data and collection pipeline.",
+      "failure_modes": [
+        "Author-selected demonstrations; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "visual_materials": [
+        "https://arxiv.org/pdf/2610.20990"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Primary paper reports an oracle study and leading results across four spatial benchmarks.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "visual_materials": [
+        "https://arxiv.org/pdf/2610.20598"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Primary paper reports the highest mean across ten metrics and open-model SOTA on four named evaluations.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "visual_materials": [
+        "https://arxiv.org/pdf/2610.22364"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Primary paper reports object-prediction error falling from 15.20 to 7.00 and action success rising from 33.73% to 72.96%.",
+      "failure_modes": [
+        "Author-selected demonstrations; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "visual_materials": [
+        "https://hongchang-liu.github.io/GeoState-project-page/",
+        "https://arxiv.org/pdf/2610.22343"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official page supplies code and a promotional results video; the paper reports Waymo gains and zero-shot KITTI/nuScenes transfer.",
+      "failure_modes": [
+        "Author-selected demonstrations; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "visual_materials": [
+        "https://selen-suyue.github.io/OneWMNet/",
+        "https://arxiv.org/pdf/2610.21095"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official page exposes code and multiple real-robot videos alongside benchmark and world-prediction comparisons.",
+      "failure_modes": [
+        "Author-selected demonstrations; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "visual_materials": [
+        "https://dylanmqs.github.io/WM-in-VLAs/",
+        "https://arxiv.org/pdf/2610.19825"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 3,
+      "visual_quality_decision": "adequate",
+      "visual_notes": "Official project page and video demonstrations support a broad controlled comparison; claims remain author-reported.",
+      "failure_modes": [
+        "Author-selected demonstrations; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "visual_materials": [
+        "https://libero-perm.github.io/",
+        "https://arxiv.org/pdf/2610.22372"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Official project page exposes task explorer clips, dataset/code links, five suites, and complete reproduction scripts.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "visual_materials": [
+        "https://orbia-bench.github.io/",
+        "https://arxiv.org/pdf/2610.20693"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Official benchmark page provides code, dataset, leaderboard, animated protocols, galleries, and results for 27 models.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "visual_materials": [
+        "https://forcebench-platform.github.io/",
+        "https://arxiv.org/pdf/2610.19604"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Official page provides an overview video; paper reports 35.31% vs 23.25% simulation success and 63% vs 40% real-world success for the strongest designs.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "visual_materials": [
+        "https://arxiv.org/pdf/2610.20320"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures"
+      ],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "visual_notes": "Primary paper reports data- and model-level validation plus transfer to three robots without robot-specific demonstrations.",
+      "failure_modes": [],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "visual_materials": [
+        "https://meta-gensim.github.io/",
+        "https://arxiv.org/pdf/2610.19479"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_figures",
+        "video"
+      ],
+      "visual_quality_score": 4,
+      "visual_quality_decision": "strong",
+      "visual_notes": "Official page provides overview and real-rollout videos; paper reports 150% relative full-task success improvement over uniform generation.",
+      "failure_modes": [
+        "Author-selected demonstrations; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.22363"
+      ],
+      "inspected_modalities": [
+        "paper_figures"
+      ],
+      "visual_quality_score": 1,
+      "visual_quality_decision": "undecided",
+      "visual_notes": "Official project surface returned access controls and representative unedited execution/generation quality could not be judged confidently.",
+      "failure_modes": [
+        "No sufficiently inspectable official demo surface."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": "Official project surface returned access controls and representative unedited execution/generation quality could not be judged confidently."
+    },
+    {
+      "candidate_id": "CAND-0020",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.21283"
+      ],
+      "inspected_modalities": [
+        "paper_figures"
+      ],
+      "visual_quality_score": 1,
+      "visual_quality_decision": "undecided",
+      "visual_notes": "Promising agentic world-building signal, but official project/code/demo evidence was not found in this run.",
+      "failure_modes": [
+        "No sufficiently inspectable official demo surface."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": "Promising agentic world-building signal, but official project/code/demo evidence was not found in this run."
+    },
+    {
+      "candidate_id": "CAND-0021",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.21498"
+      ],
+      "inspected_modalities": [
+        "paper_figures"
+      ],
+      "visual_quality_score": 1,
+      "visual_quality_decision": "undecided",
+      "visual_notes": "Strong fit, but no official inspectable project/demo surface was found and the central comparison includes an unreleased model.",
+      "failure_modes": [
+        "No sufficiently inspectable official demo surface."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": "Strong fit, but no official inspectable project/demo surface was found and the central comparison includes an unreleased model."
+    }
+  ],
+  "quality_review": [
+    {
+      "candidate_id": "CAND-0001",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0012",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0013",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0014",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0015",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0016",
+      "review_decision": "pass",
+      "issues": [
+        "Fresh release; claims are author-reported."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0017",
+      "review_decision": "block",
+      "issues": [
+        "Official project surface returned access controls and representative unedited execution/generation quality could not be judged confidently."
+      ],
+      "required_fixes": [
+        "Revisit after an official inspectable project/demo or stronger evidence release."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0018",
+      "review_decision": "block",
+      "issues": [
+        "Relevant but incremental relative to existing future-state and world-action entries; project relevance/impact prior remained below 3."
+      ],
+      "required_fixes": [
+        "Revisit after an official inspectable project/demo or stronger evidence release."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0019",
+      "review_decision": "block",
+      "issues": [
+        "Useful verifier, but narrow three-task evidence and no confirmed public demo/code surface kept impact below threshold."
+      ],
+      "required_fixes": [
+        "Revisit after an official inspectable project/demo or stronger evidence release."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0020",
+      "review_decision": "block",
+      "issues": [
+        "Promising agentic world-building signal, but official project/code/demo evidence was not found in this run."
+      ],
+      "required_fixes": [
+        "Revisit after an official inspectable project/demo or stronger evidence release."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0021",
+      "review_decision": "block",
+      "issues": [
+        "Strong fit, but no official inspectable project/demo surface was found and the central comparison includes an unreleased model."
+      ],
+      "required_fixes": [
+        "Revisit after an official inspectable project/demo or stronger evidence release."
+      ],
+      "accepted_for_registry": false
+    }
+  ],
+  "run_level_issues": [
+    "Physical Intelligence remained access-controlled; Berkeley RAIL configured surface remained unsuitable."
+  ]
+}
