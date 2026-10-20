@@ -1,0 +1,52 @@
+{
+  "lifecycle_schema_version": 1,
+  "updated": "2026-10-20",
+  "tasks": [
+    {
+      "task_id": "physical-articulated-asset-generation",
+      "title": "物理关节资产生成",
+      "branch": "A",
+      "scope": {
+        "input": "视觉或语言条件；比较前需进一步对齐输入模态与可用观测。",
+        "output": "含可动部件、关节和物理属性的仿真可用资产。",
+        "setting": "对象级物理资产生成；刚体、关节与可变形能力须分项比较。",
+        "protocol": "待审查：对齐共同对象、数据划分、输入条件、预算和几何/运动/碰撞/稳定性/任务可用性指标；当前未建立统一排名。"
+      },
+      "members": [
+        {
+          "paper_url": "https://arxiv.org/abs/2511.13648",
+          "role": "unreviewed",
+          "reason": "按现有 registry 的任务描述归并，尚未完成任务级对照；保留原精读，不推断被后续工作替代。"
+        },
+        {
+          "paper_url": "https://arxiv.org/abs/2605.21572",
+          "role": "unreviewed",
+          "reason": "按现有 registry 的任务描述归并；更广的对象类型本身不能证明共同任务上的全面优势，需要对齐协议后判定。"
+        }
+      ]
+    },
+    {
+      "task_id": "embodiedgen-executable-world-generation",
+      "title": "EmbodiedGen 系列可执行世界生成",
+      "branch": "B",
+      "scope": {
+        "input": "生成或编辑仿真资产/世界的用户条件；逐项区分图像、文本与对话输入。",
+        "output": "可部署到具身仿真中的交互资产、场景或任务世界。",
+        "setting": "先从同一系列开始比较；资产生成与完整世界生成的不同子任务不自动互相替代。",
+        "protocol": "待审查：核对共同生成任务、支持的仿真器、评测数据、物理可用性、成本与发布可用性；版本号不构成替代证据。"
+      },
+      "members": [
+        {
+          "paper_url": "https://arxiv.org/abs/2506.10600",
+          "role": "unreviewed",
+          "reason": "作为同系列对照候选保留；是否在某个具体任务上归档，需要可比实验和继任证据。"
+        },
+        {
+          "paper_url": "https://arxiv.org/abs/2607.07459",
+          "role": "unreviewed",
+          "reason": "后续版本已在库中，但未据版本号自动升为当前推荐；对共同任务的质量、覆盖和成本须单独审查。"
+        }
+      ]
+    }
+  ]
+}

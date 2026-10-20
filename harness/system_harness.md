@@ -86,7 +86,26 @@ The harness checks these boundaries through artifact shape and cross-file refere
 - Actual registry changes must pass `scripts/validate_registry.py`.
 - V2 admissions need final impact, relevance, and evidence scores each >=4, a material-increment comparison, and all applicable visual/temporal observations. Discovery priors alone cannot satisfy admission.
 
-### 6. Report safety
+### 6. Task lifecycle safety
+
+- `data/task_frontiers.seed.json` follows [task_lifecycle.md](task_lifecycle.md)
+  and the [artifact contracts](artifact_contracts.md).
+- Task IDs are unique and have concrete input/output/setting/protocol scope.
+  Member URLs resolve to registry entries and are unique within each task.
+- New policy-v2 registry papers have non-empty `task_ids` with real matching
+  memberships. Historical unversioned entries are not automatically rated.
+- Current/alternative/historical decisions have dated primary/official evidence;
+  historical decisions additionally document comparable same-task improvement,
+  tradeoffs, no material regression and retained value.
+- Only historical members link to successors. Successors are in the same task,
+  there are no self-links or cycles, and historical chains end at current members.
+- Optional run `lifecycle_changes` audit task decisions separately; they do not
+  satisfy or alter accepted-candidate addition/update/no-op coverage.
+- Generated main/branch indexes retain all registry papers. The task view shows
+  task-specific history and reverse succession links; deep dives remain in place.
+- `python3 scripts/render_reading_indexes.py --check` verifies generated views.
+
+### 7. Report safety
 
 The final report must include:
 
@@ -95,6 +114,7 @@ The final report must include:
 - undecided candidates requiring human decision,
 - top demos,
 - collection notes for related-work / baseline usefulness,
+- task frontier decisions, evidence, retained alternatives and pending comparisons when a task was reviewed,
 - validation status.
 
 ## Pass / Fail

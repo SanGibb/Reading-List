@@ -214,6 +214,32 @@ venue acceptances, code/checkpoint releases, and renamings normally update the
 existing deep dive or record a no-op. Distinct papers in one family can qualify
 separately when their contributions are materially different.
 
+## Task-Level Reading Frontier
+
+Admission preserves knowledge; task-level lifecycle review maintains what to read
+or reproduce first. Follow [task_lifecycle.md](task_lifecycle.md). Every new
+policy-v2 registry paper must have non-empty `task_ids` resolving to real members
+of `data/task_frontiers.seed.json`. Existing papers without a policy version are
+not automatically migrated, rated or removed.
+
+Compare admitted work with relevant current/alternative papers for its concrete
+task and evaluation protocol. Roles are `current`, `alternative`, `historical` and
+`unreviewed`; the same paper can have different roles in different tasks. Current
+is a scoped reading recommendation, not a universal SOTA claim. Multiple current
+papers may coexist. New admission alone does not establish replacement.
+
+Mark an old member historical only with verified primary/official evidence of the
+same task, comparable protocol, substantive improvement and no material regression.
+Document improvements, examined tradeoffs and retained value, then link it to a
+same-task successor. Preserve alternatives with meaningful quality, cost,
+generalization, openness or deployment advantages. Insufficient comparison evidence
+requires an alternative/unreviewed decision, not an invented winner. Keep the
+registry entry, deep dive and stable links; historical is a task-specific role.
+
+Lifecycle changes have their own run audit and do not replace accepted-candidate
+addition/update/no-op accounting. Revisit tasks touched by new papers or relevant
+releases rather than rerating the entire library weekly.
+
 ## Acceptance Rule
 
 Accept if:
@@ -274,7 +300,7 @@ below-threshold incremental paper need not receive a dossier just because it has
 - New accepted papers by branch.
 - Links to deep dives for every accepted paper.
 - Watchlist papers needing verification.
-- Removed or demoted entries.
+- Task-specific role changes and succession evidence, retained alternatives and pending comparisons when reviewed; preserve collected entries and deep dives.
 - Most useful demos when available; do not fill a top-3 quota.
 - Undecided candidates requiring human visual judgment.
 - Most relevant accepted papers when available; zero is valid.

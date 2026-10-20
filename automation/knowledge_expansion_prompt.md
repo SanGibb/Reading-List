@@ -12,7 +12,7 @@ Scope:
 
 Task:
 
-1. Read `README.md`, this prompt, `data/papers.seed.json`, `data/follow_sources.seed.json`, `agents/multiagent_design.md`, all role specs in `agents/specs/`, `harness/system_harness.md`, `harness/artifact_contracts.md`, `harness/acceptance_harness.md`, and `reports/paper_deep_dive_template.md`.
+1. Read `README.md`, this prompt, `data/papers.seed.json`, `data/task_frontiers.seed.json`, `data/follow_sources.seed.json`, `agents/multiagent_design.md`, all role specs in `agents/specs/`, `harness/system_harness.md`, `harness/artifact_contracts.md`, `harness/acceptance_harness.md`, `harness/task_lifecycle.md`, and `reports/paper_deep_dive_template.md`.
 2. Create or reuse a run directory under `reports/runs/YYYY-MM-DD/`.
 3. Execute the consolidated file-driven multi-agent pipeline by writing the required stage artifacts:
    - `00_run_plan.json`
@@ -91,6 +91,11 @@ Task:
     - Add a new entry only for a material increment beyond the existing registry. Put releases or evidence improvements for an existing work in `registry_updates`; use `registry_noops` when the knowledge is already covered.
     - Preserve a complete correspondence between accepted candidates and `registry_additions` / `registry_updates` / `registry_noops`; do not silently omit a passed candidate.
     - Reject, watchlist, or send to `undecided/` only when a candidate fails a documented gate.
+    - Assign each new policy-v2 paper real `task_ids` and matching memberships in `data/task_frontiers.seed.json`. For newly admitted work and relevant same-task releases, review the affected task frontier rather than rerating the whole library.
+    - Compare concrete input/output/setting/protocol and source-backed improvements, costs, generalization, openness and deployment tradeoffs. Roles are `current|alternative|historical|unreviewed`, scoped per task; current is a reading recommendation, not a global SOTA claim.
+    - Only mark an old member historical when verified primary/official evidence supports the same task, comparable protocol, substantive improvement and no material regression. Record dated evidence, `superseded_by`, improvements, tradeoffs and retained value per `harness/task_lifecycle.md`. Preserve alternatives or unreviewed status when comparison is unresolved. Historical chains must be acyclic and end at a same-task current member. Preserve every old registry entry, deep dive and stable link.
+    - Record lifecycle decisions in optional `lifecycle_changes` in the run patch and summarize their evidence. These audit items are independent of accepted-candidate additions/updates/noops; do not fabricate replacement-paper updates to store task roles.
+    - Regenerate full reading indexes and the task view with `python3 scripts/render_reading_indexes.py`. Initial grouping of existing families is unreviewed and does not justify automatic demotion.
 15. Run local validation:
 
 ```bash
@@ -115,6 +120,7 @@ Output expectations:
 - deep-dive link for every accepted paper
 - strongest inspected demos and why they matter, when any qualify (no minimum count)
 - final acceptance scores, closest-registry comparison, and rationale for each addition
+- task-level current/alternative/historical decisions, source-backed succession evidence and unresolved comparisons when reviewed; existing deep dives remain accessible
 - concise watchlist with missing evidence and revisit triggers
 - actual query/source coverage, overlap windows, and retrospective status
 - undecided candidates requiring human visual judgment

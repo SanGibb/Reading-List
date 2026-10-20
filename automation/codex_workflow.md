@@ -44,6 +44,8 @@ Expected output:
 - `01_discovery.json` with `followed_sources_checked`
 - maintained deep dives under `paper_reads/<branch>/<slug>.md`
 - full-coverage registry updates after threshold filtering
+- task memberships and evidence-backed current/alternative/historical decisions for tasks touched by new work or relevant releases; independent lifecycle audit items in the run patch
+- regenerated main/branch indexes and `paper_reads/task_frontiers.md`, preserving all entries and stable deep-dive paths
 - full coverage of branch subdirections, overlapping 14-day first-submission/update searches, 45-day release rescans, and monthly 2024+ gap filling
 - actual query ids, result counts, pagination/stopping reasons, and timed fixed-source checks; candidates trace back to queries
 - concise watchlist with missing upgrade evidence and `revisit_trigger`, without mandatory deep dives
@@ -78,7 +80,8 @@ Use one focused Codex task per role when quality matters. Each phase reads previ
 4. **Quality Reviewer** writes `03_review.json` and optional undecided dossiers.
 5. **Taxonomy & Editor** writes `04_editor_report.md`, `05_registry_patch.json`, accepted-paper `paper_reads/<branch>/<slug>.md` reports, and `run_manifest.json`.
 6. **System Harness** validates the run.
-7. **Publisher** runs `python scripts/publish_validated_update.py --message "Expand frontier knowledge base YYYY-MM-DD"`.
+7. **Taxonomy & Editor** applies validated registry/task changes and runs `python3 scripts/render_reading_indexes.py`; lifecycle and generated-view checks must pass with full validation.
+8. **Publisher** runs `python scripts/publish_validated_update.py --message "Expand frontier knowledge base YYYY-MM-DD"`.
 
 This is less fragmented than the original nine-agent setup while still separating search, evidence extraction, judgment, and registry editing.
 
@@ -116,6 +119,9 @@ The publisher leaves `undecided/**` local-only by default. Those dossiers should
 - Do not equate a page containing video links with actual visual inspection. Record observed samples, page/figure numbers or video time ranges, failure modes, and relevant joint-motion/collision/stability/task checks.
 - If an otherwise qualifying paper needs visual judgment that remains uncertain, create its local undecided dossier; watchlist cannot bypass this gate.
 - Do not claim SOTA unless the source reports a clear benchmark and comparison.
+- Follow `harness/task_lifecycle.md`: every new policy-v2 paper has real `task_ids` and memberships. Compare the affected concrete tasks and protocols, revisiting related current papers rather than the entire library weekly.
+- Do not equate new admission with replacing a predecessor. Historical status requires verified same-task, comparable-protocol improvement with no material regression, dated evidence, tradeoffs, retained value and a same-task successor. Keep meaningful alternatives and unresolved comparisons; multiple current papers can coexist and current is not a global SOTA label.
+- Keep lifecycle decisions in the task file and optional run `lifecycle_changes`, separately from additions/updates/noops. Preserve all registry papers and deep dives; initial family grouping can be unreviewed. Run `python3 scripts/render_reading_indexes.py` after source-data changes and `--check` for freshness.
 - Do not let one agent write another agent's artifact.
 - Do not skip fixed follow sources silently; record `checked`, `spot_checked`, `unreachable`, or `skipped`.
 - Do not update the registry if `validate_run.py` fails.
@@ -135,6 +141,7 @@ Every automated run should end with:
 - `Undecided visual cases`
 - `Local-only undecided deep dives`
 - `Collection notes`
+- `Task frontier changes / pending comparisons` when tasks were reviewed
 - `Validation`
 
 The final validation must state:
@@ -147,3 +154,4 @@ The final validation must state:
 - final scores and closest-registry comparisons satisfy policy version 2
 - all accepted candidates are represented in additions, updates or noops
 - the report states actual additions, including zero, without filling a target count
+- task memberships and succession graphs validate, and generated reading indexes match registry/task data

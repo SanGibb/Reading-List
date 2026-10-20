@@ -29,6 +29,7 @@ def main() -> int:
     for json_path in [
         root / "data" / "papers.seed.json",
         root / "data" / "follow_sources.seed.json",
+        root / "data" / "task_frontiers.seed.json",
     ]:
         errors.extend(validate_json(json_path))
 
@@ -40,6 +41,8 @@ def main() -> int:
 
     if run([sys.executable, "scripts/validate_registry.py"], root) != 0:
         return 1
+    if run([sys.executable, "scripts/validate_task_frontiers.py"], root) != 0:
+        return 1
 
     runs_root = root / "reports" / "runs"
     if runs_root.exists():
@@ -47,6 +50,9 @@ def main() -> int:
             if (run_dir / "run_manifest.json").exists():
                 if run([sys.executable, "scripts/validate_run.py", run_dir.name], root) != 0:
                     return 1
+
+    if run([sys.executable, "scripts/render_reading_indexes.py", "--check"], root) != 0:
+        return 1
 
     print("All validations passed.")
     return 0

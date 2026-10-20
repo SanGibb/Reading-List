@@ -45,6 +45,7 @@ def main() -> int:
             "branch_queries": {"A": [], "B": [], "C": [], "D": [], "E": []},
             "known_registry_path": "data/papers.seed.json",
             "follow_sources_path": "data/follow_sources.seed.json",
+            "task_frontiers_path": "data/task_frontiers.seed.json",
             "harness_paths": [
                 "harness/system_harness.md",
                 "harness/acceptance_harness.md",
@@ -75,6 +76,7 @@ def main() -> int:
             "registry_additions": [],
             "registry_updates": [],
             "registry_noops": [],
+            "lifecycle_changes": [],
         },
     )
     write_json(

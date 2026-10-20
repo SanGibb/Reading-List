@@ -52,6 +52,23 @@ If there is no material increment, update the existing entry or record a noop ra
 - Setting:
 - Success criterion:
 
+## Task Frontier / Lifecycle
+
+- task_ids: stable IDs resolving to matching members in `data/task_frontiers.seed.json` for new policy-v2 papers
+- Task scope / comparison protocol: input, output, setting, benchmark/split, relevant budgets and metrics
+- Role in each task: current|alternative|historical|unreviewed
+- Reviewed on / verified primary or official comparison sources and exact locators:
+- Closest current / alternative members:
+- Improvements and remaining cost, generalization, openness or deployment tradeoffs:
+- If superseding a predecessor: same task, comparable protocol and no material regression; successor/predecessor URLs and retained value
+- Pending comparison or evidence needed:
+
+Admission does not itself establish succession. Current is a scoped reading
+recommendation, not a global SOTA claim. Preserve meaningful alternatives, leave
+insufficient comparisons unreviewed, and keep old reports at their stable paths.
+The task file is authoritative; generated task indexes provide bidirectional
+history links without rewriting old deep dives.
+
 ## Data
 
 - Dataset / benchmark:

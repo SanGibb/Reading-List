@@ -8,6 +8,7 @@ Define the scope of a knowledge-expansion run. This agent decides what to search
 
 - `README.md`
 - `data/papers.seed.json`
+- `data/task_frontiers.seed.json` and `harness/task_lifecycle.md`
 - `data/follow_sources.seed.json`
 - `harness/system_harness.md`
 - `harness/acceptance_harness.md`
@@ -47,3 +48,4 @@ Define the scope of a knowledge-expansion run. This agent decides what to search
 - Use follow-source priorities to bias search: check `core` sources every expansion run when feasible and `watch` sources when branch-relevant.
 - Do not add candidates or registry entries.
 - Broad discovery does not imply broad admission: final impact/relevance/evidence must each reach 4/5. Plan no minimum or maximum paper quota; zero additions is normal. Unexpected volume prompts gate/deduplication re-review, not truncation.
+- Plan task-frontier review for newly surfaced work and relevant same-task releases. Name the affected concrete input/output/setting/protocol and existing members to compare; no full-library weekly rerating or automatic age-based demotion is required. Current is a scoped reading recommendation and can include multiple papers. Leave lifecycle judgments to Quality Reviewer and state changes to Taxonomy & Editor.

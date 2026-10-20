@@ -10,6 +10,7 @@ This agent should make each candidate understandable enough for a reviewer, but 
 
 - `reports/runs/YYYY-MM-DD/01_discovery.json`
 - primary papers, project pages, official repositories, benchmark pages
+- `data/papers.seed.json`, `data/task_frontiers.seed.json`, and `harness/task_lifecycle.md`
 
 ## Writes
 
@@ -79,6 +80,7 @@ This agent should make each candidate understandable enough for a reviewer, but 
 - Support policy-version-2 review with controlled comparisons/ablations or a reusable release and enough primary evidence for an `evidence_strength >= 4` judgment. Separate technical contribution from citations, popularity and venue.
 - Identify a concrete interface, validator or direct baseline for project relevance. Generic usefulness or reusable fields alone does not establish the required 4/5 relevance.
 - Compare the method with the closest existing registry paper and extract its material increment. A release for existing work may warrant an update rather than a new paper entry.
+- For affected tasks, supply concrete input/output/setting/protocol, comparable results and primary/official table/section/media locators. Distinguish a genuine successor from different supervision, splits, data/compute budgets or evaluation axes. Extract improvements, cost/generalization/openness/deployment tradeoffs and the old work's retained value. Provide evidence for the reviewer's task-role judgment; admission alone does not establish replacement. Existing deep dives and registry entries remain intact.
 - Set `requires_visual_review` and `requires_temporal_demo` honestly. Generation-heavy, physical/interactive-world, VLA-demo and embodied-demo results require visual review; claims about motion, interactions, physical stability or robot execution need temporal media.
 - Verify demo/code/checkpoint links without inflating claims.
 - Record stable identifiers when available: arXiv id, DOI, OpenReview id, official project URL, and official GitHub URL.

@@ -13,6 +13,7 @@ For runs from 2026-10-20, apply acceptance policy version 2. All gates are conju
 - `reports/runs/YYYY-MM-DD/01_discovery.json`
 - `reports/runs/YYYY-MM-DD/02_evidence.json`
 - official project pages, paper figures, videos, GIFs, screenshots, qualitative result pages
+- `data/task_frontiers.seed.json` and `harness/task_lifecycle.md`
 
 ## Writes
 
@@ -90,6 +91,8 @@ Use `inspection_evidence` for media actually inspected, with the official URL, m
 - Scores of 4 are selective judgments, not defaults. Cite the decisive controlled comparison, usable release or verified evidence and explain its significance relative to the closest registry work; avoid mechanically assigning 4 to every related candidate.
 - Acceptance must use at least one verified central claim with a concrete claim and primary/official HTTP source. Partial or unverified claims can remain as caveats only when `used_for_acceptance: false`; no unresolved major claim may carry the admission decision.
 - Each accepted review must include `selection_basis`, `acceptance_rationale` and `comparison_to_registry` (`closest_paper`, `material_difference`, `why_new_entry`) per [artifact contracts](../../harness/artifact_contracts.md). Explain why the delta deserves a new entry; known work with a release/evidence change should update its existing entry, and redundant knowledge should be a noop.
+- Separately review task roles for admitted papers and relevant same-task releases under [task_lifecycle.md](../../harness/task_lifecycle.md). Recommend `current|alternative|historical|unreviewed` with dated, verified primary/official evidence. Current is scoped, can be shared, and is not a global SOTA claim.
+- A historical recommendation needs the same task, comparable protocol, substantive improvement and no material regression; give the successor URL, improvements, examined tradeoffs and retained value. A newer paper or one higher score is insufficient. Keep alternatives with meaningful independent advantages, and leave unresolved comparisons unreviewed. Do not edit the task file or fabricate acceptance updates to represent a lifecycle judgment.
 - Ordinary related or insufficiently evidenced work can stay on a concise watchlist with missing upgrade evidence and `revisit_trigger`; a full deep dive is not required. Otherwise-qualified visual uncertainty follows the undecided rule above.
 - A includes articulated and physical sim-ready object assets; complete scene/world generation is not required.
 - Do not rely on venue reputation.

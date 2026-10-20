@@ -104,6 +104,68 @@ requirement booleans, and existing visual score/decision fields. Numeric values 
 match the review. The ordinary registry fields and full deep dive are still required.
 Empty addition sets are valid after real discovery has been performed.
 
+### Task lifecycle extension
+
+See [task_lifecycle.md](task_lifecycle.md) for the judgment rules. New policy-v2
+papers require a non-empty `task_ids` array; each ID must resolve to a task whose
+members include that exact paper URL. Existing registry papers without a policy
+version need not be migrated. The independent `data/task_frontiers.seed.json`
+contract is:
+
+```json
+{
+  "lifecycle_schema_version": 1,
+  "updated": "YYYY-MM-DD",
+  "tasks": [
+    {
+      "task_id": "concrete-task-id",
+      "title": "Concrete task title",
+      "branch": "A",
+      "scope": {
+        "input": "task input",
+        "output": "task output",
+        "setting": "environment, objects and relevant constraints",
+        "protocol": "benchmark/split, metrics, data and budget conditions"
+      },
+      "members": [
+        {
+          "paper_url": "exact URL of an existing registry paper",
+          "role": "unreviewed",
+          "reason": "Grouped by task; comparative recommendation pending."
+        }
+      ]
+    }
+  ]
+}
+```
+
+- `task_id` is unique, lower-case and hyphen-separated. Each task has one A-E
+  branch, non-empty scope fields and at least one member. Each paper URL is unique
+  within a task and resolves to a registry entry. Where `task_ids` is present, it
+  matches the paper's task memberships in both directions without duplicates.
+- Roles are `current|alternative|historical|unreviewed`. Every member has `reason`.
+  Reviewed roles additionally require `reviewed_on: YYYY-MM-DD` and non-empty
+  `evidence`. Each evidence item has `source_url`, `locator`, `claim`,
+  `source_quality: primary|official|primary_or_official`, and `status: verified`.
+  Sources are HTTP(S) URLs. `reviewed_on` cannot be later than the file's `updated`.
+- `historical` additionally requires `superseded_by` (another same-task member's
+  exact registry URL) and `comparison` with `same_task: true`,
+  `comparable_protocol: true`, `no_material_regression: true`, plus non-empty
+  `improvements`, `tradeoffs`, and `retained_value` strings.
+- Only historical members may have `superseded_by`. No self-links or cycles are
+  allowed, and every historical chain must terminate at a current member in the
+  same task. Cross-task roles are independent.
+- `05_registry_patch.json` may include `lifecycle_changes`, independent of existing
+  candidate dispositions. Each item has `task_id`, `paper_url`,
+  `action: keep|promote|supersede|retain_alternative|reopen`, and `reason`. Record
+  decisions here and maintain their resulting state in the task file. Do not
+  fabricate `registry_updates.paper` solely to carry a lifecycle change.
+- Generated indexes are derived from registry and task data, including
+  `paper_reads/task_frontiers.md`. Run `python3 scripts/render_reading_indexes.py`
+  after changes; `--check` checks that the committed views match the source data.
+  All papers remain in the full main/branch indexes. No historical deep-dive file
+  is moved or deleted by the lifecycle mechanism.
+
 ## Stage Files
 
 ### `00_run_plan.json`

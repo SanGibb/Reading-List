@@ -14,6 +14,7 @@ This agent is the only role that can write the registry patch draft. It cannot o
 - `reports/runs/YYYY-MM-DD/03_review.json`
 - `README.md`
 - `data/papers.seed.json`
+- `data/task_frontiers.seed.json` and `harness/task_lifecycle.md`
 - harness files
 
 ## Writes
@@ -22,6 +23,7 @@ This agent is the only role that can write the registry patch draft. It cannot o
 - `reports/runs/YYYY-MM-DD/05_registry_patch.json`
 - `paper_reads/<branch>/<slug>.md` for every registry addition
 - `reports/runs/YYYY-MM-DD/run_manifest.json`
+- `data/task_frontiers.seed.json` after task-role review, and generated reading indexes via `scripts/render_reading_indexes.py`
 
 ## Required Patch Output
 
@@ -32,7 +34,8 @@ This agent is the only role that can write the registry patch draft. It cannot o
   "taxonomy_change_proposals": [],
   "registry_additions": [],
   "registry_updates": [],
-  "registry_noops": []
+  "registry_noops": [],
+  "lifecycle_changes": []
 }
 ```
 
@@ -48,6 +51,10 @@ This agent is the only role that can write the registry patch draft. It cannot o
 - Check each accepted review's `selection_basis`, `acceptance_rationale` and `comparison_to_registry`. Create a new entry only for material new knowledge beyond the closest library work; release/evidence changes to an existing work belong in `registry_updates`, and already covered knowledge in `registry_noops`.
 - Updates/no-ops identify a real registry entry with `existing_paper_url` and a specific `reason`; a no-op cannot carry a paper mutation. Replacement papers in updates obey the same v2 gates and score consistency as additions.
 - Copy the active policy version, final three scores, `requires_visual_review` and `requires_temporal_demo` into each new registry paper as specified in [artifact contracts](../../harness/artifact_contracts.md).
+- Assign non-empty `task_ids` to new policy-v2 papers with actual matching task members. Use concrete scope fields and exact registry URLs; existing unversioned papers need not be bulk migrated or rated.
+- Apply reviewed task roles with evidence per `harness/task_lifecycle.md`. Historical members require same-task successors, comparable-protocol improvement, no material regression and documented tradeoffs/retained value. Preserve alternatives and uncertainty, allow multiple current members, prevent cycles and require historical chains to end at current. Keep old registry entries, deep-dive files and stable links.
+- Record `lifecycle_changes` separately as `{task_id, paper_url, action: keep|promote|supersede|retain_alternative|reopen, reason}`. These audit items cannot replace candidate dispositions or be disguised as `registry_updates.paper`. Summarize the evidence for changes and pending comparisons, including zero-addition maintenance runs.
+- After applying validated source-data changes, run `python3 scripts/render_reading_indexes.py` to regenerate all-paper main/branch indexes and `paper_reads/task_frontiers.md`; verify with `--check`. Task-specific historical labels never globally hide papers. Initial family grouping can remain unreviewed.
 - Zero additions is valid and should be reported plainly. If the batch is unusually large, request/repeat gate and deduplication review instead of filling a quota or cutting off qualified candidates.
 - The `Key Figures / Architecture` section should link official figures/videos or include a redrawn method diagram. If no figure is appropriate, set `figure_status: not_applicable` or `figure_status: missing` and explain why.
 - Keep top-level branches fixed to A-E.

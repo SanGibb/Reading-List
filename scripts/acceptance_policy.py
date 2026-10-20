@@ -113,6 +113,8 @@ def validate_policy_run(run_id: str, artifacts: dict[str, dict], root: Path, err
         errors.append("v2 follow_sources_path must be data/follow_sources.seed.json")
     if plan.get("known_registry_path", "data/papers.seed.json") != "data/papers.seed.json":
         errors.append("v2 known_registry_path must be data/papers.seed.json")
+    if plan.get("task_frontiers_path", "data/task_frontiers.seed.json") != "data/task_frontiers.seed.json":
+        errors.append("v2 task_frontiers_path must be data/task_frontiers.seed.json")
 
     discovery = artifacts.get("01_discovery.json", {})
     evidence = artifacts.get("02_evidence.json", {})
@@ -376,3 +378,34 @@ def validate_policy_run(run_id: str, artifacts: dict[str, dict], root: Path, err
                     errors.append(f"registry addition {cid} {key} must match paper card")
     if missing := accepted - set(dispositions):
         errors.append(f"accepted candidates missing editor disposition: {', '.join(sorted(missing))}")
+
+    # Lifecycle decisions refer to retained task memberships. Validate their
+    # trace, not the current role: subsequent runs may legitimately change it.
+    changes = patch.get("lifecycle_changes", [])
+    if not isinstance(changes, list):
+        errors.append("lifecycle_changes must be an array")
+    elif changes:
+        try:
+            frontiers = json.loads((root / "data/task_frontiers.seed.json").read_text())
+            members = {
+                task["task_id"]: {member["paper_url"] for member in task.get("members", [])}
+                for task in frontiers.get("tasks", [])
+            }
+        except (OSError, ValueError, KeyError, TypeError):
+            errors.append("lifecycle_changes need an inspectable task-frontier file")
+            members = {}
+        seen_changes = set()
+        for change in changes:
+            if not isinstance(change, dict):
+                errors.append("lifecycle change entries must be objects")
+                continue
+            tid, ref = change.get("task_id"), change.get("paper_url")
+            if not isinstance(tid, str) or not isinstance(ref, str) or ref not in members.get(tid, set()):
+                errors.append("lifecycle change must reference an existing task membership")
+                continue
+            if (tid, ref) in seen_changes:
+                errors.append(f"duplicate lifecycle change for {tid}: {ref}")
+            seen_changes.add((tid, ref))
+            if change.get("action") not in {"keep", "promote", "supersede", "retain_alternative", "reopen"}:
+                errors.append(f"lifecycle change {tid} has invalid action")
+            text_fields(change, ("reason",), f"lifecycle change {tid}", errors)
