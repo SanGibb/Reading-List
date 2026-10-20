@@ -9,6 +9,8 @@ import sys
 from pathlib import Path
 from urllib.parse import urlparse
 
+from acceptance_policy import validate_policy_paper
+
 
 REQUIRED = {
     "title",
@@ -97,6 +99,7 @@ def main() -> int:
             evidence_strength = paper.get("evidence_strength")
             if not isinstance(evidence_strength, int) or not 0 <= evidence_strength <= 5:
                 errors.append(f"{label} evidence_strength must be an integer from 0 to 5")
+            validate_policy_paper(paper, label, errors)
 
     expected = {"A", "B", "C", "D", "E"}
     if branch_ids != expected:

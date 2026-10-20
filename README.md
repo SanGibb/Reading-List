@@ -13,7 +13,7 @@
 | 当前已收录精读 | 168 篇，见 [paper_reads/README.md](paper_reads/README.md) |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
-每次 run 的目的都是检查是否出现了新的高质量候选，并在通过标准后扩充知识库。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。通过筛选的候选应全部加入，不做固定 top-k 抽样。
+每次 run 广泛发现候选，再精选具有实质增量的工作。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。新增可以为 0，不为周更凑数；满足全部门槛的候选仍应全部处理，不做固定 top-k 抽样。
 
 ## 本周更新内容
 
@@ -99,11 +99,17 @@ python scripts/publish_validated_update.py --message "Expand frontier knowledge 
 
 ## 收录原则
 
+自 2026-10-20 起，新 run 使用 `acceptance_policy_version: 2`。已有 168 篇保留，不因本次规则调整追溯删库。
+
 - 只收录 2024 年及以后的 frontier work。
 - 必须有 primary / official source，例如 arXiv、OpenReview、CVF、PMLR、官方项目页或官方 GitHub。
 - 必须能回答 `data / method / task / novelty / project_relevance`。
-- 生成类、交互世界、物理世界、VLA demo 类工作必须检查视觉或交互效果；无法判断就进入 `undecided/`。
-- 通过阈值的候选应全部收录并生成精读，不按固定 top-k 截断。
+- 最终 `impact_score >= 4`、`project_relevance_score >= 4`、`evidence_strength >= 4` 必须同时满足。影响力按技术实质和受控实验或可复用发布评价，不按引用数、热度或 venue 评价。
+- 项目相关性必须指出可直接使用的接口、验证器或 baseline；仅能提取“有用字段”不足以收录。每篇新条目必须解释与库内最接近工作的实质差异；没有新增知识则更新原条目或记录 noop。
+- 生成类、交互世界、物理世界、VLA demo 类工作必须实际检查视觉或交互效果并留下页码、图号或视频时间段与观察记录；页面存在视频链接不等于已观看。其他门槛已满足而视觉仍无法判断的候选进入本地 `undecided/` dossier，不能用 watchlist 代替。
+- A 分支包含对象级 sim-ready 资产、关节与物理属性，不要求生成完整场景或世界。
+- 普通相关论文进入轻量 watchlist，记录缺少的证据和 `revisit_trigger`，无需全部制作精读。通过全部门槛的候选仍完整收录；新增异常增长只触发复审，不按篇数截断。
+- 发现阶段覆盖各分支子方向，使用 14 天首发与更新重叠窗口、45 天代码/数据/demo 发布回扫和每月 2024+ 补漏；查询与固定来源访问必须留真实可追溯记录。
 - venue 不是硬门槛，效果、证据和项目相关性更重要。
 
 详细规则见 [harness/acceptance_harness.md](harness/acceptance_harness.md) 和 [harness/system_harness.md](harness/system_harness.md)。

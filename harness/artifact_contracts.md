@@ -11,6 +11,99 @@ This file summarizes the JSON contracts used by the system harness.
 - Accepted paper cards and registry additions must have `year >= 2024`.
 - Unknown or missing evidence should be explicit, not silently omitted.
 
+## V2 extension (effective 2026-10-20)
+
+New runs must declare `00_run_plan.json.acceptance_policy_version: 2`; omitting the
+version does not grandfather a new run. Historical runs keep their original format.
+The contracts below remain the baseline, with the following mandatory v2 fields.
+
+### Discovery coverage
+
+`00_run_plan.json.branch_queries` maps A-E to lists of **actual query strings**.
+`01_discovery.json.query_log` records their execution, not an inferred search plan:
+
+```json
+{
+  "query_id": "Q-A-001",
+  "branch": "A",
+  "query": "articulated sim-ready assets joint collision physics",
+  "source_url": "https://export.arxiv.org/api/query",
+  "executed_at": "2026-10-26T00:05:00+08:00",
+  "date_basis": "submitted",
+  "date_from": "2026-10-13",
+  "date_to": "2026-10-26",
+  "results_reviewed": 40,
+  "pages_checked": 2,
+  "stop_reason": "All results in the requested window were reviewed.",
+  "candidate_ids": ["CAND-0001"]
+}
+```
+
+- `date_basis`: `submitted|updated|release|backfill|citation`. Every branch must log
+  submitted and updated searches covering >=14 calendar days, plus release searches
+  covering >=45 calendar days. These windows end on the run date or previous day;
+  execution timestamps are within one calendar day of the run, allowing timezone
+  differences and midnight crossings. Periodically backfill 2024+ work as specified
+  in the workflow; stale queries cannot stand in for the current weekly sweep.
+- `pages_checked` is an integer >=1; `results_reviewed` an integer >=0. Record actual
+  pagination and stopping reason, including tool/result limits and incomplete coverage.
+- Every planned query has an executed log. Each candidate has `query_id`; the
+  referenced log contains that candidate in `candidate_ids`.
+- Every core follow-source ID is recorded. Actually visited sources need `checked_at`
+  (timezone-aware timestamp) and `urls_checked`; `checked|spot_checked` also needs
+  `evidence_url`. Core `skipped|unreachable` needs a concrete `retry_trigger` plus
+  `notes`. Do not turn a blocked URL into `checked` just by copying its address.
+- The canonical `follow_sources_path` is `data/follow_sources.seed.json` and
+  `known_registry_path` is `data/papers.seed.json`; a plan cannot substitute an empty
+  or unrelated file to disable coverage requirements.
+- Watchlist triage needs `revisit_trigger`: what evidence/release would change the
+  decision. A short record suffices; ordinary watchlist papers need no full dossier.
+
+### Final selection and inspection
+
+Every accepted `quality_review` includes final integer `impact_score`,
+`project_relevance_score`, `evidence_strength` (each >=4), `acceptance_rationale`,
+`selection_basis` (`new_capability|substantial_improvement|reusable_infrastructure|decisive_evaluation`),
+and `comparison_to_registry` with non-empty `closest_paper`, `material_difference`,
+`why_new_entry`. Discovery priors do not substitute for final scores.
+
+Each analyzed `paper_card` states boolean `requires_visual_review` and
+`requires_temporal_demo`. At least one collection-critical `claim_checks` entry must
+be verified with a primary/official source URL for acceptance. Partial/unverified
+caveats must set `used_for_acceptance: false`.
+
+Required visual inspection adds `visual_card.inspection_evidence`:
+
+```json
+{
+  "url": "https://official-project.example/demos/articulation.mp4",
+  "modality": "video",
+  "locator": "00:10-00:24, cabinet opening and closing",
+  "observation": "Door remains attached and clears the frame through its motion range.",
+  "limitations": "One displayed example; long-tail collision behavior is not established."
+}
+```
+
+`modality` is `video|gif|interactive_demo|paper_figure|image`. Required temporal review
+needs at least one of the first three. These must be real observations: substitute
+the actual URL/time/figure and observed behavior, never copy example evidence into a
+run. `not_applicable` needs `not_applicable_reason` and visual score 0; `strong` uses
+4-5 and `adequate` 3. Undecided candidates are analyzed, set
+`needs_human_decision: true`, have a local-only dossier, and cannot be accepted.
+
+### Editor and registry
+
+The accepted candidate set equals the union of candidate IDs in `registry_additions`,
+`registry_updates`, and `registry_noops`, with exactly one disposition per candidate.
+Updates/no-ops include a non-empty `reason` and `existing_paper_url` pointing to a
+real entry in the canonical registry. A no-op carries no `paper` mutation. If an
+update includes a replacement `paper`, it must satisfy v2 gates and match the final
+review just like an addition. New papers copy `acceptance_policy_version: 2`,
+final `impact_score`, `project_relevance_score`, `evidence_strength`, both visual
+requirement booleans, and existing visual score/decision fields. Numeric values must
+match the review. The ordinary registry fields and full deep dive are still required.
+Empty addition sets are valid after real discovery has been performed.
+
 ## Stage Files
 
 ### `00_run_plan.json`

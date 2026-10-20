@@ -22,6 +22,7 @@ Define the scope of a knowledge-expansion run. This agent decides what to search
 ```json
 {
   "run_id": "YYYY-MM-DD",
+  "acceptance_policy_version": 2,
   "created_at": "YYYY-MM-DD",
   "branches": ["A", "B", "C", "D", "E"],
   "minimum_year": 2024,
@@ -36,9 +37,13 @@ Define the scope of a knowledge-expansion run. This agent decides what to search
 ## Standards
 
 - Set `minimum_year` to `2024`.
+- For runs from 2026-10-20 onward set `acceptance_policy_version: 2`; use current [artifact contracts](../../harness/artifact_contracts.md). Existing papers are not retroactively deleted.
 - Keep the five top-level branches fixed.
-- Prefer current and previous two-year queries.
-- Include physical/deformable worlds, PCG, spatial intelligence, VLA, and evaluation.
+- Write actual primary-source query strings in every branch's `branch_queries`, covering its subdirections; placeholders such as "date scan" or "gap filling" do not count.
+- Plan submitted and updated searches over an overlapping 14-day window for every branch, plus 45-day code/data/demo/benchmark-release rescans. Schedule monthly 2024+ backfill and record its last completion/due status.
+- Include physical/deformable worlds, PCG, spatial intelligence, VLA, and evaluation. A must cover articulated assets, joints/URDF, sim-ready assets, collisions, stability and physical properties; object-level executable assets do not need full-world generation.
+- Include one-hop citation/project/predecessor tracing from relevant primary sources and stable-id deduplication. Discovery must execute and log every planned query under the contract.
 - Include `follow_sources_path` so Discovery Agent checks fixed PI/lab/company sources every run.
 - Use follow-source priorities to bias search: check `core` sources every expansion run when feasible and `watch` sources when branch-relevant.
 - Do not add candidates or registry entries.
+- Broad discovery does not imply broad admission: final impact/relevance/evidence must each reach 4/5. Plan no minimum or maximum paper quota; zero additions is normal. Unexpected volume prompts gate/deduplication re-review, not truncation.

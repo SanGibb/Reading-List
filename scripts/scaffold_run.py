@@ -5,7 +5,10 @@ from __future__ import annotations
 
 import json
 import sys
+from datetime import date
 from pathlib import Path
+
+from acceptance_policy import POLICY_VERSION
 
 
 def write_json(path: Path, obj: dict) -> None:
@@ -18,14 +21,23 @@ def main() -> int:
         return 2
 
     run_id = sys.argv[1]
+    try:
+        date.fromisoformat(run_id)
+    except ValueError:
+        print("Run id must be an ISO date YYYY-MM-DD", file=sys.stderr)
+        return 2
     root = Path(__file__).resolve().parents[1]
     run_dir = root / "reports" / "runs" / run_id
+    if run_dir.exists() and any(run_dir.iterdir()):
+        print(f"Run already exists; reuse its artifacts without overwriting: {run_dir}", file=sys.stderr)
+        return 1
     run_dir.mkdir(parents=True, exist_ok=True)
 
     write_json(
         run_dir / "00_run_plan.json",
         {
             "run_id": run_id,
+            "acceptance_policy_version": POLICY_VERSION,
             "created_at": run_id,
             "branches": ["A", "B", "C", "D", "E"],
             "minimum_year": 2024,
@@ -41,7 +53,7 @@ def main() -> int:
     )
     write_json(
         run_dir / "01_discovery.json",
-        {"run_id": run_id, "followed_sources_checked": [], "candidates": [], "triage": []},
+        {"run_id": run_id, "followed_sources_checked": [], "query_log": [], "candidates": [], "triage": []},
     )
     write_json(
         run_dir / "02_evidence.json",

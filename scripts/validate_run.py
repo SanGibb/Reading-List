@@ -10,6 +10,8 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from acceptance_policy import validate_policy_run
+
 
 BRANCHES = {"A", "B", "C", "D", "E"}
 CANDIDATE_RE = re.compile(r"^CAND-\d{4}$")
@@ -432,6 +434,8 @@ def main() -> int:
                     errors.append(f"registry addition {cid} deep_dive_path must live under paper_reads/")
                 else:
                     validate_deep_dive(root / deep_dive_rel, cid, paper, errors)
+
+    validate_policy_run(run_id, data, root, errors)
 
     if errors:
         print("Run validation failed:")

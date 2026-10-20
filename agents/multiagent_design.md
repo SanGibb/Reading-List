@@ -6,6 +6,8 @@ The goal is to maintain a frontier research repository for interactive generatio
 
 The repository is **2024+ only**. Historical papers can be mentioned as background in prose, but they are not valid candidates for the frontier registry.
 
+Acceptance policy version 2 applies to runs dated 2026-10-20 or later. Keep the existing library; this policy does not retroactively remove entries. Discovery remains broad while admission becomes selective: final impact, project relevance and evidence strength each must reach 4/5, alongside every other gate. A run with zero additions is valid.
+
 ## Scope Guard
 
 This system is a paper-collection and evidence-curation workflow. It should not behave like an autonomous scientist.
@@ -50,6 +52,7 @@ Only the Taxonomy & Editor may create a registry update draft, and that draft mu
 | Are the demos and visual results good enough? | Quality Reviewer | Uses project pages, videos, GIFs, figures, robot demos, and generated samples. |
 | Does it fit the current tree? | Taxonomy & Editor | Assigns branch fit and records proposal-only taxonomy changes. |
 | What enters the registry patch? | Taxonomy & Editor | Only reviewer-passed items with complete deep dives can enter patch. |
+| Does this add knowledge beyond the library? | Quality Reviewer | Names the closest registry work, material difference, and reason for a new entry; minor release changes update the existing entry. |
 | Did the system run correctly? | System Harness | `validate_run.py` checks the artifacts. |
 
 ## Directory Contract
@@ -101,30 +104,39 @@ flowchart TD
 ## Failure Policy
 
 - If Research Lead fails to set `minimum_year: 2024`, the run fails.
+- New-policy runs must set `acceptance_policy_version: 2` and use the current artifact contracts.
+- If actual subdirection queries, submitted/updated overlap coverage, query-to-candidate traces, or timed fixed-source evidence are missing, coverage has not been demonstrated. A source URL known in advance is not a completed check.
 - If Discovery Agent produces pre-2024 registry candidates, it must reject them or the harness fails.
 - If Discovery rejects all candidates, Taxonomy & Editor writes a no-update report.
 - If Evidence Analyst cannot identify method/task/data, the paper cannot be accepted in that run.
 - If a central claim cannot be tied to a primary or official source, it must be marked as unverified and cannot be used as acceptance evidence.
 - If demo claims cannot be verified, demo score is capped and Quality Reviewer may block.
-- If Quality Reviewer cannot judge visual/generation quality, the candidate goes to `undecided/YYYY-MM-DD/` and cannot enter the registry in that run.
+- If Quality Reviewer cannot judge required visual/generation quality for an otherwise qualifying candidate, it goes to a detailed local-only `undecided/YYYY-MM-DD/` dossier and cannot enter the registry in that run. Watchlist cannot substitute for this unresolved visual gate.
 - If a generation-heavy paper has weak visual results, it is blocked even if it has a good venue.
+- A page's media links do not establish actual inspection; motion claims require inspected video/GIF/interactive-demo evidence with locators, observations, and limitations.
+- If any final impact/relevance/evidence score is below 4, the candidate cannot be accepted. Scores cannot compensate for one another; citations, venue and popularity cannot rescue a failed gate.
+- If relevance is only generic usefulness or extractable fields, or a new entry lacks a material difference from the closest registry work, it does not qualify as an addition.
+- No additions is valid. High volume triggers a second gate/deduplication review; it never licenses a fixed top-k cutoff or lower standards.
 - If Taxonomy & Editor proposes a new top-level branch, it must be marked `proposal_only`.
 - If a registry addition lacks a valid `deep_dive_path` under top-level `paper_reads/`, the run fails.
 - If registry patch is created without harness validation, the update is invalid.
 
 ## What This System Harness Checks
 
-The system harness checks the **workflow execution**, not paper taste:
+The system harness checks workflow execution and machine-checkable acceptance gates. Human/model judgments still require source-backed explanations:
 
 - all required stage files exist,
 - JSON artifacts parse,
 - all run ids match,
 - each candidate has a stable id,
 - fixed follow-source checks are recorded,
+- actual query execution, result/pagination/stopping records, and source access evidence are present for new-policy runs,
 - triage decisions refer to known candidates,
 - paper/demo/review cards refer to valid candidates,
 - rejected candidates are not analyzed or added to registry,
 - undecided visual-quality candidates are not added to registry patch,
+- final acceptance scores, primary/official source, visual eligibility, rationale and closest-paper comparison satisfy the active policy,
+- accepted candidates map completely to additions, updates or noops,
 - every registry addition has a complete top-level paper deep dive,
 - taxonomy changes are proposal-only,
 - final report exists,
@@ -157,3 +169,5 @@ python frontier_research/scripts/validate_registry.py
 ```
 
 Use a non-empty dry-run when changing schemas or agent contracts.
+
+Search scope is independent of admission volume. Research Lead plans each branch's subdirections, including articulated/joint/URDF and physical sim-ready object assets in A. Discovery checks fixed sources first, searches both first submissions and updates over an overlapping 14-day window, rescans releases over 45 days, and performs monthly 2024+ backfill with one-hop citation/project/predecessor tracing. Ordinary relevant work can remain in a lightweight watchlist with missing upgrade evidence and `revisit_trigger`, without a maintained deep dive.

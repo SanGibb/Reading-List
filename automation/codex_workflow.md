@@ -4,6 +4,8 @@ This workflow uses Codex as a file-driven research-maintenance system, not as an
 
 Current scope: maintain a high-quality frontier paper registry. Codex should help search, verify, summarize, and update collection artifacts with every candidate that passes the harness; it should not act as an autonomous scientist or produce research roadmaps as the main output.
 
+For runs dated 2026-10-20 or later, use `acceptance_policy_version: 2`: broad discovery with selective admission. Existing entries remain in place. The final impact, project relevance and evidence scores must each reach 4/5, with primary/official sources, branch fit and applicable visual gates also satisfied. Zero additions is valid; no weekly or per-branch quota is required.
+
 ## Recommended Operating Modes
 
 ### 1. Manual deep-update mode
@@ -16,6 +18,7 @@ Prompt:
 请阅读 frontier_research 的 taxonomy、paper registry 和 harness。
 联网搜索最近 2-4 周关于 interactive generation、spatial intelligence、VLA、world-action models、physical/deformable worlds 的最新论文和项目，只收录 2024 年及以后的工作。
 按 harness 过滤，扩充 data/papers.seed.json 和 paper_reads；报告只作为本次检索的审计摘要。
+广泛发现、精选收录：最终影响力/项目相关性/证据强度均至少4分，并说明与库内最接近工作的实质差异；无合格新增也正常。
 ```
 
 Use cases:
@@ -41,7 +44,9 @@ Expected output:
 - `01_discovery.json` with `followed_sources_checked`
 - maintained deep dives under `paper_reads/<branch>/<slug>.md`
 - full-coverage registry updates after threshold filtering
-- watchlist for unverified but potentially important work
+- full coverage of branch subdirections, overlapping 14-day first-submission/update searches, 45-day release rescans, and monthly 2024+ gap filling
+- actual query ids, result counts, pagination/stopping reasons, and timed fixed-source checks; candidates trace back to queries
+- concise watchlist with missing upgrade evidence and `revisit_trigger`, without mandatory deep dives
 - local-only undecided dossiers under `undecided/YYYY-MM-DD/`
 - a validated commit pushed to GitHub when publishable changes exist
 
@@ -104,7 +109,12 @@ The publisher leaves `undecided/**` local-only by default. Those dossiers should
 - Do not rewrite the taxonomy in routine expansion runs.
 - Do not generate autonomous research hypotheses or experiment roadmaps as a primary output.
 - Do not add every new arXiv paper blindly; keep impact and project relevance thresholds.
-- Once a candidate passes those thresholds, include it with a deep dive instead of sampling only a top-k subset.
+- Use final `impact_score >= 4`, `project_relevance_score >= 4` and `evidence_strength >= 4` together. Impact rests on technical substance plus controlled evidence or reusable releases, not citations or popularity. Relevance requires a concrete interface, validator, or direct baseline.
+- Every accepted review must state `selection_basis`, `acceptance_rationale` and `comparison_to_registry` (`closest_paper`, `material_difference`, `why_new_entry`). Each score of 4 needs decisive source-backed evidence rather than being a default for related papers. Updates to known work belong in `registry_updates`; redundant knowledge belongs in `registry_noops`.
+- Once a candidate passes every gate, account for it in additions/updates/noops instead of sampling a top-k subset. No additions is valid; an unusually large batch triggers re-review rather than truncation.
+- Do not narrow A to complete scenes/worlds: articulated, physical and sim-ready object assets also qualify when the quality gates pass.
+- Do not equate a page containing video links with actual visual inspection. Record observed samples, page/figure numbers or video time ranges, failure modes, and relevant joint-motion/collision/stability/task checks.
+- If an otherwise qualifying paper needs visual judgment that remains uncertain, create its local undecided dossier; watchlist cannot bypass this gate.
 - Do not claim SOTA unless the source reports a clear benchmark and comparison.
 - Do not let one agent write another agent's artifact.
 - Do not skip fixed follow sources silently; record `checked`, `spot_checked`, `unreachable`, or `skipped`.
@@ -134,3 +144,6 @@ The final validation must state:
 - all accepted papers have primary URLs
 - all accepted papers satisfy branch fit
 - no social-only claims were accepted
+- final scores and closest-registry comparisons satisfy policy version 2
+- all accepted candidates are represented in additions, updates or noops
+- the report states actual additions, including zero, without filling a target count

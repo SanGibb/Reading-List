@@ -5,6 +5,12 @@ This harness validates the **multi-agent system execution**. It is separate from
 - System harness: did the pipeline run correctly?
 - Paper acceptance harness: is a paper good and relevant enough to collect?
 
+Policy v2 applies to runs from 2026-10-20. `scripts/acceptance_policy.py` additionally
+enforces recorded admission thresholds, source/visual gates, discovery traceability,
+and editor coverage. Historical runs are validated under their original contract;
+they are not automatically rescored or deleted. See [artifact_contracts.md](artifact_contracts.md)
+for v2 fields and [acceptance_harness.md](acceptance_harness.md) for selection policy.
+
 ## Run Unit
 
 Each run has one run id:
@@ -47,6 +53,7 @@ reports/runs/YYYY-MM-DD/
 - Visual cards can reference `analyze` or `watchlist`, but not `reject`.
 - Quality review can reference any discovered candidate, including rejected candidates.
 - Registry patch can include only candidates with `accepted_for_registry: true`.
+- In v2, each accepted candidate has exactly one addition, update, or no-op; zero additions is valid.
 - Every registry addition must set `deep_dive_path` and point to a corresponding top-level `paper_reads/<branch>/<slug>.md` deep dive.
 - Discovery must record which fixed PI/lab/company sources were checked.
 - Undecided dossiers are required for local publish validation but remain local-only unless explicitly approved.
@@ -77,6 +84,7 @@ The harness checks these boundaries through artifact shape and cross-file refere
 - Registry additions must include the required registry fields.
 - Registry additions must include `deep_dive_path` to a per-paper deep dive with source links, novelty, contributions, task, data, method, key figures/architecture, evidence, limitations, and project relevance.
 - Actual registry changes must pass `scripts/validate_registry.py`.
+- V2 admissions need final impact, relevance, and evidence scores each >=4, a material-increment comparison, and all applicable visual/temporal observations. Discovery priors alone cannot satisfy admission.
 
 ### 6. Report safety
 
@@ -99,6 +107,7 @@ A run passes if:
 - `00_run_plan.json` declares `minimum_year: 2024`,
 - `00_run_plan.json` points to `data/follow_sources.seed.json`,
 - `01_discovery.json` includes `followed_sources_checked`,
+- v2 core sources are all accounted for, actual queries cover submitted/updated overlap windows, and candidate-query traces are consistent,
 - all cross-file references are valid,
 - no rejected or blocked candidate appears in the registry patch,
 - no undecided visual-quality candidate appears in the registry patch,
@@ -116,4 +125,7 @@ A run fails if any invariant is violated.
 python frontier_research/scripts/validate_run.py YYYY-MM-DD
 ```
 
-This command validates the run structure. It does not judge whether a paper is scientifically important.
+This command validates run structure and the mechanically checkable parts of the
+declared policy. It cannot judge scientific importance or prove that recorded
+observations were actually made. A structural/policy pass is not independent
+reproduction or a substitute for the reviewer's judgment.

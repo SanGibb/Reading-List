@@ -24,6 +24,12 @@ Useful hook checks:
 - No duplicate paper titles.
 - Run summary exists for automated registry updates.
 
+From policy v2 (2026-10-20), validation also checks the recorded >=4 final
+impact/relevance/evidence thresholds, primary/official source labels, applicable
+visual/temporal evidence, source/query coverage, and one editor disposition per
+accepted candidate. Regression tests in `tests/` run in CI. These checks enforce
+the declared policy; they cannot verify the truth or scientific merit of a review.
+
 ## What Hooks Cannot Do Reliably
 
 Hooks cannot judge:
