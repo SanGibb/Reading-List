@@ -1,5 +1,10 @@
 # GeoState: Learning View-Decoupled Geometry States for 3D World Modeling
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。主源证实drivinggeometryforecasting及cross-viewquery，但未展示机器人action-intervention接口。作为3D状态表示背景，与本repo具体操控任务仅单层支撑。
+> [本次来源、分数与任务判断](../library_review.md#paper-44a91b7395e1)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0009
 branch: D
 decision: accepted_for_registry

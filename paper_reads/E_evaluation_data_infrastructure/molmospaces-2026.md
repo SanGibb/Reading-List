@@ -1,5 +1,15 @@
 # MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。规模、物理标注、模块化配置和跨模拟器八类任务形成可复用基础，主要推荐其数据/测试接口，不依据未看demo宣称场景/策略质量。
+> [本次来源、分数与任务判断](../library_review.md#paper-cf1da4010d62)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：5 / 5 / 4）：相较RoboVerse平台统一，MolmoSpaces提供大规模场景/物体/抓取、显式划分和质量测试，保留平台备选。
+> - [Sec.3.1 Tables2-4; Sec.3 ecosystem list; Sec.4 Benchmark](https://arxiv.org/html/2602.11337v1)：230k+场景、130k物体/42M grasps；八零样本任务；质量表按稳定/抬升/交互/关节分开，MSMultiType关节仅65.2%，不能概括为所有测试95%+。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0004
 branch: E
 decision: accepted_for_registry

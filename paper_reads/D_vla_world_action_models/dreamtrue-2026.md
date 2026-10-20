@@ -1,5 +1,10 @@
 # DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。success bias与counterfactual post-training/human defect reward针对动作忠实和物理缺陷，是直接任务增量；本轮只核实主源48.12→6.25缺陷率声明，旧视觉描述无定位。
+> [本次来源、分数与任务判断](../library_review.md#paper-7f08d7bd7643)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0005
 branch: D
 decision: accepted_for_registry

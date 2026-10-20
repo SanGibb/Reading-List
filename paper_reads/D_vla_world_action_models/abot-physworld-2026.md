@@ -1,5 +1,10 @@
 # ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。物理偏好对齐、action injection及训练独立EZSbench构成可复用基础候选。主源摘要已有具体构件，但本轮尚未逐项验证开放release和物理失败媒体。
+> [本次来源、分数与任务判断](../library_review.md#paper-ec900d7d3fdc)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0004
 branch: D
 decision: accepted_for_registry

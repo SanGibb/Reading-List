@@ -1,0 +1,35 @@
+{
+  "audit_type": "user_requested_existing_library_reassessment",
+  "review_date": "2026-10-20",
+  "completed_at": "2026-10-20T17:09:25+08:00",
+  "baseline_commit": "9e6e38f",
+  "policy_version": 2,
+  "preserved_records": 168,
+  "reviewed_records": 168,
+  "task_groups": 48,
+  "decisions": {
+    "priority": 27,
+    "reference": 31,
+    "watchlist": 34,
+    "undecided": 73,
+    "source_issue": 3
+  },
+  "historical_task_edges_added": 0,
+  "local_only_dossiers_created": 73,
+  "source_artifacts": [
+    "branch-AB.json",
+    "branch-C.json",
+    "branch-D.json",
+    "branch-E.json",
+    "task-merge-plan.json"
+  ],
+  "validation": {
+    "tests_passed": 129,
+    "command": "REQUIRE_UNDECIDED_DOSSIERS=1 python3 scripts/validate_all.py",
+    "status": "passed",
+    "deep_dive_bodies_and_prior_acceptance_preserved": true,
+    "reorganization_idempotent": true,
+    "historical_run_artifacts_unchanged": true,
+    "notes": "Only pre-existing missing-local-PDF warnings; source and visual gaps remain explicitly pending."
+  }
+}

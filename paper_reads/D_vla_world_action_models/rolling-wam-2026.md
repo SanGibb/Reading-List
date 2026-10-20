@@ -1,5 +1,10 @@
 # Rolling-WAM: World Action Models with Rolling Imagination
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。staggered-noise滑窗提供4.5x steady-state速度，属于有用推理优化；本轮无同硬件warm-up、观测新鲜度与突变场景证据，不能仅速度四分。
+> [本次来源、分数与任务判断](../library_review.md#paper-fd40fdd41dea)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0005
 branch: D
 decision: accepted_for_registry

@@ -1,5 +1,10 @@
 # EWMBench: Evaluating Embodied World Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。早期场景/运动/语义评价有基础价值，但现存精读没有具体协议和指标验证，本轮摘要也不足以支撑证据4。
+> [本次来源、分数与任务判断](../library_review.md#paper-bddcd73c5023)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0042
 branch: E
 decision: accepted_for_registry

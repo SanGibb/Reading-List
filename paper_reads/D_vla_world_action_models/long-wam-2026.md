@@ -1,5 +1,10 @@
 # Long-WAM: Scaling the Context of World-Action Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。longhistory收益依赖ARpretraining以及107.4ms系统实现是可区分能力；主源context ablation具体，但本轮未观看动态杯堆与长期恢复，不能据摘要判当前最佳。
+> [本次来源、分数与任务判断](../library_review.md#paper-2794e21dec6b)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0009
 branch: D
 decision: accepted_for_registry

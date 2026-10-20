@@ -1,5 +1,10 @@
 # WorldMark: A Unified Benchmark Suite for Interactive Video World Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。按轴响应延迟/纯度/稳定性确有专门增量，但原精读只保存八指标旧摘要，本轮主源说将发布数据代码，实装/协议可用性需核验。
+> [本次来源、分数与任务判断](../library_review.md#paper-0c44c67f88f5)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0007
 branch: E
 decision: accepted_for_registry

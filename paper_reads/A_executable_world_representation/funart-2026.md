@@ -1,5 +1,10 @@
 # FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。The full method and controlled Articulate3D protocols were checked; joint functional/kinematic outputs are directly useful. Fig.3 depicts SPOT interaction, so the prior 'no downstream manipulation' description is too categorical; actual execution media remains uninspected.
+> [本次来源、分数与任务判断](../library_review.md#paper-c161938e4192)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0004
 branch: A
 decision: accepted_for_registry

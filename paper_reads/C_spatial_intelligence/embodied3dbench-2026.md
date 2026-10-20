@@ -1,5 +1,15 @@
 # Embodied3DBench: Benchmarking Low-Level Embodied Spatial Intelligence of Vision Language Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。已读原文任务定义、构建与指标；将结构和交互感知拆成明确 2D/metric-3D 输出，直接给场景/部件/可供性检查器提供可评分任务。该推荐基于评测协议，不主张执行演示或泛化已复现。
+> [本次来源、分数与任务判断](../library_review.md#paper-f141bf670b1d)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：增加部件级、度量 3D 和抓取/可供性等诊断，和高层像素 trace 分阶段任务互补。
+> - [Sections 3.2-3.3; 4.2 Evaluation Metrics; task result tables](https://arxiv.org/html/2605.29074v1)：原文定义六类任务、2D/3D 输出以及任务特定评测。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0049
 branch: C
 decision: accepted_for_registry

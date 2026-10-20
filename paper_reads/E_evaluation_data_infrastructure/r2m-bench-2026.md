@@ -1,5 +1,10 @@
 # R2M-Bench: Evaluating Revisit Memory via Relative Consistency in Interactive Video World Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。同rollout匹配控制纠正静态/慢动捷径，值得保留专门metric；尚无单独可执行发布与完整pair-mining审查，本轮证据未达4。
+> [本次来源、分数与任务判断](../library_review.md#paper-4afdea423760)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0005
 branch: E
 decision: accepted_for_registry

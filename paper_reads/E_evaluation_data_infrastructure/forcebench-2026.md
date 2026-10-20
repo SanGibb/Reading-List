@@ -1,5 +1,10 @@
 # ForceBench: Benchmarking Force Integration for Robotic Manipulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。固定pi0.5比较腕力融合是有用窄域设计研究，八任务/五实机任务与未确认code尚不足支持长期核心；不能以最佳均值替代所有任务。
+> [本次来源、分数与任务判断](../library_review.md#paper-9c5c2fc42b1f)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0014
 branch: E
 decision: accepted_for_registry

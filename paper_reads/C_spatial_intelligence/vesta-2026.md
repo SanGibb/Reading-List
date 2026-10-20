@@ -1,5 +1,10 @@
 # Vesta: A Generalist Embodied Reasoning Model
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。官方方法与记忆 harness 可确认，但核心还包括真实机器人长期执行；本轮未完整观察相关媒体。保留为待复核，不用 broad generalist 宣传或摘要平均提升通过新门槛。
+> [本次来源、分数与任务判断](../library_review.md#paper-e67c4198395f)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0005
 branch: C
 decision: accepted_for_registry

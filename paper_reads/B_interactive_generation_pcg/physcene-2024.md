@@ -1,5 +1,10 @@
 # PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Collision, room and reachability guidance is a direct interactive-layout baseline. Recheck articulated-object execution, collisions and constrained samples; old page-presence evidence is insufficient.
+> [本次来源、分数与任务判断](../library_review.md#paper-a79d14ec6c4b)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0006
 branch: B. Interactive Generation and PCG
 decision: accepted_for_registry

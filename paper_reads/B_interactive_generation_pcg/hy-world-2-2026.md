@@ -1,5 +1,10 @@
 # HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Open multi-input reconstruction/generation and scene export are reusable visual-world infrastructure. Navigability, collision support and persistent exploration need actual temporal inspection.
+> [本次来源、分数与任务判断](../library_review.md#paper-fb34e7c4d9d7)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0025
 branch: B
 decision: accepted_for_registry

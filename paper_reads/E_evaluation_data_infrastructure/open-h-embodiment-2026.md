@@ -1,5 +1,10 @@
 # Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。跨医疗形态数据有基础研究价值，但通用交互环境项目当前没有医疗任务接口；不能因最大开放医疗数据或suturing成绩推到相关性4。
+> [本次来源、分数与任务判断](../library_review.md#paper-8314248f79c9)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0009
 branch: E
 decision: accepted_for_registry

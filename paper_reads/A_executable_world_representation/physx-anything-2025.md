@@ -1,5 +1,10 @@
 # PhysX-Anything: Simulation-Ready Physical 3D Assets from Single Image
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Explicit geometry, articulation and physics plus a source-reported contact-learning experiment is directly relevant. The older model is not automatically historical: actual motion/contact media and its cost/generalization advantages need comparison.
+> [本次来源、分数与任务判断](../library_review.md#paper-e8d16480d0d1)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0016
 branch: A
 decision: accepted_for_registry

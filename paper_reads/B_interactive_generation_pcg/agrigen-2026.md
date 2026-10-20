@@ -1,5 +1,10 @@
 # AgriGen: Large-Scale Scene Generation Framework for Photorealistic Agricultural Robotics Simulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。Agricultural parameterized scenes are relevant but domain-specialized; verified abstract supplies no reusable release, controlled policy gains or sim-to-real evidence that clears core thresholds. Workshop prestige alone does not raise impact.
+> [本次来源、分数与任务判断](../library_review.md#paper-a3a413137f1d)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0002
 branch: B
 decision: accepted_for_registry

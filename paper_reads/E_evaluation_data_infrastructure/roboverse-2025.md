@@ -1,5 +1,16 @@
 # RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。MetaSim的模拟器无关配置和标准IL/RL协议是可直接复用的环境/结果接口；该贡献独立于渲染或生成demo。
+> [本次来源、分数与任务判断](../library_review.md#paper-071338bb2075)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 4 / 4）：与MolmoSpaces的数据/场景规模重点互补，RoboVerse保留跨模拟器API、基线与随机化包装。
+> - [Benchmark Overview; generalization wrapper paragraph](https://roboverse.wiki/dataset_benchmark/benchmark/overview)：官方文档明确统一IL/RL训练评价，并以环境wrapper给任意任务施加随机化generalization；导航列出标准学习基线。（verified）。
+> - [Appendix XVII-B; XVIII-A; Sec.VII Limitations](https://arxiv.org/html/2504.18904v1)：training/eval 9:1；generalist action转delta end-effector、gripper二值化，单任务fine-tune；作者明确non-rigid统一不足且基线可能非最优，不以全模型性能排名为主旨。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0014
 branch: E. Evaluation and Data Infrastructure
 decision: accepted_for_registry

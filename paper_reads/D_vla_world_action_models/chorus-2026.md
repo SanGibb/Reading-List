@@ -1,5 +1,10 @@
 # CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。同权重独立副本且无需通信的异构协作是明确新任务能力；主源实验可查，但本轮未观看队友扰动和同步接触时序。
+> [本次来源、分数与任务判断](../library_review.md#paper-2036ef164d31)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 ## Source Links
 
 - Paper: https://arxiv.org/abs/2606.12352

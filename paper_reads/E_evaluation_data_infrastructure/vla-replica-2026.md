@@ -1,5 +1,10 @@
 # VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。低成本跨搭建复现有备选价值，但本轮只核到摘要设计，未审完误差/统计和确切公开搭建协议，无法支撑核心证据4。
+> [本次来源、分数与任务判断](../library_review.md#paper-11acf510a850)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0058
 branch: E
 decision: accepted_for_registry

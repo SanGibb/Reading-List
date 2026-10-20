@@ -1,5 +1,10 @@
 # WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。概念隔离能帮助定位物理失败，但本轮只核到主源摘要，旧425配置与具体常数/真值评分尚缺精确协议定位，保留基础诊断。
+> [本次来源、分数与任务判断](../library_review.md#paper-09ac7d97fc58)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0009
 branch: E
 decision: accepted_for_registry

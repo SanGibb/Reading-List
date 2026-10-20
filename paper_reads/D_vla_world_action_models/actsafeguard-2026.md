@@ -1,5 +1,10 @@
 # ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。hard feasible-set层是明确的动作合法性接口，文本可验证ray-scaling与训练对齐；本轮未读完整定理假设/实验或检查物理执行，100% step safety不能转述为全局安全。
+> [本次来源、分数与任务判断](../library_review.md#paper-523157d7fa1c)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0003
 branch: D
 decision: accepted_for_registry

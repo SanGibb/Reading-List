@@ -1,5 +1,10 @@
 # DepthWorld: 3D World Model for Robot Manipulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。DROID-3D因子图标定和metricdepth监督直接提供数据/validator；等训练预算RGB+1.48dB是具体控制证据，仍未检查跨view时序几何和释放。
+> [本次来源、分数与任务判断](../library_review.md#paper-6195c0fbc272)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0010
 branch: D
 decision: accepted_for_registry

@@ -1,5 +1,15 @@
 # The Robot Is Not Its Description: GaugeBench for Representation Robustness in Morphology-Aware Policies
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。物理/接口认证后再测同机制描述变化，能直接验证URDF/关节坐标compiler或policy adapter的隐含表征假设；控制与权衡具体。
+> [本次来源、分数与任务判断](../library_review.md#paper-3b6bd81a6a29)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 4 / 4）：比RoboTwin物理参数变动更严格固定物理机制，只动描述约定；不能拿普通跨形态成功率代替。
+> - [Sec.III-A/B; Sec.IV; TableI; Sec.V-E/TableIII](https://arxiv.org/html/2610.07597v1)：1e-7逐项100step物理认证；3 policies×80robots×10rewrites×32episodes；轴随机化保留率3.6→80.6%，原描述回报约降10%，不得宣称无退化。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0015
 branch: E
 decision: accepted_for_registry

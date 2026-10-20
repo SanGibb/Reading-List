@@ -1,5 +1,15 @@
 # MultiWorldBench: Do Independently Controlled Views Describe One Shared World?
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。明确独立双控制、共享编辑与延迟跨玩家重访，原生engine对照及suite设计可复用；十能力分项补单玩家评价盲区。
+> [本次来源、分数与任务判断](../library_review.md#paper-2194e330bb3a)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：相较WBench单rollout多轮，加入paired visibility/control isolation/shared-state/race，形成独立任务；不能用其平均排名决定模型替代。
+> - [Sec.3.1-3.3; Table3; Sec.5.3; Sec.6 Limitations](https://arxiv.org/html/2610.11723v1)：495配置七suite，区分planned与executed日志；10能力macro平均，Engine GT91.69；原生控制失败会传播到高级任务，系统级human排名样本很少。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0012
 branch: E
 decision: accepted_for_registry

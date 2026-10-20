@@ -1,5 +1,10 @@
 # SimuScene: Simulation-Ready Compositional 3D Scene Reconstruction from a Single Image
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Using simulated failure to repair both shape and pose is a material capability, but stability and downstream robot/humanoid execution cannot be judged from the abstract and legacy generic visual label.
+> [本次来源、分数与任务判断](../library_review.md#paper-e4648f417978)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0017
 branch: A
 decision: accepted_for_registry

@@ -1,5 +1,10 @@
 # MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。完全sim-only zero-shot策略和procedural engine直接验证生成世界是否训练出可用策略；主源最新摘要报1.8M轨迹，与库中1.7M需版本说明。未观看真实门/抽屉任务。
+> [本次来源、分数与任务判断](../library_review.md#paper-58d9cc33109d)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0003
 branch: D
 decision: accepted_for_registry

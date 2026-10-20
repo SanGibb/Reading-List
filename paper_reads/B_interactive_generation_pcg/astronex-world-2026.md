@@ -1,5 +1,10 @@
 # Astronex-World 1.0: Real-Time Interactive World Model Foundation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Open low-resource training and streaming controls are potentially reusable, but WBench/throughput numbers and curated gallery descriptions do not establish persistent action/world quality.
+> [本次来源、分数与任务判断](../library_review.md#paper-60666a1018c8)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0005
 branch: B
 decision: accepted_for_registry

@@ -1,5 +1,10 @@
 # TwinVLA: Data-Efficient Bimanual Manipulation with Twin Single-Arm Vision-Language-Action Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。主源支持不需双臂预训练的双单臂策略组合，对双臂任务有明确数据效率价值；旧报告只给模板视觉评分，本轮尚未观看协调动作。
+> [本次来源、分数与任务判断](../library_review.md#paper-c5774432ceb7)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0040
 branch: D
 decision: accepted_for_registry

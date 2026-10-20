@@ -1,5 +1,10 @@
 # SpatialBot: Precise Spatial Understanding with Vision Language Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。RGB-D/SpatialQA/SpatialBench 的来源与开放代码可确认，是早期轻量表征基线；对当前项目主要提供支撑层，未建立相对现有度量模型的实质新增量，保留参考而非新版核心准入。
+> [本次来源、分数与任务判断](../library_review.md#paper-9142c69aab51)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0026
 branch: C
 decision: accepted_for_registry

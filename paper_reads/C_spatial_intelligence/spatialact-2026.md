@@ -1,5 +1,15 @@
 # SpatialAct: Probing Spatial Reasoning-to-Action Capabilities of Vision-Language Models in 3D Scenes
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。官方协议和原文 Table 2 可核对；通过多轮修复、单步诊断和基础能力拆分，直接评估生成场景的错误修复与停止行为。项目页结果区仍有模板占位，故引用结果以原文表为准。
+> [本次来源、分数与任务判断](../library_review.md#paper-2ab737875114)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：将目标从操作姿态扩展到交互场景修复和停止代价；不同任务不判定谁取代谁。
+> - [Benchmark construction; Figure 3; Table 2](https://arxiv.org/html/2605.31148v1)：原文给出交互界面及 repair/success/effective-turn/premature-stop/token 等指标。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0055
 branch: C
 decision: accepted_for_registry

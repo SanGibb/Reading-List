@@ -1,5 +1,10 @@
 # Show-Harness: Just a VLM Agent Can Play Robots
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。将语义action units确定性接机器人解释器以及GUI数据采集提供具体复用接口；主源已核实架构但本轮未观看执行/确认完整release。
+> [本次来源、分数与任务判断](../library_review.md#paper-79d6ea3fdd0d)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0002
 branch: D
 decision: accepted_for_registry

@@ -1,5 +1,10 @@
 # ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding for General Robot Manipulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。原文具体描述 ST-Human、3D/4D 引导和 RLBench/真实操作；这是可研究的空间到动作接口，但本轮未完成时序/机器人执行检查，不能据摘要成功率通过。
+> [本次来源、分数与任务判断](../library_review.md#paper-9ac872e9a1af)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0032
 branch: C
 decision: accepted_for_registry

@@ -1,5 +1,10 @@
 # WonderPlay: Dynamic 3D Scene Generation from a Single Image and Actions
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Single-image action-conditioned3D across material families supplies a concrete hybrid world baseline. Unviewed dynamic galleries cannot establish contact, conservation or consistency.
+> [本次来源、分数与任务判断](../library_review.md#paper-3fe45a00c749)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0003
 branch: A
 decision: accepted_for_registry

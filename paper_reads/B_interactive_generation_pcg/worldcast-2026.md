@@ -1,5 +1,10 @@
 # WorldCast: Distributed Multiplayer World Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Distributed local video/state clients and compact shared state are a substantial scaling alternative. Player identities, shared events and hour-long consistency require actual paired-rollout inspection.
+> [本次来源、分数与任务判断](../library_review.md#paper-0e0b8dce565d)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0002
 branch: B
 decision: accepted_for_registry

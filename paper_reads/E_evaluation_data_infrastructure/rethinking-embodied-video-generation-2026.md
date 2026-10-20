@@ -1,5 +1,15 @@
 # Rethinking Video Generation Model for the Embodied World
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。RBench明确任务/形态分解、重复采样和人工校准，并联结大规模训练数据；可直接作为机器人视频生成评价起点。
+> [本次来源、分数与任务判断](../library_review.md#paper-c87afd2eb52e)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：较RoboWM-Bench偏执行链，RBench保留标准图文视频输入、任务/形态九指标和RoVid-X数据生态，两者互补。
+> - [Table 2; Sec.5.1 Evaluation Setups; Human Evaluation correlation](https://arxiv.org/html/2601.15282v1)：25模型/九指标；每例三次生成取均值，论文十模型人评子集Spearman 0.96；4M RoVid-X片段为作者报告而非独立清点。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0002
 branch: E
 decision: accepted_for_registry

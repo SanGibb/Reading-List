@@ -1,5 +1,10 @@
 # PBench: A Physical AI Benchmark for World Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。领域QA加视频质量可作简洁基础，但官网入口已redirect，本轮数据卡能确认包和用途，具体judge/校准尚未重新核实，不作为新核心通过。
+> [本次来源、分数与任务判断](../library_review.md#paper-0669f8cb72d6)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0001
 branch: E
 decision: accepted_for_registry

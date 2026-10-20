@@ -1,5 +1,15 @@
 # Point-It-Out: Benchmarking Embodied Reasoning for Vision Language Models in Multi-Stage Visual Grounding
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。已读原文分阶段任务、数据来源和标注/评分设计；可直接分离对象定位、动作点和高层 trace 的错误，避免用纯多选 QA 替代行动几何。S3 是视觉轨迹评测，不宣称低层机器人执行已验证。
+> [本次来源、分数与任务判断](../library_review.md#paper-b2bb3e07cc54)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 4 / 4）：像素任务点与高层 trace 阶段诊断具有独立作用；不和低层 metric-3D 子类强排统一榜。
+> - [Section 3 stages S1-S3; Section 4 curation and metrics](https://arxiv.org/html/2509.25794v1)：原文定义阶段化像素 grounding、polygon-mask 标注和多域数据来源。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0003
 branch: C
 decision: accepted_for_registry

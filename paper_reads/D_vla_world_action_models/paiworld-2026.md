@@ -1,5 +1,10 @@
 # PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。跨view attention、camera RoPE和3D-REPA有明确方法，但leaderboard名次不是material increment；本轮未核查same-input几何和控制消融。
+> [本次来源、分数与任务判断](../library_review.md#paper-6b29dc9dd113)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0005
 branch: D
 decision: accepted_for_registry

@@ -1,5 +1,10 @@
 # SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Editable twins/cousins plus policy-ranking and real-transfer experiments are a material compiler/evaluation capability. Need actual articulation/contact/manipulation and failure-case inspection.
+> [本次来源、分数与任务判断](../library_review.md#paper-4af5267aca5a)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0002
 branch: B
 decision: accepted_for_registry

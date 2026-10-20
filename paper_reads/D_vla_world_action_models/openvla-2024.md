@@ -1,5 +1,10 @@
 # OpenVLA: An Open-Source Vision-Language-Action Model
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。保留开放动作词元VLA的基础参考；本轮已读官方实现、LoRA及LIBERO复现入口。官方仓库推荐OFT，但OFT不在现有registry，不能直接建立库内替代边。
+> [本次来源、分数与任务判断](../library_review.md#paper-65d07da8902e)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0012
 branch: D. VLA and World-Action Models
 decision: accepted_for_registry

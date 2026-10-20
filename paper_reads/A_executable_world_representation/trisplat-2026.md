@@ -1,5 +1,10 @@
 # TriSplat: Simulation-Ready Feed-Forward 3D Scene Reconstruction
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。Keep as a geometry/interface reference: direct triangles remove Gaussian-to-mesh conversion, but verified evidence is geometric reconstruction, not articulated/functional world execution. It does not meet the direct-core relevance threshold in this scope.
+> [本次来源、分数与任务判断](../library_review.md#paper-9bb8abf61ae0)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0019
 branch: A
 decision: accepted_for_registry

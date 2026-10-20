@@ -1,5 +1,10 @@
 # Tetris3D: 3D Scene Generation With Objects That Fit Together
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Relational geometry conditioning plus a large physics scene dataset directly targets inter-object fit. Actual occlusion-fit and physical-stability samples/failures were not inspected.
+> [本次来源、分数与任务判断](../library_review.md#paper-a1e358fdaed8)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0003
 branch: B
 decision: accepted_for_registry

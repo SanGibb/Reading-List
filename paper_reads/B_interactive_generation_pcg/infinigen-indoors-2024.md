@@ -1,5 +1,17 @@
 # Infinigen Indoors: Photorealistic Indoor Scenes using Procedural Generation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。Reusable procedural asset+constraint code, controlled solver ablations and downstream annotation tests justify sustained reading. The actual random-sample image supports adequate static scene quality; recommendation excludes uninspected contact/robot execution.
+> [本次来源、分数与任务判断](../library_review.md#paper-d3d550e4e13f)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：5 / 4 / 4）：Unlike Holodeck's fixed retrieved asset library, geometry and materials are procedural and editable down to asset parameters; dense annotations and solver controls are the retained value.
+> - [Sections 3.2/3.4; Sections 4.1/4.3 and Tables 3-4](https://arxiv.org/html/2406.11824)：§3.2/3.4 details constraint DSL and export; §4.1/Table3 ablates solver; §4.3/Table4 validates occlusion-boundary training.（verified）。
+> - [§3.2 constraint API; §3.4 export; §4.1/Table3 and §4.3/Table4](https://arxiv.org/html/2406.11824)：Reusable constraint/annotation/export infrastructure. Solver ablation uses20 scenes/5K steps; occlusion-boundary comparison trains matched U-Nets. These are author-reported controls, not independently reproduced robotics validation.（verified）。
+> - [Getting Started: Hello Room; Papers: Infinigen Indoors](https://github.com/princeton-vl/infinigen)：Official code provides indoors-stable and initial-release entry points and the CVPR2024 citation; latest repository also contains later work, so use the paper's version for reproduction.（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0008
 branch: B. Interactive Generation and PCG
 decision: accepted_for_registry

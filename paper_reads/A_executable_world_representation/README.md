@@ -8,20 +8,28 @@ Maintained deep dives: 17
 
 任务归档不删除精读，也不改变该论文在其他任务中的角色。未审查条目仍列在本分支全量索引中。
 
-- [SceneFun3D](scenefun3d-2024.md) · 任务更迭：未审查
-- [BEHAVIOR-1K](behavior-1k-2024.md) · 任务更迭：未审查
-- [PhysX-Omni](physx-omni-2026.md) · [物理关节资产生成：未审查](../task_frontiers.md#task-physical-articulated-asset-generation-paper-288f9e3bf35a)
-- [PhysDreamer](physdreamer-2024.md) · 任务更迭：未审查
-- [Feature Splatting](feature-splatting-2024.md) · 任务更迭：未审查
-- [PhysX-Anything](physx-anything-2025.md) · [物理关节资产生成：未审查](../task_frontiers.md#task-physical-articulated-asset-generation-paper-e8d16480d0d1)
-- [SimuScene](simuscene-2026.md) · 任务更迭：未审查
-- [REST3D](rest3d-2026.md) · 任务更迭：未审查
-- [TriSplat](trisplat-2026.md) · 任务更迭：未审查
-- [SceneCode: Editable Indoor Scene Generation using Executable World Programs](scenecode-2026.md) · 任务更迭：未审查
-- [WonderPlay: Dynamic 3D Scene Generation from a Single Image and Actions](wonderplay-2025.md) · 任务更迭：未审查
-- [FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations](famos-2026.md) · 任务更迭：未审查
-- [FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents](funart-2026.md) · 任务更迭：未审查
-- [PointCast: One World Model for Rigid, Articulated, and Deformable Object Manipulation](pointcast-2026.md) · 任务更迭：未审查
-- [PhysLDM: Latent Diffusion for High-Fidelity Deformable Simulation](physldm-2026.md) · 任务更迭：未审查
-- [RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](robosimstudio-2026.md) · 任务更迭：未审查
-- [AutoRSR: Automated Real-to-Sim-to-Real Data Generation for Scalable Robot Learning](autorsr-2026.md) · 任务更迭：未审查
+本轮优先阅读：1 篇。其余保留记录见折叠区；[逐篇复审](../library_review.md)。
+
+- [SceneFun3D](scenefun3d-2024.md) · 优先阅读 · [功能部件与关节结构理解：当前主推荐](../task_frontiers.md#task-a-functional-part-articulation-understanding-paper-392dc64bfbe5)
+
+<details>
+<summary>参考与待补证记录（16 篇）</summary>
+
+- [BEHAVIOR-1K](behavior-1k-2024.md) · 待视觉复核 · [谓词驱动的可执行家居活动：未审查](../task_frontiers.md#task-executable-household-activity-benchmark-paper-2235e5762fde)
+- [PhysX-Omni](physx-omni-2026.md) · 待视觉复核 · [图像条件的物理与关节资产生成：未审查](../task_frontiers.md#task-physical-articulated-asset-generation-paper-288f9e3bf35a)
+- [PhysDreamer](physdreamer-2024.md) · 待视觉复核 · [干预条件的三维物理动态建模：未审查](../task_frontiers.md#task-a-intervention-conditioned-3d-dynamics-paper-ec5555f07ccd)
+- [Feature Splatting](feature-splatting-2024.md) · 待视觉复核 · [干预条件的三维物理动态建模：未审查](../task_frontiers.md#task-a-intervention-conditioned-3d-dynamics-paper-98711e804fc3)
+- [PhysX-Anything](physx-anything-2025.md) · 待视觉复核 · [图像条件的物理与关节资产生成：未审查](../task_frontiers.md#task-physical-articulated-asset-generation-paper-e8d16480d0d1)
+- [SimuScene](simuscene-2026.md) · 待视觉复核 · [图像到仿真场景的几何重建：未审查](../task_frontiers.md#task-a-image-to-simulation-scene-reconstruction-paper-e4648f417978)
+- [REST3D](rest3d-2026.md) · 待视觉复核 · [图像到仿真场景的几何重建：未审查](../task_frontiers.md#task-a-image-to-simulation-scene-reconstruction-paper-eb0cf8991a56)
+- [TriSplat](trisplat-2026.md) · 参考备选 · [图像到仿真场景的几何重建：未审查](../task_frontiers.md#task-a-image-to-simulation-scene-reconstruction-paper-9bb8abf61ae0)
+- [SceneCode: Editable Indoor Scene Generation using Executable World Programs](scenecode-2026.md) · 待视觉复核 · [可执行关节场景程序生成：未审查](../task_frontiers.md#task-a-executable-articulated-scene-programs-paper-3b126b61fc91)
+- [WonderPlay: Dynamic 3D Scene Generation from a Single Image and Actions](wonderplay-2025.md) · 待视觉复核 · [干预条件的三维物理动态建模：未审查](../task_frontiers.md#task-a-intervention-conditioned-3d-dynamics-paper-3fe45a00c749)
+- [FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations](famos-2026.md) · 待视觉复核 · [功能部件与关节结构理解：未审查](../task_frontiers.md#task-a-functional-part-articulation-understanding-paper-69916d9d7c46)
+- [FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents](funart-2026.md) · 待视觉复核 · [功能部件与关节结构理解：未审查](../task_frontiers.md#task-a-functional-part-articulation-understanding-paper-c161938e4192)
+- [PointCast: One World Model for Rigid, Articulated, and Deformable Object Manipulation](pointcast-2026.md) · 待视觉复核 · [干预条件的三维物理动态建模：未审查](../task_frontiers.md#task-a-intervention-conditioned-3d-dynamics-paper-4aea6bb26c10)
+- [PhysLDM: Latent Diffusion for High-Fidelity Deformable Simulation](physldm-2026.md) · 待视觉复核 · [干预条件的三维物理动态建模：未审查](../task_frontiers.md#task-a-intervention-conditioned-3d-dynamics-paper-64dc66d0c165)
+- [RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](robosimstudio-2026.md) · 待视觉复核 · [真实观测到可用操作仿真：未审查](../task_frontiers.md#task-a-real-observation-to-manipulation-simulation-paper-2fbe111cb39f)
+- [AutoRSR: Automated Real-to-Sim-to-Real Data Generation for Scalable Robot Learning](autorsr-2026.md) · 待视觉复核 · [真实观测到可用操作仿真：未审查](../task_frontiers.md#task-a-real-observation-to-manipulation-simulation-paper-c8c1b0f51c7e)
+
+</details>

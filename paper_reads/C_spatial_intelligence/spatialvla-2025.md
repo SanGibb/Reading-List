@@ -1,5 +1,10 @@
 # SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。主源确认 Ego3D 编码、自适应动作网格与大规模机器人预训练；但完整动作质量未在本轮观察，不能继承旧 strong/4 评级作为新验收。
+> [本次来源、分数与任务判断](../library_review.md#paper-2e3320eadff4)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0010
 branch: C. Spatial Intelligence
 decision: accepted_for_registry

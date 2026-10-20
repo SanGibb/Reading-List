@@ -1,0 +1,2282 @@
+{
+  "review_date": "2026-10-20",
+  "branches": [
+    "E"
+  ],
+  "review_scope": "47 existing E registry entries; read existing deep dives, verify primary identity/abstract per entry, inspect fuller protocol/release sources for current recommendations. No expansion, no independent reproduction, no motion media watched in this branch review.",
+  "counts": {
+    "priority": 15,
+    "reference": 20,
+    "watchlist": 5,
+    "undecided": 6,
+    "source_issue": 1
+  },
+  "succession_summary": "No historical roles assigned. Same-task, comparable-protocol, no-material-regression evidence is insufficient; retain distinct scopes/alternatives instead of using recency, version number or broader benchmark coverage as succession.",
+  "reviews": [
+    {
+      "paper_url": "https://arxiv.org/abs/2505.09694",
+      "title": "EWMBench",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "早期场景/运动/语义评价有基础价值，但现存精读没有具体协议和指标验证，本轮摘要也不足以支撑证据4。",
+      "closest_paper_url": "https://arxiv.org/abs/2602.08971",
+      "material_difference": "比WorldArena更聚焦三类生成质量诊断；保留基础方法，不把更广泛新benchmark自动视为替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2505.09694",
+          "locator": "Title, submission history and Abstract",
+          "claim": "2025-05-14首发；作者定义scene consistency、motion correctness、semantic alignment并链接公开评价工具。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "robotic-world-model-utility-evaluation",
+      "task_title": "动作条件机器人世界模型的感知与任务效用评估",
+      "scope": {
+        "input": "机器人初始观测、动作/指令和预测rollout",
+        "output": "感知、动作保真、失败预测与下游效用分数",
+        "setting": "操作类世界模型；视觉与触觉、仿真与实机分别报告",
+        "protocol": "EWMBench、WorldArena、WorldArena2和MiraBench沿用各自数据/评价器；版本扩展不构成相同协议或无退化证据。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "完成数据/评价器实现、指标与人工一致性以及相对WorldArena的独特价值审查。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/ewmbench-2025.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2504.00983",
+      "title": "WorldScore",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "跨3D/4D/视频的显式相机轨迹连续场景协议与分解指标，可直接作为生成世界的评测起点；官方表和发布入口支持持续维护。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.03941",
+      "material_difference": "不同于iWorld动作任务，保留跨表示的next-scene统一协议以及Static/Dynamic两种评价。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://haoyi-duan.github.io/WorldScore/",
+          "locator": "Overview; Comparison of Benchmarks; Evaluation Results",
+          "claim": "3,000例；按controllability/quality/dynamics评测；Static和Dynamic聚合分开，官方表提供19模型论文快照和分项。",
+          "source_quality": "official",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://arxiv.org/html/2504.00983v2",
+          "locator": "Appendix D; Tables S5-S7",
+          "claim": "400参与者2AFC；subjective metric组合按人偏好选取，五模型采样；跨分辨率/裁剪测试也有单独表，非真实机器人效果验证。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "next-scene-world-generation-evaluation",
+      "task_title": "按相机指令评估连续场景生成",
+      "scope": {
+        "input": "起始场景图、文本和显式相机轨迹",
+        "output": "可控性、几何/外观一致性和动态分项得分",
+        "setting": "3D、4D与视频生成模型的连续场景扩展",
+        "protocol": "WorldScore 3,000例；Static与Dynamic分别报告，沿用各模型原生设置，不将机器人成功率混入。"
+      },
+      "role": "current",
+      "revisit_trigger": "模型/指标版本变化，或同协议新套件证明不损失3D/4D覆盖。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/worldscore-2025.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次核心是WorldScore的相机轨迹任务、3D/4D/视频统一输入和Static/Dynamic评分协议；Appendix D的人评校准是可核文字/表格证据。它不提出待验收的新生成器，本次不根据官网视频的观感判断任何生成模型质量。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "reusable_infrastructure",
+      "acceptance_rationale": "跨3D/4D/视频的显式相机轨迹连续场景协议与分解指标，可直接作为生成世界的评测起点；官方表和发布入口支持持续维护。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2605.03941",
+        "material_difference": "不同于iWorld动作任务，保留跨表示的next-scene统一协议以及Static/Dynamic两种评价。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2504.18904",
+      "title": "RoboVerse",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "MetaSim的模拟器无关配置和标准IL/RL协议是可直接复用的环境/结果接口；该贡献独立于渲染或生成demo。",
+      "closest_paper_url": "https://arxiv.org/abs/2602.11337",
+      "material_difference": "与MolmoSpaces的数据/场景规模重点互补，RoboVerse保留跨模拟器API、基线与随机化包装。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://roboverse.wiki/dataset_benchmark/benchmark/overview",
+          "locator": "Benchmark Overview; generalization wrapper paragraph",
+          "claim": "官方文档明确统一IL/RL训练评价，并以环境wrapper给任意任务施加随机化generalization；导航列出标准学习基线。",
+          "source_quality": "official",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://arxiv.org/html/2504.18904v1",
+          "locator": "Appendix XVII-B; XVIII-A; Sec.VII Limitations",
+          "claim": "training/eval 9:1；generalist action转delta end-effector、gripper二值化，单任务fine-tune；作者明确non-rigid统一不足且基线可能非最优，不以全模型性能排名为主旨。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "simulator-agnostic-robot-task-infrastructure",
+      "task_title": "跨模拟器的机器人任务配置与评测基础设施",
+      "scope": {
+        "input": "场景/物体/机器人配置、任务定义和策略",
+        "output": "可复用模拟环境、轨迹与标准化评测记录",
+        "setting": "导航、操作及移动操作任务，模型/传感器配置须分别报告",
+        "protocol": "RoboVerse Appendix XVII-B训练/评价9:1；L0 task-space、L1环境、L2相机、L3光照反射；generalist delta EE与二值gripper、single-task fine-tune。MolmoSpaces八类零样本任务有独立split，两个协议不等价，禁止按聚合分数替代。"
+      },
+      "role": "current",
+      "revisit_trigger": "API/模拟器兼容性变更或同预算迁移测试表明替代关系。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/roboverse-2025.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次核心是MetaSim的配置/API、IL/RL随机化包装与公开训练/评价设置，属于工程接口/协议。推荐不依赖RoboVerse合成场景的保真度、sim-to-real动作质量或未观看的迁移demo；那些效果只保留作者报告且不用于本次准入。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "reusable_infrastructure",
+      "acceptance_rationale": "MetaSim的模拟器无关配置和标准IL/RL协议是可直接复用的环境/结果接口；该贡献独立于渲染或生成demo。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2602.11337",
+        "material_difference": "与MolmoSpaces的数据/场景规模重点互补，RoboVerse保留跨模拟器API、基线与随机化包装。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html",
+      "title": "OpenEQA",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 3,
+      "evidence_strength": 4,
+      "reason": "开放问答是有用的环境理解基础，但距离本库生成/可执行交互验证一层；保留相关任务备选，不作为v2核心通过。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.28236",
+      "material_difference": "与EMem后续行动不同，OpenEQA检验开放词表答案并支持episodic与active两个设置。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://open-eqa.github.io/",
+          "locator": "Abstract; OpenEQA Dataset Statistics",
+          "claim": "1,600+非模板人类问题、180+真实环境，EM-EQA/A-EQA两设置和自动LLM答案评价；HM3D问题在两设置共享。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "open-vocabulary-embodied-question-answering",
+      "task_title": "环境记忆与主动探索中的开放词表问答",
+      "scope": {
+        "input": "视觉探索历史或主动观测与自然语言问题",
+        "output": "自由文本答案和LLM-Match评分",
+        "setting": "真实扫描环境的EM-EQA与A-EQA",
+        "protocol": "OpenEQA 1,600+问题、180+环境；两种设置分开，HM3D共享问题。不能把QA分数解释成可执行性。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "已有生成世界接口实际采用QA探针，并验证答案评分与状态/交互错误相关。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/openeqa-2024.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.08971",
+      "title": "WorldArena",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "原始感知/效用分离仍有基础价值；没有冻结1.0/2.0的共同样本与成本对照，不判定被取代。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.17912",
+      "material_difference": "1.0包含16感知指标/三下游角色；2.0新增触觉、RL和实机，但扩展不是同协议无退化证明。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2602.08971",
+          "locator": "Abstract; arXiv v2 submission history",
+          "claim": "14模型；16指标六维；数据引擎、策略评价、动作规划与EWMScore；未独立复现。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "robotic-world-model-utility-evaluation",
+      "task_title": "动作条件机器人世界模型的感知与任务效用评估",
+      "scope": {
+        "input": "机器人初始观测、动作/指令和预测rollout",
+        "output": "感知、动作保真、失败预测与下游效用分数",
+        "setting": "操作类世界模型；视觉与触觉、仿真与实机分别报告",
+        "protocol": "EWMBench、WorldArena、WorldArena2和MiraBench沿用各自数据/评价器；版本扩展不构成相同协议或无退化证据。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "取得冻结1.0与2.0共同任务、预算、可用性和退化检查后再判更迭。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/worldarena-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2510.18135",
+      "title": "World-in-World",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "将世界模型放入统一proposal/rollout/revision的真实闭环，以任务成功衡量效用，构成区别于离线视频分数的直接评价基础。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.17912",
+      "material_difference": "相较WorldArena离线/多角色评价，四个闭环环境和统一在线规划API提供不同可复用接口；不互相归档。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://world-in-world.github.io/",
+          "locator": "Evaluation Pipeline steps 1-6; Task Examples; Results and Analysis",
+          "claim": "proposal生成M计划，统一动作API转输入，世界模型预测，revision选计划并在环境执行；四闭环任务。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "closed-loop-world-model-planning-evaluation",
+      "task_title": "闭环规划中的世界模型任务效用",
+      "scope": {
+        "input": "在线观测、候选动作计划及其预测rollout",
+        "output": "选择并执行的动作与任务成功率",
+        "setting": "World-in-World四个闭环环境",
+        "protocol": "统一proposal/API/revision循环；固定候选数、后训练数据与推理预算后比较。"
+      },
+      "role": "current",
+      "revisit_trigger": "四环境协议、后训练数据或推理候选预算变更时重评。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/world-in-world-2025.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次核心是四环境、统一动作API与proposal→预测→revision→执行的评价协议，可由官方流程和任务定义核查；未以任何新世界模型rollout的视觉/交互质量作为准入证据，也未声称已验证机器人动作。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "decisive_evaluation",
+      "acceptance_rationale": "将世界模型放入统一proposal/rollout/revision的真实闭环，以任务成功衡量效用，构成区别于离线视频分数的直接评价基础。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2605.17912",
+        "material_difference": "相较WorldArena离线/多角色评价，四个闭环环境和统一在线规划API提供不同可复用接口；不互相归档。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://ctrl-world.github.io/",
+      "title": "Ctrl-World",
+      "branch": "E",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "官网说明它是可控生成模型而非纯评价套件，旧E条目将视觉标not_applicable不成立；生成动作精度、长时和策略改进均需实际时序检查。",
+      "closest_paper_url": "https://arxiv.org/abs/2510.18135",
+      "material_difference": "多视图联合预测、帧级动作条件和pose-conditioned memory，比纯benchmark多一项模型能力；建议同时核对D分支归属。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://ctrl-world.github.io/",
+          "locator": "TL;DR; Interactive demos; Model architecture; Figure 6/8/9 section labels",
+          "claim": "官网声明联合多视角、帧级动作和记忆检索，并列键盘/厘米级控制以及实机-模型对照；这些文字不证明demo质量。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "policy-in-world-model-manipulation-rollouts",
+      "task_title": "通用机器人策略在学习世界模型内的闭环rollout",
+      "scope": {
+        "input": "多视角机器人观测、动作chunk和历史",
+        "output": "动作条件多视角预测及策略rollout",
+        "setting": "Ctrl-World真实操作与想象对照",
+        "protocol": "需核对帧级动作精度、长时记忆、真实/想象rollout及合成数据策略增益；本轮未完成时序demo检查。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "检查至少多种动作序列、物体接触/遮挡、长时rollout及实机对照失败例。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/ctrl-world-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "visual_review_gap": "本轮读取了文字主源与旧精读，没有观看时序媒体。旧报告无可追溯的实际观察/时间范围，不继承其strong/not_applicable。",
+      "acceptance_policy_version": 2,
+      "needs_human_decision": true,
+      "uninspected_media_urls": [
+        "https://ctrl-world.github.io/"
+      ],
+      "visual_review_plan": [
+        "读取对应primary完整方法、实验和失败案例，保存精确图/表/媒体定位。",
+        "代表性时序样例必须记录实际时间段/完整clip、任务条件、动作/状态变化及失败覆盖。",
+        "分别检查动作条件响应、物体/场景永久性、接触/穿透、稳定性和所需任务可用性；未完成前不作视觉通过。"
+      ]
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.17912",
+      "title": "WorldArena 2.0",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "触觉、在线RL与跨模拟/实机三轴评价有明确任务、指标表及接口，是有实质增量的评价基础；本判断不宣称模型demo已通过。",
+      "closest_paper_url": "https://arxiv.org/abs/2602.08971",
+      "material_difference": "较1.0新增visuotactile与interactive RL及AgileX ALOHA实机；两者保留，未证明旧协议被无损覆盖。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://world-arena.ai/",
+          "locator": "Overview; Visuotactile Evaluation table; Evaluation as RL Environments; Sim-to-Real Evaluation table",
+          "claim": "Insert HDMI/Lift Bottle触觉预测PSNR/SSIM与task success分开；Click Bell/Adjust Bottle在三奖励器下评价RL；RoboTwin2/LIBERO/ALOHA按data-engine/action-planner分列。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "robotic-world-model-utility-evaluation",
+      "task_title": "动作条件机器人世界模型的感知与任务效用评估",
+      "scope": {
+        "input": "机器人初始观测、动作/指令和预测rollout",
+        "output": "感知、动作保真、失败预测与下游效用分数",
+        "setting": "操作类世界模型；视觉与触觉、仿真与实机分别报告",
+        "protocol": "EWMBench、WorldArena、WorldArena2和MiraBench沿用各自数据/评价器；版本扩展不构成相同协议或无退化证据。"
+      },
+      "role": "current",
+      "revisit_trigger": "冻结版本、公共任务覆盖或评价器更改；补1.0共同协议与成本比较。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/worldarena-2-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次核心是触觉预测、在线RL和跨平台评价的明确任务/指标与分项结果表；其贡献是benchmark协议，不是新生成模型的运动质量。官网机器人/生成demo未观看，数值只作作者报告，不作碰撞/接触或策略执行质量的观察证据。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "reusable_infrastructure",
+      "acceptance_rationale": "触觉、在线RL与跨模拟/实机三轴评价有明确任务、指标表及接口，是有实质增量的评价基础；本判断不宣称模型demo已通过。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2602.08971",
+        "material_difference": "较1.0新增visuotactile与interactive RL及AgileX ALOHA实机；两者保留，未证明旧协议被无损覆盖。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.18995",
+      "title": "A Unified Evaluation Harness for Vision-Language-Action Models",
+      "branch": "E",
+      "decision": "source_issue",
+      "impact_score": null,
+      "project_relevance_score": null,
+      "evidence_strength": null,
+      "reason": "原registry arXiv号实际是雷达flow-matching论文，精读的作者和13/657数字也不可沿用。官方仓库和正确论文已找到，身份修复前不进入推荐。",
+      "closest_paper_url": "https://arxiv.org/abs/2504.18904",
+      "material_difference": "这不是重复的模型论文；正确工作是独立VLA编排工具，URL错配应修复而非把雷达论文当合格条目。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2603.18995",
+          "locator": "Title",
+          "claim": "此URL实际标题为Radar Detection through Rectified Flow Matching，与registry条目不符。",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://github.com/allenai/vla-evaluation-harness",
+          "locator": "Citation; Motivation; Quick Start",
+          "claim": "Citation指定2603.13966、Choi等；WebSocket模型/环境解耦、Docker与统一结果接口。",
+          "source_quality": "official",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://arxiv.org/abs/2603.13966",
+          "locator": "Title, authors, v3 history and Abstract",
+          "claim": "2026-03-14首发，2026-09-14 v3；主源报告14仿真benchmark/6服务器、六代码库三benchmark复现及657结果/17benchmark汇总；与旧精读不同。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "cross-benchmark-vla-orchestration",
+      "task_title": "跨benchmark的VLA推理与环境编排",
+      "scope": {
+        "input": "模型predict接口、benchmark适配器与配置",
+        "output": "隔离环境中的统一结果和复现日志",
+        "setting": "VLA模型服务器与机器人仿真评测套件",
+        "protocol": "修复为正确vla-eval论文身份后，分别固定Docker、配置、checkpoint和每个底层benchmark协议；错配URL不得进入当前推荐。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "将原文/精读身份修复为2603.13966并按其明确版本核对模型/benchmark统计。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/vla-eval-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "corrected_source_url": "https://arxiv.org/abs/2603.13966",
+      "corrected_title": "vla-eval: A Unified Evaluation Harness for Vision-Language-Action Models",
+      "actual_source_title": "Radar Detection through Rectified Flow Matching",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.20774",
+      "title": "VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "低成本跨搭建复现有备选价值，但本轮只核到摘要设计，未审完误差/统计和确切公开搭建协议，无法支撑核心证据4。",
+      "closest_paper_url": "https://arxiv.org/abs/2512.22539",
+      "material_difference": "与VLA-Arena仿真扰动不同，贡献是可复刻低成本实物设置；任务规模小本身不是拒绝理由。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.20774",
+          "locator": "Title, submission history and Abstract",
+          "claim": "2026-05-20首发；摘要给off-the-shelf setup、ID/OOD、独立搭建一致性设计；本轮没有验证旧精读的10任务数字。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "low-cost-real-world-vla-reproducibility",
+      "task_title": "低成本实机VLA跨搭建复现评测",
+      "scope": {
+        "input": "VLA策略、复刻实物装置及适应示范",
+        "output": "ID/OOD任务成功率与搭建间差异",
+        "setting": "VLA-REPLICA低成本物理操作设置",
+        "protocol": "分别固定物料、相机、物体摆放、示范与ID/OOD条件；本轮仅核实论文复现设计，尚未审完搭建间统计。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "核对BOM、ID/OOD固定任务、搭建间置信区间与官方评测/示范包。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/vla-replica-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026W/GigaBrainChallenge/html/Jiang_RoboWM-Bench_A_Benchmark_for_Evaluating_World_Models_in_Robotic_Manipulation_CVPRW_2026_paper.html",
+      "title": "RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation",
+      "branch": "E",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "可执行性度量直接符合项目，但核心依赖视频到动作和物理仿真执行；旧benchmark豁免没有实际动作/接触观察，需时序证据后再推荐。",
+      "closest_paper_url": "https://arxiv.org/abs/2601.15282",
+      "material_difference": "比RBench视觉/QA代理多了生成视频→动作→物理执行链；同时需要分离动作提取器失误。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2604.19092",
+          "locator": "Abstract; submission history v2",
+          "claim": "2026-04首发；作者以real-to-sim场景把人手/机器人生成行为转动作并仿真验证，称视觉与可执行性不等价。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "generated-manipulation-video-executability",
+      "task_title": "生成操作视频的动作可执行性",
+      "scope": {
+        "input": "生成的人手/机器人视频和重建场景",
+        "output": "提取的动作、仿真执行结果与任务完成率",
+        "setting": "RoboWM-Bench真实到仿真的操作任务",
+        "protocol": "视频到动作转换误差与世界模型错误需分离；成功/失败时序执行证据待查看。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "检查官方成功/失败执行、重建环境、接触和动作抽取误差及标准协议。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/robowm-bench-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "visual_review_gap": "本轮读取了文字主源与旧精读，没有观看时序媒体。旧报告无可追溯的实际观察/时间范围，不继承其strong/not_applicable。",
+      "acceptance_policy_version": 2,
+      "needs_human_decision": true,
+      "uninspected_media_urls": [
+        "https://github.com/fffstrong/RoboWM-Bench"
+      ],
+      "visual_review_plan": [
+        "读取对应primary完整方法、实验和失败案例，保存精确图/表/媒体定位。",
+        "代表性时序样例必须记录实际时间段/完整clip、任务条件、动作/状态变化及失败覆盖。",
+        "分别检查动作条件响应、物体/场景永久性、接触/穿透、稳定性和所需任务可用性；未完成前不作视觉通过。"
+      ]
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2512.22539",
+      "title": "VLA-Arena: An Open-Source Framework for Benchmarking Vision-Language-Action Models",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "L0限定训练、三难度和正交语言/视觉扰动提供可直接复用的任务编排与安全度量，官方协议/工具支持具体用途。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.27759",
+      "material_difference": "与Colosseum的GPU/形态ID-OOD重点不同，VLA-Arena保留安全代价、难度阶梯和正交W/V诊断。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://vla-arena.github.io/",
+          "locator": "Abstract; VLA-Arena Model Performance Leaderboard legend",
+          "claim": "170任务11suite、L0-L2且只微调L0；W0-W4/V0-V4可叠加；安全同时报SR和Cumulative Cost。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "controlled-vla-manipulation-generalization",
+      "task_title": "受控任务、语言与视觉变化下的VLA泛化",
+      "scope": {
+        "input": "机器人观测、语言指令与扰动任务配置",
+        "output": "按难度和扰动轴分解的成功率/安全代价",
+        "setting": "VLA-Arena与Colosseum V2各自操作环境",
+        "protocol": "VLA-Arena仅L0微调，测L0-L2与W0-W4/V0-V4；Colosseum V2 ManiSkill 28任务/两形态ID-OOD。底层设置不等价，不进行分数直接替代。"
+      },
+      "role": "current",
+      "revisit_trigger": "任务定义、L0训练限制或安全代价实现改变时复核。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/vla-arena-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次核心是L0训练限制、L0-L2与W/V正交扰动、SR/安全代价定义和可复用任务工具。VLA-Arena不是本次待判视觉质量的新policy；本轮不以视频或安全动作观感证明任何模型成功。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "decisive_evaluation",
+      "acceptance_rationale": "L0限定训练、三难度和正交语言/视觉扰动提供可直接复用的任务编排与安全度量，官方协议/工具支持具体用途。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2605.27759",
+        "material_difference": "与Colosseum的GPU/形态ID-OOD重点不同，VLA-Arena保留安全代价、难度阶梯和正交W/V诊断。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.27759",
+      "title": "Colosseum V2: Benchmarking Generalization for Vision Language Action Models",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "GPU并行、两形态和sim-real相关性有独立价值；当前精读缺具体split/相关表/可用实现，本轮摘要不足以验证强效用，留备选。",
+      "closest_paper_url": "https://arxiv.org/abs/2512.22539",
+      "material_difference": "不是VLA-Arena新版本；提供ManiSkill运行与实机相关维度，但协议不共享，不能仅更全面就归档。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.27759",
+          "locator": "Title, submission history and Abstract",
+          "claim": "28任务/13类/两形态，ManiSkill GPU并行ID-OOD，评价ACT和pi0.5并报告sim-real相关性。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "controlled-vla-manipulation-generalization",
+      "task_title": "受控任务、语言与视觉变化下的VLA泛化",
+      "scope": {
+        "input": "机器人观测、语言指令与扰动任务配置",
+        "output": "按难度和扰动轴分解的成功率/安全代价",
+        "setting": "VLA-Arena与Colosseum V2各自操作环境",
+        "protocol": "VLA-Arena仅L0微调，测L0-L2与W0-W4/V0-V4；Colosseum V2 ManiSkill 28任务/两形态ID-OOD。底层设置不等价，不进行分数直接替代。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "审具体ID/OOD配置、real-world相关性样本/置信区间及代码/数据版本。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/colosseum-v2-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.29360",
+      "title": "MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "物理/动作/乐观偏差三层诊断比纯视觉更直接，但未核到完整读出与人标协议/发布可用性；保留专门评价备选。",
+      "closest_paper_url": "https://arxiv.org/abs/2602.08971",
+      "material_difference": "最独特的是失败诱导动作下的假成功预测，不由WorldArena聚合效用替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.29360",
+          "locator": "Title, submission history and Abstract",
+          "claim": "16k+人类判断、12模型配置；Physics Adherence/Action-Following Fidelity/Optimism Bias Detection三层。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "robotic-world-model-utility-evaluation",
+      "task_title": "动作条件机器人世界模型的感知与任务效用评估",
+      "scope": {
+        "input": "机器人初始观测、动作/指令和预测rollout",
+        "output": "感知、动作保真、失败预测与下游效用分数",
+        "setting": "操作类世界模型；视觉与触觉、仿真与实机分别报告",
+        "protocol": "EWMBench、WorldArena、WorldArena2和MiraBench沿用各自数据/评价器；版本扩展不构成相同协议或无退化证据。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "核对16k人标的抽样、层级rubric、人一致性及可执行数据/评价器。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/mirabench-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.03941",
+      "title": "iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "统一动作空间、六任务与公开轨迹/metadata/评价入口可直接接生成世界评测，当前代码已补齐官网Coming Soon的部分不确定性。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.25874",
+      "material_difference": "相较WBench侧重多轮语义交互，iWorld保留D/T/R/V控制、动作难度阶梯、轨迹与memory任务。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://github.com/EmbodiedCity/iWorld-Bench",
+          "locator": "Repository Structure; Dataset Download; Evaluation",
+          "claim": "官方README提供action-control、memory和camera-following运行入口、metadata/相机轨迹和metric文档，明确外部ViPE/VBench依赖。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "action-controlled-video-world-evaluation",
+      "task_title": "动作控制视频世界的多轮响应评测",
+      "scope": {
+        "input": "起始图与文本、离散动作或相机轨迹",
+        "output": "动作响应、轨迹、记忆与多轮一致性分项得分",
+        "setting": "第一/第三人称、不同风格的交互视频世界",
+        "protocol": "iWorld 4,900任务与D/T/R/V控制；WBench 289例/1,058轮；WorldMark 500例WASD适配。保留原生接口与样本预算，协议不同无继承关系。"
+      },
+      "role": "current",
+      "revisit_trigger": "固定metric/ViPE/VBench版本后进行小规模实际复现；接口变化时复核。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/iworld-bench-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次核心是D/T/R/V统一控制、benchmark metadata/轨迹资源及具体metric/API执行入口；代码文档给出了可检查的评价契约。本轮不评被测world model输出好坏，不将未看生成demo用作准入。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "reusable_infrastructure",
+      "acceptance_rationale": "统一动作空间、六任务与公开轨迹/metadata/评价入口可直接接生成世界评测，当前代码已补齐官网Coming Soon的部分不确定性。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2605.25874",
+        "material_difference": "相较WBench侧重多轮语义交互，iWorld保留D/T/R/V控制、动作难度阶梯、轨迹与memory任务。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.25874",
+      "title": "WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "多轮导航、事件编辑、角色动作与视角切换，并对22自动度量进行人评验证，提供独立于纯相机控制的实质评价维度。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.03941",
+      "material_difference": "相对iWorld和WorldMark，显式多轮上下文与语义事件/视角控制有新增诊断；无相同协议无退化证据。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://meituan-longcat.github.io/WBench/",
+          "locator": "Top statistics; Key Findings; Leaderboard Updated 2026/10/12",
+          "claim": "289例/1,058轮，22度量五维；官网本轮显示45模型、leaderboard过滤Full/Navi；旧精读22模型为过时快照。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "action-controlled-video-world-evaluation",
+      "task_title": "动作控制视频世界的多轮响应评测",
+      "scope": {
+        "input": "起始图与文本、离散动作或相机轨迹",
+        "output": "动作响应、轨迹、记忆与多轮一致性分项得分",
+        "setting": "第一/第三人称、不同风格的交互视频世界",
+        "protocol": "iWorld 4,900任务与D/T/R/V控制；WBench 289例/1,058轮；WorldMark 500例WASD适配。保留原生接口与样本预算，协议不同无继承关系。"
+      },
+      "role": "current",
+      "revisit_trigger": "协议或judge更新、比较维度/缺失模型变化时复核并固定快照。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/wbench-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次核心是多轮案例/交互类型、22项人评校准的评价器和Full/Navi协议；被测模型的生成质量是benchmark评价对象而非新方法验收材料。本轮未观看其rollout，未声称某生成器物理/交互质量通过。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "decisive_evaluation",
+      "acceptance_rationale": "多轮导航、事件编辑、角色动作与视角切换，并对22自动度量进行人评验证，提供独立于纯相机控制的实质评价维度。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2605.03941",
+        "material_difference": "相对iWorld和WorldMark，显式多轮上下文与语义事件/视角控制有新增诊断；无相同协议无退化证据。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2604.21686",
+      "title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "按轴响应延迟/纯度/稳定性确有专门增量，但原精读只保存八指标旧摘要，本轮主源说将发布数据代码，实装/协议可用性需核验。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.25874",
+      "material_difference": "不同于WBench聚合交互，WorldMark突出control-systems分解与跨模型WASD适配，故保留而不简单重复归档。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2604.21686",
+          "locator": "Title, submission history and Abstract",
+          "claim": "500标准案例、10系统，shared WASD适配；direction accuracy/purity、response latency、motion stability逐轴报告；摘要写will release。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "action-controlled-video-world-evaluation",
+      "task_title": "动作控制视频世界的多轮响应评测",
+      "scope": {
+        "input": "起始图与文本、离散动作或相机轨迹",
+        "output": "动作响应、轨迹、记忆与多轮一致性分项得分",
+        "setting": "第一/第三人称、不同风格的交互视频世界",
+        "protocol": "iWorld 4,900任务与D/T/R/V控制；WBench 289例/1,058轮；WorldMark 500例WASD适配。保留原生接口与样本预算，协议不同无继承关系。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "核对最新版metrics与代码/outputs发布、延迟测量定义及采样预算。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/worldmark-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.11129",
+      "title": "WorldOlympiad: Can Your World Model Survive a Triathlon?",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "三轨联合诊断可作备选，但现有精读大部分模板，本轮未完成几何重建与物理judge的验证协议核查，不能继承证据4。",
+      "closest_paper_url": "https://arxiv.org/abs/2601.21282",
+      "material_difference": "相对WorldBench的概念隔离，新增Gaussian几何与跨chunk交互；范围扩展并非原任务无损替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2606.11129",
+          "locator": "Title, submission history and Abstract",
+          "claim": "physical用segmentation/MLLM judge，geometry用Gaussian重建，interaction测复杂动作和跨chunk，覆盖game/robotics/general video。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "physics-geometry-interaction-world-diagnostics",
+      "task_title": "世界模型物理、几何和长程交互联合诊断",
+      "scope": {
+        "input": "各场景条件与预测长视频",
+        "output": "物理、重建几何和交互三个track得分",
+        "setting": "WorldOlympiad游戏、机器人和通用视频域",
+        "protocol": "分割/MLLM物理评价、Gaussian重建与跨chunk动作一致性；各域与评价器置信度应分别报告，完整协议尚待审计。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "核对各track规模、控制变量、judge校准、开源执行以及误差归因。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/worldolympiad-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2601.21282",
+      "title": "WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "概念隔离能帮助定位物理失败，但本轮只核到主源摘要，旧425配置与具体常数/真值评分尚缺精确协议定位，保留基础诊断。",
+      "closest_paper_url": "https://research.nvidia.com/labs/dir/pbench/",
+      "material_difference": "与PBench通用域QA不同，WorldBench试图隔离单一物理概念并测低层常数误差。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2601.21282",
+          "locator": "Title, submission history and Abstract",
+          "claim": "主源将高层object permanence/scale与低层friction/viscosity分开，强调concept-specific disentanglement。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "physical-video-prediction-diagnostics",
+      "task_title": "物理未来视频的概念与条件诊断",
+      "scope": {
+        "input": "初始图/视频、物理条件与生成未来",
+        "output": "物理/领域QA、视频质量和概念特定得分",
+        "setting": "WorldBench、PBench、PAI-Bench的各自物理场景",
+        "protocol": "WorldBench概念隔离与仿真真值；PBench域QA+质量；PAI三类G/C/U任务。评价对象和标注不同，不能用一个套件覆盖率宣称替代。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "检查场景配置、friction/viscosity物理常数的可观测性、仿真真值和量纲。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/worldbench-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "旧报告的大量Task/Method/限制为通用模板；链接可访问与demo存在被写成verified，不能继承为本轮观察。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2601.15282",
+      "title": "Rethinking Video Generation Model for the Embodied World",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "RBench明确任务/形态分解、重复采样和人工校准，并联结大规模训练数据；可直接作为机器人视频生成评价起点。",
+      "closest_paper_url": "https://openaccess.thecvf.com/content/CVPR2026W/GigaBrainChallenge/html/Jiang_RoboWM-Bench_A_Benchmark_for_Evaluating_World_Models_in_Robotic_Manipulation_CVPRW_2026_paper.html",
+      "material_difference": "较RoboWM-Bench偏执行链，RBench保留标准图文视频输入、任务/形态九指标和RoVid-X数据生态，两者互补。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2601.15282v1",
+          "locator": "Table 2; Sec.5.1 Evaluation Setups; Human Evaluation correlation",
+          "claim": "25模型/九指标；每例三次生成取均值，论文十模型人评子集Spearman 0.96；4M RoVid-X片段为作者报告而非独立清点。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "robot-video-generation-benchmark-and-corpus",
+      "task_title": "机器人视频生成的任务与形态评价及数据构建",
+      "scope": {
+        "input": "图像文本条件、机器人生成视频及来源视频",
+        "output": "RBench九项指标和RoVid-X训练片段",
+        "setting": "五任务域、四机器人形态",
+        "protocol": "RBench 650例、25模型，开放模型默认配置/API原生配置，每例生成三次取均值；人工相关性只在十模型子集，非全部样本准确率。"
+      },
+      "role": "current",
+      "revisit_trigger": "judge/模型配置或来源许可变更；校验指标是否与真实执行一致。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/rethinking-embodied-video-generation-2026.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "not_applicable_reason": "本次核心是RBench可定位的650例/九指标、三次采样设置、人评校准子集及RoVid-X数据构建协议。它是数据/评价资源，不以某个生成器或机器人真实执行demo作为核心准入；质量代理不被解释为物理可执行性。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "decisive_evaluation",
+      "acceptance_rationale": "RBench明确任务/形态分解、重复采样和人工校准，并联结大规模训练数据；可直接作为机器人视频生成评价起点。",
+      "comparison_to_registry": {
+        "closest_paper": "https://openaccess.thecvf.com/content/CVPR2026W/GigaBrainChallenge/html/Jiang_RoboWM-Bench_A_Benchmark_for_Evaluating_World_Models_in_Robotic_Manipulation_CVPRW_2026_paper.html",
+        "material_difference": "较RoboWM-Bench偏执行链，RBench保留标准图文视频输入、任务/形态九指标和RoVid-X数据生态，两者互补。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.11337",
+      "title": "MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 5,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "规模、物理标注、模块化配置和跨模拟器八类任务形成可复用基础，主要推荐其数据/测试接口，不依据未看demo宣称场景/策略质量。",
+      "closest_paper_url": "https://arxiv.org/abs/2504.18904",
+      "material_difference": "相较RoboVerse平台统一，MolmoSpaces提供大规模场景/物体/抓取、显式划分和质量测试，保留平台备选。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2602.11337v1",
+          "locator": "Sec.3.1 Tables2-4; Sec.3 ecosystem list; Sec.4 Benchmark",
+          "claim": "230k+场景、130k物体/42M grasps；八零样本任务；质量表按稳定/抬升/交互/关节分开，MSMultiType关节仅65.2%，不能概括为所有测试95%+。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "simulator-agnostic-robot-task-infrastructure",
+      "task_title": "跨模拟器的机器人任务配置与评测基础设施",
+      "scope": {
+        "input": "场景/物体/机器人配置、任务定义和策略",
+        "output": "可复用模拟环境、轨迹与标准化评测记录",
+        "setting": "导航、操作及移动操作任务，模型/传感器配置须分别报告",
+        "protocol": "RoboVerse Appendix XVII-B训练/评价9:1；L0 task-space、L1环境、L2相机、L3光照反射；generalist delta EE与二值gripper、single-task fine-tune。MolmoSpaces八类零样本任务有独立split，两个协议不等价，禁止按聚合分数替代。"
+      },
+      "role": "current",
+      "revisit_trigger": "release/split改变，或同任务替代资源能保留形态/仿真兼容与长尾覆盖。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/molmospaces-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "not_applicable_reason": "本次核心是MolmoSpaces可移植数据/配置接口、显式train/val/test划分和按Stability/Lift/Interaction/Articulation分解的原论文质量测试；不以未看场景生成或机器人执行demo作观感验收。保留MSMultiType关节测试65.2%等失败率，不据规模/渲染或笼统95%+推断所有资产物理可用。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "reusable_infrastructure",
+      "acceptance_rationale": "规模、物理标注、模块化配置和跨模拟器八类任务形成可复用基础，主要推荐其数据/测试接口，不依据未看demo宣称场景/策略质量。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2504.18904",
+        "material_difference": "相较RoboVerse平台统一，MolmoSpaces提供大规模场景/物体/抓取、显式划分和质量测试，保留平台备选。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.09449",
+      "title": "Sekai2: From World Exploration to Interactive World Modeling",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "长视频+相机+分层语义+loop监督有直接价值，但处理全景119小时仅约20小时可公开，旧报告没有区分；可下载范围和metric位姿准确性未全面验证。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.03941",
+      "material_difference": "相较iWorld评价集，是训练/监督数据且含长时revisit；不能把估计相机轨迹当ground-truth动作。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2608.09449v1",
+          "locator": "Sec.3.4-3.6; Limitations and future work; Panoramic data release",
+          "claim": "作者使用ViPE估计位姿、跨模态质量检查；DROID评价是重建一致性非绝对metric精度；当前全景下载约20h，全文统计119h。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "long-horizon-camera-trajectory-video-data",
+      "task_title": "长时相机轨迹与重访监督数据",
+      "scope": {
+        "input": "真实长视频、多源片段与全景采集",
+        "output": "相机内外参、分层时间语义和重访片段",
+        "setting": "Sekai2相机可控世界模型预训练",
+        "protocol": "128,892片段/2,826小时；位姿为估计值非metric真值；982处理全景共119小时，但可公开约20小时，不能将全量统计当下载量。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "核对实际可下载文件/许可、20h全景列表及独立绝对位姿/标注质量审计。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/sekai2-2026.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://research.nvidia.com/labs/dir/pbench/",
+      "title": "PBench: A Physical AI Benchmark for World Models",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "领域QA加视频质量可作简洁基础，但官网入口已redirect，本轮数据卡能确认包和用途，具体judge/校准尚未重新核实，不作为新核心通过。",
+      "closest_paper_url": "https://arxiv.org/abs/2512.01989",
+      "material_difference": "与PAI三任务不同，PBench为Cosmos关联物理域的视频评价；保留生态备选而不夸大为闭环效用。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://huggingface.co/datasets/nvidia/PBench",
+          "locator": "Dataset card; repository files",
+          "claim": "NVIDIA官方PBench数据页可访问；本轮未重新验证旧报告的1,044/5,636计数与77.4数值。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "physical-video-prediction-diagnostics",
+      "task_title": "物理未来视频的概念与条件诊断",
+      "scope": {
+        "input": "初始图/视频、物理条件与生成未来",
+        "output": "物理/领域QA、视频质量和概念特定得分",
+        "setting": "WorldBench、PBench、PAI-Bench的各自物理场景",
+        "protocol": "WorldBench概念隔离与仿真真值；PBench域QA+质量；PAI三类G/C/U任务。评价对象和标注不同，不能用一个套件覆盖率宣称替代。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "核对新官网canonical、冻结标注/judge版本和人类一致性及robotics slice。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/pbench-2025.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2512.01989",
+      "title": "PAI-Bench: A Comprehensive Benchmark For Physical AI",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "跨生成/条件生成/理解的统一组织可保留为宽覆盖备选，但本轮只摘要核实2,808例，未审任务metric与相对已有基础的决定性增量。",
+      "closest_paper_url": "https://research.nvidia.com/labs/dir/pbench/",
+      "material_difference": "区别PBench域QA，PAI把G/C/U放在同一物理框架；更广任务范围不自动证明更强诊断或替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2512.01989",
+          "locator": "Title, submission history and Abstract",
+          "claim": "主源给2,808 real-world cases并分别评价video generation、conditional video generation、video understanding。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "physical-video-prediction-diagnostics",
+      "task_title": "物理未来视频的概念与条件诊断",
+      "scope": {
+        "input": "初始图/视频、物理条件与生成未来",
+        "output": "物理/领域QA、视频质量和概念特定得分",
+        "setting": "WorldBench、PBench、PAI-Bench的各自物理场景",
+        "protocol": "WorldBench概念隔离与仿真真值；PBench域QA+质量；PAI三类G/C/U任务。评价对象和标注不同，不能用一个套件覆盖率宣称替代。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "核对G/C/U独立protocol、robotics子集、判分校准和复现脚本。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/pai-bench-2025.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2501.16411",
+      "title": "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "物理理解是动作前置层，10k/75模型有研究基础价值；与可执行交互生成仍有距离，不因通用字段列表把相关性抬到4。",
+      "closest_paper_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html",
+      "material_difference": "相对OpenEQA开放环境QA，PhysBench专门物理属性/关系/动力学多选诊断；两者任务与答案格式不同。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2501.16411",
+          "locator": "Title, submission history and Abstract",
+          "claim": "10,002条image/video/text，四域19子类与75VLM研究；PhysAgent结合专业视觉工具，作者报告GPT-4o提升。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "physical-world-vlm-question-answering",
+      "task_title": "视觉语言模型的物理世界问题诊断",
+      "scope": {
+        "input": "交错图像、视频与物理问题",
+        "output": "多选答案、类别准确率",
+        "setting": "PhysBench四域/19子类物理理解",
+        "protocol": "10,002样本与75模型原论文设置；不将问答提升解释为动作或物理仿真有效性。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "实际目标工作把物理理解得分连接到干预/执行验证，且核实类别/工具偏差。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/physbench-2025.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.27345",
+      "title": "PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "固定条件重复rollout且分开coverage与probability mass，补齐单视频物理分数无法评价的随机模拟需求；预算与人读出局限有明确报告。",
+      "closest_paper_url": "https://arxiv.org/abs/2601.21282",
+      "material_difference": "比WorldBench单次概念正确性多出结果分布/支持集校准，构成独立核心任务，而非更大数据。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://pawbench.github.io/",
+          "locator": "PAWBench; PAWEval; Robustness of the Evaluation Protocol",
+          "claim": "50场景分25 calibration/25 coverage，K50；K1-100预算敏感性；888明确标签视频中81.3%同人一致，但不验证全量准确率或模型排名。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "stochastic-world-outcome-calibration",
+      "task_title": "同初态同动作多次rollout的物理结果分布校准",
+      "scope": {
+        "input": "固定图像、原子动作与K次采样",
+        "output": "有效结果覆盖率、概率误差和读出失败率",
+        "setting": "PAWBench八机制下50场景",
+        "protocol": "25 Calibration+25 Coverage分开；主评K=50，K=1到100敏感性；人一致性仅888个双方明确标签样本，非全量指标/排名验证。"
+      },
+      "role": "current",
+      "revisit_trigger": "评价器/有限结果schema或采样预算更改；扩展到完整轨迹分布。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/pawbench-2026.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "not_applicable_reason": "本次核心是固定条件K次rollout、结果schema、calibration/coverage分轨以及读出/预算校准；PAWBench不提出须验收的新生成器。人工标签一致性和有限采样表是评价协议证据，本轮未根据生成视频宣称物理运动质量通过。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "decisive_evaluation",
+      "acceptance_rationale": "固定条件重复rollout且分开coverage与probability mass，补齐单视频物理分数无法评价的随机模拟需求；预算与人读出局限有明确报告。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2601.21282",
+        "material_difference": "比WorldBench单次概念正确性多出结果分布/支持集校准，构成独立核心任务，而非更大数据。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.27328",
+      "title": "R2M-Bench: Evaluating Revisit Memory via Relative Consistency in Interactive Video World Models",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "同rollout匹配控制纠正静态/慢动捷径，值得保留专门metric；尚无单独可执行发布与完整pair-mining审查，本轮证据未达4。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.20693",
+      "material_difference": "与Orbia的3D几何/新内容重访不同，R2M专门校准generic temporal stability；不被更大benchmark自然替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2608.27328",
+          "locator": "Title, submission history and Abstract",
+          "claim": "300例/七模型；MG与NMR使用gap-matched nonrevisit和short-range control；人相关rho0.547，motion相关0.072 vs raw0.207，均为作者报告。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "revisit-and-offscreen-world-memory-evaluation",
+      "task_title": "重访与离屏对象世界记忆诊断",
+      "scope": {
+        "input": "生成rollout/4D输出、重访控制和可用的全景参考",
+        "output": "重访专属一致性、对象永久性/运动/外观得分",
+        "setting": "R2M-Bench与PersistBench原生相机轨迹",
+        "protocol": "R2M 100场景×3路径与同rollout gap/short控制；PersistBench用360真值；Orbia可作相关参照但范围/控制不等价。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "公开pair-mining/score实现，核对不同motion/路径下NMR稳定性及归一化退化。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/r2m-bench-2026.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.04639",
+      "title": "RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "16任务四记忆维度、固定episode划分与可执行benchmark提供直接VLA历史能力评测；推荐任务工具不以未看实机demo证明模型领先。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.28236",
+      "material_difference": "相较EMem的家庭经历→延迟任务，RoboMME保留操作计数/程序模仿与同pi0.5记忆表示矩阵，范围不同。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://github.com/RoboMME/robomme_benchmark",
+          "locator": "Benchmark split paragraph; environment input/output documentation pointer",
+          "claim": "每任务train100、val/test各50固定seed；环境spawn当前面向imitation，parallel RL仍建设中。",
+          "source_quality": "official",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://robomme.github.io/",
+          "locator": "RoboMME Task Examples; MME-VLA Suite",
+          "claim": "四suite16任务明确给指令，14个同pi0.5变体；象征/感知/循环记忆设计分开，并报告开销权衡。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "history-dependent-robot-manipulation-evaluation",
+      "task_title": "依赖历史的机器人操作记忆评测",
+      "scope": {
+        "input": "递增观察历史、指令和机器人状态",
+        "output": "动作和Counting/Permanence/Reference/Imitation成功率",
+        "setting": "RoboMME ManiSkill/SAPIEN及独立实机对应任务",
+        "protocol": "16任务，每任务100训练、50验证、50测试固定seed；14个pi0.5记忆变体；本推荐基于任务/划分/工具，不以未观看实机demo证明策略优越。"
+      },
+      "role": "current",
+      "revisit_trigger": "任务/固定seed或环境API更新，补充预算公平性并实际跑两个记忆基线。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/robomme-2026.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "not_applicable_reason": "本次核心是四记忆任务suite、每任务100/50/50固定seed、可执行环境与API；具体任务指令和代码文档可核。实机迁移及MME-VLA生成/动作质量未作本轮准入依据，也未把链接存在写成观看证明。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "reusable_infrastructure",
+      "acceptance_rationale": "16任务四记忆维度、固定episode划分与可执行benchmark提供直接VLA历史能力评测；推荐任务工具不以未看实机demo证明模型领先。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2609.28236",
+        "material_difference": "相较EMem的家庭经历→延迟任务，RoboMME保留操作计数/程序模仿与同pi0.5记忆表示矩阵，范围不同。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.20819",
+      "title": "Can 4D Foundation Models Remember?",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "全景真值补离屏对象评价盲区，值得保留；本轮只摘要和旧精读，具体对象关联、样本数和协议误差未核到，尚不足核心证据4。",
+      "closest_paper_url": "https://arxiv.org/abs/2608.27328",
+      "material_difference": "与R2M的同rollout相对校准不同，PersistBench有360参考并区分permanence、motion、appearance，不宣称相互替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.20819",
+          "locator": "Title, submission history and Abstract",
+          "claim": "使用360视频为omniscient ground truth；评object permanence、motion continuity、appearance preservation并跨4D模型家族研究。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "revisit-and-offscreen-world-memory-evaluation",
+      "task_title": "重访与离屏对象世界记忆诊断",
+      "scope": {
+        "input": "生成rollout/4D输出、重访控制和可用的全景参考",
+        "output": "重访专属一致性、对象永久性/运动/外观得分",
+        "setting": "R2M-Bench与PersistBench原生相机轨迹",
+        "protocol": "R2M 100场景×3路径与同rollout gap/short控制；PersistBench用360真值；Orbia可作相关参照但范围/控制不等价。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "核对全景数据、对象match/visibility标注、motion控制与metric代码。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/persistbench-2026.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.20114",
+      "title": "Universal Navigation Interface: Robot-Free Data for Wheeled Robot Navigation",
+      "branch": "E",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "目标机器人之外的rollator采集设计有启发，但规模和跨域收益有限，当前对项目主要是导航数据支撑层，不满足核心技术/相关性门槛。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.19876",
+      "material_difference": "与SlugTrails室内地图定位不同，UNI提供轮式可行路径示范；不能由其17%-25%误差改善推断通用导航提升。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.20114",
+          "locator": "Title, submission history and Abstract",
+          "claim": "37.2km；held-out轨迹误差降17.4-24.8%，跨数据集收益不同；闭环wheelchair为作者报告，本轮未观看。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "robot-free-wheeled-navigation-data",
+      "task_title": "目标机器人之外采集的轮式导航监督",
+      "scope": {
+        "input": "带手机的rollator轨迹和目标",
+        "output": "轮式可行的metric导航路径/训练样本",
+        "setting": "UNI轮式导航与独立轮椅转移",
+        "protocol": "37.2km原始设置；held-out轨迹误差和跨数据集收益分别报告，闭环轮椅外推未本轮复核。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "公开校准/数据与多平台控制预算证据，且目标生成环境实际需要该轮式可行性接口。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/universal-navigation-interface-2026.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "visual_review_gap": "本轮读取了文字主源与旧精读，没有观看时序媒体。旧报告无可追溯的实际观察/时间范围，不继承其strong/not_applicable。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.19881",
+      "title": "BinoGen: Scaling egocentric binocular data for embodied visual perception and learning",
+      "branch": "E",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "可控rig合成数据对perception有支撑，但对交互世界的直接接口不足，公开generator/data也未确认，不因20M量级自动给impact4。",
+      "closest_paper_url": "https://arxiv.org/abs/2602.11337",
+      "material_difference": "比MolmoSpaces任务/物理基础更专门双目observer变化；是感知数据备选，尚非独立核心生成能力。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": false,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.19881",
+          "locator": "Title, submission history and Abstract",
+          "claim": "摘要报告20M+同步双目与dense labels、人/鼠rig比较及depth/detection/tracking收益；未验证数表与发布。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "embodiment-aware-binocular-synthetic-data",
+      "task_title": "可控观察者形态的双目视觉数据生成",
+      "scope": {
+        "input": "程序场景、运动轨迹、双目rig参数",
+        "output": "同步双目视频与深度/流/法线/语义/位姿",
+        "setting": "BinoGen人/鼠启发相机与室内环境",
+        "protocol": "20M+图像；需按世界划分避免配对rig泄漏，真实深度/检测/跟踪提升表与公开数据许可尚待核查。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "可用generator/数据/许可，及matched真实迁移和目标任务用途。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/binogen-2026.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "visual_review_gap": "本轮读取了文字主源与旧精读，没有观看时序媒体。旧报告无可追溯的实际观察/时间范围，不继承其strong/not_applicable。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.19876",
+      "title": "SlugTrails: An Egocentric Benchmark for Floor Plan Localization in Large Buildings",
+      "branch": "E",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "真实大楼定位协议细致，但它是本项目的地图定位支撑层，三栋校园覆盖也窄；当前不应因一般空间相关性占核心推荐。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.20114",
+      "material_difference": "同表面导航方向但不同UNI路径监督任务；统一单帧/sweep/odometry有局部价值，无可比协议替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.19876",
+          "locator": "Title, submission history and Abstract",
+          "claim": "30Hz Aria、三楼六层/22,089m²，三感知协议；stock到finetune和LaMAR收益按原生设定报告。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "egocentric-floorplan-localization-evaluation",
+      "task_title": "大型建筑的自我视角平面图定位",
+      "scope": {
+        "input": "单帧、多视图sweep或带odometry的序列以及平面图",
+        "output": "平面图坐标下相机位置/朝向与召回",
+        "setting": "SlugTrails三建筑六楼层",
+        "protocol": "22,089平方米、30Hz Aria、激光锚点对齐；三种原生感知配置分别比较，不能与生成世界分数直接等价。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "生成/重建目标确定需要floorplan定位，或扩大跨建筑/跨机构评测后重评。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/slugtrails-2026.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.28236",
+      "title": "EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "四类环境经历与后续行动有实质价值，官方完整episode/media确已存在；但可执行评价/构造代码仍待公开，旧精读容易把数据可下载等同全harness可复现。",
+      "closest_paper_url": "https://arxiv.org/abs/2603.04639",
+      "material_difference": "与RoboMME操作记忆相比，加入失败经验、状态更新与规则迁移；这类新范围不等价于替代旧操作协议。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://huggingface.co/datasets/lzLiang/EmbodiedMemoryBench",
+          "locator": "Benchmark; Full-2554 manifest; Quick start; episode-and-media package notice",
+          "claim": "四类1,036/1,052/263/203共2,554；发布RGB/动作/feedback/annotation与portable paths，卡片明确execution setup/code将随公共发布补充。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "delayed-action-embodied-memory-evaluation",
+      "task_title": "环境经历后延迟任务的记忆与状态更新评测",
+      "scope": {
+        "input": "不知道未来任务的交互历史与后续任务",
+        "output": "基于记忆的动作成功与错误复发指标",
+        "setting": "AI2-THOR/ProcTHOR的四类经历",
+        "protocol": "Full-2554 manifest固定1,036/1,052/263/203例；公开包含历史RGB/动作/反馈/注释，完整执行/构造代码待发布。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "完整模拟器执行/构造代码及版本发布后，核四家族macro/ERR和backbone公平性。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/embodiedmemory-bench-2026.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.28654",
+      "title": "Training Object Permanence in World Models",
+      "branch": "E",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "认知生成器、训练语料、固定exam和模型的组合具有核心潜力；标题主张训练后生成物理能力，必须检查真实续写而不能仅以dataset标签豁免。",
+      "closest_paper_url": "https://arxiv.org/abs/2608.27345",
+      "material_difference": "比PAWBench分布读出，WROP直接生成认知训练数据并训16B continuation model；任务与评价目标不同。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.28654",
+          "locator": "Title, submission history and Abstract",
+          "claim": "150 Blender任务六类、1.5M样本/300题，14模型；PWM-WROP的continuation Elo领先为作者报告，未本轮观看。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "procedural-object-permanence-world-model-training",
+      "task_title": "程序化物体永久性与实体性训练和考试",
+      "scope": {
+        "input": "起始/参考视频及认知任务条件",
+        "output": "符合永久性/实体性的生成续写和固定考试评分",
+        "setting": "WROP Blender认知任务与16B模型",
+        "protocol": "150任务六类别、1.5M训练样本、300题考试、14模型；模型生成质量和Elo的视觉/时序证据未本轮查看。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "观看跨认知类别生成/失败时序、检查exam泄漏和blind Elo实验条件。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/wrop-object-permanence-2026.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "visual_review_gap": "本轮读取了文字主源与旧精读，没有观看时序媒体。旧报告无可追溯的实际观察/时间范围，不继承其strong/not_applicable。",
+      "acceptance_policy_version": 2,
+      "needs_human_decision": true,
+      "uninspected_media_urls": [
+        "https://object-permanence.world/"
+      ],
+      "visual_review_plan": [
+        "读取对应primary完整方法、实验和失败案例，保存精确图/表/媒体定位。",
+        "代表性时序样例必须记录实际时间段/完整clip、任务条件、动作/状态变化及失败覆盖。",
+        "分别检查动作条件响应、物体/场景永久性、接触/穿透、稳定性和所需任务可用性；未完成前不作视觉通过。"
+      ]
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.26292",
+      "title": "RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "连续物理条件轴对生成环境有效性有直接价值，和视觉/语言扰动有独立作用；具体参数范围、成功率曲线与公开release仍未核实。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.27759",
+      "material_difference": "与Colosseum外观/语言/action变化不同，RoboTwin-Phys针对13物理参数，不应按同VLAbenchmark就合并或覆盖。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.26292",
+          "locator": "Title, submission history and Abstract",
+          "claim": "13连续物理属性和5,000+带参数示范；WAM/VLA物理变动鲁棒性下降是摘要报告。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "physical-condition-robot-policy-robustness",
+      "task_title": "受控物理参数变化下的操作策略鲁棒性",
+      "scope": {
+        "input": "观测/指令与变化质量、摩擦、关节参数",
+        "output": "分属性和物理条件的操作成功率",
+        "setting": "RoboTwin-Phys仿真WAM/VLA",
+        "protocol": "13连续物理属性、5,000+参数标注示范；需固定任务/视觉随机化与参数范围，不用总成功率掩盖条件特定失败。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "核可下载参数标注、固定任务和每属性曲线、physics/visual因素分离。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/robotwin-phys-2026.md",
+        "status": "paper_specific_but_incomplete",
+        "finding": "已有任务特定信息，但需补实测/发布范围、精确来源定位及当前限制。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2604.21017",
+      "title": "Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "跨医疗形态数据有基础研究价值，但通用交互环境项目当前没有医疗任务接口；不能因最大开放医疗数据或suturing成绩推到相关性4。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.20320",
+      "material_difference": "与TacClaw一般触觉数据不同，医疗video/kinematics与程序协议有专门来源/动作schema价值，保留领域参考。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2604.21017",
+          "locator": "Title, submission history and Abstract",
+          "claim": "主源本轮写50+机构、多平台同步video/kinematics；GR00T-H与Cosmos-H实验证据仅作者报告，不作视觉通过。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "medical-robot-video-kinematics-data",
+      "task_title": "跨医疗机器人同步视频与运动学数据",
+      "scope": {
+        "input": "多机构医疗机器人视频/运动学记录",
+        "output": "可对齐多形态样本、数据标准与研究基线",
+        "setting": "Open-H-Embodiment手术/超声/内窥镜",
+        "protocol": "50+机构主源版本；医疗研究协议与通用家居操作不等价；不以未复核的suturing成功率或生成demo支撑核心推荐。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "目标明确需要医疗simulation/动作接口，并核数据权限、实际发布与统一kinematics。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/open-h-embodiment-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "已有数据/结果摘要可定位，但Task/Method仍通用，缺具体表/图/时间范围；本轮仅使用sources里实际核到的事实。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.12069",
+      "title": "LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes",
+      "branch": "E",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "拥挤有人居住宅与真实对应对任务很相关；核心home twin来自物体生成和放置，旧not_applicable无观察支持，不能自动通过物理交互质量。",
+      "closest_paper_url": "https://arxiv.org/abs/2602.11337",
+      "material_difference": "较MolmoSpaces规模/程序多样性，强调30真实家庭的对应和有限可操作空间；没有同划分比较不归档任何一方。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.12069",
+          "locator": "Title, submission history and Abstract",
+          "claim": "30 lived-in home digital twins；human-in-loop识别/建筑重建/物体生成放置；评检测/重建/导航/loco-manip。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "lived-in-home-digital-twin-evaluation",
+      "task_title": "真实有人居住房屋数字孪生的具身评测",
+      "scope": {
+        "input": "真实住宅观察、重建/生成物体与任务设置",
+        "output": "可交互home twin和检测/重建/导航/loco-manip分数",
+        "setting": "LIVIN 30住宅的拥挤与空间约束环境",
+        "protocol": "需核对四任务的划分/单位及物理交互证据；本轮仅摘要+旧精读，生成/关节/碰撞可用性待时序检查。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "检查房屋/物体示例、导航空间、关节/碰撞和loco-manip动作；核四任务实际协议与发布。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/livin-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "已有数据/结果摘要可定位，但Task/Method仍通用，缺具体表/图/时间范围；本轮仅使用sources里实际核到的事实。"
+      },
+      "visual_review_gap": "本轮读取了文字主源与旧精读，没有观看时序媒体。旧报告无可追溯的实际观察/时间范围，不继承其strong/not_applicable。",
+      "acceptance_policy_version": 2,
+      "needs_human_decision": true,
+      "uninspected_media_urls": [
+        "https://arxiv.org/abs/2610.12069"
+      ],
+      "visual_review_plan": [
+        "读取对应primary完整方法、实验和失败案例，保存精确图/表/媒体定位。",
+        "代表性时序样例必须记录实际时间段/完整clip、任务条件、动作/状态变化及失败覆盖。",
+        "分别检查动作条件响应、物体/场景永久性、接触/穿透、稳定性和所需任务可用性；未完成前不作视觉通过。"
+      ]
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.11723",
+      "title": "MultiWorldBench: Do Independently Controlled Views Describe One Shared World?",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "明确独立双控制、共享编辑与延迟跨玩家重访，原生engine对照及suite设计可复用；十能力分项补单玩家评价盲区。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.25874",
+      "material_difference": "相较WBench单rollout多轮，加入paired visibility/control isolation/shared-state/race，形成独立任务；不能用其平均排名决定模型替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2610.11723v1",
+          "locator": "Sec.3.1-3.3; Table3; Sec.5.3; Sec.6 Limitations",
+          "claim": "495配置七suite，区分planned与executed日志；10能力macro平均，Engine GT91.69；原生控制失败会传播到高级任务，系统级human排名样本很少。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "multiplayer-shared-world-consistency-evaluation",
+      "task_title": "独立双玩家控制下的共享世界一致性评测",
+      "scope": {
+        "input": "双视角历史和两玩家独立原生动作",
+        "output": "控制隔离、状态同步/持久、并发与延迟重访十能力",
+        "setting": "Minecraft MultiWorldBench",
+        "protocol": "495配置七suite；Engine GT原生轨迹对照，明确planned条件与executed日志；按10能力macro平均，人工系统级排名一致性不代表逐clip可靠性。"
+      },
+      "role": "current",
+      "revisit_trigger": "case/原生日志或评价器变化，扩大系统数量并核人工评价不确定性。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/multiworldbench-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "已有数据/结果摘要可定位，但Task/Method仍通用，缺具体表/图/时间范围；本轮仅使用sources里实际核到的事实。"
+      },
+      "not_applicable_reason": "本次核心是495case的独立动作/成对可见性设计、原生Engine GT日志、预期共享编辑和十能力评分。它评测已有世界模型而非提出待验收的生成器；本轮只核协议/原论文分项结果，不把论文对rollout失败的文字描述当作已观看。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "decisive_evaluation",
+      "acceptance_rationale": "明确独立双控制、共享编辑与延迟跨玩家重访，原生engine对照及suite设计可复用；十能力分项补单玩家评价盲区。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2605.25874",
+        "material_difference": "相较WBench单rollout多轮，加入paired visibility/control isolation/shared-state/race，形成独立任务；不能用其平均排名决定模型替代。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.10384",
+      "title": "OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "11仿真/8实机paired协议与四能力taxonomy有独立价值；官网本轮仅静态结构和表示说明可读，完整结果/共享artifact尚未核实，保留备选。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.19604",
+      "material_difference": "相较ForceBench腕力融合，OpenViTac是触觉能力/传感器与sim-real配对；既非相同观测也非同task替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://fvl-repo.github.io/OpenViTac/",
+          "locator": "Benchmark overview; task counts; OpenVTLA section",
+          "claim": "11仿真、8paired real、4能力、3传感器；同pi0.5比较触觉表示与注入，OpenVTLA将AnyTouch2历史token拼到VLM。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "paired-sim-real-visuotactile-policy-evaluation",
+      "task_title": "配对仿真实机的视觉触觉策略评测",
+      "scope": {
+        "input": "视觉/触觉历史、语言与任务配置",
+        "output": "四能力分项成功率及sim-real差异",
+        "setting": "OpenViTac接触丰富操作",
+        "protocol": "11仿真/8实机配对任务、3传感器；同pi0.5对照表示和注入方式；完整动态结果与发布可用性尚待核对。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "审静态/动态完整结果、公开数据/metric实现、co-training预算；若以模型提升作准入需看时序demo。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/openvitac-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "已有数据/结果摘要可定位，但Task/Method仍通用，缺具体表/图/时间范围；本轮仅使用sources里实际核到的事实。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.09294",
+      "title": "RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "同初态与action API的static/real-time拆分揭示冻结模拟器隐藏的风险，具体计时/碰撞接口可直接用于运行时评价。",
+      "closest_paper_url": "https://arxiv.org/abs/2512.22539",
+      "material_difference": "VLA-Arena静态安全轴之外显式计入推理时环境推进；独立评价轴并不替代其任务安全约束。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2610.09294v1",
+          "locator": "Sec.3.3; Appendix A.2 timing prompts; Appendix B.4/Table11",
+          "claim": "288 matched model-route pairs；static91.3/19.8 vs realtime94.1/0.7任务/安全成功；碰撞3.31→40.68；两模式timing instructions不同，差异非纯延迟因果。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "real-time-embodied-navigation-safety",
+      "task_title": "推理期间世界继续演化的导航安全评测",
+      "scope": {
+        "input": "动态街景观测、路线指令与模型延迟",
+        "output": "任务成功、安全成功、主动/被动碰撞与延迟",
+        "setting": "RT-Safe仿真城市导航",
+        "protocol": "hard配置288模型-路线pair，同初始配置/API，static推理暂停而real-time持续演化；两模式时间提示不同，不能将全部差异归因于延迟。"
+      },
+      "role": "current",
+      "revisit_trigger": "控制两模式prompt差异、网络延迟和路线预算后重评因果归因。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/rt-safe-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "已有数据/结果摘要可定位，但Task/Method仍通用，缺具体表/图/时间范围；本轮仅使用sources里实际核到的事实。"
+      },
+      "not_applicable_reason": "本次核心是simulator在推理/执行期间的时间推进契约、matched路线、主动/被动安全事件和延迟指标；这些评价规则及表格可核。未用未观看的城市动态/机器人demo证明视觉或运动质量，数值仍为作者报告且保留prompt混杂。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "decisive_evaluation",
+      "acceptance_rationale": "同初态与action API的static/real-time拆分揭示冻结模拟器隐藏的风险，具体计时/碰撞接口可直接用于运行时评价。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2512.22539",
+        "material_difference": "VLA-Arena静态安全轴之外显式计入推理时环境推进；独立评价轴并不替代其任务安全约束。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.07597",
+      "title": "The Robot Is Not Its Description: GaugeBench for Representation Robustness in Morphology-Aware Policies",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "物理/接口认证后再测同机制描述变化，能直接验证URDF/关节坐标compiler或policy adapter的隐含表征假设；控制与权衡具体。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.26292",
+      "material_difference": "比RoboTwin物理参数变动更严格固定物理机制，只动描述约定；不能拿普通跨形态成功率代替。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2610.07597v1",
+          "locator": "Sec.III-A/B; Sec.IV; TableI; Sec.V-E/TableIII",
+          "claim": "1e-7逐项100step物理认证；3 policies×80robots×10rewrites×32episodes；轴随机化保留率3.6→80.6%，原描述回报约降10%，不得宣称无退化。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "robot-description-gauge-robustness",
+      "task_title": "等价机器人描述下的策略表征鲁棒性",
+      "scope": {
+        "input": "原/重写机器人描述及冻结策略输入输出接口",
+        "output": "认证物理等价后的paired回报损失与修复结果",
+        "setting": "MetaMorph、ModuMorph、PyBullet形态感知策略",
+        "protocol": "100step物理认证最大绝对误差1e-7；MetaMorph 3种子×80机器人×10重写×32episode；仅同机制/同模拟器设置认证成立。"
+      },
+      "role": "current",
+      "revisit_trigger": "认证模拟器配置变更、描述转换/动作transport变更或扩展到含图像语言接口时复核。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/gaugebench-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "已有数据/结果摘要可定位，但Task/Method仍通用，缺具体表/图/时间范围；本轮仅使用sources里实际核到的事实。"
+      },
+      "not_applicable_reason": "本次核心是描述重写后逐项物理/接口等价认证、paired实验与数值容差，可通过数学定义和协议表审计；不是基于生成步态/机器人demo判断质量。回报/修复的数值只作作者报告，并明确10%原描述回报退化。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "decisive_evaluation",
+      "acceptance_rationale": "物理/接口认证后再测同机制描述变化，能直接验证URDF/关节坐标compiler或policy adapter的隐含表征假设；控制与权衡具体。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2609.26292",
+        "material_difference": "比RoboTwin物理参数变动更严格固定物理机制，只动描述约定；不能拿普通跨形态成功率代替。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.07594",
+      "title": "BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation",
+      "branch": "E",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "共同观测/whole-body controller下比较学习与coding agent有协议价值；本轮只核摘要，20任务与九任务均值覆盖、发布记录和预算细节仍需落实。",
+      "closest_paper_url": "https://arxiv.org/abs/2512.22539",
+      "material_difference": "与VLA-Arena桌面扰动不同，G1全身家居控制和代码策略比较是独立范围，不因2.0编号自动历史化前作。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.07594",
+          "locator": "Title, submission history and Abstract",
+          "claim": "20G1任务/60VR示范每task、共同控制器；摘要明确highest nine-task mean并非所有20任务均值。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "humanoid-household-policy-benchmarking",
+      "task_title": "人形家居任务中学习与代码策略的统一比较",
+      "scope": {
+        "input": "G1相机/本体观测、任务指令和共同控制器",
+        "output": "任务成功与开放重放记录",
+        "setting": "BiGym2 Unitree G1 20家居任务",
+        "protocol": "60VR示范/任务；策略使用共同机载观测/API；coding-agent交互预算与RL对齐，九任务均值并非20任务全覆盖。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "核公开20task/1200demo/trace与fixed seeds、九任务选择及coding-agent交互预算。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/bigym-2-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "已有数据/结果摘要可定位，但Task/Method仍通用，缺具体表/图/时间范围；本轮仅使用sources里实际核到的事实。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.22372",
+      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "branch": "E",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "偏好完成与任务成功分开有用，但当前主要是LIBERO上专门taxonomy和成对数据构建，缺对核心物理/交互生成能力的决定性贡献证据。",
+      "closest_paper_url": "https://arxiv.org/abs/2512.22539",
+      "material_difference": "不同于VLA-Arena通用鲁棒性，专门偏好学习/组成/冲突；保留触发式跟踪，不因312task自动核心。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.22372",
+          "locator": "Title, submission history and Abstract",
+          "claim": "312task五suite；限定语言可表达、可自动评分、不改goal的偏好；多种训练tradeoff与组成冲突仍难。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "personalized-manipulation-preference-evaluation",
+      "task_title": "任务目标固定的个性化操作偏好评测",
+      "scope": {
+        "input": "语言偏好、机器人观测和成对偏好示范",
+        "output": "任务完成与偏好满足分开计分",
+        "setting": "LIBERO-PeRM五suite",
+        "protocol": "312任务；zero-shot/学习/泛化/组成/冲突分开；仅语言可表达、可自动评分且不改task goal的偏好。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "目标明确采用个性化任务，或controlled evaluation/实现显示超越现有任务配置的广泛可用增量。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/libero-perm-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "已有数据/结果摘要可定位，但Task/Method仍通用，缺具体表/图/时间范围；本轮仅使用sources里实际核到的事实。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20693",
+      "title": "Orbia: Do Generated Videos Form a Consistent 3D World?",
+      "branch": "E",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "固定返回路径、RGB-D锚点、新生成内容首次/再次观察与held-out 3D重建形成可直接使用的持久世界验证接口。",
+      "closest_paper_url": "https://arxiv.org/abs/2608.27328",
+      "material_difference": "较R2M的同rollout相对记忆，新增输入保留/新内容持久/3D一致性，保留R2M防静态捷径作为补充，不能称其被替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://orbia-bench.github.io/",
+          "locator": "Overview; Evaluating3D consistency; Exploration and revisit protocols; Leaderboard",
+          "claim": "720case=480短+240分钟级，六返回路径；registered RGB-D/anchor，64context与16held-out视图；27模型按接口分列。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "explore-revisit-3d-world-consistency",
+      "task_title": "探索重访时输入/新内容/3D结构一致性",
+      "scope": {
+        "input": "起始图、RGB-D锚点和探索-重访控制",
+        "output": "输入保留、新内容持久与跨视角几何分项",
+        "setting": "Orbia室内外交互视频模型",
+        "protocol": "720例=480短+240分钟级，六返回路径；64context视图重建、16held-out渲染；按接口适配、原生预算报告，不等同机器人可执行性。"
+      },
+      "role": "current",
+      "revisit_trigger": "depth/feature/reconstruction evaluator或原生适配预算更新，核错误几何对排名影响。",
+      "review_depth": "primary_or_official_protocol_and_existing_report",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/orbia-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "已有数据/结果摘要可定位，但Task/Method仍通用，缺具体表/图/时间范围；本轮仅使用sources里实际核到的事实。"
+      },
+      "not_applicable_reason": "本次核心是registered RGB-D锚点、六返回路径、首次生成区域对照与64context/16held-out重建评价契约；Orbia不提供本次需判优的新生成器。未以动画或被测模型rollout观感作为准入，也不把3D代理分数当机器人可执行性。",
+      "acceptance_policy_version": 2,
+      "selection_basis": "decisive_evaluation",
+      "acceptance_rationale": "固定返回路径、RGB-D锚点、新生成内容首次/再次观察与held-out 3D重建形成可直接使用的持久世界验证接口。",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2608.27328",
+        "material_difference": "较R2M的同rollout相对记忆，新增输入保留/新内容持久/3D一致性，保留R2M防静态捷径作为补充，不能称其被替代。",
+        "why_new_entry": "本轮是已有条目再分层，未新增论文；当前推荐范围仅限scope所列的任务/协议。"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.19604",
+      "title": "ForceBench: Benchmarking Force Integration for Robotic Manipulation",
+      "branch": "E",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "固定pi0.5比较腕力融合是有用窄域设计研究，八任务/五实机任务与未确认code尚不足支持长期核心；不能以最佳均值替代所有任务。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.10384",
+      "material_difference": "相对OpenViTac触觉表示/传感器轴，ForceBench用六轴腕力并固定骨干、示范、任务，适合专项后续。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.19604",
+          "locator": "Title, submission history and Abstract",
+          "claim": "no-force+6融合，8task/1600demo；Prompt Fusion35.31 vs23.25sim，实机63vs40；temporal designs assembly低于baseline，为作者报告。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "force-fusion-manipulation-design-evaluation",
+      "task_title": "固定骨干下的六轴力觉融合设计比较",
+      "scope": {
+        "input": "视觉、语言、六轴腕力与同步示范",
+        "output": "三任务类成功率及融合策略差异",
+        "setting": "ForceBench pi0.5操作",
+        "protocol": "8仿真任务/1,600示范，no-force+6设计，5实机任务；逐任务检查退化，不能用平均增益宣称所有设计通用。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "公开metric/code和数据，扩到更多骨干/任务且保留逐任务退化分析。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/forcebench-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "已有数据/结果摘要可定位，但Task/Method仍通用，缺具体表/图/时间范围；本轮仅使用sources里实际核到的事实。"
+      },
+      "not_applicable_reason": "本次推荐/保留仅针对明确的评价协议、标注/配置接口或数据研究价值；不以未观看的生成质量、机器人动作或转移demo作为准入证据。",
+      "acceptance_policy_version": 2
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20320",
+      "title": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
+      "branch": "E",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "大规模VTLA、质量过滤及无目标机器人采集有核心潜力，但数据/许可尚未确证，且跨三机器人迁移是其核心效用，不能用static论文代替时序检查。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.10384",
+      "material_difference": "不同于OpenViTac配对小任务评价，是接触标注大语料/采集接口；亿帧规模本身不构成质量/转移证据。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.20320",
+          "locator": "Title, submission history and Abstract",
+          "claim": "10k+h/1Mepisodes/1Bframes/1000+task与三形态transfer均为摘要报告；未找到实际发布或视频不代表已验证。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "robot-free-vision-tactile-action-data",
+      "task_title": "机器人之外采集的接触丰富VTLA数据",
+      "scope": {
+        "input": "TacClaw手持接口同步视觉/触觉/末端轨迹",
+        "output": "带接触分段、子任务和空间标注的数据",
+        "setting": "TacClaw-Infinity分布采集与三机器人转移",
+        "protocol": "10,000+小时/1Mepisode/1Bframe/1,000+任务均为作者报告；下载、许可、质量过滤和无机器人示范转移的时序证据尚待核对。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "查可下载数据、采集校准/过滤、license，以及各形态成功/失败连续转移demo。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/tacclaw-infinity-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "已有数据/结果摘要可定位，但Task/Method仍通用，缺具体表/图/时间范围；本轮仅使用sources里实际核到的事实。"
+      },
+      "visual_review_gap": "本轮读取了文字主源与旧精读，没有观看时序媒体。旧报告无可追溯的实际观察/时间范围，不继承其strong/not_applicable。",
+      "acceptance_policy_version": 2,
+      "needs_human_decision": true,
+      "uninspected_media_urls": [
+        "https://arxiv.org/abs/2610.20320"
+      ],
+      "visual_review_plan": [
+        "读取对应primary完整方法、实验和失败案例，保存精确图/表/媒体定位。",
+        "代表性时序样例必须记录实际时间段/完整clip、任务条件、动作/状态变化及失败覆盖。",
+        "分别检查动作条件响应、物体/场景永久性、接触/穿透、稳定性和所需任务可用性；未完成前不作视觉通过。"
+      ]
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.19479",
+      "title": "Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training",
+      "branch": "E",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "优化生成分布以提升真实policy是直接核心方法；旧strong只留下页面视频存在与150%数字，未记录实际rollout观察，需重新时序审核。",
+      "closest_paper_url": "https://arxiv.org/abs/2504.18904",
+      "material_difference": "相比RoboVerse固定/随机数据源，MetaGenSim用meta-gradient rater选择distribution，proxy-to-VLA/skill stitching是独立生成策略。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.19479",
+          "locator": "Title, submission history and Abstract",
+          "claim": "提出Active Generative Simulation/MetaGenSim，作者报告real full-task相对uniform+150%、与expert匹配及proxy到VLA迁移；本轮未独立复现或观看。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "utility-optimized-simulation-data-generation",
+      "task_title": "优化真实策略效用的仿真数据生成分布",
+      "scope": {
+        "input": "有限真实示范、可调模拟参数与proxy策略",
+        "output": "meta-gradient rater选择的数据分布和策略结果",
+        "setting": "MetaGenSim sim-real co-training操作任务",
+        "protocol": "与uniform、retrieval、expert alignment同任务/预算对照；atomic stitching与object-receptacle组合分开；真实rollout未本轮观看。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "观看matched真实完整任务/失败rollout，核uniform/retrieval/expert的预算和绝对成功率、代码release。",
+      "review_depth": "primary_identity_abstract_and_existing_report; full comparative/release audit pending",
+      "independently_reproduced": false,
+      "deep_dive_audit": {
+        "path": "paper_reads/E_evaluation_data_infrastructure/active-generative-simulation-2026.md",
+        "status": "contains_template_or_underlocalized_evidence",
+        "finding": "已有数据/结果摘要可定位，但Task/Method仍通用，缺具体表/图/时间范围；本轮仅使用sources里实际核到的事实。"
+      },
+      "visual_review_gap": "本轮读取了文字主源与旧精读，没有观看时序媒体。旧报告无可追溯的实际观察/时间范围，不继承其strong/not_applicable。",
+      "acceptance_policy_version": 2,
+      "needs_human_decision": true,
+      "uninspected_media_urls": [
+        "https://meta-gensim.github.io/"
+      ],
+      "visual_review_plan": [
+        "读取对应primary完整方法、实验和失败案例，保存精确图/表/媒体定位。",
+        "代表性时序样例必须记录实际时间段/完整clip、任务条件、动作/状态变化及失败覆盖。",
+        "分别检查动作条件响应、物体/场景永久性、接触/穿透、稳定性和所需任务可用性；未完成前不作视觉通过。"
+      ]
+    }
+  ]
+}

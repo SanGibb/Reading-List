@@ -1,5 +1,10 @@
 # JEPA-WAM: Learning Vision-Language-Action Policies with Joint-Embedding World Modeling
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。空间结构化V-JEPA和共享predictor区别清楚，但79.2%与pi0.5版86.3%改变初始化，不能当作无条件提高；本轮未查匹配消融。
+> [本次来源、分数与任务判断](../library_review.md#paper-ca852ddfa04e)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 ## Source Links
 - Paper: https://arxiv.org/abs/2608.09381
 - Official project: https://spritewithoutice.github.io/JEPA-WAM/

@@ -1,5 +1,10 @@
 # SlugTrails: An Egocentric Benchmark for Floor Plan Localization in Large Buildings
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。真实大楼定位协议细致，但它是本项目的地图定位支撑层，三栋校园覆盖也窄；当前不应因一般空间相关性占核心推荐。
+> [本次来源、分数与任务判断](../library_review.md#paper-e0775380499c)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0008
 branch: E
 decision: accepted_for_registry

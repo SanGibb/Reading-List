@@ -1,5 +1,10 @@
 # Training Object Permanence in World Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。认知生成器、训练语料、固定exam和模型的组合具有核心潜力；标题主张训练后生成物理能力，必须检查真实续写而不能仅以dataset标签豁免。
+> [本次来源、分数与任务判断](../library_review.md#paper-ceebca447332)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0009
 branch: E
 decision: accepted_for_registry

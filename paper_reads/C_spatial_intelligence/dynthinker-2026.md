@@ -1,5 +1,10 @@
 # DynThinker: Unifying Static 3D and Dynamic 4D Spatial Reasoning
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。主源的组别 EMA 与几何融合提供有用诊断，但以多榜均分和若干新分数尚不能建立足够大的库内实质增量；不同动态协议不宜合并成一个全面优胜结论。
+> [本次来源、分数与任务判断](../library_review.md#paper-9cb4100c505f)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0007
 branch: C
 decision: accepted_for_registry

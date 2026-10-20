@@ -1,5 +1,12 @@
 # A Unified Evaluation Harness for Vision-Language-Action Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**来源待修复**。原registry arXiv号实际是雷达flow-matching论文，精读的作者和13/657数字也不可沿用。官方仓库和正确论文已找到，身份修复前不进入推荐。
+> [本次来源、分数与任务判断](../library_review.md#paper-a7233ce1b2b2)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> 身份纠错线索：[原始/官方入口](https://arxiv.org/abs/2603.13966)；此线索不代表已重新通过准入。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0057
 branch: E
 decision: accepted_for_registry

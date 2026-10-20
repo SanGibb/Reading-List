@@ -1,5 +1,10 @@
 # WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。原始感知/效用分离仍有基础价值；没有冻结1.0/2.0的共同样本与成本对照，不判定被取代。
+> [本次来源、分数与任务判断](../library_review.md#paper-34d181af2e6a)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0044
 branch: E
 decision: accepted_for_registry

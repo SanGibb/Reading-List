@@ -1,5 +1,10 @@
 # World Pilot: Steering Vision-Language-Action Models with World-Action Priors
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。双路径steering可核查且相关，但四项真实任务和84.7% LIBERO-Plus的摘要结果不足以区分world prior、数据与policy初始化的收益。
+> [本次来源、分数与任务判断](../library_review.md#paper-528ab469d963)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0004
 branch: D
 decision: accepted_for_registry

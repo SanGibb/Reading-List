@@ -1,5 +1,10 @@
 # Green-VLA: Staged Vision-Language-Action Model for Generalist Robots
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。五阶段训练加RL/OOD检测有系统参考价值，但checked摘要只给一般性提升，旧精读同样没有各阶段消融和数据/硬件控制。未证明相对开放通用基线的实质增量。
+> [本次来源、分数与任务判断](../library_review.md#paper-cccb2ae4f926)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0038
 branch: D
 decision: accepted_for_registry

@@ -1,0 +1,797 @@
+{
+  "review_date": "2026-10-20",
+  "tasks": [
+    {
+      "task_id": "physical-articulated-asset-generation",
+      "title": "图像条件的物理与关节资产生成",
+      "branch": "A",
+      "scope": {
+        "input": "单物体图像及物理资产类别条件。",
+        "output": "带几何、关节和物理属性的可仿真物体资产。",
+        "setting": "对象级 rigid/articulated 资产，部分系统扩展 deformable；不包含只追求外观的普通物体生成。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。PhysX-Mobility 与 PhysXVerse/PhysX-Bench 的类别、属性、训练数据和动力学验证不同；保留形变覆盖与成本/开放性差别。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2605.21572",
+        "https://arxiv.org/abs/2511.13648"
+      ]
+    },
+    {
+      "task_id": "a-image-to-simulation-scene-reconstruction",
+      "title": "图像到仿真场景的几何重建",
+      "branch": "A",
+      "scope": {
+        "input": "单张或稀疏多视图 RGB 图像，以及各方法所需的相机条件。",
+        "output": "可导出的场景表面/物体几何、相机/姿态和适用的物理结构。",
+        "setting": "重建既有场景供渲染、碰撞或物理仿真；多视图直接网格与单图稳定组合是子设置。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。TriSplat 使用 RealEstate10K/DL3DV 的稀疏视图/几何指标；SimuScene、REST3D 使用单图组合、支撑与稳定性协议。输入视图数、相机假设、几何与稳定性指标分别保留。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2606.03994",
+        "https://arxiv.org/abs/2605.30338",
+        "https://arxiv.org/abs/2605.26115"
+      ]
+    },
+    {
+      "task_id": "a-functional-part-articulation-understanding",
+      "title": "功能部件与关节结构理解",
+      "branch": "A",
+      "scope": {
+        "input": "3D 扫描/点云或 posed RGB-D，以及可用的任务语言和一个或多个关节状态。",
+        "output": "功能元素、可供性、可动部件和关节类型/轴/原点/范围的标注或预测。",
+        "setting": "将场景/物体观测转为可交互结构；数据标注契约、静态场景预测与多状态物体恢复分别评价。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。SceneFun3D v0.2.0 的功能元素 AP/隐藏测试；FAMOS 的 PartNet-Mobility/ACD/ArtiCraft-10K 与观察状态数；FunArt 的 Articulate3D GT-object/end-to-end 不互换。"
+      },
+      "paper_urls": [
+        "https://scenefun3d.github.io/",
+        "https://arxiv.org/abs/2609.20817",
+        "https://arxiv.org/abs/2609.20673"
+      ]
+    },
+    {
+      "task_id": "a-intervention-conditioned-3d-dynamics",
+      "title": "干预条件的三维物理动态建模",
+      "branch": "A",
+      "scope": {
+        "input": "物体/场景初始图像、几何或状态历史，外力/末端动作/边界条件，及适用的语言材料查询。",
+        "output": "三维材料/状态轨迹、可渲染动态响应及模型支持的控制预测。",
+        "setting": "弹性与多材料 Gaussian/particle、点集、体积网格动态建模；表示粒度和闭环用途是比较轴。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。分别保留 PhysDreamer 弹性材料、Feature Splatting 语义材料编辑、WonderPlay 单图多材料、PointCast 分 regime checkpoint/MPC 与 PhysLDM 体积 one-shot 协议；画面逼真、几何误差、材料精度和控制成功不可合成一个替代分数。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2404.13026",
+        "https://arxiv.org/abs/2404.01223",
+        "https://arxiv.org/abs/2505.18151",
+        "https://arxiv.org/abs/2609.28393",
+        "https://arxiv.org/abs/2610.07609"
+      ]
+    },
+    {
+      "task_id": "a-executable-articulated-scene-programs",
+      "title": "可执行关节场景程序生成",
+      "branch": "A",
+      "scope": {
+        "input": "自然语言室内场景需求与局部修改要求。",
+        "output": "可执行部件级建模程序、持久场景状态和可编译仿真资产。",
+        "setting": "程序合成和执行修复构建可修改、可导出的交互世界。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。SceneCode 的场景/资产/执行修复/机器人交互按现主源分别审核；旧标题及方法摘要与当前主源不符，纠正前不得引用旧结论。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2605.19587"
+      ]
+    },
+    {
+      "task_id": "a-real-observation-to-manipulation-simulation",
+      "title": "真实观测到可用操作仿真",
+      "branch": "A",
+      "scope": {
+        "input": "真实工作区多视图/机器人交互观测、机器人状态，以及可用的力反馈或参考运动。",
+        "output": "经过几何注册或接触/物理校准的可编辑操作仿真，并在系统支持时产生执行轨迹。",
+        "setting": "Real2Sim/Real2Sim2Real 的工作区重建、参数校准和数据生成接口。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。RoboSimStudio 校准 Newton 求解器/接触模型，AutoRSR 对齐 metric robot frame 并扩增参考动作；二者验证不同误差来源，不以三任务成功率代替物理参数校准。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2610.18835",
+        "https://arxiv.org/abs/2610.20336"
+      ]
+    },
+    {
+      "task_id": "executable-household-activity-benchmark",
+      "title": "谓词驱动的可执行家居活动",
+      "branch": "A",
+      "scope": {
+        "input": "家居活动定义、物体状态、物理/语义属性和模拟器观察。",
+        "output": "可执行长期任务、目标谓词和活动完成评估。",
+        "setting": "BEHAVIOR-1K/OmniGibson 的任务逻辑与物理世界契约。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。沿用活动、场景及物理属性版本；与生成场景、导航或其他年度 challenge 的任务数/成功率不可直接替换。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2403.09227"
+      ]
+    },
+    {
+      "task_id": "embodiedgen-executable-world-generation",
+      "title": "目标条件的可仿真室内世界生成",
+      "branch": "B",
+      "scope": {
+        "input": "文本/图像/房间或楼层条件，任务目标、资产库和可选编辑反馈。",
+        "output": "带对象布局、几何/资产引用及各系统支持的物理/关节/任务结构的室内仿真世界。",
+        "setting": "语言/任务/约束条件的房间到多房屋生成；资产生成、检索、扩散布局和 agentic 编排是实现差别。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。保留 EmbodiedGen V1/V2 的资产与任务世界范围、SAGE 的 task-conditioned critics、SceneSmith 密集布置、Holodeck AI2-THOR/NoveltyTHOR、PhyScene 布局/可达性、Steerable 固定库 SE(3)/RL/MCTS、SceneFoundry apartment articulation 协议。更全面的功能不自动证明全部旧设置无退化。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2404.09465",
+        "https://arxiv.org/abs/2505.04831",
+        "https://arxiv.org/abs/2602.10116",
+        "https://arxiv.org/abs/2506.10600",
+        "https://arxiv.org/abs/2312.09067",
+        "https://arxiv.org/abs/2602.09153",
+        "https://arxiv.org/abs/2601.05810",
+        "https://arxiv.org/abs/2607.07459"
+      ]
+    },
+    {
+      "task_id": "b-camera-action-controlled-visual-world-generation",
+      "title": "相机与动作控制的视觉世界生成",
+      "branch": "B",
+      "scope": {
+        "input": "文本/图像初始化、相机轨迹或用户动作/事件；各模型可用输入不同。",
+        "output": "可探索新视图、连续视频，以及系统实际提供的 3D scene/proxy 表示。",
+        "setting": "面向探索和交互内容创建的视觉世界；显式网格、代理几何与纯视频分别列明。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。HY-World 多模态重建/WorldLens、WonderWorld 在线 FLAGS 扩展、SpatialCrafter persistent proxy 视频与 Astronex causal action/event streaming 使用不同表示、速度和评测域。导航画面、可导出几何与接触物理可执行性不是等价输出。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2604.14268",
+        "https://arxiv.org/abs/2406.09394",
+        "https://arxiv.org/abs/2608.27073",
+        "https://arxiv.org/abs/2609.20034"
+      ]
+    },
+    {
+      "task_id": "multiplayer-action-video-simulation",
+      "title": "多玩家共享世界的视频生成",
+      "branch": "B",
+      "scope": {
+        "input": "同步玩家观察与各玩家独立动作流，以及方法实际使用的全景/位置/地图条件。",
+        "output": "多玩家互相一致的未来视图与共享状态相关输出。",
+        "setting": "并发控制、玩家身份、跨视角事件与世界状态持久性。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。Gamma-World 的 joint hub/two-to-four-player、WorldCast 的 CS2/local clients/privileged map、PAWA 的 Minecraft POV-panorama 数据与编码不同；需固定信息可见性、玩家数、数据和硬件，方可比较。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2605.28816",
+        "https://arxiv.org/abs/2610.12412",
+        "https://arxiv.org/abs/2610.20240"
+      ]
+    },
+    {
+      "task_id": "b-policy-training-environment-curricula",
+      "title": "面向策略学习的环境与课程生成",
+      "branch": "B",
+      "scope": {
+        "input": "任务意图、资产/引擎接口，预训练策略或已有训练/成功失败反馈。",
+        "output": "生成任务、训练环境和适用的监督/课程，服务后续策略学习。",
+        "setting": "propose-generate-learn、编码环境自进化与失败驱动难度适配。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。RoboGen 的 RL/planning/trajectory-optimization、SimWorld Studio 的 UE5/SimCoder/Gym co-evolution、WEDGE 的 ProcTHOR 三策略适配/HM3D 分别保留预算和收益来源。SimWorld 当前 registry 身份与链接错误待纠正，分簇不恢复其证据有效性。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2311.01455",
+        "https://arxiv.org/abs/2606.08498",
+        "https://arxiv.org/abs/2610.19420"
+      ]
+    },
+    {
+      "task_id": "b-observation-to-interactive-training-scenes",
+      "title": "观测到可交互训练场景的重建",
+      "branch": "B",
+      "scope": {
+        "input": "posed RGB-D/真实视频或单图场景观察，以及各系统所需任务/动作信息。",
+        "output": "神经或显式仿真场景、可交互对象，以及系统支持的训练数据/场景变体。",
+        "setting": "将捕获的世界转为可交互重建，服务导航、操作或物理场景使用。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。Image2Sim 的 posed RGB-D/panoramic neural navigation、SimFoundry 的 OmniGibson twins/cousins/七操作任务、Tetris3D 的单图 ComOb 物体关系/稳定性分别保留。神经导航、接触操作和静态几何重建能力不可互相代证。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2607.05765",
+        "https://arxiv.org/abs/2606.28276",
+        "https://arxiv.org/abs/2610.10539"
+      ]
+    },
+    {
+      "task_id": "b-parameterized-procedural-scene-data-generation",
+      "title": "参数化程序场景与标注生成",
+      "branch": "B",
+      "scope": {
+        "input": "程序语法/资产参数、空间布局与照明/领域随机化条件。",
+        "output": "可控 3D 场景、渲染图像和系统实际提供的几何/语义/机器人数据。",
+        "setting": "可重复的场景分布构建；室内 Blender 与农业 ROS/Isaac Sim 是领域/后端子设置。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。Infinigen Indoors 的 solver/静态图像/标注验证与 AgriGen crop/row/lighting/randomization 分开；静态生成的 current 推荐只覆盖已审子设置，不构成农业交互或接触物理的背书。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2406.11824",
+        "https://arxiv.org/abs/2609.25725"
+      ]
+    },
+    {
+      "task_id": "b-contact-aware-physical-composition",
+      "title": "接触感知的物体交互装配",
+      "branch": "B",
+      "scope": {
+        "input": "物体集合、装配/关系目标和可反馈的仿真状态。",
+        "output": "通过可执行动作形成的物体组合与接触/稳定关系。",
+        "setting": "rigid/articulated/deformable 的 hanging、settling、alignment、containment 交互装配。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。PhySGA 按物体、关系、动作原语、探索次数和 simulator 配置评价；不能与单图几何重建或整体房间生成作同协议替代。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2610.20560"
+      ]
+    },
+    {
+      "task_id": "c-visual-spatial-question-answering",
+      "title": "视觉空间关系与度量问答",
+      "branch": "C",
+      "scope": {
+        "input": "RGB/RGB-D、同场景多视角或视频与空间问题。",
+        "output": "距离、尺寸、方向、相对位置、自运动及静态/动态空间推理答案。",
+        "setting": "被动视觉空间理解；室内、道路多相机和 UAV 是域/传感器子设置。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。分别保留 SpatialBot/HiSpatial/SpatialStack 的深度来源、Ego3D/MV-RoboBench 的 nuScenes/Waymo/Argoverse 多视角、SIS-Bench UAV 自运动以及 DynThinker 静态/动态条件、骨干和数据。域/观察条件不同不可按总分排序。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2406.13642",
+        "https://microsoft.github.io/HiSpatial/",
+        "https://arxiv.org/abs/2509.06266",
+        "https://openreview.net/pdf?id=jXDZJAfRZB",
+        "https://arxiv.org/abs/2603.27437",
+        "https://arxiv.org/abs/2607.12477",
+        "https://arxiv.org/abs/2610.20598"
+      ]
+    },
+    {
+      "task_id": "c-tool-active-spatial-reasoning",
+      "title": "工具与主动观察支持的空间推理",
+      "branch": "C",
+      "scope": {
+        "input": "不完整视觉观察、空间指令/问题及可调用感知、计算或环境动作工具。",
+        "output": "证据获取/工具调用轨迹和空间答案，按原任务保留需要的操作输出。",
+        "setting": "主动补充缺失几何证据并完成空间推理；计算工具与真实环境观察/移动是不同资源。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。SpaceTools/DeSpatial 的 depth/segmentation/pose/tool budget 与 ESI-Bench active/passive/oracle、步数/图像预算分开；可调用工具不等于机器人执行已通过。"
+      },
+      "paper_urls": [
+        "https://spacetools.github.io/",
+        "https://arxiv.org/abs/2605.18746",
+        "https://arxiv.org/abs/2610.20990"
+      ]
+    },
+    {
+      "task_id": "spatially-grounded-robot-manipulation",
+      "title": "空间表征驱动的机器人操作",
+      "branch": "C",
+      "scope": {
+        "input": "视觉、语言、可选 depth/point/spatiotemporal 观察。",
+        "output": "机器人操作动作或 action chunks。",
+        "setting": "以空间/几何/时序表征改善控制；保持当前 C 主分支，不搬至 D。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。SpatialVLA、DepthVLA、ST-VLA 的 LIBERO/Simpler/RLBench/实机条件分别沿用；训练量、深度来源、形态和控制频率未统一，不作强排或替代。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2501.15830",
+        "https://arxiv.org/abs/2510.13375",
+        "https://arxiv.org/abs/2603.13788"
+      ]
+    },
+    {
+      "task_id": "c-visual-grounding-to-action-specification",
+      "title": "视觉定位到动作目标的空间接口",
+      "branch": "C",
+      "scope": {
+        "input": "机器人/多域场景图像、对象/任务指令及空间参照条件。",
+        "output": "部件/可供性定位、像素/任务点、SE(3) 目标或高层视觉轨迹。",
+        "setting": "从空间理解输出可供控制器使用的目标；不把目标准确率当低层执行成功。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。Embodied3DBench 2D/metric3D 六任务、ESPIRE localization 与 motion-planner pose acceptance、Point-It-Out S1/S2/S3 polygon/point/trace 分阶段保留；输出粒度不同不可拼接成统一成功率。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2605.29074",
+        "https://arxiv.org/abs/2603.13033",
+        "https://arxiv.org/abs/2509.25794"
+      ]
+    },
+    {
+      "task_id": "interactive-scene-error-repair",
+      "title": "多轮交互场景错误修复",
+      "branch": "C",
+      "scope": {
+        "input": "带空间错误的场景视图和修复反馈。",
+        "output": "编辑/修复命令与更新场景状态。",
+        "setting": "抽象几何、城市和室内场景的迭代空间操作。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。SpatialAct 静态诊断、repair/success、有效轮数、提前停止与 token 预算分别报告；图像问答分数不代替可执行修复。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2605.31148"
+      ]
+    },
+    {
+      "task_id": "memory-conditioned-embodied-planning",
+      "title": "历史记忆支持的具身任务规划",
+      "branch": "C",
+      "scope": {
+        "input": "当前观察、任务、工具及多模态经历历史。",
+        "output": "长程规划与工具/动作调用。",
+        "setting": "利用历史完成需多阶段推理的具身任务。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。Vesta 按原任务、记忆长度、工具和硬件预算评价；规划/真实机器人表现须保留原复审的不确定性，不由任务归并补足。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2606.20905"
+      ]
+    },
+    {
+      "task_id": "persistent-egocentric-object-memory",
+      "title": "自我视角对象位置与经历记忆",
+      "branch": "C",
+      "scope": {
+        "input": "自我视角视频中的对象观察、位姿和时间序列。",
+        "output": "持续对象位置、移动历史与上下文检索答案。",
+        "setting": "对象离屏、移动和跨场景后的可查询记忆。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。Ledger matched blind-memory、HD-EPIC/UCS-Bench/Ego4D 分别沿用；模型和历史预算不同的外部 published baseline 不构成严格替代。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2610.10538"
+      ]
+    },
+    {
+      "task_id": "d-language-conditioned-manipulation-policies",
+      "title": "目标条件的通用机器人操作策略",
+      "branch": "D",
+      "scope": {
+        "input": "机器人视觉/本体/可选3D观察、语言目标，按原设置可附一段示范或上层计划。",
+        "output": "单臂、双臂、移动/全身控制动作，以及模型实际输出的推理或语义动作中间接口。",
+        "setting": "通用目标条件机器人操作；backbone、空间编码、reasoning、single-to-bimanual、sim pretraining 与 semantic interpreter 是方法/数据子设置。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。保留 OXE/Bridge/LIBERO/Simpler/MetaWorld/RLBench 和各实机协议。TwinVLA 单臂预训练/双臂示范、StellaVLA 检索一示范、视觉灵巧仿真75h+实机1–2h/task、MolmoB0T sim-only、Gemini 全身/closed API、Show-Harness interpreter/粒度都应单独控制；不将跨形态/私有数据或推理延迟汇总成统一排名。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2405.12213",
+        "https://arxiv.org/abs/2406.09246",
+        "https://arxiv.org/abs/2410.24164",
+        "https://arxiv.org/abs/2510.01623",
+        "https://arxiv.org/abs/2503.14734",
+        "https://arxiv.org/abs/2602.00919",
+        "https://arxiv.org/abs/2511.02776",
+        "https://arxiv.org/abs/2511.05275",
+        "https://arxiv.org/abs/2605.02881",
+        "https://arxiv.org/abs/2607.06564",
+        "https://arxiv.org/abs/2608.11739",
+        "https://arxiv.org/abs/2608.11671",
+        "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+        "https://arxiv.org/abs/2608.15917",
+        "https://arxiv.org/abs/2609.10522",
+        "https://arxiv.org/abs/2603.16861",
+        "https://arxiv.org/abs/2605.30280",
+        "https://arxiv.org/abs/2606.13675"
+      ]
+    },
+    {
+      "task_id": "d-action-conditioned-robot-world-prediction",
+      "title": "动作条件的机器人世界预测",
+      "branch": "D",
+      "scope": {
+        "input": "当前/历史机器人观察、动作序列和各方法需要的深度/相机或mask条件。",
+        "output": "未来机器人场景的视频、RGB-D、mask/occupancy 或3D一致状态。",
+        "setting": "作为可学习模拟器服务操作 rollout、策略评估或后续规划；几何表示/手部形态是子设置。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。通用 RGB video、multiview RGB-D/occupancy、Mask2Real 23DoF mask bridge 分开评价；保留 DROID/RLBench/Bridge 等数据、动作时域、相机/深度假设、控制精度与计算预算。FVD、逐DoF控制和下游机器人效用互不代证。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2605.10309",
+        "https://arxiv.org/abs/2603.08546",
+        "https://arxiv.org/abs/2607.04546",
+        "https://arxiv.org/abs/2507.01099",
+        "https://arxiv.org/abs/2605.22882",
+        "https://arxiv.org/abs/2506.03079",
+        "https://arxiv.org/abs/2603.23376",
+        "https://arxiv.org/abs/2606.18375",
+        "https://arxiv.org/abs/2608.27406",
+        "https://arxiv.org/abs/2602.06949",
+        "https://arxiv.org/abs/2610.12468",
+        "https://arxiv.org/abs/2610.08780"
+      ]
+    },
+    {
+      "task_id": "d-predictive-world-action-control",
+      "title": "预测世界表征支持的机器人控制",
+      "branch": "D",
+      "scope": {
+        "input": "机器人观察/历史、语言或goal image、状态与可用动作数据/候选计划。",
+        "output": "借助预测 latent/video/metric3D 未来生成或规划的机器人动作，及模型实际输出的未来表征。",
+        "setting": "联合 world-action、潜在预测辅助策略、goal-image MPC 和异步 rolling/streaming 控制的比较框架。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。保留 action-only/world-only controlled ablations、LIBERO/RoboTwin/RoboCasa/Simpler/OGBench/实机任务、预训练和深度来源。AD-WM CEM候选/硬起点、RoboJEPA goal-image planning、UNITAS metric3D/scene-flow、Rolling/Streaming 稳态与warm-up延迟、InternW0 科研阶段进度和完整成功均分开；它们不是同一预算下的替代分数。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2603.25406",
+        "https://arxiv.org/abs/2606.12403",
+        "https://arxiv.org/abs/2605.00078",
+        "https://arxiv.org/abs/2606.02800",
+        "https://arxiv.org/abs/2607.08639",
+        "https://arxiv.org/abs/2602.10098",
+        "https://arxiv.org/abs/2608.09771",
+        "https://arxiv.org/abs/2608.09730",
+        "https://arxiv.org/abs/2608.09381",
+        "https://arxiv.org/abs/2609.07398",
+        "https://arxiv.org/abs/2609.30264",
+        "https://arxiv.org/abs/2609.30247",
+        "https://arxiv.org/abs/2609.28927",
+        "https://arxiv.org/abs/2609.27656",
+        "https://arxiv.org/abs/2610.12285",
+        "https://arxiv.org/abs/2610.12099",
+        "https://arxiv.org/abs/2610.10515",
+        "https://arxiv.org/abs/2610.21095"
+      ]
+    },
+    {
+      "task_id": "d-force-tactile-contact-rich-manipulation",
+      "title": "力觉与触觉支持的接触丰富操作",
+      "branch": "D",
+      "scope": {
+        "input": "视觉/本体及力觉/触觉历史与操作目标。",
+        "output": "对接触、力变化敏感的精细操作动作。",
+        "setting": "插接、按钮、装配与其他高精度接触操作。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。FACT FrankaFR3+Bota、100demo/task、20K LoRA、40rollout/method/task 与 Agile-WAM 不同 tactile 硬件和九仿真/五实机设置分别保留；同任务/传感器预算匹配后才可比较。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2608.01402",
+        "https://arxiv.org/abs/2609.20761"
+      ]
+    },
+    {
+      "task_id": "d-long-context-dynamic-manipulation",
+      "title": "依赖长历史的动态操作控制",
+      "branch": "D",
+      "scope": {
+        "input": "长视觉历史、任务指令与当前机器人状态。",
+        "output": "保留时序信息并响应动态场景的动作 chunks/未来预测。",
+        "setting": "长时依赖和动态操作；与普通短上下文 generalist policy 分开导航。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。Long-WAM RoboCasaGR-1 context-length controls、LIBERO-Long/RoboTwin/DOMINO、20-trial实机动态测试分别保留；固定AR初始化、历史预算和GPU，不能用更长context本身断言无退化。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2610.10528"
+      ]
+    },
+    {
+      "task_id": "d-deployment-dynamics-adaptation",
+      "title": "部署变化下的策略与动力学适配",
+      "branch": "D",
+      "scope": {
+        "input": "部署后观察/动作历史、当前机器人/环境反馈及固定初始策略/世界模型。",
+        "output": "适配后的控制动作或环境动力学 latent/预测。",
+        "setting": "硬件偏置、编码器/工作站偏移和未见质量/摩擦/规则等部署变化。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。Self-AdaptiveVLA 四实机精细任务的shift和context预算，与T2-z七仿真/四实机hidden-dynamics交互次数/冻结模型不同；恢复率、预测误差与控制成功分别报告。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2609.30092",
+        "https://arxiv.org/abs/2610.22364"
+      ]
+    },
+    {
+      "task_id": "d-iterative-world-policy-data-improvement",
+      "title": "反馈驱动的世界模型与策略改进",
+      "branch": "D",
+      "scope": {
+        "input": "现有策略/世界模型、真实或模拟 rollout、失败/可达性验证信号。",
+        "output": "修复模型、定向新增转移/合成数据和改进的控制策略。",
+        "setting": "闭环纠错、验证与数据采样的迭代学习。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。VLAW 的额外真实交互/模型修复/合成数据贡献，与WorldActionVerifier九任务/action-free-versus-labeled/cycle controls 分开；固定真实数据、奖励和标签预算，不能把额外收集量当纯方法优势。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2602.12063",
+        "https://arxiv.org/abs/2604.01985"
+      ]
+    },
+    {
+      "task_id": "d-world-action-model-design-analysis",
+      "title": "世界动作模型的设计与对照分析",
+      "branch": "D",
+      "scope": {
+        "input": "已发表系统、结构/世界表征和受控整合设计。",
+        "output": "概念分类、整合范式对照和部署取舍证据。",
+        "setting": "服务文献比较及模型设计决策，不作为可执行策略 SOTA 入口。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。WorldActionModels taxonomy 不提供控制优越性；WhatMatters 四整合范式/表示/backbone对照按原始ID/OOD/动态/少样本任务和预算读取。设计分析与可执行模型成功率分开。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2605.12090",
+        "https://arxiv.org/abs/2610.19825"
+      ]
+    },
+    {
+      "task_id": "d-physical-intervention-outcome-queries",
+      "title": "物理干预的可行性与结果查询",
+      "branch": "D",
+      "scope": {
+        "input": "可见场景、干预及隐藏物理条件假设。",
+        "output": "针对查询的可行性、结果或安全响应。",
+        "setting": "在相同外观而不同隐藏物理的条件下推断干预后果。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。PhysicallyViableWorldModels 的受控可见观察与hidden-physics variation原协议；标量/查询结果不与机器人动作成功或视频逼真度混排。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2605.30542"
+      ]
+    },
+    {
+      "task_id": "d-flow-action-feasible-set-enforcement",
+      "title": "机器人动作的硬可行域约束",
+      "branch": "D",
+      "scope": {
+        "input": "观测条件速度更新、可行初始化和明确动作约束。",
+        "output": "满足指定可行集合的可微动作更新。",
+        "setting": "对flow-matching机器人策略施加解析约束；这是安全/可行性接口，独立于一般任务完成能力。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。ActSafeGuard 的确定性step feasibility与相同集合下任务成功分开；不将关节/动作集合约束推广成完整接触或碰撞安全。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2609.11697"
+      ]
+    },
+    {
+      "task_id": "d-decentralized-multi-robot-collaboration",
+      "title": "去中心化异构机器人协作",
+      "branch": "D",
+      "scope": {
+        "input": "各机器人局部观察和标识/任务提示。",
+        "output": "独立策略副本产生的团队协调动作。",
+        "setting": "搬运、交接、测量和抬举等多机器人协作。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。CHORUS 固定团队构成/数量、局部信息和无推理通信限制；协作数据收集和4倍速视频须保留，不能与单机器人success混排。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2606.12352"
+      ]
+    },
+    {
+      "task_id": "d-driving-view-independent-geometry-forecasting",
+      "title": "道路多视角三维状态预测",
+      "branch": "D",
+      "scope": {
+        "input": "多视角驾驶视频/GFM特征与相机射线。",
+        "output": "可在不同相机查询的未来metric3D几何状态。",
+        "setting": "道路场景跨视角预测与跨数据集几何转移。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。GeoState Waymo及KITTI/nuScenes zero-shot、无逐帧对齐和相机运动条件原样保留；已审摘要不支持机器人动作干预，因此与操作世界预测分开。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2610.22343"
+      ]
+    },
+    {
+      "task_id": "e-robot-world-model-rollout-utility-evaluation",
+      "title": "机器人世界模型的执行与任务效用评估",
+      "branch": "E",
+      "scope": {
+        "input": "机器人起始观察、动作/指令、生成rollout，及套件需要的策略/执行或规划接口。",
+        "output": "动作保真、感知/失败预测、可执行性、闭环规划和任务效用的分项结果。",
+        "setting": "操作视频世界模型作为可学习模拟器的质量与使用价值；模型本体/数据基线也按原E定位参与比较。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。EWMBench/WorldArena/WorldArena2/MiraBench 原评价器与数据分别保留；World-in-World proposal/API/revision及候选预算、Ctrl-World真实/想象rollout、RoboWM视频-to-action转换误差、RBench650例/25模型/三次生成均不得混为统一成功率。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2505.09694",
+        "https://arxiv.org/abs/2602.08971",
+        "https://arxiv.org/abs/2510.18135",
+        "https://ctrl-world.github.io/",
+        "https://arxiv.org/abs/2605.17912",
+        "https://openaccess.thecvf.com/content/CVPR2026W/GigaBrainChallenge/html/Jiang_RoboWM-Bench_A_Benchmark_for_Evaluating_World_Models_in_Robotic_Manipulation_CVPRW_2026_paper.html",
+        "https://arxiv.org/abs/2605.29360",
+        "https://arxiv.org/abs/2601.15282"
+      ]
+    },
+    {
+      "task_id": "e-interactive-world-control-consistency-evaluation",
+      "title": "交互视觉世界的控制与持久一致性评估",
+      "branch": "E",
+      "scope": {
+        "input": "起始图/历史、动作/相机轨迹、生成世界rollout及协议提供的RGB-D/全景真值。",
+        "output": "动作响应、几何/外观一致性、重访记忆、对象永久性和长时交互分项。",
+        "setting": "单用户/相机驱动的视觉世界探索与重访诊断，静态/动态与不同返回路径分别评价。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。保留WorldScore3000 Static/Dynamic、iWorld4900 D/T/R/V、WBench289/1058轮、WorldMark500 WASD、WorldOlympiad三track、R2M100×3与gap/short、PersistBench360真值、Orbia720例/六返回路径/64context+16heldout。原生接口、生成预算、重建器与评价器差异不支持直接综合排名。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2504.00983",
+        "https://arxiv.org/abs/2605.03941",
+        "https://arxiv.org/abs/2605.25874",
+        "https://arxiv.org/abs/2604.21686",
+        "https://arxiv.org/abs/2606.11129",
+        "https://arxiv.org/abs/2608.27328",
+        "https://arxiv.org/abs/2609.20819",
+        "https://arxiv.org/abs/2610.20693"
+      ]
+    },
+    {
+      "task_id": "e-multiplayer-shared-world-evaluation",
+      "title": "多玩家控制下的共享世界评估",
+      "branch": "E",
+      "scope": {
+        "input": "同步双玩家历史与独立原生动作。",
+        "output": "控制隔离、并发、状态同步/持久和延迟重访的分能力得分。",
+        "setting": "Minecraft多玩家交互，一致性包含他人动作对本视角的影响。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。MultiWorldBench495配置/七suite/十能力macro，EngineGT轨迹、planned-vs-executed日志与人评粒度原样保留；不与单玩家camera一致性排名互换。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2610.11723"
+      ]
+    },
+    {
+      "task_id": "e-physical-future-outcome-evaluation",
+      "title": "物理未来与结果分布诊断",
+      "branch": "E",
+      "scope": {
+        "input": "物理场景初始图/视频、动作/条件及生成未来或反复采样。",
+        "output": "物理概念/条件正确性、认知机制、有效结果覆盖和概率校准指标。",
+        "setting": "物理视频预测与多结果分布；可复用训练/考试协议仍归此目标任务。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。WorldBench概念隔离/仿真真值、PBench域QA+质量、PAI G/C/U、PAW25calibration+25coverage/K50与敏感性、WROP150任务/1.5M训练/300考试分别保留；语义读出、物理真值与分布校准不是同一个指标。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2601.21282",
+        "https://research.nvidia.com/labs/dir/pbench/",
+        "https://arxiv.org/abs/2512.01989",
+        "https://arxiv.org/abs/2608.27345",
+        "https://arxiv.org/abs/2609.28654"
+      ]
+    },
+    {
+      "task_id": "e-embodied-visual-question-answering-evaluation",
+      "title": "具身环境与物理视觉问答评测",
+      "branch": "E",
+      "scope": {
+        "input": "视觉探索历史/主动观察或图像视频，加自然语言环境/物理问题。",
+        "output": "开放答案或多选答案，以及协议定义的分域得分。",
+        "setting": "通过问答诊断环境理解和物理知识，不以此代表执行能力。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。OpenEQA1600+/180+环境，EM-EQA/A-EQA与LLM-Match；PhysBench10002样本/四域19子类/75模型分别沿用。开放文本与多选不能直接合并准确率。"
+      },
+      "paper_urls": [
+        "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html",
+        "https://arxiv.org/abs/2501.16411"
+      ]
+    },
+    {
+      "task_id": "e-robot-task-environments-and-evaluation-harnesses",
+      "title": "机器人任务环境与评测编排基础设施",
+      "branch": "E",
+      "scope": {
+        "input": "场景/资产/机器人任务配置、模型预测接口和benchmark适配器。",
+        "output": "可执行任务环境、可复用轨迹/数字孪生和隔离评测结果/复现日志。",
+        "setting": "导航、操作及移动操作的评测支撑；场景库与模型服务器/编排器是互补接口。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。RoboVerse9:1与L0-L3、MolmoSpaces八类任务独立split、LIVIN30住宅四任务和vla-eval容器/checkpoint/底层benchmark协议分别保留；VLA harness错配身份须先纠正，场景物理可用性仍按各复审状态处理。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2504.18904",
+        "https://arxiv.org/abs/2603.18995",
+        "https://arxiv.org/abs/2602.11337",
+        "https://arxiv.org/abs/2610.12069"
+      ]
+    },
+    {
+      "task_id": "e-robot-manipulation-generalization-evaluation",
+      "title": "机器人操作泛化与鲁棒性评测",
+      "branch": "E",
+      "scope": {
+        "input": "机器人观察/指令、可复刻环境、扰动轴或等价描述与被评估策略。",
+        "output": "任务成功、ID/OOD、跨搭建差异和分条件性能/回报损失。",
+        "setting": "语言、视觉、物理、形态描述和家居任务下的控制泛化；独立于实时安全与记忆诊断。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。分别保留REPLICA复刻/示范预算，VLA-Arena L0微调/L0-L2/W/V，ColosseumV2 28任务/两形态，RoboTwinPhys13物理属性，GaugeBench物理等价认证/paired种子，BiGym2 G1共同观察/API/VR与agent预算；总分与任务覆盖范围不可强行对齐。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2605.20774",
+        "https://arxiv.org/abs/2512.22539",
+        "https://arxiv.org/abs/2605.27759",
+        "https://arxiv.org/abs/2609.26292",
+        "https://arxiv.org/abs/2610.07597",
+        "https://arxiv.org/abs/2610.07594"
+      ]
+    },
+    {
+      "task_id": "e-history-dependent-embodied-policy-evaluation",
+      "title": "依赖历史的具身策略记忆评测",
+      "branch": "E",
+      "scope": {
+        "input": "任务执行前或执行中的交互历史、当前观察及后续任务。",
+        "output": "需要记忆的动作成功率、状态更新和错误复发指标。",
+        "setting": "Counting/Permanence/Reference/Imitation及先经历后给任务的记忆依赖。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。RoboMME16任务/100-50-50固定seed/14pi0.5变体，与EmbodiedMemory Full2554四经历类别、任务揭示时机和公开执行代码覆盖分别保留；不能把历史长度本身当统一难度。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2603.04639",
+        "https://arxiv.org/abs/2609.28236"
+      ]
+    },
+    {
+      "task_id": "e-force-tactile-policy-evaluation",
+      "title": "力觉与触觉融合的操作评测",
+      "branch": "E",
+      "scope": {
+        "input": "视觉/语言/机器人状态与同步力觉/触觉历史、配对仿真实机任务。",
+        "output": "不同接触表示/融合设计的任务分项成功率与sim-real差异。",
+        "setting": "接触丰富操作中的传感器和融合设计比较。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。OpenViTac11仿真/8实机/3传感器、同pi0.5表示/注入方式，与ForceBench8仿真/1600示范/no-force+6设计/5实机分开；传感器、任务和基线预算不等价。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2610.10384",
+        "https://arxiv.org/abs/2610.19604"
+      ]
+    },
+    {
+      "task_id": "real-time-embodied-navigation-safety",
+      "title": "实时动态导航安全评测",
+      "branch": "E",
+      "scope": {
+        "input": "动态街景、路线指令和模型推理/动作延迟。",
+        "output": "任务与安全成功、主动/被动碰撞和时延。",
+        "setting": "推理时环境持续演化的具身导航安全，独立于通用policy成功率。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。RT-Safe hard288模型-路线pair，static暂停与real-time持续推进，保持原API/配置；两模式时间提示也不同，不能把全部差异归因于延迟。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2610.09294"
+      ]
+    },
+    {
+      "task_id": "e-multimodal-manipulation-demonstration-data",
+      "title": "多模态机器人操作示范数据",
+      "branch": "E",
+      "scope": {
+        "input": "机器人或手持接口记录的操作视频、运动学/末端轨迹及可用接触信号。",
+        "output": "跨形态可对齐的操作示范、同步数据标准和研究基线。",
+        "setting": "提供策略学习数据；医疗机器人与手持触觉灵巧采集为不同领域/embodiment子集。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。Open-H-Embodiment50+机构的医疗任务、视频-运动学和许可，与TacClaw VTLA接触分段/手持无机器人采集/三机器人转移分别保留；小时数、episode与frame统计不可视作同等可用或同协议质量。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2604.21017",
+        "https://arxiv.org/abs/2610.20320"
+      ]
+    },
+    {
+      "task_id": "e-egocentric-visual-motion-supervision-data",
+      "title": "自我视角视觉与运动监督数据",
+      "branch": "E",
+      "scope": {
+        "input": "真实相机轨迹/长视频、机器人外采集运动或程序化双目rig与场景。",
+        "output": "同步视觉/几何/位姿/时间标签或metric导航运动监督。",
+        "setting": "为世界预测、具身视觉与导航提供相机/运动标注数据；不是可互换的policy action数据。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。Sekai2估计位姿/重访视频/公开20h与全量统计、UNI37.2km轮式可行轨迹、BinoGen20M+双目/深度流法线分别保留；相机rig、metric真实性、许可和按world划分泄漏风险独立报告。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2608.09449",
+        "https://arxiv.org/abs/2609.20114",
+        "https://arxiv.org/abs/2609.19881"
+      ]
+    },
+    {
+      "task_id": "egocentric-floorplan-localization-evaluation",
+      "title": "自我视角到建筑平面图的定位评测",
+      "branch": "E",
+      "scope": {
+        "input": "单帧、多视角sweep或带odometry序列，加建筑平面图。",
+        "output": "平面图坐标中的相机位置/朝向与召回指标。",
+        "setting": "大建筑floorplan定位，区别于纯空间QA或视觉世界生成。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。SlugTrails三建筑六楼层/22089m²/30HzAria/激光锚点；三种感知配置分开，不能把平面定位误差当导航或重建成功。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2609.19876"
+      ]
+    },
+    {
+      "task_id": "utility-optimized-simulation-data-generation",
+      "title": "优化策略效用的仿真数据分布",
+      "branch": "E",
+      "scope": {
+        "input": "有限真实示范、可调仿真参数和proxy策略/效用反馈。",
+        "output": "优化后的仿真采样分布和sim-real共同训练结果。",
+        "setting": "在相同预算下选择更有训练价值的仿真数据。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。MetaGenSim的uniform/retrieval/expert alignment同任务/预算对照，atomic stitching与object-receptacle组合分别报告；真实rollout尚未观看的不确定性保持。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2610.19479"
+      ]
+    },
+    {
+      "task_id": "personalized-manipulation-preference-evaluation",
+      "title": "个性化操作偏好满足评测",
+      "branch": "E",
+      "scope": {
+        "input": "固定任务目标、语言偏好、观察和成对偏好示范。",
+        "output": "分别计分的任务完成与偏好满足。",
+        "setting": "任务目标不变时的个性化零样本、学习、泛化、组合和冲突。",
+        "protocol": "本簇仅作导航与比较框架；逐 paper 沿用原协议及 branch 审计中的细分设置。数据、预算、输入条件和指标未统一，不可强排或据此判定替代；current 等科学结论只覆盖各 paper 已审子范围。LIBERO-PeRM312任务/五suite原协议；偏好须可语言表达/自动评分且不改变goal，不与一般任务成功率或安全约束混为一项。"
+      },
+      "paper_urls": [
+        "https://arxiv.org/abs/2610.22372"
+      ]
+    }
+  ]
+}

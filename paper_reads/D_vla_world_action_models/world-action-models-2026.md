@@ -1,5 +1,10 @@
 # World Action Models: The Next Frontier in Embodied AI
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。保留术语和文献组织参考；主源明确是survey，不把它当成可执行世界模型或三项四分的核心方法。
+> [本次来源、分数与任务判断](../library_review.md#paper-5de78f2dccd0)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0035
 branch: D
 decision: accepted_for_registry

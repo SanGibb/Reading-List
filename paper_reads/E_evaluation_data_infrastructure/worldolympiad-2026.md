@@ -1,5 +1,10 @@
 # WorldOlympiad: Can Your World Model Survive a Triathlon?
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。三轨联合诊断可作备选，但现有精读大部分模板，本轮未完成几何重建与物理judge的验证协议核查，不能继承证据4。
+> [本次来源、分数与任务判断](../library_review.md#paper-239736ed2116)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0008
 branch: E
 decision: accepted_for_registry

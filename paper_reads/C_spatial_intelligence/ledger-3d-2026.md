@@ -1,5 +1,15 @@
 # Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。原文 matched memory-vs-blind 对照、跨来源实验、消融和置信区间可检查，持久状态与对象移动事件可直接供交互世界记忆层使用。明确外部已发表基线并非同模型预算，不能宣称全面 SOTA 替代。
+> [本次来源、分数与任务判断](../library_review.md#paper-bdb3f6717975)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 4 / 4）：聚焦持久对象记录与无视频检索，而非把多任务规划合入同一大模型；保留专项接口价值。
+> - [Tables 2-3; component ablations; Appendix matched comparisons](https://arxiv.org/html/2610.10538v1)：原文分组报告 matched memory/blind 对照和外部基线的不同输入/预算限制。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0004
 branch: C
 decision: accepted_for_registry

@@ -8,64 +8,72 @@ Maintained deep dives: 61
 
 任务归档不删除精读，也不改变该论文在其他任务中的角色。未审查条目仍列在本分支全量索引中。
 
-- [Octo](octo-2024.md) · 任务更迭：未审查
-- [OpenVLA](openvla-2024.md) · 任务更迭：未审查
-- [pi0](pi0-2024.md) · 任务更迭：未审查
-- [VLA-R1](vla-r1-2025.md) · 任务更迭：未审查
-- [World Action Models](world-action-models-2026.md) · 任务更迭：未审查
-- [Physically Viable World Models](physically-viable-world-models-2026.md) · 任务更迭：未审查
-- [GR00T N1](gr00t-n1-2025.md) · 任务更迭：未审查
-- [Green-VLA](green-vla-2026.md) · 任务更迭：未审查
-- [XR-1](xr-1-2025.md) · 任务更迭：未审查
-- [TwinVLA](twinvla-2025.md) · 任务更迭：未审查
-- [MMaDA-VLA](mmada-vla-2026.md) · 任务更迭：未审查
-- [MolmoAct2](molmoact2-2026.md) · 任务更迭：未审查
-- [Cosmos-Predict2.5: A World Foundation Model for Physical AI](cosmos-predict2-5-2026.md) · 任务更迭：未审查
-- [Interactive World Simulator for Robot Policy Training and Evaluation](interactive-world-simulator-2026.md) · 任务更迭：未审查
-- [World Pilot: Steering Vision-Language-Action Models with World-Action Priors](world-pilot-2026.md) · 任务更迭：未审查
-- [Being-H0.7: A Latent World-Action Model from Egocentric Videos](being-h0-7-2026.md) · 任务更迭：未审查
-- [Cosmos 3: Omnimodal World Models for Physical AI](cosmos-3-2026.md) · 任务更迭：未审查
-- [Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models](mask2real-wm-2026.md) · 任务更迭：未审查
-- [Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation](lift3d-vla-2026.md) · 任务更迭：未审查
-- [Native Video-Action Pretraining for Generalizable Robot Control](lingbot-va-2-2026.md) · 任务更迭：未审查
-- [VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model](vla-jepa-2026.md) · 任务更迭：未审查
-- [Geometry-aware 4D Video Generation for Robot Manipulation](geometry-aware-4d-video-generation-2025.md) · 任务更迭：未审查
-- [GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation](gem-4d-2026.md) · 任务更迭：未审查
-- [ORV: 4D Occupancy-centric Robot Video Generation](orv-2025.md) · 任务更迭：未审查
-- [G0.5: One Autoregressive Stream for Robot Reasoning and Action](g05-2026.md) · 任务更迭：未审查
-- [StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models](stellavla-2026.md) · 任务更迭：未审查
-- [SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation](slim-0-5b-2026.md) · 任务更迭：未审查
-- [World Tokens: Enhancing Embodied Policies with Training-Time World Modeling](world-tokens-2026.md) · 任务更迭：未审查
-- [JEPA-WAM: Learning Vision-Language-Action Policies with Joint-Embedding World Modeling](jepa-wam-2026.md) · 任务更迭：未审查
-- [ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment](abot-physworld-2026.md) · 任务更迭：未审查
-- [PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation](paiworld-2026.md) · 任务更迭：未审查
-- [Gemini Robotics 2](gemini-robotics-2-2026.md) · 任务更迭：未审查
-- [CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators](clap-cross-embodiment-world-models-2026.md) · 任务更迭：未审查
-- [Pre-training Visual Dexterity in Simulation](spd-2026.md) · 任务更迭：未审查
-- [Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them](fact-contact-rich-vla-2026.md) · 任务更迭：未审查
-- [CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy](chorus-2026.md) · 任务更迭：未审查
-- [VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model](vlaw-2026.md) · 任务更迭：未审查
-- [OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining](openwam-2026.md) · 任务更迭：未审查
-- [Show-Harness: Just a VLM Agent Can Play Robots](show-harness-2026.md) · 任务更迭：未审查
-- [ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies](actsafeguard-2026.md) · 任务更迭：未审查
-- [Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control](agile-wam-2026.md) · 任务更迭：未审查
-- [AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control](ad-wm-2026.md) · 任务更迭：未审查
-- [Self-Adaptive VLA for Robust Robot Deployment](self-adaptive-vla-2026.md) · 任务更迭：未审查
-- [Rolling-WAM: World Action Models with Rolling Imagination](rolling-wam-2026.md) · 任务更迭：未审查
-- [Streaming-WAM: Action-Conditioned World-Action Model for Asynchronous Robot Manipulation](streaming-wam-2026.md) · 任务更迭：未审查
-- [InternW0: A Foundational Physical World Model for Efficient Real-World Interactions](internw0-2026.md) · 任务更迭：未审查
-- [DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos](dreamdojo-2026.md) · 任务更迭：未审查
-- [MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation](molmobot-2026.md) · 任务更迭：未审查
-- [Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments](qwen-vla-2026.md) · 任务更迭：未审查
-- [Improving Robotic Generalist Policies via Flow Reversal Steering](flow-reversal-steering-2026.md) · 任务更迭：未审查
-- [World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry](world-action-verifier-2026.md) · 任务更迭：未审查
-- [DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training](dreamtrue-2026.md) · 任务更迭：未审查
-- [PLaW-VLA: Predictive Latent World Modeling for Vision-Language-Action Policies](plaw-vla-2026.md) · 任务更迭：未审查
-- [UNITAS: A 3D-Native World Action Model for Embodied Manipulation](unitas-2026.md) · 任务更迭：未审查
-- [RoboJEPA: Scaling Robotic Latent World Models](robojepa-2026.md) · 任务更迭：未审查
-- [Long-WAM: Scaling the Context of World-Action Models](long-wam-2026.md) · 任务更迭：未审查
-- [DepthWorld: 3D World Model for Robot Manipulation](depthworld-2026.md) · 任务更迭：未审查
-- [T2-z: Test-Time Optimization of Environment Latents for Robotic World Models](t2-z-2026.md) · 任务更迭：未审查
-- [GeoState: Learning View-Decoupled Geometry States for 3D World Modeling](geostate-2026.md) · 任务更迭：未审查
-- [OneWM: Can World and Action Modeling Benefit Each Other under Unified Causal Training?](onewm-2026.md) · 任务更迭：未审查
-- [What Matters for World Modeling in Vision-Language-Action Models?](what-matters-world-modeling-vla-2026.md) · 任务更迭：未审查
+本轮优先阅读：2 篇。其余保留记录见折叠区；[逐篇复审](../library_review.md)。
+
+- [Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them](fact-contact-rich-vla-2026.md) · 优先阅读 · [力觉与触觉支持的接触丰富操作：当前主推荐](../task_frontiers.md#task-d-force-tactile-contact-rich-manipulation-paper-e5b78755d707)
+- [OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining](openwam-2026.md) · 优先阅读 · [预测世界表征支持的机器人控制：当前主推荐](../task_frontiers.md#task-d-predictive-world-action-control-paper-f04c45b32889)
+
+<details>
+<summary>参考与待补证记录（59 篇）</summary>
+
+- [Octo](octo-2024.md) · 参考备选 · [目标条件的通用机器人操作策略：并列备选](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-e0d9df6cd6d5)
+- [OpenVLA](openvla-2024.md) · 参考备选 · [目标条件的通用机器人操作策略：并列备选](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-65d07da8902e)
+- [pi0](pi0-2024.md) · 参考备选 · [目标条件的通用机器人操作策略：并列备选](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-0dc8104041d5)
+- [VLA-R1](vla-r1-2025.md) · 观察名单 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-252c8cc11ef2)
+- [World Action Models](world-action-models-2026.md) · 参考备选 · [世界动作模型的设计与对照分析：未审查](../task_frontiers.md#task-d-world-action-model-design-analysis-paper-5de78f2dccd0)
+- [Physically Viable World Models](physically-viable-world-models-2026.md) · 参考备选 · [物理干预的可行性与结果查询：未审查](../task_frontiers.md#task-d-physical-intervention-outcome-queries-paper-901cf0f3a180)
+- [GR00T N1](gr00t-n1-2025.md) · 参考备选 · [目标条件的通用机器人操作策略：并列备选](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-17542f04d83e)
+- [Green-VLA](green-vla-2026.md) · 观察名单 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-cccb2ae4f926)
+- [XR-1](xr-1-2025.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-befaa45d09fe)
+- [TwinVLA](twinvla-2025.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-c5774432ceb7)
+- [MMaDA-VLA](mmada-vla-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-386973a21328)
+- [MolmoAct2](molmoact2-2026.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-cc10581f5814)
+- [Cosmos-Predict2.5: A World Foundation Model for Physical AI](cosmos-predict2-5-2026.md) · 来源待修复 · [动作条件的机器人世界预测：未审查](../task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-165b4154106d)
+- [Interactive World Simulator for Robot Policy Training and Evaluation](interactive-world-simulator-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](../task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-88f0afc84745)
+- [World Pilot: Steering Vision-Language-Action Models with World-Action Priors](world-pilot-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-528ab469d963)
+- [Being-H0.7: A Latent World-Action Model from Egocentric Videos](being-h0-7-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-384e812bea57)
+- [Cosmos 3: Omnimodal World Models for Physical AI](cosmos-3-2026.md) · 待视觉复核 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-833749dc0412)
+- [Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models](mask2real-wm-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](../task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-c0b29ee37886)
+- [Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation](lift3d-vla-2026.md) · 观察名单 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-5772f42a3e08)
+- [Native Video-Action Pretraining for Generalizable Robot Control](lingbot-va-2-2026.md) · 待视觉复核 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-240eefb29750)
+- [VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model](vla-jepa-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-40f304d60616)
+- [Geometry-aware 4D Video Generation for Robot Manipulation](geometry-aware-4d-video-generation-2025.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](../task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-d04a1a3b4819)
+- [GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation](gem-4d-2026.md) · 观察名单 · [动作条件的机器人世界预测：未审查](../task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-bbb3802cfcdd)
+- [ORV: 4D Occupancy-centric Robot Video Generation](orv-2025.md) · 观察名单 · [动作条件的机器人世界预测：未审查](../task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-549da8195ae6)
+- [G0.5: One Autoregressive Stream for Robot Reasoning and Action](g05-2026.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-9fafb4c08ef4)
+- [StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models](stellavla-2026.md) · 观察名单 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-1edcd1fe462f)
+- [SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation](slim-0-5b-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-a222b654f68c)
+- [World Tokens: Enhancing Embodied Policies with Training-Time World Modeling](world-tokens-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-cc47cf16144d)
+- [JEPA-WAM: Learning Vision-Language-Action Policies with Joint-Embedding World Modeling](jepa-wam-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-ca852ddfa04e)
+- [ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment](abot-physworld-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](../task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-ec900d7d3fdc)
+- [PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation](paiworld-2026.md) · 观察名单 · [动作条件的机器人世界预测：未审查](../task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-6b29dc9dd113)
+- [Gemini Robotics 2](gemini-robotics-2-2026.md) · 观察名单 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-42a1992e4b24)
+- [CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators](clap-cross-embodiment-world-models-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](../task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-e2c5f9f4b493)
+- [Pre-training Visual Dexterity in Simulation](spd-2026.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-da915b879b59)
+- [CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy](chorus-2026.md) · 待视觉复核 · [去中心化异构机器人协作：未审查](../task_frontiers.md#task-d-decentralized-multi-robot-collaboration-paper-2036ef164d31)
+- [VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model](vlaw-2026.md) · 待视觉复核 · [反馈驱动的世界模型与策略改进：未审查](../task_frontiers.md#task-d-iterative-world-policy-data-improvement-paper-a52c22e84f13)
+- [Show-Harness: Just a VLM Agent Can Play Robots](show-harness-2026.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-79d6ea3fdd0d)
+- [ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies](actsafeguard-2026.md) · 待视觉复核 · [机器人动作的硬可行域约束：未审查](../task_frontiers.md#task-d-flow-action-feasible-set-enforcement-paper-523157d7fa1c)
+- [Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control](agile-wam-2026.md) · 观察名单 · [力觉与触觉支持的接触丰富操作：未审查](../task_frontiers.md#task-d-force-tactile-contact-rich-manipulation-paper-df2484e85bec)
+- [AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control](ad-wm-2026.md) · 待视觉复核 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-50fd716fb213)
+- [Self-Adaptive VLA for Robust Robot Deployment](self-adaptive-vla-2026.md) · 观察名单 · [部署变化下的策略与动力学适配：未审查](../task_frontiers.md#task-d-deployment-dynamics-adaptation-paper-ca1ea0968b81)
+- [Rolling-WAM: World Action Models with Rolling Imagination](rolling-wam-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-fd40fdd41dea)
+- [Streaming-WAM: Action-Conditioned World-Action Model for Asynchronous Robot Manipulation](streaming-wam-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-28a63f20d0fb)
+- [InternW0: A Foundational Physical World Model for Efficient Real-World Interactions](internw0-2026.md) · 待视觉复核 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-8fcf299c7e6e)
+- [DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos](dreamdojo-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](../task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-b2a838cf92c4)
+- [MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation](molmobot-2026.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-58d9cc33109d)
+- [Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments](qwen-vla-2026.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-1578d582cfab)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](flow-reversal-steering-2026.md) · 观察名单 · [目标条件的通用机器人操作策略：未审查](../task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-8b55966b2464)
+- [World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry](world-action-verifier-2026.md) · 待视觉复核 · [反馈驱动的世界模型与策略改进：未审查](../task_frontiers.md#task-d-iterative-world-policy-data-improvement-paper-510dc2cd7119)
+- [DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training](dreamtrue-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](../task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-7f08d7bd7643)
+- [PLaW-VLA: Predictive Latent World Modeling for Vision-Language-Action Policies](plaw-vla-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-f9eb59e9cf3c)
+- [UNITAS: A 3D-Native World Action Model for Embodied Manipulation](unitas-2026.md) · 待视觉复核 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-dc713d46ea7d)
+- [RoboJEPA: Scaling Robotic Latent World Models](robojepa-2026.md) · 待视觉复核 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-b66fa1e99299)
+- [Long-WAM: Scaling the Context of World-Action Models](long-wam-2026.md) · 待视觉复核 · [依赖长历史的动态操作控制：未审查](../task_frontiers.md#task-d-long-context-dynamic-manipulation-paper-2794e21dec6b)
+- [DepthWorld: 3D World Model for Robot Manipulation](depthworld-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](../task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-6195c0fbc272)
+- [T2-z: Test-Time Optimization of Environment Latents for Robotic World Models](t2-z-2026.md) · 待视觉复核 · [部署变化下的策略与动力学适配：未审查](../task_frontiers.md#task-d-deployment-dynamics-adaptation-paper-31ee8c699fc4)
+- [GeoState: Learning View-Decoupled Geometry States for 3D World Modeling](geostate-2026.md) · 观察名单 · [道路多视角三维状态预测：未审查](../task_frontiers.md#task-d-driving-view-independent-geometry-forecasting-paper-44a91b7395e1)
+- [OneWM: Can World and Action Modeling Benefit Each Other under Unified Causal Training?](onewm-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](../task_frontiers.md#task-d-predictive-world-action-control-paper-946c5529ad16)
+- [What Matters for World Modeling in Vision-Language-Action Models?](what-matters-world-modeling-vla-2026.md) · 待视觉复核 · [世界动作模型的设计与对照分析：未审查](../task_frontiers.md#task-d-world-action-model-design-analysis-paper-a686afe7b03f)
+
+</details>

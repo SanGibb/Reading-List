@@ -1,5 +1,10 @@
 # BinoGen: Scaling egocentric binocular data for embodied visual perception and learning
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。可控rig合成数据对perception有支撑，但对交互世界的直接接口不足，公开generator/data也未确认，不因20M量级自动给impact4。
+> [本次来源、分数与任务判断](../library_review.md#paper-71645e574a74)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0007
 branch: E
 decision: accepted_for_registry

@@ -1,5 +1,10 @@
 # AutoRSR: Automated Real-to-Sim-to-Real Data Generation for Scalable Robot Learning
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Metric registration and reduced human data effort form a concrete system contribution, but three source-reported successes do not establish asset/collision quality or unedited robot behavior.
+> [本次来源、分数与任务判断](../library_review.md#paper-c8c1b0f51c7e)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0002
 branch: A
 decision: accepted_for_registry

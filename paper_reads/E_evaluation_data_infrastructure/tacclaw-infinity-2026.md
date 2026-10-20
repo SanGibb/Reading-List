@@ -1,5 +1,10 @@
 # TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。大规模VTLA、质量过滤及无目标机器人采集有核心潜力，但数据/许可尚未确证，且跨三机器人迁移是其核心效用，不能用static论文代替时序检查。
+> [本次来源、分数与任务判断](../library_review.md#paper-8f00ff5a9d8d)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0015
 branch: E
 decision: accepted_for_registry

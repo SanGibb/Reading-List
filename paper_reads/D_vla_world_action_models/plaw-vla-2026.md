@@ -1,5 +1,10 @@
 # PLaW-VLA: Predictive Latent World Modeling for Vision-Language-Action Policies
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。prediction-oriented latent和structured causal attention有清楚方法，但最接近latent对照只+1.77pp；1/19成本对pixel WAM不是同表示/同资源优势。
+> [本次来源、分数与任务判断](../library_review.md#paper-f9eb59e9cf3c)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0006
 branch: D
 decision: accepted_for_registry

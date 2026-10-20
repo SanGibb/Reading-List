@@ -1,5 +1,15 @@
 # RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。同初态与action API的static/real-time拆分揭示冻结模拟器隐藏的风险，具体计时/碰撞接口可直接用于运行时评价。
+> [本次来源、分数与任务判断](../library_review.md#paper-2698d471c63b)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 4 / 4）：VLA-Arena静态安全轴之外显式计入推理时环境推进；独立评价轴并不替代其任务安全约束。
+> - [Sec.3.3; Appendix A.2 timing prompts; Appendix B.4/Table11](https://arxiv.org/html/2610.09294v1)：288 matched model-route pairs；static91.3/19.8 vs realtime94.1/0.7任务/安全成功；碰撞3.31→40.68；两模式timing instructions不同，差异非纯延迟因果。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0014
 branch: E
 decision: accepted_for_registry

@@ -1,5 +1,10 @@
 # Can 4D Foundation Models Remember? (PersistBench)
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。全景真值补离屏对象评价盲区，值得保留；本轮只摘要和旧精读，具体对象关联、样本数和协议误差未核到，尚不足核心证据4。
+> [本次来源、分数与任务判断](../library_review.md#paper-47400fc9423c)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0001
 branch: E
 decision: accepted_for_registry

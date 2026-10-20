@@ -1,5 +1,15 @@
 # Spatial Reasoning with Vision-Language Models in Ego-Centric Multi-View Scenes
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。原文明确户外多相机数据来源、人工 QA 质量控制和分来源评测；可直接用来验证生成/重建世界的跨视角关系。数据域与室内操作诊断互补，不能当作后者继任。
+> [本次来源、分数与任务判断](../library_review.md#paper-0210d3576498)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 4 / 4）：增加户外自中心多相机验证域及认知地图后训练，不只是重命名既有室内 QA。
+> - [Benchmark construction; A.7 Results of different Source Datasets](https://arxiv.org/html/2509.06266v2)：数据由 nuScenes、Waymo、Argoverse 验证集构建，原文有分来源结果。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0029
 branch: C
 decision: accepted_for_registry

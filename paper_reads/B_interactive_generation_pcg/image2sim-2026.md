@@ -1,5 +1,10 @@
 # Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Real-image neural simulation plus action-aligned navigation data is a direct reusable data-engine capability. Rendering consistency, executable motion and real transfer remain uninspected visually.
+> [本次来源、分数与任务判断](../library_review.md#paper-e00e335a8cb0)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0001
 branch: B
 decision: accepted_for_registry

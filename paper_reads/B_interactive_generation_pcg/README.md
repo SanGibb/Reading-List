@@ -8,27 +8,35 @@ Maintained deep dives: 24
 
 任务归档不删除精读，也不改变该论文在其他任务中的角色。未审查条目仍列在本分支全量索引中。
 
-- [PhyScene](physcene-2024.md) · 任务更迭：未审查
-- [RoboGen](robogen-2024.md) · 任务更迭：未审查
-- [Steerable Scene Generation](steerable-scene-generation-2025.md) · 任务更迭：未审查
-- [SAGE](sage-2026.md) · 任务更迭：未审查
-- [EmbodiedGen](embodiedgen-2025.md) · [EmbodiedGen 系列可执行世界生成：未审查](../task_frontiers.md#task-embodiedgen-executable-world-generation-paper-f09de6db76bc)
-- [Holodeck](holodeck-2024.md) · 任务更迭：未审查
-- [Infinigen Indoors](infinigen-indoors-2024.md) · 任务更迭：未审查
-- [SceneSmith](scenesmith-2026.md) · 任务更迭：未审查
-- [SceneFoundry](scenefoundry-2026.md) · 任务更迭：未审查
-- [HY-World 2.0](hy-world-2-2026.md) · 任务更迭：未审查
-- [SimWorld Studio: Generation and Evolution of Custom Embodied Agent Learning Environments](simworld-studio-2026.md) · 任务更迭：未审查
-- [EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](embodiedgen-v2-2026.md) · [EmbodiedGen 系列可执行世界生成：未审查](../task_frontiers.md#task-embodiedgen-executable-world-generation-paper-2a2f644e4de4)
-- [Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator](image2sim-2026.md) · 任务更迭：未审查
-- [WonderWorld: Interactive 3D Scene Generation from a Single Image](wonderworld-2024.md) · 任务更迭：未审查
-- [SpatialCrafter: Single Image World Modeling with Generative 3D Proxies](spatialcrafter-2026.md) · 任务更迭：未审查
-- [Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players](gamma-world-2026.md) · 任务更迭：未审查
-- [Astronex-World 1.0: Real-Time Interactive World Model Foundation](astronex-world-2026.md) · 任务更迭：未审查
-- [AgriGen: Large-Scale Scene Generation Framework for Photorealistic Agricultural Robotics Simulation](agrigen-2026.md) · 任务更迭：未审查
-- [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](simfoundry-2026.md) · 任务更迭：未审查
-- [WorldCast: Distributed Multiplayer World Models](worldcast-2026.md) · 任务更迭：未审查
-- [Tetris3D: 3D Scene Generation With Objects That Fit Together](tetris3d-2026.md) · 任务更迭：未审查
-- [PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition](physga-2026.md) · 任务更迭：未审查
-- [From Failures to Learnable Worlds: Policy-Conditioned Environment Generation for Navigation Agents](wedge-2026.md) · 任务更迭：未审查
-- [PAWA: Panoramic Action-conditioned World Modeling for Multiple Agents](pawa-2026.md) · 任务更迭：未审查
+本轮优先阅读：1 篇。其余保留记录见折叠区；[逐篇复审](../library_review.md)。
+
+- [Infinigen Indoors](infinigen-indoors-2024.md) · 优先阅读 · [参数化程序场景与标注生成：当前主推荐](../task_frontiers.md#task-b-parameterized-procedural-scene-data-generation-paper-d3d550e4e13f)
+
+<details>
+<summary>参考与待补证记录（23 篇）</summary>
+
+- [PhyScene](physcene-2024.md) · 待视觉复核 · [目标条件的可仿真室内世界生成：未审查](../task_frontiers.md#task-embodiedgen-executable-world-generation-paper-a79d14ec6c4b)
+- [RoboGen](robogen-2024.md) · 待视觉复核 · [面向策略学习的环境与课程生成：未审查](../task_frontiers.md#task-b-policy-training-environment-curricula-paper-f1e310971ad6)
+- [Steerable Scene Generation](steerable-scene-generation-2025.md) · 待视觉复核 · [目标条件的可仿真室内世界生成：未审查](../task_frontiers.md#task-embodiedgen-executable-world-generation-paper-0b2abe917c30)
+- [SAGE](sage-2026.md) · 待视觉复核 · [目标条件的可仿真室内世界生成：未审查](../task_frontiers.md#task-embodiedgen-executable-world-generation-paper-a1ef6e78fcec)
+- [EmbodiedGen](embodiedgen-2025.md) · 参考备选 · [目标条件的可仿真室内世界生成：未审查](../task_frontiers.md#task-embodiedgen-executable-world-generation-paper-f09de6db76bc)
+- [Holodeck](holodeck-2024.md) · 待视觉复核 · [目标条件的可仿真室内世界生成：未审查](../task_frontiers.md#task-embodiedgen-executable-world-generation-paper-f0455640c347)
+- [SceneSmith](scenesmith-2026.md) · 待视觉复核 · [目标条件的可仿真室内世界生成：未审查](../task_frontiers.md#task-embodiedgen-executable-world-generation-paper-025b70b2d602)
+- [SceneFoundry](scenefoundry-2026.md) · 参考备选 · [目标条件的可仿真室内世界生成：未审查](../task_frontiers.md#task-embodiedgen-executable-world-generation-paper-c7bb0e2e6638)
+- [HY-World 2.0](hy-world-2-2026.md) · 待视觉复核 · [相机与动作控制的视觉世界生成：未审查](../task_frontiers.md#task-b-camera-action-controlled-visual-world-generation-paper-fb34e7c4d9d7)
+- [SimWorld Studio: Generation and Evolution of Custom Embodied Agent Learning Environments](simworld-studio-2026.md) · 来源待修复 · [面向策略学习的环境与课程生成：未审查](../task_frontiers.md#task-b-policy-training-environment-curricula-paper-d1de84a3bc9b)
+- [EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](embodiedgen-v2-2026.md) · 待视觉复核 · [目标条件的可仿真室内世界生成：未审查](../task_frontiers.md#task-embodiedgen-executable-world-generation-paper-2a2f644e4de4)
+- [Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator](image2sim-2026.md) · 待视觉复核 · [观测到可交互训练场景的重建：未审查](../task_frontiers.md#task-b-observation-to-interactive-training-scenes-paper-e00e335a8cb0)
+- [WonderWorld: Interactive 3D Scene Generation from a Single Image](wonderworld-2024.md) · 待视觉复核 · [相机与动作控制的视觉世界生成：未审查](../task_frontiers.md#task-b-camera-action-controlled-visual-world-generation-paper-f2a5bee38432)
+- [SpatialCrafter: Single Image World Modeling with Generative 3D Proxies](spatialcrafter-2026.md) · 待视觉复核 · [相机与动作控制的视觉世界生成：未审查](../task_frontiers.md#task-b-camera-action-controlled-visual-world-generation-paper-8d22ee24992d)
+- [Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players](gamma-world-2026.md) · 待视觉复核 · [多玩家共享世界的视频生成：未审查](../task_frontiers.md#task-multiplayer-action-video-simulation-paper-dd563d0a7a59)
+- [Astronex-World 1.0: Real-Time Interactive World Model Foundation](astronex-world-2026.md) · 待视觉复核 · [相机与动作控制的视觉世界生成：未审查](../task_frontiers.md#task-b-camera-action-controlled-visual-world-generation-paper-60666a1018c8)
+- [AgriGen: Large-Scale Scene Generation Framework for Photorealistic Agricultural Robotics Simulation](agrigen-2026.md) · 观察名单 · [参数化程序场景与标注生成：未审查](../task_frontiers.md#task-b-parameterized-procedural-scene-data-generation-paper-a3a413137f1d)
+- [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](simfoundry-2026.md) · 待视觉复核 · [观测到可交互训练场景的重建：未审查](../task_frontiers.md#task-b-observation-to-interactive-training-scenes-paper-4af5267aca5a)
+- [WorldCast: Distributed Multiplayer World Models](worldcast-2026.md) · 待视觉复核 · [多玩家共享世界的视频生成：未审查](../task_frontiers.md#task-multiplayer-action-video-simulation-paper-0e0b8dce565d)
+- [Tetris3D: 3D Scene Generation With Objects That Fit Together](tetris3d-2026.md) · 待视觉复核 · [观测到可交互训练场景的重建：未审查](../task_frontiers.md#task-b-observation-to-interactive-training-scenes-paper-a1e358fdaed8)
+- [PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition](physga-2026.md) · 待视觉复核 · [接触感知的物体交互装配：未审查](../task_frontiers.md#task-b-contact-aware-physical-composition-paper-6b1b54d1cd59)
+- [From Failures to Learnable Worlds: Policy-Conditioned Environment Generation for Navigation Agents](wedge-2026.md) · 待视觉复核 · [面向策略学习的环境与课程生成：未审查](../task_frontiers.md#task-b-policy-training-environment-curricula-paper-f1b5ff16a834)
+- [PAWA: Panoramic Action-conditioned World Modeling for Multiple Agents](pawa-2026.md) · 待视觉复核 · [多玩家共享世界的视频生成：未审查](../task_frontiers.md#task-multiplayer-action-video-simulation-paper-8684379f6590)
+
+</details>

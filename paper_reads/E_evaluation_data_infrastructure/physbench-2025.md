@@ -1,5 +1,10 @@
 # PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。物理理解是动作前置层，10k/75模型有研究基础价值；与可执行交互生成仍有距离，不因通用字段列表把相关性抬到4。
+> [本次来源、分数与任务判断](../library_review.md#paper-5b5b8ef74053)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0007
 branch: E
 decision: accepted_for_registry

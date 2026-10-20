@@ -1,5 +1,15 @@
 # WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。触觉、在线RL与跨模拟/实机三轴评价有明确任务、指标表及接口，是有实质增量的评价基础；本判断不宣称模型demo已通过。
+> [本次来源、分数与任务判断](../library_review.md#paper-3456b26db7c3)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：较1.0新增visuotactile与interactive RL及AgileX ALOHA实机；两者保留，未证明旧协议被无损覆盖。
+> - [Overview; Visuotactile Evaluation table; Evaluation as RL Environments; Sim-to-Real Evaluation table](https://world-arena.ai/)：Insert HDMI/Lift Bottle触觉预测PSNR/SSIM与task success分开；Click Bell/Adjust Bottle在三奖励器下评价RL；RoboTwin2/LIBERO/ALOHA按data-engine/action-planner分列。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0048
 branch: E
 decision: accepted_for_registry

@@ -1,5 +1,10 @@
 # RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。可执行性度量直接符合项目，但核心依赖视频到动作和物理仿真执行；旧benchmark豁免没有实际动作/接触观察，需时序证据后再推荐。
+> [本次来源、分数与任务判断](../library_review.md#paper-2da7665bdb2f)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0001
 branch: E
 decision: accepted_for_registry

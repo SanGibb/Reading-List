@@ -1,5 +1,10 @@
 # MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。物理/动作/乐观偏差三层诊断比纯视觉更直接，但未核到完整读出与人标协议/发布可用性；保留专门评价备选。
+> [本次来源、分数与任务判断](../library_review.md#paper-8cc43e40bb1f)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0004
 branch: E
 decision: accepted_for_registry

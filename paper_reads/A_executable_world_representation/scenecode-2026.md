@@ -1,5 +1,10 @@
 # SceneCode: Editable Indoor Scene Generation using Executable World Programs
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。The current primary source gives a directly reusable program-to-simulator contract, but the legacy title and method summary are stale. Asset articulation, execution-guided repairs and downstream interaction quality need actual inspection.
+> [本次来源、分数与任务判断](../library_review.md#paper-3b126b61fc91)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0053
 branch: A
 decision: accepted_for_registry

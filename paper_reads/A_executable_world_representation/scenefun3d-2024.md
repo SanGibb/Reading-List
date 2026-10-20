@@ -1,5 +1,19 @@
 # SceneFun3D: Fine-Grained Functionality and Affordance Understanding in 3D Scenes
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。Official annotations, released evaluator and explicit AP protocol form a reusable supervision/evaluation foundation. Recommend the dataset and affordance task interface, not an unverified robot-execution claim.
+> [本次来源、分数与任务判断](../library_review.md#paper-392dc64bfbe5)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：Unlike FunArt's predicted articulation graph, this is real-scene functional-element supervision and its evaluator; neither replaces the other.
+> - [Project page, Abstract and three task definitions](https://scenefun3d.github.io/)：The dataset has 710 scenes, over14.8K interaction annotations and three task definitions.（verified）。
+> - [Functional interactive elements; Language task descriptions; Motion annotations](https://scenefun3d.github.io/documentation/dataset/annotations/)：Official JSON schemas expose point indices, affordance labels, description-to-element links and motion type/direction/origin. Transparent/reflective excluded geometry is explicitly documented.（verified）。
+> - [Task description; Local evaluation; Evaluation metrics](https://scenefun3d.github.io/documentation/benchmarks/task1/)：Faro scan/RGB-D input, vertex-aligned masks and nine classes; AP25/AP50 and averaged AP; validation scripts and official hidden-test submissions.（verified）。
+> - [Evaluation guidelines](https://scenefun3d.github.io/documentation/benchmarks/guidelines/)：Current benchmark uses dataset v0.2.0; test ground truth is hidden and only test submissions count toward official ranking.（verified）。
+> - [Task 3: Motion estimation](https://scenefun3d.github.io/documentation/benchmarks/task3/)：The online motion-estimation documentation currently says Coming soon; the priority recommendation does not assume this track is operational.（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0001
 branch: A. Executable World Representation
 decision: accepted_for_registry

@@ -1,5 +1,10 @@
 # RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Editable solver/contact choices and force-feedback calibration expose a specific reusable real-to-sim interface. Actual contact fidelity, calibration failures and agentic Real2Sim2Real sequences were not inspected.
+> [本次来源、分数与任务判断](../library_review.md#paper-2fbe111cb39f)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0001
 branch: A
 decision: accepted_for_registry

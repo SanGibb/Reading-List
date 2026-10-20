@@ -1,5 +1,10 @@
 # InternW0: A Foundational Physical World Model for Efficient Real-World Interactions
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。异步KV复用加force/tactile及真实科学workflow是可区分系统候选；本轮只核实主源的约7200小时和15/5stage范围，尚未观看长程操作或确认release。
+> [本次来源、分数与任务判断](../library_review.md#paper-8fcf299c7e6e)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0007
 branch: D
 decision: accepted_for_registry

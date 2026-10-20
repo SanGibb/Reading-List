@@ -1,5 +1,10 @@
 # DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。44k小时人类video、latent proxy actions和实时distillation提供可复用基础能力，主源能核实10.81FPS及planning/evaluation用途；本轮未观看rollout和policy-in-loop。
+> [本次来源、分数与任务判断](../library_review.md#paper-b2a838cf92c4)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0001
 branch: D
 decision: accepted_for_registry

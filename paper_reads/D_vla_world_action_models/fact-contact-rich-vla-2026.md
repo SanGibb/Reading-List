@@ -1,5 +1,16 @@
 # Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。已核查官方matched训练与每任务结果，并实际查看Plug/FACT的成功及失败双视角时序。它把接触失败拆为精度/受力并提供无新增数据的噪声调度和force conditioning，直接用于接触任务验证。
+> [本次来源、分数与任务判断](../library_review.md#paper-e5b78755d707)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 4 / 4）：相对Agile-WAM的tactile未来latent，此法重在低噪动作学习与force时序调制诊断；本轮没有相同传感器的二者直接比较。平均66%不意味着每任务无退化：Board基线100%对FACT90%。
+> - [Title; Abstract (method and evaluation paragraphs); submission history / Comments when present](https://arxiv.org/abs/2608.01402)：Abstract identifies precision and force failure modes; FACT increases low-noise sampling and adds structured force conditioning, reporting 66% versus 41% average success across five tasks and almost 2,500 real-world rollouts.（verified）。
+> - [Approach: Precision / Force; Results per-task table and caption; Rollout Gallery](https://stanford-iprl-lab.github.io/fact/)：All methods use pi0.5 LoRA,100 demonstrations/task,20K steps and40 trials/method/task. FACT's average is66.0 versus40.5 ForceVLA; Board regresses100→90 relative to pi0.5. Thus the paper does not establish no-material-regression succession.（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 ## Source Links
 
 - Paper: https://arxiv.org/abs/2608.01402

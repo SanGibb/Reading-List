@@ -1,5 +1,10 @@
 # Gemini Robotics 2
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。官方发布可核查整身控制/设备适配，但VLA仅early-access、训练和baseline控制不公开。作为封闭产品能力观察而非当前可复用机器人基线。
+> [本次来源、分数与任务判断](../library_review.md#paper-42a1992e4b24)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0001
 branch: D
 decision: accepted_for_registry

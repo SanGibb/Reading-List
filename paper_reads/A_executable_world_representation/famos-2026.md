@@ -1,5 +1,10 @@
 # FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Variable-state articulation recovery and procedural motion supervision directly supply executable joints. Joint-motion reconstruction was not re-inspected; generation/recovery quality cannot inherit the old unlocated video assertion.
+> [本次来源、分数与任务判断](../library_review.md#paper-69916d9d7c46)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0002
 branch: A
 decision: accepted_for_registry

@@ -1,5 +1,15 @@
 # VLA-Arena: An Open-Source Framework for Benchmarking Vision-Language-Action Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。L0限定训练、三难度和正交语言/视觉扰动提供可直接复用的任务编排与安全度量，官方协议/工具支持具体用途。
+> [本次来源、分数与任务判断](../library_review.md#paper-ceadedb660d8)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 4 / 4）：与Colosseum的GPU/形态ID-OOD重点不同，VLA-Arena保留安全代价、难度阶梯和正交W/V诊断。
+> - [Abstract; VLA-Arena Model Performance Leaderboard legend](https://vla-arena.github.io/)：170任务11suite、L0-L2且只微调L0；W0-W4/V0-V4可叠加；安全同时报SR和Cumulative Cost。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0002
 branch: E
 decision: accepted_for_registry

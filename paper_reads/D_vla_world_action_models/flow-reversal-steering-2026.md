@@ -1,5 +1,10 @@
 # Improving Robotic Generalist Policies via Flow Reversal Steering
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。flow反演把合理粗action映射已有policy模式，适合后续适配；但最大95pp/一分钟是特定case，尚无全任务覆盖和guide成本证据支撑核心四分。
+> [本次来源、分数与任务判断](../library_review.md#paper-8b55966b2464)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0007
 branch: D
 decision: accepted_for_registry

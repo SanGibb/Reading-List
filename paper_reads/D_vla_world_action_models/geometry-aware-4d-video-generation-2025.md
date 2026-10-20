@@ -1,5 +1,10 @@
 # Geometry-aware 4D Video Generation for Robot Manipulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。跨视角pointmap训练并从未来RGB-D恢复6DoF轨迹，提供具体几何到执行路径；主源确认ICLR2026。尚未检查生成时序与恢复轨迹的可用性。
+> [本次来源、分数与任务判断](../library_review.md#paper-d04a1a3b4819)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0004
 branch: D
 decision: accepted_for_registry

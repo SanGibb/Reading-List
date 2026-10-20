@@ -1,5 +1,10 @@
 # MolmoAct2: Action Reasoning Models for Real-world Deployment
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。公开推理骨干、动作tokenizer、720小时双臂数据及连续动作expert是直接可复用的实质栈；本轮主源证实这些释放声明，尚未独立查完整artifact和观看部署时序。
+> [本次来源、分数与任务判断](../library_review.md#paper-cc10581f5814)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0047
 branch: D
 decision: accepted_for_registry

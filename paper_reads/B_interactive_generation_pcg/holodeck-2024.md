@@ -1,5 +1,10 @@
 # Holodeck: Language Guided Generation of 3D Embodied AI Environments
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Open-ended language layouts with downstream navigation define a reusable environment baseline. Need actual generated-scene navigation and placement-failure inspection before re-endorsing current.
+> [本次来源、分数与任务判断](../library_review.md#paper-f0455640c347)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0007
 branch: B. Interactive Generation and PCG
 decision: accepted_for_registry

@@ -1,5 +1,10 @@
 # Interactive World Simulator for Robot Policy Training and Evaluation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。将world model放入闭环训练/评估且有单4090的15FPS/10分钟声明，直接支撑本repo生成环境用途。主源文字已核实；本轮未实际操控在线demo或检查连续长时序。
+> [本次来源、分数与任务判断](../library_review.md#paper-88f0afc84745)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0003
 branch: D
 decision: accepted_for_registry

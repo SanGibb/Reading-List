@@ -1,5 +1,15 @@
 # iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。统一动作空间、六任务与公开轨迹/metadata/评价入口可直接接生成世界评测，当前代码已补齐官网Coming Soon的部分不确定性。
+> [本次来源、分数与任务判断](../library_review.md#paper-4987d50c2f4f)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：相较WBench侧重多轮语义交互，iWorld保留D/T/R/V控制、动作难度阶梯、轨迹与memory任务。
+> - [Repository Structure; Dataset Download; Evaluation](https://github.com/EmbodiedCity/iWorld-Bench)：官方README提供action-control、memory和camera-following运行入口、metadata/相机轨迹和metric文档，明确外部ViPE/VBench依赖。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0005
 branch: E
 decision: accepted_for_registry

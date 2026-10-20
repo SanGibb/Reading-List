@@ -8,50 +8,58 @@ Maintained deep dives: 47
 
 任务归档不删除精读，也不改变该论文在其他任务中的角色。未审查条目仍列在本分支全量索引中。
 
-- [EWMBench](ewmbench-2025.md) · 任务更迭：未审查
-- [WorldScore](worldscore-2025.md) · 任务更迭：未审查
-- [RoboVerse](roboverse-2025.md) · 任务更迭：未审查
-- [OpenEQA](openeqa-2024.md) · 任务更迭：未审查
-- [WorldArena](worldarena-2026.md) · 任务更迭：未审查
-- [World-in-World](world-in-world-2025.md) · 任务更迭：未审查
-- [Ctrl-World](ctrl-world-2026.md) · 任务更迭：未审查
-- [WorldArena 2.0](worldarena-2-2026.md) · 任务更迭：未审查
-- [A Unified Evaluation Harness for Vision-Language-Action Models](vla-eval-2026.md) · 任务更迭：未审查
-- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](vla-replica-2026.md) · 任务更迭：未审查
-- [RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation](robowm-bench-2026.md) · 任务更迭：未审查
-- [VLA-Arena: An Open-Source Framework for Benchmarking Vision-Language-Action Models](vla-arena-2026.md) · 任务更迭：未审查
-- [Colosseum V2: Benchmarking Generalization for Vision Language Action Models](colosseum-v2-2026.md) · 任务更迭：未审查
-- [MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models](mirabench-2026.md) · 任务更迭：未审查
-- [iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework](iworld-bench-2026.md) · 任务更迭：未审查
-- [WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation](wbench-2026.md) · 任务更迭：未审查
-- [WorldMark: A Unified Benchmark Suite for Interactive Video World Models](worldmark-2026.md) · 任务更迭：未审查
-- [WorldOlympiad: Can Your World Model Survive a Triathlon?](worldolympiad-2026.md) · 任务更迭：未审查
-- [WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models](worldbench-2026.md) · 任务更迭：未审查
-- [Rethinking Video Generation Model for the Embodied World](rethinking-embodied-video-generation-2026.md) · 任务更迭：未审查
-- [MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation](molmospaces-2026.md) · 任务更迭：未审查
-- [Sekai2: From World Exploration to Interactive World Modeling](sekai2-2026.md) · 任务更迭：未审查
-- [PBench: A Physical AI Benchmark for World Models](pbench-2025.md) · 任务更迭：未审查
-- [PAI-Bench: A Comprehensive Benchmark For Physical AI](pai-bench-2025.md) · 任务更迭：未审查
-- [PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding](physbench-2025.md) · 任务更迭：未审查
-- [PAWBench: How Far Are We from Probabilistically Aligned World Modeling?](pawbench-2026.md) · 任务更迭：未审查
-- [R2M-Bench: Evaluating Revisit Memory via Relative Consistency in Interactive Video World Models](r2m-bench-2026.md) · 任务更迭：未审查
-- [RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies](robomme-2026.md) · 任务更迭：未审查
-- [Can 4D Foundation Models Remember?](persistbench-2026.md) · 任务更迭：未审查
-- [Universal Navigation Interface: Robot-Free Data for Wheeled Robot Navigation](universal-navigation-interface-2026.md) · 任务更迭：未审查
-- [BinoGen: Scaling egocentric binocular data for embodied visual perception and learning](binogen-2026.md) · 任务更迭：未审查
-- [SlugTrails: An Egocentric Benchmark for Floor Plan Localization in Large Buildings](slugtrails-2026.md) · 任务更迭：未审查
-- [EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks](embodiedmemory-bench-2026.md) · 任务更迭：未审查
-- [Training Object Permanence in World Models](wrop-object-permanence-2026.md) · 任务更迭：未审查
-- [RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?](robotwin-phys-2026.md) · 任务更迭：未审查
-- [Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics](open-h-embodiment-2026.md) · 任务更迭：未审查
-- [LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes](livin-2026.md) · 任务更迭：未审查
-- [MultiWorldBench: Do Independently Controlled Views Describe One Shared World?](multiworldbench-2026.md) · 任务更迭：未审查
-- [OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework](openvitac-2026.md) · 任务更迭：未审查
-- [RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment](rt-safe-2026.md) · 任务更迭：未审查
-- [The Robot Is Not Its Description: GaugeBench for Representation Robustness in Morphology-Aware Policies](gaugebench-2026.md) · 任务更迭：未审查
-- [BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](bigym-2-2026.md) · 任务更迭：未审查
-- [LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation](libero-perm-2026.md) · 任务更迭：未审查
-- [Orbia: Do Generated Videos Form a Consistent 3D World?](orbia-2026.md) · 任务更迭：未审查
-- [ForceBench: Benchmarking Force Integration for Robotic Manipulation](forcebench-2026.md) · 任务更迭：未审查
-- [TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation](tacclaw-infinity-2026.md) · 任务更迭：未审查
-- [Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training](active-generative-simulation-2026.md) · 任务更迭：未审查
+本轮优先阅读：15 篇。其余保留记录见折叠区；[逐篇复审](../library_review.md)。
+
+- [WorldScore](worldscore-2025.md) · 优先阅读 · [交互视觉世界的控制与持久一致性评估：当前主推荐](../task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-f9a5feffb91e)
+- [RoboVerse](roboverse-2025.md) · 优先阅读 · [机器人任务环境与评测编排基础设施：当前主推荐](../task_frontiers.md#task-e-robot-task-environments-and-evaluation-harnesses-paper-071338bb2075)
+- [World-in-World](world-in-world-2025.md) · 优先阅读 · [机器人世界模型的执行与任务效用评估：当前主推荐](../task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-34e5a79e4acf)
+- [WorldArena 2.0](worldarena-2-2026.md) · 优先阅读 · [机器人世界模型的执行与任务效用评估：当前主推荐](../task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-3456b26db7c3)
+- [VLA-Arena: An Open-Source Framework for Benchmarking Vision-Language-Action Models](vla-arena-2026.md) · 优先阅读 · [机器人操作泛化与鲁棒性评测：当前主推荐](../task_frontiers.md#task-e-robot-manipulation-generalization-evaluation-paper-ceadedb660d8)
+- [iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework](iworld-bench-2026.md) · 优先阅读 · [交互视觉世界的控制与持久一致性评估：当前主推荐](../task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-4987d50c2f4f)
+- [WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation](wbench-2026.md) · 优先阅读 · [交互视觉世界的控制与持久一致性评估：当前主推荐](../task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-900b967474a4)
+- [Rethinking Video Generation Model for the Embodied World](rethinking-embodied-video-generation-2026.md) · 优先阅读 · [机器人世界模型的执行与任务效用评估：当前主推荐](../task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-c87afd2eb52e)
+- [MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation](molmospaces-2026.md) · 优先阅读 · [机器人任务环境与评测编排基础设施：当前主推荐](../task_frontiers.md#task-e-robot-task-environments-and-evaluation-harnesses-paper-cf1da4010d62)
+- [PAWBench: How Far Are We from Probabilistically Aligned World Modeling?](pawbench-2026.md) · 优先阅读 · [物理未来与结果分布诊断：当前主推荐](../task_frontiers.md#task-e-physical-future-outcome-evaluation-paper-cb927541f0ff)
+- [RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies](robomme-2026.md) · 优先阅读 · [依赖历史的具身策略记忆评测：当前主推荐](../task_frontiers.md#task-e-history-dependent-embodied-policy-evaluation-paper-291babecd8e3)
+- [MultiWorldBench: Do Independently Controlled Views Describe One Shared World?](multiworldbench-2026.md) · 优先阅读 · [多玩家控制下的共享世界评估：当前主推荐](../task_frontiers.md#task-e-multiplayer-shared-world-evaluation-paper-2194e330bb3a)
+- [RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment](rt-safe-2026.md) · 优先阅读 · [实时动态导航安全评测：当前主推荐](../task_frontiers.md#task-real-time-embodied-navigation-safety-paper-2698d471c63b)
+- [The Robot Is Not Its Description: GaugeBench for Representation Robustness in Morphology-Aware Policies](gaugebench-2026.md) · 优先阅读 · [机器人操作泛化与鲁棒性评测：当前主推荐](../task_frontiers.md#task-e-robot-manipulation-generalization-evaluation-paper-3b6bd81a6a29)
+- [Orbia: Do Generated Videos Form a Consistent 3D World?](orbia-2026.md) · 优先阅读 · [交互视觉世界的控制与持久一致性评估：当前主推荐](../task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-7b8fef5dd930)
+
+<details>
+<summary>参考与待补证记录（32 篇）</summary>
+
+- [EWMBench](ewmbench-2025.md) · 参考备选 · [机器人世界模型的执行与任务效用评估：并列备选](../task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-bddcd73c5023)
+- [OpenEQA](openeqa-2024.md) · 参考备选 · [具身环境与物理视觉问答评测：并列备选](../task_frontiers.md#task-e-embodied-visual-question-answering-evaluation-paper-2a8e892199bf)
+- [WorldArena](worldarena-2026.md) · 参考备选 · [机器人世界模型的执行与任务效用评估：并列备选](../task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-34d181af2e6a)
+- [Ctrl-World](ctrl-world-2026.md) · 待视觉复核 · [机器人世界模型的执行与任务效用评估：未审查](../task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-90168e953d5a)
+- [A Unified Evaluation Harness for Vision-Language-Action Models](vla-eval-2026.md) · 来源待修复 · [机器人任务环境与评测编排基础设施：未审查](../task_frontiers.md#task-e-robot-task-environments-and-evaluation-harnesses-paper-a7233ce1b2b2)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](vla-replica-2026.md) · 参考备选 · [机器人操作泛化与鲁棒性评测：并列备选](../task_frontiers.md#task-e-robot-manipulation-generalization-evaluation-paper-11acf510a850)
+- [RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation](robowm-bench-2026.md) · 待视觉复核 · [机器人世界模型的执行与任务效用评估：未审查](../task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-2da7665bdb2f)
+- [Colosseum V2: Benchmarking Generalization for Vision Language Action Models](colosseum-v2-2026.md) · 参考备选 · [机器人操作泛化与鲁棒性评测：并列备选](../task_frontiers.md#task-e-robot-manipulation-generalization-evaluation-paper-12540b05534d)
+- [MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models](mirabench-2026.md) · 参考备选 · [机器人世界模型的执行与任务效用评估：并列备选](../task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-8cc43e40bb1f)
+- [WorldMark: A Unified Benchmark Suite for Interactive Video World Models](worldmark-2026.md) · 参考备选 · [交互视觉世界的控制与持久一致性评估：并列备选](../task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-0c44c67f88f5)
+- [WorldOlympiad: Can Your World Model Survive a Triathlon?](worldolympiad-2026.md) · 参考备选 · [交互视觉世界的控制与持久一致性评估：并列备选](../task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-239736ed2116)
+- [WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models](worldbench-2026.md) · 参考备选 · [物理未来与结果分布诊断：并列备选](../task_frontiers.md#task-e-physical-future-outcome-evaluation-paper-09ac7d97fc58)
+- [Sekai2: From World Exploration to Interactive World Modeling](sekai2-2026.md) · 参考备选 · [自我视角视觉与运动监督数据：并列备选](../task_frontiers.md#task-e-egocentric-visual-motion-supervision-data-paper-a249f95e9bbd)
+- [PBench: A Physical AI Benchmark for World Models](pbench-2025.md) · 参考备选 · [物理未来与结果分布诊断：并列备选](../task_frontiers.md#task-e-physical-future-outcome-evaluation-paper-0669f8cb72d6)
+- [PAI-Bench: A Comprehensive Benchmark For Physical AI](pai-bench-2025.md) · 参考备选 · [物理未来与结果分布诊断：并列备选](../task_frontiers.md#task-e-physical-future-outcome-evaluation-paper-c201ee0a9478)
+- [PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding](physbench-2025.md) · 参考备选 · [具身环境与物理视觉问答评测：并列备选](../task_frontiers.md#task-e-embodied-visual-question-answering-evaluation-paper-5b5b8ef74053)
+- [R2M-Bench: Evaluating Revisit Memory via Relative Consistency in Interactive Video World Models](r2m-bench-2026.md) · 参考备选 · [交互视觉世界的控制与持久一致性评估：并列备选](../task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-4afdea423760)
+- [Can 4D Foundation Models Remember?](persistbench-2026.md) · 参考备选 · [交互视觉世界的控制与持久一致性评估：并列备选](../task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-47400fc9423c)
+- [Universal Navigation Interface: Robot-Free Data for Wheeled Robot Navigation](universal-navigation-interface-2026.md) · 观察名单 · [自我视角视觉与运动监督数据：未审查](../task_frontiers.md#task-e-egocentric-visual-motion-supervision-data-paper-5fd7cf511013)
+- [BinoGen: Scaling egocentric binocular data for embodied visual perception and learning](binogen-2026.md) · 观察名单 · [自我视角视觉与运动监督数据：未审查](../task_frontiers.md#task-e-egocentric-visual-motion-supervision-data-paper-71645e574a74)
+- [SlugTrails: An Egocentric Benchmark for Floor Plan Localization in Large Buildings](slugtrails-2026.md) · 观察名单 · [自我视角到建筑平面图的定位评测：未审查](../task_frontiers.md#task-egocentric-floorplan-localization-evaluation-paper-e0775380499c)
+- [EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks](embodiedmemory-bench-2026.md) · 参考备选 · [依赖历史的具身策略记忆评测：并列备选](../task_frontiers.md#task-e-history-dependent-embodied-policy-evaluation-paper-f2660a1cfc45)
+- [Training Object Permanence in World Models](wrop-object-permanence-2026.md) · 待视觉复核 · [物理未来与结果分布诊断：未审查](../task_frontiers.md#task-e-physical-future-outcome-evaluation-paper-ceebca447332)
+- [RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?](robotwin-phys-2026.md) · 参考备选 · [机器人操作泛化与鲁棒性评测：并列备选](../task_frontiers.md#task-e-robot-manipulation-generalization-evaluation-paper-dac2d1f3a1bc)
+- [Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics](open-h-embodiment-2026.md) · 参考备选 · [多模态机器人操作示范数据：并列备选](../task_frontiers.md#task-e-multimodal-manipulation-demonstration-data-paper-8314248f79c9)
+- [LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes](livin-2026.md) · 待视觉复核 · [机器人任务环境与评测编排基础设施：未审查](../task_frontiers.md#task-e-robot-task-environments-and-evaluation-harnesses-paper-2cf667f472f2)
+- [OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework](openvitac-2026.md) · 参考备选 · [力觉与触觉融合的操作评测：并列备选](../task_frontiers.md#task-e-force-tactile-policy-evaluation-paper-d2702f39b7eb)
+- [BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](bigym-2-2026.md) · 参考备选 · [机器人操作泛化与鲁棒性评测：并列备选](../task_frontiers.md#task-e-robot-manipulation-generalization-evaluation-paper-a061e176b372)
+- [LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation](libero-perm-2026.md) · 观察名单 · [个性化操作偏好满足评测：未审查](../task_frontiers.md#task-personalized-manipulation-preference-evaluation-paper-4381aca01c32)
+- [ForceBench: Benchmarking Force Integration for Robotic Manipulation](forcebench-2026.md) · 观察名单 · [力觉与触觉融合的操作评测：未审查](../task_frontiers.md#task-e-force-tactile-policy-evaluation-paper-9c5c2fc42b1f)
+- [TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation](tacclaw-infinity-2026.md) · 待视觉复核 · [多模态机器人操作示范数据：未审查](../task_frontiers.md#task-e-multimodal-manipulation-demonstration-data-paper-8f00ff5a9d8d)
+- [Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training](active-generative-simulation-2026.md) · 待视觉复核 · [优化策略效用的仿真数据分布：未审查](../task_frontiers.md#task-utility-optimized-simulation-data-generation-paper-8c72c61f3028)
+
+</details>

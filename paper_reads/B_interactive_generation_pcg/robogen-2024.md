@@ -1,5 +1,10 @@
 # RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Propose-generate-learn is a substantive foundation for automatic task/world/supervision loops. Its learned skill and task validity claims still require actual rollout inspection; no automatic demotion based on publication date.
+> [本次来源、分数与任务判断](../library_review.md#paper-f1e310971ad6)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0009
 branch: B. Interactive Generation and PCG
 decision: accepted_for_registry

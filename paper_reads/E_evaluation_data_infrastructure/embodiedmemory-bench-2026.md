@@ -1,5 +1,10 @@
 # EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。四类环境经历与后续行动有实质价值，官方完整episode/media确已存在；但可执行评价/构造代码仍待公开，旧精读容易把数据可下载等同全harness可复现。
+> [本次来源、分数与任务判断](../library_review.md#paper-f2660a1cfc45)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0008
 branch: E
 decision: accepted_for_registry

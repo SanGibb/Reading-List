@@ -1,5 +1,10 @@
 # LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。偏好完成与任务成功分开有用，但当前主要是LIBERO上专门taxonomy和成对数据构建，缺对核心物理/交互生成能力的决定性贡献证据。
+> [本次来源、分数与任务判断](../library_review.md#paper-4381aca01c32)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0012
 branch: E
 decision: accepted_for_registry

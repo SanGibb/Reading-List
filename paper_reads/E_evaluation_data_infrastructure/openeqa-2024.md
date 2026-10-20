@@ -1,5 +1,10 @@
 # OpenEQA: Embodied Question Answering in the Era of Foundation Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。开放问答是有用的环境理解基础，但距离本库生成/可执行交互验证一层；保留相关任务备选，不作为v2核心通过。
+> [本次来源、分数与任务判断](../library_review.md#paper-2a8e892199bf)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0015
 branch: E. Evaluation and Data Infrastructure
 decision: accepted_for_registry

@@ -1,5 +1,10 @@
 # OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。11仿真/8实机paired协议与四能力taxonomy有独立价值；官网本轮仅静态结构和表示说明可读，完整结果/共享artifact尚未核实，保留备选。
+> [本次来源、分数与任务判断](../library_review.md#paper-d2702f39b7eb)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0013
 branch: E
 decision: accepted_for_registry

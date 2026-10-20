@@ -1,5 +1,10 @@
 # Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。23-DoF控制与mask/RGB分解提供可命名物理动作接口，主源还给五模型匹配训练和盲评；本轮未检查手指时序，不能沿用旧强视觉。
+> [本次来源、分数与任务判断](../library_review.md#paper-c0b29ee37886)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0002
 branch: D
 decision: accepted_for_registry

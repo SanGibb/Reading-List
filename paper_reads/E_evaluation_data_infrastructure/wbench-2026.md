@@ -1,5 +1,15 @@
 # WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。多轮导航、事件编辑、角色动作与视角切换，并对22自动度量进行人评验证，提供独立于纯相机控制的实质评价维度。
+> [本次来源、分数与任务判断](../library_review.md#paper-900b967474a4)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：相对iWorld和WorldMark，显式多轮上下文与语义事件/视角控制有新增诊断；无相同协议无退化证据。
+> - [Top statistics; Key Findings; Leaderboard Updated 2026/10/12](https://meituan-longcat.github.io/WBench/)：289例/1,058轮，22度量五维；官网本轮显示45模型、leaderboard过滤Full/Navi；旧精读22模型为过时快照。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0006
 branch: E
 decision: accepted_for_registry

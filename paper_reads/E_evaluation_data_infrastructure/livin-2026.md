@@ -1,5 +1,10 @@
 # LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。拥挤有人居住宅与真实对应对任务很相关；核心home twin来自物体生成和放置，旧not_applicable无观察支持，不能自动通过物理交互质量。
+> [本次来源、分数与任务判断](../library_review.md#paper-2cf667f472f2)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0011
 branch: E
 decision: accepted_for_registry

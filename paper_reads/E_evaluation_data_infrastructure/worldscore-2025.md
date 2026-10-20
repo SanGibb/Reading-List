@@ -1,5 +1,16 @@
 # WorldScore: A Unified Evaluation Benchmark for World Generation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。跨3D/4D/视频的显式相机轨迹连续场景协议与分解指标，可直接作为生成世界的评测起点；官方表和发布入口支持持续维护。
+> [本次来源、分数与任务判断](../library_review.md#paper-f9a5feffb91e)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：不同于iWorld动作任务，保留跨表示的next-scene统一协议以及Static/Dynamic两种评价。
+> - [Overview; Comparison of Benchmarks; Evaluation Results](https://haoyi-duan.github.io/WorldScore/)：3,000例；按controllability/quality/dynamics评测；Static和Dynamic聚合分开，官方表提供19模型论文快照和分项。（verified）。
+> - [Appendix D; Tables S5-S7](https://arxiv.org/html/2504.00983v2)：400参与者2AFC；subjective metric组合按人偏好选取，五模型采样；跨分辨率/裁剪测试也有单独表，非真实机器人效果验证。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0043
 branch: E
 decision: accepted_for_registry

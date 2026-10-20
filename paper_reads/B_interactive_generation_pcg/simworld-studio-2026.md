@@ -1,5 +1,12 @@
 # SimWorld Studio: Generation and Evolution of Custom Embodied Agent Learning Environments
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**来源待修复**。Registry arXiv2606.08498 is an unrelated statistics paper. The real official project points to2605.09423 with a different title and UE5/SimCoder method; old320-task/240-layout claims and the currently404 code link cannot serve as evidence.
+> [本次来源、分数与任务判断](../library_review.md#paper-d1de84a3bc9b)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> 身份纠错线索：[原始/官方入口](https://arxiv.org/abs/2605.09423)；此线索不代表已重新通过准入。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0054
 branch: B
 decision: accepted_for_registry

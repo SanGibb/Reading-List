@@ -1,5 +1,10 @@
 # What Matters for World Modeling in Vision-Language-Action Models?
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。把representation、integration和backbone交叉控制可直接减少repo技术选型的不确定性；主源四范式/多评估轴已核查，但完整protocol及执行媒体未审。
+> [本次来源、分数与任务判断](../library_review.md#paper-a686afe7b03f)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0011
 branch: D
 decision: accepted_for_registry

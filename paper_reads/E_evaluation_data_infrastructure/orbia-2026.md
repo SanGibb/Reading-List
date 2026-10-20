@@ -1,5 +1,15 @@
 # Orbia: Do Generated Videos Form a Consistent 3D World?
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。固定返回路径、RGB-D锚点、新生成内容首次/再次观察与held-out 3D重建形成可直接使用的持久世界验证接口。
+> [本次来源、分数与任务判断](../library_review.md#paper-7b8fef5dd930)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：较R2M的同rollout相对记忆，新增输入保留/新内容持久/3D一致性，保留R2M防静态捷径作为补充，不能称其被替代。
+> - [Overview; Evaluating3D consistency; Exploration and revisit protocols; Leaderboard](https://orbia-bench.github.io/)：720case=480短+240分钟级，六返回路径；registered RGB-D/anchor，64context与16held-out视图；27模型按接口分列。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0013
 branch: E
 decision: accepted_for_registry

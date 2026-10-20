@@ -1,5 +1,10 @@
 # DepthVLA: Enhancing Vision-Language-Action Models with Depth-Aware Spatial Reasoning
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。深度 transformer 与 action expert 共享注意力是可解释的增量，但当前依据主要为作者摘要比较，代码仍述为将发布；不足以升级为新的长期核心入口。
+> [本次来源、分数与任务判断](../library_review.md#paper-325fca1766df)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0031
 branch: C
 decision: accepted_for_registry

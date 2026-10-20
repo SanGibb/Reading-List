@@ -1,5 +1,10 @@
 # StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。结构化单demonstration适配是明确用途，但retrieval、offline转换和联合训练贡献未在本轮获得控制证据；leaderboard首名不能替代质量门槛。
+> [本次来源、分数与任务判断](../library_review.md#paper-1edcd1fe462f)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 ## Source Links
 - Paper: https://arxiv.org/abs/2608.11671
 - Official project: https://stelledge.com/blog/stellavla

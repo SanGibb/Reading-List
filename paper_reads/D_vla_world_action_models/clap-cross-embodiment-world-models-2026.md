@@ -1,5 +1,10 @@
 # CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。多来源动作条件接口和公开跨embodiment模型直接支持learned simulator研究；本轮核实摘要的release和课程方法，未实际检查zero-shot物理rollout。
+> [本次来源、分数与任务判断](../library_review.md#paper-e2c5f9f4b493)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0002
 branch: D
 decision: accepted_for_registry

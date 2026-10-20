@@ -1,5 +1,10 @@
 # EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Unified task-world representation, stateful editing and source-reported sim/real policy gains are strong potential current-frontier evidence. Actual cross-engine asset/task and robot clips have not been inspected.
+> [本次来源、分数与任务判断](../library_review.md#paper-2a2f644e4de4)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0002
 branch: B
 decision: accepted_for_registry

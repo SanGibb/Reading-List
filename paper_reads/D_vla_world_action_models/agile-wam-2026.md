@@ -1,5 +1,10 @@
 # Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。多horizon vision/tactile latent与11.9ms延迟具有特定硬件价值，但相对已核查的contact诊断核心，五真实任务/传感器依赖且开放实现待证，未达重大增量。
+> [本次来源、分数与任务判断](../library_review.md#paper-df2484e85bec)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0003
 branch: D
 decision: accepted_for_registry

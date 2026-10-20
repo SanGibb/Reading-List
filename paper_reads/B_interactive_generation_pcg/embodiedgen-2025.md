@@ -1,5 +1,10 @@
 # EmbodiedGen: Towards a Generative 3D World Engine for Embodied Intelligence
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。Retain the six-module URDF asset toolkit as a family reference. The source checked here does not establish a sufficiently distinguished current whole-world recommendation under v2, and V2's new capabilities are not evidence that V1 has no retained advantages.
+> [本次来源、分数与任务判断](../library_review.md#paper-f09de6db76bc)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0022
 branch: B
 decision: accepted_for_registry

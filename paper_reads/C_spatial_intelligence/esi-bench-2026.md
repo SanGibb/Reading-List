@@ -1,5 +1,15 @@
 # ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。官方明确任务分类、实例量、主动/被动/oracle 对照与预算问题，直接用于判断世界是否支持信息获取式交互。此处验收依据为评测协议和诊断，不把页面视频链接计为已观看。
+> [本次来源、分数与任务判断](../library_review.md#paper-002755467474)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：把观察本身作为动作选择结果，和固定视图下的定位/姿态诊断形成互补任务。
+> - [Task Taxonomy; Three Departures; Key Findings](https://esi-bench.github.io/)：官方定义 10 类 29 子类任务及 active/passive/oracle 观察条件和失效诊断。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0001
 branch: C
 decision: accepted_for_registry

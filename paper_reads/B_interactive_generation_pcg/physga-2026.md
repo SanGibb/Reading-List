@@ -1,5 +1,10 @@
 # PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Contact diagnosis and executable assembly primitives address a real composition gap across material types. Hanging/settling/containment success must be visually checked over actual simulator sequences.
+> [本次来源、分数与任务判断](../library_review.md#paper-6b1b54d1cd59)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0003
 branch: B
 decision: accepted_for_registry

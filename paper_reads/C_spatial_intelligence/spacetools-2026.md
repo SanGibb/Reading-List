@@ -1,5 +1,10 @@
 # SpaceTools: Tool-Augmented Spatial Reasoning via Double Interactive RL
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。本轮确认 DIRL 受控训练对比与 Toolshed 工具接口；但该条包含真实机器人多步执行，尚未实际检查动作媒体，旧报告的 not_applicable 不能覆盖该物理使用主张。
+> [本次来源、分数与任务判断](../library_review.md#paper-fa34283d86bd)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0028
 branch: C
 decision: accepted_for_registry

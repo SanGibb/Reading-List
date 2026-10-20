@@ -1,5 +1,10 @@
 # DeSpatial: The devil of Agentic Spatial Reasoning Lies in 3D Itself
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。主源确认感知 oracle 与实例融合设计，但当前核心增量主要是既有工具的几何修整与融合；没有足够可复用发布/统一对照来支撑独立优先入口。保留具体失败模式研究，待协议与工具落地。
+> [本次来源、分数与任务判断](../library_review.md#paper-3a5eb576324a)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0006
 branch: C
 decision: accepted_for_registry

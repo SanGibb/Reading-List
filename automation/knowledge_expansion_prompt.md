@@ -13,6 +13,8 @@ Scope:
 Task:
 
 1. Read `README.md`, this prompt, `data/papers.seed.json`, `data/task_frontiers.seed.json`, `data/follow_sources.seed.json`, `agents/multiagent_design.md`, all role specs in `agents/specs/`, `harness/system_harness.md`, `harness/artifact_contracts.md`, `harness/acceptance_harness.md`, `harness/task_lifecycle.md`, and `reports/paper_deep_dive_template.md`.
+   - Also read `data/library_review.seed.json` and the current `paper_reads/library_review.md`. The 2026-10-20 user-requested retrospective review supersedes old source/visual labels for those existing records. `historical_acceptance` is a snapshot, not current verification. Keep quarantined source issues out of recommendations until corrected; do not re-promote pending/watchlist items without the stated new evidence.
+   - Later v2 admissions use their own new-run review and live task membership rather than rewriting the dated retrospective snapshot. Task-level succession can change a qualified paper's current reading position without altering its past scientific review.
 2. Create or reuse a run directory under `reports/runs/YYYY-MM-DD/`.
 3. Execute the consolidated file-driven multi-agent pipeline by writing the required stage artifacts:
    - `00_run_plan.json`

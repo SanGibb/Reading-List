@@ -1,5 +1,10 @@
 # Cosmos-Predict2.5: A World Foundation Model for Physical AI
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**来源待修复**。registry纸页URL指向完全无关的随机非线性薛定谔方程数学论文；旧报告的“主源verified”不成立。官方Cosmos项目确实存在，但不能在错误身份上重评质量。
+> [本次来源、分数与任务判断](../library_review.md#paper-165b4154106d)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0056
 branch: D
 decision: accepted_for_registry

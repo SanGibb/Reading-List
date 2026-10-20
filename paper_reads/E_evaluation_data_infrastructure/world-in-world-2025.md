@@ -1,5 +1,15 @@
 # World-in-World: World Models in a Closed-Loop World
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。将世界模型放入统一proposal/rollout/revision的真实闭环，以任务成功衡量效用，构成区别于离线视频分数的直接评价基础。
+> [本次来源、分数与任务判断](../library_review.md#paper-34e5a79e4acf)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：相较WorldArena离线/多角色评价，四个闭环环境和统一在线规划API提供不同可复用接口；不互相归档。
+> - [Evaluation Pipeline steps 1-6; Task Examples; Results and Analysis](https://world-in-world.github.io/)：proposal生成M计划，统一动作API转输入，世界模型预测，revision选计划并在环境执行；四闭环任务。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0045
 branch: E
 decision: accepted_for_registry

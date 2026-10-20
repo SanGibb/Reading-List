@@ -1,5 +1,10 @@
 # MMaDA-VLA: Large Diffusion Vision-Language-Action Model with Unified Multi-Modal Instruction and Generation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。原生离散扩散联合目标图像和动作是明确方法，但相对现有统一video-action核心栈，暂无本轮已核查的控制比较证明重要增量。主源已更新ACM MM2026。
+> [本次来源、分数与任务判断](../library_review.md#paper-386973a21328)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0041
 branch: D
 decision: accepted_for_registry

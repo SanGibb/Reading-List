@@ -1,5 +1,10 @@
 # Ctrl-World
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。官网说明它是可控生成模型而非纯评价套件，旧E条目将视觉标not_applicable不成立；生成动作精度、长时和策略改进均需实际时序检查。
+> [本次来源、分数与任务判断](../library_review.md#paper-90168e953d5a)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0046
 branch: E
 decision: accepted_for_registry

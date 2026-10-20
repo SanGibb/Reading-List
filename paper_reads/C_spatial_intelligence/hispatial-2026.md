@@ -1,5 +1,15 @@
 # HiSpatial: Taming Hierarchical 3D Spatial Understanding in Vision-Language Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。官方给出分层度量问答数据、RGB-XYZ 表征、预测/真实深度区分及多组量化基线，直接用于生成世界中的尺寸/距离/关系验证；是当前度量问答的阅读入口，结果仍为作者报告。
+> [本次来源、分数与任务判断](../library_review.md#paper-f3def912e54e)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 4 / 4）：分层任务与度量点图输入相对早期 RGB-D 基线形成可复用能力；未声称统一协议无退化胜出。
+> - [Large-Scale Hierarchical Spatial Dataset; Model Structure; Model Performance tables](https://microsoft.github.io/HiSpatial/)：官方列出分层任务、数据/模型链接及预测深度与真实深度条件的量化结果。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0027
 branch: C
 decision: accepted_for_registry

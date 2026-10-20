@@ -1,5 +1,17 @@
 # OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。本轮已读官方模块化trainer/server/evaluation代码入口和具体benchmark配置，检查多任务真实时序样例；提供可控消融、统一数据和部署栈，价值超出单一分数。
+> [本次来源、分数与任务判断](../library_review.md#paper-f04c45b32889)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：相对LingBot-VA2的固定native系统，OpenWAM把encoder/backbone/architecture/mask/data/inference变为组合组件；其实际LIBERO-Plus不领先所有基线，不能宣称全任务替代。
+> - [Title; Abstract (method and evaluation paragraphs); submission history / Comments when present](https://arxiv.org/abs/2609.07398)：Abstract defines modular OpenWAM-Infra, controlled OpenWAM-Study and pretrained OpenWAM-alpha; alpha uses roughly 6,400 hours of egocentric and robot data and is evaluated on eight simulation benchmarks plus real robots. The authors state release of infrastructure, protocols, models and data recipes.（verified）。
+> - [One stack, three layers; What the controlled study found; Figure12 Architecture; Figure13 per-benchmark bars; Real-robot rollouts](https://openwam-official.github.io/)：Modular stack spans encoders/backbones/architectures/masks, controlled studies and released alpha model. Source reports heterogeneous benchmark results rather than a universal best result; single-arm, bimanual and dexterous galleries are distinct.（verified）。
+> - [README: What is OpenWAM; Installation; Assets Preparation / Video Backbone / Benchmark Data / Released Checkpoints](https://github.com/OpenWAM-Official/OpenWAM)：Official repository documents modular infrastructure, model/benchmark downloaders, supported LIBERO/RoboTwin/RoboCasa/VLABench/EBench/RoboDojo data and checkpoint paths. This is a concrete reusable experimental/deployment interface; code was not executed.（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0001
 branch: D
 decision: accepted_for_registry

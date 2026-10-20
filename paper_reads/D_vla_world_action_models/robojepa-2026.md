@@ -1,5 +1,10 @@
 # RoboJEPA: Scaling Robotic Latent World Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。把imagination error与算力/真实规划性能联系并释放训练部署代码有实质方法价值；本轮只读摘要，未核查scalingfit/extrapolation或真实goal-image规划。
+> [本次来源、分数与任务判断](../library_review.md#paper-b66fa1e99299)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0008
 branch: D
 decision: accepted_for_registry

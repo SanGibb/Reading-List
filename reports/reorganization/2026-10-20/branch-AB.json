@@ -1,0 +1,2121 @@
+{
+  "review_date": "2026-10-20",
+  "branches": [
+    "A",
+    "B"
+  ],
+  "review_scope": "Reassessment of all41 existing A/B registry entries under selective-admission and task-frontier rules. No registry entry or legacy report is deleted; no new paper admission and no unverified succession edge.",
+  "independently_reproduced": false,
+  "notes": [
+    "Each corresponding deep dive was read; repeated boilerplate is not acceptance evidence. Only sources actually fetched/read this review are marked verified.",
+    "Verified source facts are author-reported, not independent replication. Except the two completed stated-scope priority assessments, scores remain provisional and do not claim policy-v2 admission.",
+    "visual_status verified records actual described inspection; the PhysX-Omni inspection is explicitly partial and its visual_quality_decision remains undecided.",
+    "No task has sufficient all-axis comparable-protocol evidence for historical supersession in this review. Retain comparison uncertainty; publication date or version labels are insufficient.",
+    "Scope/protocol fields describe task context; where prior-report dataset details are not confirmed in listed sources, verify full splits, budgets and hardware before any quantitative cross-paper comparison."
+  ],
+  "reviews": [
+    {
+      "paper_url": "https://scenefun3d.github.io/",
+      "title": "SceneFun3D",
+      "branch": "A",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "score_status": "completed_for_stated_scope",
+      "reason": "Official annotations, released evaluator and explicit AP protocol form a reusable supervision/evaluation foundation. Recommend the dataset and affordance task interface, not an unverified robot-execution claim.",
+      "closest_paper_url": "https://arxiv.org/abs/2609.20673",
+      "material_difference": "Unlike FunArt's predicted articulation graph, this is real-scene functional-element supervision and its evaluator; neither replaces the other.",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "visual_quality_decision": "not_applicable",
+      "visual_quality_score": 0,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://scenefun3d.github.io/",
+          "locator": "Project page, Abstract and three task definitions",
+          "claim": "The dataset has 710 scenes, over14.8K interaction annotations and three task definitions.",
+          "source_quality": "official",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://scenefun3d.github.io/documentation/dataset/annotations/",
+          "locator": "Functional interactive elements; Language task descriptions; Motion annotations",
+          "claim": "Official JSON schemas expose point indices, affordance labels, description-to-element links and motion type/direction/origin. Transparent/reflective excluded geometry is explicitly documented.",
+          "source_quality": "official",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://scenefun3d.github.io/documentation/benchmarks/task1/",
+          "locator": "Task description; Local evaluation; Evaluation metrics",
+          "claim": "Faro scan/RGB-D input, vertex-aligned masks and nine classes; AP25/AP50 and averaged AP; validation scripts and official hidden-test submissions.",
+          "source_quality": "official",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://scenefun3d.github.io/documentation/benchmarks/guidelines/",
+          "locator": "Evaluation guidelines",
+          "claim": "Current benchmark uses dataset v0.2.0; test ground truth is hidden and only test submissions count toward official ranking.",
+          "source_quality": "official",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://scenefun3d.github.io/documentation/benchmarks/task3/",
+          "locator": "Task 3: Motion estimation",
+          "claim": "The online motion-estimation documentation currently says Coming soon; the priority recommendation does not assume this track is operational.",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "functional-affordance-grounding-real-scenes",
+      "task_title": "Real-scene functional affordance grounding",
+      "scope": {
+        "input": "Real indoor laser scans, posed RGB-D and task language",
+        "output": "Functional-element masks, affordance labels and annotated motion parameters",
+        "setting": "Static scanned indoor scenes; dataset and perception evaluation, not robot execution",
+        "protocol": "SceneFun3D v0.2.0 train/validation and hidden test; AP, AP25, AP50. Motion-estimation online track remains coming soon."
+      },
+      "role": "current",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Revisit when the official task/evaluator changes or a matched successor demonstrates a material advance.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/scenefun3d-2024.md",
+        "assessment": "Template task/method sections and a placeholder YouTube URL; the concrete annotation/evaluation details needed fresh verification.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "reusable_infrastructure",
+      "not_applicable_reason": "The current recommendation is restricted to a released static 3D functional-element annotation schema, masks and explicit AP-based perception evaluator. Motion parameters are annotation fields; no generated physical asset, temporal dynamics or robot execution is used to justify this scope.",
+      "acceptance_rationale": "Distinct real-scene functional-element supervision, language-to-affordance annotations and an operational evaluator directly support generated-world annotation and validation; these verified artifacts add capabilities beyond learned graph predictors."
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2403.09227",
+      "title": "BEHAVIOR-1K",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 5,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "The task predicates and multi-material simulator are a direct reusable target, but the legacy benchmark exemption does not verify the physical execution claims. Temporal simulator/interaction evidence was not inspected in this review.",
+      "closest_paper_url": "https://arxiv.org/abs/2311.01455",
+      "material_difference": "Provides human-grounded activity definitions and simulator state rather than a generative task-proposal/learning loop; protocols do not support replacement.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2403.09227",
+          "locator": "Abstract",
+          "claim": "Defines1,000 activities,50 scenes,9,000+ annotated objects and OmniGibson physics; abstract notes a preliminary CoRL2022 version.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "executable-household-activity-benchmark",
+      "task_title": "Executable household activity benchmark",
+      "scope": {
+        "input": "Activity definitions, object states and simulator observations",
+        "output": "Predicate-defined long-horizon household tasks and simulation evaluation",
+        "setting": "BEHAVIOR-1K / OmniGibson household simulation",
+        "protocol": "Published activity, scene and physical-property contracts; no direct comparability to generative scene benchmarks or new challenge versions established."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/behavior-1k-2024.md",
+        "assessment": "Largely template; physical benchmark was marked not_applicable without a scoped justification or temporal inspection.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.21572",
+      "title": "PhysX-Omni",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Unified rigid/deformable/articulated assets and physical-attribute evaluation could materially improve the shortlist. Two official GIF frame sequences were inspected, but moving viewpoints and limited selected scenes do not resolve joint/contact/deformation quality across asset categories.",
+      "closest_paper_url": "https://arxiv.org/abs/2511.13648",
+      "material_difference": "Extends PhysX-Anything's rigid/articulated single-image scope with deformables, new geometry representation, PhysXVerse and six-attribute PhysX-Bench; matched-protocol no-regression evidence is absent.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "verified",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [
+        {
+          "url": "https://physx-omni.github.io/static/videos/scene1_kine_sim.gif",
+          "media_url": "https://physx-omni.github.io/static/videos/scene1_kine_sim.gif",
+          "modality": "sampled_frames_from_official_gif",
+          "locator": "GIF frames 0/250/500/750/999 at 0.00/5.82/11.14/16.40/21.50 seconds; full file1000 frames/21.52s",
+          "observation": "A tractor-like object and house are rendered on a checkerboard floor from changing viewpoints; the geometry remains recognizable in the sampled views.",
+          "coverage": "One selected composed scene, five chronological samples; extracted frames, not uninterrupted playback.",
+          "limitations": "Camera orbit and object displacement are confounded at this sampling density. No reliable joint-axis, contact penetration, gravity stability, deformable behavior or task-success conclusion."
+        },
+        {
+          "url": "https://physx-omni.github.io/static/videos/scene2_kine_sim.gif",
+          "media_url": "https://physx-omni.github.io/static/videos/scene2_kine_sim.gif",
+          "modality": "sampled_frames_from_official_gif",
+          "locator": "GIF frames 0/250/500/750/999 at 0.00/5.58/10.90/16.16/21.64 seconds; full file1000 frames/21.66s",
+          "observation": "Small stylized mechanical/vehicle assets occupy a checkerboard plane in successive changing views; selected rigid geometry and component positions are visible.",
+          "coverage": "Second selected scene, five chronological samples; no failure distribution.",
+          "limitations": "These observations are insufficient to judge articulation/collision quality, physical parameters or broad rigid/deformable/articulated claims. Remains undecided."
+        }
+      ],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.21572",
+          "locator": "Abstract",
+          "claim": "Unifies rigid, deformable and articulated simulation assets and introduces PhysXVerse and PhysX-Bench.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://github.com/ziangcao0312/PhysX-Omni",
+          "locator": "Repository title and release surface",
+          "claim": "Official PhysX-Omni repository is accessible; code completeness and execution were not reproduced.",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "physical-articulated-asset-generation",
+      "task_title": "Physical articulated asset generation",
+      "scope": {
+        "input": "Single object image; physical asset categories as supported by each system",
+        "output": "Object geometry, articulation and physical properties exportable for simulation",
+        "setting": "Object-level rigid/articulated assets; PhysX-Omni additionally covers deformables",
+        "protocol": "PhysX-Mobility versus PhysXVerse/PhysX-Bench; splits, prompts and simulation requirements differ. No matched-budget, all-axis successor comparison established."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/physx-omni-2026.md",
+        "assessment": "Largely template; prior strong visual label had no time ranges or failure coverage.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability",
+      "inspection_completeness": "partial_only"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2404.13026",
+      "title": "PhysDreamer",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Distilling video priors into material fields is a distinct executable-dynamics approach, but no force-response sequence or failure coverage was actually inspected this review.",
+      "closest_paper_url": "https://arxiv.org/abs/2505.18151",
+      "material_difference": "Elastic static-3D material inference differs from WonderPlay's single-image multi-material hybrid video/physics loop; changed inputs and material regimes prevent succession.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2404.13026",
+          "locator": "Abstract",
+          "claim": "Distills video generation priors to make static3D elastic objects respond to novel forces; reports a realism user study.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "force-conditioned-deformable-response",
+      "task_title": "Force-conditioned deformable object response",
+      "scope": {
+        "input": "Static reconstructed 3D elastic object and external force",
+        "output": "Material field and simulated 3D dynamic response",
+        "setting": "Object-level elastic interaction",
+        "protocol": "PhysDreamer reported user-study / qualitative protocols; no matched volumetric-simulator comparison established."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/physdreamer-2024.md",
+        "assessment": "Largely template; force-response comparisons are described without exact clip/figure locators.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2404.01223",
+      "title": "Feature Splatting",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Language-grounded semantics and material assignment on one Gaussian substrate is a concrete editing interface. Particle-simulation quality and material-dependent failures remain uninspected.",
+      "closest_paper_url": "https://arxiv.org/abs/2404.13026",
+      "material_difference": "Adds queryable semantic scene decomposition and text-assigned material properties, whereas PhysDreamer estimates an elastic material field; no comparable physics-accuracy protocol.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2404.01223",
+          "locator": "Abstract",
+          "claim": "Distills object-centric vision-language features into Gaussians and synthesizes dynamics with a particle simulator.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "language-physical-gaussian-editing",
+      "task_title": "Language-driven physical Gaussian scene editing",
+      "scope": {
+        "input": "3D Gaussian reconstruction and text queries",
+        "output": "Semantic scene decomposition, material assignments and simulated edits",
+        "setting": "Gaussian-rendered scenes with particle physics",
+        "protocol": "Feature Splatting reported feature and simulation ablations; no shared calibrated physical-dynamics benchmark with PhysDreamer."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/feature-splatting-2024.md",
+        "assessment": "Largely template; a linked pipeline figure and page existence are used as physical-demo quality evidence.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2511.13648",
+      "title": "PhysX-Anything",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Explicit geometry, articulation and physics plus a source-reported contact-learning experiment is directly relevant. The older model is not automatically historical: actual motion/contact media and its cost/generalization advantages need comparison.",
+      "closest_paper_url": "https://arxiv.org/abs/2605.21572",
+      "material_difference": "Single-image physical/articulated generation with193x reported geometry-token compression and PhysX-Mobility remains a distinct narrower baseline against Omni's expanded asset scope.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2511.13648",
+          "locator": "Abstract",
+          "claim": "Single-image sim-ready assets; reports193x token compression,2K+ PhysX-Mobility objects and simulation-based contact-policy learning.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "physical-articulated-asset-generation",
+      "task_title": "Physical articulated asset generation",
+      "scope": {
+        "input": "Single object image; physical asset categories as supported by each system",
+        "output": "Object geometry, articulation and physical properties exportable for simulation",
+        "setting": "Object-level rigid/articulated assets; PhysX-Omni additionally covers deformables",
+        "protocol": "PhysX-Mobility versus PhysXVerse/PhysX-Bench; splits, prompts and simulation requirements differ. No matched-budget, all-axis successor comparison established."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/physx-anything-2025.md",
+        "assessment": "Template report repeats generic schema fields and assigns strong quality without an actual inspected media locator.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.03994",
+      "title": "SimuScene",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Using simulated failure to repair both shape and pose is a material capability, but stability and downstream robot/humanoid execution cannot be judged from the abstract and legacy generic visual label.",
+      "closest_paper_url": "https://arxiv.org/abs/2605.30338",
+      "material_difference": "Unlike REST3D's scene-tree-guided refinement, uses gravity diagnosis, gravity-axis stretching and amodal shape resampling. Same inputs alone do not establish matched stability protocols.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2606.03994",
+          "locator": "Abstract",
+          "claim": "Physics-in-loop shape/layout reconstruction converts penetration/support failures into correction signals.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "single-image-physically-stable-scene-reconstruction",
+      "task_title": "Single-image physically stable scene reconstruction",
+      "scope": {
+        "input": "Single RGB image of interacting scene objects",
+        "output": "Compositional object geometry and poses usable in physics simulation",
+        "setting": "Object-level scenes requiring support, nonpenetration and geometric fit",
+        "protocol": "Each source uses its own synthetic/real scenes and stability/alignment metrics; controlled equivalence of splits, assets and simulation settings is not established."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/simuscene-2026.md",
+        "assessment": "Largely template; arXiv abstract is also listed as project/demo and exact physical trials are absent.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.30338",
+      "title": "REST3D",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Gravity-support scene trees give a concrete structural representation and physics-refinement baseline. No actual stability/VR-interaction sequence was inspected this review.",
+      "closest_paper_url": "https://arxiv.org/abs/2606.03994",
+      "material_difference": "Uses scene-tree physical understanding before optimization, complementing SimuScene shape diagnosis and Tetris3D relational object generation; no protocol-controlled winner.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.30338",
+          "locator": "Abstract",
+          "claim": "Single-RGB reconstruction combines gravity-support scene trees with physics-constrained refinement and reports VR interaction.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "single-image-physically-stable-scene-reconstruction",
+      "task_title": "Single-image physically stable scene reconstruction",
+      "scope": {
+        "input": "Single RGB image of interacting scene objects",
+        "output": "Compositional object geometry and poses usable in physics simulation",
+        "setting": "Object-level scenes requiring support, nonpenetration and geometric fit",
+        "protocol": "Each source uses its own synthetic/real scenes and stability/alignment metrics; controlled equivalence of splits, assets and simulation settings is not established."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/rest3d-2026.md",
+        "assessment": "Largely template; prior code-coming-soon and strong visual assertions need fresh release/media verification.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.26115",
+      "title": "TriSplat",
+      "branch": "A",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Keep as a geometry/interface reference: direct triangles remove Gaussian-to-mesh conversion, but verified evidence is geometric reconstruction, not articulated/functional world execution. It does not meet the direct-core relevance threshold in this scope.",
+      "closest_paper_url": "https://arxiv.org/abs/2605.30338",
+      "material_difference": "Sparse multiview triangle surfaces solve a geometry/export problem, while REST3D targets single-image compositional support/stability. They are not interchangeable.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": false,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.26115",
+          "locator": "Abstract",
+          "claim": "Predicts oriented triangles, point maps and camera parameters; reports RealEstate10K/DL3DV geometry/rendering comparisons.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "sparse-view-direct-mesh-reconstruction",
+      "task_title": "Sparse-view direct mesh reconstruction",
+      "scope": {
+        "input": "Sparse potentially unposed RGB images",
+        "output": "Oriented-triangle scene and camera estimates with direct mesh export",
+        "setting": "Feed-forward scene reconstruction",
+        "protocol": "RealEstate10K/DL3DV geometry and novel-view metrics; downstream articulation, material and task execution are outside the verified scope."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Revisit if a concrete target task and controlled evidence establish a substantial capability increment over maintained methods.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/trisplat-2026.md",
+        "assessment": "Largely template; source-supported mesh export was generalized into physics readiness without an execution protocol.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.19587",
+      "title": "SceneCode: Editable Indoor Scene Generation using Executable World Programs",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "The current primary source gives a directly reusable program-to-simulator contract, but the legacy title and method summary are stale. Asset articulation, execution-guided repairs and downstream interaction quality need actual inspection.",
+      "closest_paper_url": "https://arxiv.org/abs/2602.10116",
+      "material_difference": "Compiles per-object Blender Python programs and SDF articulation with a persistent scene registry; SAGE primarily composes generator tools/critics. No matched comparison establishes displacement.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.19587",
+          "locator": "Abstract",
+          "claim": "Current title is SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects; uses planner/designer/critic and five code strategies.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "executable-articulated-scene-program-generation",
+      "task_title": "Executable articulated indoor scene programs",
+      "scope": {
+        "input": "Natural-language indoor scene request and local edits",
+        "output": "Part-wise Blender programs, persistent scene registry and SDF assets",
+        "setting": "Agentic indoor world synthesis with on-demand articulated asset programs",
+        "protocol": "SceneCode scene/asset/human/robot-interaction evaluations; protocols not matched to SAGE or EmbodiedGen V2."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/scenecode-2026.md",
+        "assessment": "Report emphasizes a different hierarchical floor-plan/image-reconstruction formulation; update against the primary before reuse.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability",
+      "metadata_corrections": {
+        "title": "SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects",
+        "source_url": "https://arxiv.org/abs/2605.19587",
+        "reason": "Current primary title and program-generation method do not match the old registry title/deep-dive framing."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2505.18151",
+      "title": "WonderPlay: Dynamic 3D Scene Generation from a Single Image and Actions",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Single-image action-conditioned3D across material families supplies a concrete hybrid world baseline. Unviewed dynamic galleries cannot establish contact, conservation or consistency.",
+      "closest_paper_url": "https://arxiv.org/abs/2404.13026",
+      "material_difference": "Extends the input/material setting beyond elastic static3D, but video refinement introduces different state-faithfulness and compute tradeoffs; not a verified all-axis successor.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2505.18151",
+          "locator": "Abstract",
+          "claim": "Physics simulation conditions video generation; generated video updates dynamic3D, spanning cloth, liquid, smoke, elastic and rigid materials.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "single-image-multimaterial-dynamics-generation",
+      "task_title": "Single-image multimaterial dynamic scene generation",
+      "scope": {
+        "input": "Single RGB image and gravity, wind or point-force controls",
+        "output": "Action-conditioned 3D dynamics and rendered video",
+        "setting": "Rigid, elastic, cloth, smoke, liquid and granular examples",
+        "protocol": "WonderPlay reported source-specific dynamics/qualitative evaluations; visually plausible video refinement is not calibrated physical accuracy."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/wonderplay-2025.md",
+        "assessment": "Specific method summary, but 'visually strong' has no recorded clip times or observed defects.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.20817",
+      "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Variable-state articulation recovery and procedural motion supervision directly supply executable joints. Joint-motion reconstruction was not re-inspected; generation/recovery quality cannot inherit the old unlocated video assertion.",
+      "closest_paper_url": "https://arxiv.org/abs/2609.20673",
+      "material_difference": "Uses multiple observed object states/partial point clouds; FunArt starts from one static scene configuration and also predicts functional elements. Different evidence assumptions prevent supersession.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.20817",
+          "locator": "Abstract",
+          "claim": "Multi-state articulation transformer, observed motion-span objective and procedural self-annotated assets; reports PartNet-Mobility/ACD/ArtiCraft-10K comparisons.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "sparse-observation-articulation-recovery",
+      "task_title": "Sparse-observation articulation recovery",
+      "scope": {
+        "input": "One or more unordered partial point clouds from different object states",
+        "output": "Movable-part masks and joint type, axis, origin and span",
+        "setting": "Object-level feed-forward kinematic reconstruction",
+        "protocol": "PartNet-Mobility, ACD and ArtiCraft-10K with variable observation counts; compare identical observations and splits before ranking."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/famos-2026.md",
+        "assessment": "Specific architecture/benchmark notes, but 'videos inspected' lacks exact samples/time ranges.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.20673",
+      "title": "FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "The full method and controlled Articulate3D protocols were checked; joint functional/kinematic outputs are directly useful. Fig.3 depicts SPOT interaction, so the prior 'no downstream manipulation' description is too categorical; actual execution media remains uninspected.",
+      "closest_paper_url": "https://arxiv.org/abs/2609.20817",
+      "material_difference": "Static posed-RGBD latent decoding jointly recovers functions and kinematics; unlike FAMOS it does not need multiple articulated states. No shared-input successor claim.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.20673",
+          "locator": "Abstract",
+          "claim": "§III-B/C describes frozen TRELLIS2 features and direct TSDF conversion; §IV uses195/42 scenes, GT-object versus end-to-end protocols and an RTX5090.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://arxiv.org/html/2609.20673",
+          "locator": "§III-B/III-C; §IV experimental setup; Fig.3 caption",
+          "claim": "Frozen TRELLIS.2 decoder and TSDF conversion; separate GT-object/end-to-end protocols on195 training/42 validation scenes, singleRTX5090. Fig.3 depicts SPOT/microwave interaction but was not visually inspected.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "static-rgbd-functional-articulation-graph",
+      "task_title": "Static RGB-D functional articulation graph prediction",
+      "scope": {
+        "input": "Posed RGB-D of a single static scene configuration",
+        "output": "Movable parts, functional elements and kinematic scene graph",
+        "setting": "Real indoor static-scan perception before interaction",
+        "protocol": "Articulate3D 195 training / 42 validation scenes; GT-object and end-to-end protocols must stay separate; AP and joint-origin/axis constraints."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/funart-2026.md",
+        "assessment": "Concrete quantitative notes, but physical output was marked not_applicable; current paper contains robot-interaction Fig.3.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.28393",
+      "title": "PointCast: One World Model for Rigid, Articulated, and Deformable Object Manipulation",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Identity-preserving point trajectories across topology regimes are a concrete dynamics/control interface. Need actual rollout/MPC inspection and full matched results before current recommendation.",
+      "closest_paper_url": "https://arxiv.org/abs/2610.07609",
+      "material_difference": "Sparse object/end-effector point MPC differs from PhysLDM volumetric long-horizon simulation; PointCast has separate regime checkpoints and must not be described as one shared trained model.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.28393",
+          "locator": "Abstract",
+          "claim": "One19.8M architecture with separate checkpoints spans rigid, cloth, rope and cabinets; reports matched four-regime and64-episode MPC evaluations.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "action-conditioned-object-point-dynamics",
+      "task_title": "Action-conditioned object point dynamics",
+      "scope": {
+        "input": "Recent object/end-effector points and commanded end-effector motion",
+        "output": "Identity-preserving future point trajectories and MPC predictions",
+        "setting": "Rigid, cloth, rope and cabinet manipulation",
+        "protocol": "PointCast uses separate checkpoints per regime; matched point metrics and four simulated MPC tasks/64 episodes. Not a single shared all-regime checkpoint."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/pointcast-2026.md",
+        "assessment": "Specific and candid checkpoint caveat; visual inspection claim still has no located trajectory or trial.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.07609",
+      "title": "PhysLDM: Latent Diffusion for High-Fidelity Deformable Simulation",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Holistic spatiotemporal compression and distributional deformable prediction could materially improve dynamics modeling. Reconstruction/compression numbers alone do not verify generated physical motion.",
+      "closest_paper_url": "https://arxiv.org/abs/2609.28393",
+      "material_difference": "Volumetric one-shot deformable trajectories and differentiable inverse design differ from PointCast's short point trajectories/MPC; neither is an all-task replacement.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.07609",
+          "locator": "Abstract",
+          "claim": "Reports a spatiotemporal VAE with about2.48mm reconstruction and up to78x token compression, followed by latent diffusion and OOD tests.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://arxiv.org/abs/2610.07609",
+          "locator": "Abstract, Project Page link",
+          "claim": "The abstract links an actual official project page; an abstract URL itself must not be described as an inspected demo.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "volumetric-deformable-trajectory-generation",
+      "task_title": "Volumetric deformable trajectory generation",
+      "scope": {
+        "input": "Volumetric mesh and prescribed kinematic/boundary context",
+        "output": "One-shot high-resolution deformable trajectories",
+        "setting": "Neural volumetric simulation and differentiable inverse/design tasks",
+        "protocol": "PhysLDM Objaverse-scale training and GSO/Toys4K OOD tests; compression, reconstruction and physics trajectory metrics are distinct."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/physldm-2026.md",
+        "assessment": "Template media claim cites only an abstract URL; actual project link was recoverable from the abstract but not visually inspected.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability",
+      "uninspected_official_media_url": "https://yucrazing.github.io/physldm/"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.18835",
+      "title": "RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Editable solver/contact choices and force-feedback calibration expose a specific reusable real-to-sim interface. Actual contact fidelity, calibration failures and agentic Real2Sim2Real sequences were not inspected.",
+      "closest_paper_url": "https://arxiv.org/abs/2610.20336",
+      "material_difference": "Calibrates contact models and physics interactively in Newton; AutoRSR automates metric registration and data scaling. Different target errors and control budgets.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.18835",
+          "locator": "Abstract",
+          "claim": "Uses open Newton and visual, force-feedback and agentic Real2Sim2Real case studies.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "interactive-contact-model-real2sim-calibration",
+      "task_title": "Interactive contact-model real-to-sim calibration",
+      "scope": {
+        "input": "Observed robot/object interactions, optional force feedback",
+        "output": "Editable solver, contact model and physical parameters",
+        "setting": "Human/agent guided calibration in Newton simulation",
+        "protocol": "RoboSimStudio visual/force-feedback/agentic Real2Sim2Real case studies; no matched broad scene-generation protocol."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/robosimstudio-2026.md",
+        "assessment": "Largely template; main 'metric' is media/code availability rather than a located calibration result.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20336",
+      "title": "AutoRSR: Automated Real-to-Sim-to-Real Data Generation for Scalable Robot Learning",
+      "branch": "A",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Metric registration and reduced human data effort form a concrete system contribution, but three source-reported successes do not establish asset/collision quality or unedited robot behavior.",
+      "closest_paper_url": "https://arxiv.org/abs/2606.28276",
+      "material_difference": "Automates workspace metric registration and reference-motion augmentation; SimFoundry emphasizes video reconstruction, affordance-preserving cousins and policy ranking. No matched common real-task evaluation.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.20336",
+          "locator": "Abstract",
+          "claim": "Reports three real tasks,1K generated episodes/task,73.3–86.7% success versus150 teleoperated demos and lower human time.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "metric-real2sim-manipulation-data-generation",
+      "task_title": "Metric real-to-sim manipulation data generation",
+      "scope": {
+        "input": "Multiview workspace scans, robot states, semantic queries and reference motions",
+        "output": "Robot-frame aligned assets and executable augmented trajectories",
+        "setting": "Real2Sim2Real manipulation data generation",
+        "protocol": "AutoRSR three real manipulation tasks; 1K generated episodes/task versus 150 teleoperated demos. Hardware, success definitions and human effort accounting need full verification."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/A_executable_world_representation/autorsr-2026.md",
+        "assessment": "Largely template; figure_status captured_official has no actual local capture path or page/time locator.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2404.09465",
+      "title": "PhyScene",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Collision, room and reachability guidance is a direct interactive-layout baseline. Recheck articulated-object execution, collisions and constrained samples; old page-presence evidence is insufficient.",
+      "closest_paper_url": "https://arxiv.org/abs/2602.10116",
+      "material_difference": "Diffusion-layout interactivity guidance differs from language-agentic dense scene composition; fixed inputs and asset assumptions retain baseline value without proving a successor.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2404.09465",
+          "locator": "Abstract",
+          "claim": "Conditional diffusion scene synthesis uses object-collision, room-layout and reachability guidance.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "interaction-guided-indoor-layout-generation",
+      "task_title": "Interaction-guided indoor layout generation",
+      "scope": {
+        "input": "Floor/room conditions and object/layout priors",
+        "output": "Collision-aware and reachable indoor layouts with articulated assets",
+        "setting": "Diffusion scene layouts for embodied agents",
+        "protocol": "PhyScene 3D-FRONT/ProcTHOR and GAPartNet/Isaac Sim evaluations; no protocol equivalence to open-vocabulary prompt generators established."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/physcene-2024.md",
+        "assessment": "Largely template; claims robot interaction but no exact inspected motion segment.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2311.01455",
+      "title": "RoboGen",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Propose-generate-learn is a substantive foundation for automatic task/world/supervision loops. Its learned skill and task validity claims still require actual rollout inspection; no automatic demotion based on publication date.",
+      "closest_paper_url": "https://arxiv.org/abs/2607.07459",
+      "material_difference": "Generates task proposals, supervision and policies, whereas EmbodiedGen V2 focuses asset/world assembly and task environments. Different targets and budgets prevent historical status.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2311.01455",
+          "locator": "Abstract",
+          "claim": "Foundation models generate tasks/scenes/supervision, choose RL/planning/trajectory optimization, and learn skills.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://robogen-ai.github.io/",
+          "locator": "Official project page and task-gallery descriptions",
+          "claim": "Official project is accessible; actual task rollout frames were not inspected.",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "generative-simulation-robot-skill-learning",
+      "task_title": "Generative simulation for robot skill learning",
+      "scope": {
+        "input": "Foundation-model task proposals and asset resources",
+        "output": "Generated tasks, environments, supervision and learned skills",
+        "setting": "Self-guided propose-generate-learn across manipulation and locomotion",
+        "protocol": "RoboGen per-task RL/planning/trajectory-optimization evaluations; not a shared scene-only benchmark with newer world engines."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/robogen-2024.md",
+        "assessment": "Largely template; long-horizon and locomotion media links lack sample/time and failure observations.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2505.04831",
+      "title": "Steerable Scene Generation",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "RL steering, feasibility projection and diffusion MCTS plus a large released scene prior are substantial reusable components. The old 'project not confirmed' is outdated: official code/data/media links now exist, but motion was not inspected.",
+      "closest_paper_url": "https://arxiv.org/abs/2602.09153",
+      "material_difference": "Fixed-library goal-steered SE3 generation is useful for task-constrained placement and differs from SceneSmith open-vocabulary dense composition; retain this distinct protocol.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2505.04831",
+          "locator": "Abstract",
+          "claim": "Reports44M scenes across five environments, RL post-training, conditional generation and MCTS; official page identifies CoRL2025.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://steerable-scene-generation.github.io/",
+          "locator": "CoRL2025 header; Abstract; Proof-of-Concept Teleoperation; BibTeX",
+          "claim": "Official project links code/data and distinguishes five fixed-library environments, generation trajectories and KUKA teleoperation videos. None of those clips was actually inspected.",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "goal-steered-se3-scene-generation",
+      "task_title": "Goal-steered SE(3) scene generation",
+      "scope": {
+        "input": "Fixed asset library, procedural scene prior and downstream objective",
+        "output": "Object identities and SE(3) placements satisfying target objectives",
+        "setting": "Diffusion prior with RL post-training or inference-time MCTS",
+        "protocol": "44M source-reported scenes across five environment types; compare matched goals, library, feasibility projection and search budgets."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/steerable-scene-generation-2025.md",
+        "assessment": "Largely template; missing official project/code fields and vague weak-demo comparison need correction.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability",
+      "uninspected_official_media_url": "https://steerable-scene-generation.github.io/",
+      "metadata_corrections": {
+        "title": "Steerable Scene Generation with Post Training and Inference-Time Search",
+        "project_url": "https://steerable-scene-generation.github.io/",
+        "source_url": "https://steerable-scene-generation.github.io/"
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.10116",
+      "title": "SAGE",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Task intent plus semantic/visual/physics critics and released SAGE10K are a concrete task-world interface. Need actual stability and policy-execution media, controlled comparisons and failures before current role.",
+      "closest_paper_url": "https://arxiv.org/abs/2602.09153",
+      "material_difference": "Task-conditioned tool selection/critic iteration and SAGE10K differ from SceneSmith dense open-vocabulary prompt population; overlapping task family without a shared protocol.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2602.10116",
+          "locator": "Abstract",
+          "claim": "Official updated page documents10,000 scenes,50 room types/styles and565K unique generated objects plus task-aware critic iteration.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://research.nvidia.com/labs/cosmos-lab/sage/",
+          "locator": "Overview; Evaluation & Validation; SAGE-10k Dataset",
+          "claim": "Updated official project describes critic iteration and10K/50-type/565K-object dataset. These are source-reported scope/release facts, not observed visual quality.",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "language-conditioned-interactive-indoor-scene-generation",
+      "task_title": "Language-conditioned interactive indoor scene generation",
+      "scope": {
+        "input": "Natural-language room/house or embodied-task request",
+        "output": "Indoor scene layouts, object assets and simulator-facing properties",
+        "setting": "Prompt-conditioned interactive indoor environments",
+        "protocol": "SAGE task-conditioned generation, SceneSmith dense prompt generation and SceneFoundry apartment layouts have different assets, room scopes, critics and evaluation metrics; no common matched protocol yet."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/sage-2026.md",
+        "assessment": "Largely template; prior site redirected and media assertions do not identify observed content.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability",
+      "metadata_corrections": {
+        "project_url": "https://research.nvidia.com/labs/cosmos-lab/sage/",
+        "reason": "Legacy DIR URL is a redirect page; use the actual project."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2506.10600",
+      "title": "EmbodiedGen",
+      "branch": "B",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Retain the six-module URDF asset toolkit as a family reference. The source checked here does not establish a sufficiently distinguished current whole-world recommendation under v2, and V2's new capabilities are not evidence that V1 has no retained advantages.",
+      "closest_paper_url": "https://arxiv.org/abs/2607.07459",
+      "material_difference": "V1 concentrates on asset/module generation, physical scale and URDF; V2 adds unified policy-ready task worlds/dialogue. No matched ablations, cost or simulator regression audit.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2506.10600",
+          "locator": "Abstract",
+          "claim": "Provides image/text/texture/articulation/scene/layout modules and simulation-importable URDF assets.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "embodiedgen-executable-world-generation",
+      "task_title": "EmbodiedGen executable world generation",
+      "scope": {
+        "input": "Text/images and, in V2, stateful dialogue and task intent",
+        "output": "Sim-ready assets and composed executable scenes/worlds",
+        "setting": "EmbodiedGen family asset-to-world engine",
+        "protocol": "V1 six generation modules versus V2 task-driven worlds, dialogue and cross-simulator policy learning. A V2 label alone does not prove all V1 scope, cost or export tradeoffs are improved."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Revisit if a concrete target task and controlled evidence establish a substantial capability increment over maintained methods.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/embodiedgen-2025.md",
+        "assessment": "Template report lists broad possible schema uses; no comparative artifact or exact execution inspection.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2312.09067",
+      "title": "Holodeck",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Open-ended language layouts with downstream navigation define a reusable environment baseline. Need actual generated-scene navigation and placement-failure inspection before re-endorsing current.",
+      "closest_paper_url": "https://arxiv.org/abs/2602.10116",
+      "material_difference": "AI2THOR/Objaverse spatial-constraint generation and NoveltyTHOR navigation differ from SAGE manipulation-task scenes and physics-engine choices.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2312.09067",
+          "locator": "Abstract",
+          "claim": "LLM commonsense plus spatial constraints and layout optimization; reports human preference and novel-scene navigation transfer.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "language-conditioned-thor-environment-generation",
+      "task_title": "Language-conditioned AI2-THOR environment generation",
+      "scope": {
+        "input": "Open-ended language scene/style requests",
+        "output": "AI2-THOR scenes using retrieved Objaverse assets and spatial constraints",
+        "setting": "Prompted embodied navigation environments",
+        "protocol": "Holodeck human preference and NoveltyTHOR object-navigation; not directly comparable to manipulation-oriented physics scenes."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/holodeck-2024.md",
+        "assessment": "Largely template; generic 'strong' quality has no located walkthrough or interaction sample.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2406.11824",
+      "title": "Infinigen Indoors",
+      "branch": "B",
+      "decision": "priority",
+      "impact_score": 5,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "score_status": "completed_for_stated_scope",
+      "reason": "Reusable procedural asset+constraint code, controlled solver ablations and downstream annotation tests justify sustained reading. The actual random-sample image supports adequate static scene quality; recommendation excludes uninspected contact/robot execution.",
+      "closest_paper_url": "https://arxiv.org/abs/2312.09067",
+      "material_difference": "Unlike Holodeck's fixed retrieved asset library, geometry and materials are procedural and editable down to asset parameters; dense annotations and solver controls are the retained value.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": false,
+      "visual_status": "verified",
+      "visual_quality_decision": "adequate",
+      "visual_quality_score": 3,
+      "inspection_evidence": [
+        {
+          "url": "https://infinigen.org/img/random_sample_indoors.jpeg",
+          "media_url": "https://infinigen.org/img/random_sample_indoors.jpeg",
+          "modality": "official_image",
+          "locator": "Full official random-sample grid: top-left dining, top-right living room, bottom-left bathroom and bottom-right kitchen quadrants, including thumbnail strips",
+          "observation": "The four main room groups have recognizable furniture/cabinet/sanitary fixtures, coherent wall/floor perspective and lighting, and visibly varied room arrangements in thumbnail strips. Geometry appears coherent in these rendered views; some surfaces and objects are visually simple.",
+          "coverage": "Multiple static rooms and layouts in one official sample grid; adequate static PCG/annotation quality.",
+          "limitations": "Only rendered images inspected. Occluded mesh topology, articulation, physical contacts, long-tail generation failure and robot execution are unverified and excluded from the recommendation."
+        }
+      ],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2406.11824",
+          "locator": "Sections 3.2/3.4; Sections 4.1/4.3 and Tables 3-4",
+          "claim": "§3.2/3.4 details constraint DSL and export; §4.1/Table3 ablates solver; §4.3/Table4 validates occlusion-boundary training.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://arxiv.org/html/2406.11824",
+          "locator": "§3.2 constraint API; §3.4 export; §4.1/Table3 and §4.3/Table4",
+          "claim": "Reusable constraint/annotation/export infrastructure. Solver ablation uses20 scenes/5K steps; occlusion-boundary comparison trains matched U-Nets. These are author-reported controls, not independently reproduced robotics validation.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://github.com/princeton-vl/infinigen",
+          "locator": "Getting Started: Hello Room; Papers: Infinigen Indoors",
+          "claim": "Official code provides indoors-stable and initial-release entry points and the CVPR2024 citation; latest repository also contains later work, so use the paper's version for reproduction.",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "procedural-indoor-scene-annotation-generation",
+      "task_title": "Procedural indoor scene and annotation generation",
+      "scope": {
+        "input": "Procedural asset parameters and scene composition constraints",
+        "output": "Blender indoor geometry, renders and dense ground-truth annotations",
+        "setting": "Static procedural scenes; runtime mesh export is a documented interface, not verified contact-dynamics performance",
+        "protocol": "Infinigen Indoors §4.1/Table3 20 random scenes/5K solver steps; §4.3/Table4 occlusion-boundary training comparison. Rendering and solver budgets matter."
+      },
+      "role": "current",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Revisit when the official task/evaluator changes or a matched successor demonstrates a material advance.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/infinigen-indoors-2024.md",
+        "assessment": "Template report overstated only generic quality; exact method/ablation locators and actual image observations now supplied.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "reusable_infrastructure",
+      "inspection_completeness": "completed_for_static_generation_scope",
+      "acceptance_rationale": "Procedural geometry/material generation plus a constraint DSL and dense annotation renderer provide a reusable, distinct baseline. Solver ablations and downstream label-learning tests substantiate the infrastructure; no physical execution claim is needed for this static scope."
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.09153",
+      "title": "SceneSmith",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Dense object population, explicit physics and reusable policy-evaluation scenes are substantial. Official text quantifies stability and has extensive media, but none of its contact/robot clips was actually watched in this review.",
+      "closest_paper_url": "https://arxiv.org/abs/2602.10116",
+      "material_difference": "Hierarchical layout/furniture/wall/ceiling/manipuland agents and articulated retrieval differ from SAGE task-conditioned tool orchestration. No same-data same-budget all-axis comparison.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2602.09153",
+          "locator": "Abstract",
+          "claim": "Abstract reports3–6x object counts,<2% inter-object collisions,96% stable objects and205-person user study; official page describes Drake robot usage.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://scenesmith.github.io/",
+          "locator": "Scene Construction; Teleoperation; Simulation-Ready Scenes; Automatic Robot Policy Evaluation",
+          "claim": "Official page specifies five construction stages, Drake/RBY1 demonstrations, earthquake testing and100 policy-evaluation scenes. Media availability and captions do not constitute inspection.",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "language-conditioned-interactive-indoor-scene-generation",
+      "task_title": "Language-conditioned interactive indoor scene generation",
+      "scope": {
+        "input": "Natural-language room/house or embodied-task request",
+        "output": "Indoor scene layouts, object assets and simulator-facing properties",
+        "setting": "Prompt-conditioned interactive indoor environments",
+        "protocol": "SAGE task-conditioned generation, SceneSmith dense prompt generation and SceneFoundry apartment layouts have different assets, room scopes, critics and evaluation metrics; no common matched protocol yet."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/scenesmith-2026.md",
+        "assessment": "Largely template; reported stability and media existence substituted for exact observation and failure coverage.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2601.05810",
+      "title": "SceneFoundry",
+      "branch": "B",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Retain apartment-scale articulated layout guidance as a narrower baseline. The verified abstract combines existing diffusion guidance/LLM planning but does not establish the large controlled advance required for a new core recommendation.",
+      "closest_paper_url": "https://arxiv.org/abs/2404.09465",
+      "material_difference": "Adds apartment-scale language/floor-plan control and articulation-collision/walkability guidance over layout priors; it does not establish superiority over PhyScene under shared conditions.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2601.05810",
+          "locator": "Abstract",
+          "claim": "Language-guided diffusion and posterior sampling populate apartment layouts with articulated assets under quantity/collision/walkability constraints.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "language-conditioned-interactive-indoor-scene-generation",
+      "task_title": "Language-conditioned interactive indoor scene generation",
+      "scope": {
+        "input": "Natural-language room/house or embodied-task request",
+        "output": "Indoor scene layouts, object assets and simulator-facing properties",
+        "setting": "Prompt-conditioned interactive indoor environments",
+        "protocol": "SAGE task-conditioned generation, SceneSmith dense prompt generation and SceneFoundry apartment layouts have different assets, room scopes, critics and evaluation metrics; no common matched protocol yet."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Revisit if a concrete target task and controlled evidence establish a substantial capability increment over maintained methods.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/scenefoundry-2026.md",
+        "assessment": "Template report lacks exact results and locators; newer date or apartment scope alone is not a succession proof.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2604.14268",
+      "title": "HY-World 2.0",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Open multi-input reconstruction/generation and scene export are reusable visual-world infrastructure. Navigability, collision support and persistent exploration need actual temporal inspection.",
+      "closest_paper_url": "https://arxiv.org/abs/2406.09394",
+      "material_difference": "Broader multimodal pipeline and WorldLens renderer differ from WonderWorld local online expansion and SpatialCrafter proxy refinement; extra scope does not prove no regressions.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2604.14268",
+          "locator": "Abstract",
+          "claim": "HY-Pano, WorldNav, WorldStereo, WorldMirror and WorldLens combine multimodal3D generation/reconstruction with released weights/code according to the abstract.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "single-image-camera-controlled-scene-exploration",
+      "task_title": "Single-image camera-controlled scene exploration",
+      "scope": {
+        "input": "Single image and camera trajectory or interactive camera/content steering",
+        "output": "Novel views plus the system's available 3D scene/proxy representation",
+        "setting": "Explorable visual worlds; physics executability is not assumed",
+        "protocol": "HY-World supports other inputs too; WonderWorld scene expansion and SpatialCrafter video refinement differ in representation, data, trajectory and compute. No direct all-axis successor comparison."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/hy-world-2-2026.md",
+        "assessment": "Largely template; physics-ready language exceeds verified visual-world evidence.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.08498",
+      "title": "SimWorld Studio: Generation and Evolution of Custom Embodied Agent Learning Environments",
+      "branch": "B",
+      "decision": "source_issue",
+      "impact_score": null,
+      "project_relevance_score": null,
+      "evidence_strength": null,
+      "score_status": "identity_correction_required",
+      "reason": "Registry arXiv2606.08498 is an unrelated statistics paper. The real official project points to2605.09423 with a different title and UE5/SimCoder method; old320-task/240-layout claims and the currently404 code link cannot serve as evidence.",
+      "closest_paper_url": "https://arxiv.org/abs/2610.19420",
+      "material_difference": "Correct SimWorld Studio uses coding-agent self/co-evolution and Gym export; WEDGE uses validated policy weaknesses to condition ProcTHOR. Comparison must wait for identity correction.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2606.08498",
+          "locator": "Title and Abstract",
+          "claim": "The registry URL identifies a high-dimensional nonstationary time-series independence-testing paper, unrelated to embodied generation.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://simworld.org/simworld-studio/",
+          "locator": "Overview; Platform Overview; Cite This Work",
+          "claim": "Real SimWorld Studio uses UE5, SimCoder feedback/skills and Gym-style exports; citation points to arXiv2605.09423, not2606.08498.",
+          "source_quality": "official",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://arxiv.org/abs/2605.09423",
+          "locator": "Title and Abstract",
+          "claim": "Correct primary describes coding-agent self-evolution and environment/learner co-evolution on three navigation case studies.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://github.com/SimWorld-AI/SimWorld-Studio",
+          "locator": "HTTP fetch",
+          "claim": "Official Code&Data target returned404 in this review; a public code release cannot currently be verified at that URL.",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "evolving-ue5-navigation-environment-generation",
+      "task_title": "Evolving UE5 navigation environment generation",
+      "scope": {
+        "input": "Language/image requests and navigation-agent feedback",
+        "output": "Verified engine code and Gym-style navigation environments",
+        "setting": "SimCoder environment/agent co-evolution in Unreal Engine 5",
+        "protocol": "Correct official SimWorld Studio source is arXiv:2605.09423; registry URL points to unrelated statistics paper. Original benchmark numbers are unsupported."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Correct identity, title and unsupported legacy evidence against the official paper; then complete method, protocol and temporal review.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/simworld-studio-2026.md",
+        "assessment": "Critical identity mismatch; title, method, benchmark counts and public-code verification in legacy report need correction.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability",
+      "actual_source_title": "Tests for Independence of High-Dimensional Nonstationary Time Series",
+      "corrected_source_url": "https://arxiv.org/abs/2605.09423",
+      "corrected_source_title": "SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning",
+      "metadata_corrections": {
+        "paper_url": "https://arxiv.org/abs/2605.09423",
+        "title": "SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning",
+        "source_url": "https://simworld.org/simworld-studio/",
+        "unsupported_legacy_claims": [
+          "320 embodied tasks",
+          "240 held-out layouts",
+          "verified public code at the current GitHub URL"
+        ]
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2607.07459",
+      "title": "EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Unified task-world representation, stateful editing and source-reported sim/real policy gains are strong potential current-frontier evidence. Actual cross-engine asset/task and robot clips have not been inspected.",
+      "closest_paper_url": "https://arxiv.org/abs/2506.10600",
+      "material_difference": "Adds task-driven worlds, stateful dialogue, affordance links and cross-simulator policy use over V1 modules. Require matched scope/cost/export audit before making V1 historical.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2607.07459",
+          "locator": "Abstract",
+          "claim": "Reports96.5% asset acceptance,98.6% collision success,83.3% directly usable task worlds and simulated/real policy improvements.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "embodiedgen-executable-world-generation",
+      "task_title": "EmbodiedGen executable world generation",
+      "scope": {
+        "input": "Text/images and, in V2, stateful dialogue and task intent",
+        "output": "Sim-ready assets and composed executable scenes/worlds",
+        "setting": "EmbodiedGen family asset-to-world engine",
+        "protocol": "V1 six generation modules versus V2 task-driven worlds, dialogue and cross-simulator policy learning. A V2 label alone does not prove all V1 scope, cost or export tradeoffs are improved."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/embodiedgen-v2-2026.md",
+        "assessment": "Specific system summary but no exact inspected clip, failure example or matched V1 comparison.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2607.05765",
+      "title": "Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Real-image neural simulation plus action-aligned navigation data is a direct reusable data-engine capability. Rendering consistency, executable motion and real transfer remain uninspected visually.",
+      "closest_paper_url": "https://arxiv.org/abs/2406.09394",
+      "material_difference": "Requires posed RGBD and produces action/instruction supervision, unlike one-image visual world prototyping. That input requirement retains a separate task.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2607.05765",
+          "locator": "Abstract",
+          "claim": "Feature-Gaussian anchoring plus one-step panoramic RGBD flow; reports nearly20K scenes and over10M navigation samples.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "rgbd-neural-navigation-simulator-generation",
+      "task_title": "RGB-D neural navigation simulator generation",
+      "scope": {
+        "input": "Posed RGB-D images or video sequences",
+        "output": "Feature-Gaussian scene, panoramic RGB-D observations and action/instruction samples",
+        "setting": "Image2Sim real-time navigation simulator and data engine",
+        "protocol": "Reported nearly20K scenes/10M samples and zero-shot navigation transfer; pose/depth assumptions differ from single-image visual generators."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/image2sim-2026.md",
+        "assessment": "Specific method/data summary; generic videos-show-interactivity statement lacks located observations.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2406.09394",
+      "title": "WonderWorld: Interactive 3D Scene Generation from a Single Image",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Fast user-steered connected scene expansion is a concrete interactive-generation capability. Need actual expansion/return-path inspection and drift cases, not just the claimed runtime.",
+      "closest_paper_url": "https://arxiv.org/abs/2608.27073",
+      "material_difference": "Interactive local FLAGS expansion differs from HY-World broader global reconstruction and SpatialCrafter proxy video. Unmatched latency/hardware and export semantics preclude supersession.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2406.09394",
+          "locator": "Abstract",
+          "claim": "FLAGS and guided depth diffusion generate connected scenes in under10s on A6000, source-reported.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "single-image-camera-controlled-scene-exploration",
+      "task_title": "Single-image camera-controlled scene exploration",
+      "scope": {
+        "input": "Single image and camera trajectory or interactive camera/content steering",
+        "output": "Novel views plus the system's available 3D scene/proxy representation",
+        "setting": "Explorable visual worlds; physics executability is not assumed",
+        "protocol": "HY-World supports other inputs too; WonderWorld scene expansion and SpatialCrafter video refinement differ in representation, data, trajectory and compute. No direct all-axis successor comparison."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/wonderworld-2024.md",
+        "assessment": "Specific method but official-video quality and connectivity claims lack exact clips and observed defects.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.27073",
+      "title": "SpatialCrafter: Single Image World Modeling with Generative 3D Proxies",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Persistent global3D proxy plus generative deferred refinement is a material approach to camera/video drift. Actual revisits, rapid turns and long rollout failure coverage were not inspected.",
+      "closest_paper_url": "https://arxiv.org/abs/2406.09394",
+      "material_difference": "A persistent3D proxy conditions video refinement; WonderWorld exports iterative renderable scene patches. Different output usability and runtime tradeoffs prevent replacement.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2608.27073",
+          "locator": "Abstract",
+          "claim": "PaSS Flow global proxy, geometry injection/proxy-aware training and source-reported115K-scene dataset.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "single-image-camera-controlled-scene-exploration",
+      "task_title": "Single-image camera-controlled scene exploration",
+      "scope": {
+        "input": "Single image and camera trajectory or interactive camera/content steering",
+        "output": "Novel views plus the system's available 3D scene/proxy representation",
+        "setting": "Explorable visual worlds; physics executability is not assumed",
+        "protocol": "HY-World supports other inputs too; WonderWorld scene expansion and SpatialCrafter video refinement differ in representation, data, trajectory and compute. No direct all-axis successor comparison."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/spatialcrafter-2026.md",
+        "assessment": "Specific representation summary, but venue, code-TBA and long-video quality statements lack independently checked release/clip evidence.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.28816",
+      "title": "Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Permutation-equivalent agent encoding and linear hub communication are substantial multi-agent world components. Temporal cross-view identity/consistency and speed claims need actual sample inspection.",
+      "closest_paper_url": "https://arxiv.org/abs/2610.12412",
+      "material_difference": "Centralized sparse-hub joint generation differs from WorldCast distributed local clients and PAWA panorama-aligned dual towers; training domains and state privileges differ.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.28816",
+          "locator": "Abstract",
+          "claim": "Simplex rotary identities, sparse hub attention and causal distillation; reports24FPS and two-to-four-agent transfer.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "multiplayer-action-video-simulation",
+      "task_title": "Multiplayer action-conditioned video simulation",
+      "scope": {
+        "input": "Synchronized player observations and independent action streams",
+        "output": "Shared-world-consistent player-view future video",
+        "setting": "Multiple independently controlled players in a virtual world",
+        "protocol": "Gamma-World two/four-player evaluation, WorldCast CS2 and PAWA Minecraft POV/panorama differ in domains, privileged geometry, outputs and hardware; no comparable-protocol successor evidence."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/gamma-world-2026.md",
+        "assessment": "Specific method and release notes, but reported synchronization was not backed by located paired-view observations.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.20034",
+      "title": "Astronex-World 1.0: Real-Time Interactive World Model Foundation",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Open low-resource training and streaming controls are potentially reusable, but WBench/throughput numbers and curated gallery descriptions do not establish persistent action/world quality.",
+      "closest_paper_url": "https://arxiv.org/abs/2605.28816",
+      "material_difference": "Single-controller/camera/embodiment streaming differs from Gamma-World multiple independent agent streams. It is not a more complete same-task successor.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.20034",
+          "locator": "Abstract",
+          "claim": "Wan2.2-based5B family with camera/action/event conditioning; reports24FPS at832x480 and training on two L20 GPUs.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "action-conditioned-streaming-video-world-generation",
+      "task_title": "Action-conditioned streaming video world generation",
+      "scope": {
+        "input": "Text/image initialization, camera, continuous actions, embodiment IDs and events",
+        "output": "Streaming action-responsive visual rollout",
+        "setting": "Astronex block-causal 5B world model",
+        "protocol": "WBench Navi/Full, reported resolution and single-L20 runtime; image metrics and throughput do not establish simulator-executable state."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/astronex-world-2026.md",
+        "assessment": "Specific system summary; action-responsive visuals and drift observations have no exact inspected segment.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.25725",
+      "title": "AgriGen: Large-Scale Scene Generation Framework for Photorealistic Agricultural Robotics Simulation",
+      "branch": "B",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Agricultural parameterized scenes are relevant but domain-specialized; verified abstract supplies no reusable release, controlled policy gains or sim-to-real evidence that clears core thresholds. Workshop prestige alone does not raise impact.",
+      "closest_paper_url": "https://arxiv.org/abs/2406.11824",
+      "material_difference": "Adds crop/row/seasonal domain grammar rather than improving general indoor PCG. It could be useful for a future explicit agricultural benchmark.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.25725",
+          "locator": "Abstract",
+          "claim": "ROS-integrated IsaacSim procedural row-crop, orchard and vineyard environments with physics and domain randomization.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "agricultural-procedural-robotics-scene-generation",
+      "task_title": "Agricultural procedural robotics scene generation",
+      "scope": {
+        "input": "Crop type, rows, spacing, terrain and lighting parameters",
+        "output": "Agricultural ROS/Isaac Sim scenes",
+        "setting": "Row crops, orchards and vineyards",
+        "protocol": "AgriGen reported scene coverage; no reusable release or downstream policy / sim-to-real protocol verified this review."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "A reusable official release and controlled downstream robotics gains, or an explicit repository agricultural task, could justify promotion.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/agrigen-2026.md",
+        "assessment": "Specific crop examples, but release, award and downstream validation are not independently source-verified this review.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability",
+      "source_review_limits": "Only the primary abstract was independently checked. Legacy claims of a workshop award or coming-soon status were not used to assign scores."
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.28276",
+      "title": "SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Editable twins/cousins plus policy-ranking and real-transfer experiments are a material compiler/evaluation capability. Need actual articulation/contact/manipulation and failure-case inspection.",
+      "closest_paper_url": "https://arxiv.org/abs/2610.20336",
+      "material_difference": "Emphasizes affordance-preserving cousins and sim-real policy ranking; AutoRSR emphasizes metric frame registration/reference-motion data scaling. Different tasks and data budgets.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2606.28276",
+          "locator": "Abstract",
+          "claim": "Reports seven tasks/five policy architectures,0.911 mean sim-real correlation and17/21/40% success gains with object/scene/task cousins.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "video-to-digital-cousin-manipulation-scene-generation",
+      "task_title": "Video-to-digital-cousin manipulation scenes",
+      "scope": {
+        "input": "Short real-world scene video and scene/task edits",
+        "output": "OmniGibson digital twins and affordance-preserving cousins",
+        "setting": "Manipulation-policy training and sim-real evaluation",
+        "protocol": "SimFoundry seven manipulation tasks/five policy architectures; sim-real correlation and policy gains require matched tasks and deployment conditions."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/simfoundry-2026.md",
+        "assessment": "Largely template; numeric claims are traceable to abstract but qualitative usability is asserted without exact rollout evidence.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.12412",
+      "title": "WorldCast: Distributed Multiplayer World Models",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Distributed local video/state clients and compact shared state are a substantial scaling alternative. Player identities, shared events and hour-long consistency require actual paired-rollout inspection.",
+      "closest_paper_url": "https://arxiv.org/abs/2605.28816",
+      "material_difference": "Trades centralized generation for local client models and privileged recorded positions/map geometry; not directly comparable to Gamma-World or PAWA datasets.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.12412",
+          "locator": "Abstract",
+          "claim": "CS2 clients exchange player and scene state; reports improved player rendering and real-time scaling, with stable image quality over hour-long rollouts.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "multiplayer-action-video-simulation",
+      "task_title": "Multiplayer action-conditioned video simulation",
+      "scope": {
+        "input": "Synchronized player observations and independent action streams",
+        "output": "Shared-world-consistent player-view future video",
+        "setting": "Multiple independently controlled players in a virtual world",
+        "protocol": "Gamma-World two/four-player evaluation, WorldCast CS2 and PAWA Minecraft POV/panorama differ in domains, privileged geometry, outputs and hardware; no comparable-protocol successor evidence."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/worldcast-2026.md",
+        "assessment": "Template report equates generic official media presence with a strong visual pass.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.10539",
+      "title": "Tetris3D: 3D Scene Generation With Objects That Fit Together",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Relational geometry conditioning plus a large physics scene dataset directly targets inter-object fit. Actual occlusion-fit and physical-stability samples/failures were not inspected.",
+      "closest_paper_url": "https://arxiv.org/abs/2606.03994",
+      "material_difference": "Generates object shapes conditioned on neighboring geometry/relations, unlike SimuScene simulation-diagnostic repairs and REST3D scene-tree alignment.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.10539",
+          "locator": "Abstract",
+          "claim": "Introduces ComOb1.2M physics-simulation scenes and reports geometrically/physically coherent single-image object reconstructions.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "single-image-physically-stable-scene-reconstruction",
+      "task_title": "Single-image physically stable scene reconstruction",
+      "scope": {
+        "input": "Single RGB image of interacting scene objects",
+        "output": "Compositional object geometry and poses usable in physics simulation",
+        "setting": "Object-level scenes requiring support, nonpenetration and geometric fit",
+        "protocol": "Each source uses its own synthetic/real scenes and stability/alignment metrics; controlled equivalence of splits, assets and simulation settings is not established."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/tetris3d-2026.md",
+        "assessment": "Template figure/evidence sections repeat generic strong/coherent observations without any located physical check.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20560",
+      "title": "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Contact diagnosis and executable assembly primitives address a real composition gap across material types. Hanging/settling/containment success must be visually checked over actual simulator sequences.",
+      "closest_paper_url": "https://arxiv.org/abs/2610.10539",
+      "material_difference": "An active simulator assembly process with contact feedback differs from Tetris3D one-image reconstruction; broader material labels do not establish same-task superiority.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.20560",
+          "locator": "Abstract",
+          "claim": "Assembly/Critic agents, action routers and a self-evolving skill library solve rigid/articulated/deformable composition in IsaacSim.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "simulated-physical-object-composition",
+      "task_title": "Simulated physical object composition",
+      "scope": {
+        "input": "Composition goal, object geometry and simulator state",
+        "output": "Contact-aware assembled rigid/articulated/deformable object composition",
+        "setting": "Agentic interactive assembly in Isaac Sim",
+        "protocol": "PhySGA hanging, settling, alignment and containment; compare same objects/relations, action budget and primitives. Not equivalent to single-image scene reconstruction."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/physga-2026.md",
+        "assessment": "Largely template; availability of supplementary video replaces measured result and exact temporal inspection.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.19420",
+      "title": "From Failures to Learnable Worlds: Policy-Conditioned Environment Generation for Navigation Agents",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Validated policy-specific weakness features and matched random/hard controls are a substantive targeted-generation capability. Actual generated worlds, navigation behaviors and failure coverage remain uninspected.",
+      "closest_paper_url": "https://arxiv.org/abs/2312.09067",
+      "material_difference": "Conditions environments on measured failure modes rather than Holodeck generic prompt fidelity; policies, budgets and transfer splits differ.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.19420",
+          "locator": "Abstract",
+          "claim": "Contrasts successful/failed rollouts, validates weakness features and adapts three navigation agents on ProcTHOR with HM3D transfer.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "failure-guided-navigation-environment-generation",
+      "task_title": "Failure-guided navigation environment generation",
+      "scope": {
+        "input": "Pretrained navigation policy and contrasting success/failure rollouts",
+        "output": "Validated weakness features and targeted training environments",
+        "setting": "Iterative policy-conditioned environment adaptation",
+        "protocol": "WEDGE three navigation agents, ProcTHOR matched random/hard-example alternatives and HM3D transfer; policy/adaptation budgets matter."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/wedge-2026.md",
+        "assessment": "Largely template; all task inputs are generic and media availability is used as a main metric.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20240",
+      "title": "PAWA: Panoramic Action-conditioned World Modeling for Multiple Agents",
+      "branch": "B",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "score_status": "provisional_source_review_not_v2_admission",
+      "reason": "Synchronized POV/panorama/action data and world-frame dual prediction are a concrete reusable multiplayer infrastructure contribution. Need actual concurrent-agent, offscreen-event and panoramic consistency inspection.",
+      "closest_paper_url": "https://arxiv.org/abs/2605.28816",
+      "material_difference": "Adds world-stabilized panoramic supervision and aligned dual towers in Minecraft; Gamma-World and WorldCast use different synchronization/state assumptions.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "visual_quality_decision": "undecided",
+      "visual_quality_score": null,
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.20240",
+          "locator": "Abstract",
+          "claim": "Distributed capture/render pipeline scales beyond64 players; dual POV/panorama towers with world-frame cross-attention and quadratic-phase player codes.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "multiplayer-action-video-simulation",
+      "task_title": "Multiplayer action-conditioned video simulation",
+      "scope": {
+        "input": "Synchronized player observations and independent action streams",
+        "output": "Shared-world-consistent player-view future video",
+        "setting": "Multiple independently controlled players in a virtual world",
+        "protocol": "Gamma-World two/four-player evaluation, WorldCast CS2 and PAWA Minecraft POV/panorama differ in domains, privileged geometry, outputs and hardware; no comparable-protocol successor evidence."
+      },
+      "role": "unreviewed",
+      "reviewed_on": "2026-10-20",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "legacy_report_audit": {
+        "path": "paper_reads/B_interactive_generation_pcg/pawa-2026.md",
+        "assessment": "Largely template; open data/code are source claims and no actual panorama/POV clip correspondence is recorded.",
+        "exact_visual_inspection_in_legacy_report": false
+      },
+      "independently_reproduced": false,
+      "comparison_status": "No verified same-task, comparable-protocol, no-material-regression succession judgment; no historical edge asserted.",
+      "selection_basis": "new_capability"
+    }
+  ]
+}

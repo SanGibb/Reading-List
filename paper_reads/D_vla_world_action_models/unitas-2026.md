@@ -1,5 +1,10 @@
 # UNITAS: A 3D-Native World Action Model for Embodied Manipulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。metric3D共用action/scene flow使输出接口由像素变可执行运动，是直接表示新能力；主源具体1.7B/PointWorld/real指标已核实，未检查3D动态与碰撞。
+> [本次来源、分数与任务判断](../library_review.md#paper-dc713d46ea7d)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0007
 branch: D
 decision: accepted_for_registry

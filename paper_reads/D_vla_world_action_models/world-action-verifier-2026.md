@@ -1,5 +1,10 @@
 # World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。把验证拆为plausibility/reachability并主动收集world model失败，直接提供生成世界验证接口；主源当前摘要是>22% policy增益，旧精读的>18%需标版本。
+> [本次来源、分数与任务判断](../library_review.md#paper-510dc2cd7119)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0008
 branch: D
 decision: accepted_for_registry

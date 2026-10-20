@@ -1,5 +1,10 @@
 # Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。优化生成分布以提升真实policy是直接核心方法；旧strong只留下页面视频存在与150%数字，未记录实际rollout观察，需重新时序审核。
+> [本次来源、分数与任务判断](../library_review.md#paper-8c72c61f3028)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0016
 branch: E
 decision: accepted_for_registry

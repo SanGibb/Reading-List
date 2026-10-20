@@ -1,5 +1,10 @@
 # SpatialCrafter: Single Image World Modeling with Generative 3D Proxies
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Persistent global3D proxy plus generative deferred refinement is a material approach to camera/video drift. Actual revisits, rapid turns and long rollout failure coverage were not inspected.
+> [本次来源、分数与任务判断](../library_review.md#paper-8d22ee24992d)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0003
 branch: B
 decision: accepted_for_registry

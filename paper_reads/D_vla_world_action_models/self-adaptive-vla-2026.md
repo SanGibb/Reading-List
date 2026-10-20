@@ -1,5 +1,10 @@
 # Self-Adaptive VLA for Robust Robot Deployment
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。部署漂移context token/AdaLN方案针对重要但较窄的工程shift；本轮所见四任务、人工注入shift和恢复百分比不足支持通用鲁棒新能力。
+> [本次来源、分数与任务判断](../library_review.md#paper-ca1ea0968b81)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0004
 branch: D
 decision: accepted_for_registry

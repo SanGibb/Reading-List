@@ -1,5 +1,10 @@
 # Cosmos 3: Omnimodal World Models for Physical AI
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。统一语言/图像/视频/音频/动作和公开多模态artifact是重要基础候选；本轮验证原始摘要的范围及OpenMDW释放声明，未观看物理生成/执行媒体。
+> [本次来源、分数与任务判断](../library_review.md#paper-833749dc0412)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0006
 branch: D
 decision: accepted_for_registry

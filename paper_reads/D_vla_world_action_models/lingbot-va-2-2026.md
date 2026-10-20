@@ -1,5 +1,10 @@
 # Native Video-Action Pretraining for Generalizable Robot Control (LingBot-VA 2.0)
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。从头因果video-action预训练、语义动作tokenizer和异步闭环是系统性能力候选；2.0公开artifact完整性及动作质量仍需检查。
+> [本次来源、分数与任务判断](../library_review.md#paper-240eefb29750)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0004
 branch: D
 decision: accepted_for_registry

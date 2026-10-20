@@ -8,13 +8,35 @@
 
 | 内容 | 入口 |
 |---|---|
+| 从这里开始：精选与逐篇复审 | [paper_reads/library_review.md](paper_reads/library_review.md) |
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
 | 按任务阅读与更迭 | [paper_reads/task_frontiers.md](paper_reads/task_frontiers.md) |
 | 最新扩库摘要 | [reports/2026-10-18-expansion.md](reports/2026-10-18-expansion.md) |
-| 当前已收录精读 | 168 篇，见 [paper_reads/README.md](paper_reads/README.md) |
+| 历史保留记录 | 168 篇；保留不表示全部继续满足新版准入 |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 广泛发现候选，再精选具有实质增量的工作。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。新增可以为 0，不为周更凑数；满足全部门槛的候选仍应全部处理，不做固定 top-k 抽样。
+
+## 2026-10-20 存量整理
+
+已按用户要求，对全部 168 条记录重新核查来源、任务、实质增量和现有证据。
+本次是存量复审，没有扩库；也没有独立训练模型或复现论文指标。
+
+| 本次结论 | 数量 | 阅读方式 |
+|---|---:|---|
+| 优先阅读 | 27 | 重新满足三项四分门槛及适用证据要求，默认展开 |
+| 参考备选 | 31 | 保留基础或独立价值，不表示重新通过核心准入 |
+| 观察名单 | 34 | 当前增量、直接用途或证据不足，记录复查触发条件 |
+| 待视觉复核 | 73 | 不再继承旧的 strong/adequate；本地保留详细 dossier |
+| 来源待修复 | 3 | 原主链接与论文身份不匹配，先隔离再纠错 |
+
+默认入口已从全量平铺改为精选阅读，其余记录折叠保留。每篇旧精读首部都显示本次结论；
+原准入标签保存在 `historical_acceptance`，历史 run 不改写。不能把来源核实当作独立复现，
+也不能把“未完成视觉复核”解释为论文效果差。
+
+完整判断与来源见 [逐篇复审](paper_reads/library_review.md)，方法和问题汇总见
+[整理审计](reports/reorganization/2026-10-20/summary.md)。任务级替代仍需同协议、无关键退化的证据；
+本次没有据版本号或 unmatched 分数强行建立 historical 关系。
 
 ## 任务级更迭
 
@@ -25,13 +47,15 @@
 只有任务一致、比较协议可比、改进充分且没有实质退步时，才把旧工作在该任务中标为
 `historical`，关联到具体后继，并在新工作下折叠展示历史沿革。有成本、泛化、开放性或部署优势的旧工作保留为备选；证据不足不强行判定替代。`current` 不是全局 SOTA 声明，也不要求每个任务只有一篇。
 
-原论文条目、精读文件与链接永久保留。机制上线时的家族归组仅标记为 `unreviewed`，
-不据此批量降级旧论文。具体规则见 [harness/task_lifecycle.md](harness/task_lifecycle.md)，
+原论文条目、精读文件与链接永久保留。当前所有存量记录已归入任务；`unreviewed` 表示
+任务推荐尚缺比较/视觉/来源证据，不表示本次没有检查该条目。具体规则见 [harness/task_lifecycle.md](harness/task_lifecycle.md)，
 任务状态保存在 [data/task_frontiers.seed.json](data/task_frontiers.seed.json)。
 
-## 本周更新内容
+## 上轮扩库记录（复审前历史）
 
 本轮扩库日期：2026-10-18。完整审计摘要见 [reports/2026-10-18-expansion.md](reports/2026-10-18-expansion.md)。
+
+下表是当时的新增审计，不代表当前优先阅读；当前分层以上述存量复审和任务入口为准。
 
 ### 重点新增与补齐
 
@@ -115,7 +139,7 @@ python scripts/publish_validated_update.py --message "Expand frontier knowledge 
 
 ## 收录原则
 
-自 2026-10-20 起，新 run 使用 `acceptance_policy_version: 2`。已有 168 篇保留，不因本次规则调整追溯删库。
+自 2026-10-20 起，新 run 使用 `acceptance_policy_version: 2`。用户已授权本次存量复审；已有记录保留，但不沿用旧结论作为新版验收证据。
 
 - 只收录 2024 年及以后的 frontier work。
 - 必须有 primary / official source，例如 arXiv、OpenReview、CVF、PMLR、官方项目页或官方 GitHub。

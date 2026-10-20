@@ -6,197 +6,231 @@ Maintained deep dives: 168
 
 [任务级当前推荐与历史基线](task_frontiers.md)
 
-本索引保留全部精读。任务角色只对相应 task 生效；未完成比较审核的存量论文标为未审查，不默认 current。
+本索引保留全部精读。任务角色只对相应 task 生效；任务推荐尚待可比证据的条目不默认 current。
+
+本次优先阅读：27 篇；其余参考、观察、待视觉复核和来源待修复条目默认折叠。
+
+[逐篇复审、分数与来源](library_review.md)
 
 ## A. Executable World Representation
 
 Maintained deep dives: 17
 
-- [SceneFun3D](A_executable_world_representation/scenefun3d-2024.md) · 任务更迭：未审查
-- [BEHAVIOR-1K](A_executable_world_representation/behavior-1k-2024.md) · 任务更迭：未审查
-- [PhysX-Omni](A_executable_world_representation/physx-omni-2026.md) · [物理关节资产生成：未审查](task_frontiers.md#task-physical-articulated-asset-generation-paper-288f9e3bf35a)
-- [PhysDreamer](A_executable_world_representation/physdreamer-2024.md) · 任务更迭：未审查
-- [Feature Splatting](A_executable_world_representation/feature-splatting-2024.md) · 任务更迭：未审查
-- [PhysX-Anything](A_executable_world_representation/physx-anything-2025.md) · [物理关节资产生成：未审查](task_frontiers.md#task-physical-articulated-asset-generation-paper-e8d16480d0d1)
-- [SimuScene](A_executable_world_representation/simuscene-2026.md) · 任务更迭：未审查
-- [REST3D](A_executable_world_representation/rest3d-2026.md) · 任务更迭：未审查
-- [TriSplat](A_executable_world_representation/trisplat-2026.md) · 任务更迭：未审查
-- [SceneCode: Editable Indoor Scene Generation using Executable World Programs](A_executable_world_representation/scenecode-2026.md) · 任务更迭：未审查
-- [WonderPlay: Dynamic 3D Scene Generation from a Single Image and Actions](A_executable_world_representation/wonderplay-2025.md) · 任务更迭：未审查
-- [FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations](A_executable_world_representation/famos-2026.md) · 任务更迭：未审查
-- [FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents](A_executable_world_representation/funart-2026.md) · 任务更迭：未审查
-- [PointCast: One World Model for Rigid, Articulated, and Deformable Object Manipulation](A_executable_world_representation/pointcast-2026.md) · 任务更迭：未审查
-- [PhysLDM: Latent Diffusion for High-Fidelity Deformable Simulation](A_executable_world_representation/physldm-2026.md) · 任务更迭：未审查
-- [RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](A_executable_world_representation/robosimstudio-2026.md) · 任务更迭：未审查
-- [AutoRSR: Automated Real-to-Sim-to-Real Data Generation for Scalable Robot Learning](A_executable_world_representation/autorsr-2026.md) · 任务更迭：未审查
+- [SceneFun3D](A_executable_world_representation/scenefun3d-2024.md) · 优先阅读 · [功能部件与关节结构理解：当前主推荐](task_frontiers.md#task-a-functional-part-articulation-understanding-paper-392dc64bfbe5)
+
+<details>
+<summary>参考与待补证记录（16 篇）</summary>
+
+- [BEHAVIOR-1K](A_executable_world_representation/behavior-1k-2024.md) · 待视觉复核 · [谓词驱动的可执行家居活动：未审查](task_frontiers.md#task-executable-household-activity-benchmark-paper-2235e5762fde)
+- [PhysX-Omni](A_executable_world_representation/physx-omni-2026.md) · 待视觉复核 · [图像条件的物理与关节资产生成：未审查](task_frontiers.md#task-physical-articulated-asset-generation-paper-288f9e3bf35a)
+- [PhysDreamer](A_executable_world_representation/physdreamer-2024.md) · 待视觉复核 · [干预条件的三维物理动态建模：未审查](task_frontiers.md#task-a-intervention-conditioned-3d-dynamics-paper-ec5555f07ccd)
+- [Feature Splatting](A_executable_world_representation/feature-splatting-2024.md) · 待视觉复核 · [干预条件的三维物理动态建模：未审查](task_frontiers.md#task-a-intervention-conditioned-3d-dynamics-paper-98711e804fc3)
+- [PhysX-Anything](A_executable_world_representation/physx-anything-2025.md) · 待视觉复核 · [图像条件的物理与关节资产生成：未审查](task_frontiers.md#task-physical-articulated-asset-generation-paper-e8d16480d0d1)
+- [SimuScene](A_executable_world_representation/simuscene-2026.md) · 待视觉复核 · [图像到仿真场景的几何重建：未审查](task_frontiers.md#task-a-image-to-simulation-scene-reconstruction-paper-e4648f417978)
+- [REST3D](A_executable_world_representation/rest3d-2026.md) · 待视觉复核 · [图像到仿真场景的几何重建：未审查](task_frontiers.md#task-a-image-to-simulation-scene-reconstruction-paper-eb0cf8991a56)
+- [TriSplat](A_executable_world_representation/trisplat-2026.md) · 参考备选 · [图像到仿真场景的几何重建：未审查](task_frontiers.md#task-a-image-to-simulation-scene-reconstruction-paper-9bb8abf61ae0)
+- [SceneCode: Editable Indoor Scene Generation using Executable World Programs](A_executable_world_representation/scenecode-2026.md) · 待视觉复核 · [可执行关节场景程序生成：未审查](task_frontiers.md#task-a-executable-articulated-scene-programs-paper-3b126b61fc91)
+- [WonderPlay: Dynamic 3D Scene Generation from a Single Image and Actions](A_executable_world_representation/wonderplay-2025.md) · 待视觉复核 · [干预条件的三维物理动态建模：未审查](task_frontiers.md#task-a-intervention-conditioned-3d-dynamics-paper-3fe45a00c749)
+- [FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations](A_executable_world_representation/famos-2026.md) · 待视觉复核 · [功能部件与关节结构理解：未审查](task_frontiers.md#task-a-functional-part-articulation-understanding-paper-69916d9d7c46)
+- [FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents](A_executable_world_representation/funart-2026.md) · 待视觉复核 · [功能部件与关节结构理解：未审查](task_frontiers.md#task-a-functional-part-articulation-understanding-paper-c161938e4192)
+- [PointCast: One World Model for Rigid, Articulated, and Deformable Object Manipulation](A_executable_world_representation/pointcast-2026.md) · 待视觉复核 · [干预条件的三维物理动态建模：未审查](task_frontiers.md#task-a-intervention-conditioned-3d-dynamics-paper-4aea6bb26c10)
+- [PhysLDM: Latent Diffusion for High-Fidelity Deformable Simulation](A_executable_world_representation/physldm-2026.md) · 待视觉复核 · [干预条件的三维物理动态建模：未审查](task_frontiers.md#task-a-intervention-conditioned-3d-dynamics-paper-64dc66d0c165)
+- [RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](A_executable_world_representation/robosimstudio-2026.md) · 待视觉复核 · [真实观测到可用操作仿真：未审查](task_frontiers.md#task-a-real-observation-to-manipulation-simulation-paper-2fbe111cb39f)
+- [AutoRSR: Automated Real-to-Sim-to-Real Data Generation for Scalable Robot Learning](A_executable_world_representation/autorsr-2026.md) · 待视觉复核 · [真实观测到可用操作仿真：未审查](task_frontiers.md#task-a-real-observation-to-manipulation-simulation-paper-c8c1b0f51c7e)
+
+</details>
 
 ## B. Interactive Generation and PCG
 
 Maintained deep dives: 24
 
-- [PhyScene](B_interactive_generation_pcg/physcene-2024.md) · 任务更迭：未审查
-- [RoboGen](B_interactive_generation_pcg/robogen-2024.md) · 任务更迭：未审查
-- [Steerable Scene Generation](B_interactive_generation_pcg/steerable-scene-generation-2025.md) · 任务更迭：未审查
-- [SAGE](B_interactive_generation_pcg/sage-2026.md) · 任务更迭：未审查
-- [EmbodiedGen](B_interactive_generation_pcg/embodiedgen-2025.md) · [EmbodiedGen 系列可执行世界生成：未审查](task_frontiers.md#task-embodiedgen-executable-world-generation-paper-f09de6db76bc)
-- [Holodeck](B_interactive_generation_pcg/holodeck-2024.md) · 任务更迭：未审查
-- [Infinigen Indoors](B_interactive_generation_pcg/infinigen-indoors-2024.md) · 任务更迭：未审查
-- [SceneSmith](B_interactive_generation_pcg/scenesmith-2026.md) · 任务更迭：未审查
-- [SceneFoundry](B_interactive_generation_pcg/scenefoundry-2026.md) · 任务更迭：未审查
-- [HY-World 2.0](B_interactive_generation_pcg/hy-world-2-2026.md) · 任务更迭：未审查
-- [SimWorld Studio: Generation and Evolution of Custom Embodied Agent Learning Environments](B_interactive_generation_pcg/simworld-studio-2026.md) · 任务更迭：未审查
-- [EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](B_interactive_generation_pcg/embodiedgen-v2-2026.md) · [EmbodiedGen 系列可执行世界生成：未审查](task_frontiers.md#task-embodiedgen-executable-world-generation-paper-2a2f644e4de4)
-- [Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator](B_interactive_generation_pcg/image2sim-2026.md) · 任务更迭：未审查
-- [WonderWorld: Interactive 3D Scene Generation from a Single Image](B_interactive_generation_pcg/wonderworld-2024.md) · 任务更迭：未审查
-- [SpatialCrafter: Single Image World Modeling with Generative 3D Proxies](B_interactive_generation_pcg/spatialcrafter-2026.md) · 任务更迭：未审查
-- [Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players](B_interactive_generation_pcg/gamma-world-2026.md) · 任务更迭：未审查
-- [Astronex-World 1.0: Real-Time Interactive World Model Foundation](B_interactive_generation_pcg/astronex-world-2026.md) · 任务更迭：未审查
-- [AgriGen: Large-Scale Scene Generation Framework for Photorealistic Agricultural Robotics Simulation](B_interactive_generation_pcg/agrigen-2026.md) · 任务更迭：未审查
-- [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](B_interactive_generation_pcg/simfoundry-2026.md) · 任务更迭：未审查
-- [WorldCast: Distributed Multiplayer World Models](B_interactive_generation_pcg/worldcast-2026.md) · 任务更迭：未审查
-- [Tetris3D: 3D Scene Generation With Objects That Fit Together](B_interactive_generation_pcg/tetris3d-2026.md) · 任务更迭：未审查
-- [PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition](B_interactive_generation_pcg/physga-2026.md) · 任务更迭：未审查
-- [From Failures to Learnable Worlds: Policy-Conditioned Environment Generation for Navigation Agents](B_interactive_generation_pcg/wedge-2026.md) · 任务更迭：未审查
-- [PAWA: Panoramic Action-conditioned World Modeling for Multiple Agents](B_interactive_generation_pcg/pawa-2026.md) · 任务更迭：未审查
+- [Infinigen Indoors](B_interactive_generation_pcg/infinigen-indoors-2024.md) · 优先阅读 · [参数化程序场景与标注生成：当前主推荐](task_frontiers.md#task-b-parameterized-procedural-scene-data-generation-paper-d3d550e4e13f)
+
+<details>
+<summary>参考与待补证记录（23 篇）</summary>
+
+- [PhyScene](B_interactive_generation_pcg/physcene-2024.md) · 待视觉复核 · [目标条件的可仿真室内世界生成：未审查](task_frontiers.md#task-embodiedgen-executable-world-generation-paper-a79d14ec6c4b)
+- [RoboGen](B_interactive_generation_pcg/robogen-2024.md) · 待视觉复核 · [面向策略学习的环境与课程生成：未审查](task_frontiers.md#task-b-policy-training-environment-curricula-paper-f1e310971ad6)
+- [Steerable Scene Generation](B_interactive_generation_pcg/steerable-scene-generation-2025.md) · 待视觉复核 · [目标条件的可仿真室内世界生成：未审查](task_frontiers.md#task-embodiedgen-executable-world-generation-paper-0b2abe917c30)
+- [SAGE](B_interactive_generation_pcg/sage-2026.md) · 待视觉复核 · [目标条件的可仿真室内世界生成：未审查](task_frontiers.md#task-embodiedgen-executable-world-generation-paper-a1ef6e78fcec)
+- [EmbodiedGen](B_interactive_generation_pcg/embodiedgen-2025.md) · 参考备选 · [目标条件的可仿真室内世界生成：未审查](task_frontiers.md#task-embodiedgen-executable-world-generation-paper-f09de6db76bc)
+- [Holodeck](B_interactive_generation_pcg/holodeck-2024.md) · 待视觉复核 · [目标条件的可仿真室内世界生成：未审查](task_frontiers.md#task-embodiedgen-executable-world-generation-paper-f0455640c347)
+- [SceneSmith](B_interactive_generation_pcg/scenesmith-2026.md) · 待视觉复核 · [目标条件的可仿真室内世界生成：未审查](task_frontiers.md#task-embodiedgen-executable-world-generation-paper-025b70b2d602)
+- [SceneFoundry](B_interactive_generation_pcg/scenefoundry-2026.md) · 参考备选 · [目标条件的可仿真室内世界生成：未审查](task_frontiers.md#task-embodiedgen-executable-world-generation-paper-c7bb0e2e6638)
+- [HY-World 2.0](B_interactive_generation_pcg/hy-world-2-2026.md) · 待视觉复核 · [相机与动作控制的视觉世界生成：未审查](task_frontiers.md#task-b-camera-action-controlled-visual-world-generation-paper-fb34e7c4d9d7)
+- [SimWorld Studio: Generation and Evolution of Custom Embodied Agent Learning Environments](B_interactive_generation_pcg/simworld-studio-2026.md) · 来源待修复 · [面向策略学习的环境与课程生成：未审查](task_frontiers.md#task-b-policy-training-environment-curricula-paper-d1de84a3bc9b)
+- [EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](B_interactive_generation_pcg/embodiedgen-v2-2026.md) · 待视觉复核 · [目标条件的可仿真室内世界生成：未审查](task_frontiers.md#task-embodiedgen-executable-world-generation-paper-2a2f644e4de4)
+- [Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator](B_interactive_generation_pcg/image2sim-2026.md) · 待视觉复核 · [观测到可交互训练场景的重建：未审查](task_frontiers.md#task-b-observation-to-interactive-training-scenes-paper-e00e335a8cb0)
+- [WonderWorld: Interactive 3D Scene Generation from a Single Image](B_interactive_generation_pcg/wonderworld-2024.md) · 待视觉复核 · [相机与动作控制的视觉世界生成：未审查](task_frontiers.md#task-b-camera-action-controlled-visual-world-generation-paper-f2a5bee38432)
+- [SpatialCrafter: Single Image World Modeling with Generative 3D Proxies](B_interactive_generation_pcg/spatialcrafter-2026.md) · 待视觉复核 · [相机与动作控制的视觉世界生成：未审查](task_frontiers.md#task-b-camera-action-controlled-visual-world-generation-paper-8d22ee24992d)
+- [Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players](B_interactive_generation_pcg/gamma-world-2026.md) · 待视觉复核 · [多玩家共享世界的视频生成：未审查](task_frontiers.md#task-multiplayer-action-video-simulation-paper-dd563d0a7a59)
+- [Astronex-World 1.0: Real-Time Interactive World Model Foundation](B_interactive_generation_pcg/astronex-world-2026.md) · 待视觉复核 · [相机与动作控制的视觉世界生成：未审查](task_frontiers.md#task-b-camera-action-controlled-visual-world-generation-paper-60666a1018c8)
+- [AgriGen: Large-Scale Scene Generation Framework for Photorealistic Agricultural Robotics Simulation](B_interactive_generation_pcg/agrigen-2026.md) · 观察名单 · [参数化程序场景与标注生成：未审查](task_frontiers.md#task-b-parameterized-procedural-scene-data-generation-paper-a3a413137f1d)
+- [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](B_interactive_generation_pcg/simfoundry-2026.md) · 待视觉复核 · [观测到可交互训练场景的重建：未审查](task_frontiers.md#task-b-observation-to-interactive-training-scenes-paper-4af5267aca5a)
+- [WorldCast: Distributed Multiplayer World Models](B_interactive_generation_pcg/worldcast-2026.md) · 待视觉复核 · [多玩家共享世界的视频生成：未审查](task_frontiers.md#task-multiplayer-action-video-simulation-paper-0e0b8dce565d)
+- [Tetris3D: 3D Scene Generation With Objects That Fit Together](B_interactive_generation_pcg/tetris3d-2026.md) · 待视觉复核 · [观测到可交互训练场景的重建：未审查](task_frontiers.md#task-b-observation-to-interactive-training-scenes-paper-a1e358fdaed8)
+- [PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition](B_interactive_generation_pcg/physga-2026.md) · 待视觉复核 · [接触感知的物体交互装配：未审查](task_frontiers.md#task-b-contact-aware-physical-composition-paper-6b1b54d1cd59)
+- [From Failures to Learnable Worlds: Policy-Conditioned Environment Generation for Navigation Agents](B_interactive_generation_pcg/wedge-2026.md) · 待视觉复核 · [面向策略学习的环境与课程生成：未审查](task_frontiers.md#task-b-policy-training-environment-curricula-paper-f1b5ff16a834)
+- [PAWA: Panoramic Action-conditioned World Modeling for Multiple Agents](B_interactive_generation_pcg/pawa-2026.md) · 待视觉复核 · [多玩家共享世界的视频生成：未审查](task_frontiers.md#task-multiplayer-action-video-simulation-paper-8684379f6590)
+
+</details>
 
 ## C. Spatial Intelligence
 
 Maintained deep dives: 19
 
-- [SpatialBot](C_spatial_intelligence/spatialbot-2024.md) · 任务更迭：未审查
-- [HiSpatial](C_spatial_intelligence/hispatial-2026.md) · 任务更迭：未审查
-- [SpaceTools](C_spatial_intelligence/spacetools-2026.md) · 任务更迭：未审查
-- [Ego3D-Bench / Ego3D-VLM](C_spatial_intelligence/ego3d-bench-2025.md) · 任务更迭：未审查
-- [Seeing Across Views / MV-RoboBench](C_spatial_intelligence/mv-robobench-2026.md) · 任务更迭：未审查
-- [SpatialVLA](C_spatial_intelligence/spatialvla-2025.md) · 任务更迭：未审查
-- [DepthVLA](C_spatial_intelligence/depthvla-2025.md) · 任务更迭：未审查
-- [ST-VLA](C_spatial_intelligence/st-vla-2026.md) · 任务更迭：未审查
-- [SpatialStack](C_spatial_intelligence/spatialstack-2026.md) · 任务更迭：未审查
-- [Embodied3DBench](C_spatial_intelligence/embodied3dbench-2026.md) · 任务更迭：未审查
-- [ESPIRE](C_spatial_intelligence/espire-2026.md) · 任务更迭：未审查
-- [SpatialAct: Probing Spatial Reasoning-to-Action Capabilities of Vision-Language Models in 3D Scenes](C_spatial_intelligence/spatialact-2026.md) · 任务更迭：未审查
-- [ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop](C_spatial_intelligence/esi-bench-2026.md) · 任务更迭：未审查
-- [Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence](C_spatial_intelligence/self-in-space-2026.md) · 任务更迭：未审查
-- [Point-It-Out: Benchmarking Embodied Reasoning for Vision Language Models in Multi-Stage Visual Grounding](C_spatial_intelligence/point-it-out-2025.md) · 任务更迭：未审查
-- [Vesta: A Generalist Embodied Reasoning Model](C_spatial_intelligence/vesta-2026.md) · 任务更迭：未审查
-- [Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos](C_spatial_intelligence/ledger-3d-2026.md) · 任务更迭：未审查
-- [DeSpatial: The devil of Agentic Spatial Reasoning Lies in 3D Itself](C_spatial_intelligence/despatial-2026.md) · 任务更迭：未审查
-- [DynThinker: Unifying Static 3D and Dynamic 4D Spatial Reasoning](C_spatial_intelligence/dynthinker-2026.md) · 任务更迭：未审查
+- [HiSpatial](C_spatial_intelligence/hispatial-2026.md) · 优先阅读 · [视觉空间关系与度量问答：当前主推荐](task_frontiers.md#task-c-visual-spatial-question-answering-paper-f3def912e54e)
+- [Ego3D-Bench / Ego3D-VLM](C_spatial_intelligence/ego3d-bench-2025.md) · 优先阅读 · [视觉空间关系与度量问答：当前主推荐](task_frontiers.md#task-c-visual-spatial-question-answering-paper-0210d3576498)
+- [Embodied3DBench](C_spatial_intelligence/embodied3dbench-2026.md) · 优先阅读 · [视觉定位到动作目标的空间接口：当前主推荐](task_frontiers.md#task-c-visual-grounding-to-action-specification-paper-f141bf670b1d)
+- [ESPIRE](C_spatial_intelligence/espire-2026.md) · 优先阅读 · [视觉定位到动作目标的空间接口：当前主推荐](task_frontiers.md#task-c-visual-grounding-to-action-specification-paper-06b39449b566)
+- [SpatialAct: Probing Spatial Reasoning-to-Action Capabilities of Vision-Language Models in 3D Scenes](C_spatial_intelligence/spatialact-2026.md) · 优先阅读 · [多轮交互场景错误修复：当前主推荐](task_frontiers.md#task-interactive-scene-error-repair-paper-2ab737875114)
+- [ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop](C_spatial_intelligence/esi-bench-2026.md) · 优先阅读 · [工具与主动观察支持的空间推理：当前主推荐](task_frontiers.md#task-c-tool-active-spatial-reasoning-paper-002755467474)
+- [Point-It-Out: Benchmarking Embodied Reasoning for Vision Language Models in Multi-Stage Visual Grounding](C_spatial_intelligence/point-it-out-2025.md) · 优先阅读 · [视觉定位到动作目标的空间接口：当前主推荐](task_frontiers.md#task-c-visual-grounding-to-action-specification-paper-b2bb3e07cc54)
+- [Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos](C_spatial_intelligence/ledger-3d-2026.md) · 优先阅读 · [自我视角对象位置与经历记忆：当前主推荐](task_frontiers.md#task-persistent-egocentric-object-memory-paper-bdb3f6717975)
+
+<details>
+<summary>参考与待补证记录（11 篇）</summary>
+
+- [SpatialBot](C_spatial_intelligence/spatialbot-2024.md) · 参考备选 · [视觉空间关系与度量问答：并列备选](task_frontiers.md#task-c-visual-spatial-question-answering-paper-9142c69aab51)
+- [SpaceTools](C_spatial_intelligence/spacetools-2026.md) · 待视觉复核 · [工具与主动观察支持的空间推理：未审查](task_frontiers.md#task-c-tool-active-spatial-reasoning-paper-fa34283d86bd)
+- [Seeing Across Views / MV-RoboBench](C_spatial_intelligence/mv-robobench-2026.md) · 观察名单 · [视觉空间关系与度量问答：未审查](task_frontiers.md#task-c-visual-spatial-question-answering-paper-25946a55ee8b)
+- [SpatialVLA](C_spatial_intelligence/spatialvla-2025.md) · 待视觉复核 · [空间表征驱动的机器人操作：未审查](task_frontiers.md#task-spatially-grounded-robot-manipulation-paper-2e3320eadff4)
+- [DepthVLA](C_spatial_intelligence/depthvla-2025.md) · 观察名单 · [空间表征驱动的机器人操作：未审查](task_frontiers.md#task-spatially-grounded-robot-manipulation-paper-325fca1766df)
+- [ST-VLA](C_spatial_intelligence/st-vla-2026.md) · 待视觉复核 · [空间表征驱动的机器人操作：未审查](task_frontiers.md#task-spatially-grounded-robot-manipulation-paper-9ac872e9a1af)
+- [SpatialStack](C_spatial_intelligence/spatialstack-2026.md) · 参考备选 · [视觉空间关系与度量问答：并列备选](task_frontiers.md#task-c-visual-spatial-question-answering-paper-07019a970c67)
+- [Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence](C_spatial_intelligence/self-in-space-2026.md) · 观察名单 · [视觉空间关系与度量问答：未审查](task_frontiers.md#task-c-visual-spatial-question-answering-paper-77445ed9b4cf)
+- [Vesta: A Generalist Embodied Reasoning Model](C_spatial_intelligence/vesta-2026.md) · 待视觉复核 · [历史记忆支持的具身任务规划：未审查](task_frontiers.md#task-memory-conditioned-embodied-planning-paper-e67c4198395f)
+- [DeSpatial: The devil of Agentic Spatial Reasoning Lies in 3D Itself](C_spatial_intelligence/despatial-2026.md) · 观察名单 · [工具与主动观察支持的空间推理：未审查](task_frontiers.md#task-c-tool-active-spatial-reasoning-paper-3a5eb576324a)
+- [DynThinker: Unifying Static 3D and Dynamic 4D Spatial Reasoning](C_spatial_intelligence/dynthinker-2026.md) · 观察名单 · [视觉空间关系与度量问答：未审查](task_frontiers.md#task-c-visual-spatial-question-answering-paper-9cb4100c505f)
+
+</details>
 
 ## D. VLA and World-Action Models
 
 Maintained deep dives: 61
 
-- [Octo](D_vla_world_action_models/octo-2024.md) · 任务更迭：未审查
-- [OpenVLA](D_vla_world_action_models/openvla-2024.md) · 任务更迭：未审查
-- [pi0](D_vla_world_action_models/pi0-2024.md) · 任务更迭：未审查
-- [VLA-R1](D_vla_world_action_models/vla-r1-2025.md) · 任务更迭：未审查
-- [World Action Models](D_vla_world_action_models/world-action-models-2026.md) · 任务更迭：未审查
-- [Physically Viable World Models](D_vla_world_action_models/physically-viable-world-models-2026.md) · 任务更迭：未审查
-- [GR00T N1](D_vla_world_action_models/gr00t-n1-2025.md) · 任务更迭：未审查
-- [Green-VLA](D_vla_world_action_models/green-vla-2026.md) · 任务更迭：未审查
-- [XR-1](D_vla_world_action_models/xr-1-2025.md) · 任务更迭：未审查
-- [TwinVLA](D_vla_world_action_models/twinvla-2025.md) · 任务更迭：未审查
-- [MMaDA-VLA](D_vla_world_action_models/mmada-vla-2026.md) · 任务更迭：未审查
-- [MolmoAct2](D_vla_world_action_models/molmoact2-2026.md) · 任务更迭：未审查
-- [Cosmos-Predict2.5: A World Foundation Model for Physical AI](D_vla_world_action_models/cosmos-predict2-5-2026.md) · 任务更迭：未审查
-- [Interactive World Simulator for Robot Policy Training and Evaluation](D_vla_world_action_models/interactive-world-simulator-2026.md) · 任务更迭：未审查
-- [World Pilot: Steering Vision-Language-Action Models with World-Action Priors](D_vla_world_action_models/world-pilot-2026.md) · 任务更迭：未审查
-- [Being-H0.7: A Latent World-Action Model from Egocentric Videos](D_vla_world_action_models/being-h0-7-2026.md) · 任务更迭：未审查
-- [Cosmos 3: Omnimodal World Models for Physical AI](D_vla_world_action_models/cosmos-3-2026.md) · 任务更迭：未审查
-- [Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models](D_vla_world_action_models/mask2real-wm-2026.md) · 任务更迭：未审查
-- [Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation](D_vla_world_action_models/lift3d-vla-2026.md) · 任务更迭：未审查
-- [Native Video-Action Pretraining for Generalizable Robot Control](D_vla_world_action_models/lingbot-va-2-2026.md) · 任务更迭：未审查
-- [VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model](D_vla_world_action_models/vla-jepa-2026.md) · 任务更迭：未审查
-- [Geometry-aware 4D Video Generation for Robot Manipulation](D_vla_world_action_models/geometry-aware-4d-video-generation-2025.md) · 任务更迭：未审查
-- [GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation](D_vla_world_action_models/gem-4d-2026.md) · 任务更迭：未审查
-- [ORV: 4D Occupancy-centric Robot Video Generation](D_vla_world_action_models/orv-2025.md) · 任务更迭：未审查
-- [G0.5: One Autoregressive Stream for Robot Reasoning and Action](D_vla_world_action_models/g05-2026.md) · 任务更迭：未审查
-- [StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models](D_vla_world_action_models/stellavla-2026.md) · 任务更迭：未审查
-- [SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation](D_vla_world_action_models/slim-0-5b-2026.md) · 任务更迭：未审查
-- [World Tokens: Enhancing Embodied Policies with Training-Time World Modeling](D_vla_world_action_models/world-tokens-2026.md) · 任务更迭：未审查
-- [JEPA-WAM: Learning Vision-Language-Action Policies with Joint-Embedding World Modeling](D_vla_world_action_models/jepa-wam-2026.md) · 任务更迭：未审查
-- [ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment](D_vla_world_action_models/abot-physworld-2026.md) · 任务更迭：未审查
-- [PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation](D_vla_world_action_models/paiworld-2026.md) · 任务更迭：未审查
-- [Gemini Robotics 2](D_vla_world_action_models/gemini-robotics-2-2026.md) · 任务更迭：未审查
-- [CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators](D_vla_world_action_models/clap-cross-embodiment-world-models-2026.md) · 任务更迭：未审查
-- [Pre-training Visual Dexterity in Simulation](D_vla_world_action_models/spd-2026.md) · 任务更迭：未审查
-- [Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them](D_vla_world_action_models/fact-contact-rich-vla-2026.md) · 任务更迭：未审查
-- [CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy](D_vla_world_action_models/chorus-2026.md) · 任务更迭：未审查
-- [VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model](D_vla_world_action_models/vlaw-2026.md) · 任务更迭：未审查
-- [OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining](D_vla_world_action_models/openwam-2026.md) · 任务更迭：未审查
-- [Show-Harness: Just a VLM Agent Can Play Robots](D_vla_world_action_models/show-harness-2026.md) · 任务更迭：未审查
-- [ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies](D_vla_world_action_models/actsafeguard-2026.md) · 任务更迭：未审查
-- [Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control](D_vla_world_action_models/agile-wam-2026.md) · 任务更迭：未审查
-- [AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control](D_vla_world_action_models/ad-wm-2026.md) · 任务更迭：未审查
-- [Self-Adaptive VLA for Robust Robot Deployment](D_vla_world_action_models/self-adaptive-vla-2026.md) · 任务更迭：未审查
-- [Rolling-WAM: World Action Models with Rolling Imagination](D_vla_world_action_models/rolling-wam-2026.md) · 任务更迭：未审查
-- [Streaming-WAM: Action-Conditioned World-Action Model for Asynchronous Robot Manipulation](D_vla_world_action_models/streaming-wam-2026.md) · 任务更迭：未审查
-- [InternW0: A Foundational Physical World Model for Efficient Real-World Interactions](D_vla_world_action_models/internw0-2026.md) · 任务更迭：未审查
-- [DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos](D_vla_world_action_models/dreamdojo-2026.md) · 任务更迭：未审查
-- [MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation](D_vla_world_action_models/molmobot-2026.md) · 任务更迭：未审查
-- [Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments](D_vla_world_action_models/qwen-vla-2026.md) · 任务更迭：未审查
-- [Improving Robotic Generalist Policies via Flow Reversal Steering](D_vla_world_action_models/flow-reversal-steering-2026.md) · 任务更迭：未审查
-- [World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry](D_vla_world_action_models/world-action-verifier-2026.md) · 任务更迭：未审查
-- [DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training](D_vla_world_action_models/dreamtrue-2026.md) · 任务更迭：未审查
-- [PLaW-VLA: Predictive Latent World Modeling for Vision-Language-Action Policies](D_vla_world_action_models/plaw-vla-2026.md) · 任务更迭：未审查
-- [UNITAS: A 3D-Native World Action Model for Embodied Manipulation](D_vla_world_action_models/unitas-2026.md) · 任务更迭：未审查
-- [RoboJEPA: Scaling Robotic Latent World Models](D_vla_world_action_models/robojepa-2026.md) · 任务更迭：未审查
-- [Long-WAM: Scaling the Context of World-Action Models](D_vla_world_action_models/long-wam-2026.md) · 任务更迭：未审查
-- [DepthWorld: 3D World Model for Robot Manipulation](D_vla_world_action_models/depthworld-2026.md) · 任务更迭：未审查
-- [T2-z: Test-Time Optimization of Environment Latents for Robotic World Models](D_vla_world_action_models/t2-z-2026.md) · 任务更迭：未审查
-- [GeoState: Learning View-Decoupled Geometry States for 3D World Modeling](D_vla_world_action_models/geostate-2026.md) · 任务更迭：未审查
-- [OneWM: Can World and Action Modeling Benefit Each Other under Unified Causal Training?](D_vla_world_action_models/onewm-2026.md) · 任务更迭：未审查
-- [What Matters for World Modeling in Vision-Language-Action Models?](D_vla_world_action_models/what-matters-world-modeling-vla-2026.md) · 任务更迭：未审查
+- [Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them](D_vla_world_action_models/fact-contact-rich-vla-2026.md) · 优先阅读 · [力觉与触觉支持的接触丰富操作：当前主推荐](task_frontiers.md#task-d-force-tactile-contact-rich-manipulation-paper-e5b78755d707)
+- [OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining](D_vla_world_action_models/openwam-2026.md) · 优先阅读 · [预测世界表征支持的机器人控制：当前主推荐](task_frontiers.md#task-d-predictive-world-action-control-paper-f04c45b32889)
+
+<details>
+<summary>参考与待补证记录（59 篇）</summary>
+
+- [Octo](D_vla_world_action_models/octo-2024.md) · 参考备选 · [目标条件的通用机器人操作策略：并列备选](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-e0d9df6cd6d5)
+- [OpenVLA](D_vla_world_action_models/openvla-2024.md) · 参考备选 · [目标条件的通用机器人操作策略：并列备选](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-65d07da8902e)
+- [pi0](D_vla_world_action_models/pi0-2024.md) · 参考备选 · [目标条件的通用机器人操作策略：并列备选](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-0dc8104041d5)
+- [VLA-R1](D_vla_world_action_models/vla-r1-2025.md) · 观察名单 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-252c8cc11ef2)
+- [World Action Models](D_vla_world_action_models/world-action-models-2026.md) · 参考备选 · [世界动作模型的设计与对照分析：未审查](task_frontiers.md#task-d-world-action-model-design-analysis-paper-5de78f2dccd0)
+- [Physically Viable World Models](D_vla_world_action_models/physically-viable-world-models-2026.md) · 参考备选 · [物理干预的可行性与结果查询：未审查](task_frontiers.md#task-d-physical-intervention-outcome-queries-paper-901cf0f3a180)
+- [GR00T N1](D_vla_world_action_models/gr00t-n1-2025.md) · 参考备选 · [目标条件的通用机器人操作策略：并列备选](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-17542f04d83e)
+- [Green-VLA](D_vla_world_action_models/green-vla-2026.md) · 观察名单 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-cccb2ae4f926)
+- [XR-1](D_vla_world_action_models/xr-1-2025.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-befaa45d09fe)
+- [TwinVLA](D_vla_world_action_models/twinvla-2025.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-c5774432ceb7)
+- [MMaDA-VLA](D_vla_world_action_models/mmada-vla-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-386973a21328)
+- [MolmoAct2](D_vla_world_action_models/molmoact2-2026.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-cc10581f5814)
+- [Cosmos-Predict2.5: A World Foundation Model for Physical AI](D_vla_world_action_models/cosmos-predict2-5-2026.md) · 来源待修复 · [动作条件的机器人世界预测：未审查](task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-165b4154106d)
+- [Interactive World Simulator for Robot Policy Training and Evaluation](D_vla_world_action_models/interactive-world-simulator-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-88f0afc84745)
+- [World Pilot: Steering Vision-Language-Action Models with World-Action Priors](D_vla_world_action_models/world-pilot-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-528ab469d963)
+- [Being-H0.7: A Latent World-Action Model from Egocentric Videos](D_vla_world_action_models/being-h0-7-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-384e812bea57)
+- [Cosmos 3: Omnimodal World Models for Physical AI](D_vla_world_action_models/cosmos-3-2026.md) · 待视觉复核 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-833749dc0412)
+- [Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models](D_vla_world_action_models/mask2real-wm-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-c0b29ee37886)
+- [Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation](D_vla_world_action_models/lift3d-vla-2026.md) · 观察名单 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-5772f42a3e08)
+- [Native Video-Action Pretraining for Generalizable Robot Control](D_vla_world_action_models/lingbot-va-2-2026.md) · 待视觉复核 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-240eefb29750)
+- [VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model](D_vla_world_action_models/vla-jepa-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-40f304d60616)
+- [Geometry-aware 4D Video Generation for Robot Manipulation](D_vla_world_action_models/geometry-aware-4d-video-generation-2025.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-d04a1a3b4819)
+- [GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation](D_vla_world_action_models/gem-4d-2026.md) · 观察名单 · [动作条件的机器人世界预测：未审查](task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-bbb3802cfcdd)
+- [ORV: 4D Occupancy-centric Robot Video Generation](D_vla_world_action_models/orv-2025.md) · 观察名单 · [动作条件的机器人世界预测：未审查](task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-549da8195ae6)
+- [G0.5: One Autoregressive Stream for Robot Reasoning and Action](D_vla_world_action_models/g05-2026.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-9fafb4c08ef4)
+- [StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models](D_vla_world_action_models/stellavla-2026.md) · 观察名单 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-1edcd1fe462f)
+- [SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation](D_vla_world_action_models/slim-0-5b-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-a222b654f68c)
+- [World Tokens: Enhancing Embodied Policies with Training-Time World Modeling](D_vla_world_action_models/world-tokens-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-cc47cf16144d)
+- [JEPA-WAM: Learning Vision-Language-Action Policies with Joint-Embedding World Modeling](D_vla_world_action_models/jepa-wam-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-ca852ddfa04e)
+- [ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment](D_vla_world_action_models/abot-physworld-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-ec900d7d3fdc)
+- [PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation](D_vla_world_action_models/paiworld-2026.md) · 观察名单 · [动作条件的机器人世界预测：未审查](task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-6b29dc9dd113)
+- [Gemini Robotics 2](D_vla_world_action_models/gemini-robotics-2-2026.md) · 观察名单 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-42a1992e4b24)
+- [CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators](D_vla_world_action_models/clap-cross-embodiment-world-models-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-e2c5f9f4b493)
+- [Pre-training Visual Dexterity in Simulation](D_vla_world_action_models/spd-2026.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-da915b879b59)
+- [CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy](D_vla_world_action_models/chorus-2026.md) · 待视觉复核 · [去中心化异构机器人协作：未审查](task_frontiers.md#task-d-decentralized-multi-robot-collaboration-paper-2036ef164d31)
+- [VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model](D_vla_world_action_models/vlaw-2026.md) · 待视觉复核 · [反馈驱动的世界模型与策略改进：未审查](task_frontiers.md#task-d-iterative-world-policy-data-improvement-paper-a52c22e84f13)
+- [Show-Harness: Just a VLM Agent Can Play Robots](D_vla_world_action_models/show-harness-2026.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-79d6ea3fdd0d)
+- [ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies](D_vla_world_action_models/actsafeguard-2026.md) · 待视觉复核 · [机器人动作的硬可行域约束：未审查](task_frontiers.md#task-d-flow-action-feasible-set-enforcement-paper-523157d7fa1c)
+- [Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control](D_vla_world_action_models/agile-wam-2026.md) · 观察名单 · [力觉与触觉支持的接触丰富操作：未审查](task_frontiers.md#task-d-force-tactile-contact-rich-manipulation-paper-df2484e85bec)
+- [AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control](D_vla_world_action_models/ad-wm-2026.md) · 待视觉复核 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-50fd716fb213)
+- [Self-Adaptive VLA for Robust Robot Deployment](D_vla_world_action_models/self-adaptive-vla-2026.md) · 观察名单 · [部署变化下的策略与动力学适配：未审查](task_frontiers.md#task-d-deployment-dynamics-adaptation-paper-ca1ea0968b81)
+- [Rolling-WAM: World Action Models with Rolling Imagination](D_vla_world_action_models/rolling-wam-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-fd40fdd41dea)
+- [Streaming-WAM: Action-Conditioned World-Action Model for Asynchronous Robot Manipulation](D_vla_world_action_models/streaming-wam-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-28a63f20d0fb)
+- [InternW0: A Foundational Physical World Model for Efficient Real-World Interactions](D_vla_world_action_models/internw0-2026.md) · 待视觉复核 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-8fcf299c7e6e)
+- [DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos](D_vla_world_action_models/dreamdojo-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-b2a838cf92c4)
+- [MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation](D_vla_world_action_models/molmobot-2026.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-58d9cc33109d)
+- [Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments](D_vla_world_action_models/qwen-vla-2026.md) · 待视觉复核 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-1578d582cfab)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](D_vla_world_action_models/flow-reversal-steering-2026.md) · 观察名单 · [目标条件的通用机器人操作策略：未审查](task_frontiers.md#task-d-language-conditioned-manipulation-policies-paper-8b55966b2464)
+- [World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry](D_vla_world_action_models/world-action-verifier-2026.md) · 待视觉复核 · [反馈驱动的世界模型与策略改进：未审查](task_frontiers.md#task-d-iterative-world-policy-data-improvement-paper-510dc2cd7119)
+- [DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training](D_vla_world_action_models/dreamtrue-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-7f08d7bd7643)
+- [PLaW-VLA: Predictive Latent World Modeling for Vision-Language-Action Policies](D_vla_world_action_models/plaw-vla-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-f9eb59e9cf3c)
+- [UNITAS: A 3D-Native World Action Model for Embodied Manipulation](D_vla_world_action_models/unitas-2026.md) · 待视觉复核 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-dc713d46ea7d)
+- [RoboJEPA: Scaling Robotic Latent World Models](D_vla_world_action_models/robojepa-2026.md) · 待视觉复核 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-b66fa1e99299)
+- [Long-WAM: Scaling the Context of World-Action Models](D_vla_world_action_models/long-wam-2026.md) · 待视觉复核 · [依赖长历史的动态操作控制：未审查](task_frontiers.md#task-d-long-context-dynamic-manipulation-paper-2794e21dec6b)
+- [DepthWorld: 3D World Model for Robot Manipulation](D_vla_world_action_models/depthworld-2026.md) · 待视觉复核 · [动作条件的机器人世界预测：未审查](task_frontiers.md#task-d-action-conditioned-robot-world-prediction-paper-6195c0fbc272)
+- [T2-z: Test-Time Optimization of Environment Latents for Robotic World Models](D_vla_world_action_models/t2-z-2026.md) · 待视觉复核 · [部署变化下的策略与动力学适配：未审查](task_frontiers.md#task-d-deployment-dynamics-adaptation-paper-31ee8c699fc4)
+- [GeoState: Learning View-Decoupled Geometry States for 3D World Modeling](D_vla_world_action_models/geostate-2026.md) · 观察名单 · [道路多视角三维状态预测：未审查](task_frontiers.md#task-d-driving-view-independent-geometry-forecasting-paper-44a91b7395e1)
+- [OneWM: Can World and Action Modeling Benefit Each Other under Unified Causal Training?](D_vla_world_action_models/onewm-2026.md) · 观察名单 · [预测世界表征支持的机器人控制：未审查](task_frontiers.md#task-d-predictive-world-action-control-paper-946c5529ad16)
+- [What Matters for World Modeling in Vision-Language-Action Models?](D_vla_world_action_models/what-matters-world-modeling-vla-2026.md) · 待视觉复核 · [世界动作模型的设计与对照分析：未审查](task_frontiers.md#task-d-world-action-model-design-analysis-paper-a686afe7b03f)
+
+</details>
 
 ## E. Evaluation and Data Infrastructure
 
 Maintained deep dives: 47
 
-- [EWMBench](E_evaluation_data_infrastructure/ewmbench-2025.md) · 任务更迭：未审查
-- [WorldScore](E_evaluation_data_infrastructure/worldscore-2025.md) · 任务更迭：未审查
-- [RoboVerse](E_evaluation_data_infrastructure/roboverse-2025.md) · 任务更迭：未审查
-- [OpenEQA](E_evaluation_data_infrastructure/openeqa-2024.md) · 任务更迭：未审查
-- [WorldArena](E_evaluation_data_infrastructure/worldarena-2026.md) · 任务更迭：未审查
-- [World-in-World](E_evaluation_data_infrastructure/world-in-world-2025.md) · 任务更迭：未审查
-- [Ctrl-World](E_evaluation_data_infrastructure/ctrl-world-2026.md) · 任务更迭：未审查
-- [WorldArena 2.0](E_evaluation_data_infrastructure/worldarena-2-2026.md) · 任务更迭：未审查
-- [A Unified Evaluation Harness for Vision-Language-Action Models](E_evaluation_data_infrastructure/vla-eval-2026.md) · 任务更迭：未审查
-- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](E_evaluation_data_infrastructure/vla-replica-2026.md) · 任务更迭：未审查
-- [RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation](E_evaluation_data_infrastructure/robowm-bench-2026.md) · 任务更迭：未审查
-- [VLA-Arena: An Open-Source Framework for Benchmarking Vision-Language-Action Models](E_evaluation_data_infrastructure/vla-arena-2026.md) · 任务更迭：未审查
-- [Colosseum V2: Benchmarking Generalization for Vision Language Action Models](E_evaluation_data_infrastructure/colosseum-v2-2026.md) · 任务更迭：未审查
-- [MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models](E_evaluation_data_infrastructure/mirabench-2026.md) · 任务更迭：未审查
-- [iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework](E_evaluation_data_infrastructure/iworld-bench-2026.md) · 任务更迭：未审查
-- [WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation](E_evaluation_data_infrastructure/wbench-2026.md) · 任务更迭：未审查
-- [WorldMark: A Unified Benchmark Suite for Interactive Video World Models](E_evaluation_data_infrastructure/worldmark-2026.md) · 任务更迭：未审查
-- [WorldOlympiad: Can Your World Model Survive a Triathlon?](E_evaluation_data_infrastructure/worldolympiad-2026.md) · 任务更迭：未审查
-- [WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models](E_evaluation_data_infrastructure/worldbench-2026.md) · 任务更迭：未审查
-- [Rethinking Video Generation Model for the Embodied World](E_evaluation_data_infrastructure/rethinking-embodied-video-generation-2026.md) · 任务更迭：未审查
-- [MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation](E_evaluation_data_infrastructure/molmospaces-2026.md) · 任务更迭：未审查
-- [Sekai2: From World Exploration to Interactive World Modeling](E_evaluation_data_infrastructure/sekai2-2026.md) · 任务更迭：未审查
-- [PBench: A Physical AI Benchmark for World Models](E_evaluation_data_infrastructure/pbench-2025.md) · 任务更迭：未审查
-- [PAI-Bench: A Comprehensive Benchmark For Physical AI](E_evaluation_data_infrastructure/pai-bench-2025.md) · 任务更迭：未审查
-- [PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding](E_evaluation_data_infrastructure/physbench-2025.md) · 任务更迭：未审查
-- [PAWBench: How Far Are We from Probabilistically Aligned World Modeling?](E_evaluation_data_infrastructure/pawbench-2026.md) · 任务更迭：未审查
-- [R2M-Bench: Evaluating Revisit Memory via Relative Consistency in Interactive Video World Models](E_evaluation_data_infrastructure/r2m-bench-2026.md) · 任务更迭：未审查
-- [RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies](E_evaluation_data_infrastructure/robomme-2026.md) · 任务更迭：未审查
-- [Can 4D Foundation Models Remember?](E_evaluation_data_infrastructure/persistbench-2026.md) · 任务更迭：未审查
-- [Universal Navigation Interface: Robot-Free Data for Wheeled Robot Navigation](E_evaluation_data_infrastructure/universal-navigation-interface-2026.md) · 任务更迭：未审查
-- [BinoGen: Scaling egocentric binocular data for embodied visual perception and learning](E_evaluation_data_infrastructure/binogen-2026.md) · 任务更迭：未审查
-- [SlugTrails: An Egocentric Benchmark for Floor Plan Localization in Large Buildings](E_evaluation_data_infrastructure/slugtrails-2026.md) · 任务更迭：未审查
-- [EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks](E_evaluation_data_infrastructure/embodiedmemory-bench-2026.md) · 任务更迭：未审查
-- [Training Object Permanence in World Models](E_evaluation_data_infrastructure/wrop-object-permanence-2026.md) · 任务更迭：未审查
-- [RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?](E_evaluation_data_infrastructure/robotwin-phys-2026.md) · 任务更迭：未审查
-- [Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics](E_evaluation_data_infrastructure/open-h-embodiment-2026.md) · 任务更迭：未审查
-- [LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes](E_evaluation_data_infrastructure/livin-2026.md) · 任务更迭：未审查
-- [MultiWorldBench: Do Independently Controlled Views Describe One Shared World?](E_evaluation_data_infrastructure/multiworldbench-2026.md) · 任务更迭：未审查
-- [OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework](E_evaluation_data_infrastructure/openvitac-2026.md) · 任务更迭：未审查
-- [RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment](E_evaluation_data_infrastructure/rt-safe-2026.md) · 任务更迭：未审查
-- [The Robot Is Not Its Description: GaugeBench for Representation Robustness in Morphology-Aware Policies](E_evaluation_data_infrastructure/gaugebench-2026.md) · 任务更迭：未审查
-- [BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](E_evaluation_data_infrastructure/bigym-2-2026.md) · 任务更迭：未审查
-- [LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation](E_evaluation_data_infrastructure/libero-perm-2026.md) · 任务更迭：未审查
-- [Orbia: Do Generated Videos Form a Consistent 3D World?](E_evaluation_data_infrastructure/orbia-2026.md) · 任务更迭：未审查
-- [ForceBench: Benchmarking Force Integration for Robotic Manipulation](E_evaluation_data_infrastructure/forcebench-2026.md) · 任务更迭：未审查
-- [TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation](E_evaluation_data_infrastructure/tacclaw-infinity-2026.md) · 任务更迭：未审查
-- [Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training](E_evaluation_data_infrastructure/active-generative-simulation-2026.md) · 任务更迭：未审查
+- [WorldScore](E_evaluation_data_infrastructure/worldscore-2025.md) · 优先阅读 · [交互视觉世界的控制与持久一致性评估：当前主推荐](task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-f9a5feffb91e)
+- [RoboVerse](E_evaluation_data_infrastructure/roboverse-2025.md) · 优先阅读 · [机器人任务环境与评测编排基础设施：当前主推荐](task_frontiers.md#task-e-robot-task-environments-and-evaluation-harnesses-paper-071338bb2075)
+- [World-in-World](E_evaluation_data_infrastructure/world-in-world-2025.md) · 优先阅读 · [机器人世界模型的执行与任务效用评估：当前主推荐](task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-34e5a79e4acf)
+- [WorldArena 2.0](E_evaluation_data_infrastructure/worldarena-2-2026.md) · 优先阅读 · [机器人世界模型的执行与任务效用评估：当前主推荐](task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-3456b26db7c3)
+- [VLA-Arena: An Open-Source Framework for Benchmarking Vision-Language-Action Models](E_evaluation_data_infrastructure/vla-arena-2026.md) · 优先阅读 · [机器人操作泛化与鲁棒性评测：当前主推荐](task_frontiers.md#task-e-robot-manipulation-generalization-evaluation-paper-ceadedb660d8)
+- [iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework](E_evaluation_data_infrastructure/iworld-bench-2026.md) · 优先阅读 · [交互视觉世界的控制与持久一致性评估：当前主推荐](task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-4987d50c2f4f)
+- [WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation](E_evaluation_data_infrastructure/wbench-2026.md) · 优先阅读 · [交互视觉世界的控制与持久一致性评估：当前主推荐](task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-900b967474a4)
+- [Rethinking Video Generation Model for the Embodied World](E_evaluation_data_infrastructure/rethinking-embodied-video-generation-2026.md) · 优先阅读 · [机器人世界模型的执行与任务效用评估：当前主推荐](task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-c87afd2eb52e)
+- [MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation](E_evaluation_data_infrastructure/molmospaces-2026.md) · 优先阅读 · [机器人任务环境与评测编排基础设施：当前主推荐](task_frontiers.md#task-e-robot-task-environments-and-evaluation-harnesses-paper-cf1da4010d62)
+- [PAWBench: How Far Are We from Probabilistically Aligned World Modeling?](E_evaluation_data_infrastructure/pawbench-2026.md) · 优先阅读 · [物理未来与结果分布诊断：当前主推荐](task_frontiers.md#task-e-physical-future-outcome-evaluation-paper-cb927541f0ff)
+- [RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies](E_evaluation_data_infrastructure/robomme-2026.md) · 优先阅读 · [依赖历史的具身策略记忆评测：当前主推荐](task_frontiers.md#task-e-history-dependent-embodied-policy-evaluation-paper-291babecd8e3)
+- [MultiWorldBench: Do Independently Controlled Views Describe One Shared World?](E_evaluation_data_infrastructure/multiworldbench-2026.md) · 优先阅读 · [多玩家控制下的共享世界评估：当前主推荐](task_frontiers.md#task-e-multiplayer-shared-world-evaluation-paper-2194e330bb3a)
+- [RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment](E_evaluation_data_infrastructure/rt-safe-2026.md) · 优先阅读 · [实时动态导航安全评测：当前主推荐](task_frontiers.md#task-real-time-embodied-navigation-safety-paper-2698d471c63b)
+- [The Robot Is Not Its Description: GaugeBench for Representation Robustness in Morphology-Aware Policies](E_evaluation_data_infrastructure/gaugebench-2026.md) · 优先阅读 · [机器人操作泛化与鲁棒性评测：当前主推荐](task_frontiers.md#task-e-robot-manipulation-generalization-evaluation-paper-3b6bd81a6a29)
+- [Orbia: Do Generated Videos Form a Consistent 3D World?](E_evaluation_data_infrastructure/orbia-2026.md) · 优先阅读 · [交互视觉世界的控制与持久一致性评估：当前主推荐](task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-7b8fef5dd930)
+
+<details>
+<summary>参考与待补证记录（32 篇）</summary>
+
+- [EWMBench](E_evaluation_data_infrastructure/ewmbench-2025.md) · 参考备选 · [机器人世界模型的执行与任务效用评估：并列备选](task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-bddcd73c5023)
+- [OpenEQA](E_evaluation_data_infrastructure/openeqa-2024.md) · 参考备选 · [具身环境与物理视觉问答评测：并列备选](task_frontiers.md#task-e-embodied-visual-question-answering-evaluation-paper-2a8e892199bf)
+- [WorldArena](E_evaluation_data_infrastructure/worldarena-2026.md) · 参考备选 · [机器人世界模型的执行与任务效用评估：并列备选](task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-34d181af2e6a)
+- [Ctrl-World](E_evaluation_data_infrastructure/ctrl-world-2026.md) · 待视觉复核 · [机器人世界模型的执行与任务效用评估：未审查](task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-90168e953d5a)
+- [A Unified Evaluation Harness for Vision-Language-Action Models](E_evaluation_data_infrastructure/vla-eval-2026.md) · 来源待修复 · [机器人任务环境与评测编排基础设施：未审查](task_frontiers.md#task-e-robot-task-environments-and-evaluation-harnesses-paper-a7233ce1b2b2)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](E_evaluation_data_infrastructure/vla-replica-2026.md) · 参考备选 · [机器人操作泛化与鲁棒性评测：并列备选](task_frontiers.md#task-e-robot-manipulation-generalization-evaluation-paper-11acf510a850)
+- [RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation](E_evaluation_data_infrastructure/robowm-bench-2026.md) · 待视觉复核 · [机器人世界模型的执行与任务效用评估：未审查](task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-2da7665bdb2f)
+- [Colosseum V2: Benchmarking Generalization for Vision Language Action Models](E_evaluation_data_infrastructure/colosseum-v2-2026.md) · 参考备选 · [机器人操作泛化与鲁棒性评测：并列备选](task_frontiers.md#task-e-robot-manipulation-generalization-evaluation-paper-12540b05534d)
+- [MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models](E_evaluation_data_infrastructure/mirabench-2026.md) · 参考备选 · [机器人世界模型的执行与任务效用评估：并列备选](task_frontiers.md#task-e-robot-world-model-rollout-utility-evaluation-paper-8cc43e40bb1f)
+- [WorldMark: A Unified Benchmark Suite for Interactive Video World Models](E_evaluation_data_infrastructure/worldmark-2026.md) · 参考备选 · [交互视觉世界的控制与持久一致性评估：并列备选](task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-0c44c67f88f5)
+- [WorldOlympiad: Can Your World Model Survive a Triathlon?](E_evaluation_data_infrastructure/worldolympiad-2026.md) · 参考备选 · [交互视觉世界的控制与持久一致性评估：并列备选](task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-239736ed2116)
+- [WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models](E_evaluation_data_infrastructure/worldbench-2026.md) · 参考备选 · [物理未来与结果分布诊断：并列备选](task_frontiers.md#task-e-physical-future-outcome-evaluation-paper-09ac7d97fc58)
+- [Sekai2: From World Exploration to Interactive World Modeling](E_evaluation_data_infrastructure/sekai2-2026.md) · 参考备选 · [自我视角视觉与运动监督数据：并列备选](task_frontiers.md#task-e-egocentric-visual-motion-supervision-data-paper-a249f95e9bbd)
+- [PBench: A Physical AI Benchmark for World Models](E_evaluation_data_infrastructure/pbench-2025.md) · 参考备选 · [物理未来与结果分布诊断：并列备选](task_frontiers.md#task-e-physical-future-outcome-evaluation-paper-0669f8cb72d6)
+- [PAI-Bench: A Comprehensive Benchmark For Physical AI](E_evaluation_data_infrastructure/pai-bench-2025.md) · 参考备选 · [物理未来与结果分布诊断：并列备选](task_frontiers.md#task-e-physical-future-outcome-evaluation-paper-c201ee0a9478)
+- [PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding](E_evaluation_data_infrastructure/physbench-2025.md) · 参考备选 · [具身环境与物理视觉问答评测：并列备选](task_frontiers.md#task-e-embodied-visual-question-answering-evaluation-paper-5b5b8ef74053)
+- [R2M-Bench: Evaluating Revisit Memory via Relative Consistency in Interactive Video World Models](E_evaluation_data_infrastructure/r2m-bench-2026.md) · 参考备选 · [交互视觉世界的控制与持久一致性评估：并列备选](task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-4afdea423760)
+- [Can 4D Foundation Models Remember?](E_evaluation_data_infrastructure/persistbench-2026.md) · 参考备选 · [交互视觉世界的控制与持久一致性评估：并列备选](task_frontiers.md#task-e-interactive-world-control-consistency-evaluation-paper-47400fc9423c)
+- [Universal Navigation Interface: Robot-Free Data for Wheeled Robot Navigation](E_evaluation_data_infrastructure/universal-navigation-interface-2026.md) · 观察名单 · [自我视角视觉与运动监督数据：未审查](task_frontiers.md#task-e-egocentric-visual-motion-supervision-data-paper-5fd7cf511013)
+- [BinoGen: Scaling egocentric binocular data for embodied visual perception and learning](E_evaluation_data_infrastructure/binogen-2026.md) · 观察名单 · [自我视角视觉与运动监督数据：未审查](task_frontiers.md#task-e-egocentric-visual-motion-supervision-data-paper-71645e574a74)
+- [SlugTrails: An Egocentric Benchmark for Floor Plan Localization in Large Buildings](E_evaluation_data_infrastructure/slugtrails-2026.md) · 观察名单 · [自我视角到建筑平面图的定位评测：未审查](task_frontiers.md#task-egocentric-floorplan-localization-evaluation-paper-e0775380499c)
+- [EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks](E_evaluation_data_infrastructure/embodiedmemory-bench-2026.md) · 参考备选 · [依赖历史的具身策略记忆评测：并列备选](task_frontiers.md#task-e-history-dependent-embodied-policy-evaluation-paper-f2660a1cfc45)
+- [Training Object Permanence in World Models](E_evaluation_data_infrastructure/wrop-object-permanence-2026.md) · 待视觉复核 · [物理未来与结果分布诊断：未审查](task_frontiers.md#task-e-physical-future-outcome-evaluation-paper-ceebca447332)
+- [RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?](E_evaluation_data_infrastructure/robotwin-phys-2026.md) · 参考备选 · [机器人操作泛化与鲁棒性评测：并列备选](task_frontiers.md#task-e-robot-manipulation-generalization-evaluation-paper-dac2d1f3a1bc)
+- [Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics](E_evaluation_data_infrastructure/open-h-embodiment-2026.md) · 参考备选 · [多模态机器人操作示范数据：并列备选](task_frontiers.md#task-e-multimodal-manipulation-demonstration-data-paper-8314248f79c9)
+- [LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes](E_evaluation_data_infrastructure/livin-2026.md) · 待视觉复核 · [机器人任务环境与评测编排基础设施：未审查](task_frontiers.md#task-e-robot-task-environments-and-evaluation-harnesses-paper-2cf667f472f2)
+- [OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework](E_evaluation_data_infrastructure/openvitac-2026.md) · 参考备选 · [力觉与触觉融合的操作评测：并列备选](task_frontiers.md#task-e-force-tactile-policy-evaluation-paper-d2702f39b7eb)
+- [BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](E_evaluation_data_infrastructure/bigym-2-2026.md) · 参考备选 · [机器人操作泛化与鲁棒性评测：并列备选](task_frontiers.md#task-e-robot-manipulation-generalization-evaluation-paper-a061e176b372)
+- [LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation](E_evaluation_data_infrastructure/libero-perm-2026.md) · 观察名单 · [个性化操作偏好满足评测：未审查](task_frontiers.md#task-personalized-manipulation-preference-evaluation-paper-4381aca01c32)
+- [ForceBench: Benchmarking Force Integration for Robotic Manipulation](E_evaluation_data_infrastructure/forcebench-2026.md) · 观察名单 · [力觉与触觉融合的操作评测：未审查](task_frontiers.md#task-e-force-tactile-policy-evaluation-paper-9c5c2fc42b1f)
+- [TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation](E_evaluation_data_infrastructure/tacclaw-infinity-2026.md) · 待视觉复核 · [多模态机器人操作示范数据：未审查](task_frontiers.md#task-e-multimodal-manipulation-demonstration-data-paper-8f00ff5a9d8d)
+- [Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training](E_evaluation_data_infrastructure/active-generative-simulation-2026.md) · 待视觉复核 · [优化策略效用的仿真数据分布：未审查](task_frontiers.md#task-utility-optimized-simulation-data-generation-paper-8c72c61f3028)
+
+</details>

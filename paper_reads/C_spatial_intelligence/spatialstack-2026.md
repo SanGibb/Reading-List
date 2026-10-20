@@ -1,5 +1,10 @@
 # SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。官方方法与多层融合/空间 benchmark 可确认，适合作几何融合设计参考；对当前库的实质增量主要是融合结构，未达到独立优先阅读门槛，也不能自动取代更低成本基线。
+> [本次来源、分数与任务判断](../library_review.md#paper-07019a970c67)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0033
 branch: C
 decision: accepted_for_registry

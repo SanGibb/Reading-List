@@ -1,5 +1,10 @@
 # Universal Navigation Interface: Robot-Free Data for Wheeled Robot Navigation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。目标机器人之外的rollator采集设计有启发，但规模和跨域收益有限，当前对项目主要是导航数据支撑层，不满足核心技术/相关性门槛。
+> [本次来源、分数与任务判断](../library_review.md#paper-5fd7cf511013)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0006
 branch: E
 decision: accepted_for_registry

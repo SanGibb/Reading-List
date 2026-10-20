@@ -1,5 +1,10 @@
 # Colosseum V2: Benchmarking Generalization for Vision Language Action Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。GPU并行、两形态和sim-real相关性有独立价值；当前精读缺具体split/相关表/可用实现，本轮摘要不足以验证强效用，留备选。
+> [本次来源、分数与任务判断](../library_review.md#paper-12540b05534d)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0003
 branch: E
 decision: accepted_for_registry

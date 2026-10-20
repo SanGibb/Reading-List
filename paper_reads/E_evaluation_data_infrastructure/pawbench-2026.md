@@ -1,5 +1,15 @@
 # PAWBench: How Far Are We from Probabilistically Aligned World Modeling?
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。固定条件重复rollout且分开coverage与probability mass，补齐单视频物理分数无法评价的随机模拟需求；预算与人读出局限有明确报告。
+> [本次来源、分数与任务判断](../library_review.md#paper-cb927541f0ff)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：比WorldBench单次概念正确性多出结果分布/支持集校准，构成独立核心任务，而非更大数据。
+> - [PAWBench; PAWEval; Robustness of the Evaluation Protocol](https://pawbench.github.io/)：50场景分25 calibration/25 coverage，K50；K1-100预算敏感性；888明确标签视频中81.3%同人一致，但不验证全量准确率或模型排名。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0004
 branch: E
 decision: accepted_for_registry

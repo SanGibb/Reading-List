@@ -1,5 +1,10 @@
 # RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。连续物理条件轴对生成环境有效性有直接价值，和视觉/语言扰动有独立作用；具体参数范围、成功率曲线与公开release仍未核实。
+> [本次来源、分数与任务判断](../library_review.md#paper-dac2d1f3a1bc)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0010
 branch: E
 decision: accepted_for_registry

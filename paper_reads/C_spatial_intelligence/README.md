@@ -8,22 +8,30 @@ Maintained deep dives: 19
 
 任务归档不删除精读，也不改变该论文在其他任务中的角色。未审查条目仍列在本分支全量索引中。
 
-- [SpatialBot](spatialbot-2024.md) · 任务更迭：未审查
-- [HiSpatial](hispatial-2026.md) · 任务更迭：未审查
-- [SpaceTools](spacetools-2026.md) · 任务更迭：未审查
-- [Ego3D-Bench / Ego3D-VLM](ego3d-bench-2025.md) · 任务更迭：未审查
-- [Seeing Across Views / MV-RoboBench](mv-robobench-2026.md) · 任务更迭：未审查
-- [SpatialVLA](spatialvla-2025.md) · 任务更迭：未审查
-- [DepthVLA](depthvla-2025.md) · 任务更迭：未审查
-- [ST-VLA](st-vla-2026.md) · 任务更迭：未审查
-- [SpatialStack](spatialstack-2026.md) · 任务更迭：未审查
-- [Embodied3DBench](embodied3dbench-2026.md) · 任务更迭：未审查
-- [ESPIRE](espire-2026.md) · 任务更迭：未审查
-- [SpatialAct: Probing Spatial Reasoning-to-Action Capabilities of Vision-Language Models in 3D Scenes](spatialact-2026.md) · 任务更迭：未审查
-- [ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop](esi-bench-2026.md) · 任务更迭：未审查
-- [Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence](self-in-space-2026.md) · 任务更迭：未审查
-- [Point-It-Out: Benchmarking Embodied Reasoning for Vision Language Models in Multi-Stage Visual Grounding](point-it-out-2025.md) · 任务更迭：未审查
-- [Vesta: A Generalist Embodied Reasoning Model](vesta-2026.md) · 任务更迭：未审查
-- [Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos](ledger-3d-2026.md) · 任务更迭：未审查
-- [DeSpatial: The devil of Agentic Spatial Reasoning Lies in 3D Itself](despatial-2026.md) · 任务更迭：未审查
-- [DynThinker: Unifying Static 3D and Dynamic 4D Spatial Reasoning](dynthinker-2026.md) · 任务更迭：未审查
+本轮优先阅读：8 篇。其余保留记录见折叠区；[逐篇复审](../library_review.md)。
+
+- [HiSpatial](hispatial-2026.md) · 优先阅读 · [视觉空间关系与度量问答：当前主推荐](../task_frontiers.md#task-c-visual-spatial-question-answering-paper-f3def912e54e)
+- [Ego3D-Bench / Ego3D-VLM](ego3d-bench-2025.md) · 优先阅读 · [视觉空间关系与度量问答：当前主推荐](../task_frontiers.md#task-c-visual-spatial-question-answering-paper-0210d3576498)
+- [Embodied3DBench](embodied3dbench-2026.md) · 优先阅读 · [视觉定位到动作目标的空间接口：当前主推荐](../task_frontiers.md#task-c-visual-grounding-to-action-specification-paper-f141bf670b1d)
+- [ESPIRE](espire-2026.md) · 优先阅读 · [视觉定位到动作目标的空间接口：当前主推荐](../task_frontiers.md#task-c-visual-grounding-to-action-specification-paper-06b39449b566)
+- [SpatialAct: Probing Spatial Reasoning-to-Action Capabilities of Vision-Language Models in 3D Scenes](spatialact-2026.md) · 优先阅读 · [多轮交互场景错误修复：当前主推荐](../task_frontiers.md#task-interactive-scene-error-repair-paper-2ab737875114)
+- [ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop](esi-bench-2026.md) · 优先阅读 · [工具与主动观察支持的空间推理：当前主推荐](../task_frontiers.md#task-c-tool-active-spatial-reasoning-paper-002755467474)
+- [Point-It-Out: Benchmarking Embodied Reasoning for Vision Language Models in Multi-Stage Visual Grounding](point-it-out-2025.md) · 优先阅读 · [视觉定位到动作目标的空间接口：当前主推荐](../task_frontiers.md#task-c-visual-grounding-to-action-specification-paper-b2bb3e07cc54)
+- [Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos](ledger-3d-2026.md) · 优先阅读 · [自我视角对象位置与经历记忆：当前主推荐](../task_frontiers.md#task-persistent-egocentric-object-memory-paper-bdb3f6717975)
+
+<details>
+<summary>参考与待补证记录（11 篇）</summary>
+
+- [SpatialBot](spatialbot-2024.md) · 参考备选 · [视觉空间关系与度量问答：并列备选](../task_frontiers.md#task-c-visual-spatial-question-answering-paper-9142c69aab51)
+- [SpaceTools](spacetools-2026.md) · 待视觉复核 · [工具与主动观察支持的空间推理：未审查](../task_frontiers.md#task-c-tool-active-spatial-reasoning-paper-fa34283d86bd)
+- [Seeing Across Views / MV-RoboBench](mv-robobench-2026.md) · 观察名单 · [视觉空间关系与度量问答：未审查](../task_frontiers.md#task-c-visual-spatial-question-answering-paper-25946a55ee8b)
+- [SpatialVLA](spatialvla-2025.md) · 待视觉复核 · [空间表征驱动的机器人操作：未审查](../task_frontiers.md#task-spatially-grounded-robot-manipulation-paper-2e3320eadff4)
+- [DepthVLA](depthvla-2025.md) · 观察名单 · [空间表征驱动的机器人操作：未审查](../task_frontiers.md#task-spatially-grounded-robot-manipulation-paper-325fca1766df)
+- [ST-VLA](st-vla-2026.md) · 待视觉复核 · [空间表征驱动的机器人操作：未审查](../task_frontiers.md#task-spatially-grounded-robot-manipulation-paper-9ac872e9a1af)
+- [SpatialStack](spatialstack-2026.md) · 参考备选 · [视觉空间关系与度量问答：并列备选](../task_frontiers.md#task-c-visual-spatial-question-answering-paper-07019a970c67)
+- [Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence](self-in-space-2026.md) · 观察名单 · [视觉空间关系与度量问答：未审查](../task_frontiers.md#task-c-visual-spatial-question-answering-paper-77445ed9b4cf)
+- [Vesta: A Generalist Embodied Reasoning Model](vesta-2026.md) · 待视觉复核 · [历史记忆支持的具身任务规划：未审查](../task_frontiers.md#task-memory-conditioned-embodied-planning-paper-e67c4198395f)
+- [DeSpatial: The devil of Agentic Spatial Reasoning Lies in 3D Itself](despatial-2026.md) · 观察名单 · [工具与主动观察支持的空间推理：未审查](../task_frontiers.md#task-c-tool-active-spatial-reasoning-paper-3a5eb576324a)
+- [DynThinker: Unifying Static 3D and Dynamic 4D Spatial Reasoning](dynthinker-2026.md) · 观察名单 · [视觉空间关系与度量问答：未审查](../task_frontiers.md#task-c-visual-spatial-question-answering-paper-9cb4100c505f)
+
+</details>

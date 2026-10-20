@@ -1,5 +1,10 @@
 # Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。统一manipulation/navigation/trajectory与embodiment文字控制规范是具体跨任务候选；本轮主源可核查，未检代码完整性和不同动作任务时序。
+> [本次来源、分数与任务判断](../library_review.md#paper-1578d582cfab)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0006
 branch: D
 decision: accepted_for_registry

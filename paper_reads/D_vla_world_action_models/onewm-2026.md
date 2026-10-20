@@ -1,5 +1,10 @@
 # OneWM: Can World and Action Modeling Benefit Each Other under Unified Causal Training?
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。sharedcausalarchitecture研究world/action互益，实证问题明确；但本轮仅摘要正面结论，没有匹配预算效应量和release核查，不能与已可查模块栈同列核心。
+> [本次来源、分数与任务判断](../library_review.md#paper-946c5529ad16)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0010
 branch: D
 decision: accepted_for_registry

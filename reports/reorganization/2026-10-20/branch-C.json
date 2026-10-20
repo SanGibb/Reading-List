@@ -1,0 +1,712 @@
+{
+  "review_date": "2026-10-20",
+  "branches": [
+    "C"
+  ],
+  "review_scope": "user_requested_existing_library_reassessment",
+  "reviews": [
+    {
+      "paper_url": "https://arxiv.org/abs/2406.13642",
+      "title": "SpatialBot",
+      "branch": "C",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 3,
+      "evidence_strength": 4,
+      "reason": "RGB-D/SpatialQA/SpatialBench 的来源与开放代码可确认，是早期轻量表征基线；对当前项目主要提供支撑层，未建立相对现有度量模型的实质新增量，保留参考而非新版核心准入。",
+      "closest_paper_url": "https://microsoft.github.io/HiSpatial/",
+      "material_difference": "早期 RGB-D 问答基线，不能据后续模型不同数据与骨干的分数判定已被全面替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2406.13642",
+          "locator": "Abstract; Submission history; official code link",
+          "claim": "主源确认 RGB-D 输入、SpatialQA/SpatialBench 和开放代码。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "metric-rgbd-spatial-qa",
+      "task_title": "RGB-D 度量空间问答",
+      "scope": {
+        "input": "RGB 或 RGB-D 图像与空间问题；分别报告预测深度和真实深度条件。",
+        "output": "距离、尺寸、方向与空间关系答案。",
+        "setting": "静态观察的物体级度量问答，不等同于机器人执行。",
+        "protocol": "按各原文的 SpatialRGPT/QSpatial/RoboSpatial 等协议与深度来源比较；数据规模、骨干和深度条件不一致时不作无退化替代。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "出现同预算、同深度条件的可复用对照或任务验证时重评。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://microsoft.github.io/HiSpatial/",
+      "title": "HiSpatial",
+      "branch": "C",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "官方给出分层度量问答数据、RGB-XYZ 表征、预测/真实深度区分及多组量化基线，直接用于生成世界中的尺寸/距离/关系验证；是当前度量问答的阅读入口，结果仍为作者报告。",
+      "closest_paper_url": "https://arxiv.org/abs/2406.13642",
+      "material_difference": "分层任务与度量点图输入相对早期 RGB-D 基线形成可复用能力；未声称统一协议无退化胜出。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://microsoft.github.io/HiSpatial/",
+          "locator": "Large-Scale Hierarchical Spatial Dataset; Model Structure; Model Performance tables",
+          "claim": "官方列出分层任务、数据/模型链接及预测深度与真实深度条件的量化结果。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "metric-rgbd-spatial-qa",
+      "task_title": "RGB-D 度量空间问答",
+      "scope": {
+        "input": "RGB 或 RGB-D 图像与空间问题；分别报告预测深度和真实深度条件。",
+        "output": "距离、尺寸、方向与空间关系答案。",
+        "setting": "静态观察的物体级度量问答，不等同于机器人执行。",
+        "protocol": "按各原文的 SpatialRGPT/QSpatial/RoboSpatial 等协议与深度来源比较；数据规模、骨干和深度条件不一致时不作无退化替代。"
+      },
+      "role": "current",
+      "revisit_trigger": "模型/数据许可或任务实际迁移证据变化时复查。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://spacetools.github.io/",
+      "title": "SpaceTools",
+      "branch": "C",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "本轮确认 DIRL 受控训练对比与 Toolshed 工具接口；但该条包含真实机器人多步执行，尚未实际检查动作媒体，旧报告的 not_applicable 不能覆盖该物理使用主张。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.20990",
+      "material_difference": "多工具训练/编排不是仅几何融合；真实执行质量仍待检查。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "not_applicable_reason": "",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://spacetools.github.io/",
+          "locator": "Quantitative Results; Real-World Robot Execution; Toolshed",
+          "claim": "官方表格给出多工具与 tool-free SFT/RL 对照，并描述 7-DOF 机器人工具执行。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "tool-augmented-spatial-reasoning",
+      "task_title": "多工具空间推理与执行接口",
+      "scope": {
+        "input": "视觉观测、空间指令及可调用的深度、分割、位姿或机器人工具。",
+        "output": "工具调用轨迹与空间答案，必要时机器人动作。",
+        "setting": "工具增强空间推理；真实机器人能力必须另外检查执行材料。",
+        "protocol": "区分静态 QA、工具预算与硬件任务；原文受控训练比较不替代对执行演示的观察。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "完成代表性机器人视频的时段、接触、失败样例与工具轨迹检查。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2509.06266",
+      "title": "Ego3D-Bench / Ego3D-VLM",
+      "branch": "C",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "原文明确户外多相机数据来源、人工 QA 质量控制和分来源评测；可直接用来验证生成/重建世界的跨视角关系。数据域与室内操作诊断互补，不能当作后者继任。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.29074",
+      "material_difference": "增加户外自中心多相机验证域及认知地图后训练，不只是重命名既有室内 QA。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2509.06266v2",
+          "locator": "Benchmark construction; A.7 Results of different Source Datasets",
+          "claim": "数据由 nuScenes、Waymo、Argoverse 验证集构建，原文有分来源结果。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "ego-multiview-spatial-qa",
+      "task_title": "户外自中心多视角空间推理",
+      "scope": {
+        "input": "来自同一场景的多相机户外观测及空间问题。",
+        "output": "相对关系、距离或位置答案。",
+        "setting": "nuScenes/Waymo/Argoverse 等户外多视角域。",
+        "protocol": "使用各来源数据集的验证集及原文人工标注/评分协议；与室内机器人 QA 的分数不直接比较。"
+      },
+      "role": "current",
+      "revisit_trigger": "核对最终数据发布许可与评测脚本；协议变更时复评。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://openreview.net/pdf?id=jXDZJAfRZB",
+      "title": "Seeing Across Views / MV-RoboBench",
+      "branch": "C",
+      "decision": "watchlist",
+      "impact_score": null,
+      "project_relevance_score": 4,
+      "evidence_strength": 2,
+      "reason": "现有精读高度模板化；本轮 OpenReview 入口被验证页阻断，不能确认对应版本、任务协议和报告数字。此处保留待补证，不据访问失败判定论文质量差或题名虚假。",
+      "closest_paper_url": "",
+      "material_difference": "多视角定位的潜在补充，实质增量尚未核实。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://openreview.net/forum?id=jXDZJAfRZB",
+          "locator": "OpenReview access verification page",
+          "claim": "当前入口要求浏览器验证，未读到论文正文。",
+          "source_quality": "official",
+          "status": "partial"
+        }
+      ],
+      "task_id": "ego-multiview-spatial-qa",
+      "task_title": "户外自中心多视角空间推理",
+      "scope": {
+        "input": "来自同一场景的多相机户外观测及空间问题。",
+        "output": "相对关系、距离或位置答案。",
+        "setting": "nuScenes/Waymo/Argoverse 等户外多视角域。",
+        "protocol": "使用各来源数据集的验证集及原文人工标注/评分协议；与室内机器人 QA 的分数不直接比较。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "得到作者官方论文/代码入口并核对任务、版本和基线。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2501.15830",
+      "title": "SpatialVLA",
+      "branch": "C",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "主源确认 Ego3D 编码、自适应动作网格与大规模机器人预训练；但完整动作质量未在本轮观察，不能继承旧 strong/4 评级作为新验收。",
+      "closest_paper_url": "https://arxiv.org/abs/2510.13375",
+      "material_difference": "显式空间编码和动作网格提供独立基线，尚无同协议无退化替代关系。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "not_applicable_reason": "",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2501.15830",
+          "locator": "Abstract; linked project and code",
+          "claim": "原文描述 Ego3D position encoding、adaptive grids 和跨机器人预训练。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "spatially-grounded-robot-manipulation",
+      "task_title": "空间表征驱动的机器人操作",
+      "scope": {
+        "input": "视觉、语言和可选深度/历史观测。",
+        "output": "连续或离散的机器人操作动作。",
+        "setting": "空间精确操作及跨场景泛化；按具体机器人与控制频率分开评价。",
+        "protocol": "LIBERO/Simpler/RLBench/真实机器人协议分别核对训练数据、演示量、成功定义和动作媒体；不拼接跨协议总分。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核对官方完整操作视频、失败覆盖、控制频率与开源复现条件。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2510.13375",
+      "title": "DepthVLA",
+      "branch": "C",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "深度 transformer 与 action expert 共享注意力是可解释的增量，但当前依据主要为作者摘要比较，代码仍述为将发布；不足以升级为新的长期核心入口。",
+      "closest_paper_url": "https://arxiv.org/abs/2501.15830",
+      "material_difference": "引入 depth expert，但未建立相对已有空间 VLA 的可复用显著收益。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2510.13375",
+          "locator": "Abstract; code-release statement",
+          "claim": "主源报告真实与模拟结果，并写明代码将公开。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "spatially-grounded-robot-manipulation",
+      "task_title": "空间表征驱动的机器人操作",
+      "scope": {
+        "input": "视觉、语言和可选深度/历史观测。",
+        "output": "连续或离散的机器人操作动作。",
+        "setting": "空间精确操作及跨场景泛化；按具体机器人与控制频率分开评价。",
+        "protocol": "LIBERO/Simpler/RLBench/真实机器人协议分别核对训练数据、演示量、成功定义和动作媒体；不拼接跨协议总分。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "发布完整代码和同数据/预算对照，且完成真实动作检查。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.13788",
+      "title": "ST-VLA",
+      "branch": "C",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "原文具体描述 ST-Human、3D/4D 引导和 RLBench/真实操作；这是可研究的空间到动作接口，但本轮未完成时序/机器人执行检查，不能据摘要成功率通过。",
+      "closest_paper_url": "https://arxiv.org/abs/2501.15830",
+      "material_difference": "从单步空间编码推进到时序空间掩码/重规划，任务与数据不同不直接判定替代。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "not_applicable_reason": "",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2603.13788",
+          "locator": "Abstract; ST-Human; linked project",
+          "claim": "原文给出 3D/4D 监督、ST-Human 数据和真实/模拟实验设置。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "spatially-grounded-robot-manipulation",
+      "task_title": "空间表征驱动的机器人操作",
+      "scope": {
+        "input": "视觉、语言和可选深度/历史观测。",
+        "output": "连续或离散的机器人操作动作。",
+        "setting": "空间精确操作及跨场景泛化；按具体机器人与控制频率分开评价。",
+        "protocol": "LIBERO/Simpler/RLBench/真实机器人协议分别核对训练数据、演示量、成功定义和动作媒体；不拼接跨协议总分。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "检查代表性长程机器人视频、时空掩码稳定性和数据开放状态。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.27437",
+      "title": "SpatialStack",
+      "branch": "C",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "官方方法与多层融合/空间 benchmark 可确认，适合作几何融合设计参考；对当前库的实质增量主要是融合结构，未达到独立优先阅读门槛，也不能自动取代更低成本基线。",
+      "closest_paper_url": "https://microsoft.github.io/HiSpatial/",
+      "material_difference": "强调分层几何特征与语言同步，而非层级数据/度量输入；保留互补结构参考。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://spatial-stack.github.io/",
+          "locator": "Method; Results; official code/model links",
+          "claim": "官方项目描述层级 vision-geometry-language 融合和空间推理结果。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "metric-rgbd-spatial-qa",
+      "task_title": "RGB-D 度量空间问答",
+      "scope": {
+        "input": "RGB 或 RGB-D 图像与空间问题；分别报告预测深度和真实深度条件。",
+        "output": "距离、尺寸、方向与空间关系答案。",
+        "setting": "静态观察的物体级度量问答，不等同于机器人执行。",
+        "protocol": "按各原文的 SpatialRGPT/QSpatial/RoboSpatial 等协议与深度来源比较；数据规模、骨干和深度条件不一致时不作无退化替代。"
+      },
+      "role": "alternative",
+      "revisit_trigger": "出现统一骨干、同训练预算的稳定提升和实际验证器使用证据。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.29074",
+      "title": "Embodied3DBench",
+      "branch": "C",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "已读原文任务定义、构建与指标；将结构和交互感知拆成明确 2D/metric-3D 输出，直接给场景/部件/可供性检查器提供可评分任务。该推荐基于评测协议，不主张执行演示或泛化已复现。",
+      "closest_paper_url": "https://arxiv.org/abs/2509.25794",
+      "material_difference": "增加部件级、度量 3D 和抓取/可供性等诊断，和高层像素 trace 分阶段任务互补。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2605.29074v1",
+          "locator": "Sections 3.2-3.3; 4.2 Evaluation Metrics; task result tables",
+          "claim": "原文定义六类任务、2D/3D 输出以及任务特定评测。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "metric-interaction-grounding-evaluation",
+      "task_title": "低层交互几何与可供性评测",
+      "scope": {
+        "input": "机器人视角图像、多视角观测和定位/交互问题。",
+        "output": "物体/部件定位、可供性、抓取点、空间关系或轨迹预测。",
+        "setting": "结构感知与交互感知的指标级诊断。",
+        "protocol": "保留 Embodied3DBench 的 2D/metric-3D 输出、六任务/十二子类及任务特定评分；不把 QA 得分视作执行成功。"
+      },
+      "role": "current",
+      "revisit_trigger": "使用前核对数据许可、坐标约定与各子任务打分代码。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.13033",
+      "title": "ESPIRE",
+      "branch": "C",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "已读原文的 functional-program 任务定义、定位/执行指标和 motion-planner acceptance 协议；对空间约束到目标姿态的校验直接有用。该推荐限于评测设计，不声称视频逼真度或真实机器人迁移已验证。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.18746",
+      "material_difference": "定位与姿态可接受性诊断聚焦空间参照系，和主动选择观察任务不同，不能作全面继任。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2603.13033v1",
+          "locator": "Sections 3-4; Table 1; Sections 5.1-5.3; Appendix A.4",
+          "claim": "原文分开 localization accuracy 与执行目标姿态 acceptance，列出功能程序及任务诊断。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "spatial-pick-place-diagnostics",
+      "task_title": "空间定位到放置姿态的诊断",
+      "scope": {
+        "input": "场景视图、空间参照指令与具体 pick/place 条件。",
+        "output": "目标像素或 SE(3) 目标姿态及可接受性评分。",
+        "setting": "Isaac Sim 桌面/货架上的空间关系、距离、方向和参照系诊断。",
+        "protocol": "ESPIRE 的 localization accuracy 与 motion-planner pose acceptance 分开；参照系、对象间距、指令跳数及执行预算按原文固定。"
+      },
+      "role": "current",
+      "revisit_trigger": "部署前检查 Isaac Sim/cuRobo 依赖、任务采样与坐标/参照系实现。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.31148",
+      "title": "SpatialAct: Probing Spatial Reasoning-to-Action Capabilities of Vision-Language Models in 3D Scenes",
+      "branch": "C",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "官方协议和原文 Table 2 可核对；通过多轮修复、单步诊断和基础能力拆分，直接评估生成场景的错误修复与停止行为。项目页结果区仍有模板占位，故引用结果以原文表为准。",
+      "closest_paper_url": "https://arxiv.org/abs/2603.13033",
+      "material_difference": "将目标从操作姿态扩展到交互场景修复和停止代价；不同任务不判定谁取代谁。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2605.31148v1",
+          "locator": "Benchmark construction; Figure 3; Table 2",
+          "claim": "原文给出交互界面及 repair/success/effective-turn/premature-stop/token 等指标。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "interactive-scene-error-repair",
+      "task_title": "多轮交互场景错误修复",
+      "scope": {
+        "input": "带空间错误的场景顶视/等轴图与交互反馈。",
+        "output": "修复命令与新的场景状态。",
+        "setting": "抽象几何、城市和室内三类场景。",
+        "protocol": "SpatialAct 的静态诊断和多轮 repair/success/effective-turn/premature-stop/token 成本分别报告；不宣称跨评测替代。"
+      },
+      "role": "current",
+      "revisit_trigger": "使用原文/代码核对评测；项目页占位图补齐不自动增加新条目。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.18746",
+      "title": "ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop",
+      "branch": "C",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "官方明确任务分类、实例量、主动/被动/oracle 对照与预算问题，直接用于判断世界是否支持信息获取式交互。此处验收依据为评测协议和诊断，不把页面视频链接计为已观看。",
+      "closest_paper_url": "https://arxiv.org/abs/2603.13033",
+      "material_difference": "把观察本身作为动作选择结果，和固定视图下的定位/姿态诊断形成互补任务。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://esi-bench.github.io/",
+          "locator": "Task Taxonomy; Three Departures; Key Findings",
+          "claim": "官方定义 10 类 29 子类任务及 active/passive/oracle 观察条件和失效诊断。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "active-spatial-information-gathering",
+      "task_title": "主动获取证据的具身空间问答",
+      "scope": {
+        "input": "不完整观察与需要主动感知的空间问题。",
+        "output": "观察/移动/操作策略及最终答案。",
+        "setting": "OmniGibson 中遮挡、容纳、动力学和认知地图等需要额外观察的任务。",
+        "protocol": "保留 ESI-Bench 的主动、被动、oracle 观察条件及步数/图像预算；本文作为评测协议，不据此声称机器人演示已复现。"
+      },
+      "role": "current",
+      "revisit_trigger": "核对固定步数/图像预算和 OmniGibson 版本，避免把 oracle 条件与主动代理直接比较。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2607.12477",
+      "title": "Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence",
+      "branch": "C",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 4,
+      "reason": "主源对真实视频、QA 和三认知层级的描述具体，但 UAV 自运动/自我认知是更专门的支撑层，当前没有直接的室内生成/操作验证器使用点，暂不占核心阅读入口。",
+      "closest_paper_url": "https://arxiv.org/abs/2509.06266",
+      "material_difference": "引入 UAV 自运动视角而非多摄像机户外 QA；域不同不能以更新日期替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2607.12477",
+          "locator": "Abstract; benchmark and code links",
+          "claim": "主源说明 self/space 两维、13 任务及专家验证的视频 QA 构建。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "uav-self-motion-spatial-evaluation",
+      "task_title": "无人机自运动与空间认知评测",
+      "scope": {
+        "input": "真实 UAV 视频及自我/空间问题。",
+        "output": "感知、记忆和推理答案。",
+        "setting": "UAV 自运动和自我认知这一专门域。",
+        "protocol": "SIS-Bench 的 13 任务/三认知层级及专家验证协议；不直接外推到室内生成或机械臂操作。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "项目扩展到无人机自运动交互，或出现可复用到目标任务的验证接口时重评。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2509.25794",
+      "title": "Point-It-Out: Benchmarking Embodied Reasoning for Vision Language Models in Multi-Stage Visual Grounding",
+      "branch": "C",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "已读原文分阶段任务、数据来源和标注/评分设计；可直接分离对象定位、动作点和高层 trace 的错误，避免用纯多选 QA 替代行动几何。S3 是视觉轨迹评测，不宣称低层机器人执行已验证。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.29074",
+      "material_difference": "像素任务点与高层 trace 阶段诊断具有独立作用；不和低层 metric-3D 子类强排统一榜。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2509.25794v1",
+          "locator": "Section 3 stages S1-S3; Section 4 curation and metrics",
+          "claim": "原文定义阶段化像素 grounding、polygon-mask 标注和多域数据来源。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "pixel-grounded-embodied-instruction-evaluation",
+      "task_title": "像素定位到高层视觉轨迹的评测",
+      "scope": {
+        "input": "图像和对象/动作指令。",
+        "output": "S1 对象定位、S2 任务点、S3 粗粒度视觉轨迹。",
+        "setting": "室内、厨房、驾驶与机器人多个域的高层 grounding。",
+        "protocol": "Point-It-Out 的 polygon-mask/点/trace 评分分阶段报告；视觉轨迹不是低层控制成功，不与纯多选 QA 混同。"
+      },
+      "role": "current",
+      "revisit_trigger": "核对最终 TMLR 版本、许可与 S3 trace 打分实现后再使用精确数值。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.20905",
+      "title": "Vesta: A Generalist Embodied Reasoning Model",
+      "branch": "C",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "官方方法与记忆 harness 可确认，但核心还包括真实机器人长期执行；本轮未完整观察相关媒体。保留为待复核，不用 broad generalist 宣传或摘要平均提升通过新门槛。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.10538",
+      "material_difference": "从对象记忆扩展到通用规划/工具调用，但模型、数据、任务不同，不能判定取代专项记忆方法。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "not_applicable_reason": "",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://research.nvidia.com/labs/gear/vesta/",
+          "locator": "Abstract; Figure 1; linked paper",
+          "claim": "官方描述通用规划、空间 grounding 和多模态记忆 harness，以及邮件分类任务示意。",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "memory-conditioned-embodied-planning",
+      "task_title": "带记忆的通用具身规划",
+      "scope": {
+        "input": "观测、任务、工具与多模态历史。",
+        "output": "长程推理、规划和工具/动作调用。",
+        "setting": "多任务规划与需要记忆的真实机器人使用。",
+        "protocol": "按 Vesta 原文任务类别、记忆上下文和硬件条件核对；真实执行依赖必要动作媒体，现阶段未完成此项复核。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "检查完整记忆依赖任务的实际执行、错误恢复、工具预算和发布可用性。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.10538",
+      "title": "Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos",
+      "branch": "C",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "原文 matched memory-vs-blind 对照、跨来源实验、消融和置信区间可检查，持久状态与对象移动事件可直接供交互世界记忆层使用。明确外部已发表基线并非同模型预算，不能宣称全面 SOTA 替代。",
+      "closest_paper_url": "https://arxiv.org/abs/2606.20905",
+      "material_difference": "聚焦持久对象记录与无视频检索，而非把多任务规划合入同一大模型；保留专项接口价值。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2610.10538v1",
+          "locator": "Tables 2-3; component ablations; Appendix matched comparisons",
+          "claim": "原文分组报告 matched memory/blind 对照和外部基线的不同输入/预算限制。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "persistent-egocentric-object-memory",
+      "task_title": "自中心视频的持久对象记忆",
+      "scope": {
+        "input": "自中心视频的对象观测、位姿和时间序列。",
+        "output": "持续对象位置、移动历史和上下文检索答案。",
+        "setting": "对象出视野、未接触对象和跨场景查询。",
+        "protocol": "Ledger 的 matched blind-memory 对照、HD-EPIC/UCS-Bench/Ego4D 分开报告；published 外部基线的模型/预算不同不能当严格替代。"
+      },
+      "role": "current",
+      "revisit_trigger": "复现相同帧与问题协议，核对跨场景检索失败和 released poses 依赖。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20990",
+      "title": "DeSpatial: The devil of Agentic Spatial Reasoning Lies in 3D Itself",
+      "branch": "C",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "主源确认感知 oracle 与实例融合设计，但当前核心增量主要是既有工具的几何修整与融合；没有足够可复用发布/统一对照来支撑独立优先入口。保留具体失败模式研究，待协议与工具落地。",
+      "closest_paper_url": "https://spacetools.github.io/",
+      "material_difference": "分离三维感知误差与推理，和工具策略 RL 是不同改进轴，不以单个 benchmark 的领先视为替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2610.20990v1",
+          "locator": "Abstract; shared 3D perception tool; evaluation sections",
+          "claim": "原文说明 segmentation-depth co-refinement、cross-view instance fusion 与多个空间 benchmark。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "tool-augmented-spatial-reasoning",
+      "task_title": "多工具空间推理与执行接口",
+      "scope": {
+        "input": "视觉观测、空间指令及可调用的深度、分割、位姿或机器人工具。",
+        "output": "工具调用轨迹与空间答案，必要时机器人动作。",
+        "setting": "工具增强空间推理；真实机器人能力必须另外检查执行材料。",
+        "protocol": "区分静态 QA、工具预算与硬件任务；原文受控训练比较不替代对执行演示的观察。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核对统一工具/预算比较和可复用 perception tool 代码后复查。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20598",
+      "title": "DynThinker: Unifying Static 3D and Dynamic 4D Spatial Reasoning",
+      "branch": "C",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "主源的组别 EMA 与几何融合提供有用诊断，但以多榜均分和若干新分数尚不能建立足够大的库内实质增量；不同动态协议不宜合并成一个全面优胜结论。",
+      "closest_paper_url": "https://arxiv.org/abs/2603.27437",
+      "material_difference": "关注静态/动态训练干扰，和层级几何融合部分重叠；当前保留观察，等待同骨干多项退化与成本分析。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "not_applicable_reason": "本次结论限于非生成的空间表征、记忆或评测协议，不以生成视觉质量或机器人执行成功作为推荐证据。",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/html/2610.20598v1",
+          "locator": "Method D-EMA/SDF; multi-benchmark evaluation",
+          "claim": "原文描述 D-EMA 与 SDF，并分别给出静态/动态 benchmark 结果。",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "static-dynamic-spatial-reasoning",
+      "task_title": "静态 3D 与动态 4D 的联合空间推理",
+      "scope": {
+        "input": "图像或视频及静态/动态空间问题。",
+        "output": "联合空间推理答案。",
+        "setting": "静态与动态能力相互干扰的模型训练与诊断。",
+        "protocol": "按 DynThinker 各 benchmark 的 sample/group 协议及骨干预算报告；均分更高不自动证明每项无退化。"
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "发布可复用模型和统一骨干预算下的逐任务收益/退化分析。",
+      "limitations": "本轮为来源、协议与阅读位置复审，未独立训练、复现指标或执行机器人任务。旧精读的模板化 verified 不作本次验收依据。"
+    }
+  ]
+}

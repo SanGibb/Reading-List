@@ -1,5 +1,10 @@
 # VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。无泄漏current-only预测是合理训练设计，但摘要只有总体增益，没有本轮核对的定量控制和强增量；旧报告亦把rollout链接当视觉结论。
+> [本次来源、分数与任务判断](../library_review.md#paper-40f304d60616)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0002
 branch: D
 decision: accepted_for_registry

@@ -1,0 +1,2434 @@
+{
+  "review_schema_version": 1,
+  "policy_version": 2,
+  "review_date": "2026-10-20",
+  "review_scope": "user_requested_existing_library_reassessment",
+  "reviews": [
+    {
+      "paper_url": "https://scenefun3d.github.io/",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "Official annotations, released evaluator and explicit AP protocol form a reusable supervision/evaluation foundation. Recommend the dataset and affordance task interface, not an unverified robot-execution claim.",
+      "revisit_trigger": "Revisit when the official task/evaluator changes or a matched successor demonstrates a material advance.",
+      "task_ids": [
+        "a-functional-part-articulation-understanding"
+      ],
+      "task_title": "功能部件与关节结构理解",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2403.09227",
+      "decision": "undecided",
+      "impact_score": 5,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "The task predicates and multi-material simulator are a direct reusable target, but the legacy benchmark exemption does not verify the physical execution claims. Temporal simulator/interaction evidence was not inspected in this review.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "executable-household-activity-benchmark"
+      ],
+      "task_title": "谓词驱动的可执行家居活动",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-behavior-1k-2024.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.21572",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Unified rigid/deformable/articulated assets and physical-attribute evaluation could materially improve the shortlist. Two official GIF frame sequences were inspected, but moving viewpoints and limited selected scenes do not resolve joint/contact/deformation quality across asset categories.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "physical-articulated-asset-generation"
+      ],
+      "task_title": "图像条件的物理与关节资产生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-physx-omni-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2404.13026",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Distilling video priors into material fields is a distinct executable-dynamics approach, but no force-response sequence or failure coverage was actually inspected this review.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "a-intervention-conditioned-3d-dynamics"
+      ],
+      "task_title": "干预条件的三维物理动态建模",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-physdreamer-2024.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2404.01223",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Language-grounded semantics and material assignment on one Gaussian substrate is a concrete editing interface. Particle-simulation quality and material-dependent failures remain uninspected.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "a-intervention-conditioned-3d-dynamics"
+      ],
+      "task_title": "干预条件的三维物理动态建模",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-feature-splatting-2024.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2511.13648",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Explicit geometry, articulation and physics plus a source-reported contact-learning experiment is directly relevant. The older model is not automatically historical: actual motion/contact media and its cost/generalization advantages need comparison.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "physical-articulated-asset-generation"
+      ],
+      "task_title": "图像条件的物理与关节资产生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-physx-anything-2025.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.03994",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Using simulated failure to repair both shape and pose is a material capability, but stability and downstream robot/humanoid execution cannot be judged from the abstract and legacy generic visual label.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "a-image-to-simulation-scene-reconstruction"
+      ],
+      "task_title": "图像到仿真场景的几何重建",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-simuscene-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.30338",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Gravity-support scene trees give a concrete structural representation and physics-refinement baseline. No actual stability/VR-interaction sequence was inspected this review.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "a-image-to-simulation-scene-reconstruction"
+      ],
+      "task_title": "图像到仿真场景的几何重建",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-rest3d-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.26115",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "Keep as a geometry/interface reference: direct triangles remove Gaussian-to-mesh conversion, but verified evidence is geometric reconstruction, not articulated/functional world execution. It does not meet the direct-core relevance threshold in this scope.",
+      "revisit_trigger": "Revisit if a concrete target task and controlled evidence establish a substantial capability increment over maintained methods.",
+      "task_ids": [
+        "a-image-to-simulation-scene-reconstruction"
+      ],
+      "task_title": "图像到仿真场景的几何重建",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.19587",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "The current primary source gives a directly reusable program-to-simulator contract, but the legacy title and method summary are stale. Asset articulation, execution-guided repairs and downstream interaction quality need actual inspection.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "a-executable-articulated-scene-programs"
+      ],
+      "task_title": "可执行关节场景程序生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-scenecode-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2505.18151",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Single-image action-conditioned3D across material families supplies a concrete hybrid world baseline. Unviewed dynamic galleries cannot establish contact, conservation or consistency.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "a-intervention-conditioned-3d-dynamics"
+      ],
+      "task_title": "干预条件的三维物理动态建模",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-wonderplay-2025.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.20817",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Variable-state articulation recovery and procedural motion supervision directly supply executable joints. Joint-motion reconstruction was not re-inspected; generation/recovery quality cannot inherit the old unlocated video assertion.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "a-functional-part-articulation-understanding"
+      ],
+      "task_title": "功能部件与关节结构理解",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-famos-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.20673",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "The full method and controlled Articulate3D protocols were checked; joint functional/kinematic outputs are directly useful. Fig.3 depicts SPOT interaction, so the prior 'no downstream manipulation' description is too categorical; actual execution media remains uninspected.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "a-functional-part-articulation-understanding"
+      ],
+      "task_title": "功能部件与关节结构理解",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-funart-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.28393",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Identity-preserving point trajectories across topology regimes are a concrete dynamics/control interface. Need actual rollout/MPC inspection and full matched results before current recommendation.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "a-intervention-conditioned-3d-dynamics"
+      ],
+      "task_title": "干预条件的三维物理动态建模",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-pointcast-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.07609",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Holistic spatiotemporal compression and distributional deformable prediction could materially improve dynamics modeling. Reconstruction/compression numbers alone do not verify generated physical motion.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "a-intervention-conditioned-3d-dynamics"
+      ],
+      "task_title": "干预条件的三维物理动态建模",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-physldm-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.18835",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Editable solver/contact choices and force-feedback calibration expose a specific reusable real-to-sim interface. Actual contact fidelity, calibration failures and agentic Real2Sim2Real sequences were not inspected.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "a-real-observation-to-manipulation-simulation"
+      ],
+      "task_title": "真实观测到可用操作仿真",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-robosimstudio-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20336",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Metric registration and reduced human data effort form a concrete system contribution, but three source-reported successes do not establish asset/collision quality or unedited robot behavior.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "a-real-observation-to-manipulation-simulation"
+      ],
+      "task_title": "真实观测到可用操作仿真",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-A-autorsr-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2404.09465",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Collision, room and reachability guidance is a direct interactive-layout baseline. Recheck articulated-object execution, collisions and constrained samples; old page-presence evidence is insufficient.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "embodiedgen-executable-world-generation"
+      ],
+      "task_title": "目标条件的可仿真室内世界生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-physcene-2024.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2311.01455",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Propose-generate-learn is a substantive foundation for automatic task/world/supervision loops. Its learned skill and task validity claims still require actual rollout inspection; no automatic demotion based on publication date.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "b-policy-training-environment-curricula"
+      ],
+      "task_title": "面向策略学习的环境与课程生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-robogen-2024.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2505.04831",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "RL steering, feasibility projection and diffusion MCTS plus a large released scene prior are substantial reusable components. The old 'project not confirmed' is outdated: official code/data/media links now exist, but motion was not inspected.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "embodiedgen-executable-world-generation"
+      ],
+      "task_title": "目标条件的可仿真室内世界生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-steerable-scene-generation-2025.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.10116",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Task intent plus semantic/visual/physics critics and released SAGE10K are a concrete task-world interface. Need actual stability and policy-execution media, controlled comparisons and failures before current role.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "embodiedgen-executable-world-generation"
+      ],
+      "task_title": "目标条件的可仿真室内世界生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-sage-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2506.10600",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Retain the six-module URDF asset toolkit as a family reference. The source checked here does not establish a sufficiently distinguished current whole-world recommendation under v2, and V2's new capabilities are not evidence that V1 has no retained advantages.",
+      "revisit_trigger": "Revisit if a concrete target task and controlled evidence establish a substantial capability increment over maintained methods.",
+      "task_ids": [
+        "embodiedgen-executable-world-generation"
+      ],
+      "task_title": "目标条件的可仿真室内世界生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2312.09067",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Open-ended language layouts with downstream navigation define a reusable environment baseline. Need actual generated-scene navigation and placement-failure inspection before re-endorsing current.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "embodiedgen-executable-world-generation"
+      ],
+      "task_title": "目标条件的可仿真室内世界生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-holodeck-2024.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2406.11824",
+      "decision": "priority",
+      "impact_score": 5,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "Reusable procedural asset+constraint code, controlled solver ablations and downstream annotation tests justify sustained reading. The actual random-sample image supports adequate static scene quality; recommendation excludes uninspected contact/robot execution.",
+      "revisit_trigger": "Revisit when the official task/evaluator changes or a matched successor demonstrates a material advance.",
+      "task_ids": [
+        "b-parameterized-procedural-scene-data-generation"
+      ],
+      "task_title": "参数化程序场景与标注生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.09153",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Dense object population, explicit physics and reusable policy-evaluation scenes are substantial. Official text quantifies stability and has extensive media, but none of its contact/robot clips was actually watched in this review.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "embodiedgen-executable-world-generation"
+      ],
+      "task_title": "目标条件的可仿真室内世界生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-scenesmith-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2601.05810",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Retain apartment-scale articulated layout guidance as a narrower baseline. The verified abstract combines existing diffusion guidance/LLM planning but does not establish the large controlled advance required for a new core recommendation.",
+      "revisit_trigger": "Revisit if a concrete target task and controlled evidence establish a substantial capability increment over maintained methods.",
+      "task_ids": [
+        "embodiedgen-executable-world-generation"
+      ],
+      "task_title": "目标条件的可仿真室内世界生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2604.14268",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Open multi-input reconstruction/generation and scene export are reusable visual-world infrastructure. Navigability, collision support and persistent exploration need actual temporal inspection.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "b-camera-action-controlled-visual-world-generation"
+      ],
+      "task_title": "相机与动作控制的视觉世界生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-hy-world-2-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.08498",
+      "decision": "source_issue",
+      "impact_score": null,
+      "project_relevance_score": null,
+      "evidence_strength": null,
+      "reason": "Registry arXiv2606.08498 is an unrelated statistics paper. The real official project points to2605.09423 with a different title and UE5/SimCoder method; old320-task/240-layout claims and the currently404 code link cannot serve as evidence.",
+      "revisit_trigger": "Correct identity, title and unsupported legacy evidence against the official paper; then complete method, protocol and temporal review.",
+      "task_ids": [
+        "b-policy-training-environment-curricula"
+      ],
+      "task_title": "面向策略学习的环境与课程生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2607.07459",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Unified task-world representation, stateful editing and source-reported sim/real policy gains are strong potential current-frontier evidence. Actual cross-engine asset/task and robot clips have not been inspected.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "embodiedgen-executable-world-generation"
+      ],
+      "task_title": "目标条件的可仿真室内世界生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-embodiedgen-v2-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2607.05765",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Real-image neural simulation plus action-aligned navigation data is a direct reusable data-engine capability. Rendering consistency, executable motion and real transfer remain uninspected visually.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "b-observation-to-interactive-training-scenes"
+      ],
+      "task_title": "观测到可交互训练场景的重建",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-image2sim-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2406.09394",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Fast user-steered connected scene expansion is a concrete interactive-generation capability. Need actual expansion/return-path inspection and drift cases, not just the claimed runtime.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "b-camera-action-controlled-visual-world-generation"
+      ],
+      "task_title": "相机与动作控制的视觉世界生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-wonderworld-2024.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.27073",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Persistent global3D proxy plus generative deferred refinement is a material approach to camera/video drift. Actual revisits, rapid turns and long rollout failure coverage were not inspected.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "b-camera-action-controlled-visual-world-generation"
+      ],
+      "task_title": "相机与动作控制的视觉世界生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-spatialcrafter-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.28816",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Permutation-equivalent agent encoding and linear hub communication are substantial multi-agent world components. Temporal cross-view identity/consistency and speed claims need actual sample inspection.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "multiplayer-action-video-simulation"
+      ],
+      "task_title": "多玩家共享世界的视频生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-gamma-world-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.20034",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Open low-resource training and streaming controls are potentially reusable, but WBench/throughput numbers and curated gallery descriptions do not establish persistent action/world quality.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "b-camera-action-controlled-visual-world-generation"
+      ],
+      "task_title": "相机与动作控制的视觉世界生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-astronex-world-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.25725",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "Agricultural parameterized scenes are relevant but domain-specialized; verified abstract supplies no reusable release, controlled policy gains or sim-to-real evidence that clears core thresholds. Workshop prestige alone does not raise impact.",
+      "revisit_trigger": "A reusable official release and controlled downstream robotics gains, or an explicit repository agricultural task, could justify promotion.",
+      "task_ids": [
+        "b-parameterized-procedural-scene-data-generation"
+      ],
+      "task_title": "参数化程序场景与标注生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.28276",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Editable twins/cousins plus policy-ranking and real-transfer experiments are a material compiler/evaluation capability. Need actual articulation/contact/manipulation and failure-case inspection.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "b-observation-to-interactive-training-scenes"
+      ],
+      "task_title": "观测到可交互训练场景的重建",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-simfoundry-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.12412",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Distributed local video/state clients and compact shared state are a substantial scaling alternative. Player identities, shared events and hour-long consistency require actual paired-rollout inspection.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "multiplayer-action-video-simulation"
+      ],
+      "task_title": "多玩家共享世界的视频生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-worldcast-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.10539",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Relational geometry conditioning plus a large physics scene dataset directly targets inter-object fit. Actual occlusion-fit and physical-stability samples/failures were not inspected.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "b-observation-to-interactive-training-scenes"
+      ],
+      "task_title": "观测到可交互训练场景的重建",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-tetris3d-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20560",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "Contact diagnosis and executable assembly primitives address a real composition gap across material types. Hanging/settling/containment success must be visually checked over actual simulator sequences.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "b-contact-aware-physical-composition"
+      ],
+      "task_title": "接触感知的物体交互装配",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-physga-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.19420",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Validated policy-specific weakness features and matched random/hard controls are a substantive targeted-generation capability. Actual generated worlds, navigation behaviors and failure coverage remain uninspected.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "b-policy-training-environment-curricula"
+      ],
+      "task_title": "面向策略学习的环境与课程生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-wedge-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20240",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "Synchronized POV/panorama/action data and world-frame dual prediction are a concrete reusable multiplayer infrastructure contribution. Need actual concurrent-agent, offscreen-event and panoramic consistency inspection.",
+      "revisit_trigger": "Inspect representative official output and failure cases with exact figure/time locators; verify matched evaluation, release and cost conditions before core or succession judgment.",
+      "task_ids": [
+        "multiplayer-action-video-simulation"
+      ],
+      "task_title": "多玩家共享世界的视频生成",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-AB.json",
+      "dossier_path": "undecided/2026-10-20/LIB-B-pawa-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2406.13642",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 3,
+      "evidence_strength": 4,
+      "reason": "RGB-D/SpatialQA/SpatialBench 的来源与开放代码可确认，是早期轻量表征基线；对当前项目主要提供支撑层，未建立相对现有度量模型的实质新增量，保留参考而非新版核心准入。",
+      "revisit_trigger": "出现同预算、同深度条件的可复用对照或任务验证时重评。",
+      "task_ids": [
+        "c-visual-spatial-question-answering"
+      ],
+      "task_title": "视觉空间关系与度量问答",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://microsoft.github.io/HiSpatial/",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "官方给出分层度量问答数据、RGB-XYZ 表征、预测/真实深度区分及多组量化基线，直接用于生成世界中的尺寸/距离/关系验证；是当前度量问答的阅读入口，结果仍为作者报告。",
+      "revisit_trigger": "模型/数据许可或任务实际迁移证据变化时复查。",
+      "task_ids": [
+        "c-visual-spatial-question-answering"
+      ],
+      "task_title": "视觉空间关系与度量问答",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://spacetools.github.io/",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "本轮确认 DIRL 受控训练对比与 Toolshed 工具接口；但该条包含真实机器人多步执行，尚未实际检查动作媒体，旧报告的 not_applicable 不能覆盖该物理使用主张。",
+      "revisit_trigger": "完成代表性机器人视频的时段、接触、失败样例与工具轨迹检查。",
+      "task_ids": [
+        "c-tool-active-spatial-reasoning"
+      ],
+      "task_title": "工具与主动观察支持的空间推理",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json",
+      "dossier_path": "undecided/2026-10-20/LIB-C-spacetools-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2509.06266",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "原文明确户外多相机数据来源、人工 QA 质量控制和分来源评测；可直接用来验证生成/重建世界的跨视角关系。数据域与室内操作诊断互补，不能当作后者继任。",
+      "revisit_trigger": "核对最终数据发布许可与评测脚本；协议变更时复评。",
+      "task_ids": [
+        "c-visual-spatial-question-answering"
+      ],
+      "task_title": "视觉空间关系与度量问答",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://openreview.net/pdf?id=jXDZJAfRZB",
+      "decision": "watchlist",
+      "impact_score": null,
+      "project_relevance_score": 4,
+      "evidence_strength": 2,
+      "reason": "现有精读高度模板化；本轮 OpenReview 入口被验证页阻断，不能确认对应版本、任务协议和报告数字。此处保留待补证，不据访问失败判定论文质量差或题名虚假。",
+      "revisit_trigger": "得到作者官方论文/代码入口并核对任务、版本和基线。",
+      "task_ids": [
+        "c-visual-spatial-question-answering"
+      ],
+      "task_title": "视觉空间关系与度量问答",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2501.15830",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "主源确认 Ego3D 编码、自适应动作网格与大规模机器人预训练；但完整动作质量未在本轮观察，不能继承旧 strong/4 评级作为新验收。",
+      "revisit_trigger": "核对官方完整操作视频、失败覆盖、控制频率与开源复现条件。",
+      "task_ids": [
+        "spatially-grounded-robot-manipulation"
+      ],
+      "task_title": "空间表征驱动的机器人操作",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json",
+      "dossier_path": "undecided/2026-10-20/LIB-C-spatialvla-2025.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2510.13375",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "深度 transformer 与 action expert 共享注意力是可解释的增量，但当前依据主要为作者摘要比较，代码仍述为将发布；不足以升级为新的长期核心入口。",
+      "revisit_trigger": "发布完整代码和同数据/预算对照，且完成真实动作检查。",
+      "task_ids": [
+        "spatially-grounded-robot-manipulation"
+      ],
+      "task_title": "空间表征驱动的机器人操作",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.13788",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "原文具体描述 ST-Human、3D/4D 引导和 RLBench/真实操作；这是可研究的空间到动作接口，但本轮未完成时序/机器人执行检查，不能据摘要成功率通过。",
+      "revisit_trigger": "检查代表性长程机器人视频、时空掩码稳定性和数据开放状态。",
+      "task_ids": [
+        "spatially-grounded-robot-manipulation"
+      ],
+      "task_title": "空间表征驱动的机器人操作",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json",
+      "dossier_path": "undecided/2026-10-20/LIB-C-st-vla-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.27437",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "官方方法与多层融合/空间 benchmark 可确认，适合作几何融合设计参考；对当前库的实质增量主要是融合结构，未达到独立优先阅读门槛，也不能自动取代更低成本基线。",
+      "revisit_trigger": "出现统一骨干、同训练预算的稳定提升和实际验证器使用证据。",
+      "task_ids": [
+        "c-visual-spatial-question-answering"
+      ],
+      "task_title": "视觉空间关系与度量问答",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.29074",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "已读原文任务定义、构建与指标；将结构和交互感知拆成明确 2D/metric-3D 输出，直接给场景/部件/可供性检查器提供可评分任务。该推荐基于评测协议，不主张执行演示或泛化已复现。",
+      "revisit_trigger": "使用前核对数据许可、坐标约定与各子任务打分代码。",
+      "task_ids": [
+        "c-visual-grounding-to-action-specification"
+      ],
+      "task_title": "视觉定位到动作目标的空间接口",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.13033",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "已读原文的 functional-program 任务定义、定位/执行指标和 motion-planner acceptance 协议；对空间约束到目标姿态的校验直接有用。该推荐限于评测设计，不声称视频逼真度或真实机器人迁移已验证。",
+      "revisit_trigger": "部署前检查 Isaac Sim/cuRobo 依赖、任务采样与坐标/参照系实现。",
+      "task_ids": [
+        "c-visual-grounding-to-action-specification"
+      ],
+      "task_title": "视觉定位到动作目标的空间接口",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.31148",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "官方协议和原文 Table 2 可核对；通过多轮修复、单步诊断和基础能力拆分，直接评估生成场景的错误修复与停止行为。项目页结果区仍有模板占位，故引用结果以原文表为准。",
+      "revisit_trigger": "使用原文/代码核对评测；项目页占位图补齐不自动增加新条目。",
+      "task_ids": [
+        "interactive-scene-error-repair"
+      ],
+      "task_title": "多轮交互场景错误修复",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.18746",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "官方明确任务分类、实例量、主动/被动/oracle 对照与预算问题，直接用于判断世界是否支持信息获取式交互。此处验收依据为评测协议和诊断，不把页面视频链接计为已观看。",
+      "revisit_trigger": "核对固定步数/图像预算和 OmniGibson 版本，避免把 oracle 条件与主动代理直接比较。",
+      "task_ids": [
+        "c-tool-active-spatial-reasoning"
+      ],
+      "task_title": "工具与主动观察支持的空间推理",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2607.12477",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 4,
+      "reason": "主源对真实视频、QA 和三认知层级的描述具体，但 UAV 自运动/自我认知是更专门的支撑层，当前没有直接的室内生成/操作验证器使用点，暂不占核心阅读入口。",
+      "revisit_trigger": "项目扩展到无人机自运动交互，或出现可复用到目标任务的验证接口时重评。",
+      "task_ids": [
+        "c-visual-spatial-question-answering"
+      ],
+      "task_title": "视觉空间关系与度量问答",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2509.25794",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "已读原文分阶段任务、数据来源和标注/评分设计；可直接分离对象定位、动作点和高层 trace 的错误，避免用纯多选 QA 替代行动几何。S3 是视觉轨迹评测，不宣称低层机器人执行已验证。",
+      "revisit_trigger": "核对最终 TMLR 版本、许可与 S3 trace 打分实现后再使用精确数值。",
+      "task_ids": [
+        "c-visual-grounding-to-action-specification"
+      ],
+      "task_title": "视觉定位到动作目标的空间接口",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.20905",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "官方方法与记忆 harness 可确认，但核心还包括真实机器人长期执行；本轮未完整观察相关媒体。保留为待复核，不用 broad generalist 宣传或摘要平均提升通过新门槛。",
+      "revisit_trigger": "检查完整记忆依赖任务的实际执行、错误恢复、工具预算和发布可用性。",
+      "task_ids": [
+        "memory-conditioned-embodied-planning"
+      ],
+      "task_title": "历史记忆支持的具身任务规划",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json",
+      "dossier_path": "undecided/2026-10-20/LIB-C-vesta-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.10538",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "原文 matched memory-vs-blind 对照、跨来源实验、消融和置信区间可检查，持久状态与对象移动事件可直接供交互世界记忆层使用。明确外部已发表基线并非同模型预算，不能宣称全面 SOTA 替代。",
+      "revisit_trigger": "复现相同帧与问题协议，核对跨场景检索失败和 released poses 依赖。",
+      "task_ids": [
+        "persistent-egocentric-object-memory"
+      ],
+      "task_title": "自我视角对象位置与经历记忆",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20990",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "主源确认感知 oracle 与实例融合设计，但当前核心增量主要是既有工具的几何修整与融合；没有足够可复用发布/统一对照来支撑独立优先入口。保留具体失败模式研究，待协议与工具落地。",
+      "revisit_trigger": "核对统一工具/预算比较和可复用 perception tool 代码后复查。",
+      "task_ids": [
+        "c-tool-active-spatial-reasoning"
+      ],
+      "task_title": "工具与主动观察支持的空间推理",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20598",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "主源的组别 EMA 与几何融合提供有用诊断，但以多榜均分和若干新分数尚不能建立足够大的库内实质增量；不同动态协议不宜合并成一个全面优胜结论。",
+      "revisit_trigger": "发布可复用模型和统一骨干预算下的逐任务收益/退化分析。",
+      "task_ids": [
+        "c-visual-spatial-question-answering"
+      ],
+      "task_title": "视觉空间关系与度量问答",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-C.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2405.12213",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "保留开放通用策略基础：本轮主源证实语言/目标图像条件、800k轨迹及九平台适配；旧报告的视觉证据只是项目存在，不能重新认定动作质量通过。",
+      "revisit_trigger": "在同机器人/数据预算下比较适配效率，并补带具体片段的时序检查。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2406.09246",
+      "decision": "reference",
+      "impact_score": 5,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "保留开放动作词元VLA的基础参考；本轮已读官方实现、LoRA及LIBERO复现入口。官方仓库推荐OFT，但OFT不在现有registry，不能直接建立库内替代边。",
+      "revisit_trigger": "复审已收录同任务方法的匹配预算比较；重新观看机器人时序证据。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2410.24164",
+      "decision": "reference",
+      "impact_score": 5,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "保留连续动作flow架构的基础价值；主源已确认RSS2025发表（初发年2024）。旧“非开放”描述需要更新，但本轮未用发布时间或新模型覆盖面宣称其被替代。",
+      "revisit_trigger": "补查官方开放实现/权重及同协议成本、泛化、动作质量，再决定当前角色。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2510.01623",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "主源可核实RLVR/GRPO、区域/轨迹奖励与VLA-CoT-13K，但现有报告没有定位到匹配骨干、推理延迟及独立模块收益的具体表。对项目的直接控制增量尚不足四分。",
+      "revisit_trigger": "发布完整训练/评测配方，并给出同骨干推理质量、执行成功率与延迟的控制比较。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.12090",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "保留术语和文献组织参考；主源明确是survey，不把它当成可执行世界模型或三项四分的核心方法。",
+      "revisit_trigger": "出现可复用任务协议或验证器实现时再评估实证用途。",
+      "task_ids": [
+        "d-world-action-model-design-analysis"
+      ],
+      "task_title": "世界动作模型的设计与对照分析",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.30542",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "保留隐藏物理与查询充分抽象的概念参考；本轮摘要还确认有固定可见场景、改变潜在物理的受控例子。未核查其全实验和演示，不以此确认可部署安全。",
+      "revisit_trigger": "核查受控benchmark与可复用组件/失败样例，再评估是否进入核心验证任务。",
+      "task_ids": [
+        "d-physical-intervention-outcome-queries"
+      ],
+      "task_title": "物理干预的可行性与结果查询",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2503.14734",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "保留开放人形双系统VLA基线；主源证实System2语义和System1扩散动作、混合数据及GR-1双臂部署。旧精读缺动作片段和具体协议，不能升为current。",
+      "revisit_trigger": "补查准确版本、开放权重及GR-1相同任务/训练预算的比较和时序样例。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.00919",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "五阶段训练加RL/OOD检测有系统参考价值，但checked摘要只给一般性提升，旧精读同样没有各阶段消融和数据/硬件控制。未证明相对开放通用基线的实质增量。",
+      "revisit_trigger": "完整公开分阶段消融、数据/硬件对齐结果及部署配方。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2511.02776",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "UVMC跨模态统一表示及六平台14000+真实rollouts是值得复审的实质候选；本轮只核实主源文本，旧视觉强结论缺片段。",
+      "revisit_trigger": "检查多平台动作时序、失败覆盖，并核查匹配数据/容量与协议的控制比较。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-xr-1-2025.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2511.05275",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "主源支持不需双臂预训练的双单臂策略组合，对双臂任务有明确数据效率价值；旧报告只给模板视觉评分，本轮尚未观看协调动作。",
+      "revisit_trigger": "观看双臂接触/协调失败和成功片段，核对双臂微调数据及部署预算。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-twinvla-2025.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.25406",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "原生离散扩散联合目标图像和动作是明确方法，但相对现有统一video-action核心栈，暂无本轮已核查的控制比较证明重要增量。主源已更新ACM MM2026。",
+      "revisit_trigger": "给出匹配连续/离散基线、长期一致性及吞吐量的控制实验证据。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.02881",
+      "decision": "undecided",
+      "impact_score": 5,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "公开推理骨干、动作tokenizer、720小时双臂数据及连续动作expert是直接可复用的实质栈；本轮主源证实这些释放声明，尚未独立查完整artifact和观看部署时序。",
+      "revisit_trigger": "核对artifact目录/许可证、推理与动作延迟，并检查不同平台真实执行及失败片段。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-molmoact2-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.10309",
+      "decision": "source_issue",
+      "impact_score": null,
+      "project_relevance_score": 4,
+      "evidence_strength": null,
+      "reason": "registry纸页URL指向完全无关的随机非线性薛定谔方程数学论文；旧报告的“主源verified”不成立。官方Cosmos项目确实存在，但不能在错误身份上重评质量。",
+      "revisit_trigger": "用官方页面指向的正式论文/发布标识修正URL和年份，保留审计与重定向关系后重新完整审核。",
+      "task_ids": [
+        "d-action-conditioned-robot-world-prediction"
+      ],
+      "task_title": "动作条件的机器人世界预测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.08546",
+      "decision": "undecided",
+      "impact_score": 5,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "将world model放入闭环训练/评估且有单4090的15FPS/10分钟声明，直接支撑本repo生成环境用途。主源文字已核实；本轮未实际操控在线demo或检查连续长时序。",
+      "revisit_trigger": "执行在线/本地交互demo，检查动作响应、长时状态持续、碰撞与离分布失败，再核查协议。",
+      "task_ids": [
+        "d-action-conditioned-robot-world-prediction"
+      ],
+      "task_title": "动作条件的机器人世界预测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-interactive-world-simulator-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.12403",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "双路径steering可核查且相关，但四项真实任务和84.7% LIBERO-Plus的摘要结果不足以区分world prior、数据与policy初始化的收益。",
+      "revisit_trigger": "补完整同骨干消融、推理开销、开放权重和真实分布偏移协议。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.00078",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "双分支future alignment与部署时去除posterior清楚，但与库中多篇latent-WAM近邻较密集；尚无核对过的matched增量支持核心四分。",
+      "revisit_trigger": "匹配预训练和推理预算后，证明dual-branch相对现有JEPA/WAM的稳定优势。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.02800",
+      "decision": "undecided",
+      "impact_score": 5,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "统一语言/图像/视频/音频/动作和公开多模态artifact是重要基础候选；本轮验证原始摘要的范围及OpenMDW释放声明，未观看物理生成/执行媒体。",
+      "revisit_trigger": "检查机器人动作与物理rollout媒体、artifact许可及可运行控制接口，审查各模态协议。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-cosmos-3-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2607.04546",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "23-DoF控制与mask/RGB分解提供可命名物理动作接口，主源还给五模型匹配训练和盲评；本轮未检查手指时序，不能沿用旧强视觉。",
+      "revisit_trigger": "观看逐DoF、长时接触和失败案例；检查code释放和真实/仿真训练匹配。",
+      "task_ids": [
+        "d-action-conditioned-robot-world-prediction"
+      ],
+      "task_title": "动作条件的机器人世界预测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-mask2real-wm-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2607.06564",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "明确的3D point-cloud lifting、GC-MAE与分层动作建模；但真实平均仅+4pp且三组件耦合，本轮没有逐项证据能支持重大增量。",
+      "revisit_trigger": "公开实现并给匹配3D感知、预算与逐组件消融，显示部署或泛化的实质收益。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2607.08639",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "从头因果video-action预训练、语义动作tokenizer和异步闭环是系统性能力候选；2.0公开artifact完整性及动作质量仍需检查。",
+      "revisit_trigger": "验证2.0具体权重/训练实现，检查few-shot、多接触任务连续片段和匹配代价。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-lingbot-va-2-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.10098",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "无泄漏current-only预测是合理训练设计，但摘要只有总体增益，没有本轮核对的定量控制和强增量；旧报告亦把rollout链接当视觉结论。",
+      "revisit_trigger": "核查泄漏消融、partial code状况及matched现有latent baseline的可复现增益。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2507.01099",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "跨视角pointmap训练并从未来RGB-D恢复6DoF轨迹，提供具体几何到执行路径；主源确认ICLR2026。尚未检查生成时序与恢复轨迹的可用性。",
+      "revisit_trigger": "检查同步RGB/depth/动作时序，比较相同视图/深度/标定输入与真实轨迹失败。",
+      "task_ids": [
+        "d-action-conditioned-robot-world-prediction"
+      ],
+      "task_title": "动作条件的机器人世界预测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-geometry-aware-4d-video-generation-2025.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.22882",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "4D correspondence蒸馏和inverse dynamics可核实，真实61→81%令人关注；但仅摘要/既有四任务摘要不足以建立相对已有geometry-video条目的重要控制增量。",
+      "revisit_trigger": "完整发布代码并对齐view/depth/trajectory extraction及训练预算，核查误差和失败分布。",
+      "task_ids": [
+        "d-action-conditioned-robot-world-prediction"
+      ],
+      "task_title": "动作条件的机器人世界预测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2506.03079",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "occupancy作为稠密控制桥梁是相关表示选项，但+3.5pp规划/+6.4pp策略增益与大occupancy构建成本尚不足证明新核心价值。主源已注明CVPR2026。",
+      "revisit_trigger": "证明occupancy构建预算可接受，并给几何/动作一致性的匹配baseline和公开数据。",
+      "task_ids": [
+        "d-action-conditioned-robot-world-prediction"
+      ],
+      "task_title": "动作条件的机器人世界预测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.11739",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "原生推理和动作共用decoder、跨embodiment tokenizer与视觉memory形成系统增量；七类评估主源可核查，但未观看动作/失败片段及查成本。",
+      "revisit_trigger": "核查动作解码延迟、训练混合及同任务baseline，观看至少两平台的成功/失败片段。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-g05-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.11671",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "结构化单demonstration适配是明确用途，但retrieval、offline转换和联合训练贡献未在本轮获得控制证据；leaderboard首名不能替代质量门槛。",
+      "revisit_trigger": "发布检索库和转换实现，核查每步延迟、失败检索及同数据适配比较。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.09771",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "0.5B和无额外具身预训练的效率方向有价值；本轮只读到摘要的competitive声明，缺准确latency/memory/hardware与任务控制，不能直接四分。",
+      "revisit_trigger": "公开code/checkpoints并在相同感知/训练数据/硬件下给效率-任务性能曲线。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.09730",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "training-time video supervision且部署移除denoiser与已有latent方案密集重叠；本轮未核查exclusive-routing相对现有库条目的决定性增量。",
+      "revisit_trigger": "提供同backbone/data的routing与future-target对照、完整实现及开销。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.09381",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "空间结构化V-JEPA和共享predictor区别清楚，但79.2%与pi0.5版86.3%改变初始化，不能当作无条件提高；本轮未查匹配消融。",
+      "revisit_trigger": "给匹配初始化、latent结构、action专家和推理预算的可复现增量。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.23376",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "物理偏好对齐、action injection及训练独立EZSbench构成可复用基础候选。主源摘要已有具体构件，但本轮尚未逐项验证开放release和物理失败媒体。",
+      "revisit_trigger": "核实model/data/benchmark发布，检查穿透、接触和动作扰动失败视频并审查物理评分。",
+      "task_ids": [
+        "d-action-conditioned-robot-world-prediction"
+      ],
+      "task_title": "动作条件的机器人世界预测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-abot-physworld-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.18375",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "跨view attention、camera RoPE和3D-REPA有明确方法，但leaderboard名次不是material increment；本轮未核查same-input几何和控制消融。",
+      "revisit_trigger": "公开权重与same-input/same-budget几何、控制和物理一致性对照。",
+      "task_ids": [
+        "d-action-conditioned-robot-world-prediction"
+      ],
+      "task_title": "动作条件的机器人世界预测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "decision": "watchlist",
+      "impact_score": 4,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "官方发布可核查整身控制/设备适配，但VLA仅early-access、训练和baseline控制不公开。作为封闭产品能力观察而非当前可复用机器人基线。",
+      "revisit_trigger": "发布可复用策略/任务协议及完整失败/延迟分布，明确本项目可调用接口。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.27406",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "多来源动作条件接口和公开跨embodiment模型直接支持learned simulator研究；本轮核实摘要的release和课程方法，未实际检查zero-shot物理rollout。",
+      "revisit_trigger": "核对checkpoints与deployment，检查跨embodiment动作扰动、接触失败及zero-shot协议。",
+      "task_ids": [
+        "d-action-conditioned-robot-world-prediction"
+      ],
+      "task_title": "动作条件的机器人世界预测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-clap-cross-embodiment-world-models-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.15917",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "75小时VR仿真目标embodiment数据加少量真实微调提供具体可扩展配方；主源数据效率对照明确，但本轮没有观看56DoF动态及failure。",
+      "revisit_trigger": "实际检查持续双手接触与恢复、核查任务progress定义和matched从零训练对照。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-spd-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.01402",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "已核查官方matched训练与每任务结果，并实际查看Plug/FACT的成功及失败双视角时序。它把接触失败拆为精度/受力并提供无新增数据的噪声调度和force conditioning，直接用于接触任务验证。",
+      "revisit_trigger": "扩充相同传感器任务/跨平台复现；保留Board退化与失败案例，不能自动归档通用/无force基线。",
+      "task_ids": [
+        "d-force-tactile-contact-rich-manipulation"
+      ],
+      "task_title": "力觉与触觉支持的接触丰富操作",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.12352",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "同权重独立副本且无需通信的异构协作是明确新任务能力；主源实验可查，但本轮未观看队友扰动和同步接触时序。",
+      "revisit_trigger": "观看含队友干扰、接触同步和死锁/失败片段，核查团队规模/数据/4x播放。",
+      "task_ids": [
+        "d-decentralized-multi-robot-collaboration"
+      ],
+      "task_title": "去中心化异构机器人协作",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-chorus-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.12063",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "真实失败修world model、再用合成rollout改policy直接服务本repo生成环境有效性；本轮主源确认39.2pp总增益和11.6pp生成数据收益，尚未核查时序接触细节。",
+      "revisit_trigger": "检查模型接触失败前后对照、合成rollout动作忠实度、reward标注和相同真实交互预算。",
+      "task_ids": [
+        "d-iterative-world-policy-data-improvement"
+      ],
+      "task_title": "反馈驱动的世界模型与策略改进",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-vlaw-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.07398",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "本轮已读官方模块化trainer/server/evaluation代码入口和具体benchmark配置，检查多任务真实时序样例；提供可控消融、统一数据和部署栈，价值超出单一分数。",
+      "revisit_trigger": "在目标硬件运行一个基准和失败压力测试，固定数据/模型版本；进一步补看dexterous和失败分布。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.10522",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "将语义action units确定性接机器人解释器以及GUI数据采集提供具体复用接口；主源已核实架构但本轮未观看执行/确认完整release。",
+      "revisit_trigger": "检查公开插件/collector协议及真机动作时序、校准失败、离散分辨率和API延迟。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-show-harness-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.11697",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "hard feasible-set层是明确的动作合法性接口，文本可验证ray-scaling与训练对齐；本轮未读完整定理假设/实验或检查物理执行，100% step safety不能转述为全局安全。",
+      "revisit_trigger": "完整核查定理可行初始化/约束集合假设、未覆盖collision/contact和实际时序/失败实验。",
+      "task_ids": [
+        "d-flow-action-feasible-set-enforcement"
+      ],
+      "task_title": "机器人动作的硬可行域约束",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-actsafeguard-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.20761",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "多horizon vision/tactile latent与11.9ms延迟具有特定硬件价值，但相对已核查的contact诊断核心，五真实任务/传感器依赖且开放实现待证，未达重大增量。",
+      "revisit_trigger": "公开传感器/代码，给同任务同force/tactile和相同硬件延迟的对照。",
+      "task_ids": [
+        "d-force-tactile-contact-rich-manipulation"
+      ],
+      "task_title": "力觉与触觉支持的接触丰富操作",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.30264",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "factual误差与counterfactual选action脱节是具体失效模式，并有matched LeWM/CEM诊断及真实迁移结果；本轮尚未核对完整protocol及真实时序。",
+      "revisit_trigger": "核查CEM bank/数据预算与4/5环境结果，查看失败接触和no-lab-adaptation部署片段。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-ad-wm-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.30092",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "部署漂移context token/AdaLN方案针对重要但较窄的工程shift；本轮所见四任务、人工注入shift和恢复百分比不足支持通用鲁棒新能力。",
+      "revisit_trigger": "公开shift生成和context协议，验证自然wear/跨工作站及失败适配安全性。",
+      "task_ids": [
+        "d-deployment-dynamics-adaptation"
+      ],
+      "task_title": "部署变化下的策略与动力学适配",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.30247",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "staggered-noise滑窗提供4.5x steady-state速度，属于有用推理优化；本轮无同硬件warm-up、观测新鲜度与突变场景证据，不能仅速度四分。",
+      "revisit_trigger": "提供同硬件冷启/稳态/episode-time及突变动作响应对照与完整视频。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.28927",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "committed action前缀明确改善异步预测对齐，但本轮仅摘要98.35%、2.93x时间和单Stamp例子，尚不足distinguish为主阅读新能力。",
+      "revisit_trigger": "核查统一硬件/数据/观测延迟的对照，展示突变和错误前缀的可恢复性。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.27656",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "异步KV复用加force/tactile及真实科学workflow是可区分系统候选；本轮只核实主源的约7200小时和15/5stage范围，尚未观看长程操作或确认release。",
+      "revisit_trigger": "核查完整workflow进度/失败、真实接触时序、artifact许可证和同预算控制。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-internw0-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.06949",
+      "decision": "undecided",
+      "impact_score": 5,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "44k小时人类video、latent proxy actions和实时distillation提供可复用基础能力，主源能核实10.81FPS及planning/evaluation用途；本轮未观看rollout和policy-in-loop。",
+      "revisit_trigger": "观看action扰动、物体/接触持续与OOD失败，核对实时GPU/时长和模型release。",
+      "task_ids": [
+        "d-action-conditioned-robot-world-prediction"
+      ],
+      "task_title": "动作条件的机器人世界预测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-dreamdojo-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.16861",
+      "decision": "undecided",
+      "impact_score": 5,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "完全sim-only zero-shot策略和procedural engine直接验证生成世界是否训练出可用策略；主源最新摘要报1.8M轨迹，与库中1.7M需版本说明。未观看真实门/抽屉任务。",
+      "revisit_trigger": "核对数据版本/许可证、对比real-data预算，实际观看长程门/抽屉/移动操作与失败。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-molmobot-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.30280",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "统一manipulation/navigation/trajectory与embodiment文字控制规范是具体跨任务候选；本轮主源可核查，未检代码完整性和不同动作任务时序。",
+      "revisit_trigger": "按导航、操控、轨迹分别核查开放实现/协议/执行片段和知识迁移消融。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-qwen-vla-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.13675",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "flow反演把合理粗action映射已有policy模式，适合后续适配；但最大95pp/一分钟是特定case，尚无全任务覆盖和guide成本证据支撑核心四分。",
+      "revisit_trigger": "完整给出引导采集成本、baseline失败task分布、同预算成功率和公开controller。",
+      "task_ids": [
+        "d-language-conditioned-manipulation-policies"
+      ],
+      "task_title": "目标条件的通用机器人操作策略",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2604.01985",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "把验证拆为plausibility/reachability并主动收集world model失败，直接提供生成世界验证接口；主源当前摘要是>22% policy增益，旧精读的>18%需标版本。",
+      "revisit_trigger": "核查各task协议/版本及可交互预测器，观看reachability失败/恢复和模型自检局限。",
+      "task_ids": [
+        "d-iterative-world-policy-data-improvement"
+      ],
+      "task_title": "反馈驱动的世界模型与策略改进",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-world-action-verifier-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.12468",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "success bias与counterfactual post-training/human defect reward针对动作忠实和物理缺陷，是直接任务增量；本轮只核实主源48.12→6.25缺陷率声明，旧视觉描述无定位。",
+      "revisit_trigger": "检查GT/预测/反事实同场景时序与失败例，人评盲评和reward偏好协议、code版本。",
+      "task_ids": [
+        "d-action-conditioned-robot-world-prediction"
+      ],
+      "task_title": "动作条件的机器人世界预测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-dreamtrue-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.12285",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "prediction-oriented latent和structured causal attention有清楚方法，但最接近latent对照只+1.77pp；1/19成本对pixel WAM不是同表示/同资源优势。",
+      "revisit_trigger": "公开matchedbackbone/history/latent维度的控制实验与部署时序。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.12099",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "metric3D共用action/scene flow使输出接口由像素变可执行运动，是直接表示新能力；主源具体1.7B/PointWorld/real指标已核实，未检查3D动态与碰撞。",
+      "revisit_trigger": "观看3D轨迹、接触、scene-flow与执行对齐；检查depth-free尺度及同输入PointWorld比较。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-unitas-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.10515",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "把imagination error与算力/真实规划性能联系并释放训练部署代码有实质方法价值；本轮只读摘要，未核查scalingfit/extrapolation或真实goal-image规划。",
+      "revisit_trigger": "核查外推/置信区间、compute数据共线性，并观看zero-shotgoal规划及失败。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-robojepa-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.10528",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "longhistory收益依赖ARpretraining以及107.4ms系统实现是可区分能力；主源context ablation具体，但本轮未观看动态杯堆与长期恢复，不能据摘要判当前最佳。",
+      "revisit_trigger": "检查动态/long-horizon影片、延迟预算与AR控制、失败/重置范围及代码release。",
+      "task_ids": [
+        "d-long-context-dynamic-manipulation"
+      ],
+      "task_title": "依赖长历史的动态操作控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-long-wam-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.08780",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "DROID-3D因子图标定和metricdepth监督直接提供数据/validator；等训练预算RGB+1.48dB是具体控制证据，仍未检查跨view时序几何和释放。",
+      "revisit_trigger": "核实dataset/license和equalbudget拆分，检查多视图RGB-D、遮挡及几何漂移影片。",
+      "task_ids": [
+        "d-action-conditioned-robot-world-prediction"
+      ],
+      "task_title": "动作条件的机器人世界预测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-depthworld-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.22364",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "冻结world model并从少量interaction优化environment latent直接针对隐藏物理，是明确新能力；主源七sim四real结果已核查，尚无时序媒体检验。",
+      "revisit_trigger": "定位并观看改变物理因素/反事实action的连续样例，审查adaptationinteraction预算和泄漏。",
+      "task_ids": [
+        "d-deployment-dynamics-adaptation"
+      ],
+      "task_title": "部署变化下的策略与动力学适配",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-t2-z-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.22343",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "主源证实drivinggeometryforecasting及cross-viewquery，但未展示机器人action-intervention接口。作为3D状态表示背景，与本repo具体操控任务仅单层支撑。",
+      "revisit_trigger": "出现可复用交互action接口或机器人/生成世界验证任务的直接实证。",
+      "task_ids": [
+        "d-driving-view-independent-geometry-forecasting"
+      ],
+      "task_title": "道路多视角三维状态预测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.21095",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "sharedcausalarchitecture研究world/action互益，实证问题明确；但本轮仅摘要正面结论，没有匹配预算效应量和release核查，不能与已可查模块栈同列核心。",
+      "revisit_trigger": "提供完整共享架构消融/效应量、负结果、代码和真实时序，证明重要增量。",
+      "task_ids": [
+        "d-predictive-world-action-control"
+      ],
+      "task_title": "预测世界表征支持的机器人控制",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.19825",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "把representation、integration和backbone交叉控制可直接减少repo技术选型的不确定性；主源四范式/多评估轴已核查，但完整protocol及执行媒体未审。",
+      "revisit_trigger": "核对预算/种子/同策略控制表和真实时序例，公开可复用evaluation配置。",
+      "task_ids": [
+        "d-world-action-model-design-analysis"
+      ],
+      "task_title": "世界动作模型的设计与对照分析",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-D.json",
+      "dossier_path": "undecided/2026-10-20/LIB-D-what-matters-world-modeling-vla-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2505.09694",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "早期场景/运动/语义评价有基础价值，但现存精读没有具体协议和指标验证，本轮摘要也不足以支撑证据4。",
+      "revisit_trigger": "完成数据/评价器实现、指标与人工一致性以及相对WorldArena的独特价值审查。",
+      "task_ids": [
+        "e-robot-world-model-rollout-utility-evaluation"
+      ],
+      "task_title": "机器人世界模型的执行与任务效用评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2504.00983",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "跨3D/4D/视频的显式相机轨迹连续场景协议与分解指标，可直接作为生成世界的评测起点；官方表和发布入口支持持续维护。",
+      "revisit_trigger": "模型/指标版本变化，或同协议新套件证明不损失3D/4D覆盖。",
+      "task_ids": [
+        "e-interactive-world-control-consistency-evaluation"
+      ],
+      "task_title": "交互视觉世界的控制与持久一致性评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2504.18904",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "MetaSim的模拟器无关配置和标准IL/RL协议是可直接复用的环境/结果接口；该贡献独立于渲染或生成demo。",
+      "revisit_trigger": "API/模拟器兼容性变更或同预算迁移测试表明替代关系。",
+      "task_ids": [
+        "e-robot-task-environments-and-evaluation-harnesses"
+      ],
+      "task_title": "机器人任务环境与评测编排基础设施",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 3,
+      "evidence_strength": 4,
+      "reason": "开放问答是有用的环境理解基础，但距离本库生成/可执行交互验证一层；保留相关任务备选，不作为v2核心通过。",
+      "revisit_trigger": "已有生成世界接口实际采用QA探针，并验证答案评分与状态/交互错误相关。",
+      "task_ids": [
+        "e-embodied-visual-question-answering-evaluation"
+      ],
+      "task_title": "具身环境与物理视觉问答评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.08971",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "原始感知/效用分离仍有基础价值；没有冻结1.0/2.0的共同样本与成本对照，不判定被取代。",
+      "revisit_trigger": "取得冻结1.0与2.0共同任务、预算、可用性和退化检查后再判更迭。",
+      "task_ids": [
+        "e-robot-world-model-rollout-utility-evaluation"
+      ],
+      "task_title": "机器人世界模型的执行与任务效用评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2510.18135",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "将世界模型放入统一proposal/rollout/revision的真实闭环，以任务成功衡量效用，构成区别于离线视频分数的直接评价基础。",
+      "revisit_trigger": "四环境协议、后训练数据或推理候选预算变更时重评。",
+      "task_ids": [
+        "e-robot-world-model-rollout-utility-evaluation"
+      ],
+      "task_title": "机器人世界模型的执行与任务效用评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://ctrl-world.github.io/",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "官网说明它是可控生成模型而非纯评价套件，旧E条目将视觉标not_applicable不成立；生成动作精度、长时和策略改进均需实际时序检查。",
+      "revisit_trigger": "检查至少多种动作序列、物体接触/遮挡、长时rollout及实机对照失败例。",
+      "task_ids": [
+        "e-robot-world-model-rollout-utility-evaluation"
+      ],
+      "task_title": "机器人世界模型的执行与任务效用评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json",
+      "dossier_path": "undecided/2026-10-20/LIB-E-ctrl-world-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.17912",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "触觉、在线RL与跨模拟/实机三轴评价有明确任务、指标表及接口，是有实质增量的评价基础；本判断不宣称模型demo已通过。",
+      "revisit_trigger": "冻结版本、公共任务覆盖或评价器更改；补1.0共同协议与成本比较。",
+      "task_ids": [
+        "e-robot-world-model-rollout-utility-evaluation"
+      ],
+      "task_title": "机器人世界模型的执行与任务效用评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.18995",
+      "decision": "source_issue",
+      "impact_score": null,
+      "project_relevance_score": null,
+      "evidence_strength": null,
+      "reason": "原registry arXiv号实际是雷达flow-matching论文，精读的作者和13/657数字也不可沿用。官方仓库和正确论文已找到，身份修复前不进入推荐。",
+      "revisit_trigger": "将原文/精读身份修复为2603.13966并按其明确版本核对模型/benchmark统计。",
+      "task_ids": [
+        "e-robot-task-environments-and-evaluation-harnesses"
+      ],
+      "task_title": "机器人任务环境与评测编排基础设施",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.20774",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "低成本跨搭建复现有备选价值，但本轮只核到摘要设计，未审完误差/统计和确切公开搭建协议，无法支撑核心证据4。",
+      "revisit_trigger": "核对BOM、ID/OOD固定任务、搭建间置信区间与官方评测/示范包。",
+      "task_ids": [
+        "e-robot-manipulation-generalization-evaluation"
+      ],
+      "task_title": "机器人操作泛化与鲁棒性评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026W/GigaBrainChallenge/html/Jiang_RoboWM-Bench_A_Benchmark_for_Evaluating_World_Models_in_Robotic_Manipulation_CVPRW_2026_paper.html",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "可执行性度量直接符合项目，但核心依赖视频到动作和物理仿真执行；旧benchmark豁免没有实际动作/接触观察，需时序证据后再推荐。",
+      "revisit_trigger": "检查官方成功/失败执行、重建环境、接触和动作抽取误差及标准协议。",
+      "task_ids": [
+        "e-robot-world-model-rollout-utility-evaluation"
+      ],
+      "task_title": "机器人世界模型的执行与任务效用评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json",
+      "dossier_path": "undecided/2026-10-20/LIB-E-robowm-bench-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2512.22539",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "L0限定训练、三难度和正交语言/视觉扰动提供可直接复用的任务编排与安全度量，官方协议/工具支持具体用途。",
+      "revisit_trigger": "任务定义、L0训练限制或安全代价实现改变时复核。",
+      "task_ids": [
+        "e-robot-manipulation-generalization-evaluation"
+      ],
+      "task_title": "机器人操作泛化与鲁棒性评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.27759",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "GPU并行、两形态和sim-real相关性有独立价值；当前精读缺具体split/相关表/可用实现，本轮摘要不足以验证强效用，留备选。",
+      "revisit_trigger": "审具体ID/OOD配置、real-world相关性样本/置信区间及代码/数据版本。",
+      "task_ids": [
+        "e-robot-manipulation-generalization-evaluation"
+      ],
+      "task_title": "机器人操作泛化与鲁棒性评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.29360",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "物理/动作/乐观偏差三层诊断比纯视觉更直接，但未核到完整读出与人标协议/发布可用性；保留专门评价备选。",
+      "revisit_trigger": "核对16k人标的抽样、层级rubric、人一致性及可执行数据/评价器。",
+      "task_ids": [
+        "e-robot-world-model-rollout-utility-evaluation"
+      ],
+      "task_title": "机器人世界模型的执行与任务效用评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.03941",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "统一动作空间、六任务与公开轨迹/metadata/评价入口可直接接生成世界评测，当前代码已补齐官网Coming Soon的部分不确定性。",
+      "revisit_trigger": "固定metric/ViPE/VBench版本后进行小规模实际复现；接口变化时复核。",
+      "task_ids": [
+        "e-interactive-world-control-consistency-evaluation"
+      ],
+      "task_title": "交互视觉世界的控制与持久一致性评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.25874",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "多轮导航、事件编辑、角色动作与视角切换，并对22自动度量进行人评验证，提供独立于纯相机控制的实质评价维度。",
+      "revisit_trigger": "协议或judge更新、比较维度/缺失模型变化时复核并固定快照。",
+      "task_ids": [
+        "e-interactive-world-control-consistency-evaluation"
+      ],
+      "task_title": "交互视觉世界的控制与持久一致性评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2604.21686",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "按轴响应延迟/纯度/稳定性确有专门增量，但原精读只保存八指标旧摘要，本轮主源说将发布数据代码，实装/协议可用性需核验。",
+      "revisit_trigger": "核对最新版metrics与代码/outputs发布、延迟测量定义及采样预算。",
+      "task_ids": [
+        "e-interactive-world-control-consistency-evaluation"
+      ],
+      "task_title": "交互视觉世界的控制与持久一致性评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.11129",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "三轨联合诊断可作备选，但现有精读大部分模板，本轮未完成几何重建与物理judge的验证协议核查，不能继承证据4。",
+      "revisit_trigger": "核对各track规模、控制变量、judge校准、开源执行以及误差归因。",
+      "task_ids": [
+        "e-interactive-world-control-consistency-evaluation"
+      ],
+      "task_title": "交互视觉世界的控制与持久一致性评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2601.21282",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "概念隔离能帮助定位物理失败，但本轮只核到主源摘要，旧425配置与具体常数/真值评分尚缺精确协议定位，保留基础诊断。",
+      "revisit_trigger": "检查场景配置、friction/viscosity物理常数的可观测性、仿真真值和量纲。",
+      "task_ids": [
+        "e-physical-future-outcome-evaluation"
+      ],
+      "task_title": "物理未来与结果分布诊断",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2601.15282",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "RBench明确任务/形态分解、重复采样和人工校准，并联结大规模训练数据；可直接作为机器人视频生成评价起点。",
+      "revisit_trigger": "judge/模型配置或来源许可变更；校验指标是否与真实执行一致。",
+      "task_ids": [
+        "e-robot-world-model-rollout-utility-evaluation"
+      ],
+      "task_title": "机器人世界模型的执行与任务效用评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.11337",
+      "decision": "priority",
+      "impact_score": 5,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "规模、物理标注、模块化配置和跨模拟器八类任务形成可复用基础，主要推荐其数据/测试接口，不依据未看demo宣称场景/策略质量。",
+      "revisit_trigger": "release/split改变，或同任务替代资源能保留形态/仿真兼容与长尾覆盖。",
+      "task_ids": [
+        "e-robot-task-environments-and-evaluation-harnesses"
+      ],
+      "task_title": "机器人任务环境与评测编排基础设施",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.09449",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "长视频+相机+分层语义+loop监督有直接价值，但处理全景119小时仅约20小时可公开，旧报告没有区分；可下载范围和metric位姿准确性未全面验证。",
+      "revisit_trigger": "核对实际可下载文件/许可、20h全景列表及独立绝对位姿/标注质量审计。",
+      "task_ids": [
+        "e-egocentric-visual-motion-supervision-data"
+      ],
+      "task_title": "自我视角视觉与运动监督数据",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://research.nvidia.com/labs/dir/pbench/",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "领域QA加视频质量可作简洁基础，但官网入口已redirect，本轮数据卡能确认包和用途，具体judge/校准尚未重新核实，不作为新核心通过。",
+      "revisit_trigger": "核对新官网canonical、冻结标注/judge版本和人类一致性及robotics slice。",
+      "task_ids": [
+        "e-physical-future-outcome-evaluation"
+      ],
+      "task_title": "物理未来与结果分布诊断",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2512.01989",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "跨生成/条件生成/理解的统一组织可保留为宽覆盖备选，但本轮只摘要核实2,808例，未审任务metric与相对已有基础的决定性增量。",
+      "revisit_trigger": "核对G/C/U独立protocol、robotics子集、判分校准和复现脚本。",
+      "task_ids": [
+        "e-physical-future-outcome-evaluation"
+      ],
+      "task_title": "物理未来与结果分布诊断",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2501.16411",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "物理理解是动作前置层，10k/75模型有研究基础价值；与可执行交互生成仍有距离，不因通用字段列表把相关性抬到4。",
+      "revisit_trigger": "实际目标工作把物理理解得分连接到干预/执行验证，且核实类别/工具偏差。",
+      "task_ids": [
+        "e-embodied-visual-question-answering-evaluation"
+      ],
+      "task_title": "具身环境与物理视觉问答评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.27345",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "固定条件重复rollout且分开coverage与probability mass，补齐单视频物理分数无法评价的随机模拟需求；预算与人读出局限有明确报告。",
+      "revisit_trigger": "评价器/有限结果schema或采样预算更改；扩展到完整轨迹分布。",
+      "task_ids": [
+        "e-physical-future-outcome-evaluation"
+      ],
+      "task_title": "物理未来与结果分布诊断",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.27328",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "同rollout匹配控制纠正静态/慢动捷径，值得保留专门metric；尚无单独可执行发布与完整pair-mining审查，本轮证据未达4。",
+      "revisit_trigger": "公开pair-mining/score实现，核对不同motion/路径下NMR稳定性及归一化退化。",
+      "task_ids": [
+        "e-interactive-world-control-consistency-evaluation"
+      ],
+      "task_title": "交互视觉世界的控制与持久一致性评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.04639",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "16任务四记忆维度、固定episode划分与可执行benchmark提供直接VLA历史能力评测；推荐任务工具不以未看实机demo证明模型领先。",
+      "revisit_trigger": "任务/固定seed或环境API更新，补充预算公平性并实际跑两个记忆基线。",
+      "task_ids": [
+        "e-history-dependent-embodied-policy-evaluation"
+      ],
+      "task_title": "依赖历史的具身策略记忆评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.20819",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "全景真值补离屏对象评价盲区，值得保留；本轮只摘要和旧精读，具体对象关联、样本数和协议误差未核到，尚不足核心证据4。",
+      "revisit_trigger": "核对全景数据、对象match/visibility标注、motion控制与metric代码。",
+      "task_ids": [
+        "e-interactive-world-control-consistency-evaluation"
+      ],
+      "task_title": "交互视觉世界的控制与持久一致性评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.20114",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "目标机器人之外的rollator采集设计有启发，但规模和跨域收益有限，当前对项目主要是导航数据支撑层，不满足核心技术/相关性门槛。",
+      "revisit_trigger": "公开校准/数据与多平台控制预算证据，且目标生成环境实际需要该轮式可行性接口。",
+      "task_ids": [
+        "e-egocentric-visual-motion-supervision-data"
+      ],
+      "task_title": "自我视角视觉与运动监督数据",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.19881",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "可控rig合成数据对perception有支撑，但对交互世界的直接接口不足，公开generator/data也未确认，不因20M量级自动给impact4。",
+      "revisit_trigger": "可用generator/数据/许可，及matched真实迁移和目标任务用途。",
+      "task_ids": [
+        "e-egocentric-visual-motion-supervision-data"
+      ],
+      "task_title": "自我视角视觉与运动监督数据",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.19876",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "真实大楼定位协议细致，但它是本项目的地图定位支撑层，三栋校园覆盖也窄；当前不应因一般空间相关性占核心推荐。",
+      "revisit_trigger": "生成/重建目标确定需要floorplan定位，或扩大跨建筑/跨机构评测后重评。",
+      "task_ids": [
+        "egocentric-floorplan-localization-evaluation"
+      ],
+      "task_title": "自我视角到建筑平面图的定位评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.28236",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "四类环境经历与后续行动有实质价值，官方完整episode/media确已存在；但可执行评价/构造代码仍待公开，旧精读容易把数据可下载等同全harness可复现。",
+      "revisit_trigger": "完整模拟器执行/构造代码及版本发布后，核四家族macro/ERR和backbone公平性。",
+      "task_ids": [
+        "e-history-dependent-embodied-policy-evaluation"
+      ],
+      "task_title": "依赖历史的具身策略记忆评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.28654",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "认知生成器、训练语料、固定exam和模型的组合具有核心潜力；标题主张训练后生成物理能力，必须检查真实续写而不能仅以dataset标签豁免。",
+      "revisit_trigger": "观看跨认知类别生成/失败时序、检查exam泄漏和blind Elo实验条件。",
+      "task_ids": [
+        "e-physical-future-outcome-evaluation"
+      ],
+      "task_title": "物理未来与结果分布诊断",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json",
+      "dossier_path": "undecided/2026-10-20/LIB-E-wrop-object-permanence-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.26292",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "连续物理条件轴对生成环境有效性有直接价值，和视觉/语言扰动有独立作用；具体参数范围、成功率曲线与公开release仍未核实。",
+      "revisit_trigger": "核可下载参数标注、固定任务和每属性曲线、physics/visual因素分离。",
+      "task_ids": [
+        "e-robot-manipulation-generalization-evaluation"
+      ],
+      "task_title": "机器人操作泛化与鲁棒性评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2604.21017",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "跨医疗形态数据有基础研究价值，但通用交互环境项目当前没有医疗任务接口；不能因最大开放医疗数据或suturing成绩推到相关性4。",
+      "revisit_trigger": "目标明确需要医疗simulation/动作接口，并核数据权限、实际发布与统一kinematics。",
+      "task_ids": [
+        "e-multimodal-manipulation-demonstration-data"
+      ],
+      "task_title": "多模态机器人操作示范数据",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.12069",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "拥挤有人居住宅与真实对应对任务很相关；核心home twin来自物体生成和放置，旧not_applicable无观察支持，不能自动通过物理交互质量。",
+      "revisit_trigger": "检查房屋/物体示例、导航空间、关节/碰撞和loco-manip动作；核四任务实际协议与发布。",
+      "task_ids": [
+        "e-robot-task-environments-and-evaluation-harnesses"
+      ],
+      "task_title": "机器人任务环境与评测编排基础设施",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json",
+      "dossier_path": "undecided/2026-10-20/LIB-E-livin-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.11723",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "明确独立双控制、共享编辑与延迟跨玩家重访，原生engine对照及suite设计可复用；十能力分项补单玩家评价盲区。",
+      "revisit_trigger": "case/原生日志或评价器变化，扩大系统数量并核人工评价不确定性。",
+      "task_ids": [
+        "e-multiplayer-shared-world-evaluation"
+      ],
+      "task_title": "多玩家控制下的共享世界评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.10384",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "11仿真/8实机paired协议与四能力taxonomy有独立价值；官网本轮仅静态结构和表示说明可读，完整结果/共享artifact尚未核实，保留备选。",
+      "revisit_trigger": "审静态/动态完整结果、公开数据/metric实现、co-training预算；若以模型提升作准入需看时序demo。",
+      "task_ids": [
+        "e-force-tactile-policy-evaluation"
+      ],
+      "task_title": "力觉与触觉融合的操作评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.09294",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "同初态与action API的static/real-time拆分揭示冻结模拟器隐藏的风险，具体计时/碰撞接口可直接用于运行时评价。",
+      "revisit_trigger": "控制两模式prompt差异、网络延迟和路线预算后重评因果归因。",
+      "task_ids": [
+        "real-time-embodied-navigation-safety"
+      ],
+      "task_title": "实时动态导航安全评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.07597",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "物理/接口认证后再测同机制描述变化，能直接验证URDF/关节坐标compiler或policy adapter的隐含表征假设；控制与权衡具体。",
+      "revisit_trigger": "认证模拟器配置变更、描述转换/动作transport变更或扩展到含图像语言接口时复核。",
+      "task_ids": [
+        "e-robot-manipulation-generalization-evaluation"
+      ],
+      "task_title": "机器人操作泛化与鲁棒性评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.07594",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "共同观测/whole-body controller下比较学习与coding agent有协议价值；本轮只核摘要，20任务与九任务均值覆盖、发布记录和预算细节仍需落实。",
+      "revisit_trigger": "核公开20task/1200demo/trace与fixed seeds、九任务选择及coding-agent交互预算。",
+      "task_ids": [
+        "e-robot-manipulation-generalization-evaluation"
+      ],
+      "task_title": "机器人操作泛化与鲁棒性评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.22372",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "偏好完成与任务成功分开有用，但当前主要是LIBERO上专门taxonomy和成对数据构建，缺对核心物理/交互生成能力的决定性贡献证据。",
+      "revisit_trigger": "目标明确采用个性化任务，或controlled evaluation/实现显示超越现有任务配置的广泛可用增量。",
+      "task_ids": [
+        "personalized-manipulation-preference-evaluation"
+      ],
+      "task_title": "个性化操作偏好满足评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20693",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "固定返回路径、RGB-D锚点、新生成内容首次/再次观察与held-out 3D重建形成可直接使用的持久世界验证接口。",
+      "revisit_trigger": "depth/feature/reconstruction evaluator或原生适配预算更新，核错误几何对排名影响。",
+      "task_ids": [
+        "e-interactive-world-control-consistency-evaluation"
+      ],
+      "task_title": "交互视觉世界的控制与持久一致性评估",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.19604",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "固定pi0.5比较腕力融合是有用窄域设计研究，八任务/五实机任务与未确认code尚不足支持长期核心；不能以最佳均值替代所有任务。",
+      "revisit_trigger": "公开metric/code和数据，扩到更多骨干/任务且保留逐任务退化分析。",
+      "task_ids": [
+        "e-force-tactile-policy-evaluation"
+      ],
+      "task_title": "力觉与触觉融合的操作评测",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.20320",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "大规模VTLA、质量过滤及无目标机器人采集有核心潜力，但数据/许可尚未确证，且跨三机器人迁移是其核心效用，不能用static论文代替时序检查。",
+      "revisit_trigger": "查可下载数据、采集校准/过滤、license，以及各形态成功/失败连续转移demo。",
+      "task_ids": [
+        "e-multimodal-manipulation-demonstration-data"
+      ],
+      "task_title": "多模态机器人操作示范数据",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json",
+      "dossier_path": "undecided/2026-10-20/LIB-E-tacclaw-infinity-2026.md"
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.19479",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "优化生成分布以提升真实policy是直接核心方法；旧strong只留下页面视频存在与150%数字，未记录实际rollout观察，需重新时序审核。",
+      "revisit_trigger": "观看matched真实完整任务/失败rollout，核uniform/retrieval/expert的预算和绝对成功率、代码release。",
+      "task_ids": [
+        "utility-optimized-simulation-data-generation"
+      ],
+      "task_title": "优化策略效用的仿真数据分布",
+      "review_artifact": "reports/reorganization/2026-10-20/branch-E.json",
+      "dossier_path": "undecided/2026-10-20/LIB-E-active-generative-simulation-2026.md"
+    }
+  ],
+  "task_assignment_artifact": "reports/reorganization/2026-10-20/task-merge-plan.json"
+}

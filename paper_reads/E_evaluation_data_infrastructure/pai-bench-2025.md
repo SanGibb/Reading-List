@@ -1,5 +1,10 @@
 # PAI-Bench: A Comprehensive Benchmark For Physical AI
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**参考备选**。跨生成/条件生成/理解的统一组织可保留为宽覆盖备选，但本轮只摘要核实2,808例，未审任务metric与相对已有基础的决定性增量。
+> [本次来源、分数与任务判断](../library_review.md#paper-c201ee0a9478)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0006
 branch: E
 decision: accepted_for_registry

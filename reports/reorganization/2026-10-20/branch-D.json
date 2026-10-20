@@ -1,0 +1,2842 @@
+{
+  "review_date": "2026-10-20",
+  "branches": [
+    "D"
+  ],
+  "review_method": {
+    "coverage": "61/61 registry entries; all linked primary abstracts/official launch checked online, with existing deep-dive source/evidence/method/task sections audited.",
+    "scope": "Reorganization of existing entries only. No expansion discovery or independent reproduction.",
+    "media_policy": "Only FACT and OpenWAM have this-run temporal observations. Accessible pages, linked videos and abstract numbers are not counted as watched evidence. Other plausible core candidates are undecided, and below-threshold increments remain watchlist.",
+    "succession": "No historical edge established: no pair met same task, comparable protocol and no material regression together. A current role is scoped reading advice, not universal SOTA.",
+    "conceptual_references": "Survey and physical-query framework are retained as conceptual references, without re-endorsing generated-output or safety claims."
+  },
+  "counts": {
+    "reference": 6,
+    "watchlist": 23,
+    "undecided": 29,
+    "source_issue": 1,
+    "priority": 2
+  },
+  "reviews": [
+    {
+      "paper_url": "https://arxiv.org/abs/2405.12213",
+      "title": "Octo",
+      "branch": "D",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "保留开放通用策略基础：本轮主源证实语言/目标图像条件、800k轨迹及九平台适配；旧报告的视觉证据只是项目存在，不能重新认定动作质量通过。",
+      "closest_paper_url": "https://arxiv.org/abs/2406.09246",
+      "material_difference": "相对OpenVLA，扩展观察和动作空间、目标图像条件与较小扩散策略是独立基线价值；不是通用语义能力的胜者。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2405.12213",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: transformer policy, 800k Open X-Embodiment trajectories, language/goal images, finetuning across nine robotic platforms.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-language-conditioned-cross-embodiment-manipulation",
+      "task_title": "Language-conditioned cross-embodiment manipulation",
+      "scope": {
+        "input": "RGB observations, optional proprioception and a language instruction",
+        "output": "Robot action chunks for grasping, placing and articulated-object interaction",
+        "setting": "Single-arm, bimanual or mobile manipulation, with embodiment-specific action conventions",
+        "protocol": "Compare only within matched OXE/Bridge/LIBERO/SimplerEnv or same-hardware real-task protocols; data mixtures, finetuning budgets and action rates vary and are not normalized here."
+      },
+      "role": "alternative",
+      "revisit_trigger": "在同机器人/数据预算下比较适配效率，并补带具体片段的时序检查。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/octo-2024.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2406.09246",
+      "title": "OpenVLA",
+      "branch": "D",
+      "decision": "reference",
+      "impact_score": 5,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "保留开放动作词元VLA的基础参考；本轮已读官方实现、LoRA及LIBERO复现入口。官方仓库推荐OFT，但OFT不在现有registry，不能直接建立库内替代边。",
+      "closest_paper_url": "https://arxiv.org/abs/2405.12213",
+      "material_difference": "相对Octo，7B语义骨干和DINOv2/SigLIP融合、离散动作及PEFT部署形成可复用基线；单步解码延迟限制仍在。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2406.09246",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract and official README: open 7B VLA with 970k demonstrations, checkpoint release, LoRA finetuning and robot/LIBERO evaluation instructions.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://github.com/openvla/openvla",
+          "locator": "README: Latest Updates (2025-03-03); Getting Started; Fine-Tuning OpenVLA via LoRA; Evaluating OpenVLA",
+          "claim": "Official code exposes 7DoF predict_action, RLDS mixtures, PEFT/LoRA and LIBERO/Bridge evaluation. README recommends the newer OFT recipe; no current-registry successor comparison was established.",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-language-conditioned-cross-embodiment-manipulation",
+      "task_title": "Language-conditioned cross-embodiment manipulation",
+      "scope": {
+        "input": "RGB observations, optional proprioception and a language instruction",
+        "output": "Robot action chunks for grasping, placing and articulated-object interaction",
+        "setting": "Single-arm, bimanual or mobile manipulation, with embodiment-specific action conventions",
+        "protocol": "Compare only within matched OXE/Bridge/LIBERO/SimplerEnv or same-hardware real-task protocols; data mixtures, finetuning budgets and action rates vary and are not normalized here."
+      },
+      "role": "alternative",
+      "revisit_trigger": "复审已收录同任务方法的匹配预算比较；重新观看机器人时序证据。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/openvla-2024.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2410.24164",
+      "title": "pi0",
+      "branch": "D",
+      "decision": "reference",
+      "impact_score": 5,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "保留连续动作flow架构的基础价值；主源已确认RSS2025发表（初发年2024）。旧“非开放”描述需要更新，但本轮未用发布时间或新模型覆盖面宣称其被替代。",
+      "closest_paper_url": "https://arxiv.org/abs/2406.09246",
+      "material_difference": "相对OpenVLA，连续高频动作和单臂/双臂/移动平台训练支持更广运动接口；数据量与预算不同，不能直接归档旧VLA。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2410.24164",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract and Comments: VLM-backed flow matching, single/dual-arm and mobile manipulators; laundry/table/box tasks; published in RSS 2025.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-language-conditioned-cross-embodiment-manipulation",
+      "task_title": "Language-conditioned cross-embodiment manipulation",
+      "scope": {
+        "input": "RGB observations, optional proprioception and a language instruction",
+        "output": "Robot action chunks for grasping, placing and articulated-object interaction",
+        "setting": "Single-arm, bimanual or mobile manipulation, with embodiment-specific action conventions",
+        "protocol": "Compare only within matched OXE/Bridge/LIBERO/SimplerEnv or same-hardware real-task protocols; data mixtures, finetuning budgets and action rates vary and are not normalized here."
+      },
+      "role": "alternative",
+      "revisit_trigger": "补查官方开放实现/权重及同协议成本、泛化、动作质量，再决定当前角色。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/pi0-2024.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "metadata_observations": {
+        "first_submission_year": 2024,
+        "verified_venue": "RSS 2025",
+        "registry_venue": "arXiv"
+      },
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2510.01623",
+      "title": "VLA-R1",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "主源可核实RLVR/GRPO、区域/轨迹奖励与VLA-CoT-13K，但现有报告没有定位到匹配骨干、推理延迟及独立模块收益的具体表。对项目的直接控制增量尚不足四分。",
+      "closest_paper_url": "https://arxiv.org/abs/2608.11739",
+      "material_difference": "相对G0.5的原生推理动作流，属于推理后训练与可验证奖励方案；该差异值得跟踪，尚未证实足以新增核心阅读负担。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2510.01623",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: RLVR/GRPO post-training and VLA-CoT-13K aligned with affordance/trajectory annotations; release is described as planned.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-grounded-reasoning-manipulation",
+      "task_title": "Grounded reasoning for language-conditioned manipulation",
+      "scope": {
+        "input": "Robot images and task instruction",
+        "output": "Grounded intermediate reasoning and executable robot actions",
+        "setting": "Reasoning-to-action policies on simulation and real manipulation tasks",
+        "protocol": "Grounding, reasoning and success must be compared with matched policy/data/latency; VLA-CoT, LIBERO and real setups are not a common protocol."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "发布完整训练/评测配方，并给出同骨干推理质量、执行成功率与延迟的控制比较。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/vla-r1-2025.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.12090",
+      "title": "World Action Models",
+      "branch": "D",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "保留术语和文献组织参考；主源明确是survey，不把它当成可执行世界模型或三项四分的核心方法。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.19825",
+      "material_difference": "相对What Matters的受控实证研究，本篇提供Cascaded/Joint分类及数据评估地图；用途不同，不构成替代。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.12090",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: survey defines WAM and organizes cascaded/joint architectures, data ecosystem and visual/physical/action evaluation axes.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-world-action-model-taxonomy",
+      "task_title": "Taxonomy of coupled world prediction and robot action",
+      "scope": {
+        "input": "Published WAM architectures, data ecosystems and evaluation protocols",
+        "output": "Definitions and architectural/evaluation taxonomy",
+        "setting": "Conceptual literature reference",
+        "protocol": "No executable model comparison or SOTA ranking; assess conceptual coverage separately from control success."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "出现可复用任务协议或验证器实现时再评估实证用途。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/world-action-models-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "not_applicable_reason": "Reference use is limited to conceptual taxonomy/query-conditioned abstraction; no generated output or robot execution quality is asserted by this reorganization.",
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.30542",
+      "title": "Physically Viable World Models",
+      "branch": "D",
+      "decision": "reference",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "保留隐藏物理与查询充分抽象的概念参考；本轮摘要还确认有固定可见场景、改变潜在物理的受控例子。未核查其全实验和演示，不以此确认可部署安全。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.22364",
+      "material_difference": "相对T2-z的可学习环境latent，本篇强调模型应保留干预区别的设计原则；不是同一控制任务的前后SOTA。",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "visual_status": "not_applicable",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.30542",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: controlled benchmarks fix visible scenes while changing latent physics, motivating modular query-conditioned physically viable models.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-physical-intervention-outcome-queries",
+      "task_title": "Physical intervention outcome queries",
+      "scope": {
+        "input": "Visible scene, intervention and query-specific latent physical assumptions",
+        "output": "Feasibility, outcome or safety response",
+        "setting": "Query-conditioned physical modeling under hidden-physics variation",
+        "protocol": "Compare controlled scenes with held-visible observations and varied hidden physics; no common robot-control benchmark is assumed."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核查受控benchmark与可复用组件/失败样例，再评估是否进入核心验证任务。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/physically-viable-world-models-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "not_applicable_reason": "Reference use is limited to conceptual taxonomy/query-conditioned abstraction; no generated output or robot execution quality is asserted by this reorganization.",
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2503.14734",
+      "title": "GR00T N1",
+      "branch": "D",
+      "decision": "reference",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "保留开放人形双系统VLA基线；主源证实System2语义和System1扩散动作、混合数据及GR-1双臂部署。旧精读缺动作片段和具体协议，不能升为current。",
+      "closest_paper_url": "https://arxiv.org/abs/2410.24164",
+      "material_difference": "相对pi0，公开人形模型和真实/人类/合成混合训练是有价值备选；硬件和预算不同，没有无退化替代证据。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2503.14734",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: dual-system VLA, mixed real/human/synthetic training, simulation tests and Fourier GR-1 bimanual deployment.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-language-conditioned-cross-embodiment-manipulation",
+      "task_title": "Language-conditioned cross-embodiment manipulation",
+      "scope": {
+        "input": "RGB observations, optional proprioception and a language instruction",
+        "output": "Robot action chunks for grasping, placing and articulated-object interaction",
+        "setting": "Single-arm, bimanual or mobile manipulation, with embodiment-specific action conventions",
+        "protocol": "Compare only within matched OXE/Bridge/LIBERO/SimplerEnv or same-hardware real-task protocols; data mixtures, finetuning budgets and action rates vary and are not normalized here."
+      },
+      "role": "alternative",
+      "revisit_trigger": "补查准确版本、开放权重及GR-1相同任务/训练预算的比较和时序样例。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/gr00t-n1-2025.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.00919",
+      "title": "Green-VLA",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "五阶段训练加RL/OOD检测有系统参考价值，但checked摘要只给一般性提升，旧精读同样没有各阶段消融和数据/硬件控制。未证明相对开放通用基线的实质增量。",
+      "closest_paper_url": "https://arxiv.org/abs/2503.14734",
+      "material_difference": "相对GR00T N1，新增分阶段课程、进度预测与OOD指导；需要区分方法收益与3000小时数据/Green硬件适配收益。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2602.00919",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: L0/L1/R0/R1/R2 curriculum, 3000-hour demonstrations, Simpler BRIDGE and CALVIN ABC-D evaluations.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-language-conditioned-cross-embodiment-manipulation",
+      "task_title": "Language-conditioned cross-embodiment manipulation",
+      "scope": {
+        "input": "RGB observations, optional proprioception and a language instruction",
+        "output": "Robot action chunks for grasping, placing and articulated-object interaction",
+        "setting": "Single-arm, bimanual or mobile manipulation, with embodiment-specific action conventions",
+        "protocol": "Compare only within matched OXE/Bridge/LIBERO/SimplerEnv or same-hardware real-task protocols; data mixtures, finetuning budgets and action rates vary and are not normalized here."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "完整公开分阶段消融、数据/硬件对齐结果及部署配方。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/green-vla-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2511.02776",
+      "title": "XR-1",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "UVMC跨模态统一表示及六平台14000+真实rollouts是值得复审的实质候选；本轮只核实主源文本，旧视觉强结论缺片段。",
+      "closest_paper_url": "https://arxiv.org/abs/2503.14734",
+      "material_difference": "相对GR00T N1，把视觉动态和机器人运动共同量化为UVMC，并有更广真实任务实验；训练数据和平台差异阻止直接替代。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2511.02776",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract and Comments: dual-branch VQ-VAE UVMC, three-stage training, >14000 rollouts on six embodiments and >120 tasks; ICML2026 Oral.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-language-conditioned-cross-embodiment-manipulation",
+      "task_title": "Language-conditioned cross-embodiment manipulation",
+      "scope": {
+        "input": "RGB observations, optional proprioception and a language instruction",
+        "output": "Robot action chunks for grasping, placing and articulated-object interaction",
+        "setting": "Single-arm, bimanual or mobile manipulation, with embodiment-specific action conventions",
+        "protocol": "Compare only within matched OXE/Bridge/LIBERO/SimplerEnv or same-hardware real-task protocols; data mixtures, finetuning budgets and action rates vary and are not normalized here."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "检查多平台动作时序、失败覆盖，并核查匹配数据/容量与协议的控制比较。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/xr-1-2025.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "metadata_observations": {
+        "first_submission_year": 2025,
+        "verified_venue": "ICML 2026 Oral",
+        "registry_venue": "ICML Oral"
+      },
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2511.05275",
+      "title": "TwinVLA",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "主源支持不需双臂预训练的双单臂策略组合，对双臂任务有明确数据效率价值；旧报告只给模板视觉评分，本轮尚未观看协调动作。",
+      "closest_paper_url": "https://arxiv.org/abs/2410.24164",
+      "material_difference": "相对pi0，核心是复用公开单臂预训练而非大规模专有双臂数据；其数据成本优势应保留，不能凭绝对成功率归档。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2511.05275",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract and Comments: twin pretrained single-arm VLAs; better than comparably sized RDT-1B without bimanual pretraining; ICLR2026 Poster.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-single-arm-to-bimanual-transfer",
+      "task_title": "Data-efficient transfer from single-arm policies to bimanual manipulation",
+      "scope": {
+        "input": "Two-arm visual/proprioceptive observations and instruction",
+        "output": "Coordinated two-arm actions",
+        "setting": "Composition of pretrained single-arm policies",
+        "protocol": "Match bimanual finetuning trajectories, pretrained single-arm data, model size and real/simulation task success; pi0 proprietary pretraining is not matched."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "观看双臂接触/协调失败和成功片段，核对双臂微调数据及部署预算。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/twinvla-2025.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "metadata_observations": {
+        "first_submission_year": 2025,
+        "verified_venue": "ICLR 2026 Poster",
+        "registry_venue": "ICLR"
+      },
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.25406",
+      "title": "MMaDA-VLA",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "原生离散扩散联合目标图像和动作是明确方法，但相对现有统一video-action核心栈，暂无本轮已核查的控制比较证明重要增量。主源已更新ACM MM2026。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.07398",
+      "material_difference": "相对OpenWAM，采用共享离散词元并行去噪而非模块化双流；98.0 LIBERO/4.78 CALVIN不能跨预算直接判胜。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2603.25406",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract and Comments: shared discrete space jointly denoises future goal observation/action chunk; 98.0% LIBERO and 4.78 CALVIN; ACM MM2026.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-joint-video-action-manipulation",
+      "task_title": "Joint action-conditioned world prediction and manipulation policy learning",
+      "scope": {
+        "input": "Robot video, instruction, proprioception and actions; modality availability varies",
+        "output": "Future observations plus robot action chunks",
+        "setting": "Shared or coupled video-action models used in manipulation",
+        "protocol": "Use matched LIBERO/RoboTwin/RoboCasa protocols and controlled action-only/world-only ablations; training data, architecture and inference hardware remain task-specific."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "给出匹配连续/离散基线、长期一致性及吞吐量的控制实验证据。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/mmada-vla-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "metadata_observations": {
+        "first_submission_year": 2026,
+        "verified_venue": "ACM MM 2026",
+        "registry_venue": "arXiv"
+      },
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.02881",
+      "title": "MolmoAct2",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 5,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "公开推理骨干、动作tokenizer、720小时双臂数据及连续动作expert是直接可复用的实质栈；本轮主源证实这些释放声明，尚未独立查完整artifact和观看部署时序。",
+      "closest_paper_url": "https://arxiv.org/abs/2406.09246",
+      "material_difference": "相对OpenVLA，新增开放低成本/双臂数据、KV-cache动作expert和自适应深度推理；不是仅换更大backbone。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.02881",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: MolmoER 3.3M reasoning corpus, 720h BimanualYAM, OpenFAST, per-layer KV conditioning, adaptive depth and complete code/data/weight release claim.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-language-conditioned-cross-embodiment-manipulation",
+      "task_title": "Language-conditioned cross-embodiment manipulation",
+      "scope": {
+        "input": "RGB observations, optional proprioception and a language instruction",
+        "output": "Robot action chunks for grasping, placing and articulated-object interaction",
+        "setting": "Single-arm, bimanual or mobile manipulation, with embodiment-specific action conventions",
+        "protocol": "Compare only within matched OXE/Bridge/LIBERO/SimplerEnv or same-hardware real-task protocols; data mixtures, finetuning budgets and action rates vary and are not normalized here."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核对artifact目录/许可证、推理与动作延迟，并检查不同平台真实执行及失败片段。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/molmoact2-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.10309",
+      "title": "Cosmos-Predict2.5: A World Foundation Model for Physical AI",
+      "branch": "D",
+      "decision": "source_issue",
+      "impact_score": null,
+      "project_relevance_score": 4,
+      "evidence_strength": null,
+      "reason": "registry纸页URL指向完全无关的随机非线性薛定谔方程数学论文；旧报告的“主源verified”不成立。官方Cosmos项目确实存在，但不能在错误身份上重评质量。",
+      "closest_paper_url": "https://arxiv.org/abs/2602.06949",
+      "material_difference": "与DreamDojo均提供动作条件视频基础，但应先纠正Cosmos原始论文/发布身份、年份和稳定URL，再做模型或任务比较。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.10309",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Title, Subjects and Abstract at registry URL identify a stochastic nonlinear Schrödinger equation paper in math.PR/math.AP, not Cosmos.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://research.nvidia.com/labs/cosmos-lab/cosmos-predict2.5/",
+          "locator": "Abstract; Models and Capabilities; Robotics; Citation",
+          "claim": "Official Cosmos-Predict2.5 exists with 2B/14B and specialized action-conditioned robotics models; official citation is World Simulation with Video Foundation Models for Physical AI, rather than the registry's unrelated arXiv paper.",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-action-conditioned-robot-video-simulation",
+      "task_title": "Action-conditioned robot futures for learned simulation",
+      "scope": {
+        "input": "Current robot frames and specified robot actions",
+        "output": "Predicted future robot-scene video",
+        "setting": "Manipulation rollout, policy evaluation or model-based planning",
+        "protocol": "Match embodiment/action convention, action horizon, held-out task split, FVD/action adherence and downstream control; curated videos alone do not establish simulator fidelity."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "用官方页面指向的正式论文/发布标识修正URL和年份，保留审计与重定向关系后重新完整审核。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/cosmos-predict2-5-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "identity_mismatch": {
+        "actual_source_title": "Exponential Decay of L2-Solutions to Stochastic Nonlinear Schrödinger Equations Driven by Continuous Martingales",
+        "actual_source_subjects": [
+          "math.PR",
+          "math.AP"
+        ],
+        "verified_registry_url_matches_title": false,
+        "repair_requires": "Resolve the canonical model/paper identity from the official citation; preserve old URL in audit rather than silently treating it as verified."
+      },
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.08546",
+      "title": "Interactive World Simulator for Robot Policy Training and Evaluation",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 5,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "将world model放入闭环训练/评估且有单4090的15FPS/10分钟声明，直接支撑本repo生成环境用途。主源文字已核实；本轮未实际操控在线demo或检查连续长时序。",
+      "closest_paper_url": "https://arxiv.org/abs/2602.06949",
+      "material_difference": "相对DreamDojo的大规模人类视频预训练，本篇以一致性模型优化交互稳定性、数据采集和sim/real政策排名，强调可用模拟器。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2603.08546",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: consistency models for decoding/dynamics, >10-minute interactions at 15FPS on RTX4090; generated-data policy training and real/sim correlation.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-action-conditioned-robot-video-simulation",
+      "task_title": "Action-conditioned robot futures for learned simulation",
+      "scope": {
+        "input": "Current robot frames and specified robot actions",
+        "output": "Predicted future robot-scene video",
+        "setting": "Manipulation rollout, policy evaluation or model-based planning",
+        "protocol": "Match embodiment/action convention, action horizon, held-out task split, FVD/action adherence and downstream control; curated videos alone do not establish simulator fidelity."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "执行在线/本地交互demo，检查动作响应、长时状态持续、碰撞与离分布失败，再核查协议。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/interactive-world-simulator-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.12403",
+      "title": "World Pilot: Steering Vision-Language-Action Models with World-Action Priors",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "双路径steering可核查且相关，但四项真实任务和84.7% LIBERO-Plus的摘要结果不足以区分world prior、数据与policy初始化的收益。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.00078",
+      "material_difference": "相对Being-H0.7的训练期未来对齐，本篇向感知和动作注入WAM prior；保留设计差异，待匹配baseline增量。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2606.12403",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: Latent Steering and Action Steering; 84.7% LIBERO-Plus and four real manipulation tasks.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-future-latent-conditioned-manipulation",
+      "task_title": "Manipulation control conditioned by predicted future latents",
+      "scope": {
+        "input": "Current robot images, instruction and optional observation history",
+        "output": "Continuous robot actions aided by predictive latent state",
+        "setting": "Policy control without mandatory online pixel-video rendering",
+        "protocol": "LIBERO-Plus, LIBERO, SimplerEnv, RoboTwin and real tests are heterogeneous; verify initialization, robot pretraining, splits and action latency before cross-paper comparisons."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "补完整同骨干消融、推理开销、开放权重和真实分布偏移协议。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/world-pilot-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.00078",
+      "title": "Being-H0.7: A Latent World-Action Model from Egocentric Videos",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "双分支future alignment与部署时去除posterior清楚，但与库中多篇latent-WAM近邻较密集；尚无核对过的matched增量支持核心四分。",
+      "closest_paper_url": "https://arxiv.org/abs/2602.10098",
+      "material_difference": "相对VLA-JEPA，显式learnable queries及prior/posterior对齐而非current-only学生预测；需证明不是同类训练期future监督的普通变体。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.00078",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: learnable queries, training-only future posterior, deployed prior with no visual rollout; six simulation suites and real tasks.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-future-latent-conditioned-manipulation",
+      "task_title": "Manipulation control conditioned by predicted future latents",
+      "scope": {
+        "input": "Current robot images, instruction and optional observation history",
+        "output": "Continuous robot actions aided by predictive latent state",
+        "setting": "Policy control without mandatory online pixel-video rendering",
+        "protocol": "LIBERO-Plus, LIBERO, SimplerEnv, RoboTwin and real tests are heterogeneous; verify initialization, robot pretraining, splits and action latency before cross-paper comparisons."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "匹配预训练和推理预算后，证明dual-branch相对现有JEPA/WAM的稳定优势。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/being-h0-7-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.02800",
+      "title": "Cosmos 3: Omnimodal World Models for Physical AI",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 5,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "统一语言/图像/视频/音频/动作和公开多模态artifact是重要基础候选；本轮验证原始摘要的范围及OpenMDW释放声明，未观看物理生成/执行媒体。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.07398",
+      "material_difference": "相对OpenWAM的机器人实验模块化，Cosmos3提供更广omnimodal基础；下游机器人接口、成本和开放性不可被媒体榜单代替。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2606.02800",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: mixture-of-transformers jointly processes/generates five modalities; code/checkpoints/synthetic datasets/benchmark under OpenMDW-1.1.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-joint-video-action-manipulation",
+      "task_title": "Joint action-conditioned world prediction and manipulation policy learning",
+      "scope": {
+        "input": "Robot video, instruction, proprioception and actions; modality availability varies",
+        "output": "Future observations plus robot action chunks",
+        "setting": "Shared or coupled video-action models used in manipulation",
+        "protocol": "Use matched LIBERO/RoboTwin/RoboCasa protocols and controlled action-only/world-only ablations; training data, architecture and inference hardware remain task-specific."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "检查机器人动作与物理rollout媒体、artifact许可及可运行控制接口，审查各模态协议。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/cosmos-3-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2607.04546",
+      "title": "Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "23-DoF控制与mask/RGB分解提供可命名物理动作接口，主源还给五模型匹配训练和盲评；本轮未检查手指时序，不能沿用旧强视觉。",
+      "closest_paper_url": "https://arxiv.org/abs/2603.23376",
+      "material_difference": "相对ABot的RGB物理偏好对齐，用mask空间分离动力学和渲染并利用仿真覆盖关节范围；任务不同，不相互归档。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2607.04546",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: segmentation dynamics then RGB rendering, 2.5h real data, five matched models on 23-DoF robot and blind per-DoF controls.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-dexterous-hand-action-video-prediction",
+      "task_title": "23-DoF dexterous hand video prediction",
+      "scope": {
+        "input": "Mask/RGB history and a 23-DoF hand/arm action sequence",
+        "output": "Segmentation-mask futures and rendered RGB futures",
+        "setting": "Limited-real-data dexterous manipulation",
+        "protocol": "Mask2Real-WM matched five-model recipe; blind per-DoF controllability under random targets and sinusoidal actuation; separate from generic video FVD."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "观看逐DoF、长时接触和失败案例；检查code释放和真实/仿真训练匹配。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/mask2real-wm-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2607.06564",
+      "title": "Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "明确的3D point-cloud lifting、GC-MAE与分层动作建模；但真实平均仅+4pp且三组件耦合，本轮没有逐项证据能支持重大增量。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.12099",
+      "material_difference": "相对UNITAS的共同metric motion接口，本篇是把3D输入注入既有2D VLA；适合作为geometry encoder备选，而非直接替代3D-native方法。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2607.06564",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: point embeddings, current/future GC-MAE, layer-wise action chunks; 22 simulated/8 real tasks and +4pp real mean.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-point-cloud-conditioned-manipulation",
+      "task_title": "Geometry-conditioned manipulation from RGB-D or point clouds",
+      "scope": {
+        "input": "RGB-D/point clouds and language instruction",
+        "output": "Temporally coherent robot action chunks",
+        "setting": "Manipulation with explicit 3D observation encoding",
+        "protocol": "MetaWorld, RLBench and same-hardware real tests; match 3D sensing, camera calibration, pretraining and task splits."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "公开实现并给匹配3D感知、预算与逐组件消融，显示部署或泛化的实质收益。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/lift3d-vla-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2607.08639",
+      "title": "Native Video-Action Pretraining for Generalizable Robot Control",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "从头因果video-action预训练、语义动作tokenizer和异步闭环是系统性能力候选；2.0公开artifact完整性及动作质量仍需检查。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.07398",
+      "material_difference": "相对OpenWAM的可组合研究框架，LingBot-VA2专注native causal pretraining/MoE及实时控制；训练规模和release版本未对齐。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2607.08639",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: semantic visual-action tokenizer, causal training from scratch, sparse MoE and asynchronous re-grounded inference.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-joint-video-action-manipulation",
+      "task_title": "Joint action-conditioned world prediction and manipulation policy learning",
+      "scope": {
+        "input": "Robot video, instruction, proprioception and actions; modality availability varies",
+        "output": "Future observations plus robot action chunks",
+        "setting": "Shared or coupled video-action models used in manipulation",
+        "protocol": "Use matched LIBERO/RoboTwin/RoboCasa protocols and controlled action-only/world-only ablations; training data, architecture and inference hardware remain task-specific."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "验证2.0具体权重/训练实现，检查few-shot、多接触任务连续片段和匹配代价。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/lingbot-va-2-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.10098",
+      "title": "VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "无泄漏current-only预测是合理训练设计，但摘要只有总体增益，没有本轮核对的定量控制和强增量；旧报告亦把rollout链接当视觉结论。",
+      "closest_paper_url": "https://arxiv.org/abs/2608.09381",
+      "material_difference": "相对JEPA-WAM，VLA-JEPA用future encoder监督学生再微调action head；共享predictor和表征密度不同，没有控制比较。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2602.10098",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: future targets never enter student inputs; JEPA pretraining then action-head fine-tuning; LIBERO/LIBERO-Plus/SimplerEnv/real.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-future-latent-conditioned-manipulation",
+      "task_title": "Manipulation control conditioned by predicted future latents",
+      "scope": {
+        "input": "Current robot images, instruction and optional observation history",
+        "output": "Continuous robot actions aided by predictive latent state",
+        "setting": "Policy control without mandatory online pixel-video rendering",
+        "protocol": "LIBERO-Plus, LIBERO, SimplerEnv, RoboTwin and real tests are heterogeneous; verify initialization, robot pretraining, splits and action latency before cross-paper comparisons."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核查泄漏消融、partial code状况及matched现有latent baseline的可复现增益。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/vla-jepa-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2507.01099",
+      "title": "Geometry-aware 4D Video Generation for Robot Manipulation",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "跨视角pointmap训练并从未来RGB-D恢复6DoF轨迹，提供具体几何到执行路径；主源确认ICLR2026。尚未检查生成时序与恢复轨迹的可用性。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.08780",
+      "material_difference": "相对DepthWorld的metric-depth/标定数据pipeline，此法以pointmap跨视图对齐和off-the-shelf轨迹跟踪为中心；不同输入不能宣称被替代。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2507.01099",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: cross-view pointmap supervision, one RGB-D image per view, no camera-pose input, recovered end-effector trajectories; ICLR2026.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-multiview-geometric-robot-futures",
+      "task_title": "Geometrically consistent multi-view robot future prediction",
+      "scope": {
+        "input": "Initial robot observations, depth/camera geometry when required, and task/action context",
+        "output": "Multi-view RGB/RGB-D or 3D-consistent manipulation futures",
+        "setting": "Geometry-grounded video world models for manipulation",
+        "protocol": "Match camera/depth inputs, action conditioning, RGB/depth/geometric metrics and downstream extraction; DROID, RLBench and Bridge conditions differ."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "检查同步RGB/depth/动作时序，比较相同视图/深度/标定输入与真实轨迹失败。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/geometry-aware-4d-video-generation-2025.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "metadata_observations": {
+        "first_submission_year": 2025,
+        "verified_venue": "ICLR 2026"
+      },
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.22882",
+      "title": "GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "4D correspondence蒸馏和inverse dynamics可核实，真实61→81%令人关注；但仅摘要/既有四任务摘要不足以建立相对已有geometry-video条目的重要控制增量。",
+      "closest_paper_url": "https://arxiv.org/abs/2507.01099",
+      "material_difference": "相对Geometry-aware4D，训练时冻结geometry teacher且推理不增加几何分支；需分离teacher信息和逆动力学收益。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.22882",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: dense 4D correspondence supervision distilled into video backbone; inverse dynamics; reported real success 61%→81%.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-multiview-geometric-robot-futures",
+      "task_title": "Geometrically consistent multi-view robot future prediction",
+      "scope": {
+        "input": "Initial robot observations, depth/camera geometry when required, and task/action context",
+        "output": "Multi-view RGB/RGB-D or 3D-consistent manipulation futures",
+        "setting": "Geometry-grounded video world models for manipulation",
+        "protocol": "Match camera/depth inputs, action conditioning, RGB/depth/geometric metrics and downstream extraction; DROID, RLBench and Bridge conditions differ."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "完整发布代码并对齐view/depth/trajectory extraction及训练预算，核查误差和失败分布。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/gem-4d-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2506.03079",
+      "title": "ORV: 4D Occupancy-centric Robot Video Generation",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "occupancy作为稠密控制桥梁是相关表示选项，但+3.5pp规划/+6.4pp策略增益与大occupancy构建成本尚不足证明新核心价值。主源已注明CVPR2026。",
+      "closest_paper_url": "https://arxiv.org/abs/2507.01099",
+      "material_difference": "相对RGB-D pointmap生成，ORV要求4D semantic occupancy及7DoF动作，并带来额外构建存储；仍需成本收益对照。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2506.03079",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract and Comments: action AdaLN plus rendered occupancy, ORV-Data; -18.8% FVD, +3.5% planning/+6.4% policy; CVPR2026.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-multiview-geometric-robot-futures",
+      "task_title": "Geometrically consistent multi-view robot future prediction",
+      "scope": {
+        "input": "Initial robot observations, depth/camera geometry when required, and task/action context",
+        "output": "Multi-view RGB/RGB-D or 3D-consistent manipulation futures",
+        "setting": "Geometry-grounded video world models for manipulation",
+        "protocol": "Match camera/depth inputs, action conditioning, RGB/depth/geometric metrics and downstream extraction; DROID, RLBench and Bridge conditions differ."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "证明occupancy构建预算可接受，并给几何/动作一致性的匹配baseline和公开数据。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/orv-2025.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "metadata_observations": {
+        "first_submission_year": 2025,
+        "verified_venue": "CVPR 2026"
+      },
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.11739",
+      "title": "G0.5: One Autoregressive Stream for Robot Reasoning and Action",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "原生推理和动作共用decoder、跨embodiment tokenizer与视觉memory形成系统增量；七类评估主源可核查，但未观看动作/失败片段及查成本。",
+      "closest_paper_url": "https://arxiv.org/abs/2510.01623",
+      "material_difference": "相对VLA-R1的后训练推理，G0.5将推理与动作同目标训练；自主动作语义收益需与chunk延迟一起判断。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2608.11739",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: single autoregressive reasoning/action decoder, action tokenizer and visual memory; seven evaluation regimes.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-grounded-reasoning-manipulation",
+      "task_title": "Grounded reasoning for language-conditioned manipulation",
+      "scope": {
+        "input": "Robot images and task instruction",
+        "output": "Grounded intermediate reasoning and executable robot actions",
+        "setting": "Reasoning-to-action policies on simulation and real manipulation tasks",
+        "protocol": "Grounding, reasoning and success must be compared with matched policy/data/latency; VLA-CoT, LIBERO and real setups are not a common protocol."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核查动作解码延迟、训练混合及同任务baseline，观看至少两平台的成功/失败片段。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/g05-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.11671",
+      "title": "StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "结构化单demonstration适配是明确用途，但retrieval、offline转换和联合训练贡献未在本轮获得控制证据；leaderboard首名不能替代质量门槛。",
+      "closest_paper_url": "https://arxiv.org/abs/2608.11739",
+      "material_difference": "相对G0.5的prompt steerability，Stella把检索到的轨迹转plan/subgoal/3D verbal motion；引入检索和转换依赖。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2608.11671",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: one retrieved structured demonstration, joint action/language training and real human/robot/XR transfer; dated VLA-Arena score.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-single-demonstration-ood-manipulation",
+      "task_title": "Single-demonstration adaptation for OOD manipulation",
+      "scope": {
+        "input": "Instruction, current observations and one retrieved structured demonstration",
+        "output": "Robot action chunks adapted at test time",
+        "setting": "Robot/human/XR demonstration transfer without per-case finetuning",
+        "protocol": "Match retrieval set, demonstration source, OOD split and inference budget; leaderboard aggregates are dated and are not a succession proof."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "发布检索库和转换实现，核查每步延迟、失败检索及同数据适配比较。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/stellavla-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.09771",
+      "title": "SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "0.5B和无额外具身预训练的效率方向有价值；本轮只读到摘要的competitive声明，缺准确latency/memory/hardware与任务控制，不能直接四分。",
+      "closest_paper_url": "https://arxiv.org/abs/2608.09381",
+      "material_difference": "相对JEPA-WAM的V-JEPA结构预测，SLIM采用masked trajectories与action reconstruction的紧凑MoT；需要预算匹配。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2608.09771",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: 0.5B latent interaction policy, masked trajectory prediction/action reconstruction, compact MoT and flow actions.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-future-latent-conditioned-manipulation",
+      "task_title": "Manipulation control conditioned by predicted future latents",
+      "scope": {
+        "input": "Current robot images, instruction and optional observation history",
+        "output": "Continuous robot actions aided by predictive latent state",
+        "setting": "Policy control without mandatory online pixel-video rendering",
+        "protocol": "LIBERO-Plus, LIBERO, SimplerEnv, RoboTwin and real tests are heterogeneous; verify initialization, robot pretraining, splits and action latency before cross-paper comparisons."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "公开code/checkpoints并在相同感知/训练数据/硬件下给效率-任务性能曲线。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/slim-0-5b-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.09730",
+      "title": "World Tokens: Enhancing Embodied Policies with Training-Time World Modeling",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "training-time video supervision且部署移除denoiser与已有latent方案密集重叠；本轮未核查exclusive-routing相对现有库条目的决定性增量。",
+      "closest_paper_url": "https://arxiv.org/abs/2602.10098",
+      "material_difference": "相对VLA-JEPA，未来video denoiser训练world tokens而非embedding target，且强制exclusive context routing；属于需控制增益的设计变体。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2608.09730",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: World Adapter tokens condition jointly finetuned future denoiser/action expert, then denoiser is removed for deployment.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-future-latent-conditioned-manipulation",
+      "task_title": "Manipulation control conditioned by predicted future latents",
+      "scope": {
+        "input": "Current robot images, instruction and optional observation history",
+        "output": "Continuous robot actions aided by predictive latent state",
+        "setting": "Policy control without mandatory online pixel-video rendering",
+        "protocol": "LIBERO-Plus, LIBERO, SimplerEnv, RoboTwin and real tests are heterogeneous; verify initialization, robot pretraining, splits and action latency before cross-paper comparisons."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "提供同backbone/data的routing与future-target对照、完整实现及开销。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/world-tokens-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.09381",
+      "title": "JEPA-WAM: Learning Vision-Language-Action Policies with Joint-Embedding World Modeling",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "空间结构化V-JEPA和共享predictor区别清楚，但79.2%与pi0.5版86.3%改变初始化，不能当作无条件提高；本轮未查匹配消融。",
+      "closest_paper_url": "https://arxiv.org/abs/2602.10098",
+      "material_difference": "相对VLA-JEPA两阶段student，本篇transition/action共享predictor并保留dense patch对应；需对齐预训练。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2608.09381",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: structured current-future target in V-JEPA space, shared predictor; 79.2% LIBERO-Plus without policy pretraining and 86.3% pi0.5 version.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-future-latent-conditioned-manipulation",
+      "task_title": "Manipulation control conditioned by predicted future latents",
+      "scope": {
+        "input": "Current robot images, instruction and optional observation history",
+        "output": "Continuous robot actions aided by predictive latent state",
+        "setting": "Policy control without mandatory online pixel-video rendering",
+        "protocol": "LIBERO-Plus, LIBERO, SimplerEnv, RoboTwin and real tests are heterogeneous; verify initialization, robot pretraining, splits and action latency before cross-paper comparisons."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "给匹配初始化、latent结构、action专家和推理预算的可复现增量。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/jepa-wam-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.23376",
+      "title": "ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "物理偏好对齐、action injection及训练独立EZSbench构成可复用基础候选。主源摘要已有具体构件，但本轮尚未逐项验证开放release和物理失败媒体。",
+      "closest_paper_url": "https://arxiv.org/abs/2602.06949",
+      "material_difference": "相对DreamDojo的human-video scaling，ABot用physics-aware DPO和解耦判别器直接抑制穿透/反重力；需独立物理groundtruth而不只外观。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2603.23376",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: 14B DiT, three million clips, decoupled DPO discriminators, spatial action injection and training-independent EZSbench.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-action-conditioned-robot-video-simulation",
+      "task_title": "Action-conditioned robot futures for learned simulation",
+      "scope": {
+        "input": "Current robot frames and specified robot actions",
+        "output": "Predicted future robot-scene video",
+        "setting": "Manipulation rollout, policy evaluation or model-based planning",
+        "protocol": "Match embodiment/action convention, action horizon, held-out task split, FVD/action adherence and downstream control; curated videos alone do not establish simulator fidelity."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核实model/data/benchmark发布，检查穿透、接触和动作扰动失败视频并审查物理评分。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/abot-physworld-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.18375",
+      "title": "PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "跨view attention、camera RoPE和3D-REPA有明确方法，但leaderboard名次不是material increment；本轮未核查same-input几何和控制消融。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.08780",
+      "material_difference": "相对DepthWorld的metric RGB-D监督，PAIWorld提供attention/teacher层面的几何一致性，未确认公开可用metric scene state或接触物理。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2606.18375",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: cross-view attention, geometric RoPE and latent 3D-REPA; WorldArena/AgiBot ranking is source-reported.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-multiview-geometric-robot-futures",
+      "task_title": "Geometrically consistent multi-view robot future prediction",
+      "scope": {
+        "input": "Initial robot observations, depth/camera geometry when required, and task/action context",
+        "output": "Multi-view RGB/RGB-D or 3D-consistent manipulation futures",
+        "setting": "Geometry-grounded video world models for manipulation",
+        "protocol": "Match camera/depth inputs, action conditioning, RGB/depth/geometric metrics and downstream extraction; DROID, RLBench and Bridge conditions differ."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "公开权重与same-input/same-budget几何、控制和物理一致性对照。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/paiworld-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "title": "Gemini Robotics 2",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 4,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "官方发布可核查整身控制/设备适配，但VLA仅early-access、训练和baseline控制不公开。作为封闭产品能力观察而非当前可复用机器人基线。",
+      "closest_paper_url": "https://arxiv.org/abs/2503.14734",
+      "material_difference": "相对GR00T N1增加整身移动、手指与多机协作范围，但开放性和协议不同；大覆盖面不能构成旧开源基线下沉。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Official launch 2026-07-30, model list and evaluation charts: whole-body VLA, ER2 and On-Device2; VLA/On-Device access is partner-gated.",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-whole-body-humanoid-manipulation",
+      "task_title": "Whole-body humanoid language-conditioned manipulation",
+      "scope": {
+        "input": "Robot observations and instruction plus higher-level planning context",
+        "output": "Whole-body motor actions with manipulation",
+        "setting": "Humanoid locomotion-plus-manipulation and device/robot transfer",
+        "protocol": "Use same embodiment, skill category, success criterion and speed budget; official closed-model launch data is incomplete for reproducible comparisons."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "发布可复用策略/任务协议及完整失败/延迟分布，明确本项目可调用接口。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/gemini-robotics-2-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.27406",
+      "title": "CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "多来源动作条件接口和公开跨embodiment模型直接支持learned simulator研究；本轮核实摘要的release和课程方法，未实际检查zero-shot物理rollout。",
+      "closest_paper_url": "https://arxiv.org/abs/2602.06949",
+      "material_difference": "相对DreamDojo，大量latent-human transfer之外还统一EE/language/latent conditioning及多robot特化；需要同协议比较保留各自优势。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2608.27406",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: unified end-effector/language/latent actions, curriculum human/robot training, cross-embodiment DROID/Bridge/YAM/G1 models; open code/models claim.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-action-conditioned-robot-video-simulation",
+      "task_title": "Action-conditioned robot futures for learned simulation",
+      "scope": {
+        "input": "Current robot frames and specified robot actions",
+        "output": "Predicted future robot-scene video",
+        "setting": "Manipulation rollout, policy evaluation or model-based planning",
+        "protocol": "Match embodiment/action convention, action horizon, held-out task split, FVD/action adherence and downstream control; curated videos alone do not establish simulator fidelity."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核对checkpoints与deployment，检查跨embodiment动作扰动、接触失败及zero-shot协议。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/clap-cross-embodiment-world-models-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.15917",
+      "title": "Pre-training Visual Dexterity in Simulation",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "75小时VR仿真目标embodiment数据加少量真实微调提供具体可扩展配方；主源数据效率对照明确，但本轮没有观看56DoF动态及failure。",
+      "closest_paper_url": "https://arxiv.org/abs/2603.16861",
+      "material_difference": "相对MolmoB0T sim-only zero-shot，本篇是dexterous sim-pretrain+1–2h real/task，不是同protocol替代。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2608.15917",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: five operators, 75h simulated trajectories in one week, 56DoF bimanual setup with 1–2h real finetuning/task.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-simulation-pretraining-visual-dexterity",
+      "task_title": "Simulation pretraining for real bimanual visual dexterity",
+      "scope": {
+        "input": "VR-collected on-embodiment simulation trajectories and limited real demonstrations",
+        "output": "56-DoF dexterous manipulation actions",
+        "setting": "Simulation pretraining followed by per-task real finetuning",
+        "protocol": "75-hour sim-pretraining versus matched architecture from scratch with 1–2 real hours/task; task progress and success are distinct."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "实际检查持续双手接触与恢复、核查任务progress定义和matched从零训练对照。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/spd-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2608.01402",
+      "title": "Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them",
+      "branch": "D",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "reason": "已核查官方matched训练与每任务结果，并实际查看Plug/FACT的成功及失败双视角时序。它把接触失败拆为精度/受力并提供无新增数据的噪声调度和force conditioning，直接用于接触任务验证。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.20761",
+      "material_difference": "相对Agile-WAM的tactile未来latent，此法重在低噪动作学习与force时序调制诊断；本轮没有相同传感器的二者直接比较。平均66%不意味着每任务无退化：Board基线100%对FACT90%。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "verified",
+      "inspection_evidence": [
+        {
+          "url": "https://stanford-iprl-lab.github.io/fact/#results",
+          "modality": "video",
+          "locator": "Rollout Gallery / Task=Plug / Policy=FACT / Outcome=Success; synchronized External and Wrist views, sampled during playback and at Replay end state (player exposes no timestamps for these gallery clips)",
+          "observation": "The gripped plug advances toward the socket in the wrist view; later the plug remains seated while the gripper opens and withdraws. The external and wrist views depict the same physical assembly.",
+          "limitations": "One curated successful rollout; timing and force magnitudes cannot be inferred from compressed video, and this is not a trial-level success-rate audit."
+        },
+        {
+          "url": "https://stanford-iprl-lab.github.io/fact/#results",
+          "modality": "video",
+          "locator": "Rollout Gallery / Task=Plug / Policy=FACT / Outcome=Failure; synchronized External and Wrist views, sampled after selecting Failure",
+          "observation": "The two plug prongs remain visibly above the socket openings in the sampled late stage, showing incomplete insertion even for FACT. The physical fixture and gripper remain visually coherent.",
+          "limitations": "Only one selected failure was sampled; it supports acknowledging residual insertion errors, not a causal attribution to force versus precision or complete five-task visual coverage."
+        },
+        {
+          "url": "https://stanford-iprl-lab.github.io/fact/#diagnosis",
+          "modality": "interactive_schematic",
+          "locator": "Diagnosis / Success, Precision failure, Force failure cards and captions",
+          "observation": "The page separates alignment-at-rim from seating/contact-force failure in a simplified plug/socket diagram.",
+          "limitations": "This is explanatory animation/schematic and is not counted as real-robot temporal evidence."
+        }
+      ],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2608.01402",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract identifies precision and force failure modes; FACT increases low-noise sampling and adds structured force conditioning, reporting 66% versus 41% average success across five tasks and almost 2,500 real-world rollouts.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://stanford-iprl-lab.github.io/fact/",
+          "locator": "Approach: Precision / Force; Results per-task table and caption; Rollout Gallery",
+          "claim": "All methods use pi0.5 LoRA,100 demonstrations/task,20K steps and40 trials/method/task. FACT's average is66.0 versus40.5 ForceVLA; Board regresses100→90 relative to pi0.5. Thus the paper does not establish no-material-regression succession.",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-force-tactile-contact-rich-manipulation",
+      "task_title": "Force/tactile-aware contact-rich manipulation",
+      "scope": {
+        "input": "Robot images, proprioception and contact-force/tactile history",
+        "output": "Precise contact-sensitive action chunks",
+        "setting": "Insertion, button pressing, assembly and related lab manipulation",
+        "protocol": "FACT: Franka FR3+Bota SensONE, 100 demonstrations/task, 20K LoRA steps, 40 rollouts/method/task on Plug/USB/Button/Board/Key; Agile-WAM tactile hardware and nine-sim/five-real protocol differ."
+      },
+      "role": "current",
+      "revisit_trigger": "扩充相同传感器任务/跨平台复现；保留Board退化与失败案例，不能自动归档通用/无force基线。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/fact-contact-rich-vla-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "metadata_observations": {
+        "first_submission_year": 2026,
+        "verified_venue": "CoRL 2026 Spotlight"
+      },
+      "existing_report_audit": {
+        "status": "supplemented_this_run",
+        "finding": "Existing contact-failure narrative is specific, but lacked actual clip selectors and matched per-task protocol; both were checked this run. No independent replication."
+      },
+      "visual_quality_decision": "adequate",
+      "visual_quality_score": 3
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.12352",
+      "title": "CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "同权重独立副本且无需通信的异构协作是明确新任务能力；主源实验可查，但本轮未观看队友扰动和同步接触时序。",
+      "closest_paper_url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "material_difference": "相对GeminiRobotics2的多机产品能力，本篇明确局部输入和无通信约束及比较；不同场景和access不能建立替代。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2606.12352",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: one VLA with independent robot-local copies, no inter-robot communication; transport/handover/measurement/lifting and reactivity gains.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-decentralized-heterogeneous-robot-collaboration",
+      "task_title": "Decentralized heterogeneous multi-robot collaboration",
+      "scope": {
+        "input": "Each robot's local observations and robot-identifying task prompt",
+        "output": "Coordinated actions from independent policy copies",
+        "setting": "Mobile transport, handover, measurement and lifting without inference-time communication",
+        "protocol": "Compare same team/robot counts and local information constraints; coordinated demonstration collection and four-times video playback matter."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "观看含队友干扰、接触同步和死锁/失败片段，核查团队规模/数据/4x播放。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/chorus-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.12063",
+      "title": "VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "真实失败修world model、再用合成rollout改policy直接服务本repo生成环境有效性；本轮主源确认39.2pp总增益和11.6pp生成数据收益，尚未核查时序接触细节。",
+      "closest_paper_url": "https://arxiv.org/abs/2603.08546",
+      "material_difference": "相对InteractiveWorldSimulator的稳定模拟器，本篇强调失败数据驱动的交替改善和real-data额外成本；任务和预算不同。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2602.12063",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: real-rollout world-model repair and synthetic VLA augmentation; +39.2pp over base and +11.6pp from generated rollouts.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-iterative-policy-world-model-improvement",
+      "task_title": "Iterative policy/world-model improvement using deployment failures",
+      "scope": {
+        "input": "Real policy success/failure rollouts and robot video",
+        "output": "Repaired world model and policy improved with synthetic rollouts",
+        "setting": "Closed-loop data collection and synthetic augmentation",
+        "protocol": "Separate gains from extra real interactions, world-model repair and synthetic rollouts; compare same task, real-data and reward-labeling budgets."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "检查模型接触失败前后对照、合成rollout动作忠实度、reward标注和相同真实交互预算。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/vlaw-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.07398",
+      "title": "OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining",
+      "branch": "D",
+      "decision": "priority",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 4,
+      "reason": "本轮已读官方模块化trainer/server/evaluation代码入口和具体benchmark配置，检查多任务真实时序样例；提供可控消融、统一数据和部署栈，价值超出单一分数。",
+      "closest_paper_url": "https://arxiv.org/abs/2607.08639",
+      "material_difference": "相对LingBot-VA2的固定native系统，OpenWAM把encoder/backbone/architecture/mask/data/inference变为组合组件；其实际LIBERO-Plus不领先所有基线，不能宣称全任务替代。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "verified",
+      "inspection_evidence": [
+        {
+          "url": "https://huggingface.co/datasets/OpenWAM/assets/resolve/main/rollouts/sa-chili_drawer-scene.mp4",
+          "modality": "video",
+          "locator": "Official #demos / Single-arm gripper / Chili into drawer; live playback sampled near00:16 and00:34–00:40",
+          "observation": "The gripper carries the red chili beside an open drawer; later sampled frames show the drawer closed with the arm near its front. The fixed scene and object geometry stay coherent across these phases.",
+          "limitations": "Sampled phases only; the occluded contents do not establish exact placement or full trial success. This is real execution, not a generated-world contact validation."
+        },
+        {
+          "url": "https://huggingface.co/datasets/OpenWAM/assets/resolve/main/rollouts/sa-cup-scene.mp4",
+          "modality": "video",
+          "locator": "Official #demos / Single-arm gripper / Hang cup; live playback sampled near00:14,00:15 and00:18",
+          "observation": "The yellow mug and gripper move around the wooden hook while the support remains fixed; handle/hook placement is visible, with no visual object substitution in the sampled interval.",
+          "limitations": "Gripper occludes contact. A failed AX seeking attempt did not establish an earlier frame and is not counted as inspection. No collision guarantee or full roll-out success is inferred."
+        },
+        {
+          "url": "https://huggingface.co/datasets/OpenWAM/assets/resolve/main/rollouts/bi-x5-insert_tubes.mp4",
+          "modality": "video",
+          "locator": "Official #demos / Bimanual RoboDojo / insert tubes ARX X5; sampled live playback near00:16 and00:20, plus later loop snapshots",
+          "observation": "The arm moves a tube around the blue multi-hole rack while the second arm, rack and other tubes persist in the scene. Changes across playback phases are physically interpretable manipulation rather than a static demo poster.",
+          "limitations": "Short sampled phases from a selected successful gallery; narrow pins/rack contact is partially occluded, complete insertion success and failure rate were not audited."
+        }
+      ],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.07398",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract defines modular OpenWAM-Infra, controlled OpenWAM-Study and pretrained OpenWAM-alpha; alpha uses roughly 6,400 hours of egocentric and robot data and is evaluated on eight simulation benchmarks plus real robots. The authors state release of infrastructure, protocols, models and data recipes.",
+          "source_quality": "primary",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://openwam-official.github.io/",
+          "locator": "One stack, three layers; What the controlled study found; Figure12 Architecture; Figure13 per-benchmark bars; Real-robot rollouts",
+          "claim": "Modular stack spans encoders/backbones/architectures/masks, controlled studies and released alpha model. Source reports heterogeneous benchmark results rather than a universal best result; single-arm, bimanual and dexterous galleries are distinct.",
+          "source_quality": "official",
+          "status": "verified"
+        },
+        {
+          "source_url": "https://github.com/OpenWAM-Official/OpenWAM",
+          "locator": "README: What is OpenWAM; Installation; Assets Preparation / Video Backbone / Benchmark Data / Released Checkpoints",
+          "claim": "Official repository documents modular infrastructure, model/benchmark downloaders, supported LIBERO/RoboTwin/RoboCasa/VLABench/EBench/RoboDojo data and checkpoint paths. This is a concrete reusable experimental/deployment interface; code was not executed.",
+          "source_quality": "official",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-joint-video-action-manipulation",
+      "task_title": "Joint action-conditioned world prediction and manipulation policy learning",
+      "scope": {
+        "input": "Robot video, instruction, proprioception and actions; modality availability varies",
+        "output": "Future observations plus robot action chunks",
+        "setting": "Shared or coupled video-action models used in manipulation",
+        "protocol": "Use matched LIBERO/RoboTwin/RoboCasa protocols and controlled action-only/world-only ablations; training data, architecture and inference hardware remain task-specific."
+      },
+      "role": "current",
+      "revisit_trigger": "在目标硬件运行一个基准和失败压力测试，固定数据/模型版本；进一步补看dexterous和失败分布。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/openwam-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "supplemented_this_run",
+        "finding": "Existing stack summary was supplemented with official README/config/benchmark availability and sampled real-robot temporal observations; no claim of comprehensive failure coverage or independent replication."
+      },
+      "visual_quality_decision": "adequate",
+      "visual_quality_score": 3
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.10522",
+      "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "将语义action units确定性接机器人解释器以及GUI数据采集提供具体复用接口；主源已核实架构但本轮未观看执行/确认完整release。",
+      "closest_paper_url": "https://arxiv.org/abs/2406.09246",
+      "material_difference": "相对OpenVLA直接动作token，Show-Harness把语义决策和embodiment interpreter显式解耦；calibration与离散粒度带来不同成本。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.10522",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: compact semantic action units, embodiment-specific deterministic interpreters, zero-shot/frontier and small finetuned VLMs, GUMI.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-semantic-action-interface-robot-control",
+      "task_title": "Semantic action interface for VLM-driven robot control",
+      "scope": {
+        "input": "Instruction, robot images and textualized robot state",
+        "output": "Discrete semantic actions grounded by an embodiment interpreter",
+        "setting": "Zero-shot/fine-tuned VLM control and GUI demonstration collection",
+        "protocol": "Match interpreter calibration, discrete action granularity, task/environment/embodiment split and model-call latency; closed API and local model costs differ."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "检查公开插件/collector协议及真机动作时序、校准失败、离散分辨率和API延迟。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/show-harness-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.11697",
+      "title": "ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "hard feasible-set层是明确的动作合法性接口，文本可验证ray-scaling与训练对齐；本轮未读完整定理假设/实验或检查物理执行，100% step safety不能转述为全局安全。",
+      "closest_paper_url": "https://arxiv.org/abs/2608.01402",
+      "material_difference": "相对FACT提升接触success，本篇约束flow更新合法集合；处理的安全属性不同，不能相互替代。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.11697",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: differentiable analytic ray-scaling safeguard; pi0.5/Fast-WAM step feasibility and success claims.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-flow-action-feasible-set-enforcement",
+      "task_title": "Hard feasible-set enforcement for flow-matching robot actions",
+      "scope": {
+        "input": "Observation-conditioned velocity update, feasible initialization and action constraints",
+        "output": "Differentiable feasible action update",
+        "setting": "Analytical ray-scaling layer for pi0.5/Fast-WAM-style policies",
+        "protocol": "Evaluate deterministic step feasibility and task success under the same specified feasible sets; this does not imply full contact/collision safety."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "完整核查定理可行初始化/约束集合假设、未覆盖collision/contact和实际时序/失败实验。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/actsafeguard-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.20761",
+      "title": "Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "多horizon vision/tactile latent与11.9ms延迟具有特定硬件价值，但相对已核查的contact诊断核心，五真实任务/传感器依赖且开放实现待证，未达重大增量。",
+      "closest_paper_url": "https://arxiv.org/abs/2608.01402",
+      "material_difference": "相对FACT force历史调制，此法联合预测视觉/触觉latent并取不同horizon；不同传感器和任务避免跨表比胜负。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.20761",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: direct flow matching jointly predicts actions/vision/touch, multi-horizon targets; nine sim/five real, reported11.9ms/29.4% relative gain.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-force-tactile-contact-rich-manipulation",
+      "task_title": "Force/tactile-aware contact-rich manipulation",
+      "scope": {
+        "input": "Robot images, proprioception and contact-force/tactile history",
+        "output": "Precise contact-sensitive action chunks",
+        "setting": "Insertion, button pressing, assembly and related lab manipulation",
+        "protocol": "FACT: Franka FR3+Bota SensONE, 100 demonstrations/task, 20K LoRA steps, 40 rollouts/method/task on Plug/USB/Button/Board/Key; Agile-WAM tactile hardware and nine-sim/five-real protocol differ."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "公开传感器/代码，给同任务同force/tactile和相同硬件延迟的对照。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/agile-wam-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.30264",
+      "title": "AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "factual误差与counterfactual选action脱节是具体失效模式，并有matched LeWM/CEM诊断及真实迁移结果；本轮尚未核对完整protocol及真实时序。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.10515",
+      "material_difference": "相对RoboJEPA的scaling/goal planning，本篇优化action discrimination并用elite regret诊断而非只降低imagination error；不能把小型task收益泛化全部world model。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.30264",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: residual dynamics/action recovery; OGBench-Cube hard start3.7→52.0 and Franka42.2→71.1; matched encoder/DROID post-training.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-counterfactual-latent-world-mpc",
+      "task_title": "Counterfactual action discrimination for latent-world-model MPC",
+      "scope": {
+        "input": "Current visual latent and candidate action sequences",
+        "output": "Action-sensitive latent futures and selected MPC action",
+        "setting": "OGBench simulation and zero-shot Franka pick/place",
+        "protocol": "Match frozen encoder, DROID post-training, CEM bank and budgets; OGBench-Cube hard starts versus ordinary starts are separate protocols."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核查CEM bank/数据预算与4/5环境结果，查看失败接触和no-lab-adaptation部署片段。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/ad-wm-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.30092",
+      "title": "Self-Adaptive VLA for Robust Robot Deployment",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "部署漂移context token/AdaLN方案针对重要但较窄的工程shift；本轮所见四任务、人工注入shift和恢复百分比不足支持通用鲁棒新能力。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.22364",
+      "material_difference": "相对T2-z辨识环境物理latent，此法补偿encoder/actuator偏差并需shift-conditioned训练；不是同一个adaptation任务。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.30092",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: precompensated expert actions and context AdaLN/ensembling; four tasks and >80% normalized recovery under injected hardware shifts.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-hardware-shift-policy-adaptation",
+      "task_title": "Adaptation of manipulation policies to hardware shifts",
+      "scope": {
+        "input": "Current robot observations plus context from prior shifted rollouts",
+        "output": "Shift-compensated continuous actions",
+        "setting": "Injected actuation bias, encoder offsets and workstation transfer",
+        "protocol": "Four real precision tasks; compare shifts, rollout-context budget and unshifted-normalized recovery, not generic OOD success."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "公开shift生成和context协议，验证自然wear/跨工作站及失败适配安全性。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/self-adaptive-vla-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.30247",
+      "title": "Rolling-WAM: World Action Models with Rolling Imagination",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "staggered-noise滑窗提供4.5x steady-state速度，属于有用推理优化；本轮无同硬件warm-up、观测新鲜度与突变场景证据，不能仅速度四分。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.28927",
+      "material_difference": "相对Streaming-WAM的committed-prefix conditioning，rolling复用部分denoised未来；潜在stale future和不同time metric需分开。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.30247",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: rolling video-action chunks across cycles; LIBERO/RoboTwin/G1 and 4.5x steady-state speedup.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-asynchronous-video-action-control",
+      "task_title": "Low-latency asynchronous joint video-action manipulation",
+      "scope": {
+        "input": "Latest observation, instruction/state, retained future chunks or committed action prefix",
+        "output": "Aligned next action chunk and predictive visual context",
+        "setting": "Continuous robot control overlapping inference and execution",
+        "protocol": "Match success, steady-state vs warm-up latency, episode time, inference GPU and observation timing; Rolling-WAM and Streaming-WAM use different budgets and real tasks."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "提供同硬件冷启/稳态/episode-time及突变动作响应对照与完整视频。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/rolling-wam-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.28927",
+      "title": "Streaming-WAM: Action-Conditioned World-Action Model for Asynchronous Robot Manipulation",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "committed action前缀明确改善异步预测对齐，但本轮仅摘要98.35%、2.93x时间和单Stamp例子，尚不足distinguish为主阅读新能力。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.30247",
+      "material_difference": "相对Rolling-WAM滑窗去噪，本篇处理推理期间已承诺action造成的未来不对齐；不同协议不建立优劣。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.28927",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: visual prediction conditioned on committed action prefix; LIBERO98.35%,2.93x episode-time reduction, Stamp90→38s.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-asynchronous-video-action-control",
+      "task_title": "Low-latency asynchronous joint video-action manipulation",
+      "scope": {
+        "input": "Latest observation, instruction/state, retained future chunks or committed action prefix",
+        "output": "Aligned next action chunk and predictive visual context",
+        "setting": "Continuous robot control overlapping inference and execution",
+        "protocol": "Match success, steady-state vs warm-up latency, episode time, inference GPU and observation timing; Rolling-WAM and Streaming-WAM use different budgets and real tasks."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核查统一硬件/数据/观测延迟的对照，展示突变和错误前缀的可恢复性。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/streaming-wam-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2609.27656",
+      "title": "InternW0: A Foundational Physical World Model for Efficient Real-World Interactions",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "异步KV复用加force/tactile及真实科学workflow是可区分系统候选；本轮只核实主源的约7200小时和15/5stage范围，尚未观看长程操作或确认release。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.10528",
+      "material_difference": "相对Long-WAM的visual-history动态控制，InternW0强调不同频率expert/KV route与科学任务；task progress不能当全流程成功。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2609.27656",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: asymmetric video/action flow model, cached context routing, ~7200h including275h EgoLab,15-stage synthesis and5-stage pipetting.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-predictive-scientific-robot-workflows",
+      "task_title": "Long-horizon scientific robot workflows with predictive context",
+      "scope": {
+        "input": "Robot images/state, language and optional force/tactile signals",
+        "output": "Continuous actions with reusable future visual context",
+        "setting": "Scientific manipulation including synthesis and quantitative pipetting",
+        "protocol": "Report stage progress separately from complete task success; hardware/latency budget and 15-trial task-specific tests require source protocol."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核查完整workflow进度/失败、真实接触时序、artifact许可证和同预算控制。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/internw0-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2602.06949",
+      "title": "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 5,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "44k小时人类video、latent proxy actions和实时distillation提供可复用基础能力，主源能核实10.81FPS及planning/evaluation用途；本轮未观看rollout和policy-in-loop。",
+      "closest_paper_url": "https://arxiv.org/abs/2603.08546",
+      "material_difference": "相对InteractiveWorldSimulator的中规模consistency模拟器，DreamDojo强调human-to-robot交互知识扩展和多embodiment；稳定性/速度协议不同。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2602.06949",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract:44k-hour egocentric human pretraining, continuous latent actions, robot post-training,10.81FPS distillation and teleoperation/evaluation/planning.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-action-conditioned-robot-video-simulation",
+      "task_title": "Action-conditioned robot futures for learned simulation",
+      "scope": {
+        "input": "Current robot frames and specified robot actions",
+        "output": "Predicted future robot-scene video",
+        "setting": "Manipulation rollout, policy evaluation or model-based planning",
+        "protocol": "Match embodiment/action convention, action horizon, held-out task split, FVD/action adherence and downstream control; curated videos alone do not establish simulator fidelity."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "观看action扰动、物体/接触持续与OOD失败，核对实时GPU/时长和模型release。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/dreamdojo-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2603.16861",
+      "title": "MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 5,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "完全sim-only zero-shot策略和procedural engine直接验证生成世界是否训练出可用策略；主源最新摘要报1.8M轨迹，与库中1.7M需版本说明。未观看真实门/抽屉任务。",
+      "closest_paper_url": "https://arxiv.org/abs/2608.15917",
+      "material_difference": "相对SPD每任务真实微调，这里零目标实测fine-tune和两平台部署是不同协议的重要能力；不能把两者按success归档。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2603.16861",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: open procedural engine and1.8M simulated expert trajectories; FR3/RB-Y1 no-real-finetuning transfer;79.2% pick/place vs39.2%.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-synthetic-only-zero-shot-manipulation",
+      "task_title": "Synthetic-only zero-shot real manipulation",
+      "scope": {
+        "input": "Procedural simulation demonstrations, observations and instruction",
+        "output": "Manipulation policy deployed without target-real finetuning",
+        "setting": "Franka FR3 tabletop and RB-Y1 mobile manipulation",
+        "protocol": "MolmoBot held-out objects/environments, real pick/place and articulated tasks; distinguish sim-only training from real-data finetuning."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核对数据版本/许可证、对比real-data预算，实际观看长程门/抽屉/移动操作与失败。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/molmobot-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "metadata_observations": {
+        "current_primary_abstract_trajectory_count": "1.8 million",
+        "registry_trajectory_count": "1.7M",
+        "action": "Pin dataset/paper version before citing; do not mix release surfaces."
+      },
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2605.30280",
+      "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "统一manipulation/navigation/trajectory与embodiment文字控制规范是具体跨任务候选；本轮主源可核查，未检代码完整性和不同动作任务时序。",
+      "closest_paper_url": "https://arxiv.org/abs/2605.02881",
+      "material_difference": "相对MolmoAct2以open manipulation/reasoning为重，Qwen联合导航与轨迹监督；需分任务检查而非用总范围覆盖旧操控基线。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2605.30280",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: DiT continuous-action decoder, embodiment text conditioning, manipulation/navigation/trajectory pretraining; reportedR2R/RxR/manipulation metrics.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-language-conditioned-cross-embodiment-manipulation",
+      "task_title": "Language-conditioned cross-embodiment manipulation",
+      "scope": {
+        "input": "RGB observations, optional proprioception and a language instruction",
+        "output": "Robot action chunks for grasping, placing and articulated-object interaction",
+        "setting": "Single-arm, bimanual or mobile manipulation, with embodiment-specific action conventions",
+        "protocol": "Compare only within matched OXE/Bridge/LIBERO/SimplerEnv or same-hardware real-task protocols; data mixtures, finetuning budgets and action rates vary and are not normalized here."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "按导航、操控、轨迹分别核查开放实现/协议/执行片段和知识迁移消融。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/qwen-vla-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2606.13675",
+      "title": "Improving Robotic Generalist Policies via Flow Reversal Steering",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "flow反演把合理粗action映射已有policy模式，适合后续适配；但最大95pp/一分钟是特定case，尚无全任务覆盖和guide成本证据支撑核心四分。",
+      "closest_paper_url": "https://arxiv.org/abs/2410.24164",
+      "material_difference": "相对pi0 flow基础，FRS是frozen-policy的inference/噪声空间steering和distillation；不是新通用policy，也不能归档原模型。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2606.13675",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: coarse human/VLM actions inverted to latent noise, zero-shot steering, auxiliary behavioral cloning and RL bootstrap.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-grounded-reasoning-manipulation",
+      "task_title": "Grounded reasoning for language-conditioned manipulation",
+      "scope": {
+        "input": "Robot images and task instruction",
+        "output": "Grounded intermediate reasoning and executable robot actions",
+        "setting": "Reasoning-to-action policies on simulation and real manipulation tasks",
+        "protocol": "Grounding, reasoning and success must be compared with matched policy/data/latency; VLA-CoT, LIBERO and real setups are not a common protocol."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "完整给出引导采集成本、baseline失败task分布、同预算成功率和公开controller。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/flow-reversal-steering-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2604.01985",
+      "title": "World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "把验证拆为plausibility/reachability并主动收集world model失败，直接提供生成世界验证接口；主源当前摘要是>22% policy增益，旧精读的>18%需标版本。",
+      "closest_paper_url": "https://arxiv.org/abs/2603.23376",
+      "material_difference": "相对ABot训练物理偏好打分，WAV用inverse/forward循环发现覆盖外失败并改进采集；不证明像素/接触全部正确。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2604.01985",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: video subgoals+sparse inverse dynamics+cycle consistency across9 MiniGrid/RoboMimic/ManiSkill tasks;2x sample efficiency and>22% improvement.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-world-model-plausibility-reachability-verification",
+      "task_title": "Self-verification of action-conditioned world models",
+      "scope": {
+        "input": "Video-derived subgoal proposals, sparse inverse dynamics and forward rollouts",
+        "output": "Plausibility/reachability verification and targeted transition collection",
+        "setting": "MiniGrid, RoboMimic and ManiSkill under-covered action regimes",
+        "protocol": "Nine-task sample-efficiency/policy-improvement protocol; verify action-free/action-labeled data budgets and compare cycle-consistency controls."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核查各task协议/版本及可交互预测器，观看reachability失败/恢复和模型自检局限。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/world-action-verifier-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "metadata_observations": {
+        "current_primary_abstract_policy_improvement": ">22%",
+        "existing_deep_dive_value": ">18%",
+        "action": "Check version and metric definition before citation."
+      },
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.12468",
+      "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "success bias与counterfactual post-training/human defect reward针对动作忠实和物理缺陷，是直接任务增量；本轮只核实主源48.12→6.25缺陷率声明，旧视觉描述无定位。",
+      "closest_paper_url": "https://arxiv.org/abs/2603.23376",
+      "material_difference": "相对ABot的physics-awareDPO，DreamTrue增加image-space action标定与反事实失败覆盖；数据/人评协议应匹配。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.12468",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: rendered action trajectories/offline calibration, counterfactual post-training and human defect reward;48.12%→6.25% assessed defects.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-action-conditioned-robot-video-simulation",
+      "task_title": "Action-conditioned robot futures for learned simulation",
+      "scope": {
+        "input": "Current robot frames and specified robot actions",
+        "output": "Predicted future robot-scene video",
+        "setting": "Manipulation rollout, policy evaluation or model-based planning",
+        "protocol": "Match embodiment/action convention, action horizon, held-out task split, FVD/action adherence and downstream control; curated videos alone do not establish simulator fidelity."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "检查GT/预测/反事实同场景时序与失败例，人评盲评和reward偏好协议、code版本。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/dreamtrue-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.12285",
+      "title": "PLaW-VLA: Predictive Latent World Modeling for Vision-Language-Action Policies",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "prediction-oriented latent和structured causal attention有清楚方法，但最接近latent对照只+1.77pp；1/19成本对pixel WAM不是同表示/同资源优势。",
+      "closest_paper_url": "https://arxiv.org/abs/2608.09381",
+      "material_difference": "相对JEPA-WAM的sharedfuture predictor，是task-relevant latent+causal conditioning；需证明long-horizon优势并非history/backbone变化。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.12285",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract and Comments:+11.8pp over reactive RoboTwin horizonIII,+1.77pp over reconstruction latent onLIBERO-Plus;~1/19generativeWAM latency;CoRL2026.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-future-latent-conditioned-manipulation",
+      "task_title": "Manipulation control conditioned by predicted future latents",
+      "scope": {
+        "input": "Current robot images, instruction and optional observation history",
+        "output": "Continuous robot actions aided by predictive latent state",
+        "setting": "Policy control without mandatory online pixel-video rendering",
+        "protocol": "LIBERO-Plus, LIBERO, SimplerEnv, RoboTwin and real tests are heterogeneous; verify initialization, robot pretraining, splits and action latency before cross-paper comparisons."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "公开matchedbackbone/history/latent维度的控制实验与部署时序。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/plaw-vla-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.12099",
+      "title": "UNITAS: A 3D-Native World Action Model for Embodied Manipulation",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "metric3D共用action/scene flow使输出接口由像素变可执行运动，是直接表示新能力；主源具体1.7B/PointWorld/real指标已核实，未检查3D动态与碰撞。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.08780",
+      "material_difference": "相对DepthWorld的RGB/metric-depth未来，UNITAS直接在共同metricframe产生点轨迹/scene displacement；表示与输出不同，不宣称全面替代。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.12099",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract: sharedmetric3D for hands/robots, actionflow/sceneflow/physical-time tokenizer;1.7B andRoboTwin errors/99.8LIBERO/85real reported.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-metric-3d-action-scene-flow",
+      "task_title": "Joint metric-3D scene-flow prediction and robot action generation",
+      "scope": {
+        "input": "Robot/human interaction observations, instruction and optional depth",
+        "output": "3D point action trajectories plus action-conditioned scene displacement",
+        "setting": "Shared metric frame across hands and robot embodiments",
+        "protocol": "RoboTwin scene-flow error, LIBERO and matched real robot tasks; compare scale/depth inputs, PointWorld protocol and embodiment-specific conventions."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "观看3D轨迹、接触、scene-flow与执行对齐；检查depth-free尺度及同输入PointWorld比较。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/unitas-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.10515",
+      "title": "RoboJEPA: Scaling Robotic Latent World Models",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "把imagination error与算力/真实规划性能联系并释放训练部署代码有实质方法价值；本轮只读摘要，未核查scalingfit/extrapolation或真实goal-image规划。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.30264",
+      "material_difference": "相对AD-WM优化counterfactual区分，本篇优化规模与proxy规律；factualproxy与actionranking不等同，二者不构成替代。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.10515",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract:12embodiments,second-order compute power law,latent-error/planning correlation,8B predictor and code/checkpoint release claim.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-scaled-latent-goal-image-planning",
+      "task_title": "Goal-image planning with scalable robotic latent world models",
+      "scope": {
+        "input": "Current robot observation and goal image",
+        "output": "Latent rollouts and zero-shot planned actions",
+        "setting": "Multi-embodiment robot-world-model scaling",
+        "protocol": "Hold compute/data/horizon fixed for imagination-error scaling and real-goal planning; twelve training embodiments do not establish universal transfer."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核查外推/置信区间、compute数据共线性，并观看zero-shotgoal规划及失败。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/robojepa-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.10528",
+      "title": "Long-WAM: Scaling the Context of World-Action Models",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "longhistory收益依赖ARpretraining以及107.4ms系统实现是可区分能力；主源context ablation具体，但本轮未观看动态杯堆与长期恢复，不能据摘要判当前最佳。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.30247",
+      "material_difference": "相对Rolling-WAM为滑窗去噪降延迟，Long-WAM以ARhistory为任务能力；上下文、backbone和hardware不匹配。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.10528",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract:0→19.2scontext raisesGR1 63.3→78.7,ARvsbidirectionalcontrol;107.4ms5090chunk;95%dynamiccup against0/20baselines.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-long-context-dynamic-manipulation",
+      "task_title": "History-conditioned dynamic and long-horizon manipulation",
+      "scope": {
+        "input": "Long visual history, instruction and current robot state",
+        "output": "Responsive action chunks with retained future prediction",
+        "setting": "Dynamic cup stacking and long-horizon robot control",
+        "protocol": "RoboCasa GR-1 context-length controls, LIBERO-Long/RoboTwin/DOMINO and 20-trial real dynamic tests; match AR initialization and runtime GPU."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "检查动态/long-horizon影片、延迟预算与AR控制、失败/重置范围及代码release。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/long-wam-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.08780",
+      "title": "DepthWorld: 3D World Model for Robot Manipulation",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "DROID-3D因子图标定和metricdepth监督直接提供数据/validator；等训练预算RGB+1.48dB是具体控制证据，仍未检查跨view时序几何和释放。",
+      "closest_paper_url": "https://arxiv.org/abs/2507.01099",
+      "material_difference": "相对Geometry-aware4D无需camera pose的pointmapalignment，DepthWorld以可靠metriccalibration和RGB-Dtiling维持原VAE；不同输入保留独立价值。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.08780",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract and Comments:DROID-3Dsharedrobotfactorgraph,<0.7px on90%external-cameraepisodes;equal-budget+1.48dBPSNR;CoRL2026.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-multiview-geometric-robot-futures",
+      "task_title": "Geometrically consistent multi-view robot future prediction",
+      "scope": {
+        "input": "Initial robot observations, depth/camera geometry when required, and task/action context",
+        "output": "Multi-view RGB/RGB-D or 3D-consistent manipulation futures",
+        "setting": "Geometry-grounded video world models for manipulation",
+        "protocol": "Match camera/depth inputs, action conditioning, RGB/depth/geometric metrics and downstream extraction; DROID, RLBench and Bridge conditions differ."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核实dataset/license和equalbudget拆分，检查多视图RGB-D、遮挡及几何漂移影片。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/depthworld-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.22364",
+      "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "冻结world model并从少量interaction优化environment latent直接针对隐藏物理，是明确新能力；主源七sim四real结果已核查，尚无时序媒体检验。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.30092",
+      "material_difference": "相对Self-AdaptiveVLA的硬件误差context学习，本篇学习无监督环境latent适配friction/mass/rules，场景物理与硬件shift须分开。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.22364",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract:alternatingmodel/latenttraining,frozenmodeltestlatentoptimizationfromoneormoreinteractions;15.20→7.00error,33.73→72.96success.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-test-time-hidden-dynamics-adaptation",
+      "task_title": "Test-time adaptation to hidden environment dynamics",
+      "scope": {
+        "input": "Action/observation trajectory from one or more test interactions",
+        "output": "Optimized environment latent and adapted world prediction/control",
+        "setting": "Unseen friction, mass and environment rules",
+        "protocol": "Seven simulated and four real task settings; compare number of adaptation interactions, frozen model and object-error/action-success definitions."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "定位并观看改变物理因素/反事实action的连续样例，审查adaptationinteraction预算和泄漏。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/t2-z-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.22343",
+      "title": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "reason": "主源证实drivinggeometryforecasting及cross-viewquery，但未展示机器人action-intervention接口。作为3D状态表示背景，与本repo具体操控任务仅单层支撑。",
+      "closest_paper_url": "https://arxiv.org/abs/2610.08780",
+      "material_difference": "相对DepthWorld的机器人动作条件metricRGB-D，GeoState解耦驾驶scene/camera evolution；Waymo泛化不能作机器人世界模型胜者。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.22343",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract:view-decoupledGFMstatetokenizer/raydecoder,independentcameramotion,Waymoandzero-shotKITTI/nuScenes.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-view-decoupled-driving-geometry-forecasting",
+      "task_title": "View-decoupled metric geometry-state forecasting",
+      "scope": {
+        "input": "Multi-view driving video/GFM features and camera rays",
+        "output": "Predictive 3D scene state queryable at arbitrary cameras",
+        "setting": "Waymo with zero-shot KITTI/nuScenes transfer",
+        "protocol": "Hold context scale without per-frame alignment; compare Waymo split, camera-motion handling and cross-view geometry. Robot action intervention not demonstrated by the checked abstract."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "出现可复用交互action接口或机器人/生成世界验证任务的直接实证。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/geostate-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.21095",
+      "title": "OneWM: Can World and Action Modeling Benefit Each Other under Unified Causal Training?",
+      "branch": "D",
+      "decision": "watchlist",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "reason": "sharedcausalarchitecture研究world/action互益，实证问题明确；但本轮仅摘要正面结论，没有匹配预算效应量和release核查，不能与已可查模块栈同列核心。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.07398",
+      "material_difference": "相对OpenWAM的系统控制实验，OneWM集中在动作既作condition又作target的互益；须说明相对现有jointtraining的新发现。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.21095",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract:jointcausalvideo-actionframework,LIBERO/LIBERO-Plus/RoboCasa365,world↔actionreciprocalbenefitunderonearchitecture.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-joint-video-action-manipulation",
+      "task_title": "Joint action-conditioned world prediction and manipulation policy learning",
+      "scope": {
+        "input": "Robot video, instruction, proprioception and actions; modality availability varies",
+        "output": "Future observations plus robot action chunks",
+        "setting": "Shared or coupled video-action models used in manipulation",
+        "protocol": "Use matched LIBERO/RoboTwin/RoboCasa protocols and controlled action-only/world-only ablations; training data, architecture and inference hardware remain task-specific."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "提供完整共享架构消融/效应量、负结果、代码和真实时序，证明重要增量。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/onewm-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": false,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    },
+    {
+      "paper_url": "https://arxiv.org/abs/2610.19825",
+      "title": "What Matters for World Modeling in Vision-Language-Action Models?",
+      "branch": "D",
+      "decision": "undecided",
+      "impact_score": 4,
+      "project_relevance_score": 5,
+      "evidence_strength": 3,
+      "reason": "把representation、integration和backbone交叉控制可直接减少repo技术选型的不确定性；主源四范式/多评估轴已核查，但完整protocol及执行媒体未审。",
+      "closest_paper_url": "https://arxiv.org/abs/2609.07398",
+      "material_difference": "相对OpenWAM的生成backbone预训练系统研究，本篇横跨latent/explicit/external融合和既有VLM/VLAbackbone；需核查设计空间是否真正正交。",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "visual_status": "not_inspected",
+      "inspection_evidence": [],
+      "sources": [
+        {
+          "source_url": "https://arxiv.org/abs/2610.19825",
+          "locator": "Title; Abstract (method and evaluation paragraphs); submission history / Comments when present",
+          "claim": "Abstract:fourintegrationparadigmscrossedwithrepresentations/backbonesunderunifiedframework;OOD,longhorizon,dynamic,fewshotandrealsettings.",
+          "source_quality": "primary",
+          "status": "verified"
+        }
+      ],
+      "task_id": "d-controlled-world-model-vla-integration",
+      "task_title": "Controlled comparison of world-model integration in manipulation policies",
+      "scope": {
+        "input": "Matched policy backbones, world representations and integration designs",
+        "output": "Evidence on control/generalization and deployment tradeoffs",
+        "setting": "In-domain/OOD/long-horizon/dynamic/few-shot and real manipulation tests",
+        "protocol": "Cross four integration paradigms with representations and backbones under a unified framework; exact budgets/splits and implementation release still need full-source audit."
+      },
+      "role": "unreviewed",
+      "revisit_trigger": "核对预算/种子/同策略控制表和真实时序例，公开可复用evaluation配置。",
+      "reviewed_on": "2026-10-20",
+      "deep_dive_path": "paper_reads/D_vla_world_action_models/what-matters-world-modeling-vla-2026.md",
+      "review_depth": "Primary abstract/official launch plus existing report evidence audit; priority entries additionally inspected official project, release documentation and temporal media. No independent replication.",
+      "needs_human_decision": true,
+      "legacy_visual_rating_reendorsed": false,
+      "existing_report_audit": {
+        "status": "insufficient_for_v2_reendorsement",
+        "finding": "Existing report contains method-specific summaries but lacks exact temporal media locators and matched-budget comparison evidence required for a fresh policy-v2 physical/embodied admission. Broad fields and statements such as a project providing rollouts are not treated as observations."
+      }
+    }
+  ]
+}

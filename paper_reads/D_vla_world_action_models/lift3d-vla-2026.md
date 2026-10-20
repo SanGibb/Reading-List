@@ -1,5 +1,10 @@
 # Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。明确的3D point-cloud lifting、GC-MAE与分层动作建模；但真实平均仅+4pp且三组件耦合，本轮没有逐项证据能支持重大增量。
+> [本次来源、分数与任务判断](../library_review.md#paper-5772f42a3e08)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0003
 branch: D
 decision: accepted_for_registry

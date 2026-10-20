@@ -1,5 +1,10 @@
 # Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。主源对真实视频、QA 和三认知层级的描述具体，但 UAV 自运动/自我认知是更专门的支撑层，当前没有直接的室内生成/操作验证器使用点，暂不占核心阅读入口。
+> [本次来源、分数与任务判断](../library_review.md#paper-77445ed9b4cf)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0001
 branch: C
 decision: accepted_for_registry

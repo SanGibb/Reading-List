@@ -1,5 +1,10 @@
 # Streaming-WAM: Action-Conditioned World-Action Model for Asynchronous Robot Manipulation
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。committed action前缀明确改善异步预测对齐，但本轮仅摘要98.35%、2.93x时间和单Stamp例子，尚不足distinguish为主阅读新能力。
+> [本次来源、分数与任务判断](../library_review.md#paper-28a63f20d0fb)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0006
 branch: D
 decision: accepted_for_registry

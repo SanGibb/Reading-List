@@ -30,6 +30,7 @@ def main() -> int:
         root / "data" / "papers.seed.json",
         root / "data" / "follow_sources.seed.json",
         root / "data" / "task_frontiers.seed.json",
+        root / "data" / "library_review.seed.json",
     ]:
         errors.extend(validate_json(json_path))
 
@@ -42,6 +43,8 @@ def main() -> int:
     if run([sys.executable, "scripts/validate_registry.py"], root) != 0:
         return 1
     if run([sys.executable, "scripts/validate_task_frontiers.py"], root) != 0:
+        return 1
+    if run([sys.executable, "scripts/validate_library_review.py"], root) != 0:
         return 1
 
     runs_root = root / "reports" / "runs"

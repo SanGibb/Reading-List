@@ -1,5 +1,10 @@
 # WonderWorld: Interactive 3D Scene Generation from a Single Image
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**待视觉复核**。Fast user-steered connected scene expansion is a concrete interactive-generation capability. Need actual expansion/return-path inspection and drift cases, not just the claimed runtime.
+> [本次来源、分数与任务判断](../library_review.md#paper-f2a5bee38432)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0002
 branch: B
 decision: accepted_for_registry

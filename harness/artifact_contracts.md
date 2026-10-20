@@ -168,6 +168,34 @@ contract is:
 
 ## Stage Files
 
+### Explicit retrospective review
+
+The user-requested 2026-10-20 review is stored separately in
+`data/library_review.seed.json` (`review_schema_version: 1`, `policy_version: 2`,
+`review_date`, `reviews`). Each reviewed pre-existing paper occurs exactly once with
+`paper_url`, `decision: priority|reference|watchlist|undecided|source_issue`, three
+scores (integer 0-5 or null when genuinely unknown), `task_ids`, `reason`,
+`revisit_trigger`, and `review_artifact`. Detailed branch artifacts under
+`reports/reorganization/<date>/` contain primary-source traces and actual inspection
+evidence; sidecar judgments and live registry metadata must agree. An optional
+`task_assignment_artifact` records how fine-grained review protocols were grouped
+for navigation, without changing scores or asserting protocol equivalence.
+
+`priority` requires all three scores >=4 and applicable visual gates. References
+are retained knowledge, not automatically renewed admissions. Undecided entries
+require detailed `dossier_path` files under ignored `undecided/`; source issues
+stay out of recommendations until identity and evidence are corrected. Current
+registry fields reflect this reassessment; `historical_acceptance` preserves the
+old source/visual/evidence labels. Historical run artifacts are not rewritten.
+
+The dated review need not be rewritten for later separately validated v2 additions.
+Those new papers still need their own complete admission evidence and task IDs.
+Likewise, a previously qualified paper may later become historical for a task:
+its original review remains true as a dated decision, while the live task role
+controls whether it is expanded as a current recommendation. Promoting a reviewed
+watchlist/pending/source-issue record requires new source-backed review evidence,
+not only a task-role edit. Regenerate all eight reading views after metadata changes.
+
 ### `00_run_plan.json`
 
 Required:

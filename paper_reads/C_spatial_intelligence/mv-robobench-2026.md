@@ -1,5 +1,10 @@
 # Seeing Across Views / MV-RoboBench
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**观察名单**。现有精读高度模板化；本轮 OpenReview 入口被验证页阻断，不能确认对应版本、任务协议和报告数字。此处保留待补证，不据访问失败判定论文质量差或题名虚假。
+> [本次来源、分数与任务判断](../library_review.md#paper-25946a55ee8b)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0030
 branch: C
 decision: accepted_for_registry

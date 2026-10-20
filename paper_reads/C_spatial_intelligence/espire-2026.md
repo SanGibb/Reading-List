@@ -1,5 +1,15 @@
 # ESPIRE: A Diagnostic Benchmark for Embodied Spatial Reasoning of Vision-Language Models
 
+<!-- curation-review:start -->
+> 2026-10-20 按新版标准复审：**优先阅读**。已读原文的 functional-program 任务定义、定位/执行指标和 motion-planner acceptance 协议；对空间约束到目标姿态的校验直接有用。该推荐限于评测设计，不声称视频逼真度或真实机器人迁移已验证。
+> [本次来源、分数与任务判断](../library_review.md#paper-06b39449b566)。下文保留原精读；旧验收标签不代表本次重新通过，所有实验仍为作者报告。
+>
+> **本轮准入依据**（技术贡献 / 直接相关性 / 证据：4 / 5 / 4）：定位与姿态可接受性诊断聚焦空间参照系，和主动选择观察任务不同，不能作全面继任。
+> - [Sections 3-4; Table 1; Sections 5.1-5.3; Appendix A.4](https://arxiv.org/html/2603.13033v1)：原文分开 localization accuracy 与执行目标姿态 acceptance，列出功能程序及任务诊断。（verified）。
+>
+> 引用指标、发布规模和比较结果时，以以上已定位来源和本次复审限制为准，不沿用下文旧概括。
+<!-- curation-review:end -->
+
 candidate_id: CAND-0050
 branch: C
 decision: accepted_for_registry
