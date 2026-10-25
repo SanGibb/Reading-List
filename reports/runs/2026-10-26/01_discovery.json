@@ -1,0 +1,707 @@
+{
+  "run_id": "2026-10-26",
+  "followed_sources_checked": [
+    {
+      "source_id": "stanford-svl-behavior",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://svl.stanford.edu/publications/",
+        "https://jiajunwu.com/",
+        "https://behavior.stanford.edu/omnigibson/overview.html"
+      ],
+      "evidence_url": "https://svl.stanford.edu/publications/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "princeton-pvl-infinigen",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://pvl.cs.princeton.edu/",
+        "https://infinigen.org/"
+      ],
+      "evidence_url": "https://pvl.cs.princeton.edu/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured. Some configured endpoints timed out or returned 404; working sibling official surfaces were still checked.",
+      "retry_trigger": "Retry the configured official endpoint next weekly run and use indexed primary-source searches meanwhile."
+    },
+    {
+      "source_id": "ai2-embodied-prior",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://allenai.org/embodied-ai",
+        "https://prior.allenai.org/projects/ai2thor",
+        "https://procthor.allenai.org/"
+      ],
+      "evidence_url": "https://allenai.org/embodied-ai",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "nvidia-cosmos-isaac",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://research.nvidia.com/labs/cosmos-lab/",
+        "https://research.nvidia.com/labs/dir/sage/",
+        "https://research.nvidia.com/labs/cosmos-lab/cosmos3",
+        "https://research.nvidia.com/labs/lpr/publication/gr00tn1_2025/"
+      ],
+      "evidence_url": "https://research.nvidia.com/labs/cosmos-lab/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "stanford-realab-shuran",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://real.stanford.edu/lab.html",
+        "https://shurans.github.io/"
+      ],
+      "evidence_url": "https://shurans.github.io/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured. Some configured endpoints timed out or returned 404; working sibling official surfaces were still checked.",
+      "retry_trigger": "Retry the configured official endpoint next weekly run and use indexed primary-source searches meanwhile."
+    },
+    {
+      "source_id": "stanford-iris-openvla",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://irislab.stanford.edu/",
+        "https://openvla.github.io/"
+      ],
+      "evidence_url": "https://openvla.github.io/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured. Some configured endpoints timed out or returned 404; working sibling official surfaces were still checked.",
+      "retry_trigger": "Retry the configured official endpoint next weekly run and use indexed primary-source searches meanwhile."
+    },
+    {
+      "source_id": "berkeley-rail-levine",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://rail.eecs.berkeley.edu/"
+      ],
+      "evidence_url": "https://rail.eecs.berkeley.edu/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "physical-intelligence",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://www.pi.website/",
+        "https://www.pi.website/blog/pi0"
+      ],
+      "evidence_url": "https://www.pi.website/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "google-deepmind-robotics",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://deepmind.google/models/gemini-robotics/gemini-robotics/",
+        "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+        "https://github.com/google-deepmind/open_x_embodiment"
+      ],
+      "evidence_url": "https://deepmind.google/models/gemini-robotics/vla/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "ut-austin-rpl-yuke",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://rpl.cs.utexas.edu/people/",
+        "https://www.cs.utexas.edu/research/intelligent-robotics",
+        "https://robocasa.ai/"
+      ],
+      "evidence_url": "https://ut-austin-rpl.github.io/people/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "meta-fair-embodied",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/",
+        "https://ai.meta.com/blog/fair-robotics-open-source/",
+        "https://dhruvbatra.com/"
+      ],
+      "evidence_url": "https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "huggingface-lerobot",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://huggingface.co/blog/smolvla",
+        "https://github.com/huggingface/lerobot",
+        "https://huggingface.co/docs/lerobot"
+      ],
+      "evidence_url": "https://huggingface.co/blog/smolvla",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "toyota-research-institute-lbm",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://global.toyota/en/mobility/frontier-research/42394425.html",
+        "https://www.tri.global/about-us/dr-russ-tedrake"
+      ],
+      "evidence_url": "https://global.toyota/en/mobility/frontier-research/42394425.html",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured. Some configured endpoints timed out or returned 404; working sibling official surfaces were still checked.",
+      "retry_trigger": "Retry the configured official endpoint next weekly run and use indexed primary-source searches meanwhile."
+    },
+    {
+      "source_id": "cmu-genesis-robogen",
+      "status": "spot_checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://github.com/Genesis-Embodied-AI/RoboGen"
+      ],
+      "evidence_url": "https://github.com/Genesis-Embodied-AI/RoboGen",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "tsinghua-air-vla",
+      "status": "spot_checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://air.tsinghua.edu.cn/info/1007/2467.htm"
+      ],
+      "evidence_url": "https://air.tsinghua.edu.cn/info/1007/2467.htm",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "embodiedgen-consortium",
+      "status": "spot_checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://arxiv.org/abs/2506.10600",
+        "https://3dgen4robot.github.io/"
+      ],
+      "evidence_url": "https://arxiv.org/abs/2506.10600",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "mit-csail-drake-scene-generation",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://scenesmith.github.io/",
+        "https://drake.mit.edu/"
+      ],
+      "evidence_url": "https://scenesmith.github.io/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "tencent-hunyuan-world",
+      "status": "spot_checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://hyworld.dev/",
+        "https://huggingface.co/tencent/HY-World-2.0"
+      ],
+      "evidence_url": "https://hyworld.dev/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "world-model-benchmarks",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://haoyi-duan.github.io/WorldScore/",
+        "https://world-arena.ai/",
+        "https://world-in-world.github.io/",
+        "https://ctrl-world.github.io/"
+      ],
+      "evidence_url": "https://haoyi-duan.github.io/WorldScore/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "vla-leaderboard",
+      "status": "checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://vlaleaderboard.com/"
+      ],
+      "evidence_url": "https://vlaleaderboard.com/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    },
+    {
+      "source_id": "vla-survey",
+      "status": "spot_checked",
+      "checked_at": "2026-10-26T00:03:00+08:00",
+      "urls_checked": [
+        "https://vla-survey.github.io/"
+      ],
+      "evidence_url": "https://vla-survey.github.io/",
+      "notes": "Fetched configured official surfaces; no new acceptance-grade fixed-source release beyond candidates already captured."
+    }
+  ],
+  "query_log": [
+    {
+      "query_id": "Q-A-001",
+      "branch": "A",
+      "query": "submitted 2026-10-12..2026-10-26: articulated OR sim-ready OR URDF OR collision OR \"physical properties\" in cs.RO/cs.CV",
+      "source_url": "https://export.arxiv.org/api/query",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "submitted",
+      "date_from": "2026-10-12",
+      "date_to": "2026-10-26",
+      "results_reviewed": 95,
+      "pages_checked": 1,
+      "stop_reason": "Reviewed all returned results.",
+      "candidate_ids": [
+        "CAND-0001",
+        "CAND-0002",
+        "CAND-0009"
+      ]
+    },
+    {
+      "query_id": "Q-A-002",
+      "branch": "A",
+      "query": "updated 2026-10-12..2026-10-26: articulated OR sim-ready OR URDF OR collision OR \"physical properties\" in cs.RO/cs.CV",
+      "source_url": "https://export.arxiv.org/api/query",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "updated",
+      "date_from": "2026-10-12",
+      "date_to": "2026-10-26",
+      "results_reviewed": 95,
+      "pages_checked": 1,
+      "stop_reason": "Reviewed all returned results.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-A-003",
+      "branch": "A",
+      "query": "release 2026-09-11..2026-10-26: articulated simulation-ready URDF physics robot repositories",
+      "source_url": "https://api.github.com/search/repositories",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "release",
+      "date_from": "2026-09-11",
+      "date_to": "2026-10-26",
+      "results_reviewed": 0,
+      "pages_checked": 1,
+      "stop_reason": "Reviewed all returned results.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-B-001",
+      "branch": "B",
+      "query": "submitted 2026-10-12..2026-10-26: \"scene generation\" OR \"interactive world\" OR \"procedural generation\" OR \"world generation\"",
+      "source_url": "https://export.arxiv.org/api/query",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "submitted",
+      "date_from": "2026-10-12",
+      "date_to": "2026-10-26",
+      "results_reviewed": 40,
+      "pages_checked": 1,
+      "stop_reason": "Reviewed all returned results.",
+      "candidate_ids": [
+        "CAND-0003"
+      ]
+    },
+    {
+      "query_id": "Q-B-002",
+      "branch": "B",
+      "query": "updated 2026-10-12..2026-10-26: \"scene generation\" OR \"interactive world\" OR \"procedural generation\" OR \"world generation\"",
+      "source_url": "https://export.arxiv.org/api/query",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "updated",
+      "date_from": "2026-10-12",
+      "date_to": "2026-10-26",
+      "results_reviewed": 40,
+      "pages_checked": 1,
+      "stop_reason": "Reviewed all returned results.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-B-003",
+      "branch": "B",
+      "query": "release 2026-09-11..2026-10-26: interactive world procedural scene generation embodied repositories",
+      "source_url": "https://api.github.com/search/repositories",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "release",
+      "date_from": "2026-09-11",
+      "date_to": "2026-10-26",
+      "results_reviewed": 0,
+      "pages_checked": 1,
+      "stop_reason": "Reviewed all returned results.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-C-001",
+      "branch": "C",
+      "query": "submitted 2026-10-12..2026-10-26: \"spatial reasoning\" OR \"spatial intelligence\" OR \"embodied reasoning\"",
+      "source_url": "https://export.arxiv.org/api/query",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "submitted",
+      "date_from": "2026-10-12",
+      "date_to": "2026-10-26",
+      "results_reviewed": 51,
+      "pages_checked": 1,
+      "stop_reason": "Reviewed all returned results.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-C-002",
+      "branch": "C",
+      "query": "updated 2026-10-12..2026-10-26: \"spatial reasoning\" OR \"spatial intelligence\" OR \"embodied reasoning\"",
+      "source_url": "https://export.arxiv.org/api/query",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "updated",
+      "date_from": "2026-10-12",
+      "date_to": "2026-10-26",
+      "results_reviewed": 51,
+      "pages_checked": 1,
+      "stop_reason": "Reviewed all returned results.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-C-003",
+      "branch": "C",
+      "query": "release 2026-09-11..2026-10-26: spatial reasoning embodied 3D benchmark repositories",
+      "source_url": "https://api.github.com/search/repositories",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "release",
+      "date_from": "2026-09-11",
+      "date_to": "2026-10-26",
+      "results_reviewed": 0,
+      "pages_checked": 1,
+      "stop_reason": "Reviewed all returned results.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-D-001",
+      "branch": "D",
+      "query": "submitted 2026-10-12..2026-10-26: \"vision language action\" OR \"world action model\" OR \"robot world model\" OR \"robot policy\"",
+      "source_url": "https://export.arxiv.org/api/query",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "submitted",
+      "date_from": "2026-10-12",
+      "date_to": "2026-10-26",
+      "results_reviewed": 100,
+      "pages_checked": 1,
+      "stop_reason": "API page cap reached after reviewing 100 newest records; overlapping fixed-source and targeted title searches covered shortlisted hits.",
+      "candidate_ids": [
+        "CAND-0004",
+        "CAND-0005",
+        "CAND-0010"
+      ]
+    },
+    {
+      "query_id": "Q-D-002",
+      "branch": "D",
+      "query": "updated 2026-10-12..2026-10-26: \"vision language action\" OR \"world action model\" OR \"robot world model\" OR \"robot policy\"",
+      "source_url": "https://export.arxiv.org/api/query",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "updated",
+      "date_from": "2026-10-12",
+      "date_to": "2026-10-26",
+      "results_reviewed": 100,
+      "pages_checked": 1,
+      "stop_reason": "API page cap reached after reviewing 100 newest records; overlapping fixed-source and targeted title searches covered shortlisted hits.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-D-003",
+      "branch": "D",
+      "query": "release 2026-09-11..2026-10-26: VLA world action model robot repositories",
+      "source_url": "https://api.github.com/search/repositories",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "release",
+      "date_from": "2026-09-11",
+      "date_to": "2026-10-26",
+      "results_reviewed": 8,
+      "pages_checked": 1,
+      "stop_reason": "Reviewed all returned results.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-E-001",
+      "branch": "E",
+      "query": "submitted 2026-10-12..2026-10-26: benchmark OR dataset AND embodied OR robot OR \"world model\"",
+      "source_url": "https://export.arxiv.org/api/query",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "submitted",
+      "date_from": "2026-10-12",
+      "date_to": "2026-10-26",
+      "results_reviewed": 100,
+      "pages_checked": 1,
+      "stop_reason": "API page cap reached after reviewing 100 newest records; overlapping fixed-source and targeted title searches covered shortlisted hits.",
+      "candidate_ids": [
+        "CAND-0006",
+        "CAND-0007",
+        "CAND-0008",
+        "CAND-0011"
+      ]
+    },
+    {
+      "query_id": "Q-E-002",
+      "branch": "E",
+      "query": "updated 2026-10-12..2026-10-26: benchmark OR dataset AND embodied OR robot OR \"world model\"",
+      "source_url": "https://export.arxiv.org/api/query",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "updated",
+      "date_from": "2026-10-12",
+      "date_to": "2026-10-26",
+      "results_reviewed": 100,
+      "pages_checked": 1,
+      "stop_reason": "API page cap reached after reviewing 100 newest records; overlapping fixed-source and targeted title searches covered shortlisted hits.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-E-003",
+      "branch": "E",
+      "query": "release 2026-09-11..2026-10-26: embodied world model benchmark dataset evaluation repositories",
+      "source_url": "https://api.github.com/search/repositories",
+      "executed_at": "2026-10-26T00:01:00+08:00",
+      "date_basis": "release",
+      "date_from": "2026-09-11",
+      "date_to": "2026-10-26",
+      "results_reviewed": 1,
+      "pages_checked": 1,
+      "stop_reason": "Reviewed all returned results.",
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "CAND-0001",
+      "query_id": "Q-A-001",
+      "title": "SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2610.28585",
+      "source_type": "arxiv",
+      "discovered_from": "arXiv submitted sweep and official project page",
+      "why_candidate": "Physics-validated single-image reconstruction with matched real/sim policy-outcome and trajectory-replay tests."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "query_id": "Q-A-001",
+      "title": "NeoWorld-3: From Pixels to Code-Defined Physical Worlds",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2610.27690",
+      "source_type": "arxiv",
+      "discovered_from": "arXiv submitted sweep",
+      "why_candidate": "Executable program representation and physical validation from articulated objects to scenes."
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "query_id": "Q-B-001",
+      "title": "InfiniDream: Open-Ended Photorealistic 3D Worlds Through Procedural Generation",
+      "branch_hint": "B",
+      "source_url": "https://arxiv.org/abs/2610.26853",
+      "source_type": "arxiv",
+      "discovered_from": "arXiv submitted sweep and project page",
+      "why_candidate": "Open-ended procedural assets and large worlds beyond predefined factories."
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "query_id": "Q-D-001",
+      "title": "UniFlowWAM: A Unified World-Action Model with Visual Semantics and 4D Geometry",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.30991",
+      "source_type": "arxiv",
+      "discovered_from": "arXiv submitted sweep and official project page",
+      "why_candidate": "Joint vision, action and scene-flow training with matched policy ablation and real-robot results."
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "query_id": "Q-D-001",
+      "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.30125",
+      "source_type": "arxiv",
+      "discovered_from": "arXiv submitted sweep and official project page",
+      "why_candidate": "Calibrates hidden mass, damping, friction and drag from exploratory interaction without fine-tuning."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "query_id": "Q-E-001",
+      "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.31670",
+      "source_type": "arxiv",
+      "discovered_from": "arXiv submitted sweep and official code/project page",
+      "why_candidate": "Training-free offline metric predicts closed-loop success across policy families and can screen VLM backbones."
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "query_id": "Q-E-001",
+      "title": "PhysTrace: Interpretable Temporal Evaluation of Physical Consistency in Video Generative Models",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.31429",
+      "source_type": "arxiv",
+      "discovered_from": "arXiv submitted sweep and official code release",
+      "why_candidate": "Temporally localizes physical violations and releases IntPhys2-Timing plus a runnable evaluator."
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "query_id": "Q-E-001",
+      "title": "RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.27782",
+      "source_type": "arxiv",
+      "discovered_from": "arXiv submitted sweep and official project/release surfaces",
+      "why_candidate": "Human-annotated embodied-video judge benchmark, training set and specialized evaluator."
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "query_id": "Q-A-001",
+      "title": "AutoPhyX: Automatic Text-Condition Physics Property Generation",
+      "branch_hint": "A",
+      "source_url": "https://arxiv.org/abs/2610.29517",
+      "source_type": "arxiv",
+      "discovered_from": "arXiv submitted sweep and official project page",
+      "why_candidate": "Text-conditioned spatial physical-property fields across meshes, points, Gaussians and NeRFs."
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "query_id": "Q-D-001",
+      "title": "DRILL: Training World Models to Improve Policies, Not Predict Pixels",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.30814",
+      "source_type": "arxiv",
+      "discovered_from": "arXiv submitted sweep",
+      "why_candidate": "Optimizes world models for downstream policy return rather than pixel prediction."
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "query_id": "Q-E-001",
+      "title": "PVBench: Quantifying Physical Plausibility in Video Generation with Object-Level Physical Measurements",
+      "branch_hint": "E",
+      "source_url": "https://arxiv.org/abs/2610.26711",
+      "source_type": "arxiv",
+      "discovered_from": "arXiv submitted sweep",
+      "why_candidate": "Object-level physical measurements across geometry, material, kinematics and conservation laws."
+    }
+  ],
+  "triage": [
+    {
+      "candidate_id": "CAND-0001",
+      "decision": "analyze",
+      "reason": "All scientific gates appear plausible, but required 5-second gravity and robot-execution videos could not be played through the available browser surface.",
+      "revisit_trigger": "Human inspection of the official gravity and robot replay galleries.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "A",
+      "dedupe_status": "new",
+      "source_quality": "primary"
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "decision": "analyze",
+      "reason": "Primary abstract is strong, but no inspectable official project/code surface or controlled tables were found in this run; evidence_strength remains 3.",
+      "revisit_trigger": "Official project/code release with physical-validation protocol and inspectable demonstrations.",
+      "impact_prior": 3,
+      "project_relevance_prior": 4,
+      "primary_branch": "A",
+      "dedupe_status": "new",
+      "source_quality": "primary"
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "decision": "analyze",
+      "reason": "Photorealistic procedural generation is strong, but direct simulation/task interface is not established enough for project_relevance 4.",
+      "revisit_trigger": "Export/collision/robot-task validation or a reusable simulator integration.",
+      "impact_prior": 3,
+      "project_relevance_prior": 3,
+      "primary_branch": "B",
+      "dedupe_status": "new",
+      "source_quality": "primary"
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "decision": "analyze",
+      "reason": "Promising 4D WAM, but the official page says paper/code coming soon; evidence_strength remains 3.",
+      "revisit_trigger": "Paper and code/checkpoint release with reproducible protocol.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "D",
+      "dedupe_status": "new",
+      "source_quality": "primary"
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "decision": "analyze",
+      "reason": "Method and comparisons appear acceptance-grade, but its physics-dependent rollout/planning claims require temporal demo inspection that was unavailable.",
+      "revisit_trigger": "Human inspection of official rollout videos across all four physics environments.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "D",
+      "dedupe_status": "new",
+      "source_quality": "primary"
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "decision": "analyze",
+      "reason": "Reusable released offline metric with controlled correlations across model families and direct policy-screening use.",
+      "revisit_trigger": "n/a",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "E",
+      "dedupe_status": "new",
+      "source_quality": "primary"
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "decision": "analyze",
+      "reason": "Runnable temporal physical-violation evaluator and released timing annotations materially extend scalar plausibility benchmarks.",
+      "revisit_trigger": "n/a",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "E",
+      "dedupe_status": "new",
+      "source_quality": "primary"
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "decision": "analyze",
+      "reason": "Human-labeled embodied-video evaluation and released training/reviewer bundle provide a direct judge for generated rollouts.",
+      "revisit_trigger": "n/a",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "E",
+      "dedupe_status": "new",
+      "source_quality": "primary"
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "decision": "analyze",
+      "reason": "Useful property fields, but current evidence does not show a direct downstream simulator/robot gain; project_relevance remains 3.",
+      "revisit_trigger": "Downstream dynamics, planning, or sim-ready asset validation with released code.",
+      "impact_prior": 3,
+      "project_relevance_prior": 3,
+      "primary_branch": "A",
+      "dedupe_status": "new",
+      "source_quality": "primary"
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "decision": "analyze",
+      "reason": "Substantive reported policy gains, but no reusable official code/project release was found and evidence_strength remains 3.",
+      "revisit_trigger": "Code/checkpoints and a reproducible comparison against maintained policy-utility world-model baselines.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "D",
+      "dedupe_status": "new",
+      "source_quality": "primary"
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "decision": "analyze",
+      "reason": "Potentially decisive metric suite, but the promised benchmark/code/calibration release was not yet available; evidence_strength remains 3.",
+      "revisit_trigger": "Public prompts, metric code and calibration protocol.",
+      "impact_prior": 4,
+      "project_relevance_prior": 4,
+      "primary_branch": "E",
+      "dedupe_status": "new",
+      "source_quality": "primary"
+    }
+  ]
+}

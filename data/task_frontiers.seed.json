@@ -1,6 +1,6 @@
 {
   "lifecycle_schema_version": 1,
-  "updated": "2026-10-20",
+  "updated": "2026-10-26",
   "tasks": [
     {
       "task_id": "a-executable-articulated-scene-programs",
@@ -1502,6 +1502,36 @@
           "paper_url": "https://arxiv.org/abs/2609.28654",
           "role": "unreviewed",
           "reason": "认知生成器、训练语料、固定exam和模型的组合具有核心潜力；标题主张训练后生成物理能力，必须检查真实续写而不能仅以dataset标签豁免。"
+        },
+        {
+          "paper_url": "https://arxiv.org/abs/2610.31429",
+          "role": "current",
+          "reason": "Temporal violation localization is the current recommendation for diagnosing when a generated physical trajectory fails; it complements rather than replaces calibration/coverage tests.",
+          "reviewed_on": "2026-10-26",
+          "evidence": [
+            {
+              "source_url": "https://arxiv.org/abs/2610.31429",
+              "locator": "Abstract and linked official artifact",
+              "claim": "Releases sliding-window evaluator and IntPhys2-Timing; reports up to 70.7% temporal hit rate.",
+              "source_quality": "primary",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "paper_url": "https://arxiv.org/abs/2610.27782",
+          "role": "current",
+          "reason": "Human-validated embodied-video judging is the current recommendation for scalable physical-adherence and instruction-alignment scoring; it complements physics-ground-truth metrics.",
+          "reviewed_on": "2026-10-26",
+          "evidence": [
+            {
+              "source_url": "https://arxiv.org/abs/2610.27782",
+              "locator": "Abstract and linked official artifact",
+              "claim": "800-video benchmark, 12K-video train set and RoboJudge-9B; reports r=0.719 with human scores.",
+              "source_quality": "primary",
+              "status": "verified"
+            }
+          ]
         }
       ]
     },
@@ -2084,6 +2114,34 @@
           "paper_url": "https://arxiv.org/abs/2610.19479",
           "role": "unreviewed",
           "reason": "优化生成分布以提升真实policy是直接核心方法；旧strong只留下页面视频存在与150%数字，未记录实际rollout观察，需重新时序审核。"
+        }
+      ]
+    },
+    {
+      "task_id": "e-offline-embodied-policy-success-proxies",
+      "title": "具身策略成功率的离线代理评测",
+      "branch": "E",
+      "scope": {
+        "input": "已训练或候选VLA/WAM的感知表征、语言特征与已记录末端轨迹。",
+        "output": "与闭环任务成功相关的训练外离线评分和表征诊断。",
+        "setting": "在昂贵闭环rollout或完整微调前筛选策略与视觉语言骨干。",
+        "protocol": "保留模型族、任务环境、轨迹采样、表征层和相关性统计；离线相关不能替代闭环执行，也不能跨未验证域解释为成功保证。"
+      },
+      "members": [
+        {
+          "paper_url": "https://arxiv.org/abs/2610.31670",
+          "role": "current",
+          "reason": "首个在本库中以已发布代码把感知表征邻域与物理运动邻域对齐，并在多类具身模型上验证与任务成功相关的直接离线接口。",
+          "reviewed_on": "2026-10-26",
+          "evidence": [
+            {
+              "source_url": "https://yunfeixie233.github.io/s2/",
+              "locator": "Figure 1; S2 and task success; code and reproduction",
+              "claim": "官方页报告12个VLA在SimplerEnv上S2与成功率Pearson r=0.717，并链接可复用代码。",
+              "source_quality": "official",
+              "status": "verified"
+            }
+          ]
         }
       ]
     }

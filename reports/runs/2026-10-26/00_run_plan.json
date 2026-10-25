@@ -1,0 +1,58 @@
+{
+  "run_id": "2026-10-26",
+  "acceptance_policy_version": 2,
+  "created_at": "2026-10-26T00:07:00+08:00",
+  "branches": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "minimum_year": 2024,
+  "search_windows": {
+    "default_days": 14,
+    "high_priority_days": 45
+  },
+  "branch_queries": {
+    "A": [
+      "submitted 2026-10-12..2026-10-26: articulated OR sim-ready OR URDF OR collision OR \"physical properties\" in cs.RO/cs.CV",
+      "updated 2026-10-12..2026-10-26: articulated OR sim-ready OR URDF OR collision OR \"physical properties\" in cs.RO/cs.CV",
+      "release 2026-09-11..2026-10-26: articulated simulation-ready URDF physics robot repositories"
+    ],
+    "B": [
+      "submitted 2026-10-12..2026-10-26: \"scene generation\" OR \"interactive world\" OR \"procedural generation\" OR \"world generation\"",
+      "updated 2026-10-12..2026-10-26: \"scene generation\" OR \"interactive world\" OR \"procedural generation\" OR \"world generation\"",
+      "release 2026-09-11..2026-10-26: interactive world procedural scene generation embodied repositories"
+    ],
+    "C": [
+      "submitted 2026-10-12..2026-10-26: \"spatial reasoning\" OR \"spatial intelligence\" OR \"embodied reasoning\"",
+      "updated 2026-10-12..2026-10-26: \"spatial reasoning\" OR \"spatial intelligence\" OR \"embodied reasoning\"",
+      "release 2026-09-11..2026-10-26: spatial reasoning embodied 3D benchmark repositories"
+    ],
+    "D": [
+      "submitted 2026-10-12..2026-10-26: \"vision language action\" OR \"world action model\" OR \"robot world model\" OR \"robot policy\"",
+      "updated 2026-10-12..2026-10-26: \"vision language action\" OR \"world action model\" OR \"robot world model\" OR \"robot policy\"",
+      "release 2026-09-11..2026-10-26: VLA world action model robot repositories"
+    ],
+    "E": [
+      "submitted 2026-10-12..2026-10-26: benchmark OR dataset AND embodied OR robot OR \"world model\"",
+      "updated 2026-10-12..2026-10-26: benchmark OR dataset AND embodied OR robot OR \"world model\"",
+      "release 2026-09-11..2026-10-26: embodied world model benchmark dataset evaluation repositories"
+    ]
+  },
+  "backfill": {
+    "last_completed": "2026-10-20",
+    "due": false,
+    "notes": "The full 168-paper primary-source retrospective completed on 2026-10-20; this run still followed one-hop predecessor links for shortlisted candidates."
+  },
+  "known_registry_path": "data/papers.seed.json",
+  "follow_sources_path": "data/follow_sources.seed.json",
+  "task_frontiers_path": "data/task_frontiers.seed.json",
+  "harness_paths": [
+    "harness/system_harness.md",
+    "harness/artifact_contracts.md",
+    "harness/acceptance_harness.md",
+    "harness/task_lifecycle.md"
+  ]
+}

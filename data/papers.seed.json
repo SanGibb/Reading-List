@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "updated": "2026-10-20",
+  "updated": "2026-10-26",
   "branches": [
     {
       "id": "A",
@@ -5914,6 +5914,81 @@
           ],
           "impact_score": 4,
           "project_relevance_score": 5
+        },
+        {
+          "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
+          "venue": "arXiv",
+          "data": "Twelve VLAs on SimplerEnv plus WAM, real-robot and frozen-backbone analyses.",
+          "method": "Training-free neighborhood-overlap metric compares sensory representation geometry with end-effector trajectory geometry.",
+          "task": "Offline screening and diagnosis of embodied policies and candidate backbones.",
+          "novelty": "Introduces sensorimotor alignment as an inexpensive representation-level proxy for closed-loop success.",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2610.31670",
+          "source_quality": "primary",
+          "demo_score": 4,
+          "evidence_strength": 4,
+          "project_relevance": "A direct pre-rollout validator for prioritizing VLA/WAM baselines and backbone candidates.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/sensorimotor-alignment-2026.md",
+          "acceptance_policy_version": 2,
+          "impact_score": 4,
+          "project_relevance_score": 4,
+          "requires_visual_review": false,
+          "requires_temporal_demo": false,
+          "task_ids": [
+            "e-offline-embodied-policy-success-proxies"
+          ]
+        },
+        {
+          "title": "PhysTrace: Interpretable Temporal Evaluation of Physical Consistency in Video Generative Models",
+          "venue": "arXiv",
+          "data": "IntPhys2 plus new interval annotations for solidity, permanence, immutability and continuity.",
+          "method": "History-conditioned expected events are aligned with overlapping observed video windows to localize violations.",
+          "task": "Temporal localization and explanation of physical-consistency failures in generated video.",
+          "novelty": "Moves beyond scalar plausibility to time-localized, interpretable physical violations and releases annotations/code.",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2610.31429",
+          "source_quality": "primary",
+          "demo_score": 4,
+          "evidence_strength": 4,
+          "project_relevance": "A direct validator for generated world-model rollouts and reconstruction trajectories.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/phystrace-2026.md",
+          "acceptance_policy_version": 2,
+          "impact_score": 4,
+          "project_relevance_score": 4,
+          "requires_visual_review": false,
+          "requires_temporal_demo": false,
+          "task_ids": [
+            "e-physical-future-outcome-evaluation"
+          ]
+        },
+        {
+          "title": "RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation",
+          "venue": "arXiv",
+          "data": "800 benchmark videos from 8 corpora/10 generators and 12,351 training videos with human-verified scores.",
+          "method": "Benchmark plus a 9B MLLM judge trained with supervised learning and reinforcement learning.",
+          "task": "Judge physical adherence and instruction alignment of generated embodied videos.",
+          "novelty": "Systematically validates judge-human agreement for embodied rollouts and releases a specialized training/evaluation bundle.",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2610.27782",
+          "source_quality": "primary",
+          "demo_score": 4,
+          "evidence_strength": 4,
+          "project_relevance": "A direct automated evaluator for candidate embodied-video/world-model rollouts.",
+          "visual_quality_score": 0,
+          "visual_quality_decision": "not_applicable",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/robojudge-2026.md",
+          "acceptance_policy_version": 2,
+          "impact_score": 4,
+          "project_relevance_score": 4,
+          "requires_visual_review": false,
+          "requires_temporal_demo": false,
+          "task_ids": [
+            "e-physical-future-outcome-evaluation"
+          ]
         }
       ]
     }

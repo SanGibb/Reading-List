@@ -1,0 +1,513 @@
+{
+  "run_id": "2026-10-26",
+  "paper_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "title": "SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.28585",
+      "paper_ids": {
+        "arxiv": "2610.28585",
+        "doi": "",
+        "openreview": "",
+        "project": "https://red-fairy.github.io/SceneRig/",
+        "github": "https://github.com/Red-Fairy/SceneRig"
+      },
+      "primary_branch": "A",
+      "secondary_branches": [],
+      "data": "44 simulator-grounded scenes, 80-scene stability set, 100 real policy episodes and 25 replay demonstrations.",
+      "method": "Agentic geometry/appearance reconstruction followed by edit-and-validate loops in a physics simulator.",
+      "source_quality": "primary",
+      "task": "Single-image reconstruction of editable, stable, simulation-ready robot workspaces.",
+      "novelty": "Tests whether reconstructed scenes predict real policy outcomes and support unadapted trajectory replay.",
+      "evidence": "Official page reports 100% all-object stability versus 10.0% for VIGA and 80% replay success versus 36% for SimFoundry.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "claim_checks": [
+        {
+          "claim": "Official page reports 100% all-object stability versus 10.0% for VIGA and 80% replay success versus 36% for SimFoundry.",
+          "source": "https://arxiv.org/abs/2610.28585",
+          "status": "verified",
+          "used_for_acceptance": true,
+          "notes": "Primary arXiv record and linked official artifact checked; results remain author-reported."
+        }
+      ],
+      "limitations": "Fresh release; no independent reproduction was performed and cross-paper protocols are not assumed comparable.",
+      "project_relevance": "Direct baseline and validation protocol for image-to-simulation reconstruction."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "title": "NeoWorld-3: From Pixels to Code-Defined Physical Worlds",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.27690",
+      "paper_ids": {
+        "arxiv": "2610.27690",
+        "doi": "",
+        "openreview": "",
+        "project": "",
+        "github": ""
+      },
+      "primary_branch": "A",
+      "secondary_branches": [],
+      "data": "Object- and scene-level reconstruction benchmarks plus real-sim-real robot transfer.",
+      "method": "Coding agents use NeoSDK geometry/physics tools and NeoMCP APIs to iteratively edit executable programs.",
+      "source_quality": "primary",
+      "task": "Reconstruct code-defined physical objects and scenes from images.",
+      "novelty": "Extends executable reconstruction from standalone articulated assets to compositional scenes with physical validation.",
+      "evidence": "Primary abstract reports geometric/physical readiness evaluation and zero-shot dual-arm real-sim-real execution.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "claim_checks": [
+        {
+          "claim": "Primary abstract reports geometric/physical readiness evaluation and zero-shot dual-arm real-sim-real execution.",
+          "source": "https://arxiv.org/abs/2610.27690",
+          "status": "verified",
+          "used_for_acceptance": true,
+          "notes": "Primary arXiv record and linked official artifact checked; results remain author-reported."
+        }
+      ],
+      "limitations": "Fresh release; no independent reproduction was performed and cross-paper protocols are not assumed comparable.",
+      "project_relevance": "Potential executable-world compiler baseline; evidence/release maturity is not yet sufficient."
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "title": "InfiniDream: Open-Ended Photorealistic 3D Worlds Through Procedural Generation",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.26853",
+      "paper_ids": {
+        "arxiv": "2610.26853",
+        "doi": "",
+        "openreview": "",
+        "project": "https://yichuanh.github.io/infinidream-page/",
+        "github": ""
+      },
+      "primary_branch": "B",
+      "secondary_branches": [],
+      "data": "100 object and 20 scene tasks with perceptual metrics and human preferences.",
+      "method": "Symbolically constrained asset generation plus frustum-guided procedural world placement.",
+      "source_quality": "primary",
+      "task": "Text-to-editable procedural assets and large-scale 3D worlds.",
+      "novelty": "Creates novel procedural asset types beyond fixed factories while retaining seed diversity.",
+      "evidence": "Primary abstract reports controlled object/scene evaluation, diversity analysis and human preference study.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": false,
+      "claim_checks": [
+        {
+          "claim": "Primary abstract reports controlled object/scene evaluation, diversity analysis and human preference study.",
+          "source": "https://arxiv.org/abs/2610.26853",
+          "status": "verified",
+          "used_for_acceptance": true,
+          "notes": "Primary arXiv record and linked official artifact checked; results remain author-reported."
+        }
+      ],
+      "limitations": "Fresh release; no independent reproduction was performed and cross-paper protocols are not assumed comparable.",
+      "project_relevance": "Useful PCG reference, but direct embodied simulator use remains unproven."
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "title": "UniFlowWAM: A Unified World-Action Model with Visual Semantics and 4D Geometry",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.30991",
+      "paper_ids": {
+        "arxiv": "2610.30991",
+        "doi": "",
+        "openreview": "",
+        "project": "https://kksham111.github.io/UniFlowWAM_ProjectPage/",
+        "github": ""
+      },
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "data": "214,443 episodes, RoboCasa-GR1, LIBERO/Plus and four real bimanual tasks.",
+      "method": "Three-expert diffusion transformer jointly models future visual features, scene flow and actions under ten role assignments.",
+      "source_quality": "primary",
+      "task": "Unified action, forward/inverse dynamics and 4D flow prediction.",
+      "novelty": "Makes scene flow a co-equal supervised modality inside a unified policy rather than an auxiliary module.",
+      "evidence": "Official page reports 56.4% mean RoboCasa-GR1 and 87.0% real-robot success versus 68.5% strongest baseline.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "claim_checks": [
+        {
+          "claim": "Official page reports 56.4% mean RoboCasa-GR1 and 87.0% real-robot success versus 68.5% strongest baseline.",
+          "source": "https://arxiv.org/abs/2610.30991",
+          "status": "verified",
+          "used_for_acceptance": true,
+          "notes": "Primary arXiv record and linked official artifact checked; results remain author-reported."
+        }
+      ],
+      "limitations": "Fresh release; no independent reproduction was performed and cross-paper protocols are not assumed comparable.",
+      "project_relevance": "Direct 4D WAM baseline, but paper and code were still marked coming soon."
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.30125",
+      "paper_ids": {
+        "arxiv": "2610.30125",
+        "doi": "",
+        "openreview": "",
+        "project": "https://physical-world.github.io/",
+        "github": "https://github.com/DevinLuo27/PhysiCalWorld"
+      },
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "data": "Four simulated environments varying mass, mass distribution, joint damping, friction and air drag.",
+      "method": "An interaction context encoder creates a reusable physics descriptor token for an action-conditioned world model.",
+      "source_quality": "primary",
+      "task": "Calibrate future rollouts to instance-specific hidden physics at test time.",
+      "novelty": "Performs label-free in-context calibration without fine-tuning or analytical system identification.",
+      "evidence": "Official page documents four physics environments and reports improved prediction and planning after calibration.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "claim_checks": [
+        {
+          "claim": "Official page documents four physics environments and reports improved prediction and planning after calibration.",
+          "source": "https://arxiv.org/abs/2610.30125",
+          "status": "verified",
+          "used_for_acceptance": true,
+          "notes": "Primary arXiv record and linked official artifact checked; results remain author-reported."
+        }
+      ],
+      "limitations": "Fresh release; no independent reproduction was performed and cross-paper protocols are not assumed comparable.",
+      "project_relevance": "Direct baseline for hidden-dynamics adaptation and rollout validation."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.31670",
+      "paper_ids": {
+        "arxiv": "2610.31670",
+        "doi": "",
+        "openreview": "",
+        "project": "https://yunfeixie233.github.io/s2/",
+        "github": "https://github.com/yunfeixie233/sensorimotor-alignment"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "data": "Twelve VLAs on SimplerEnv plus WAM, real-robot and frozen-backbone analyses.",
+      "method": "Training-free neighborhood-overlap metric compares sensory representation geometry with end-effector trajectory geometry.",
+      "source_quality": "primary",
+      "task": "Offline screening and diagnosis of embodied policies and candidate backbones.",
+      "novelty": "Introduces sensorimotor alignment as an inexpensive representation-level proxy for closed-loop success.",
+      "evidence": "Official project page reports Pearson r=0.717 across 12 VLAs on SimplerEnv and releases code.",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "claim_checks": [
+        {
+          "claim": "Official project page reports Pearson r=0.717 across 12 VLAs on SimplerEnv and releases code.",
+          "source": "https://arxiv.org/abs/2610.31670",
+          "status": "verified",
+          "used_for_acceptance": true,
+          "notes": "Primary arXiv record and linked official artifact checked; results remain author-reported."
+        }
+      ],
+      "limitations": "Fresh release; no independent reproduction was performed and cross-paper protocols are not assumed comparable.",
+      "project_relevance": "A direct pre-rollout validator for prioritizing VLA/WAM baselines and backbone candidates."
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "title": "PhysTrace: Interpretable Temporal Evaluation of Physical Consistency in Video Generative Models",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.31429",
+      "paper_ids": {
+        "arxiv": "2610.31429",
+        "doi": "",
+        "openreview": "",
+        "project": "",
+        "github": "https://github.com/PhysTrace/PhysTrace"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "data": "IntPhys2 plus new interval annotations for solidity, permanence, immutability and continuity.",
+      "method": "History-conditioned expected events are aligned with overlapping observed video windows to localize violations.",
+      "source_quality": "primary",
+      "task": "Temporal localization and explanation of physical-consistency failures in generated video.",
+      "novelty": "Moves beyond scalar plausibility to time-localized, interpretable physical violations and releases annotations/code.",
+      "evidence": "Primary paper reports up to 70.7% hit rate; official repository includes evaluator, web demo and IntPhys2-Timing annotations.",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "claim_checks": [
+        {
+          "claim": "Primary paper reports up to 70.7% hit rate; official repository includes evaluator, web demo and IntPhys2-Timing annotations.",
+          "source": "https://arxiv.org/abs/2610.31429",
+          "status": "verified",
+          "used_for_acceptance": true,
+          "notes": "Primary arXiv record and linked official artifact checked; results remain author-reported."
+        }
+      ],
+      "limitations": "Fresh release; no independent reproduction was performed and cross-paper protocols are not assumed comparable.",
+      "project_relevance": "A direct validator for generated world-model rollouts and reconstruction trajectories."
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "title": "RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.27782",
+      "paper_ids": {
+        "arxiv": "2610.27782",
+        "doi": "",
+        "openreview": "",
+        "project": "https://siyuanmacs.github.io/robojudge-iclr2027/",
+        "github": "https://github.com/SiyuanMaCS/robojudge-iclr2027"
+      },
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "data": "800 benchmark videos from 8 corpora/10 generators and 12,351 training videos with human-verified scores.",
+      "method": "Benchmark plus a 9B MLLM judge trained with supervised learning and reinforcement learning.",
+      "source_quality": "primary",
+      "task": "Judge physical adherence and instruction alignment of generated embodied videos.",
+      "novelty": "Systematically validates judge-human agreement for embodied rollouts and releases a specialized training/evaluation bundle.",
+      "evidence": "Primary paper reports r=0.719 and +0.089 over the strongest proprietary baseline; official reviewer bundle exposes labels, predictions, prompts and checkpoint links.",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "claim_checks": [
+        {
+          "claim": "Primary paper reports r=0.719 and +0.089 over the strongest proprietary baseline; official reviewer bundle exposes labels, predictions, prompts and checkpoint links.",
+          "source": "https://arxiv.org/abs/2610.27782",
+          "status": "verified",
+          "used_for_acceptance": true,
+          "notes": "Primary arXiv record and linked official artifact checked; results remain author-reported."
+        }
+      ],
+      "limitations": "Fresh release; no independent reproduction was performed and cross-paper protocols are not assumed comparable.",
+      "project_relevance": "A direct automated evaluator for candidate embodied-video/world-model rollouts."
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "title": "AutoPhyX: Automatic Text-Condition Physics Property Generation",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.29517",
+      "paper_ids": {
+        "arxiv": "2610.29517",
+        "doi": "",
+        "openreview": "",
+        "project": "https://hb-pencil-zero.github.io/AutoPhyX/",
+        "github": ""
+      },
+      "primary_branch": "A",
+      "secondary_branches": [],
+      "data": "Part-controllable generated 3D assets paired with text and spatially varying physical parameters.",
+      "method": "Cross-modal modulation predicts voxel physical-property fields compatible with multiple 3D representations.",
+      "source_quality": "primary",
+      "task": "Text-conditioned spatial physical-property assignment.",
+      "novelty": "Addresses visual ambiguity in stiffness/material properties with explicit language conditioning.",
+      "evidence": "Primary abstract reports feed-forward assignment and in-the-wild generalization across mesh/point/Gaussian/NeRF inputs.",
+      "requires_visual_review": true,
+      "requires_temporal_demo": true,
+      "claim_checks": [
+        {
+          "claim": "Primary abstract reports feed-forward assignment and in-the-wild generalization across mesh/point/Gaussian/NeRF inputs.",
+          "source": "https://arxiv.org/abs/2610.29517",
+          "status": "verified",
+          "used_for_acceptance": true,
+          "notes": "Primary arXiv record and linked official artifact checked; results remain author-reported."
+        }
+      ],
+      "limitations": "Fresh release; no independent reproduction was performed and cross-paper protocols are not assumed comparable.",
+      "project_relevance": "Potential asset-property field generator, but no downstream simulator/task validation yet."
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "title": "DRILL: Training World Models to Improve Policies, Not Predict Pixels",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.30814",
+      "paper_ids": {
+        "arxiv": "2610.30814",
+        "doi": "",
+        "openreview": "",
+        "project": "",
+        "github": ""
+      },
+      "primary_branch": "D",
+      "secondary_branches": [],
+      "data": "Five manipulation simulators and two VLA backbones.",
+      "method": "Bilevel return-optimized world-model training through closed-form reweighting or meta-gradients.",
+      "source_quality": "primary",
+      "task": "Train imagined rollouts for policy improvement rather than next-frame fidelity.",
+      "novelty": "Demonstrates that pixel error can anti-correlate with policy utility and optimizes the downstream return directly.",
+      "evidence": "Primary abstract reports +13.1 success points over WMPO and +7.9 over RLVR-World.",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "claim_checks": [
+        {
+          "claim": "Primary abstract reports +13.1 success points over WMPO and +7.9 over RLVR-World.",
+          "source": "https://arxiv.org/abs/2610.30814",
+          "status": "verified",
+          "used_for_acceptance": true,
+          "notes": "Primary arXiv record and linked official artifact checked; results remain author-reported."
+        }
+      ],
+      "limitations": "Fresh release; no independent reproduction was performed and cross-paper protocols are not assumed comparable.",
+      "project_relevance": "Direct policy-utility WAM baseline; release is needed for evidence strength 4."
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "title": "PVBench: Quantifying Physical Plausibility in Video Generation with Object-Level Physical Measurements",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.26711",
+      "paper_ids": {
+        "arxiv": "2610.26711",
+        "doi": "",
+        "openreview": "",
+        "project": "",
+        "github": ""
+      },
+      "primary_branch": "E",
+      "secondary_branches": [],
+      "data": "600 prompts and 46 dimensions across seven physical/semantic/perceptual domains.",
+      "method": "Specialized vision estimators derive object-level pose, scale, normals, kinematics and conservation residuals.",
+      "source_quality": "primary",
+      "task": "Quantify physical plausibility of text/image-conditioned generated videos.",
+      "novelty": "Replaces broad judge-only scores with object-level physical measurements and human calibration.",
+      "evidence": "Primary abstract documents 600 prompts, 46 dimensions and human-alignment validation.",
+      "requires_visual_review": false,
+      "requires_temporal_demo": false,
+      "claim_checks": [
+        {
+          "claim": "Primary abstract documents 600 prompts, 46 dimensions and human-alignment validation.",
+          "source": "https://arxiv.org/abs/2610.26711",
+          "status": "verified",
+          "used_for_acceptance": true,
+          "notes": "Primary arXiv record and linked official artifact checked; results remain author-reported."
+        }
+      ],
+      "limitations": "Fresh release; no independent reproduction was performed and cross-paper protocols are not assumed comparable.",
+      "project_relevance": "Direct validator candidate, pending the promised public benchmark release."
+    }
+  ],
+  "demo_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "project_url": "https://red-fairy.github.io/SceneRig/",
+      "code_url": "https://github.com/Red-Fairy/SceneRig",
+      "demo_url": "https://red-fairy.github.io/SceneRig/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 4,
+      "demo_notes": "Official artifacts were checked; media playback limits are recorded in the visual review.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "project_url": "",
+      "code_url": "",
+      "demo_url": "",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 1,
+      "demo_notes": "Official artifacts were checked; media playback limits are recorded in the visual review.",
+      "verification_status": "partial"
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "project_url": "https://yichuanh.github.io/infinidream-page/",
+      "code_url": "",
+      "demo_url": "https://yichuanh.github.io/infinidream-page/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 3,
+      "demo_notes": "Official artifacts were checked; media playback limits are recorded in the visual review.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "project_url": "https://kksham111.github.io/UniFlowWAM_ProjectPage/",
+      "code_url": "",
+      "demo_url": "https://kksham111.github.io/UniFlowWAM_ProjectPage/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 3,
+      "demo_notes": "Official artifacts were checked; media playback limits are recorded in the visual review.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "project_url": "https://physical-world.github.io/",
+      "code_url": "https://github.com/DevinLuo27/PhysiCalWorld",
+      "demo_url": "https://physical-world.github.io/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 4,
+      "demo_notes": "Official artifacts were checked; media playback limits are recorded in the visual review.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "project_url": "https://yunfeixie233.github.io/s2/",
+      "code_url": "https://github.com/yunfeixie233/sensorimotor-alignment",
+      "demo_url": "https://yunfeixie233.github.io/s2/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 4,
+      "demo_notes": "Official artifacts were checked; media playback limits are recorded in the visual review.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "project_url": "",
+      "code_url": "https://github.com/PhysTrace/PhysTrace",
+      "demo_url": "",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 4,
+      "demo_notes": "Official artifacts were checked; media playback limits are recorded in the visual review.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "project_url": "https://siyuanmacs.github.io/robojudge-iclr2027/",
+      "code_url": "https://github.com/SiyuanMaCS/robojudge-iclr2027",
+      "demo_url": "https://siyuanmacs.github.io/robojudge-iclr2027/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 4,
+      "demo_notes": "Official artifacts were checked; media playback limits are recorded in the visual review.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "project_url": "https://hb-pencil-zero.github.io/AutoPhyX/",
+      "code_url": "",
+      "demo_url": "https://hb-pencil-zero.github.io/AutoPhyX/",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 3,
+      "demo_notes": "Official artifacts were checked; media playback limits are recorded in the visual review.",
+      "verification_status": "verified"
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "project_url": "",
+      "code_url": "",
+      "demo_url": "",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 1,
+      "demo_notes": "Official artifacts were checked; media playback limits are recorded in the visual review.",
+      "verification_status": "partial"
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "project_url": "",
+      "code_url": "",
+      "demo_url": "",
+      "checkpoint_url": "",
+      "leaderboard_url": "",
+      "demo_score": 1,
+      "demo_notes": "Official artifacts were checked; media playback limits are recorded in the visual review.",
+      "verification_status": "partial"
+    }
+  ]
+}

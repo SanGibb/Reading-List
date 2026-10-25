@@ -1,0 +1,478 @@
+{
+  "run_id": "2026-10-26",
+  "visual_cards": [
+    {
+      "candidate_id": "CAND-0001",
+      "visual_materials": [
+        "https://red-fairy.github.io/SceneRig/",
+        "https://arxiv.org/abs/2610.28585"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_abstract"
+      ],
+      "inspection_evidence": [
+        {
+          "url": "https://red-fairy.github.io/SceneRig/",
+          "modality": "interactive_demo",
+          "locator": "Official page video gallery; playback unavailable in the current browser surface",
+          "observation": "The page exposes the required motion evidence and quantitative protocol, but the moving content was not successfully played, so no motion-quality claim is made.",
+          "limitations": "Temporal behavior, collision/contact continuity and failure cases remain unjudged."
+        }
+      ],
+      "visual_quality_score": 1,
+      "visual_quality_decision": "undecided",
+      "not_applicable_reason": "",
+      "visual_notes": "No visual claim was inferred from a linked-but-unplayed video.",
+      "failure_modes": [
+        "Author-reported evidence; no independent reproduction."
+      ],
+      "needs_human_decision": true,
+      "undecided_reason": "Required temporal evidence could not be played confidently; see local dossier."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.27690"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_abstract"
+      ],
+      "inspection_evidence": [],
+      "visual_quality_score": 2,
+      "visual_quality_decision": "weak",
+      "not_applicable_reason": "",
+      "visual_notes": "No visual claim was inferred from a linked-but-unplayed video.",
+      "failure_modes": [
+        "Author-reported evidence; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "visual_materials": [
+        "https://yichuanh.github.io/infinidream-page/",
+        "https://arxiv.org/abs/2610.26853"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_abstract"
+      ],
+      "inspection_evidence": [],
+      "visual_quality_score": 2,
+      "visual_quality_decision": "weak",
+      "not_applicable_reason": "",
+      "visual_notes": "No visual claim was inferred from a linked-but-unplayed video.",
+      "failure_modes": [
+        "Author-reported evidence; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "visual_materials": [
+        "https://kksham111.github.io/UniFlowWAM_ProjectPage/",
+        "https://arxiv.org/abs/2610.30991"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_abstract"
+      ],
+      "inspection_evidence": [],
+      "visual_quality_score": 2,
+      "visual_quality_decision": "weak",
+      "not_applicable_reason": "",
+      "visual_notes": "No visual claim was inferred from a linked-but-unplayed video.",
+      "failure_modes": [
+        "Author-reported evidence; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "visual_materials": [
+        "https://physical-world.github.io/",
+        "https://arxiv.org/abs/2610.30125"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_abstract"
+      ],
+      "inspection_evidence": [
+        {
+          "url": "https://physical-world.github.io/",
+          "modality": "interactive_demo",
+          "locator": "Official page video gallery; playback unavailable in the current browser surface",
+          "observation": "The page exposes the required motion evidence and quantitative protocol, but the moving content was not successfully played, so no motion-quality claim is made.",
+          "limitations": "Temporal behavior, collision/contact continuity and failure cases remain unjudged."
+        }
+      ],
+      "visual_quality_score": 1,
+      "visual_quality_decision": "undecided",
+      "not_applicable_reason": "",
+      "visual_notes": "No visual claim was inferred from a linked-but-unplayed video.",
+      "failure_modes": [
+        "Author-reported evidence; no independent reproduction."
+      ],
+      "needs_human_decision": true,
+      "undecided_reason": "Required temporal evidence could not be played confidently; see local dossier."
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "visual_materials": [
+        "https://yunfeixie233.github.io/s2/",
+        "https://arxiv.org/abs/2610.31670"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_abstract"
+      ],
+      "inspection_evidence": [],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "not_applicable_reason": "This is evaluation infrastructure; acceptance uses metric protocol, released code/data, and controlled human/closed-loop correlations rather than generated visual quality.",
+      "visual_notes": "No visual claim was inferred from a linked-but-unplayed video.",
+      "failure_modes": [
+        "Author-reported evidence; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.31429"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_abstract"
+      ],
+      "inspection_evidence": [],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "not_applicable_reason": "This is evaluation infrastructure; acceptance uses metric protocol, released code/data, and controlled human/closed-loop correlations rather than generated visual quality.",
+      "visual_notes": "No visual claim was inferred from a linked-but-unplayed video.",
+      "failure_modes": [
+        "Author-reported evidence; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "visual_materials": [
+        "https://siyuanmacs.github.io/robojudge-iclr2027/",
+        "https://arxiv.org/abs/2610.27782"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_abstract"
+      ],
+      "inspection_evidence": [],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "not_applicable_reason": "This is evaluation infrastructure; acceptance uses metric protocol, released code/data, and controlled human/closed-loop correlations rather than generated visual quality.",
+      "visual_notes": "No visual claim was inferred from a linked-but-unplayed video.",
+      "failure_modes": [
+        "Author-reported evidence; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "visual_materials": [
+        "https://hb-pencil-zero.github.io/AutoPhyX/",
+        "https://arxiv.org/abs/2610.29517"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_abstract"
+      ],
+      "inspection_evidence": [],
+      "visual_quality_score": 2,
+      "visual_quality_decision": "weak",
+      "not_applicable_reason": "",
+      "visual_notes": "No visual claim was inferred from a linked-but-unplayed video.",
+      "failure_modes": [
+        "Author-reported evidence; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.30814"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_abstract"
+      ],
+      "inspection_evidence": [],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "not_applicable_reason": "Below at least one non-visual admission threshold; no visual decision is used for acceptance.",
+      "visual_notes": "No visual claim was inferred from a linked-but-unplayed video.",
+      "failure_modes": [
+        "Author-reported evidence; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "visual_materials": [
+        "https://arxiv.org/abs/2610.26711"
+      ],
+      "inspected_modalities": [
+        "project_page",
+        "paper_abstract"
+      ],
+      "inspection_evidence": [],
+      "visual_quality_score": 0,
+      "visual_quality_decision": "not_applicable",
+      "not_applicable_reason": "Below at least one non-visual admission threshold; no visual decision is used for acceptance.",
+      "visual_notes": "No visual claim was inferred from a linked-but-unplayed video.",
+      "failure_modes": [
+        "Author-reported evidence; no independent reproduction."
+      ],
+      "needs_human_decision": false,
+      "undecided_reason": ""
+    }
+  ],
+  "quality_review": [
+    {
+      "candidate_id": "CAND-0001",
+      "review_decision": "block",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "selection_basis": "substantial_improvement",
+      "acceptance_rationale": "Blocked by evidence/relevance threshold or unresolved required temporal inspection.",
+      "comparison_to_registry": {
+        "closest_paper": "none",
+        "material_difference": "Candidate did not pass all admission gates in this run.",
+        "why_new_entry": "Keep on watchlist or local-only undecided until the stated trigger is satisfied."
+      },
+      "issues": [
+        "All scientific gates appear plausible, but required 5-second gravity and robot-execution videos could not be played through the available browser surface."
+      ],
+      "required_fixes": [
+        "Human inspection of the official gravity and robot replay galleries."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "review_decision": "block",
+      "impact_score": 3,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "selection_basis": "substantial_improvement",
+      "acceptance_rationale": "Blocked by evidence/relevance threshold or unresolved required temporal inspection.",
+      "comparison_to_registry": {
+        "closest_paper": "none",
+        "material_difference": "Candidate did not pass all admission gates in this run.",
+        "why_new_entry": "Keep on watchlist or local-only undecided until the stated trigger is satisfied."
+      },
+      "issues": [
+        "Primary abstract is strong, but no inspectable official project/code surface or controlled tables were found in this run; evidence_strength remains 3."
+      ],
+      "required_fixes": [
+        "Official project/code release with physical-validation protocol and inspectable demonstrations."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0003",
+      "review_decision": "block",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "selection_basis": "substantial_improvement",
+      "acceptance_rationale": "Blocked by evidence/relevance threshold or unresolved required temporal inspection.",
+      "comparison_to_registry": {
+        "closest_paper": "none",
+        "material_difference": "Candidate did not pass all admission gates in this run.",
+        "why_new_entry": "Keep on watchlist or local-only undecided until the stated trigger is satisfied."
+      },
+      "issues": [
+        "Photorealistic procedural generation is strong, but direct simulation/task interface is not established enough for project_relevance 4."
+      ],
+      "required_fixes": [
+        "Export/collision/robot-task validation or a reusable simulator integration."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0004",
+      "review_decision": "block",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "selection_basis": "substantial_improvement",
+      "acceptance_rationale": "Blocked by evidence/relevance threshold or unresolved required temporal inspection.",
+      "comparison_to_registry": {
+        "closest_paper": "none",
+        "material_difference": "Candidate did not pass all admission gates in this run.",
+        "why_new_entry": "Keep on watchlist or local-only undecided until the stated trigger is satisfied."
+      },
+      "issues": [
+        "Promising 4D WAM, but the official page says paper/code coming soon; evidence_strength remains 3."
+      ],
+      "required_fixes": [
+        "Paper and code/checkpoint release with reproducible protocol."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0005",
+      "review_decision": "block",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "selection_basis": "substantial_improvement",
+      "acceptance_rationale": "Blocked by evidence/relevance threshold or unresolved required temporal inspection.",
+      "comparison_to_registry": {
+        "closest_paper": "none",
+        "material_difference": "Candidate did not pass all admission gates in this run.",
+        "why_new_entry": "Keep on watchlist or local-only undecided until the stated trigger is satisfied."
+      },
+      "issues": [
+        "Method and comparisons appear acceptance-grade, but its physics-dependent rollout/planning claims require temporal demo inspection that was unavailable."
+      ],
+      "required_fixes": [
+        "Human inspection of official rollout videos across all four physics environments."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0006",
+      "review_decision": "pass",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "selection_basis": "reusable_infrastructure",
+      "acceptance_rationale": "Code-released metric supplies a low-cost gate before expensive rollouts and is validated across distinct embodied model families.",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2610.07597",
+        "material_difference": "Adds a training-free representation metric that predicts policy success before closed-loop rollout.",
+        "why_new_entry": "The metric and released code are not covered by a robustness benchmark."
+      },
+      "issues": [
+        "Author-reported results are not independently reproduced."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0007",
+      "review_decision": "pass",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "selection_basis": "decisive_evaluation",
+      "acceptance_rationale": "Runnable evaluator plus timing annotations directly localize when physical expectations fail, enabling actionable model diagnosis.",
+      "comparison_to_registry": {
+        "closest_paper": "https://arxiv.org/abs/2601.21282",
+        "material_difference": "Adds temporal intervals and explanations rather than only concept-level or clip-level physical scores.",
+        "why_new_entry": "Released evaluator and timing annotations create new diagnostic knowledge."
+      },
+      "issues": [
+        "Author-reported results are not independently reproduced."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0008",
+      "review_decision": "pass",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 4,
+      "selection_basis": "reusable_infrastructure",
+      "acceptance_rationale": "Human-labeled benchmark, training corpus and specialized released judge create a reusable evaluation stack for embodied rollouts.",
+      "comparison_to_registry": {
+        "closest_paper": "https://openaccess.thecvf.com/content/CVPR2026W/GigaBrainChallenge/html/Jiang_RoboWM-Bench_A_Benchmark_for_Evaluating_World_Models_in_Robotic_Manipulation_CVPRW_2026_paper.html",
+        "material_difference": "Validates automated judge agreement on generated embodied videos and releases human labels plus a specialized judge.",
+        "why_new_entry": "Existing rollout benchmarks score model outputs/tasks but do not benchmark the judge itself at this scale."
+      },
+      "issues": [
+        "Author-reported results are not independently reproduced."
+      ],
+      "required_fixes": [],
+      "accepted_for_registry": true
+    },
+    {
+      "candidate_id": "CAND-0009",
+      "review_decision": "block",
+      "impact_score": 3,
+      "project_relevance_score": 3,
+      "evidence_strength": 3,
+      "selection_basis": "substantial_improvement",
+      "acceptance_rationale": "Blocked by evidence/relevance threshold or unresolved required temporal inspection.",
+      "comparison_to_registry": {
+        "closest_paper": "none",
+        "material_difference": "Candidate did not pass all admission gates in this run.",
+        "why_new_entry": "Keep on watchlist or local-only undecided until the stated trigger is satisfied."
+      },
+      "issues": [
+        "Useful property fields, but current evidence does not show a direct downstream simulator/robot gain; project_relevance remains 3."
+      ],
+      "required_fixes": [
+        "Downstream dynamics, planning, or sim-ready asset validation with released code."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0010",
+      "review_decision": "block",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "selection_basis": "substantial_improvement",
+      "acceptance_rationale": "Blocked by evidence/relevance threshold or unresolved required temporal inspection.",
+      "comparison_to_registry": {
+        "closest_paper": "none",
+        "material_difference": "Candidate did not pass all admission gates in this run.",
+        "why_new_entry": "Keep on watchlist or local-only undecided until the stated trigger is satisfied."
+      },
+      "issues": [
+        "Substantive reported policy gains, but no reusable official code/project release was found and evidence_strength remains 3."
+      ],
+      "required_fixes": [
+        "Code/checkpoints and a reproducible comparison against maintained policy-utility world-model baselines."
+      ],
+      "accepted_for_registry": false
+    },
+    {
+      "candidate_id": "CAND-0011",
+      "review_decision": "block",
+      "impact_score": 4,
+      "project_relevance_score": 4,
+      "evidence_strength": 3,
+      "selection_basis": "substantial_improvement",
+      "acceptance_rationale": "Blocked by evidence/relevance threshold or unresolved required temporal inspection.",
+      "comparison_to_registry": {
+        "closest_paper": "none",
+        "material_difference": "Candidate did not pass all admission gates in this run.",
+        "why_new_entry": "Keep on watchlist or local-only undecided until the stated trigger is satisfied."
+      },
+      "issues": [
+        "Potentially decisive metric suite, but the promised benchmark/code/calibration release was not yet available; evidence_strength remains 3."
+      ],
+      "required_fixes": [
+        "Public prompts, metric code and calibration protocol."
+      ],
+      "accepted_for_registry": false
+    }
+  ],
+  "run_level_issues": [
+    "Browser playback for official temporal demos was unavailable; SceneRig and PhysiCalWorld were correctly routed to local-only undecided dossiers."
+  ]
+}

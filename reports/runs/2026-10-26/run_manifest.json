@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-10-26",
+  "status": "completed",
+  "artifacts": [
+    "00_run_plan.json",
+    "01_discovery.json",
+    "02_evidence.json",
+    "03_review.json",
+    "04_editor_report.md",
+    "05_registry_patch.json",
+    "run_manifest.json"
+  ],
+  "accepted_candidate_ids": [
+    "CAND-0006",
+    "CAND-0007",
+    "CAND-0008"
+  ],
+  "undecided_candidate_ids": [
+    "CAND-0001",
+    "CAND-0005"
+  ],
+  "registry_updated": true,
+  "validation": {
+    "status": "passed",
+    "command": "REQUIRE_UNDECIDED_DOSSIERS=1 python3 scripts/validate_all.py",
+    "notes": "171 papers, 49 task scopes and all historical/current run artifacts passed; only pre-existing missing-local-PDF warnings remain."
+  }
+}
