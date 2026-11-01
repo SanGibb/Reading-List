@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "updated": "2026-10-26",
+  "updated": "2026-11-02",
   "branches": [
     {
       "id": "A",
@@ -5989,6 +5989,75 @@
           "task_ids": [
             "e-physical-future-outcome-evaluation"
           ]
+        },
+        {
+          "title": "RobotAgentBench: Towards Open-world Robot Autonomy",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2610.34649",
+          "data": "50 household layouts; 90 atomic, 18 short, 8 long and 4 open-ended scenarios; versioned assets and 1,470 saved configurations.",
+          "method": "Agent-assisted real-to-sim construction plus planning-execution-verification runtime and task-specific process scoring.",
+          "task": "Evaluate task discovery, context reasoning, manipulation, recovery, robustness and open-ended household autonomy.",
+          "novelty": "Unifies capability-level and scenario-level open-world robot-agent evaluation under a released physical execution interface.",
+          "source_quality": "primary_or_official",
+          "demo_score": 5,
+          "evidence_strength": 5,
+          "project_relevance": "Direct benchmark/runtime for generated household worlds and autonomous recovery beyond fixed task execution.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/robotagentbench-2026.md",
+          "acceptance_policy_version": 2,
+          "impact_score": 5,
+          "project_relevance_score": 5,
+          "requires_visual_review": true,
+          "requires_temporal_demo": true,
+          "task_ids": ["e-open-world-household-robot-autonomy"]
+        },
+        {
+          "title": "EmbodiedLab: Benchmarking Embodied Agents That Act to Know",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2610.35385",
+          "data": "30 quantitative experiments in five disciplines on 14 apparatus platforms with resampled hidden parameters.",
+          "method": "Physics-based laboratory tasks score grounded measurement conclusions and required physical state changes.",
+          "task": "Evaluate whether an embodied agent can design and execute experiments to discover an initially unknown quantity.",
+          "novelty": "Bridges manipulation and scientific discovery by requiring physical intervention and instrument reading to know.",
+          "source_quality": "primary_or_official",
+          "demo_score": 4,
+          "evidence_strength": 4,
+          "project_relevance": "Direct closed-loop validator for intervention, observation, state tracking and grounded conclusions in executable worlds.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/embodiedlab-2026.md",
+          "acceptance_policy_version": 2,
+          "impact_score": 4,
+          "project_relevance_score": 4,
+          "requires_visual_review": true,
+          "requires_temporal_demo": true,
+          "task_ids": ["e-embodied-act-to-know-science"]
+        },
+        {
+          "title": "Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning",
+          "year": 2026,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2610.27039",
+          "data": "410 task environments, EP-100, five suites, 16 task types and difficulty/compact subsets.",
+          "method": "Shared robot-agent interface with observation/tool budgets and independent goal, rule-compliance and physical-validity checks.",
+          "task": "Evaluate sustained physical, strategic and spatial reasoning over interdependent long-horizon robot tasks.",
+          "novelty": "Combines a broad environment catalog with explicit rule and physical-validity evaluation rather than endpoint-only success.",
+          "source_quality": "primary_or_official",
+          "demo_score": 4,
+          "evidence_strength": 4,
+          "project_relevance": "Direct long-horizon evaluation harness for generated interactive scenes, task rules and physical validity.",
+          "visual_quality_score": 4,
+          "visual_quality_decision": "strong",
+          "deep_dive_path": "paper_reads/E_evaluation_data_infrastructure/embodied-playground-2026.md",
+          "acceptance_policy_version": 2,
+          "impact_score": 4,
+          "project_relevance_score": 4,
+          "requires_visual_review": true,
+          "requires_temporal_demo": true,
+          "task_ids": ["e-long-horizon-physical-strategic-reasoning"]
         }
       ]
     }

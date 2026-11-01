@@ -11,11 +11,15 @@
 | 从这里开始：精选与逐篇复审 | [paper_reads/library_review.md](paper_reads/library_review.md) |
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
 | 按任务阅读与更迭 | [paper_reads/task_frontiers.md](paper_reads/task_frontiers.md) |
-| 最新扩库摘要 | [reports/2026-10-26-expansion.md](reports/2026-10-26-expansion.md) |
+| 最新扩库摘要 | [reports/2026-11-02-expansion.md](reports/2026-11-02-expansion.md) |
 | 历史保留记录 | 168 篇；保留不表示全部继续满足新版准入 |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 广泛发现候选，再精选具有实质增量的工作。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。新增可以为 0，不为周更凑数；满足全部门槛的候选仍应全部处理，不做固定 top-k 抽样。
+
+## 2026-11-02 周更
+
+本轮按 policy v2 收录 3 个互补的具身评测基础设施：RobotAgentBench、EmbodiedLab 与 Embodied Playground；总量 174。PhysLadder、RobotWorld 与 RoboWorM 因发布或重复试验证据尚不足而留在观察名单。完整审计见 [reports/2026-11-02-expansion.md](reports/2026-11-02-expansion.md)。
 
 ## 2026-10-26 周更
 

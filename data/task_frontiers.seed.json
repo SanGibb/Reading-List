@@ -1,6 +1,6 @@
 {
   "lifecycle_schema_version": 1,
-  "updated": "2026-10-26",
+  "updated": "2026-11-02",
   "tasks": [
     {
       "task_id": "a-executable-articulated-scene-programs",
@@ -2144,6 +2144,27 @@
           ]
         }
       ]
+    },
+    {
+      "task_id": "e-open-world-household-robot-autonomy",
+      "title": "Open-world household robot autonomy",
+      "branch": "E",
+      "scope": {"input":"Household observations, robot state and high-level user needs.","output":"Discovered, planned and physically executed household assistance with recovery.","setting":"Interactive simulated homes with context changes and disturbances.","protocol":"Keep task family, saved configuration, observation/action interface, process score, attempt budget and runtime fixed; author-reported results are not independent reproduction."},
+      "members": [{"paper_url":"https://arxiv.org/abs/2610.34649","role":"current","reason":"First maintained benchmark to release one runtime spanning discovery, contextual choice, manipulation, recovery, robustness and open-ended household needs.","reviewed_on":"2026-11-02","evidence":[{"source_url":"https://github.com/AetherLabsAI/RobotAgentBench","locator":"README benchmark at a glance; evaluation interface; assets","claim":"Official repository releases the evaluator, assets and six autonomy dimensions.","source_quality":"official","status":"verified"}]}]
+    },
+    {
+      "task_id": "e-embodied-act-to-know-science",
+      "title": "Embodied act-to-know scientific experimentation",
+      "branch": "E",
+      "scope": {"input":"A scientific objective and camera observations of an apparatus with resampled hidden parameters.","output":"Physical interventions, measurements and a grounded conclusion.","setting":"Physics-based simulated laboratories across multiple disciplines.","protocol":"Preserve experiment, hidden-parameter distribution, tool condition, manipulation skills and scoring of readings/physical state; simulation does not establish real-lab transfer."},
+      "members": [{"paper_url":"https://arxiv.org/abs/2610.35385","role":"current","reason":"First maintained executable benchmark in which physical intervention and instrument reading are necessary to acquire the answer.","reviewed_on":"2026-11-02","evidence":[{"source_url":"https://github.com/HexaFuture/EmbodiedLab","locator":"README benchmark scope and code release","claim":"Official repository releases 30 act-to-know experiments and evaluation code.","source_quality":"official","status":"verified"}]}]
+    },
+    {
+      "task_id": "e-long-horizon-physical-strategic-reasoning",
+      "title": "Long-horizon physical and strategic robot reasoning",
+      "branch": "E",
+      "scope": {"input":"Goals plus declared visual, proprioceptive and tool access.","output":"Long-horizon robot actions satisfying task goals and intermediate rules.","setting":"Manipulation, spatial puzzles and multi-stage household environments.","protocol":"Preserve suite, split, observation level, tool access, resource budget, repeated trials and independent goal/rule/physical-validity checks."},
+      "members": [{"paper_url":"https://arxiv.org/abs/2610.27039","role":"current","reason":"First maintained release combining 410 long-horizon environments with independent goal, rule and physical-validity checks.","reviewed_on":"2026-11-02","evidence":[{"source_url":"https://winniechen2002.github.io/Agent-bench-website/","locator":"Playground, EP-100, protocol and demo provenance sections","claim":"Official project releases the task catalog, protocol, code and evidence provenance.","source_quality":"official","status":"verified"}]}]
     }
   ]
 }
