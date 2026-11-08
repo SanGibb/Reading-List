@@ -1,0 +1,14 @@
+{
+  "run_id": "2026-11-09",
+  "status": "validated",
+  "created_artifacts": [
+    "00_run_plan.json",
+    "01_discovery.json",
+    "02_evidence.json",
+    "03_review.json",
+    "04_editor_report.md",
+    "05_registry_patch.json"
+  ],
+  "created_directories": ["undecided/2026-11-09"],
+  "validation": "passed: validate_run, render_reading_indexes --check, and REQUIRE_UNDECIDED_DOSSIERS=1 validate_all; only pre-existing missing-local-PDF warnings"
+}

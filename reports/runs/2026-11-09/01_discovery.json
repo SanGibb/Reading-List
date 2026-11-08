@@ -1,0 +1,502 @@
+{
+  "run_id": "2026-11-09",
+  "followed_sources_checked": [
+    {
+      "source_id": "stanford-svl-behavior",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://svl.stanford.edu/publications/",
+        "https://jiajunwu.com/",
+        "https://behavior.stanford.edu/omnigibson/overview.html"
+      ],
+      "evidence_url": "https://svl.stanford.edu/publications/",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "princeton-pvl-infinigen",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://pvl.cs.princeton.edu/",
+        "https://infinigen.org/"
+      ],
+      "evidence_url": "https://pvl.cs.princeton.edu/",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "ai2-embodied-prior",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://allenai.org/embodied-ai",
+        "https://prior.allenai.org/projects/ai2thor",
+        "https://procthor.allenai.org/"
+      ],
+      "evidence_url": "https://allenai.org/embodied-ai",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "nvidia-cosmos-isaac",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://research.nvidia.com/labs/cosmos-lab/",
+        "https://research.nvidia.com/labs/dir/sage/",
+        "https://research.nvidia.com/labs/cosmos-lab/cosmos3",
+        "https://research.nvidia.com/labs/lpr/publication/gr00tn1_2025/"
+      ],
+      "evidence_url": "https://research.nvidia.com/labs/cosmos-lab/",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "stanford-realab-shuran",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://real.stanford.edu/lab.html",
+        "https://shurans.github.io/"
+      ],
+      "evidence_url": "https://real.stanford.edu/lab.html",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "stanford-iris-openvla",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://irislab.stanford.edu/",
+        "https://openvla.github.io/"
+      ],
+      "evidence_url": "https://openvla.github.io/",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "berkeley-rail-levine",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://rail.eecs.berkeley.edu/"
+      ],
+      "evidence_url": "https://rail.eecs.berkeley.edu/",
+      "notes": "Configured surface returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "physical-intelligence",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://www.pi.website/",
+        "https://www.pi.website/blog/pi0"
+      ],
+      "evidence_url": "https://www.pi.website/",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "google-deepmind-robotics",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://deepmind.google/models/gemini-robotics/gemini-robotics/",
+        "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+        "https://github.com/google-deepmind/open_x_embodiment"
+      ],
+      "evidence_url": "https://deepmind.google/models/gemini-robotics/gemini-robotics/",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "ut-austin-rpl-yuke",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://rpl.cs.utexas.edu/people/",
+        "https://www.cs.utexas.edu/research/intelligent-robotics",
+        "https://robocasa.ai/"
+      ],
+      "evidence_url": "https://robocasa.ai/",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "meta-fair-embodied",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/",
+        "https://ai.meta.com/blog/fair-robotics-open-source/",
+        "https://dhruvbatra.com/"
+      ],
+      "evidence_url": "https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "huggingface-lerobot",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://huggingface.co/blog/smolvla",
+        "https://github.com/huggingface/lerobot",
+        "https://huggingface.co/docs/lerobot"
+      ],
+      "evidence_url": "https://github.com/huggingface/lerobot",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "toyota-research-institute-lbm",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://global.toyota/en/mobility/frontier-research/42394425.html"
+      ],
+      "evidence_url": "https://global.toyota/en/mobility/frontier-research/42394425.html",
+      "notes": "Official article returned HTTP 200; configured personnel URL returned 404.",
+      "retry_trigger": "Retry or replace the stale personnel URL next run."
+    },
+    {
+      "source_id": "cmu-genesis-robogen",
+      "status": "spot_checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://github.com/Genesis-Embodied-AI/RoboGen"
+      ],
+      "evidence_url": "https://github.com/Genesis-Embodied-AI/RoboGen",
+      "notes": "Official repository returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "tsinghua-air-vla",
+      "status": "spot_checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://air.tsinghua.edu.cn/info/1007/2467.htm"
+      ],
+      "evidence_url": "https://air.tsinghua.edu.cn/info/1007/2467.htm",
+      "notes": "Official surface returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "embodiedgen-consortium",
+      "status": "spot_checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://arxiv.org/abs/2506.10600",
+        "https://3dgen4robot.github.io/"
+      ],
+      "evidence_url": "https://3dgen4robot.github.io/",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "mit-csail-drake-scene-generation",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://scenesmith.github.io/",
+        "https://drake.mit.edu/"
+      ],
+      "evidence_url": "https://scenesmith.github.io/",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "tencent-hunyuan-world",
+      "status": "spot_checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://hyworld.dev/",
+        "https://huggingface.co/tencent/HY-World-2.0"
+      ],
+      "evidence_url": "https://hyworld.dev/",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "world-model-benchmarks",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://haoyi-duan.github.io/WorldScore/",
+        "https://world-arena.ai/",
+        "https://world-in-world.github.io/",
+        "https://ctrl-world.github.io/"
+      ],
+      "evidence_url": "https://haoyi-duan.github.io/WorldScore/",
+      "notes": "Official surfaces returned HTTP 200; official surface checked; LAW repository release and UniWALM project were routed to candidate review where applicable."
+    },
+    {
+      "source_id": "vla-leaderboard",
+      "status": "checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://vlaleaderboard.com/"
+      ],
+      "evidence_url": "https://vlaleaderboard.com/",
+      "notes": "Leaderboard returned HTTP 200; no distinct qualifying release found."
+    },
+    {
+      "source_id": "vla-survey",
+      "status": "spot_checked",
+      "checked_at": "2026-11-09T00:09:00+08:00",
+      "urls_checked": [
+        "https://vla-survey.github.io/"
+      ],
+      "evidence_url": "https://vla-survey.github.io/",
+      "notes": "Survey index returned HTTP 200; used only for discovery and deduplication."
+    }
+  ],
+  "query_log": [
+    {
+      "query_id": "Q-A-001",
+      "branch": "A",
+      "query": "submitted 2026-10-26..2026-11-09 articulated sim-ready assets joints URDF collision stability",
+      "source_url": "https://arxiv.org/search/",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "submitted",
+      "date_from": "2026-10-26",
+      "date_to": "2026-11-09",
+      "results_reviewed": 50,
+      "pages_checked": 2,
+      "stop_reason": "Two pages reviewed; no qualifying result.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-A-002",
+      "branch": "A",
+      "query": "updated 2026-10-26..2026-11-09 articulated assets physical properties collision stability",
+      "source_url": "https://arxiv.org/search/",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "updated",
+      "date_from": "2026-10-26",
+      "date_to": "2026-11-09",
+      "results_reviewed": 50,
+      "pages_checked": 2,
+      "stop_reason": "Two pages reviewed.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-A-003",
+      "branch": "A",
+      "query": "release 2026-09-25..2026-11-09 sim-ready articulated asset code dataset demo",
+      "source_url": "https://github.com/search",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "release",
+      "date_from": "2026-09-25",
+      "date_to": "2026-11-09",
+      "results_reviewed": 30,
+      "pages_checked": 2,
+      "stop_reason": "Official releases reviewed.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-B-001",
+      "branch": "B",
+      "query": "submitted 2026-10-26..2026-11-09 interactive world scene generation procedural generation PCG",
+      "source_url": "https://arxiv.org/search/",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "submitted",
+      "date_from": "2026-10-26",
+      "date_to": "2026-11-09",
+      "results_reviewed": 50,
+      "pages_checked": 2,
+      "stop_reason": "Two pages reviewed.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-B-002",
+      "branch": "B",
+      "query": "updated 2026-10-26..2026-11-09 interactive world procedural scene generation",
+      "source_url": "https://arxiv.org/search/",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "updated",
+      "date_from": "2026-10-26",
+      "date_to": "2026-11-09",
+      "results_reviewed": 50,
+      "pages_checked": 2,
+      "stop_reason": "Two pages reviewed.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-B-003",
+      "branch": "B",
+      "query": "release 2026-09-25..2026-11-09 interactive world PCG code demo",
+      "source_url": "https://github.com/search",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "release",
+      "date_from": "2026-09-25",
+      "date_to": "2026-11-09",
+      "results_reviewed": 30,
+      "pages_checked": 2,
+      "stop_reason": "Official releases reviewed.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-C-001",
+      "branch": "C",
+      "query": "submitted 2026-10-26..2026-11-09 spatial intelligence reasoning embodied 3D multi-view",
+      "source_url": "https://arxiv.org/search/",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "submitted",
+      "date_from": "2026-10-26",
+      "date_to": "2026-11-09",
+      "results_reviewed": 50,
+      "pages_checked": 2,
+      "stop_reason": "Two pages reviewed.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-C-002",
+      "branch": "C",
+      "query": "updated 2026-10-26..2026-11-09 spatial reasoning embodied metric viewpoint",
+      "source_url": "https://arxiv.org/search/",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "updated",
+      "date_from": "2026-10-26",
+      "date_to": "2026-11-09",
+      "results_reviewed": 50,
+      "pages_checked": 2,
+      "stop_reason": "Two pages reviewed.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-C-003",
+      "branch": "C",
+      "query": "release 2026-09-25..2026-11-09 spatial benchmark dataset code",
+      "source_url": "https://github.com/search",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "release",
+      "date_from": "2026-09-25",
+      "date_to": "2026-11-09",
+      "results_reviewed": 30,
+      "pages_checked": 2,
+      "stop_reason": "Official releases reviewed.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-D-001",
+      "branch": "D",
+      "query": "submitted 2026-10-26..2026-11-09 vision language action world action model robot policy",
+      "source_url": "https://arxiv.org/search/",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "submitted",
+      "date_from": "2026-10-26",
+      "date_to": "2026-11-09",
+      "results_reviewed": 100,
+      "pages_checked": 3,
+      "stop_reason": "Three pages reviewed; evaluation work routed to E.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-D-002",
+      "branch": "D",
+      "query": "updated 2026-10-26..2026-11-09 VLA WAM robot world model",
+      "source_url": "https://arxiv.org/search/",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "updated",
+      "date_from": "2026-10-26",
+      "date_to": "2026-11-09",
+      "results_reviewed": 100,
+      "pages_checked": 3,
+      "stop_reason": "Two pages reviewed; UniWALM routed to watchlist because the public repository contains documentation/assets but no runnable implementation.",
+      "candidate_ids": [
+        "CAND-0002"
+      ]
+    },
+    {
+      "query_id": "Q-D-003",
+      "branch": "D",
+      "query": "release 2026-09-25..2026-11-09 VLA WAM checkpoint code demo",
+      "source_url": "https://github.com/search",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "release",
+      "date_from": "2026-09-25",
+      "date_to": "2026-11-09",
+      "results_reviewed": 40,
+      "pages_checked": 2,
+      "stop_reason": "Official LAW repository release on 2026-11-06 routed to full review; code, checkpoints and datasets verified.",
+      "candidate_ids": [
+        "CAND-0001"
+      ]
+    },
+    {
+      "query_id": "Q-E-001",
+      "branch": "E",
+      "query": "submitted 2026-10-26..2026-11-09 embodied robot benchmark dataset evaluation",
+      "source_url": "https://arxiv.org/search/",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "submitted",
+      "date_from": "2026-10-26",
+      "date_to": "2026-11-09",
+      "results_reviewed": 100,
+      "pages_checked": 3,
+      "stop_reason": "Three pages reviewed; six candidates analyzed or watchlisted.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-E-002",
+      "branch": "E",
+      "query": "updated 2026-10-26..2026-11-09 embodied agent benchmark robot evaluation",
+      "source_url": "https://arxiv.org/search/",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "updated",
+      "date_from": "2026-10-26",
+      "date_to": "2026-11-09",
+      "results_reviewed": 100,
+      "pages_checked": 3,
+      "stop_reason": "Three pages reviewed and aliases deduplicated.",
+      "candidate_ids": []
+    },
+    {
+      "query_id": "Q-E-003",
+      "branch": "E",
+      "query": "release 2026-09-25..2026-11-09 embodied benchmark evaluator assets dataset code",
+      "source_url": "https://github.com/search",
+      "executed_at": "2026-11-09T00:15:00+08:00",
+      "date_basis": "release",
+      "date_from": "2026-09-25",
+      "date_to": "2026-11-09",
+      "results_reviewed": 60,
+      "pages_checked": 3,
+      "stop_reason": "Official repositories, assets, pages and media inspected.",
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "CAND-0001",
+      "title": "LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.23334",
+      "source_type": "arxiv",
+      "discovered_from": "Q-D-003",
+      "query_id": "Q-D-003",
+      "why_candidate": "Substantive 2026-11-06 official code/checkpoint/data release for long-horizon closed-loop WAM control."
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+      "branch_hint": "D",
+      "source_url": "https://arxiv.org/abs/2610.28626",
+      "source_type": "arxiv",
+      "discovered_from": "Q-D-002",
+      "query_id": "Q-D-002",
+      "why_candidate": "Unified video-action-language diffusion and language-as-memory with official qualitative rollouts."
+    }
+  ],
+  "triage": [
+    {
+      "candidate_id": "CAND-0001",
+      "decision": "analyze",
+      "primary_branch": "D",
+      "reason": "Released code, four checkpoints, training data and official real-robot media indicate a potentially qualifying material increment.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 5,
+      "project_relevance_prior": 5
+    },
+    {
+      "candidate_id": "CAND-0002",
+      "decision": "watchlist",
+      "primary_branch": "D",
+      "reason": "Strong reported controls and official media, but the linked repository currently contains documentation/assets rather than runnable training or evaluation code; evidence strength remains below 4.",
+      "revisit_trigger": "Runnable official implementation or checkpoint release with licensed evaluation path.",
+      "dedupe_status": "new",
+      "source_quality": "primary_or_official",
+      "impact_prior": 4,
+      "project_relevance_prior": 4
+    }
+  ]
+}

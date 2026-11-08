@@ -11,11 +11,15 @@
 | 从这里开始：精选与逐篇复审 | [paper_reads/library_review.md](paper_reads/library_review.md) |
 | 层级化精读库 | [paper_reads/README.md](paper_reads/README.md) |
 | 按任务阅读与更迭 | [paper_reads/task_frontiers.md](paper_reads/task_frontiers.md) |
-| 最新扩库摘要 | [reports/2026-11-02-expansion.md](reports/2026-11-02-expansion.md) |
+| 最新扩库摘要 | [reports/2026-11-09-expansion.md](reports/2026-11-09-expansion.md) |
 | 历史保留记录 | 168 篇；保留不表示全部继续满足新版准入 |
 | 待人工决定 | `undecided/` local-only，默认不上传 |
 
 每次 run 广泛发现候选，再精选具有实质增量的工作。run 目录只维护审计产物；最终论文精读统一沉淀到 `paper_reads/<branch>/<slug>.md`。新增可以为 0，不为周更凑数；满足全部门槛的候选仍应全部处理，不做固定 top-k 抽样。
+
+## 2026-11-09 周更
+
+本轮按 policy v2 未新增论文。LAW 的代码、四组 checkpoint 与训练数据发布已核实，但完整长时执行与恢复视频尚未充分检查，因此保留为本地待定；UniWALM 因官方仓库尚无可运行实现或 checkpoint 而留在观察名单。完整审计见 [reports/2026-11-09-expansion.md](reports/2026-11-09-expansion.md)。
 
 ## 2026-11-02 周更
 
